@@ -74,5 +74,6 @@ function openCategory(evt, catName) {
 $(function() {
 
     $("#header").load("content/header.html");
+    $("#footer").load("content/footer.html");
 
 });
