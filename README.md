@@ -1,1 +1,0 @@
-# kakumdk.github.io
