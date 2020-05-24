@@ -73,6 +73,7 @@ function openCategory(evt, catName) {
  **************************************/
 $(function() {
 
+    $("#head").load("content/head.html");
     $("#header").load("content/header.html");
     $("#footer").load("content/footer.html");
 
