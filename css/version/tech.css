@@ -261,7 +261,7 @@ h5 {
 .footer a:hover,
 .footer .fa:hover,
 .footer .fa:focus {
-    color: #0091e5 !important;
+    color: #233751 !important;
 }
 
 .authorbox p a,
@@ -278,7 +278,7 @@ a:focus {
 .btn:hover,
 .btn:focus {
     color: #ffffff !important;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0091e5 0px, #00b7e5 100%) repeat scroll 0 0 !important
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #233751 0px, #243449 100%) repeat scroll 0 0 !important
 }
 
 .tag-cloud-single span,
