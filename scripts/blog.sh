@@ -54,7 +54,7 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>Tech Blog</title>
+    <title>'$title' - Tech Blog</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -97,14 +97,14 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="../../../images/version/tech-logo.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img src="../../../images/version/tech-logo.png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-03.html">Science</a>
+                            <a class="nav-link" href="/blogs/Science/index.html">Science</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/category-03.html">Technology</a>
@@ -131,24 +131,26 @@ do
                         <div class="page-wrapper">
                             <div class="blog-title-area text-center">
                                 <ol class="breadcrumb hidden-xs-down">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Blog</a></li>
-                                    <li class="breadcrumb-item active">Top 10 phone applications and 2017 mobile design awards</li>
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/index.html">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/'${_type// /-}'/index.html">'$_type'</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/'${_type// /-}'/'${_category// /-}'/index.html">'$_category'</a></li>
+                                    <li class="breadcrumb-item active">'$title'</li>
                                 </ol>
 
-                                <span class="color-orange"><a href="category-01.html" title="">Technology</a></span>
+                                <span class="color-orange"><a href="/blogs/'${_type// /-}'/index.html" title="'$_type'">'$_type'</a></span>
 
-                                <h3>Top 10 phone applications and 2017 mobile design awards</h3>
+                                <h3>'$title'</h3>
 
                                 <div class="blog-meta big-meta">
-                                    <small><a href="single.html" title="">21 July, 2017</a></small>
-                                    <small><a href="author.html" title="">by Jessica</a></small>
-                                    <small><a href="#" title=""><i class="fa fa-eye"></i> 2344</a></small>
+                                    <small>'$created'</small>
+                                    <small><a href="/author.html" title="">by '$author'</a></small>
+                                    <small><i class="fa fa-eye"></i> '$views'</small>
                                 </div><!-- end meta -->
 
                                 <div class="post-sharing">
                                     <ul class="list-inline">
-                                        <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a></li>
+                                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a></li>
                                         <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a></li>
                                         <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a></li>
                                     </ul>
