@@ -90,16 +90,16 @@ do
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-03.html">Technology</a>
+                            <a class="nav-link" href="/blogs/Technology">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-02.html">Social Media</a>
+                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">News</a>
+                            <a class="nav-link" href="/blogs/News">News</a>
                         </li>
                     </ul>
                 </div>
@@ -353,16 +353,16 @@ do
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-03.html">Technology</a>
+                            <a class="nav-link" href="/blogs/Technology">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-02.html">Social Media</a>
+                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">News</a>
+                            <a class="nav-link" href="/blogs/News">News</a>
                         </li>
                     </ul>
                 </div>
@@ -616,16 +616,16 @@ do
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-03.html">Technology</a>
+                            <a class="nav-link" href="/blogs/Technology">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-02.html">Social Media</a>
+                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">News</a>
+                            <a class="nav-link" href="/blogs/News">News</a>
                         </li>
                     </ul>
                 </div>
@@ -875,16 +875,16 @@ do
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-03.html">Technology</a>
+                            <a class="nav-link" href="/blogs/Technology">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-02.html">Social Media</a>
+                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category-01.html">News</a>
+                            <a class="nav-link" href="/blogs/News">News</a>
                         </li>
                     </ul>
                 </div>
