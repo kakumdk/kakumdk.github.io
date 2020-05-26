@@ -77,6 +77,54 @@ $(function() {
     $("#header").load("content/header.html");
     $("#footer").load("content/footer.html");
 
-    
+    readFile("../blogs-content-merged/blogs.json", function(text){
+        var data = JSON.parse(text);
+        var output = writeBlogs(data);
+        $('.blog-list').html(output);
+    });
 
 });
+function readFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+function writeBlogs(data) {
+    var output = '';
+    $.each(data, function(key, val){
+        var type = val.type.split(',');
+        var category = val.category.split(',');
+        var path = '/blogs/' +
+            type[0].replace(" ", "-") + '/' +
+            category[0].replace(" ", "-") + '/' +
+            val.file.replace(".json", ".html");
+        output +=
+            '<div class="blog-box row">' +
+            '<div class="col-md-4">' +
+            '<div class="post-media">' +
+            '<a href="' + path + '" title="' + val.title + '">' +
+            // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
+            '<img src="../../../upload/tech_blog_01.jpg" alt="" class="img-fluid">' +
+            '<div class="hovereffect"></div>' +
+            '</a>' +
+            '</div><!-- end media -->' +
+            '</div><!-- end col -->' +
+            '<div class="blog-meta big-meta col-md-8">' +
+            '<h4><a href="' + path + '" title="">' + val.title + '</a></h4>' +
+            '<div class="blog-content-overflow"><p>' + val.content + '</p></div>' +
+            '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+type[0].replace(" ", "-")+'" title="">' + type[0] + '</a></small>' +
+            '<small>' + val.created + '</small>' +
+            '<small>by ' + val.author + '</small>' +
+            // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
+            '</div><!-- end meta -->' +
+            '</div><!-- end blog-box -->' +
+            '<hr class="invis">';
+    });
+    return output;
+}
