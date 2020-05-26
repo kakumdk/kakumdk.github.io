@@ -8,14 +8,14 @@ files=`ls $blogscontent`
 for file in $files
 do
    filepath=$blogscontent'/'$file
-   title=`jq -r '.title' $filepath`
-   created=`jq -r '.created' $filepath`
-   author=`jq -r '.author' $filepath`
-   views=`jq -r '.views' $filepath`
-   content=`jq -r '.content' $filepath`
-   type=`jq -r '.type' $filepath`
-   category=`jq -r '.category' $filepath`
-   banner=`jq -r '.banner' $filepath`
+   title=`jq -r '.content .title' $filepath`
+   created=`jq -r '.content .created' $filepath`
+   author=`jq -r '.content .author' $filepath`
+   views=`jq -r '.content .views' $filepath`
+   content=`jq -r '.content .content' $filepath`
+   type=`jq -r '.content .type' $filepath`
+   category=`jq -r '.content .category' $filepath`
+   banner=`jq -r '.content .banner' $filepath`
    ## Blogs index page
    blogsfolderpath=$blogs
    mkdir -p $blogsfolderpath
@@ -1073,3 +1073,11 @@ do
      done
    done
 done
+
+#################################################################################################################
+#################################################################################################################
+##### JSON content, Multiple to Single
+#################################################################################################################
+#################################################################################################################
+blogscontentmerged=$pwd/blogs-content-merged
+jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
