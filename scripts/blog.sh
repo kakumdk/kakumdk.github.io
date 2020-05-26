@@ -267,10 +267,10 @@ do
 
     <!-- Core JavaScript
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
 
 </body>
 </html>' > $blogsfilepath
@@ -531,10 +531,10 @@ do
 
     <!-- Core JavaScript
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/tether.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/custom.js"></script>
 
 </body>
 </html>' > $blogsfilepath'/'index.html
@@ -795,10 +795,10 @@ do
 
     <!-- Core JavaScript
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/tether.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/custom.js"></script>
 
 </body>
 </html>' > $blogsfolderpath'/'index.html
@@ -1064,10 +1064,10 @@ do
     </div><!-- end wrapper -->
     <!-- Core JavaScript
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/tether.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/custom.js"></script>
 </body>
 </html>' > $blogsfilepath
      done
