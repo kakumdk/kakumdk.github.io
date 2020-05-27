@@ -102,6 +102,13 @@ $(function() {
         var output = writeBlogTypeCategories(data);
         $('.blog-list-category').html(output);
     });
+    $("#see-more").click(function() {
+        $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
+        $('.blog-list-blogs .blog-box').removeClass('hidden');
+        $('.blog-list-type .blog-box').removeClass('hidden');
+        $('.blog-list-category .blog-box').removeClass('hidden');
+        $(this).addClass('hidden');
+    });
 
 });
 function readFile(file, callback) {
@@ -189,6 +196,7 @@ function writeBlogsHomepage(data) {
 }
 function writeBlogs(data) {
     var output = '';
+    var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
         var category = data[i]['category'].split(',');
@@ -196,8 +204,14 @@ function writeBlogs(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
+        if (itr >= 4) {
+            output += '<div class="blog-box row hidden">';
+        }
+        else {
+            output += '<div class="blog-box row">';
+        }
+        itr = itr + 1;
         output +=
-            '<div class="blog-box row">' +
                 '<div class="col-md-4">' +
                     '<div class="post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
@@ -222,6 +236,7 @@ function writeBlogs(data) {
 }
 function writeBlogTypes(data) {
     var output = '';
+    var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
         var category = data[i]['category'].split(',');
@@ -232,8 +247,14 @@ function writeBlogTypes(data) {
                 data[i]['file'].replace(".json", ".html");
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
+                if (itr >= 4) {
+                    output += '<div class="blog-box row hidden">';
+                }
+                else {
+                    output += '<div class="blog-box row">';
+                }
+                itr = itr + 1;
                 output +=
-                    '<div class="blog-box row">' +
                     '<div class="col-md-4">' +
                     '<div class="post-media">' +
                     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
@@ -263,6 +284,7 @@ function writeBlogTypes(data) {
 }
 function writeBlogTypeCategories(data) {
     var output = '';
+    var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
         var category = data[i]['category'].split(',');
@@ -273,8 +295,14 @@ function writeBlogTypeCategories(data) {
                 data[i]['file'].replace(".json", ".html");
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
+                if (itr >= 4) {
+                    output += '<div class="blog-box row hidden">';
+                }
+                else {
+                    output += '<div class="blog-box row">';
+                }
+                itr = itr + 1;
                 output +=
-                    '<div class="blog-box row">' +
                     '<div class="col-md-4">' +
                     '<div class="post-media">' +
                     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
