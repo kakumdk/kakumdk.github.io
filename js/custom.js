@@ -77,6 +77,11 @@ $(function() {
     $("#header").load("content/header.html");
     $("#footer").load("content/footer.html");
 
+    readFile("blogs-content-merged/blogs.json", function(text){
+        var data = JSON.parse(text);
+        var output = writeBlogsHomepage(data);
+        $('.blog-list-homepage').html(output);
+    });
     readFile("../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogs(data);
@@ -104,6 +109,73 @@ function readFile(file, callback) {
         }
     }
     rawFile.send(null);
+}
+function writeBlogsHomepage(data) {
+    var output = '';
+    for (var i = 0; i < data.length; i++) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        var currentType = type[i].trim().replace(" ", "-");
+        var path = '/blogs/' + currentType + '/'
+            + category[0].trim().replace(" ", "-") + '/'
+            + data[i]['file'].replace(".json", ".html");
+        if (i === 0) {
+            output +=
+                '<div class="first-slot">' +
+                    '<div class="masonry-box post-media">' +
+                        '<img src="upload/tech_01.jpg" alt="" class="img-fluid">' +
+                        '<div class="shadoweffect">' +
+                            '<div class="shadow-desc">' +
+                                '<div class="blog-meta">' +
+                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '" title="">' + currentType + '</a></span>' +
+                                    '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
+                                    '<small>' + data[i]['created'] + '</small>' +
+                                    '<small>by ' + data[i]['author'] + '</small>' +
+                                '</div><!-- end meta -->' +
+                            '</div><!-- end shadow-desc -->' +
+                        '</div><!-- end shadow -->' +
+                    '</div><!-- end post-media -->' +
+                '</div><!-- end first-side -->';
+        }
+        else if (i === 1) {
+            output +=
+                '<div class="second-slot">' +
+                    '<div class="masonry-box post-media">' +
+                        '<img src="upload/tech_02.jpg" alt="" class="img-fluid">' +
+                        '<div class="shadoweffect">' +
+                            '<div class="shadow-desc">' +
+                                '<div class="blog-meta">' +
+                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '" title="">' + currentType + '</a></span>' +
+                                    '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
+                                    '<small>' + data[i]['created'] + '</small>' +
+                                    '<small>by ' + data[i]['author'] + '</small>' +
+                                '</div><!-- end meta -->' +
+                            '</div><!-- end shadow-desc -->' +
+                        '</div><!-- end shadow -->' +
+                    '</div><!-- end post-media -->' +
+                '</div><!-- end second-side -->';
+        }
+        else if (i === 2) {
+            output +=
+                '<div class="last-slot">' +
+                    '<div class="masonry-box post-media">' +
+                        '<img src="upload/tech_03.jpg" alt="" class="img-fluid">' +
+                        '<div class="shadoweffect">' +
+                            '<div class="shadow-desc">' +
+                                '<div class="blog-meta">' +
+                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '" title="">' + currentType + '</a></span>' +
+                                    '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
+                                    '<small>' + data[i]['created'] + '</small>' +
+                                    '<small>by ' + data[i]['author'] + '</small>' +
+                                '</div><!-- end meta -->' +
+                            '</div><!-- end shadow-desc -->' +
+                        '</div><!-- end shadow -->' +
+                    '</div><!-- end post-media -->' +
+                '</div><!-- end second-side -->';
+        }
+        continue;
+    }
+    return output;
 }
 function writeBlogs(data) {
     var output = '';
