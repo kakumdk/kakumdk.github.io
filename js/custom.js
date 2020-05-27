@@ -80,7 +80,12 @@ $(function() {
     readFile("../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogs(data);
-        $('.blog-list').html(output);
+        $('.blog-list-blogs').html(output);
+    });
+    readFile("../../blogs-content-merged/blogs.json", function(text){
+        var data = JSON.parse(text);
+        var output = writeBlogTypes(data);
+        $('.blog-list-type').html(output);
     });
 
 });
@@ -126,5 +131,46 @@ function writeBlogs(data) {
             '</div><!-- end blog-box -->' +
             '<hr class="invis">';
     });
+    return output;
+}
+function writeBlogTypes(data) {
+    var output = '';
+    for (var i = 0; i < data.length; i++) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        for (var j = 0; j < type.length; j++) {
+            var currentType = type[j].trim().replace(" ", "-");
+            var path = '/blogs/' + currentType + '/' +
+                category[0].trim().replace(" ", "-") + '/' +
+                data[i]['file'].replace(".json", ".html");
+            var currentpath = window.location.pathname.split('/');
+            if (currentType === currentpath[2]) {
+                output +=
+                    '<div class="blog-box row">' +
+                    '<div class="col-md-4">' +
+                    '<div class="post-media">' +
+                    '<a href="' + path + '" title="' + data[i]['title'] + '">' +
+                    // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
+                    '<img src="../../../upload/tech_blog_01.jpg" alt="" class="img-fluid">' +
+                    '<div class="hovereffect"></div>' +
+                    '</a>' +
+                    '</div><!-- end media -->' +
+                    '</div><!-- end col -->' +
+                    '<div class="blog-meta big-meta col-md-8">' +
+                    '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
+                    '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
+                    '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/'+category[0].replace(" ", "-")+'" title="">' + category[0] + '</a></small>' +
+                    '<small>' + data[i]['created'] + '</small>' +
+                    '<small>by ' + data[i]['author'] + '</small>' +
+                    // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
+                    '</div><!-- end meta -->' +
+                    '</div><!-- end blog-box -->' +
+                    '<hr class="invis">';
+            }
+            continue;
+        }
+
+        continue;
+    }
     return output;
 }

@@ -128,7 +128,7 @@ do
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                            <div class="blog-list clearfix">
+                            <div class="blog-list-blogs blog-list clearfix">
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
@@ -392,7 +392,7 @@ do
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                            <div class="blog-list clearfix">
+                            <div class="blog-list-type blog-list clearfix">
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
@@ -656,7 +656,7 @@ do
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                            <div class="blog-list clearfix">
+                            <div class="blog-list-category blog-list clearfix">
                                 <div class="blog-box row">
                                     <div class="col-md-4">
                                         <div class="post-media">
