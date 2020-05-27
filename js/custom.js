@@ -120,7 +120,10 @@ function writeBlogsHomepage(data) {
     for (var i = 0; i < data.length; i++) {
         var type = data[i]['type'].split(',');
         var category = data[i]['category'].split(',');
-        var currentType = type[i].trim().replace(" ", "-");
+        var currentType = '';
+        for (var j = 0; j < type.length; j++) {
+            currentType = type[j].trim().replace(" ", "-");
+        }
         var path = '/blogs/' + currentType + '/'
             + category[0].trim().replace(" ", "-") + '/'
             + data[i]['file'].replace(".json", ".html");
@@ -177,6 +180,9 @@ function writeBlogsHomepage(data) {
                         '</div><!-- end shadow -->' +
                     '</div><!-- end post-media -->' +
                 '</div><!-- end second-side -->';
+        }
+        else {
+            break;
         }
         continue;
     }
