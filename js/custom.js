@@ -85,6 +85,11 @@ $(function() {
     readFile("../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogs(data);
+        $('.blog-list-homepage-blogs').html(output);
+    });
+    readFile("../blogs-content-merged/blogs.json", function(text){
+        var data = JSON.parse(text);
+        var output = writeBlogs(data);
         $('.blog-list-blogs').html(output);
     });
     readFile("../../blogs-content-merged/blogs.json", function(text){

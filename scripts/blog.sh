@@ -87,6 +87,9 @@ do
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
+                            <a class="nav-link" href="/blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
                         <li class="nav-item">
@@ -349,6 +352,9 @@ do
 
                     </ul>
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs">Blogs</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
@@ -613,6 +619,9 @@ do
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
+                            <a class="nav-link" href="/blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
                         <li class="nav-item">
@@ -871,6 +880,9 @@ do
 
                     </ul>
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs">Blogs</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs/Science">Science</a>
                         </li>
