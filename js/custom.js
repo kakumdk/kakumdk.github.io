@@ -129,7 +129,7 @@ function writeBlogsHomepage(data) {
         var path = '/blogs/' + currentType + '/'
             + category[0].trim().replace(" ", "-") + '/'
             + data[i]['file'].replace(".json", ".html");
-        if (i === 2) {
+        if (i === data.length - 1) {
             output +=
                 '<div class="first-slot">' +
                     '<div class="masonry-box post-media">' +
@@ -147,7 +147,7 @@ function writeBlogsHomepage(data) {
                     '</div><!-- end post-media -->' +
                 '</div><!-- end first-side -->';
         }
-        else if (i === 1) {
+        else if (i === data.length - 2) {
             output +=
                 '<div class="second-slot">' +
                     '<div class="masonry-box post-media">' +
@@ -165,7 +165,7 @@ function writeBlogsHomepage(data) {
                     '</div><!-- end post-media -->' +
                 '</div><!-- end second-side -->';
         }
-        else if (i === 0) {
+        else if (i === data.length - 3) {
             output +=
                 '<div class="last-slot">' +
                     '<div class="masonry-box post-media">' +
