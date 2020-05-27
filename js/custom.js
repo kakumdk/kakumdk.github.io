@@ -117,6 +117,7 @@ function readFile(file, callback) {
 }
 function writeBlogsHomepage(data) {
     var output = '';
+    // for (var i = data.length - 1; i >= 0; i--) {
     for (var i = 0; i < data.length; i++) {
         var type = data[i]['type'].split(',');
         var category = data[i]['category'].split(',');
