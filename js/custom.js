@@ -86,11 +86,13 @@ $(function() {
         var data = JSON.parse(text);
         var output = writeBlogs(data);
         $('.blog-list-homepage-blogs').html(output);
+        $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     readFile("../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogs(data);
         $('.blog-list-blogs').html(output);
+        $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     readFile("../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
@@ -327,6 +329,22 @@ function writeBlogTypeCategories(data) {
         }
 
         continue;
+    }
+    return output;
+}
+function writeBlogsFooter(data) {
+    var output = '';
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        for (var j = 0; j < type.length; j++)
+            var currentType = type[j].trim().replace(" ", "-");{
+            var category = data[i]['category'].split(',');
+            for (var k = 0; k < category.length; k++) {
+                var currentCat = category[k].trim().replace(" ", "-");
+                var path = '/blogs/' + currentType + '/' + currentCat;
+                output += '<li><a href="'+path+'" title="">'+category[k]+' <span>(21)</span></a></li>';
+            }
+        }
     }
     return output;
 }
