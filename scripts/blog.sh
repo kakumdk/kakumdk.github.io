@@ -241,11 +241,10 @@ do
                         <h2 class="widget-title">Copyrights</h2>
                         <div class="link-widget">
                             <ul>
-        <!--                        <li><a href="#">About us</a></li>-->
-        <!--                        <li><a href="#">Advertising</a></li>-->
-        <!--                        <li><a href="#">Write for us</a></li>/-->
-        <!--                        <li><a href="#">Trademark</a></li>-->
-        <!--                        <li><a href="#">License & Help</a></li>-->
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a href="/sitemap.xml">Sitemap</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -255,7 +254,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">&copy; Tech Blog<br/>Design by <a href="http://html.design" target="_blank">HTML Design</a> & Customized by <a href="https://karthikkumardk.co.in/" target="_blank">Karthik Kumar D K</a>.</div>
+                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -505,11 +504,10 @@ do
                         <h2 class="widget-title">Copyrights</h2>
                         <div class="link-widget">
                             <ul>
-        <!--                        <li><a href="#">About us</a></li>-->
-        <!--                        <li><a href="#">Advertising</a></li>-->
-        <!--                        <li><a href="#">Write for us</a></li>/-->
-        <!--                        <li><a href="#">Trademark</a></li>-->
-        <!--                        <li><a href="#">License & Help</a></li>-->
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a href="/sitemap.xml">Sitemap</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -519,7 +517,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">&copy; Tech Blog<br/>Design by <a href="http://html.design" target="_blank">HTML Design</a> & Customized by <a href="https://karthikkumardk.co.in/" target="_blank">Karthik Kumar D K</a>.</div>
+                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -769,11 +767,10 @@ do
                         <h2 class="widget-title">Copyrights</h2>
                         <div class="link-widget">
                             <ul>
-        <!--                        <li><a href="#">About us</a></li>-->
-        <!--                        <li><a href="#">Advertising</a></li>-->
-        <!--                        <li><a href="#">Write for us</a></li>/-->
-        <!--                        <li><a href="#">Trademark</a></li>-->
-        <!--                        <li><a href="#">License & Help</a></li>-->
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a href="/sitemap.xml">Sitemap</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -783,7 +780,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">&copy; Tech Blog<br/>Design by <a href="http://html.design" target="_blank">HTML Design</a> & Customized by <a href="https://karthikkumardk.co.in/" target="_blank">Karthik Kumar D K</a>.</div>
+                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -1043,11 +1040,10 @@ do
                         <h2 class="widget-title">Copyrights</h2>
                         <div class="link-widget">
                             <ul>
-        <!--                        <li><a href="#">About us</a></li>-->
-        <!--                        <li><a href="#">Advertising</a></li>-->
-        <!--                        <li><a href="#">Write for us</a></li>/-->
-        <!--                        <li><a href="#">Trademark</a></li>-->
-        <!--                        <li><a href="#">License & Help</a></li>-->
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a href="/sitemap.xml">Sitemap</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -1057,7 +1053,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">&copy; Tech Blog<br/>Design by <a href="http://html.design" target="_blank">HTML Design</a> & Customized by <a href="https://karthikkumardk.co.in/" target="_blank">Karthik Kumar D K</a>.</div>
+                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
