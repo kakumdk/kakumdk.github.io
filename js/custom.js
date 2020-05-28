@@ -334,6 +334,8 @@ function writeBlogTypeCategories(data) {
 }
 function writeBlogsFooter(data) {
     var output = '';
+    var allCat = {};
+    var uniqueCat = [];
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
         for (var j = 0; j < type.length; j++)
@@ -342,9 +344,19 @@ function writeBlogsFooter(data) {
             for (var k = 0; k < category.length; k++) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var path = '/blogs/' + currentType + '/' + currentCat;
-                output += '<li><a href="'+path+'" title="">'+category[k]+' <span>(21)</span></a></li>';
+                allCat[currentCat] = path;
             }
         }
     }
+    $.each(allCat, function(i, el){
+        var itr = 0;
+        if($.inArray(el, uniqueCat) === -1) {
+            if (itr <= 5) {
+                uniqueCat[i] = el;
+                output += '<li><a href="'+el+'" title="">'+i+' <span>(21)</span></a></li>';
+            }
+            itr = itr + 1;
+        }
+    });
     return output;
 }
