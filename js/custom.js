@@ -343,8 +343,7 @@ function writeBlogsFooter(data) {
             var category = data[i]['category'].split(',');
             for (var k = 0; k < category.length; k++) {
                 var currentCat = category[k].trim().replace(" ", "-");
-                var path = '/blogs/' + currentType + '/' + currentCat;
-                allCat[currentCat] = path;
+                allCat[currentCat] = '/blogs/' + currentType + '/' + currentCat;
             }
         }
     }
@@ -353,7 +352,7 @@ function writeBlogsFooter(data) {
         if($.inArray(el, uniqueCat) === -1) {
             if (itr <= 5) {
                 uniqueCat[i] = el;
-                output += '<li><a href="'+el+'" title="">'+i+' <span>(21)</span></a></li>';
+                output += '<li><a href="'+el+'" title="">'+i+'</a></li>';
             }
             itr = itr + 1;
         }
