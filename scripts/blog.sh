@@ -489,7 +489,7 @@ do
                     <div class="widget">
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
-                            <ul>
+                            <ul class="blog-list-homepage-footer">
                                 <li><a href="#">Marketing <span>(21)</span></a></li>
                                 <li><a href="#">SEO Service <span>(15)</span></a></li>
                                 <li><a href="#">Digital Agency <span>(31)</span></a></li>
@@ -753,7 +753,7 @@ do
                     <div class="widget">
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
-                            <ul>
+                            <ul class="blog-list-homepage-footer">
                                 <li><a href="#">Marketing <span>(21)</span></a></li>
                                 <li><a href="#">SEO Service <span>(15)</span></a></li>
                                 <li><a href="#">Digital Agency <span>(31)</span></a></li>
@@ -1027,7 +1027,7 @@ do
                     <div class="widget">
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
-                            <ul>
+                            <ul class="blog-list-homepage-footer">
                                 <li><a href="#">Marketing <span>(21)</span></a></li>
                                 <li><a href="#">SEO Service <span>(15)</span></a></li>
                                 <li><a href="#">Digital Agency <span>(31)</span></a></li>

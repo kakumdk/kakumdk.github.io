@@ -98,11 +98,13 @@ $(function() {
         var data = JSON.parse(text);
         var output = writeBlogTypes(data);
         $('.blog-list-type').html(output);
+        $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     readFile("../../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogTypeCategories(data);
         $('.blog-list-category').html(output);
+        $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     $("#see-more").click(function() {
         $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
