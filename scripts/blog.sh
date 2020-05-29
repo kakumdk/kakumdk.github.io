@@ -238,7 +238,7 @@ do
 
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Copyrights</h2>
+                        <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
@@ -254,7 +254,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -501,7 +501,7 @@ do
 
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Copyrights</h2>
+                        <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
@@ -517,7 +517,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -764,7 +764,7 @@ do
 
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Copyrights</h2>
+                        <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
@@ -780,7 +780,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -1037,7 +1037,7 @@ do
 
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Copyrights</h2>
+                        <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
@@ -1053,7 +1053,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright 2020 &nbsp; Tech Blog. &nbsp; All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
