@@ -79,12 +79,12 @@ $(function() {
 
     readFile("blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
-        var output = writeBlogsHomepage(data);
+        var output = writeBlogsHomepageHeader(data);
         $('.blog-list-homepage').html(output);
     });
     readFile("../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
-        var output = writeBlogs(data);
+        var output = writeBlogsHomepage(data);
         $('.blog-list-homepage-blogs').html(output);
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
@@ -126,7 +126,7 @@ function readFile(file, callback) {
     }
     rawFile.send(null);
 }
-function writeBlogsHomepage(data) {
+function writeBlogsHomepageHeader(data) {
     var output = '';
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -198,7 +198,7 @@ function writeBlogsHomepage(data) {
     }
     return output;
 }
-function writeBlogs(data) {
+function writeBlogsHomepage(data) {
     var output = '';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
@@ -216,24 +216,64 @@ function writeBlogs(data) {
         }
         itr = itr + 1;
         output +=
-                '<div class="col-md-4">' +
-                    '<div class="post-media">' +
-                        '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                            // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
-                            '<img src="../../../'+data[i]['banner600x500']+'" alt="" class="img-fluid">' +
-                            '<div class="hovereffect"></div>' +
-                        '</a>' +
-                    '</div><!-- end media -->' +
-                '</div><!-- end col -->' +
-                '<div class="blog-meta big-meta col-md-8">' +
-                    '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
-                    '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+type[0].replace(" ", "-")+'" title="">' + type[0] + '</a></small>' +
-                        '<small>' + data[i]['created'] + '</small>' +
-                        '<small>by ' + data[i]['author'] + '</small>' +
-                        // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
-                    '</div><!-- end meta -->' +
+            '<div class="col-md-4">' +
+            '<div class="post-media">' +
+            '<a href="' + path + '" title="' + data[i]['title'] + '">' +
+            // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
+            '<img src="../../../'+data[i]['banner600x500']+'" alt="" class="img-fluid">' +
+            '<div class="hovereffect"></div>' +
+            '</a>' +
+            '</div><!-- end media -->' +
+            '</div><!-- end col -->' +
+            '<div class="blog-meta big-meta col-md-8">' +
+            '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
+            '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
+            '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+type[0].replace(" ", "-")+'" title="">' + type[0] + '</a></small>' +
+            '<small>' + data[i]['created'] + '</small>' +
+            '<small>by ' + data[i]['author'] + '</small>' +
+            // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
+            '</div><!-- end meta -->' +
             '</div><!-- end blog-box -->' +
+            '<hr class="invis">';
+    }
+    return output;
+}
+function writeBlogs(data) {
+    var output = '';
+    var itr = 0;
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        var path = '/blogs/' +
+            type[0].replace(" ", "-") + '/' +
+            category[0].replace(" ", "-") + '/' +
+            data[i]['file'].replace(".json", ".html");
+        if (itr >= 4) {
+            output += '<div class="col-md-6 hidden">';
+        }
+        else {
+            output += '<div class="col-md-6">';
+        }
+        itr = itr + 1;
+        output +=
+            '<div class="blog-box">' +
+            '<div class="post-media">' +
+            '<a href="' + path + '" title="">' +
+            '<img src="../../../'+data[i]['banner800x460']+'" alt="" class="img-fluid">' +
+            '<div class="hovereffect">' +
+            '<span></span>' +
+            '</div><!-- end hover -->' +
+            '</a>' +
+            '</div><!-- end media -->' +
+            '<div class="blog-meta big-meta">' +
+            '<span class="color-orange"><a href="/blogs/'+type[0].replace(" ", "-")+'" title="">' + type[0] + '</a></span>' +
+            '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
+            '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
+            '<small>' + data[i]['created'] + '</small>' +
+            '<small>by ' + data[i]['author'] + '</small>' +
+            '</div><!-- end meta -->' +
+            '</div><!-- end blog-box -->' +
+            '</div>'+
             '<hr class="invis">';
     }
     return output;
