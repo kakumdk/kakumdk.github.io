@@ -144,7 +144,7 @@ function writeBlogsHomepage(data) {
             output +=
                 '<div class="first-slot">' +
                     '<div class="masonry-box post-media">' +
-                        '<img src="upload/tech_01.jpg" alt="" class="img-fluid">' +
+                        '<img src="'+data[i]['banner788x443']+'" alt="" class="img-fluid">' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
@@ -220,7 +220,7 @@ function writeBlogs(data) {
                     '<div class="post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                             // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
-                            '<img src="../../../upload/tech_blog_01.jpg" alt="" class="img-fluid">' +
+                            '<img src="../../../'+data[i]['banner600x500']+'" alt="" class="img-fluid">' +
                             '<div class="hovereffect"></div>' +
                         '</a>' +
                     '</div><!-- end media -->' +
@@ -263,7 +263,7 @@ function writeBlogTypes(data) {
                     '<div class="post-media">' +
                     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                     // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
-                    '<img src="../../../upload/tech_blog_01.jpg" alt="" class="img-fluid">' +
+                    '<img src="../../../'+data[i]['banner600x500']+'" alt="" class="img-fluid">' +
                     '<div class="hovereffect"></div>' +
                     '</a>' +
                     '</div><!-- end media -->' +
@@ -311,7 +311,7 @@ function writeBlogTypeCategories(data) {
                     '<div class="post-media">' +
                     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                     // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
-                    '<img src="../../../upload/tech_blog_01.jpg" alt="" class="img-fluid">' +
+                    '<img src="../../../'+data[i]['banner600x500']+'" alt="" class="img-fluid">' +
                     '<div class="hovereffect"></div>' +
                     '</a>' +
                     '</div><!-- end media -->' +

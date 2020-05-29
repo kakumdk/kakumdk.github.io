@@ -15,7 +15,7 @@ do
    content=`jq -r '.content .content' $filepath`
    type=`jq -r '.content .type' $filepath`
    category=`jq -r '.content .category' $filepath`
-   banner=`jq -r '.content .banner' $filepath`
+   banner=`jq -r '.content .banner800x460' $filepath`
    ## Blogs index page
    blogsfolderpath=$blogs
    mkdir -p $blogsfolderpath
