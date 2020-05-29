@@ -930,7 +930,7 @@ do
                             </div><!-- end media -->
 
                             <div class="blog-content">
-                                <div class="pp">'$content'</div>
+                                <div>'$content'</div>
                             </div><!-- end content -->
 
                             <div class="blog-title-area">
