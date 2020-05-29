@@ -162,7 +162,7 @@ function writeBlogsHomepageHeader(data) {
             output +=
                 '<div class="second-slot">' +
                     '<div class="masonry-box post-media">' +
-                        '<img src="upload/tech_02.jpg" alt="" class="img-fluid">' +
+                        '<img src="'+data[i]['banner394x449']+'" alt="" class="img-fluid">' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
@@ -180,7 +180,7 @@ function writeBlogsHomepageHeader(data) {
             output +=
                 '<div class="last-slot">' +
                     '<div class="masonry-box post-media">' +
-                        '<img src="upload/tech_03.jpg" alt="" class="img-fluid">' +
+                        '<img src="'+data[i]['banner394x449']+'" alt="" class="img-fluid">' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
