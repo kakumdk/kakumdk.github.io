@@ -340,29 +340,29 @@ function writeBlogTypeCategories(data) {
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
                 if (itr >= 4) {
-                    output += '<div class="blog-box row hidden">';
+                    output += '<div class="blog-box hidden">';
                 }
                 else {
-                    output += '<div class="blog-box row">';
+                    output += '<div class="blog-box">';
                 }
                 itr = itr + 1;
                 output +=
-                    '<div class="col-md-4">' +
                     '<div class="post-media">' +
-                    '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                    // '<img src="../../../' + val.banner + '" alt="" class="img-fluid">' +
-                    '<img src="../../../'+data[i]['banner600x500']+'" alt="" class="img-fluid">' +
-                    '<div class="hovereffect"></div>' +
+                    '<a href="' + path + '" title="">' +
+                    '<img src="../../../'+data[i]['banner800x460']+'" alt="" class="img-fluid">' +
+                    '<div class="hovereffect">' +
+                    '<span class="videohover"></span>' +
+                    '</div>' +
+                    '<!-- end hover -->' +
                     '</a>' +
-                    '</div><!-- end media -->' +
-                    '</div><!-- end col -->' +
-                    '<div class="blog-meta big-meta col-md-8">' +
+                    '</div>' +
+                    '<!-- end media -->' +
+                    '<div class="blog-meta big-meta text-center">' +
                     '<h4><a href="' + path + '" title="">' + data[i]['title'] + '</a></h4>' +
                     '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
                     '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'" title="">' + type[j].trim() + '</a></small>' +
                     '<small>' + data[i]['created'] + '</small>' +
                     '<small>by ' + data[i]['author'] + '</small>' +
-                    // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
                     '</div><!-- end meta -->' +
                     '</div><!-- end blog-box -->' +
                     '<hr class="invis">';
