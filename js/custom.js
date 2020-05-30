@@ -459,11 +459,30 @@ $(function() {
     });
     readFile("../../../ads/ads.json", function(text){
         $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
-        $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
-        $('.ads-page-2').html(writeAds728x90(JSON.parse(text), 'cat'));
-        $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
+        setTimeout(function() {
+            $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        }, 2000);
+        setTimeout(function() {
+            $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        }, 5000);
+        setTimeout(function() {
+            $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        }, 10000);
+        setTimeout(function() {
+            $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        }, 15000);
+        setTimeout(function() {
+            $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        }, 20000);
+        setTimeout(function() {
+            $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
+        }, 5000);
+        setTimeout(function() {
+            $('.ads-page-2').html(writeAds728x90(JSON.parse(text), 'cat'));
+        }, 10000);
+        setTimeout(function() {
+            $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
+        }, 15000);
     });
 
 });
