@@ -1713,20 +1713,25 @@ hr.invis3 {
     font-size: 1.25rem;
     line-height: 1.5;
 }
-.post-sharing .btn-li {
+.post-sharing .btn-li, .post-sharing .btn-li:hover {
     background-color: #0082ca !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0082ca 0px, #0082ca 100%) repeat scroll 0 0 !important;
 }
-.post-sharing .btn-fb {
+.post-sharing .btn-fb, .post-sharing .btn-fb:hover {
     background-color: #3b5998 !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #3b5998 0px, #3b5998 100%) repeat scroll 0 0 !important;
 }
-.post-sharing .btn-tw {
+.post-sharing .btn-tw, .post-sharing .btn-tw:hover {
     background-color: #55acee !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #55acee 0px, #55acee 100%) repeat scroll 0 0 !important;
 }
-.post-sharing .btn-whatsapp {
+.post-sharing .btn-whatsapp, .post-sharing .btn-whatsapp:hover {
     background-color: #25d366 !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #25d366 0px, #25d366 100%) repeat scroll 0 0 !important;
 }
-.post-sharing .btn-email {
+.post-sharing .btn-email, .post-sharing .btn-email:hover {
     background-color: #4b515d !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #4b515d 0px, #4b515d 100%) repeat scroll 0 0 !important;
 }
 .post-sharing .fa.fa-linkedin,
 .post-sharing .fa.fa-twitter,
