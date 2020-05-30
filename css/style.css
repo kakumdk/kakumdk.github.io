@@ -1753,6 +1753,10 @@ hr.invis3 {
 div.page-wrapper .banner-spot {
     padding: 1px !important;
 }
+div.ads-home.sidebar .widget .ad-open,
+div.ads-home.sidebar .widget .ad-close {
+    height: 30px;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
