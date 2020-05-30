@@ -925,15 +925,17 @@ do
 
                                 <div class="blog-meta big-meta">
                                     <small>'$created'</small>
-                                    <small><a href="/author.html" title="">by '$author'</a></small>
-                                    <small><i class="fa fa-eye"></i> '$views'</small>
+                                    <small>by '$author'</small>
+                                    <!-- small><i class="fa fa-eye"></i> '$views'</small -->
                                 </div><!-- end meta -->
 
                                 <div class="post-sharing">
                                     <ul class="list-inline">
-                                        <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="ln-button btn btn-primary"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>
                                     </ul>
                                 </div><!-- end post-sharing -->
                             </div><!-- end title -->

@@ -1691,3 +1691,54 @@ hr.invis3 {
 #see-more.hidden {
     display: none;
 }
+.post-sharing .btn-floating {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 47px;
+    height: 47px;
+}
+.post-sharing .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.post-sharing .btn-li {
+    background-color: #0082ca !important;
+}
+.post-sharing .btn-fb {
+    background-color: #3b5998 !important;
+}
+.post-sharing .btn-tw {
+    background-color: #55acee !important;
+}
+.post-sharing .btn-whatsapp {
+    background-color: #25d366 !important;
+}
+.post-sharing .btn-email {
+    background-color: #4b515d !important;
+}
+.post-sharing .fa.fa-linkedin,
+.post-sharing .fa.fa-twitter,
+.post-sharing .fa.fa-facebook,
+.post-sharing .fa.fa-whatsapp {
+    color: #fff;
+}
+.post-sharing .fa.fa-envelope {
+    font-size: 18px;
+    margin-left: -2px;
+    color: #fff;
+}
+.blog-title-area {
+    margin-bottom: 2rem !important;
+}
