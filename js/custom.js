@@ -459,6 +459,9 @@ $(function() {
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
     });
+    readFile("../../../ads/ads.json", function(text){
+        $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
+    });
 
 });
 function writeAds300x600(data, page) {
@@ -492,10 +495,10 @@ function writeAds728x90(data, page) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
     output += '' +
-        '<div class="widget">' +
+        '<div class="row">' +
+        '<div class="col-lg-12">' +
         '<div class="banner-spot clearfix">' +
-        '<div class="banner-img">' +
-        '';
+        '<div class="banner-img">';
     if (page === 'home') {
         output += '<a target="_blank" href="'+random['url']+'"><img src="'+random['img728x90']+'" alt="" class="img-fluid"></a>';
     }
@@ -510,7 +513,8 @@ function writeAds728x90(data, page) {
     }
     output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
-        '</div><!-- end widget -->' +
+        '</div><!-- end col -->' +
+        '</div><!-- end row -->' +
         '';
     return output;
 }
