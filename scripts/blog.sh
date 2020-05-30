@@ -203,7 +203,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
@@ -466,7 +466,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
@@ -738,7 +738,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
@@ -1015,7 +1015,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
