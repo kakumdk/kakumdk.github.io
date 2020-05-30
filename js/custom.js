@@ -410,6 +410,7 @@ function writeSocialShareLinks(region) {
     var twitter = 'https://twitter.com/share?url='+url+'&amp;text='+title+'&amp;hashtags='+hashtags;
     var facebook = 'http://www.facebook.com/sharer.php?u='+url;
     var whatsapp = 'https://web.whatsapp.com/send?text='+url;
+    var whatsapp_phone = 'https://api.whatsapp.com/send?text='+url;
     var mail = 'mailto:?Subject='+title+'&amp;Body='+title+' '+url+'';
     if (region === 'blog') {
         var output = '' +
@@ -418,6 +419,7 @@ function writeSocialShareLinks(region) {
             '<li><a href="'+twitter+'" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>' +
             '<li><a href="'+facebook+'" target="_blank" class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>' +
             '<li><a href="'+whatsapp+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
+            '<li><a href="'+whatsapp_phone+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
             '<li><a href="'+mail+'" target="_blank" class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>' +
             '</ul>';
         return output;
