@@ -205,7 +205,7 @@ do
                         <div class="footer-text text-left">
                             <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
-                            <div class="social">
+                            <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -468,7 +468,7 @@ do
                         <div class="footer-text text-left">
                             <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
-                            <div class="social">
+                            <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -740,7 +740,7 @@ do
                         <div class="footer-text text-left">
                             <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
-                            <div class="social">
+                            <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -929,7 +929,7 @@ do
                                     <!-- small><i class="fa fa-eye"></i> '$views'</small -->
                                 </div><!-- end meta -->
 
-                                <div class="post-sharing">
+                                <div class="post-sharing-top post-sharing">
                                     <ul class="list-inline">
                                         <li><a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>
@@ -954,7 +954,7 @@ do
                                     '$categories'
                                 </div><!-- end meta -->
 
-                                <div class="post-sharing">
+                                <!-- div class="post-sharing-bottom post-sharing">
                                     <ul class="list-inline">
                                         <li><a href="#" class="btn btn-primary btn-li"><i class="fa fa-linkedin pr-2"></i> <span class="down-mobile">Linkedin</span></a></li>
                                         <li><a href="#" class="btn btn-primary btn-tw"><i class="fa fa-twitter pr-2"></i> <span class="down-mobile">Twitter</span></a></li>
@@ -962,7 +962,7 @@ do
                                         <li><a href="#" class="btn btn-primary btn-whatsapp"><i class="fa fa-whatsapp pr-2"></i> <span class="down-mobile">Whatsapp</span></a></li>
                                         <li><a href="#" class="btn btn-primary btn-email"><i class="fa fa-envelope pr-2"></i> <span class="down-mobile">Email</span></a></li>
                                     </ul>
-                                </div><!-- end post-sharing -->
+                                </div --><!-- end post-sharing -->
                             </div><!-- end title -->
 
                             <div class="row">
@@ -1017,7 +1017,7 @@ do
                         <div class="footer-text text-left">
                             <a href="index.html"><img src="../../../images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
                             <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
-                            <div class="social">
+                            <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>

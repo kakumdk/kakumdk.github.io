@@ -113,7 +113,8 @@ $(function() {
         $('.blog-list-category .blog-box').removeClass('hidden');
         $(this).addClass('hidden');
     });
-
+    $(".post-sharing-top").html(writeSocialShareLinks('blog'));
+    $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
 });
 function readFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -400,4 +401,25 @@ function writeBlogsFooter(data) {
         }
     });
     return output;
+}
+function writeSocialShareLinks(region) {
+    if (region === 'blog') {
+        var output = '' +
+            '<ul class="list-inline">' +
+            '<li><a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>' +
+            '<li><a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>' +
+            '<li><a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>' +
+            '<li><a class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
+            '<li><a class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>' +
+            '</ul>';
+        return output;
+    }
+    if (region === 'footer') {
+        return '' +
+            '<a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>' +
+            '<a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>' +
+            '<a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>' +
+            '<a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
+            '<a href="#" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
+    }
 }
