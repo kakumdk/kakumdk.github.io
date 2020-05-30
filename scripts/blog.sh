@@ -197,7 +197,7 @@ do
             </div><!-- end container -->
         </section>
 
-        <footer id="footer" class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -460,7 +460,7 @@ do
             </div><!-- end container -->
         </section>
 
-        <footer id="footer" class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -732,7 +732,7 @@ do
             </div><!-- end container -->
         </section>
 
-        <footer id="footer" class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -1009,7 +1009,7 @@ do
             </div><!-- end container -->
         </section>
 
-        <footer id="footer" class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
