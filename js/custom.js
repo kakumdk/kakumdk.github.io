@@ -67,10 +67,10 @@ function openCategory(evt, catName) {
     evt.currentTarget.className += " active";
 }
 
-/**************************************
+/******************************************************************************************************************
  File Name: custom.js
  Custom
- **************************************/
+ ******************************************************************************************************************/
 $(function() {
 
     $("#head").load("content/head.html");
@@ -433,4 +433,58 @@ function writeSocialShareLinks(region) {
             '<a class="whatsapp-mobile" href="'+whatsapp_phone+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
             '<a href="'+mail+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
     }
+}
+
+/******************************************************************************************************************/
+/************************************** ADS ***********************************************************************/
+/******************************************************************************************************************/
+$(function() {
+    readFile("ads/ads.json", function(text){
+        $('.ads').html(writeAds300x600(JSON.parse(text)));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text)));
+        $('.ads').append(writeAds300x600(JSON.parse(text)));
+    });
+
+});
+function writeAds300x600(data) {
+    var output = "";
+    var random = data[Math.floor(Math.random() * data.length)];
+    output += '' +
+        '<div class="widget">' +
+        '<div class="banner-spot clearfix">' +
+        '<div class="banner-img">' +
+        '<a href="'+random['url']+'"><img src="'+random['img300x600']+'" alt="" class="img-fluid"></a>' +
+        '</div><!-- end banner-img -->' +
+        '</div><!-- end banner -->' +
+        '</div><!-- end widget -->' +
+        '';
+    return output;
+}
+function writeAds728x90(data) {
+    var output = "";
+    var random = data[Math.floor(Math.random() * data.length)];
+    output += '' +
+        '<div class="widget">' +
+        '<div class="banner-spot clearfix">' +
+        '<div class="banner-img">' +
+        '<a href="'+random['url']+'"><img src="'+random['img728x90']+'" alt="" class="img-fluid"></a>' +
+        '</div><!-- end banner-img -->' +
+        '</div><!-- end banner -->' +
+        '</div><!-- end widget -->' +
+        '';
+    return output;
+}
+function writeAds1200x1200(data) {
+    var output = "";
+    var random = data[Math.floor(Math.random() * data.length)];
+    output += '' +
+        '<div class="widget">' +
+        '<div class="banner-spot clearfix">' +
+        '<div class="banner-img">' +
+        '<a href="'+random['url']+'"><img src="'+random['img1200x1200']+'" alt="" class="img-fluid"></a>' +
+        '</div><!-- end banner-img -->' +
+        '</div><!-- end banner -->' +
+        '</div><!-- end widget -->' +
+        '';
+    return output;
 }
