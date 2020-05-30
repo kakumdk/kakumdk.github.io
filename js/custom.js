@@ -209,7 +209,7 @@ function writeBlogsHomepage(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= 4) {
+        if (itr >= 5) {
             output += '<div class="blog-box row hidden">';
         }
         else {
@@ -249,7 +249,7 @@ function writeBlogs(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= 4) {
+        if (itr >= 5) {
             output += '<div class="col-md-6 hidden">';
         }
         else {
@@ -292,7 +292,7 @@ function writeBlogTypes(data) {
                 data[i]['file'].replace(".json", ".html");
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
-                if (itr >= 4) {
+                if (itr >= 5) {
                     output += '<div class="blog-box row hidden">';
                 }
                 else {
@@ -340,7 +340,7 @@ function writeBlogTypeCategories(data) {
                 data[i]['file'].replace(".json", ".html");
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
-                if (itr >= 4) {
+                if (itr >= 5) {
                     output += '<div class="blog-box hidden">';
                 }
                 else {
@@ -440,49 +440,100 @@ function writeSocialShareLinks(region) {
 /******************************************************************************************************************/
 $(function() {
     readFile("ads/ads.json", function(text){
-        $('.ads').html(writeAds300x600(JSON.parse(text)));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text)));
-        $('.ads').append(writeAds300x600(JSON.parse(text)));
+        $('.ads').html(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'home'));
+    });
+    readFile("../ads/ads.json", function(text){
+        $('.ads').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'blogs'));
+    });
+    readFile("../../ads/ads.json", function(text){
+        $('.ads').html(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'type'));
+    });
+    readFile("../../../ads/ads.json", function(text){
+        $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
     });
 
 });
-function writeAds300x600(data) {
+function writeAds300x600(data, page) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
     output += '' +
         '<div class="widget">' +
         '<div class="banner-spot clearfix">' +
         '<div class="banner-img">' +
-        '<a href="'+random['url']+'"><img src="'+random['img300x600']+'" alt="" class="img-fluid"></a>' +
+        '';
+    if (page === 'home') {
+        output += '<a href="'+random['url']+'"><img src="'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+    }
+    else if (page === 'blogs') {
+        output += '<a href="'+random['url']+'"><img src="../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+    }
+    else if (page === 'type') {
+        output += '<a href="'+random['url']+'"><img src="../../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+    }
+    else if (page === 'cat') {
+        output += '<a href="'+random['url']+'"><img src="../../../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+    }
+        output += '' +
         '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
         '</div><!-- end widget -->' +
         '';
     return output;
 }
-function writeAds728x90(data) {
+function writeAds728x90(data, page) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
     output += '' +
         '<div class="widget">' +
         '<div class="banner-spot clearfix">' +
         '<div class="banner-img">' +
-        '<a href="'+random['url']+'"><img src="'+random['img728x90']+'" alt="" class="img-fluid"></a>' +
-        '</div><!-- end banner-img -->' +
+        '';
+    if (page === 'home') {
+        output += '<a href="'+random['url']+'"><img src="'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+    }
+    if (page === 'blogs') {
+        output += '<a href="'+random['url']+'"><img src="../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+    }
+    if (page === 'type') {
+        output += '<a href="'+random['url']+'"><img src="../../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+    }
+    if (page === 'cat') {
+        output += '<a href="'+random['url']+'"><img src="../../../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+    }
+    output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
         '</div><!-- end widget -->' +
         '';
     return output;
 }
-function writeAds1200x1200(data) {
+function writeAds1200x1200(data, page) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
     output += '' +
         '<div class="widget">' +
         '<div class="banner-spot clearfix">' +
-        '<div class="banner-img">' +
-        '<a href="'+random['url']+'"><img src="'+random['img1200x1200']+'" alt="" class="img-fluid"></a>' +
-        '</div><!-- end banner-img -->' +
+        '<div class="banner-img">';
+    if (page === 'home') {
+        output += '<a href="'+random['url']+'"><img src="'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+    }
+    if (page === 'blogs') {
+        output += '<a href="'+random['url']+'"><img src="../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+    }
+    if (page === 'type') {
+        output += '<a href="'+random['url']+'"><img src="../../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+    }
+    if (page === 'cat') {
+        output += '<a href="'+random['url']+'"><img src="../../../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+    }
+    output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
         '</div><!-- end widget -->' +
         '';
