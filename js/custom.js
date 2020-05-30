@@ -461,6 +461,10 @@ $(function() {
     });
     readFile("../../../ads/ads.json", function(text){
         $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
+        $('.ads-page-2').html(writeAds728x90(JSON.parse(text), 'cat'));
+        $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
+        $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'cat'));
+        $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'cat'));
     });
 
 });

@@ -995,6 +995,8 @@ do
                                 </div>
                             </div>
 
+                            <div class="ads-page-2"></div><!-- end ads-page-2 -->
+
                         </div><!-- end page-wrapper -->
                     </div><!-- end col -->
 
