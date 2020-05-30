@@ -440,28 +440,29 @@ function writeSocialShareLinks(region) {
 /******************************************************************************************************************/
 $(function() {
     readFile("ads/ads.json", function(text){
-        $('.ads').html(writeAds300x600(JSON.parse(text), 'home'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').html(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
     });
     readFile("../ads/ads.json", function(text){
-        $('.ads').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'blogs'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
         $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
     });
     readFile("../../ads/ads.json", function(text){
-        $('.ads').html(writeAds300x600(JSON.parse(text), 'type'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'type'));
     });
     readFile("../../../ads/ads.json", function(text){
         $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         setTimeout(function() {
             $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
         }, 3000);
