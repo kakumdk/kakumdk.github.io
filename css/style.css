@@ -403,7 +403,7 @@ div.tab button:hover {
 **************************************/
 
 .section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     display: block;
     position: relative;
     background-color: #ffffff;
@@ -794,7 +794,7 @@ div.tab button:hover {
 }
 
 .page-title {
-    padding: 3rem 0;
+    padding: 2rem 0 1.5rem 0;
     background-color: #edeff2;
 }
 
