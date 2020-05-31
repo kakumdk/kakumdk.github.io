@@ -567,7 +567,10 @@ function writeAds1200x1200(data, page) {
     return output;
 }
 function adShowHide(ad) {
-    $('div.'+ad+'.sidebar .widget').prepend('<span class="ad-open">></span><span class="ad-close">x</span>');
+    $('div.'+ad+'.sidebar .widget').prepend('' +
+        '<span class="ad-open">Open Ad <i class="fa fa-lock"></i></span>' +
+        '<span class="ad-close">Close Ad <i class="fa fa-unlock"></i></span>' +
+        '');
     $('div.'+ad+'.sidebar .widget .ad-open').hide();
     $('div.'+ad+'.sidebar .widget .ad-close').click(function(){
         $(this).parent().children('.banner-spot').hide();
@@ -581,7 +584,10 @@ function adShowHide(ad) {
     });
 }
 function adShowHidePage(ad) {
-    $('div.'+ad).prepend('<span class="ad-open">></span><span class="ad-close">x</span>');
+    $('div.'+ad).prepend('' +
+        '<span class="ad-open">Open Ad <i class="fa fa-lock"></i></span>' +
+        '<span class="ad-close">Close Ad <i class="fa fa-unlock"></i></span>' +
+        '');
     $('div.'+ad+' .ad-open').hide();
     $('div.'+ad+' .ad-close').click(function(){
         $(this).parent().children('.row').hide();
