@@ -390,14 +390,14 @@ function writeBlogsFooter(data) {
             }
         }
     }
+    var f_itr = 0;
     $.each(allCat, function(i, el){
-        var itr = 0;
         if($.inArray(el, uniqueCat) === -1) {
-            if (itr <= 5) {
+            if (f_itr <= 3) {
                 uniqueCat[i] = el;
                 output += '<li><a href="'+el+'" title="">'+i+'</a></li>';
+                f_itr = f_itr + 1;
             }
-            itr = itr + 1;
         }
     });
     return output;
