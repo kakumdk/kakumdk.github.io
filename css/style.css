@@ -1785,6 +1785,97 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
     padding-top: 8px;
     padding-left: 6px;
 }
+.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse {
+    background-color: #0678be !important;
+    padding: 0 !important;
+    box-shadow: none;
+}
+.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand {
+    padding: 0 0 0 16px;
+}
+.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
+    height: 50px;
+}
+#navbarCollapse {
+    padding: 0 !important;
+    background-color: #0678be !important;
+}
+#navbarCollapse .nav-item {
+    padding: 17px 2px;
+}
+#navbarCollapse .nav-item:hover {
+    background-color: #fff;
+}
+#navbarCollapse .nav-item .nav-link {
+    text-transform: revert;
+    font-size: 14px;
+}
+#navbarCollapse .nav-item .nav-link:hover {
+    color: #000 !important;
+}
+.blog-meta .bg-orange,
+.blog-meta span.bg-orange:hover,
+body .page-title .bg-orange, .masonry-blog .masonry-box:hover .blog-meta span.bg-orange, .page-wrapper .color-orange a {
+    background-color: #7cbc48 !important;
+}
+body .blog-meta small a, body .blog-meta small {
+    text-transform: none;
+}
+footer {
+    background-color: #064771 !important;
+}
+body .footer p,
+body .footer a,
+body .footer .copyright {
+    color: #fff !important;
+}
+body .footer .link-widget li {
+    border-color: #0965a1;
+}
+body .footer .link-widget li:hover {
+    border-bottom: 1px dashed #fff !important;
+}
+body .footer a:hover, body .footer .fa:hover, body .footer .fa:focus {
+    color: #fff !important;
+}
+body .dmtop, body .search-form .btn:hover, body .search-form .btn:focus, body .search-form .btn {
+    background-color: #0678be !important;
+}
+body a {
+    color: #4e4e4e !important;
+}
+body a:hover {
+    color: #4e4e4e !important;
+    /*border-bottom: 1px solid #fff !important;*/
+}
+body .page-title {
+    background-image: url(../images/bg-shapes.svg);
+    background-position: 10px 1000px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 30s linear infinite alternate;
+    background-color: #064771;
+}
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 50% 0;
+    }
+}
+body .page-title h2, body .page-title h2 small,
+body .page-title .breadcrumb li, body .page-title .breadcrumb li:before, body .page-title .breadcrumb li a {
+    color: #fff !important;
+}
+body .page-title .breadcrumb li a:hover {
+    border-bottom: 1px solid #fff !important;
+}
+.tag-cloud-single span, .page-title i, .btn:hover, .sitemap-wrapper .year, .btn:focus, .navbar-inverse .navbar-toggler {
+    background-color: #7cbc48 !important;
+}
+.section .page-wrapper .color-orange > a:hover {
+    color: #fff !important;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
