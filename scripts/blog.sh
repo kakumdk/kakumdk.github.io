@@ -114,7 +114,7 @@ do
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-list bg-orange"></i> Blogs <small class="hidden-xs-down hidden-sm-down">Nulla felis eros, varius sit amet volutpat non. </small></h2>
+                        <h2><i class="fa fa-list bg-orange"></i> Blogs <small class="hidden-xs-down hidden-sm-down">Technology is a useful servant but a dangerous master. </small></h2>
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
@@ -380,7 +380,7 @@ do
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-file bg-orange"></i> '$_type' <small class="hidden-xs-down hidden-sm-down">Nulla felis eros, varius sit amet volutpat non. </small></h2>
+                        <h2><i class="fa fa-file bg-orange"></i> '$_type' <small class="hidden-xs-down hidden-sm-down">Technology is a useful servant but a dangerous master. </small></h2>
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
@@ -642,7 +642,7 @@ do
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-tag bg-orange"></i> '$_category' <small class="hidden-xs-down hidden-sm-down">Nulla felis eros, varius sit amet volutpat non. </small></h2>
+                        <h2><i class="fa fa-tag bg-orange"></i> '$_category' <small class="hidden-xs-down hidden-sm-down">Technology is a useful servant but a dangerous master. </small></h2>
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
