@@ -30,16 +30,39 @@ do
 <head>
     <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta http-equiv="content-language" content="en" />
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
     <title>Blogs - Tech Blog</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
+    <meta name="author" content="Karthik Kumar D K">
+    <link rel="canonical" href="https://kakumdk.github.io/blogs/" />
+    <link rel="shortlink" href="https://kakumdk.github.io/blogs/index.html" />
+    <link rel="revision" href="https://kakumdk.github.io/blogs/" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Blogs - Tech Blog" />
+    <meta property="og:description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
+    <meta property="og:url" content="https://kakumdk.github.io/blogs/" />
+<!--    <meta name="google-site-verification" content="" />-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "UA-93645678-6");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="../../../images/logo.png" type="image/x-icon" />
@@ -296,16 +319,40 @@ do
 <head>
     <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="en" />
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
     <title>'$_type' - Tech Blog</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
+    <meta name="author" content="Karthik Kumar D K">
+    <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
+    <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/index.html" />
+    <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="'$_type' - Tech Blog" />
+    <meta property="og:description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
+    <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
+<!--    <meta name="google-site-verification" content="" />-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "UA-93645678-6");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="../../../images/logo.png" type="image/x-icon" />
@@ -558,16 +605,40 @@ do
 <head>
     <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="en" />
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
     <title>'$_category' - Tech Blog</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
+    <meta name="author" content="Karthik Kumar D K">
+    <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
+    <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
+    <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="'$_category' - Tech Blog" />
+    <meta property="og:description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
+    <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
+<!--    <meta name="google-site-verification" content="" />-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "UA-93645678-6");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="../../../images/logo.png" type="image/x-icon" />
@@ -826,16 +897,40 @@ do
 <head>
     <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="en" />
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
     <title>'$title' - Tech Blog</title>
-    <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Karthik Kumar D K">
+    <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="'$title' - Tech Blog" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+<!--    <meta name="google-site-verification" content="" />-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "UA-93645678-6");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="../../../images/logo.png" type="image/x-icon" />
