@@ -1808,7 +1808,7 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
     background-color: #fff;
 }
 #navbarCollapse .nav-item .nav-link {
-    text-transform: revert;
+    text-transform: unset;
     font-size: 14px;
 }
 #navbarCollapse .nav-item .nav-link:hover {
@@ -1889,6 +1889,10 @@ body .page-title .breadcrumb li a:hover {
 .section .page-wrapper .color-orange > a:hover {
     color: #fff !important;
 }
+.blog-top i.fa.fa-book {
+    color: #269f42 !important;
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -1898,6 +1902,75 @@ and (max-device-width : 480px) {
     .post-sharing .whatsapp-mobile { display: inline-block !important; }
     .social .whatsapp-desktop { display: none !important; }
     .social .whatsapp-mobile { display: inline-block !important; }
+    button.navbar-toggler.navbar-toggler-right {
+        border: none;
+        font-size: 12px;
+    }
+    nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse {
+        height: 60px;
+    }
+    .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
+        height: 50px;
+        padding-top: 6px;
+    }
+    #navbarCollapse .nav-item {
+        padding: 0px 2px;
+    }
+    .page-title.lb.single-wrapper {
+        margin-top: 2.9rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+    section.section .col-lg-3.col-md-12.col-sm-12.col-xs-12 {
+        display: none;
+    }
+    section.section {
+        padding: 1rem 0;
+    }
+    section.section.first-section {
+        margin-top: 2rem;
+    }
+    .blog-list .blog-meta.big-meta h4 {
+        margin-top: 0 !important;
+        padding: 0.5rem 0 0 0 !important;
+    }
+    .blog-meta.big-meta p {
+        margin-bottom: 0 !important;
+    }
+    .blog-grid-system .color-orange {
+        margin-top: 0.5rem !important;
+    }
+    .blog-grid-system .blog-meta.big-meta h4 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .blog-meta.big-meta.text-center {
+        margin: -4rem 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+    }
+    .blog-custom-build .blog-meta.big-meta h4 {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .blog-title-area h3 {
+        font-size: 20px !important;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .blog-title-area span {
+        margin: 0;
+    }
+    .post-sharing .btn-lg {
+        margin: 0 8px;
+    }
+    .post-sharing-top.post-sharing {
+        margin-top: 0.5rem;
+    }
+    .blog-title-area, .single-post-media {
+        margin-bottom: 1rem !important
+    }
+    .custombox {
+        padding: 16px 0 0 0 !important
+    }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -1914,6 +1987,153 @@ and (max-width : 320px) {
     .post-sharing .whatsapp-mobile { display: inline-block !important; }
     .social .whatsapp-desktop { display: none !important; }
     .social .whatsapp-mobile { display: inline-block !important; }
+    button.navbar-toggler.navbar-toggler-right {
+        border: none;
+        font-size: 12px;
+    }
+    nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse {
+        height: 60px;
+    }
+    .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
+        height: 50px;
+        padding-top: 6px;
+    }
+    #navbarCollapse .nav-item {
+        padding: 0px 2px;
+    }
+    .page-title.lb.single-wrapper {
+        margin-top: 2.9rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+    section.section .col-lg-3.col-md-12.col-sm-12.col-xs-12 {
+        display: none;
+    }
+    section.section {
+        padding: 1rem 0;
+    }
+    section.section.first-section {
+        margin-top: 2rem;
+    }
+    .blog-list .blog-meta.big-meta h4 {
+        margin-top: 0 !important;
+        padding: 0.5rem 0 0 0 !important;
+    }
+    .blog-meta.big-meta p {
+        margin-bottom: 0 !important;
+    }
+    .blog-grid-system .color-orange {
+        margin-top: 0.5rem !important;
+    }
+    .blog-grid-system .blog-meta.big-meta h4 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .blog-meta.big-meta.text-center {
+        margin: -4rem 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+    }
+    .blog-custom-build .blog-meta.big-meta h4 {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .blog-title-area h3 {
+        font-size: 20px !important;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .blog-title-area span {
+        margin: 0;
+    }
+    .post-sharing .btn-lg {
+        margin: 0 8px;
+    }
+    .post-sharing-top.post-sharing {
+        margin-top: 0.5rem;
+    }
+    .blog-title-area, .single-post-media {
+        margin-bottom: 1rem !important
+    }
+    .custombox {
+        padding: 16px 0 0 0 !important
+    }
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .post-sharing .whatsapp-desktop { display: none !important; }
+    .post-sharing .whatsapp-mobile { display: inline-block !important; }
+    .social .whatsapp-desktop { display: none !important; }
+    .social .whatsapp-mobile { display: inline-block !important; }
+    button.navbar-toggler.navbar-toggler-right {
+        border: none;
+        font-size: 12px;
+    }
+    nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse {
+        height: 60px;
+    }
+    .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
+        height: 50px;
+        padding-top: 6px;
+    }
+    #navbarCollapse .nav-item {
+        padding: 0px 2px;
+    }
+    .page-title.lb.single-wrapper {
+        margin-top: 2.9rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+    section.section .col-lg-3.col-md-12.col-sm-12.col-xs-12 {
+        display: none;
+    }
+    section.section {
+        padding: 1rem 0;
+    }
+    section.section.first-section {
+        margin-top: 2rem;
+    }
+    .blog-list .blog-meta.big-meta h4 {
+        margin-top: 0 !important;
+        padding: 0.5rem 0 0 0 !important;
+    }
+    .blog-meta.big-meta p {
+        margin-bottom: 0 !important;
+    }
+    .blog-grid-system .color-orange {
+        margin-top: 0.5rem !important;
+    }
+    .blog-grid-system .blog-meta.big-meta h4 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .blog-meta.big-meta.text-center {
+        margin: -4rem 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+    }
+    .blog-custom-build .blog-meta.big-meta h4 {
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .blog-title-area h3 {
+        font-size: 20px !important;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .blog-title-area span {
+        margin: 0;
+    }
+    .post-sharing .btn-lg {
+        margin: 0 8px;
+    }
+    .post-sharing-top.post-sharing {
+        margin-top: 0.5rem;
+    }
+    .blog-title-area, .single-post-media {
+        margin-bottom: 1rem !important
+    }
+    .custombox {
+        padding: 16px 0 0 0 !important
+    }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen
@@ -1959,13 +2179,4 @@ and (min-width : 1824px) {
     .post-sharing .whatsapp-mobile { display: none !important; }
     .social .whatsapp-desktop { display: inline-block !important; }
     .social .whatsapp-mobile { display: none !important; }
-}
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-    .post-sharing .whatsapp-desktop { display: none !important; }
-    .post-sharing .whatsapp-mobile { display: inline-block !important; }
-    .social .whatsapp-desktop { display: none !important; }
-    .social .whatsapp-mobile { display: inline-block !important; }
 }
