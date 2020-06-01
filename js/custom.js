@@ -234,8 +234,14 @@ function writeBlogsHomepage(data) {
             '<small>by ' + data[i]['author'] + '</small>' +
             // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
             '</div><!-- end meta -->' +
-            '</div><!-- end blog-box -->' +
-            '<hr class="invis">';
+            '</div><!-- end blog-box -->';
+        output += '<hr class="invis">';
+        if (itr === 2) {
+            output += '<div class="ads-page-6"></div>';
+        }
+        if (itr === 4) {
+            output += '<div class="ads-page-6"></div>';
+        }
     }
     return output;
 }
@@ -276,6 +282,9 @@ function writeBlogs(data) {
             '</div><!-- end blog-box -->' +
             '</div>'+
             '<hr class="invis">';
+        if (itr % 2 === 0) {
+            output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
+        }
     }
     return output;
 }
@@ -319,6 +328,12 @@ function writeBlogTypes(data) {
                     '</div><!-- end meta -->' +
                     '</div><!-- end blog-box -->' +
                     '<hr class="invis">';
+                if (itr === 2) {
+                    output += '<div class="ads-page-4"></div>';
+                }
+                if (itr === 4) {
+                    output += '<div class="ads-page-4"></div>';
+                }
             }
             continue;
         }
@@ -367,6 +382,12 @@ function writeBlogTypeCategories(data) {
                     '</div><!-- end meta -->' +
                     '</div><!-- end blog-box -->' +
                     '<hr class="invis">';
+                if (itr === 2) {
+                    output += '<div class="ads-page-3"></div>';
+                }
+                if (itr === 4) {
+                    output += '<div class="ads-page-3"></div>';
+                }
             }
             continue;
         }
