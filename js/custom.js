@@ -115,6 +115,10 @@ $(function() {
     });
     $(".post-sharing-top").html(writeSocialShareLinks('blog'));
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
+
+    readFile("blogs-content-merged/blogs.json", function(text){
+        $(".techblog-links").html(writeLinks(JSON.parse(text)));
+    });
 });
 function readFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -454,6 +458,32 @@ function writeSocialShareLinks(region) {
             '<a class="whatsapp-mobile" href="'+whatsapp_phone+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
             '<a href="'+mail+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
     }
+}
+function writeLinks(data) {
+    var output = '';
+    var itr = 0;
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        for (var j = 0; j < type.length; j++) {
+            var currentType = type[j].trim().replace(" ", "-");
+            for (var k = 0; k < category.length; k++) {
+                var currentCat = category[k].trim().replace(" ", "-");
+                var baseurl = window.location.origin;
+                var typeLink = baseurl+'/blogs/'+currentType;
+                var catLink = baseurl+'/blogs/'+currentType+'/'+currentCat;
+                var path = baseurl+'/blogs/' + currentType + '/' +
+                    category[0].trim().replace(" ", "-") + '/' +
+                    data[i]['file'].replace(".json", ".html");
+                output += '<div class="site-links">' +
+                    '<span><i class="fa fa-file"></i> <a href="'+typeLink+'">'+type[j]+'</a></span>' +
+                    '<span><i class="fa fa-tag"></i> <a href="'+catLink+'">'+currentCat+'</a></span>' +
+                    '<span><i class="fa fa-book"></i> <a href="'+path+'">'+path+'</a></span>' +
+                    '</div>';
+            }
+        }
+    }
+    return output;
 }
 
 /******************************************************************************************************************/
