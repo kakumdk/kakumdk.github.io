@@ -269,9 +269,9 @@ do
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/privacy.html">Privacy</a></li>
                                 <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/sitemap.xml">Sitemap</a></li>
+                                <li><a href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -556,9 +556,9 @@ do
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/privacy.html">Privacy</a></li>
                                 <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/sitemap.xml">Sitemap</a></li>
+                                <li><a href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -852,9 +852,9 @@ do
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/privacy.html">Privacy</a></li>
                                 <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/sitemap.xml">Sitemap</a></li>
+                                <li><a href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -1175,9 +1175,9 @@ do
                         <div class="link-widget">
                             <ul>
                                 <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="/privacy.html">Privacy</a></li>
                                 <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/sitemap.xml">Sitemap</a></li>
+                                <li><a href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
