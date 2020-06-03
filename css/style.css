@@ -1795,7 +1795,8 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
     padding: 0 0 0 16px;
 }
 .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
-    height: 50px;
+    /*height: 36px;*/
+    padding-top: 6px;
 }
 #navbarCollapse {
     padding: 0 !important;
@@ -1925,7 +1926,7 @@ and (max-device-width : 480px) {
     }
     .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
         height: 50px;
-        padding-top: 6px;
+        padding-top: 12px;
     }
     #navbarCollapse .nav-item {
         padding: 0px 2px;
@@ -2010,7 +2011,7 @@ and (max-width : 320px) {
     }
     .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
         height: 50px;
-        padding-top: 6px;
+        padding-top: 12px;
     }
     #navbarCollapse .nav-item {
         padding: 0px 2px;
@@ -2088,7 +2089,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
         height: 50px;
-        padding-top: 6px;
+        padding-top: 12px;
     }
     #navbarCollapse .nav-item {
         padding: 0px 2px;
