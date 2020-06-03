@@ -106,26 +106,37 @@ do
                 <a class="navbar-brand" href="/index.html"><img src="../../../images/version/tech-logo.png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-
-                    </ul>
-                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Science">Science</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Technology">Technology</a>
+                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
+                            <a class="nav-link" href="/blogs/Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Travel">Travel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs/News">News</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -396,26 +407,37 @@ do
                 <a class="navbar-brand" href="/index.html"><img src="../../../images/version/tech-logo.png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-
-                    </ul>
-                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Science">Science</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Technology">Technology</a>
+                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
+                            <a class="nav-link" href="/blogs/Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Travel">Travel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs/News">News</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -682,26 +704,37 @@ do
                 <a class="navbar-brand" href="/index.html"><img src="../../../images/version/tech-logo.png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-
-                    </ul>
-                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Science">Science</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Technology">Technology</a>
+                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
+                            <a class="nav-link" href="/blogs/Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Travel">Travel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs/News">News</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -973,26 +1006,37 @@ do
                 <a class="navbar-brand" href="/index.html"><img src="../../../images/version/tech-logo.png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-
-                    </ul>
-                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Science">Science</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Technology">Technology</a>
+                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media">Social Media</a>
+                            <a class="nav-link" href="/blogs/Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Worldwide">Worldwide</a>
+                            <a class="nav-link" href="/blogs/Travel">Travel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs/News">News</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html">Links</a>
                         </li>
                     </ul>
                 </div>
