@@ -1795,7 +1795,7 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
 }
 .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse .navbar-brand img {
     /*height: 36px;*/
-    padding-top: 6px;
+    padding-top: 0;
 }
 #navbarCollapse {
     padding: 0 !important;
