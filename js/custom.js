@@ -651,3 +651,28 @@ function adShowHidePage(ad) {
         $(this).siblings('.ad-close').show();
     });
 }
+
+
+/******************************************************************************************************************/
+/************************************** ADS ***********************************************************************/
+/******************************************************************************************************************/
+$(function() {
+    readFile("quotes/quotes.json", function (text) {
+        $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
+    });
+    readFile("../quotes/quotes.json", function (text) {
+        $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
+    });
+    readFile("../../quotes/quotes.json", function (text) {
+        $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
+    });
+    readFile("../../../quotes/quotes.json", function (text) {
+        $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
+    });
+});
+function writeQuotes(data) {
+    var output = "";
+    var random = data[Math.floor(Math.random() * data.length)];
+    output += '<span>'+random['quote']+'</span>';
+    return output;
+}

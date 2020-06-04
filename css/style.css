@@ -1905,7 +1905,9 @@ body .page-title .breadcrumb li a:hover {
 .banner-img img {
     max-width: 830px !important;
 }
-
+body .peoples-quotes {
+    font-size: 11px;
+}
 
 
 
