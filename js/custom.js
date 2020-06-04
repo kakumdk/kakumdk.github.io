@@ -502,8 +502,8 @@ $(function() {
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
-        adShowHidePage('ads-page-5');
+        // $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
+        // adShowHidePage('ads-page-5');
     });
     readFile("../../ads/ads.json", function(text){
         $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
