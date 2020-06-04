@@ -1,6 +1,6 @@
 /**************************************
     File Name: custom.js
-    Template Name: Tech Blog
+    Template Name: People's Blog
     Created By: HTML.Design
     http://themeforest.net/user/wpdestek
 **************************************/

@@ -35,8 +35,8 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>Blogs - Tech Blog</title>
-    <meta name="description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
+    <title>Blogs - People's Blog</title>
+    <meta name="description" content="People's Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/index.html" />
@@ -50,8 +50,8 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Blogs - Tech Blog" />
-    <meta property="og:description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
+    <meta property="og:title" content="Blogs - People's Blog" />
+    <meta property="og:description" content="People's Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -238,7 +238,7 @@ do
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
-                            <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
+                            <p>People's Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -292,7 +292,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright People's Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -336,8 +336,8 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_type' - Tech Blog</title>
-    <meta name="description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
+    <title>'$_type' - People's Blog</title>
+    <meta name="description" content="People's Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/index.html" />
@@ -351,8 +351,8 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_type' - Tech Blog" />
-    <meta property="og:description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
+    <meta property="og:title" content="'$_type' - People's Blog" />
+    <meta property="og:description" content="People's Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -536,7 +536,7 @@ do
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
-                            <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
+                            <p>People's Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -590,7 +590,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright People's Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -633,8 +633,8 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_category' - Tech Blog</title>
-    <meta name="description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
+    <title>'$_category' - People's Blog</title>
+    <meta name="description" content="People's Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
@@ -648,8 +648,8 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_category' - Tech Blog" />
-    <meta property="og:description" content="Tech Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
+    <meta property="og:title" content="'$_category' - People's Blog" />
+    <meta property="og:description" content="People's Blog is a technology related blog, we share science, technology and news. Technology is a useful servant but a dangerous master" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -843,7 +843,7 @@ do
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
-                            <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
+                            <p>People's Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -897,7 +897,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright People's Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -936,7 +936,7 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$title' - Tech Blog</title>
+    <title>'$title' - People's Blog</title>
     <meta name="description" content="">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
@@ -951,7 +951,7 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$title' - Tech Blog" />
+    <meta property="og:title" content="'$title' - People's Blog" />
     <meta property="og:description" content="" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
 <!--    <meta name="google-site-verification" content="" />-->
@@ -1177,7 +1177,7 @@ do
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
-                            <p>Tech Blog is a technology related blog, we share science, technology and news.</p>
+                            <p>People's Blog is a technology related blog, we share science, technology and news.</p>
                             <div class="post-sharing-footer social">
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -1231,7 +1231,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Tech Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright People's Blog 2020. All Rights Reserved.</div>
                 </div>
             </div>
         </div><!-- end container -->
