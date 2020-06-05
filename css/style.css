@@ -1906,7 +1906,8 @@ body .page-title .breadcrumb li a:hover {
     max-width: 830px !important;
 }
 body .peoples-quotes {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
 .footer-text .read-more {
     border-bottom: 1px dashed #0965a1;
