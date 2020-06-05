@@ -916,7 +916,7 @@ do
 
 </body>
 </html>' > $blogsfolderpath'/'index.html
-       categories+="<small><a href="'/blogs/'${_type// /-}'/'${_category// /-}" title="">'$_category'</a></small>"
+       categories+='<small><a href="/blogs/'${_type// /-}'/'${_category// /-}'">'$_category'</a></small>'
        ## Article
        blogspath=$blogsfolderpath'/'$file
        blogsfilepath=${blogspath/%.json}.html
