@@ -1991,6 +1991,18 @@ and (max-device-width : 480px) {
         line-height: 1.5;
         margin-bottom: 0;
     }
+    .blog-content h3 {
+        font-size: 18px !important;
+    }
+    .price {
+        position: absolute;
+        color: #fff;
+        right: 0;
+        padding: 0 4px 0 0;
+        border-radius: 10px;
+        font-size: 9px;
+        font-weight: bold;
+    }
     .blog-title-area span {
         margin: 0;
     }
@@ -2076,6 +2088,18 @@ and (max-width : 320px) {
         line-height: 1.5;
         margin-bottom: 0;
     }
+    .blog-content h3 {
+        font-size: 18px !important;
+    }
+    .price {
+        position: absolute;
+        color: #fff;
+        right: 0;
+        padding: 0 4px 0 0;
+        border-radius: 10px;
+        font-size: 9px;
+        font-weight: bold;
+    }
     .blog-title-area span {
         margin: 0;
     }
@@ -2153,6 +2177,18 @@ only screen and (min-device-pixel-ratio : 1.5) {
         font-size: 20px !important;
         line-height: 1.5;
         margin-bottom: 0;
+    }
+    .blog-content h3 {
+        font-size: 18px !important;
+    }
+    .price {
+        position: absolute;
+        color: #fff;
+        right: 0;
+        padding: 0 4px 0 0;
+        border-radius: 10px;
+        font-size: 9px;
+        font-weight: bold;
     }
     .blog-title-area span {
         margin: 0;
