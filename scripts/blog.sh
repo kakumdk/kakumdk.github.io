@@ -937,7 +937,7 @@ do
 
     <!-- Site Metas -->
     <title>'$title' - Peoples Blog</title>
-    <meta name="description" content="">
+    <meta name="description" content="'$title' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology..">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
@@ -952,7 +952,7 @@ do
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$title' - Peoples Blog" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="'$title' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
