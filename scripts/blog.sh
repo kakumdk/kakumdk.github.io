@@ -1258,3 +1258,35 @@ done
 #################################################################################################################
 blogscontentmerged=$pwd/blogs-content-merged
 jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
+
+#################################################################################################################
+#################################################################################################################
+##### SiteMap
+#################################################################################################################
+#################################################################################################################
+date=$(date +'%Y-%m-%d')
+echo '<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+          <url><loc>https://kakumdk.github.io</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://kakumdk.github.io/blogs</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://kakumdk.github.io/blogs/Sci-Tech</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://kakumdk.github.io/blogs/Lifestyle</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://kakumdk.github.io/blogs/Food</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://kakumdk.github.io/blogs/Travel</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://kakumdk.github.io/blogs/News</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
+data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
+for row in $(echo "${data}" | jq -r '.[] | @base64'); do
+    _jq() {
+     echo ${row} | base64 --decode | jq -r ${1}
+    }
+    IFS=',' read -ra category_array <<< "$(_jq '.category')"
+    categories=''
+    for _category_i in "${category_array[@]}"
+    do
+      _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
+      echo '          <url><loc>https://kakumdk.github.io/blogs/'$(_jq '.type')'/'${_category// /-}'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      jsonfile=$(_jq '.file')
+      echo '          <url><loc>https://kakumdk.github.io/blogs/'$(_jq '.type')'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+    done
+done
+echo '</urlset>' >> $pwd'/sitemap.xml'
