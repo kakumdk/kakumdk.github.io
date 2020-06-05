@@ -1908,7 +1908,12 @@ body .page-title .breadcrumb li a:hover {
 body .peoples-quotes {
     font-size: 10px;
 }
-
+.footer-text .read-more {
+    border-bottom: 1px dashed #0965a1;
+}
+.footer-text .read-more:hover {
+    border-bottom: 1px dashed #fff;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
