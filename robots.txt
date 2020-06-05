@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /scripts/
+Disallow: /scripts/blogs.sh
+Disallow: /jq
+Disallow: /blogs-content
+Disallow: /blogs-content/
+Disallow: /blogs-content-merged
+Disallow: /blogs-content-merged/
