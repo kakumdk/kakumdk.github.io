@@ -1766,7 +1766,7 @@ div.ads-page-5 .ad-open, div.ads-page-5 .ad-close,
 div.ads-page-6 .ad-open, div.ads-page-6 .ad-close {
     color: #000;
     font-size: 8px;
-    padding: 0 8px 0 0;
+    padding: 0 2px 0 0;
     background-color: #fff;
     position: relative;
     display: flex;
@@ -1783,7 +1783,7 @@ div.ads-page-3 .ad-open i, div.ads-page-3 .ad-close i,
 div.ads-page-4 .ad-open i, div.ads-page-4 .ad-close i,
 div.ads-page-5 .ad-open i, div.ads-page-5 .ad-close i,
 div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
-    padding: 10px 0 0 6px;
+    padding: 10px 0 0 2px;
 }
 .navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse {
     background-color: #0678be !important;
