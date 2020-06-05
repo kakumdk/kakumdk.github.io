@@ -547,16 +547,16 @@ function writeAds300x600(data, page) {
         '<div class="banner-img">' +
         '';
     if (page === 'home') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="'+random['img300x600']+'" alt="" class="img-fluid"></a>';
     }
     else if (page === 'blogs') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
     }
     else if (page === 'type') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
     }
     else if (page === 'cat') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../../../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../../../'+random['img300x600']+'" alt="" class="img-fluid"></a>';
     }
         output += '' +
         '</div><!-- end banner-img -->' +
@@ -574,16 +574,16 @@ function writeAds728x90(data, page) {
         '<div class="banner-spot clearfix">' +
         '<div class="banner-img">';
     if (page === 'home') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="'+random['img728x90']+'" alt="" class="img-fluid"></a>';
     }
     if (page === 'blogs') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
     }
     if (page === 'type') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
     }
     if (page === 'cat') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../../../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../../../'+random['img728x90']+'" alt="" class="img-fluid"></a>';
     }
     output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
@@ -600,16 +600,16 @@ function writeAds1200x1200(data, page) {
         '<div class="banner-spot clearfix">' +
         '<div class="banner-img">';
     if (page === 'home') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
     }
     if (page === 'blogs') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
     }
     if (page === 'type') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
     }
     if (page === 'cat') {
-        output += '<a target="_blank" href="'+random['url']+'"><img src="../../../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img src="../../../'+random['img1200x1200']+'" alt="" class="img-fluid"></a>';
     }
     output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
