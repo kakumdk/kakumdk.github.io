@@ -957,7 +957,7 @@ div.tab button:hover {
     border-radius: 3px;
 }
 
-.blog-title-area h3 {
+.blog-title-area h1, .blog-title-area h3 {
     font-size: 41px;
     line-height: 50px;
     margin-bottom: 7px;
@@ -1870,6 +1870,14 @@ body .page-title {
         background-position: 50% 0;
     }
 }
+body .page-title h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+body .page-title h1, body .page-title h1 small,
 body .page-title h2, body .page-title h2 small,
 body .page-title .breadcrumb li, body .page-title .breadcrumb li:before, body .page-title .breadcrumb li a {
     color: #fff !important;
@@ -1888,6 +1896,10 @@ body .page-title .breadcrumb li a:hover {
 }
 .section .page-wrapper .color-orange > a:hover {
     color: #fff !important;
+}
+.blog-top h1 {
+    font-size: 19px !important;
+    margin-bottom: 0;
 }
 .blog-top i.fa.fa-book {
     color: #269f42 !important;
@@ -1986,12 +1998,12 @@ and (max-device-width : 480px) {
         font-size: 20px;
         padding: 0.5rem;
     }
-    .blog-title-area h3 {
+    .blog-title-area h1, .blog-title-area h3 {
         font-size: 20px !important;
         line-height: 1.5;
         margin-bottom: 0;
     }
-    .blog-content h3 {
+    .blog-content h1, .blog-content h3 {
         font-size: 18px !important;
     }
     .price {
@@ -2083,12 +2095,12 @@ and (max-width : 320px) {
         font-size: 20px;
         padding: 0.5rem;
     }
-    .blog-title-area h3 {
+    .blog-title-area h1, .blog-title-area h3 {
         font-size: 20px !important;
         line-height: 1.5;
         margin-bottom: 0;
     }
-    .blog-content h3 {
+    .blog-content h1, .blog-content h3 {
         font-size: 18px !important;
     }
     .price {
@@ -2173,12 +2185,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
         font-size: 20px;
         padding: 0.5rem;
     }
-    .blog-title-area h3 {
+    .blog-title-area h1, .blog-title-area h3 {
         font-size: 20px !important;
         line-height: 1.5;
         margin-bottom: 0;
     }
-    .blog-content h3 {
+    .blog-content h1, .blog-content h3 {
         font-size: 18px !important;
     }
     .price {

@@ -149,7 +149,7 @@ do
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-list bg-orange"></i> Blogs <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h2>
+                        <h1><i class="fa fa-list bg-orange"></i> Blogs <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h1>
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
@@ -409,7 +409,7 @@ do
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-file bg-orange"></i> '$_type' <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h2>
+                        <h1><i class="fa fa-file bg-orange"></i> '$_type' <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h1>
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
@@ -666,7 +666,7 @@ do
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-tag bg-orange"></i> '$_category' <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h2>
+                        <h1><i class="fa fa-tag bg-orange"></i> '$_category' <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h1>
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
@@ -931,7 +931,7 @@ do
 
                                 <span class="color-orange"><a href="/blogs/'${_type// /-}'" title="'$_type'">'$_type'</a></span>
 
-                                <h3>'$title'</h3>
+                                <h1>'$title'</h1>
 
                                 <div class="blog-meta big-meta">
                                     <small>'$created'</small>
