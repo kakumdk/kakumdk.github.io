@@ -166,21 +166,6 @@ do
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads-blogs sidebar">
 
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
-
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_03.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
                         </div><!-- end sidebar -->
                     </div><!-- end col -->
 
@@ -188,26 +173,7 @@ do
                         <div class="page-wrapper">
                             <div class="blog-grid-system">
                                 <div class="row blog-list-blogs">
-                                    <div class="col-md-6">
-                                        `<div class="blog-box">
-                                            <div class="post-media">
-                                                <a href="single.html" title="">
-                                                    <img src="upload/tech_menu_01.jpg" alt="" class="img-fluid">
-                                                    <div class="hovereffect">
-                                                        <span></span>
-                                                    </div><!-- end hover -->
-                                                </a>
-                                            </div><!-- end media -->
-                                            <div class="blog-meta big-meta">
-                                                <span class="color-orange"><a href="category-01.html" title="">Gadgets</a></span>
-                                                <h4><a href="single.html" title="">We visited the ancient theater in Macedonia</a></h4>
-                                                <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                                <small><a href="single.html" title="">14 July, 2017</a></small>
-                                                <small><a href="author.html" title="">by Jack</a></small>
-                                                <small><a href="single.html" title=""><i class="fa fa-eye"></i> 2887</a></small>
-                                            </div><!-- end meta -->
-                                        </div><!-- end blog-box -->
-                                    </div><!-- end col -->
+
                                 </div>
                             </div>
                         </div><!-- end page-wrapper -->
@@ -240,11 +206,7 @@ do
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
+
                             </div>
 
                             <hr class="invis">
@@ -264,11 +226,7 @@ do
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
-                                <li><a href="#">Marketing <span>(21)</span></a></li>
-                                <li><a href="#">SEO Service <span>(15)</span></a></li>
-                                <li><a href="#">Digital Agency <span>(31)</span></a></li>
-                                <li><a href="#">Make Money <span>(22)</span></a></li>
-                                <li><a href="#">Blogging <span>(66)</span></a></li>
+
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -468,24 +426,6 @@ do
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-list-type blog-list clearfix">
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="single.html" title="">
-                                                <img src="../../../upload/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="single.html" title="">Top 10 phone applications and 2017 mobile design awards</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small class="firstsmall"><a class="bg-orange" href="category-01.html" title="">Reviews</a></small>
-                                        <small><a href="single.html" title="">21 July, 2017</a></small>
-                                        <small><a href="author.html" title="">by Matilda</a></small>
-                                        <small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
 
                             </div><!-- end blog-list -->
                         </div><!-- end page-wrapper -->
@@ -508,21 +448,6 @@ do
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads-type sidebar">
 
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
-
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_03.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
                         </div><!-- end sidebar -->
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -538,11 +463,7 @@ do
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
+
                             </div>
 
                             <hr class="invis">
@@ -562,11 +483,7 @@ do
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
-                                <li><a href="#">Marketing <span>(21)</span></a></li>
-                                <li><a href="#">SEO Service <span>(15)</span></a></li>
-                                <li><a href="#">Digital Agency <span>(31)</span></a></li>
-                                <li><a href="#">Make Money <span>(22)</span></a></li>
-                                <li><a href="#">Blogging <span>(66)</span></a></li>
+
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -766,33 +683,6 @@ do
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-list-category blog-custom-build">
-                                <div class="blog-box">
-                                    <div class="post-media">
-                                        <a href="single.html" title="">
-                                            <img src="upload/tech_menu_20.jpg" alt="" class="img-fluid">
-                                            <div class="hovereffect">
-                                                <span class="videohover"></span>
-                                            </div>
-                                            <!-- end hover -->
-                                        </a>
-                                    </div>
-                                    <!-- end media -->
-                                    <div class="blog-meta big-meta text-center">
-                                        <div class="post-sharing">
-                                            <ul class="list-inline">
-                                                <li><a href="#" class="fb-button btn btn-primary"><i class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a></li>
-                                                <li><a href="#" class="tw-button btn btn-primary"><i class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a></li>
-                                                <li><a href="#" class="gp-button btn btn-primary"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div><!-- end post-sharing -->
-                                        <h4><a href="single.html" title="">The golden rules you need to know for a positive life</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enimcerat elicerat eli nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        <small><a href="tech-category.html" title="">Videos</a></small>
-                                        <small><a href="single.html" title="">18 July, 2017</a></small>
-                                        <small><a href="author.html" title="">by Amanda</a></small>
-                                        <small><a href="#" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
 
                             </div><!-- end blog-list -->
                         </div><!-- end page-wrapper -->
@@ -815,21 +705,6 @@ do
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads sidebar">
 
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
-
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_03.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
                         </div><!-- end sidebar -->
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -845,11 +720,7 @@ do
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
+
                             </div>
 
                             <hr class="invis">
@@ -869,11 +740,7 @@ do
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
-                                <li><a href="#">Marketing <span>(21)</span></a></li>
-                                <li><a href="#">SEO Service <span>(15)</span></a></li>
-                                <li><a href="#">Digital Agency <span>(31)</span></a></li>
-                                <li><a href="#">Make Money <span>(22)</span></a></li>
-                                <li><a href="#">Blogging <span>(66)</span></a></li>
+
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -1069,13 +936,7 @@ do
                                 </div><!-- end meta -->
 
                                 <div class="post-sharing-top post-sharing">
-                                    <ul class="list-inline">
-                                        <li><a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
+
                                 </div><!-- end post-sharing -->
                             </div><!-- end title -->
 
@@ -1095,13 +956,7 @@ do
 
                                 <br/>
                                 <div class="post-sharing-top post-sharing">
-                                    <ul class="list-inline">
-                                        <li><a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>
-                                        <li><a class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>
-                                    </ul>
+
                                 </div><!-- end post-sharing -->
 
                                 <!-- div class="post-sharing-bottom post-sharing">
@@ -1115,17 +970,7 @@ do
                                 </div --><!-- end post-sharing -->
                             </div><!-- end title -->
 
-                            <div class="ads-page-1">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="banner-spot clearfix">
-                                        <div class="banner-img">
-                                            <img src="../../../upload/banner_01.jpg" alt="" class="img-fluid">
-                                        </div><!-- end banner-img -->
-                                    </div><!-- end banner -->
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-                            </div><!-- end ads-page-1 -->
+                            <div class="ads-page-1"></div><!-- end ads-page-1 -->
 
                             <hr class="invis1">
                             <div class="custombox clearfix">
@@ -1152,29 +997,7 @@ do
 
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads sidebar">
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
 
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_03.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
-
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="../../../upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
                         </div><!-- end sidebar -->
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -1190,11 +1013,7 @@ do
                             <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
+
                             </div>
 
                             <hr class="invis">
@@ -1214,11 +1033,7 @@ do
                         <h2 class="widget-title">Popular Categories</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
-                                <li><a href="#">Marketing <span>(21)</span></a></li>
-                                <li><a href="#">SEO Service <span>(15)</span></a></li>
-                                <li><a href="#">Digital Agency <span>(31)</span></a></li>
-                                <li><a href="#">Make Money <span>(22)</span></a></li>
-                                <li><a href="#">Blogging <span>(66)</span></a></li>
+
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
