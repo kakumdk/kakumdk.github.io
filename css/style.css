@@ -1932,12 +1932,14 @@ body .peoples-quotes {
 }
 .price {
     position: absolute;
-    color: #888;
+    color: #000;
     right: 0;
-    padding: 8px 12px 0 0;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    background-color: #fff;
+    margin: 8px 6px 0 0;
+    line-height: 16px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -2014,10 +2016,11 @@ and (max-device-width : 480px) {
         position: absolute;
         color: #888;
         right: 0;
-        padding: 0 4px 0 0;
-        border-radius: 10px;
-        font-size: 9px;
-        font-weight: bold;
+        padding: 0 4px;
+        border-radius: 4px;
+        font-size: 8px;
+        margin: 4px;
+        line-height: 10px;
     }
     .blog-title-area span {
         margin: 0;
@@ -2111,10 +2114,11 @@ and (max-width : 320px) {
         position: absolute;
         color: #888;
         right: 0;
-        padding: 0 4px 0 0;
-        border-radius: 10px;
-        font-size: 9px;
-        font-weight: bold;
+        padding: 0 4px;
+        border-radius: 4px;
+        font-size: 8px;
+        margin: 4px;
+        line-height: 10px;
     }
     .blog-title-area span {
         margin: 0;
@@ -2201,10 +2205,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
         position: absolute;
         color: #888;
         right: 0;
-        padding: 0 4px 0 0;
-        border-radius: 10px;
-        font-size: 9px;
-        font-weight: bold;
+        padding: 0 4px;
+        border-radius: 4px;
+        font-size: 8px;
+        margin: 4px;
+        line-height: 10px;
     }
     .blog-title-area span {
         margin: 0;
