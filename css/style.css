@@ -1754,6 +1754,9 @@ hr.invis3 {
 div.page-wrapper .banner-spot {
     padding: 1px !important;
 }
+.banner-spot {
+    border: none !important;
+}
 div.ads-home.sidebar .widget .ad-open, div.ads-home.sidebar .widget .ad-close,
 div.ads-blogs.sidebar .widget .ad-open, div.ads-blogs.sidebar .widget .ad-close,
 div.ads-type.sidebar .widget .ad-open, div.ads-type.sidebar .widget .ad-close,
@@ -1929,11 +1932,12 @@ body .peoples-quotes {
 }
 .price {
     position: absolute;
-    color: #fff;
+    color: #888;
     right: 0;
     padding: 8px 12px 0 0;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -2008,7 +2012,7 @@ and (max-device-width : 480px) {
     }
     .price {
         position: absolute;
-        color: #fff;
+        color: #888;
         right: 0;
         padding: 0 4px 0 0;
         border-radius: 10px;
@@ -2105,7 +2109,7 @@ and (max-width : 320px) {
     }
     .price {
         position: absolute;
-        color: #fff;
+        color: #888;
         right: 0;
         padding: 0 4px 0 0;
         border-radius: 10px;
@@ -2195,7 +2199,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .price {
         position: absolute;
-        color: #fff;
+        color: #888;
         right: 0;
         padding: 0 4px 0 0;
         border-radius: 10px;
