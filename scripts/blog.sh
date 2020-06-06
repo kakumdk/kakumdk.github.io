@@ -1124,10 +1124,18 @@ echo '</urlset>' >> $pwd'/sitemap.xml'
 #################################################################################################################
 #################################################################################################################
 echo 'User-agent: *
-Disallow: /scripts/
-Disallow: /scripts/blogs.sh
-Disallow: /jq
+Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
 Disallow: /blogs-content-merged
-Disallow: /blogs-content-merged/' > $pwd'/robots.txt'
+Disallow: /blogs-content-merged/
+Disallow: /quotes/quotes.json
+Disallow: /scripts/blogs.sh
+Disallow: /author.html
+Disallow: /category-01.html
+Disallow: /category-02.html
+Disallow: /category-03.html
+Disallow: /contact.html
+Disallow: /jq
+Disallow: /single.html
+Disallow: /tmp.html' > $pwd'/robots.txt'
