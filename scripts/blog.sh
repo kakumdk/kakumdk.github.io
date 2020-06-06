@@ -104,7 +104,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img src="../../../upload/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img alt="Peoples Blog" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -204,7 +204,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img alt="Peoples Blog" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -212,12 +212,6 @@ do
 
                             <hr class="invis">
 
-        <!--                    <div class="newsletter-widget text-left">-->
-        <!--                        <form class="form-inline">-->
-        <!--                            <input type="text" class="form-control" placeholder="Enter your email address">-->
-        <!--                            <button type="submit" class="btn btn-primary">SUBMIT</button>-->
-        <!--                        </form>-->
-        <!--                    </div>&lt;!&ndash; end newsletter &ndash;&gt;-->
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
@@ -364,7 +358,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img src="../../../upload/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img alt="Peoples Blog" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -462,7 +456,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img alt="Peoples Blog" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -470,12 +464,6 @@ do
 
                             <hr class="invis">
 
-        <!--                    <div class="newsletter-widget text-left">-->
-        <!--                        <form class="form-inline">-->
-        <!--                            <input type="text" class="form-control" placeholder="Enter your email address">-->
-        <!--                            <button type="submit" class="btn btn-primary">SUBMIT</button>-->
-        <!--                        </form>-->
-        <!--                    </div>&lt;!&ndash; end newsletter &ndash;&gt;-->
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
@@ -621,7 +609,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img src="../../../upload/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img alt="Peoples Blog" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -720,7 +708,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img alt="Peoples Blog" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -728,12 +716,6 @@ do
 
                             <hr class="invis">
 
-        <!--                    <div class="newsletter-widget text-left">-->
-        <!--                        <form class="form-inline">-->
-        <!--                            <input type="text" class="form-control" placeholder="Enter your email address">-->
-        <!--                            <button type="submit" class="btn btn-primary">SUBMIT</button>-->
-        <!--                        </form>-->
-        <!--                    </div>&lt;!&ndash; end newsletter &ndash;&gt;-->
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
@@ -874,7 +856,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img src="../../../upload/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img alt="Peoples Blog" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -945,7 +927,7 @@ do
                             </div><!-- end title -->
 
                             <div class="single-post-media">
-                                <img src="../../../'$banner'" alt="" class="img-fluid">
+                                <img alt="Peoples Blog" src="../../../'$banner'" class="img-fluid">
                             </div><!-- end media -->
 
                             <div class="blog-content">
@@ -963,15 +945,6 @@ do
 
                                 </div><!-- end post-sharing -->
 
-                                <!-- div class="post-sharing-bottom post-sharing">
-                                    <ul class="list-inline">
-                                        <li><a href="#" class="btn btn-primary btn-li"><i class="fa fa-linkedin pr-2"></i> <span class="down-mobile">Linkedin</span></a></li>
-                                        <li><a href="#" class="btn btn-primary btn-tw"><i class="fa fa-twitter pr-2"></i> <span class="down-mobile">Twitter</span></a></li>
-                                        <li><a href="#" class="btn btn-primary btn-fb"><i class="fa fa-facebook pr-2"></i> <span class="down-mobile">Facebook</span></a></li>
-                                        <li><a href="#" class="btn btn-primary btn-whatsapp"><i class="fa fa-whatsapp pr-2"></i> <span class="down-mobile">Whatsapp</span></a></li>
-                                        <li><a href="#" class="btn btn-primary btn-email"><i class="fa fa-envelope pr-2"></i> <span class="down-mobile">Email</span></a></li>
-                                    </ul>
-                                </div --><!-- end post-sharing -->
                             </div><!-- end title -->
 
                             <div class="ads-page-1"></div><!-- end ads-page-1 -->
@@ -1014,7 +987,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img src="../../../upload/logo.png" alt="" class="img-fluid"></a>
+                            <a href="/"><img alt="Peoples Blog" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -1022,12 +995,6 @@ do
 
                             <hr class="invis">
 
-        <!--                    <div class="newsletter-widget text-left">-->
-        <!--                        <form class="form-inline">-->
-        <!--                            <input type="text" class="form-control" placeholder="Enter your email address">-->
-        <!--                            <button type="submit" class="btn btn-primary">SUBMIT</button>-->
-        <!--                        </form>-->
-        <!--                    </div>&lt;!&ndash; end newsletter &ndash;&gt;-->
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
