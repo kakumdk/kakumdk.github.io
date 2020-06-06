@@ -53,6 +53,7 @@ do
     <meta property="og:title" content="Blogs - Peoples Blog" />
     <meta property="og:description" content="Blogs - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/" />
+    <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
@@ -312,6 +313,7 @@ do
     <meta property="og:title" content="'$_type' - Peoples Blog" />
     <meta property="og:description" content="'$_type' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
+    <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
@@ -568,6 +570,7 @@ do
     <meta property="og:title" content="'$_category' - Peoples Blog" />
     <meta property="og:description" content="'$_category' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
+    <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
@@ -821,6 +824,7 @@ do
     <meta property="og:title" content="'$title' - Peoples Blog" />
     <meta property="og:description" content="'$title' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
