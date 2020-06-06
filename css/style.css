@@ -1752,7 +1752,7 @@ hr.invis3 {
     padding: 1rem 2rem !important;
 }
 div.page-wrapper .banner-spot {
-    padding: 1px !important;
+    padding: 0 !important;
 }
 .banner-spot {
     border: none !important;
