@@ -1138,4 +1138,5 @@ Disallow: /category-03.html
 Disallow: /contact.html
 Disallow: /jq
 Disallow: /single.html
-Disallow: /tmp.html' > $pwd'/robots.txt'
+Disallow: /tmp.html
+Sitemap: https://kakumdk.github.io/sitemap.xml' > $pwd'/robots.txt'
