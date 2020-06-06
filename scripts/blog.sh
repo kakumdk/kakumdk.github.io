@@ -108,36 +108,36 @@ do
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs">Blogs</a>
+                            <a class="nav-link" href="/blogs" title="Blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech" title="Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
+                            <a class="nav-link" href="/blogs/Lifestyle" title="Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food">Food</a>
+                            <a class="nav-link" href="/blogs/Food" title="Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel">Travel</a>
+                            <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News">News</a>
+                            <a class="nav-link" href="/blogs/News" title="News">News</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html">Links</a>
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -232,10 +232,10 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy.html">Privacy</a></li>
-                                <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/links.html">Links</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -362,36 +362,36 @@ do
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs">Blogs</a>
+                            <a class="nav-link" href="/blogs" title="Blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech" title="Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
+                            <a class="nav-link" href="/blogs/Lifestyle" title="Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food">Food</a>
+                            <a class="nav-link" href="/blogs/Food" title="Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel">Travel</a>
+                            <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News">News</a>
+                            <a class="nav-link" href="/blogs/News" title="News">News</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html">Links</a>
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -484,10 +484,10 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy.html">Privacy</a></li>
-                                <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/links.html">Links</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -613,36 +613,36 @@ do
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs">Blogs</a>
+                            <a class="nav-link" href="/blogs" title="Blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech" title="Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
+                            <a class="nav-link" href="/blogs/Lifestyle" title="Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food">Food</a>
+                            <a class="nav-link" href="/blogs/Food" title="Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel">Travel</a>
+                            <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News">News</a>
+                            <a class="nav-link" href="/blogs/News" title="News">News</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html">Links</a>
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -736,10 +736,10 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy.html">Privacy</a></li>
-                                <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/links.html">Links</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -860,36 +860,36 @@ do
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs">Blogs</a>
+                            <a class="nav-link" href="/blogs" title="Blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech">Sci-Tech</a>
+                            <a class="nav-link" href="/blogs/Sci-Tech" title="Sci-Tech">Sci-Tech</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle">Lifestyle</a>
+                            <a class="nav-link" href="/blogs/Lifestyle" title="Lifestyle">Lifestyle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food">Food</a>
+                            <a class="nav-link" href="/blogs/Food" title="Food">Food</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel">Travel</a>
+                            <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News">News</a>
+                            <a class="nav-link" href="/blogs/News" title="News">News</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/privacy.html">Privacy</a>
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/terms-and-conditions.html">T & C</a>
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html">Links</a>
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
                     </ul>
                 </div>
@@ -1015,10 +1015,10 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a href="/about.html">About</a></li>
-                                <li><a href="/privacy.html">Privacy</a></li>
-                                <li><a href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a href="/links.html">Links</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
