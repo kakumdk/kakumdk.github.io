@@ -36,7 +36,7 @@ do
 
     <!-- Site Metas -->
     <title>Blogs - Peoples Blog</title>
-    <meta name="description" content="Blogs - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology..">
+    <meta name="description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/index.html" />
@@ -51,7 +51,7 @@ do
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="Blogs - Peoples Blog" />
-    <meta property="og:description" content="Blogs - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
+    <meta property="og:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/" />
     <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
@@ -296,7 +296,7 @@ do
 
     <!-- Site Metas -->
     <title>'$_type' - Peoples Blog</title>
-    <meta name="description" content="'$_type' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology..">
+    <meta name="description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/index.html" />
@@ -311,7 +311,7 @@ do
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$_type' - Peoples Blog" />
-    <meta property="og:description" content="'$_type' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
+    <meta property="og:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
     <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
@@ -553,7 +553,7 @@ do
 
     <!-- Site Metas -->
     <title>'$_category' - Peoples Blog</title>
-    <meta name="description" content="'$_category' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology..">
+    <meta name="description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
@@ -568,7 +568,7 @@ do
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$_category' - Peoples Blog" />
-    <meta property="og:description" content="'$_category' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
+    <meta property="og:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
@@ -807,7 +807,7 @@ do
 
     <!-- Site Metas -->
     <title>'$title' - Peoples Blog</title>
-    <meta name="description" content="'$title' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology..">
+    <meta name="description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Karthik Kumar D K">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
@@ -822,7 +822,7 @@ do
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$title' - Peoples Blog" />
-    <meta property="og:description" content="'$title' - Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.." />
+    <meta property="og:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta property="og:image" content="../../../images/logo.png" />
 <!--    <meta name="google-site-verification" content="" />-->
