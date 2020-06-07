@@ -37,7 +37,7 @@ do
     <!-- Site Metas -->
     <title>Blogs - Peoples Blog</title>
     <meta name="description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Karthik Kumar D K">
+    <meta name="author" content="Peoples Blogs">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/index.html" />
     <link rel="revision" href="https://kakumdk.github.io/blogs/" />
@@ -46,7 +46,7 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
@@ -291,7 +291,7 @@ do
     <!-- Site Metas -->
     <title>'$_type' - Peoples Blog</title>
     <meta name="description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Karthik Kumar D K">
+    <meta name="author" content="Peoples Blogs">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/index.html" />
     <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
@@ -300,7 +300,7 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
@@ -542,7 +542,7 @@ do
     <!-- Site Metas -->
     <title>'$_category' - Peoples Blog</title>
     <meta name="description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Karthik Kumar D K">
+    <meta name="author" content="Peoples Blogs">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
@@ -551,7 +551,7 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
@@ -790,7 +790,7 @@ do
     <!-- Site Metas -->
     <title>'$title' - Peoples Blog</title>
     <meta name="description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Karthik Kumar D K">
+    <meta name="author" content="Peoples Blogs">
     <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
@@ -799,7 +799,7 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Karthik Kumar D K (https://karthikkumardk.co.in)" />
+    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />

@@ -1921,8 +1921,8 @@ body .page-title .breadcrumb li a:hover {
     max-width: 830px !important;
 }
 body .peoples-quotes {
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 14px;
+    /*font-weight: bold;*/
 }
 .footer-text .read-more {
     border-bottom: 1px dashed #0965a1;
@@ -1936,7 +1936,7 @@ body .peoples-quotes {
     right: 0;
     padding: 0 6px;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #fff;
     margin: 8px 6px 0 0;
     line-height: 16px;
@@ -2018,7 +2018,7 @@ and (max-device-width : 480px) {
         right: 0;
         padding: 0 4px;
         border-radius: 4px;
-        font-size: 8px;
+        font-size: 10px;
         margin: 4px;
         line-height: 10px;
     }
@@ -2116,7 +2116,7 @@ and (max-width : 320px) {
         right: 0;
         padding: 0 4px;
         border-radius: 4px;
-        font-size: 8px;
+        font-size: 10px;
         margin: 4px;
         line-height: 10px;
     }
@@ -2207,7 +2207,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         right: 0;
         padding: 0 4px;
         border-radius: 4px;
-        font-size: 8px;
+        font-size: 10px;
         margin: 4px;
         line-height: 10px;
     }
