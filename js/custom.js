@@ -698,7 +698,14 @@ $(function() {
         return 'speechSynthesis' in window
     }
     if (supportsSpeechSynthesis()) {
-        $(".read-article").click(function () {
+        var readArticle = $(".read-article");
+        var readPause = $(".read-article-pause");
+        var readResume = $(".read-article-resume");
+        var readStop = $(".read-article-stop");
+        readPause.hide();
+        readResume.hide();
+        readStop.hide();
+        readArticle.click(function () {
             var contentReadable = getReadableContentforArticle();
             var utterance = new SpeechSynthesisUtterance(contentReadable);
             var voices = window.speechSynthesis.getVoices()
@@ -709,6 +716,10 @@ $(function() {
                     utterance.lang = voices[i].lang;
                 }
             }
+            readArticle.hide();
+            readResume.hide();
+            readPause.show();
+            readStop.show();
             // window.speechSynthesis.speak(utterance);
             speechUtteranceChunker(utterance, {
                 chunkLength: 130
@@ -716,13 +727,25 @@ $(function() {
                 console.log('done');
             });
         });
-        $(".read-article-pause").click(function () {
+        readPause.click(function () {
+            readArticle.hide();
+            readResume.show();
+            readPause.hide();
+            readStop.show();
             window.speechSynthesis.pause();
         });
-        $(".read-article-resume").click(function () {
+        readResume.click(function () {
+            readArticle.hide();
+            readResume.hide();
+            readPause.show();
+            readStop.show();
             window.speechSynthesis.resume();
         });
-        $(".read-article-stop").click(function () {
+        readStop.click(function () {
+            readArticle.show();
+            readResume.hide();
+            readPause.hide();
+            readStop.hide();
             speechUtteranceChunker.cancel = true;
             window.speechSynthesis.cancel();
         });
