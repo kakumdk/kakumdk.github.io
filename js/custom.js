@@ -691,8 +691,8 @@ $(function() {
                 contentTmp += content[i];
             }
         }
-        var contentReadable = title.trim();
-        // var contentReadable = title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim();
+        // var contentReadable = title.trim();
+        var contentReadable = title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim();
         console.log(contentReadable);
         alert(contentReadable);
         readViaSpeechSynthesis(contentReadable);
