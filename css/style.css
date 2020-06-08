@@ -1805,7 +1805,7 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
     background-color: #0678be !important;
 }
 #navbarCollapse .nav-item {
-    padding: 17px 2px;
+    /*padding: 17px 2px;*/
 }
 #navbarCollapse .nav-item:hover {
     background-color: #fff;
@@ -1813,6 +1813,7 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
 #navbarCollapse .nav-item .nav-link {
     text-transform: unset;
     font-size: 14px;
+    padding: 30px 15px;
 }
 #navbarCollapse .nav-item .nav-link:hover {
     color: #000 !important;
@@ -1969,6 +1970,9 @@ and (max-device-width : 480px) {
     #navbarCollapse .nav-item {
         padding: 0px 2px;
     }
+    #navbarCollapse .nav-item .nav-link {
+        padding: 12px 15px;
+    }
     .page-title.lb.single-wrapper {
         margin-top: 2.9rem;
         padding: 1rem 0 0.5rem 0;
@@ -2067,6 +2071,9 @@ and (max-width : 320px) {
     #navbarCollapse .nav-item {
         padding: 0px 2px;
     }
+    #navbarCollapse .nav-item .nav-link {
+        padding: 12px 15px;
+    }
     .page-title.lb.single-wrapper {
         margin-top: 2.9rem;
         padding: 1rem 0 0.5rem 0;
@@ -2157,6 +2164,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     #navbarCollapse .nav-item {
         padding: 0px 2px;
+    }
+    #navbarCollapse .nav-item .nav-link {
+        padding: 12px 15px;
     }
     .page-title.lb.single-wrapper {
         margin-top: 2.9rem;
