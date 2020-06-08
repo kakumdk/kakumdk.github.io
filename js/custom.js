@@ -722,7 +722,7 @@ $(function() {
             readStop.show();
             // window.speechSynthesis.speak(utterance);
             speechUtteranceChunker(utterance, {
-                chunkLength: 130
+                chunkLength: 90
             }, function () {
                 console.log('done');
             });
