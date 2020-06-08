@@ -684,21 +684,19 @@ function writeQuotes(data) {
 $(function() {
     $(".read-article").click(function () {
         var title = $('.read-article-title').html();
-        // console.log(title);
-        readCurrentArticle(title);
         var content = $('.read-article-content').html().toString().replace( /(<([^>]+)>)/ig, '');
         var contentTmp = '';
-        for( var i = 0; i < content.length; i++ ) {
-            if( !(content[i] == '\n' || content[i] == '\r') ) {
+        for (var i = 0; i < content.length; i++) {
+            if (!(content[i] === '\n' || content[i] === '\r')) {
                 contentTmp += content[i];
             }
         }
-        var contentReadable = contentTmp.replace(/\s+/g, ' ').trim();
+        var contentReadable = title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim();
         // console.log(contentReadable);
-        readCurrentArticle(contentReadable);
+        readViaSpeechSynthesis(contentReadable);
     });
 });
-function readCurrentArticle(text) {
+function readViaSpeechSynthesis(text) {
     var speakObj = new SpeechSynthesisUtterance();
     speakObj.text = text;
     speakObj.voice = speechSynthesis.getVoices().filter(function(voice) {
