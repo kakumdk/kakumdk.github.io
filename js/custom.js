@@ -703,7 +703,7 @@ function readViaSpeechSynthesis(text) {
         if (
             voice.name === "English_(Received_Pronunciation)"
             || voice.name === "Google UK English Female"
-            || voice.name === "Microsoft Zira Desktop - English (United States)"
+            // || voice.name === "Microsoft Zira Desktop - English (United States)"
         ) {
             return voice.name;
         }
