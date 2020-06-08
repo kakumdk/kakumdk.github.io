@@ -690,8 +690,8 @@ function getReadableContentforArticle() {
             contentTmp += content[i];
         }
     }
-    return title.trim();
-    // return title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim();
+    // return title.trim();
+    return title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim();
 }
 $(function() {
     supportsSpeechSynthesis = function (){
@@ -709,7 +709,12 @@ $(function() {
                     utterance.lang = voices[i].lang;
                 }
             }
-            window.speechSynthesis.speak(utterance);
+            // window.speechSynthesis.speak(utterance);
+            speechUtteranceChunker(utterance, {
+                chunkLength: 130
+            }, function () {
+                console.log('done');
+            });
         });
         $(".read-article-pause").click(function () {
             window.speechSynthesis.pause();
@@ -718,278 +723,61 @@ $(function() {
             window.speechSynthesis.resume();
         });
         $(".read-article-stop").click(function () {
+            speechUtteranceChunker.cancel = true;
             window.speechSynthesis.cancel();
         });
     }
 });
-
-
-
-// function test1() {
-//     if (window.SpeechSynthesisUtterance === undefined) {
-//         document.getElementById('ss-unsupported').classList.remove('hidden');
-//         ['button-speak-ss', 'button-stop-ss', 'button-pause-ss', 'button-resume-ss'].forEach(function(elementId) {
-//             document.getElementById(elementId).setAttribute('disabled', 'disabled');
-//         });
-//     } else {
-//         var text = document.getElementById('text');
-//         var voices = document.getElementById('voice');
-//         var rate = document.getElementById('rate');
-//         var pitch = document.getElementById('pitch');
-//         var log = document.getElementById('log');
-//
-//         // Workaround for a Chrome issue (#340160 - https://code.google.com/p/chromium/issues/detail?id=340160)
-//         var watch = setInterval(function() {
-//             // Load all voices available
-//             var voicesAvailable = speechSynthesis.getVoices();
-//
-//             if (voicesAvailable.length !== 0) {
-//                 for(var i = 0; i < voicesAvailable.length; i++) {
-//                     voices.innerHTML += '<option value="' + voicesAvailable[i].lang + '"' +
-//                         'data-voice-uri="' + voicesAvailable[i].voiceURI + '">' +
-//                         voicesAvailable[i].name +
-//                         (voicesAvailable[i].default ? ' (default)' : '') + '</option>';
-//                 }
-//
-//                 clearInterval(watch);
-//             }
-//         }, 1);
-//
-//         document.getElementById('button-speak-ss').addEventListener('click', function(event) {
-//             event.preventDefault();
-//
-//             var selectedVoice = voices.options[voices.selectedIndex];
-//
-//             // Create the utterance object setting the chosen parameters
-//             var utterance = new SpeechSynthesisUtterance();
-//
-//             utterance.text = text.value;
-//             utterance.voice = selectedVoice.getAttribute('data-voice-uri');
-//             utterance.lang = selectedVoice.value;
-//             utterance.rate = rate.value;
-//             utterance.pitch = pitch.value;
-//
-//             utterance.onstart = function() {
-//                 log.innerHTML = 'Speaker started' + '<br />' + log.innerHTML;
-//             };
-//
-//             utterance.onend = function() {
-//                 log.innerHTML = 'Speaker finished' + '<br />' + log.innerHTML;
-//             };
-//
-//             window.speechSynthesis.speak(utterance);
-//         });
-//
-//         document.getElementById('button-stop-ss').addEventListener('click', function(event) {
-//             event.preventDefault();
-//
-//             window.speechSynthesis.cancel();
-//             log.innerHTML = 'Speaker stopped' + '<br />' + log.innerHTML;
-//         });
-//
-//         document.getElementById('button-pause-ss').addEventListener('click', function(event) {
-//             event.preventDefault();
-//
-//             window.speechSynthesis.pause();
-//             log.innerHTML = 'Speaker paused' + '<br />' + log.innerHTML;
-//         });
-//
-//         document.getElementById('button-resume-ss').addEventListener('click', function(event) {
-//             event.preventDefault();
-//
-//             if (window.speechSynthesis.paused === true) {
-//                 window.speechSynthesis.resume();
-//                 log.innerHTML = 'Speaker resumed' + '<br />' + log.innerHTML;
-//             } else {
-//                 log.innerHTML = 'Unable to resume. Speaker is not paused.' + '<br />' + log.innerHTML;
-//             }
-//         });
-//
-//         document.getElementById('clear-all').addEventListener('click', function() {
-//             log.textContent = '';
-//         });
-//     }
-// }
-
-// onload = function() {
-//     if ('speechSynthesis' in window) with(speechSynthesis) {
-//         var synth = window.speechSynthesis;
-//         var voiceSelect = document.querySelector('#voices');
-//         var voices = [];
-//         function populateVoiceList() {
-//             voices = synth.getVoices().sort(function (a, b) {
-//                 const aname = a.name.toUpperCase(), bname = b.name.toUpperCase();
-//                 if ( aname < bname ) return -1;
-//                 else if ( aname == bname ) return 0;
-//                 else return +1;
-//             });
-//             var selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
-//             voiceSelect.innerHTML = '';
-//             for(i = 0; i < voices.length ; i++) {
-//                 var option = document.createElement('option');
-//                 option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
-//                 if(voices[i].default) {
-//                     option.textContent += ' -- DEFAULT';
-//                 }
-//                 option.setAttribute('data-lang', voices[i].lang);
-//                 option.setAttribute('data-name', voices[i].name);
-//                 voiceSelect.appendChild(option);
-//             }
-//             voiceSelect.selectedIndex = selectedIndex;
-//         }
-//         populateVoiceList();
-//         if (speechSynthesis.onvoiceschanged !== undefined) {
-//             speechSynthesis.onvoiceschanged = populateVoiceList;
-//         }
-//         var playEle = document.querySelector('#play');
-//         var pauseEle = document.querySelector('#pause');
-//         var stopEle = document.querySelector('#stop');
-//         var flag = false;
-//         playEle.addEventListener('click', onClickPlay);
-//         pauseEle.addEventListener('click', onClickPause);
-//         stopEle.addEventListener('click', onClickStop);
-//         function onClickPlay() {
-//             if (!flag) {
-//                 flag = true;
-//                 utterance = new SpeechSynthesisUtterance(document.querySelector('#description').textContent);
-//                 var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
-//                 for(i = 0; i < voices.length ; i++) {
-//                     if(voices[i].name === selectedOption) {
-//                         utterance.voice = voices[i];
-//                         break;
-//                     }
-//                 }
-//                 voiceSelect.onchange = function(){
-//                     onClickStop();
-//                     stopEle.className = '';
-//                     onClickPlay();
-//                     playEle.className = 'played';
-//                 }
-//                 utterance.onend = function() {
-//                     flag = false;
-//                     playEle.className = pauseEle.className = '';
-//                     stopEle.className = 'stopped';
-//                 };
-//                 playEle.className = 'played';
-//                 stopEle.className = '';
-//                 speak(utterance);
-//             }
-//             if (paused) {
-//                 playEle.className = 'played';
-//                 pauseEle.className = '';
-//                 resume();
-//             }
-//         }
-//         function onClickPause() {
-//             if (speaking && !paused) {
-//                 pauseEle.className = 'paused';
-//                 playEle.className = '';
-//                 pause();
-//             }
-//         }
-//         function onClickStop() {
-//             if (speaking) {
-//                 stopEle.className = 'stopped';
-//                 playEle.className = pauseEle.className = '';
-//                 flag = false;
-//                 cancel();
-//             }
-//         }
-//     }
-//     else {
-//         msg = document.createElement('h5');
-//         msg.textContent = "Detected no support for Speech Synthesis";
-//         msg.style.textAlign = 'center';
-//         msg.style.backgroundColor = 'red';
-//         msg.style.color = 'white';
-//         msg.style.marginTop = msg.style.marginBottom = 0;
-//         document.body.insertBefore(msg, document.querySelector('div'));
-//     }
-// }
-
-
-// function readtest1(contentReadable) {
-//     var myLongText = "This is some long text, oh my goodness look how long I'm getting, wooooohooo!";
-//     var utterance = new SpeechSynthesisUtterance(contentReadable);
-//     var voiceArr = speechSynthesis.getVoices();
-//     utterance.voice = voiceArr[2];
-//     console.log(voiceArr[2]);
-//     speechUtteranceChunker(utterance, {
-//         chunkLength: 150
-//     }, function () {
-//         console.log('done');
-//     });
-// }
-// var speechUtteranceChunker = function (utt, settings, callback) {
-//     settings = settings || {};
-//     var newUtt;
-//     var txt = (settings && settings.offset !== undefined ? utt.text.substring(settings.offset) : utt.text);
-//     if (utt.voice && utt.voice.voiceURI === 'native') { // Not part of the spec
-//         newUtt = utt;
-//         newUtt.text = txt;
-//         newUtt.addEventListener('end', function () {
-//             if (speechUtteranceChunker.cancel) {
-//                 speechUtteranceChunker.cancel = false;
-//             }
-//             if (callback !== undefined) {
-//                 callback();
-//             }
-//         });
-//     }
-//     else {
-//         var chunkLength = (settings && settings.chunkLength) || 160;
-//         var pattRegex = new RegExp('^[\\s\\S]{' + Math.floor(chunkLength / 2) + ',' + chunkLength + '}[.!?,]{1}|^[\\s\\S]{1,' + chunkLength + '}$|^[\\s\\S]{1,' + chunkLength + '} ');
-//         var chunkArr = txt.match(pattRegex);
-//         if (chunkArr[0] === undefined || chunkArr[0].length <= 2) {
-//             if (callback !== undefined) {
-//                 callback();
-//             }
-//             return;
-//         }
-//         var chunk = chunkArr[0];
-//         newUtt = new SpeechSynthesisUtterance(chunk);
-//         var x;
-//         for (x in utt) {
-//             if (utt.hasOwnProperty(x) && x !== 'text') {
-//                 newUtt[x] = utt[x];
-//             }
-//         }
-//         newUtt.addEventListener('end', function () {
-//             if (speechUtteranceChunker.cancel) {
-//                 speechUtteranceChunker.cancel = false;
-//                 return;
-//             }
-//             settings.offset = settings.offset || 0;
-//             settings.offset += chunk.length - 1;
-//             speechUtteranceChunker(utt, settings, callback);
-//         });
-//     }
-//     if (settings.modifier) {
-//         settings.modifier(newUtt);
-//     }
-//     console.log(newUtt); //IMPORTANT!! Do not remove: Logging the object out fixes some onend firing issues.
-//     //placing the speak invocation inside a callback fixes ordering and onend issues.
-//     setTimeout(function () {
-//         speechSynthesis.speak(newUtt);
-//     }, 0);
-// };
-
-
-// function readViaSpeechSynthesis(text) {
-//     var speakObj = new SpeechSynthesisUtterance();
-//     speakObj.text = text;
-//     speakObj.voice = speechSynthesis.getVoices().filter(function(voice) {
-//         if (voice.name === "English_(Received_Pronunciation)" || voice.name === "Google UK English Female"
-//             // || voice.name === "Microsoft Zira Desktop - English (United States)"
-//         ) {
-//             return voice.name;
-//         }
-//         // if (voice.name === "Google UK English Female") {
-//         //     return voice.name;
-//         // }
-//         // if (voice.name === "English_(Received_Pronunciation)") {
-//         //     return voice.name;
-//         // }
-//     })[0];
-//     window.speechSynthesis.speak(speakObj);
-// }
+var speechUtteranceChunker = function (utt, settings, callback) {
+    settings = settings || {};
+    var newUtt;
+    var txt = (settings && settings.offset !== undefined ? utt.text.substring(settings.offset) : utt.text);
+    if (utt.voice && utt.voice.voiceURI === 'native') { // Not part of the spec
+        newUtt = utt;
+        newUtt.text = txt;
+        newUtt.addEventListener('end', function () {
+            if (speechUtteranceChunker.cancel) {
+                speechUtteranceChunker.cancel = false;
+            }
+            if (callback !== undefined) {
+                callback();
+            }
+        });
+    }
+    else {
+        var chunkLength = (settings && settings.chunkLength) || 160;
+        var pattRegex = new RegExp('^[\\s\\S]{' + Math.floor(chunkLength / 2) + ',' + chunkLength + '}[.!?,]{1}|^[\\s\\S]{1,' + chunkLength + '}$|^[\\s\\S]{1,' + chunkLength + '} ');
+        var chunkArr = txt.match(pattRegex);
+        if (chunkArr[0] === undefined || chunkArr[0].length <= 2) {
+            if (callback !== undefined) {
+                callback();
+            }
+            return;
+        }
+        var chunk = chunkArr[0];
+        newUtt = new SpeechSynthesisUtterance(chunk);
+        var x;
+        for (x in utt) {
+            if (utt.hasOwnProperty(x) && x !== 'text') {
+                newUtt[x] = utt[x];
+            }
+        }
+        newUtt.addEventListener('end', function () {
+            if (speechUtteranceChunker.cancel) {
+                speechUtteranceChunker.cancel = false;
+                return;
+            }
+            settings.offset = settings.offset || 0;
+            settings.offset += chunk.length - 1;
+            speechUtteranceChunker(utt, settings, callback);
+        });
+    }
+    if (settings.modifier) {
+        settings.modifier(newUtt);
+    }
+    console.log(newUtt); //IMPORTANT!! Do not remove: Logging the object out fixes some onend firing issues.
+    //placing the speak invocation inside a callback fixes ordering and onend issues.
+    setTimeout(function () {
+        speechSynthesis.speak(newUtt);
+    }, 0);
+};
