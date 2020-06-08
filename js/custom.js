@@ -683,24 +683,19 @@ function writeQuotes(data) {
 /******************************************************************************************************************/
 $(function() {
     $(".read-article").click(function () {
-        // readCurrentArticle();
-
-        var u = new SpeechSynthesisUtterance();
-        u.text = 'Hello World';
-        u.lang = 'en-US';
-        u.rate = 1.2;
-        // u.onend = function(event) { alert('Finished in ' + event.elapsedTime + ' seconds.'); }
-        speechSynthesis.speak(u);
-
-
+        var title = $('.read-article-title').html();
+        console.log(title);
+        readCurrentArticle(title);
+        // var content = $('.read-article-content').html().toString().replace( /(<([^>]+)>)/ig, '');
+        var content = $('.read-article-content').text();
+        // alert(content);
+        console.log(content);
+        readCurrentArticle(content);
     });
 });
-function readCurrentArticle() {
-    var title = $('.read-article-title').html();
-    console.log(title);
-
+function readCurrentArticle(text) {
     var speakObj = new SpeechSynthesisUtterance();
-    speakObj.text = title;
+    speakObj.text = text;
     speakObj.voice = speechSynthesis.getVoices().filter(function(voice) {
         if (
             voice.name === "English_(Received_Pronunciation)"
@@ -712,33 +707,3 @@ function readCurrentArticle() {
     })[0];
     window.speechSynthesis.speak(speakObj);
 }
-
-// var speakObj = new SpeechSynthesisUtterance();
-// speakObj.text = "Egg with Potato plus Onion will make a delicious and healthy breakfast, You have have it as a Breakfast or you can have it as a Snack in the day, will also be a great starter in the barbecue. This combination of dish is called Spanish omelette, but lets make it in Indian Style." +
-//     "Ingredients Needed?" +
-//     "" +
-//     "3 Eggs, 4 medium sized Potato (chopped in small) & 4 medium sized Onion (chopped in small), 4-5 Green chilli (chopped in small), Chilli powder Oil & Salt for taste." +
-//     "How to Cook?" +
-//     "" +
-//     "Have a bowl on stove with low flame, Put 3-4 table spoons of Oil (as needed).. Put the chopped Onion, chopped Potato & chopped Chilli and Fry in the low flame.. Put some salt and continue to Fry for 6-8 min untill the stuff is medium fried.." +
-//     "" +
-//     "Take the Fried stuff into another bowl and let it cool for a while, Meanwhile you prepare the other stuff" +
-//     "" +
-//     "Take a bowl and break the Eggs & add Salt + Chilli powder and Mix it well, actually mix it for 2-3 min.. so that the mixture is thick.." +
-//     "" +
-//     "Now mix the Fried stuff in to the Egg stuff and mix it well, Now you have the complete stuff ready which is ready for cooking.." +
-//     "" +
-//     "Now have a tawa on the stove and Put 2-3 tea spoons of Oil and Pour the prepared stuff, Let it Fry in the low flame for 2-3 min.. Now Fry the other side of Omellete for 2-3 min.. Once its fried on both sides take it to out, its ready for serve.." +
-//     "" +
-//     "    Prep time: 30 minutes" +
-//     "    Cook time: 15 minutes" +
-//     "    Number of servings: 3 persons" +
-//     "";
-// speakObj.voice = speechSynthesis.getVoices().filter(function(voice) {
-//     if (voice.name === "English_(Received_Pronunciation)"
-//         || voice.name === "Google UK English Female"
-//         || voice.name === "Microsoft Zira Desktop - English (United States)") {
-//         return voice.name;
-//     }
-// })[0];
-// window.speechSynthesis.speak(speakObj);
