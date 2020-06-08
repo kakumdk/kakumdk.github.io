@@ -700,17 +700,19 @@ function readViaSpeechSynthesis(text) {
     var speakObj = new SpeechSynthesisUtterance();
     speakObj.text = text;
     speakObj.voice = speechSynthesis.getVoices().filter(function(voice) {
-        // if (
-            // voice.name === "English_(Received_Pronunciation)"
-            // || voice.name === "Google UK English Female"
-            // || voice.name === "Microsoft Zira Desktop - English (United States)"
-        // ) {
-        if (voice.name === "Google UK English Female") {
+        if (
+            voice.name === "English_(Received_Pronunciation)"
+            || voice.name === "Google UK English Female"
+            || voice.name === "Microsoft Zira Desktop - English (United States)"
+        ) {
             return voice.name;
         }
-        if (voice.name === "English_(Received_Pronunciation)") {
-            return voice.name;
-        }
+        // if (voice.name === "Google UK English Female") {
+        //     return voice.name;
+        // }
+        // if (voice.name === "English_(Received_Pronunciation)") {
+        //     return voice.name;
+        // }
     })[0];
     window.speechSynthesis.speak(speakObj);
 }
