@@ -212,6 +212,12 @@ do
 
                             <hr class="invis">
 
+                            <div class="newsletter-widget text-left">
+                                <form class="form-inline">
+                                    <input type="text" class="form-control" placeholder="Enter your email address"><button type="submit" class="btn btn-primary">Subscribe</button>
+                                </form>
+                            </div>
+
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
@@ -464,6 +470,12 @@ do
 
                             <hr class="invis">
 
+                            <div class="newsletter-widget text-left">
+                                <form class="form-inline">
+                                    <input type="text" class="form-control" placeholder="Enter your email address"><button type="submit" class="btn btn-primary">Subscribe</button>
+                                </form>
+                            </div>
+
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
@@ -715,6 +727,12 @@ do
                             </div>
 
                             <hr class="invis">
+
+                            <div class="newsletter-widget text-left">
+                                <form class="form-inline">
+                                    <input type="text" class="form-control" placeholder="Enter your email address"><button type="submit" class="btn btn-primary">Subscribe</button>
+                                </form>
+                            </div>
 
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
@@ -999,6 +1017,12 @@ do
                             </div>
 
                             <hr class="invis">
+
+                            <div class="newsletter-widget text-left">
+                                <form class="form-inline">
+                                    <input type="text" class="form-control" placeholder="Enter your email address"><button type="submit" class="btn btn-primary">Subscribe</button>
+                                </form>
+                            </div>
 
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->

@@ -1942,6 +1942,19 @@ body .peoples-quotes {
     margin: 8px 6px 0 0;
     line-height: 16px;
 }
+.blog-list-widget img {
+    margin-right: 0 !important;
+}
+.prevnextpost .float-left {
+    margin-right: 1rem !important;
+}
+.newsletter-widget .btn, .newsletter-widget .btn:hover {
+    background: #0678be !important;
+    height: 56px !important;
+}
+
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------------ */
