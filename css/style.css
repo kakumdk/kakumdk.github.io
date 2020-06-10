@@ -1979,7 +1979,9 @@ body .peoples-quotes {
 .newsletter-widget-subscribe .error {
     color: #ffffff;
 }
-
+.blog-list-widget #subscribe-email {
+    width: 250px;
+}
 
 
 
@@ -2083,6 +2085,21 @@ and (max-device-width : 480px) {
     }
     .footer .newsletter-widget .btn, .newsletter-widget .btn:hover {
         padding: 0.3rem 1rem !important;
+        margin-top: 0 !important;
+    }
+    .blog-list-widget .subscribe,
+    .blog-list-widget .newsletter-widget-subscribe {
+        padding: 0 16px;
+    }
+    .blog-list-widget #subscribe-email {
+        width: 100%;
+    }
+    .prevnextpost .blog-list-widget .newsletter-widget-subscribe-button {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+    body .prevnextpost {
+        padding: 0 6px !important;
     }
 }
 /* Smartphones (landscape) ----------- */
@@ -2187,6 +2204,21 @@ and (max-width : 320px) {
     }
     .footer .newsletter-widget .btn, .newsletter-widget .btn:hover {
         padding: 0.3rem 1rem !important;
+        margin-top: 0 !important;
+    }
+    .blog-list-widget .subscribe,
+    .blog-list-widget .newsletter-widget-subscribe {
+        padding: 0 16px;
+    }
+    .blog-list-widget #subscribe-email {
+        width: 100%;
+    }
+    .prevnextpost .blog-list-widget .newsletter-widget-subscribe-button {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+    body .prevnextpost {
+        padding: 0 6px !important;
     }
 }
 /* iPhone 4 ----------- */
@@ -2284,6 +2316,21 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .footer .newsletter-widget .btn, .newsletter-widget .btn:hover {
         padding: 0.3rem 1rem !important;
+        margin-top: 0 !important;
+    }
+    .blog-list-widget .subscribe,
+    .blog-list-widget .newsletter-widget-subscribe {
+        padding: 0 16px;
+    }
+    .blog-list-widget #subscribe-email {
+        width: 100%;
+    }
+    .prevnextpost .blog-list-widget .newsletter-widget-subscribe-button {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+    body .prevnextpost {
+        padding: 0 6px !important;
     }
 }
 /* iPads (portrait and landscape) ----------- */

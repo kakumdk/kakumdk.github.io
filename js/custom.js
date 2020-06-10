@@ -524,7 +524,8 @@ function writePreviousNextArticles(data) {
                     '<div class="list-group">' +
                     '<a href="'+url+'" class="list-group-item list-group-item-action flex-column align-items-start">' +
                     '<div class="w-100 justify-content-between text-right">' +
-                    '<h5 class="mb-1">You have read very first post on Peoples Blog</h5>' +
+                    '<h5 class="mb-1 subscribe">Subscribe for latest posts</h5>' +
+                    '<div class="newsletter-widget-subscribe newsletter-widget text-right"></div>' +
                     '</div>' +
                     '</a>' +
                     '</div>' +
@@ -559,7 +560,8 @@ function writePreviousNextArticles(data) {
                     '<div class="list-group">' +
                     '<a href="" class="list-group-item list-group-item-action flex-column align-items-start">' +
                     '<div class="w-100 justify-content-between">' +
-                    '<h5 class="mb-1">Subscribe for latest posts</h5>' +
+                    '<h5 class="mb-1 subscribe">Subscribe for latest posts</h5>' +
+                    '<div class="newsletter-widget-subscribe newsletter-widget text-left"></div>' +
                     '</div>' +
                     '</a>' +
                     '</div>' +
@@ -895,9 +897,11 @@ var speechUtteranceChunker = function (utt, settings, callback) {
 /************************************** Subscription **************************************************************/
 /******************************************************************************************************************/
 $(function() {
-    writeSubscriptionFromFooter();
-    var newsletter_widget_subscribe_button = document.querySelector('.newsletter-widget-subscribe-button');
-    newsletter_widget_subscribe_button.disabled = true;
+    setTimeout(function() {
+        writeSubscriptionFromFooter();
+        var newsletter_widget_subscribe_button = document.querySelector('.newsletter-widget-subscribe-button');
+        newsletter_widget_subscribe_button.disabled = true;
+    }, 2000);
 });
 function writeSubscriptionFromFooter() {
     var output = '<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank">' +
