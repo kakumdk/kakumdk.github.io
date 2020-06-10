@@ -119,6 +119,9 @@ $(function() {
     readFile("blogs-content-merged/blogs.json", function(text){
         $(".techblog-links").html(writeLinks(JSON.parse(text)));
     });
+    readFile("../../../blogs-content-merged/blogs.json", function(text){
+        $(".prevnext-articles").html(writePreviousNextArticles(JSON.parse(text)));
+    });
 });
 function readFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -484,6 +487,88 @@ function writeLinks(data) {
         }
     }
     return output;
+}
+function writePreviousNextArticles(data) {
+    var output = '<div class="row">';
+    var url = window.location.pathname;
+    var currentFile = url.substring(url.lastIndexOf("/") + 1, url.length).replace(".html", ".json");
+    for (var i = data.length - 1; i >= 0; i--) {
+        if (data[i]['file'] === currentFile) {
+            var prev = i - 1;
+            var next = i + 1;
+            if (prev in data) {
+                var prevtypes = data[prev]['type'].split(',');
+                var prevtype = prevtypes[0].trim().replace(" ", "-");
+                var prevcategorys = data[prev]['category'].split(',');
+                var prevcategory = prevcategorys[0].trim().replace(" ", "-");
+                var prevUrl = '/blogs/'+prevtype+'/'+prevcategory+'/'+data[prev]['file'].replace(".json", ".html");
+                output += '' +
+                    '<div class="col-lg-6">' +
+                    '<div class="blog-list-widget">' +
+                    '<div class="list-group">' +
+                    '<a href="'+prevUrl+'" class="list-group-item list-group-item-action flex-column align-items-start">' +
+                    '<div class="w-100 justify-content-between text-right">' +
+                    '<img src="../../../'+data[prev]['banner800x460']+'" alt="" class="img-fluid float-right">' +
+                    '<h5 class="mb-1">'+data[prev]['title']+'</h5>' +
+                    '<small>Prev Post</small>' +
+                    '</div>' +
+                    '</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div><!-- end col -->';
+            }
+            else {
+                output += '' +
+                    '<div class="col-lg-6">' +
+                    '<div class="blog-list-widget">' +
+                    '<div class="list-group">' +
+                    '<a href="'+url+'" class="list-group-item list-group-item-action flex-column align-items-start">' +
+                    '<div class="w-100 justify-content-between text-right">' +
+                    '<h5 class="mb-1">You have read very first post on Peoples Blog</h5>' +
+                    '</div>' +
+                    '</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div><!-- end col -->';
+            }
+            if (next in data) {
+                var nexttypes = data[next]['type'].split(',');
+                var nexttype = nexttypes[0].trim().replace(" ", "-");
+                var nextcategorys = data[next]['category'].split(',');
+                var nextcategory = nextcategorys[0].trim().replace(" ", "-");
+                var nextUrl = '/blogs/'+nexttype+'/'+nextcategory+'/'+data[next]['file'].replace(".json", ".html");
+                output += '' +
+                    '<div class="col-lg-6">' +
+                    '<div class="blog-list-widget">' +
+                    '<div class="list-group">' +
+                    '<a href="'+nextUrl+'" class="list-group-item list-group-item-action flex-column align-items-start">' +
+                    '<div class="w-100 justify-content-between">' +
+                    '<img src="../../../'+data[next]['banner800x460']+'" alt="" class="img-fluid float-left">' +
+                    '<h5 class="mb-1">'+data[next]['title']+'</h5>' +
+                    '<small>Next Post</small>' +
+                    '</div>' +
+                    '</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div><!-- end col -->';
+            }
+            else {
+                output += '' +
+                    '<div class="col-lg-6">' +
+                    '<div class="blog-list-widget">' +
+                    '<div class="list-group">' +
+                    '<a href="" class="list-group-item list-group-item-action flex-column align-items-start">' +
+                    '<div class="w-100 justify-content-between">' +
+                    '<h5 class="mb-1">Subscribe for latest posts</h5>' +
+                    '</div>' +
+                    '</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div><!-- end col -->';
+            }
+        }
+    }
+    return output + "</div>";
 }
 
 /******************************************************************************************************************/

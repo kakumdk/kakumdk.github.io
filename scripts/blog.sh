@@ -950,6 +950,11 @@ do
                             <div class="ads-page-1"></div><!-- end ads-page-1 -->
 
                             <hr class="invis1">
+                            <div class="prevnext-articles custombox prevnextpost clearfix">
+
+                            </div>
+
+                            <hr class="invis1">
                             <div class="custombox clearfix">
                                 <h4 class="small-title">Comments</h4>
                                 <div class="row">
