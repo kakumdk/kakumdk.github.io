@@ -421,7 +421,7 @@ function writeBlogsFooter(data) {
     var f_itr = 0;
     $.each(allCat, function(i, el){
         if($.inArray(el, uniqueCat) === -1) {
-            if (f_itr <= 5) {
+            if (f_itr <= 4) {
                 uniqueCat[i] = el;
                 output += '<li><a href="'+el+'" title="Peoples Blog">'+i+'</a></li>';
                 f_itr = f_itr + 1;
