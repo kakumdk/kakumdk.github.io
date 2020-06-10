@@ -1976,6 +1976,9 @@ body .peoples-quotes {
     height: 48px !important;
     padding: 1rem !important;
 }
+.newsletter-widget-subscribe .error {
+    color: #ffffff;
+}
 
 
 
