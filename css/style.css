@@ -1684,6 +1684,11 @@ hr.invis3 {
     height: 85px;
     overflow: hidden;
 }
+#see-more:hover {
+    background-color: #269f42 !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
+    background-image: linear-gradient(-180deg, #2fcb53,#269f42 90%) !important;
+}
 .blog-list-blogs .blog-box.hidden,
 .blog-list-homepage-blogs .blog-box.hidden,
 .blog-list-type .blog-box.hidden,
@@ -1959,7 +1964,7 @@ body .peoples-quotes {
     position: absolute;
     color: #000;
     right: 0;
-    padding: 0 6px;
+    padding: 4px 6px 2px 6px;
     border-radius: 4px;
     font-size: 12px;
     background-color: #fff;
