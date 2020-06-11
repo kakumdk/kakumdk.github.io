@@ -909,7 +909,7 @@ function writeSubscriptionFromFooter() {
     //     '</form>' +
     //     '<span class="newsletter-widget-subscribe-error-message"></span>';
     var output = '<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank">' +
-        '<input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" id="subscribe-email" required><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button>' +
+        '<input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button>' +
         '</form>' +
         '<span class="newsletter-widget-subscribe-error-message"></span>';
     $(".newsletter-widget-subscribe").html(output);

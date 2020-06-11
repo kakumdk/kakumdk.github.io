@@ -919,13 +919,20 @@ do
 
                                 <span class="color-orange"><a href="/blogs/'${_type// /-}'" title="'$_type'">'$_type'</a></span>
 
-                                <h1>'$title'</h1>
+                                <h1 class="read-article-title">'$title'</h1>
 
                                 <div class="blog-meta big-meta">
                                     <small>'$created'</small>
                                     <small>by '$author'</small>
                                     <!-- small><i class="fa fa-eye"></i> '$views'</small -->
                                 </div><!-- end meta -->
+
+                                <div class="read-article-section">
+                                    <span class="read-article"><i class="fa fa-play"> Read Article</i></span>
+                                    <span class="read-article-pause"><i class="fa fa-pause"> Pause</i></span>
+                                    <span class="read-article-resume"><i class="fa fa-play"> Resume</i></span>
+                                    <span class="read-article-stop"><i class="fa fa-stop"> Stop</i></span>
+                                </div>
 
                                 <div class="post-sharing-top post-sharing">
 
@@ -936,7 +943,7 @@ do
                                 <img alt="Peoples Blog" src="../../../'$banner'" class="img-fluid">
                             </div><!-- end media -->
 
-                            <div class="blog-content">
+                            <div class="blog-content read-article-content">
                                 <div>'$content'</div>
                             </div><!-- end content -->
 

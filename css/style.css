@@ -1983,6 +1983,15 @@ body .peoples-quotes {
 .blog-list-widget #subscribe-email {
     width: 250px;
 }
+.read-article-section {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.read-article-section span {
+    padding: 0 4px;
+}
+
 
 
 
