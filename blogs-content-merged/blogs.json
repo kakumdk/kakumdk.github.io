@@ -98,7 +98,7 @@
     "file": "2020-06-04-Egg-Stuffed-Paratha-Home-made-recipe.json"
   },
   {
-    "title": "Two days Ride Bangalore -> Mysore -> Bangalore (2 Days + 1 Night)",
+    "title": "Two days Ride Bangalore <i class='fa fa-angle-double-right'></i> Mysore <i class='fa fa-angle-double-right'></i> Bangalore (2 Days + 1 Night)",
     "created": "04 June, 2020",
     "author": "Karthik",
     "views": "463",
@@ -152,5 +152,19 @@
     "banner788x443": "upload/banner788x443/public/spanish-omelette.jpg",
     "banner800x460": "upload/banner800x460/public/spanish-omelette.jpg",
     "file": "2020-06-07-Indian-style-spanish-omellete.json"
+  },
+  {
+    "title": "Bangalore <i class='fa fa-exchange'></i> Ghati Subramanya, One Day Trip",
+    "created": "12 June, 2020",
+    "author": "Jyothi",
+    "views": "463",
+    "content": "",
+    "type": "Travel",
+    "category": "Bangalore, GhatiSubramanya",
+    "banner394x449": "upload/banner394x449/public/Peoples-Blog-Bangalore-Ghati-Subramanya.png",
+    "banner600x500": "upload/banner600x500/public/Peoples-Blog-Bangalore-Ghati-Subramanya.png",
+    "banner788x443": "upload/banner788x443/public/Peoples-Blog-Bangalore-Ghati-Subramanya.png",
+    "banner800x460": "upload/banner800x460/public/Peoples-Blog-Bangalore-Ghati-Subramanya.png",
+    "file": "2020-06-12-Short-trip-from-Bangalore-to-Ghati.json"
   }
 ]
