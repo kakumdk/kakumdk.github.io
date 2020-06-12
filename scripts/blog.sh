@@ -1126,7 +1126,6 @@ Disallow: /author.html
 Disallow: /category-01.html
 Disallow: /category-02.html
 Disallow: /category-03.html
-Disallow: /contact.html
 Disallow: /jq
 Disallow: /single.html
 Disallow: /tmp.html

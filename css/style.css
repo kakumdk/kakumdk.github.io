@@ -1825,7 +1825,8 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
 }
 .blog-meta .bg-orange,
 .blog-meta span.bg-orange:hover,
-body .page-title .bg-orange, .masonry-blog .masonry-box:hover .blog-meta span.bg-orange, .page-wrapper .color-orange a {
+body .page-title .bg-orange, .masonry-blog .masonry-box:hover .blog-meta span.bg-orange, .page-wrapper .color-orange a,
+body .contact .btn {
     /*background-color: #7cbc48 !important;*/
     background-color: #269f42 !important;
     background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
