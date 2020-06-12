@@ -1982,8 +1982,12 @@ body .peoples-quotes {
     height: 40px !important;
     width: 250px;
     background-color: #fff !important;
+    color: #1d1e1f !important;
     padding-left: 1rem !important;
     border-radius: 3px 0 0 3px;
+}
+.newsletter-widget .form-inline label {
+    position: absolute;
 }
 .newsletter-widget .btn, .newsletter-widget .btn:hover {
     /*background: #0678be !important;*/
@@ -2006,6 +2010,19 @@ body .peoples-quotes {
 }
 .read-article-section span {
     padding: 0 4px;
+}
+.contact .btn.btn-primary {
+    padding: 8px 24px !important;
+    border-radius: 3px;
+    margin-top: 1.4rem;
+    display: block;
+}
+.contact.form-wrapper .form-control:first-child {
+    margin-top: 0 !important;
+}
+.contact.form-wrapper .form-control {
+    margin-bottom: 0 !important;
+    margin-top: 1.4rem;
 }
 
 

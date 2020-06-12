@@ -155,7 +155,7 @@
                                     <p>Please contact us with information for posting your ads on our website with your mail and contact details.</p>
                                 </div>
                                 <div class="col-lg-7">
-                                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfF4Esae5pYrRArj64dgjVNh9u_yxhq2ejrth7KpvffSysAPg/formResponse" class="form-wrapper contact" target="_blank">
+                                    <form name="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfF4Esae5pYrRArj64dgjVNh9u_yxhq2ejrth7KpvffSysAPg/formResponse" class="form-wrapper contact" target="_blank">
                                         <input name="entry.986979754" type="text" class="form-control" placeholder="Your name" />
                                         <input name="entry.1994351775" type="text" class="form-control" placeholder="Email address" />
                                         <input name="entry.1982419716" type="text" class="form-control" placeholder="Subject" />
@@ -188,7 +188,9 @@
 
                                 <hr class="invis">
 
-                                <div class="newsletter-widget-subscribe newsletter-widget text-left"></div>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
 
                             </div><!-- end footer-text -->
                         </div><!-- end widget -->
@@ -237,6 +239,7 @@
     <!-- Core JavaScript
     ================================================== -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>

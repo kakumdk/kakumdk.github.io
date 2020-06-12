@@ -357,43 +357,46 @@ function writeBlogTypeCategories(data) {
         var category = data[i]['category'].split(',');
         for (var j = 0; j < type.length; j++) {
             var currentType = type[j].trim().replace(" ", "-");
-            var path = '/blogs/' + currentType + '/' +
-                category[0].trim().replace(" ", "-") + '/' +
-                data[i]['file'].replace(".json", ".html");
-            var currentpath = window.location.pathname.split('/');
-            if (currentType === currentpath[2]) {
-                if (itr >= 5) {
-                    output += '<div class="blog-box hidden">';
-                }
-                else {
-                    output += '<div class="blog-box">';
-                }
-                itr = itr + 1;
-                output +=
-                    '<div class="post-media">' +
-                    '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                    '<img alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
-                    '<div class="hovereffect">' +
-                    '<span class="videohover"></span>' +
-                    '</div>' +
-                    '<!-- end hover -->' +
-                    '</a>' +
-                    '</div>' +
-                    '<!-- end media -->' +
-                    '<div class="blog-meta big-meta text-center">' +
-                    '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
-                    '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-                    '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'" title="' + type[j].trim() + '">' + type[j].trim() + '</a></small>' +
-                    '<small>' + data[i]['created'] + '</small>' +
-                    '<small>by ' + data[i]['author'] + '</small>' +
-                    '</div><!-- end meta -->' +
-                    '</div><!-- end blog-box -->' +
-                    '<hr class="invis">';
-                if (itr === 2) {
-                    output += '<div class="ads-page-3"></div>';
-                }
-                if (itr === 4) {
-                    output += '<div class="ads-page-3"></div>';
+            for (var k = 0; k < category.length; k++) {
+                var currentCat = category[k].trim().replace(" ", "-");
+                var path = '/blogs/' + currentType + '/' + currentCat + '/'
+                    data[i]['file'].replace(".json", ".html");
+                var currentpath = window.location.pathname.split('/');
+                // allCat[currentCat] = '/blogs/' + currentType + '/' + currentCat;
+                if (currentCat === currentpath[3]) {
+                    if (itr >= 5) {
+                        output += '<div class="blog-box hidden">';
+                    }
+                    else {
+                        output += '<div class="blog-box">';
+                    }
+                    itr = itr + 1;
+                    output +=
+                        '<div class="post-media">' +
+                        '<a href="' + path + '" title="' + data[i]['title'] + '">' +
+                        '<img alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
+                        '<div class="hovereffect">' +
+                        '<span class="videohover"></span>' +
+                        '</div>' +
+                        '<!-- end hover -->' +
+                        '</a>' +
+                        '</div>' +
+                        '<!-- end media -->' +
+                        '<div class="blog-meta big-meta text-center">' +
+                        '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
+                        '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
+                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'" title="' + type[j].trim() + '">' + type[j].trim() + '</a></small>' +
+                        '<small>' + data[i]['created'] + '</small>' +
+                        '<small>by ' + data[i]['author'] + '</small>' +
+                        '</div><!-- end meta -->' +
+                        '</div><!-- end blog-box -->' +
+                        '<hr class="invis">';
+                    if (itr === 2) {
+                        output += '<div class="ads-page-3"></div>';
+                    }
+                    if (itr === 4) {
+                        output += '<div class="ads-page-3"></div>';
+                    }
                 }
             }
             continue;
@@ -525,7 +528,9 @@ function writePreviousNextArticles(data) {
                     '<a href="'+url+'" class="list-group-item list-group-item-action flex-column align-items-start">' +
                     '<div class="w-100 justify-content-between text-right">' +
                     '<h5 class="mb-1 subscribe">Subscribe for latest posts</h5>' +
-                    '<div class="newsletter-widget-subscribe newsletter-widget text-right"></div>' +
+                    '<div class="newsletter-widget-subscribe newsletter-widget text-left">' +
+                    '<form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>' +
+                    '</div>' +
                     '</div>' +
                     '</a>' +
                     '</div>' +
@@ -561,7 +566,9 @@ function writePreviousNextArticles(data) {
                     '<a href="" class="list-group-item list-group-item-action flex-column align-items-start">' +
                     '<div class="w-100 justify-content-between">' +
                     '<h5 class="mb-1 subscribe">Subscribe for latest posts</h5>' +
-                    '<div class="newsletter-widget-subscribe newsletter-widget text-left"></div>' +
+                    '<div class="newsletter-widget-subscribe newsletter-widget text-left">' +
+                    '<form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>' +
+                    '</div>' +
                     '</div>' +
                     '</a>' +
                     '</div>' +
@@ -899,35 +906,39 @@ var speechUtteranceChunker = function (utt, settings, callback) {
 $(function() {
     setTimeout(function() {
         writeSubscriptionFromFooter();
-        // var newsletter_widget_subscribe_button = document.querySelector('.newsletter-widget-subscribe-button');
-        // newsletter_widget_subscribe_button.disabled = true;
     }, 2000);
+    $("form[name='subscribe']").validate({
+        rules: {
+            'entry.1045781291': {
+                required: true,
+                email: true
+            },
+        },
+        messages: {
+            'entry.1045781291': "Please enter a valid email address",
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+    $("form[name='contact']").validate({
+        rules: {
+            'entry.986979754': "required",
+            'entry.1994351775': {
+                required: true,
+                email: true
+            },
+            'entry.1982419716': "required",
+            'entry.1643398314': "required",
+        },
+        messages: {
+            'entry.986979754': "Please enter your name",
+            'entry.1994351775': "Please enter a valid email address",
+            'entry.1982419716': "Please enter some subject",
+            'entry.1643398314': "Please enter some message",
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
 });
-function writeSubscriptionFromFooter() {
-    // var output = '<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank">' +
-    //     '<input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" id="subscribe-email" onchange="validateSubscriptionEmail()" required><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button>' +
-    //     '</form>' +
-    //     '<span class="newsletter-widget-subscribe-error-message"></span>';
-    var output = '<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank">' +
-        '<input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button>' +
-        '</form>' +
-        '<span class="newsletter-widget-subscribe-error-message"></span>';
-    $(".newsletter-widget-subscribe").html(output);
-}
-// function validateSubscriptionEmail() {
-//     var email = document.getElementById('subscribe-email').value;
-//     var newsletter_widget_subscribe_button = document.querySelector('.newsletter-widget-subscribe-button');
-//     if (!validateEmail(email)) {
-//         $(".newsletter-widget-subscribe-error-message").html('<span class="error">Enter a valid mail!</span>');
-//         newsletter_widget_subscribe_button.disabled = true;
-//     }
-//     else {
-//         $(".newsletter-widget-subscribe-error-message").html('');
-//         newsletter_widget_subscribe_button.disabled = false;
-//         newsletter_widget_subscribe_button.style.cursor = 'hand';
-//     }
-// }
-// function validateEmail(email) {
-//     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(String(email).toLowerCase());
-// }

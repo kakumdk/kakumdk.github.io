@@ -139,6 +139,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -212,7 +215,9 @@ do
 
                             <hr class="invis">
 
-                            <div class="newsletter-widget-subscribe newsletter-widget text-left"></div>
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
 
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
@@ -238,6 +243,7 @@ do
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
                                 <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -260,6 +266,7 @@ do
     <!-- Core JavaScript
     ================================================== -->
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/tether.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/custom.js"></script>
@@ -395,6 +402,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -466,7 +476,9 @@ do
 
                             <hr class="invis">
 
-                            <div class="newsletter-widget-subscribe newsletter-widget text-left"></div>
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
 
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
@@ -492,6 +504,7 @@ do
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
                                 <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -514,6 +527,7 @@ do
     <!-- Core JavaScript
     ================================================== -->
     <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.validate.min.js"></script>
     <script src="../../js/tether.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/custom.js"></script>
@@ -648,6 +662,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -720,7 +737,9 @@ do
 
                             <hr class="invis">
 
-                            <div class="newsletter-widget-subscribe newsletter-widget text-left"></div>
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
 
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
@@ -746,6 +765,7 @@ do
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
                                 <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -768,6 +788,7 @@ do
     <!-- Core JavaScript
     ================================================== -->
     <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery.validate.min.js"></script>
     <script src="../../../js/tether.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
     <script src="../../../js/custom.js"></script>
@@ -897,6 +918,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -1013,7 +1037,9 @@ do
 
                             <hr class="invis">
 
-                            <div class="newsletter-widget-subscribe newsletter-widget text-left"></div>
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
 
                         </div><!-- end footer-text -->
                     </div><!-- end widget -->
@@ -1039,6 +1065,7 @@ do
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
                                 <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
@@ -1059,6 +1086,7 @@ do
     <!-- Core JavaScript
     ================================================== -->
     <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery.validate.min.js"></script>
     <script src="../../../js/tether.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
     <script src="../../../js/custom.js"></script>
