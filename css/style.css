@@ -2147,6 +2147,9 @@ and (max-device-width : 480px) {
     body .prevnextpost {
         padding: 0 6px !important;
     }
+    .newsletter-widget .form-inline label {
+        position: unset;
+    }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -2269,6 +2272,9 @@ and (max-width : 320px) {
     body .prevnextpost {
         padding: 0 6px !important;
     }
+    .newsletter-widget .form-inline label {
+        position: unset;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2383,6 +2389,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     body .prevnextpost {
         padding: 0 6px !important;
+    }
+    .newsletter-widget .form-inline label {
+        position: unset;
     }
 }
 /* iPads (portrait and landscape) ----------- */

@@ -784,8 +784,9 @@ function getReadableContentforArticle() {
             contentTmp += content[i];
         }
     }
+    var thankyou = " Thanks for hearing Article. Please do subscribe, for latest articles. Contact us for any clarification or information. Thank you once again.";
     // return title.trim();
-    return title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim();
+    return title.trim() + '. ' + contentTmp.replace(/\s+/g, ' ').trim() + thankyou;
 }
 $(function() {
     supportsSpeechSynthesis = function (){
