@@ -5,12 +5,8 @@ Disallow: /blogs-content/
 Disallow: /blogs-content-merged
 Disallow: /blogs-content-merged/
 Disallow: /quotes/quotes.json
-Disallow: /scripts/blogs.sh
-Disallow: /author.html
-Disallow: /category-01.html
-Disallow: /category-02.html
-Disallow: /category-03.html
-Disallow: /jq
-Disallow: /single.html
-Disallow: /tmp.html
+Disallow: /scripts
+Disallow: /scripts/
+Disallow: /content
+Disallow: /content/
 Sitemap: https://kakumdk.github.io/sitemap.xml
