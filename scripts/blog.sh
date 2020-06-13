@@ -1162,4 +1162,5 @@ Disallow: /scripts
 Disallow: /scripts/
 Disallow: /content
 Disallow: /content/
+Disallow: /tmp.html
 Sitemap: https://kakumdk.github.io/sitemap.xml' > $pwd'/robots.txt'

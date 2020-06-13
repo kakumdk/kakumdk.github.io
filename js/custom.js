@@ -959,7 +959,7 @@ $(function() {
     }, 1000);
     setTimeout(function() {
         storeValue(key, '');
-    }, 120000);
+    }, 10 * 60 * 1000);
 
 });
 function showAcceptCookie(cookie) {
