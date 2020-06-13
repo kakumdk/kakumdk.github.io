@@ -359,10 +359,8 @@ function writeBlogTypeCategories(data) {
             var currentType = type[j].trim().replace(" ", "-");
             for (var k = 0; k < category.length; k++) {
                 var currentCat = category[k].trim().replace(" ", "-");
-                var path = '/blogs/' + currentType + '/' + currentCat + '/'
-                    data[i]['file'].replace(".json", ".html");
+                var path = '/blogs/' + currentType + '/' + currentCat + '/' + data[i]['file'].replace(".json", ".html");
                 var currentpath = window.location.pathname.split('/');
-                // allCat[currentCat] = '/blogs/' + currentType + '/' + currentCat;
                 if (currentCat === currentpath[3]) {
                     if (itr >= 5) {
                         output += '<div class="blog-box hidden">';
