@@ -77,24 +77,24 @@ $(function() {
     $("#header").load("content/header.html");
     $("#footer").load("content/footer.html");
 
-    readFile("blogs-content-merged/blogs.json", function(text){
+    readFile("/blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogsHomepageHeader(data);
         $('.blog-list-homepage').html(output);
     });
-    readFile("../blogs-content-merged/blogs.json", function(text){
+    readFile("/../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogsHomepage(data);
         $('.blog-list-homepage-blogs').html(output);
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
-    readFile("../blogs-content-merged/blogs.json", function(text){
+    readFile("/../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogs(data);
         $('.blog-list-blogs').html(output);
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
-    readFile("../../blogs-content-merged/blogs.json", function(text){
+    readFile("/../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogTypes(data);
         $('.blog-list-type').html(output);
@@ -116,10 +116,10 @@ $(function() {
     $(".post-sharing-top").html(writeSocialShareLinks('blog'));
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
 
-    readFile("blogs-content-merged/blogs.json", function(text){
+    readFile("/blogs-content-merged/blogs.json", function(text){
         $(".techblog-links").html(writeLinks(JSON.parse(text)));
     });
-    readFile("../../../blogs-content-merged/blogs.json", function(text){
+    readFile("/../../../blogs-content-merged/blogs.json", function(text){
         $(".prevnext-articles").html(writePreviousNextArticles(JSON.parse(text)));
     });
 });
@@ -582,14 +582,14 @@ function writePreviousNextArticles(data) {
 /************************************** ADS ***********************************************************************/
 /******************************************************************************************************************/
 $(function() {
-    readFile("ads/ads.json", function(text){
+    readFile("/ads/ads.json", function(text){
         $('.ads-home').html(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
         adShowHidePage('ads-page-6');
     });
-    readFile("../ads/ads.json", function(text){
+    readFile("/../ads/ads.json", function(text){
         $('.ads-blogs').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
@@ -597,14 +597,14 @@ $(function() {
         // $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
         // adShowHidePage('ads-page-5');
     });
-    readFile("../../ads/ads.json", function(text){
+    readFile("/../../ads/ads.json", function(text){
         $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'type'));
         adShowHidePage('ads-page-4');
     });
-    readFile("../../../ads/ads.json", function(text){
+    readFile("/../../../ads/ads.json", function(text){
         $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
@@ -749,16 +749,16 @@ function adShowHidePage(ad) {
 /************************************** QADSuotes ***********************************************************************/
 /******************************************************************************************************************/
 $(function() {
-    readFile("quotes/quotes.json", function (text) {
+    readFile("/quotes/quotes.json", function (text) {
         $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
     });
-    readFile("../quotes/quotes.json", function (text) {
+    readFile("/../quotes/quotes.json", function (text) {
         $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
     });
-    readFile("../../quotes/quotes.json", function (text) {
+    readFile("/../../quotes/quotes.json", function (text) {
         $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
     });
-    readFile("../../../quotes/quotes.json", function (text) {
+    readFile("/../../../quotes/quotes.json", function (text) {
         $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
     });
 });
@@ -903,9 +903,9 @@ var speechUtteranceChunker = function (utt, settings, callback) {
 /************************************** Subscription **************************************************************/
 /******************************************************************************************************************/
 $(function() {
-    setTimeout(function() {
-        writeSubscriptionFromFooter();
-    }, 2000);
+    // setTimeout(function() {
+    //     writeSubscriptionFromFooter();
+    // }, 2000);
     $("form[name='subscribe']").validate({
         rules: {
             'entry.1045781291': {
