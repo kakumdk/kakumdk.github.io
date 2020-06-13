@@ -2174,6 +2174,12 @@ and (max-device-width : 480px) {
     .newsletter-widget .form-inline label {
         position: unset;
     }
+    .policy-container {
+        padding: 14px !important;
+    }
+    .policy-container .policy-button {
+        margin: 8px 0 0 0 !important;
+    }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -2299,6 +2305,12 @@ and (max-width : 320px) {
     .newsletter-widget .form-inline label {
         position: unset;
     }
+    .policy-container {
+        padding: 14px !important;
+    }
+    .policy-container .policy-button {
+        margin: 8px 0 0 0 !important;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2416,6 +2428,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .newsletter-widget .form-inline label {
         position: unset;
+    }
+    .policy-container {
+        padding: 14px !important;
+    }
+    .policy-container .policy-button {
+        margin: 8px 0 0 0 !important;
     }
 }
 /* iPads (portrait and landscape) ----------- */
