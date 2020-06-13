@@ -67,10 +67,17 @@ function openCategory(evt, catName) {
     evt.currentTarget.className += " active";
 }
 
-/******************************************************************************************************************
- File Name: custom.js
- Custom
- ******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/* Custom */
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
+/******************************************************************************************************************/
 $(function() {
 
     $("#head").load("content/head.html");
@@ -108,6 +115,7 @@ $(function() {
     });
     $("#see-more").click(function() {
         $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
+        $('.blog-list-blogs div').removeClass('hidden');
         $('.blog-list-blogs .blog-box').removeClass('hidden');
         $('.blog-list-type .blog-box').removeClass('hidden');
         $('.blog-list-category .blog-box').removeClass('hidden');
@@ -216,7 +224,7 @@ function writeBlogsHomepage(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= 5) {
+        if (itr >= 6) {
             output += '<div class="blog-box row hidden">';
         }
         else {
@@ -262,7 +270,7 @@ function writeBlogs(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= 5) {
+        if (itr >= 6) {
             output += '<div class="col-md-6 hidden">';
         }
         else {
@@ -274,9 +282,6 @@ function writeBlogs(data) {
             '<div class="post-media">' +
             '<a href="' + path + '" title="' + data[i]['title'] + '">' +
             '<img alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
-            '<div class="hovereffect">' +
-            '<span></span>' +
-            '</div><!-- end hover -->' +
             '</a>' +
             '</div><!-- end media -->' +
             '<div class="blog-meta big-meta">' +
@@ -308,7 +313,7 @@ function writeBlogTypes(data) {
                 data[i]['file'].replace(".json", ".html");
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
-                if (itr >= 5) {
+                if (itr >= 6) {
                     output += '<div class="blog-box row hidden">';
                 }
                 else {
@@ -362,7 +367,7 @@ function writeBlogTypeCategories(data) {
                 var path = '/blogs/' + currentType + '/' + currentCat + '/' + data[i]['file'].replace(".json", ".html");
                 var currentpath = window.location.pathname.split('/');
                 if (currentCat === currentpath[3]) {
-                    if (itr >= 5) {
+                    if (itr >= 6) {
                         output += '<div class="blog-box hidden">';
                     }
                     else {
@@ -373,10 +378,6 @@ function writeBlogTypeCategories(data) {
                         '<div class="post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                         '<img alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
-                        '<div class="hovereffect">' +
-                        '<span class="videohover"></span>' +
-                        '</div>' +
-                        '<!-- end hover -->' +
                         '</a>' +
                         '</div>' +
                         '<!-- end media -->' +
@@ -941,3 +942,56 @@ $(function() {
         }
     });
 });
+
+/******************************************************************************************************************/
+/************************************** Cookie ********************************************************************/
+/******************************************************************************************************************/
+$(function() {
+
+    var key = 'peoples-blog-cookie';
+    setTimeout(function() {
+        var cookie = getStoredValue(key);
+        showAcceptCookie(cookie);
+        $(".policy-button").click(function() {
+            storeValue(key, 'true');
+            $("#policy-container").hide(1000);
+        });
+    }, 1000);
+    setTimeout(function() {
+        storeValue(key, '');
+    }, 120000);
+
+});
+function showAcceptCookie(cookie) {
+    if (cookie === 'true') {
+        return '';
+    }
+    var output = '';
+    output = '' +
+        '<div class="container-fluid policy-container">' +
+        '        <div class="row">' +
+        '            <div class="col-md-9">' +
+        '                <h3 class="policy-title">We Need Your Consent</h3>' +
+        '                <p class="policy-text">By clicking “I Accept Cookies”, you agree to the storing of cookies on your device to enhance site navigation & analyze site usage.</p>' +
+        '            </div>' +
+        '            <div class="col-md-3">' +
+        '                <button class="policy-button" tabindex="0">I Accept Cookies</button>' +
+        '            </div>' +
+        '        </div>' +
+        '    </div>';
+    $('#policy-container').html(output);
+}
+function storeValue(key, value) {
+    if (localStorage) {
+        localStorage.setItem(key, value);
+    } else {
+        $.cookies.set(key, value);
+    }
+}
+function getStoredValue(key) {
+    if (localStorage) {
+        return localStorage.getItem(key);
+    } else {
+        return $.cookies.get(key);
+    }
+}

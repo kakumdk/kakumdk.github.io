@@ -271,6 +271,8 @@ do
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/custom.js"></script>
 
+    <div id="policy-container"></div>
+
 </body>
 </html>' > $blogsfilepath
    ## Types
@@ -532,6 +534,8 @@ do
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/custom.js"></script>
 
+    <div id="policy-container"></div>
+
 </body>
 </html>' > $blogsfilepath'/'index.html
      ## Category
@@ -792,6 +796,8 @@ do
     <script src="../../../js/tether.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
     <script src="../../../js/custom.js"></script>
+
+    <div id="policy-container"></div>
 
 </body>
 </html>' > $blogsfolderpath'/'index.html
@@ -1090,6 +1096,9 @@ do
     <script src="../../../js/tether.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
     <script src="../../../js/custom.js"></script>
+
+    <div id="policy-container"></div>
+
 </body>
 </html>' > $blogsfilepath
      done

@@ -1689,6 +1689,7 @@ hr.invis3 {
     background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
     background-image: linear-gradient(-180deg, #2fcb53,#269f42 90%) !important;
 }
+.blog-list-blogs div.hidden,
 .blog-list-blogs .blog-box.hidden,
 .blog-list-homepage-blogs .blog-box.hidden,
 .blog-list-type .blog-box.hidden,
@@ -1903,7 +1904,8 @@ body .page-title .breadcrumb li a:hover {
 }
 .tag-cloud-single span,
 .page-title i, .btn:hover, .sitemap-wrapper .year, .btn:focus, .navbar-inverse .navbar-toggler,
-.blog-list-widget small, .newsletter-widget .btn, .newsletter-widget .btn:hover {
+.blog-list-widget small, .newsletter-widget .btn, .newsletter-widget .btn:hover,
+.policy-container .policy-button {
     /*background-color: #7cbc48 !important;*/
     background-color: #269f42 !important;
     background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
@@ -2023,6 +2025,28 @@ body .peoples-quotes {
 .contact.form-wrapper .form-control {
     margin-bottom: 0 !important;
     margin-top: 1.4rem;
+}
+.policy-container {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    padding: 12px 60px;
+    z-index: 100;
+}
+.policy-container h3 {
+    margin-bottom: 0;
+}
+.policy-container p {
+    margin-bottom: 0;
+}
+.policy-container .policy-button {
+    border: none;
+    margin: 10px;
+    padding: 4px 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
