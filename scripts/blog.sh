@@ -123,7 +123,7 @@ do
                             <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News" title="News">News</a>
+                            <a class="nav-link" href="/blogs/Social-Media" title="Social Media">Social Media</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -388,7 +388,7 @@ do
                             <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News" title="News">News</a>
+                            <a class="nav-link" href="/blogs/Social-Media" title="Social Media">Social Media</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -650,7 +650,7 @@ do
                             <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News" title="News">News</a>
+                            <a class="nav-link" href="/blogs/Social-Media" title="Social Media">Social Media</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -908,7 +908,7 @@ do
                             <a class="nav-link" href="/blogs/Travel" title="Travel">Travel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs/News" title="News">News</a>
+                            <a class="nav-link" href="/blogs/Social-Media" title="Social Media">Social Media</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -1127,7 +1127,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
           <url><loc>https://kakumdk.github.io/blogs/Lifestyle</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://kakumdk.github.io/blogs/Food</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://kakumdk.github.io/blogs/Travel</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs/News</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
+          <url><loc>https://kakumdk.github.io/blogs/Social-Media</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
