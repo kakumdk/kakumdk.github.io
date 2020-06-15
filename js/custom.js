@@ -214,6 +214,7 @@ function writeBlogsHomepageHeader(data) {
     }
     return output;
 }
+const numberofArticlesPerPage = 6;
 function writeBlogsHomepage(data) {
     var output = '';
     var itr = 0;
@@ -224,7 +225,7 @@ function writeBlogsHomepage(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= 6) {
+        if (itr >= numberofArticlesPerPage) {
             output += '<div class="blog-box row hidden">';
         }
         else {
@@ -270,7 +271,7 @@ function writeBlogs(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= 6) {
+        if (itr >= numberofArticlesPerPage) {
             output += '<div class="col-md-6 hidden">';
         }
         else {
@@ -294,7 +295,10 @@ function writeBlogs(data) {
             '</div><!-- end blog-box -->' +
             '</div>'+
             '<hr class="invis">';
-        if (itr % 2 === 0) {
+        if (itr === 2) {
+            output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
+        }
+        if (itr === 4) {
             output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
         }
     }
@@ -313,7 +317,7 @@ function writeBlogTypes(data) {
                 data[i]['file'].replace(".json", ".html");
             var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
-                if (itr >= 6) {
+                if (itr >= numberofArticlesPerPage) {
                     output += '<div class="blog-box row hidden">';
                 }
                 else {
@@ -367,7 +371,7 @@ function writeBlogTypeCategories(data) {
                 var path = '/blogs/' + currentType + '/' + currentCat + '/' + data[i]['file'].replace(".json", ".html");
                 var currentpath = window.location.pathname.split('/');
                 if (currentCat === currentpath[3]) {
-                    if (itr >= 6) {
+                    if (itr >= numberofArticlesPerPage) {
                         output += '<div class="blog-box hidden">';
                     }
                     else {
@@ -587,6 +591,7 @@ $(function() {
         $('.ads-home').html(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
         adShowHidePage('ads-page-6');
     });
@@ -595,8 +600,8 @@ $(function() {
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        // $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
-        // adShowHidePage('ads-page-5');
+        $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
+        adShowHidePage('ads-page-5');
     });
     readFile("/../../ads/ads.json", function(text){
         $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
