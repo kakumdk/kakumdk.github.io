@@ -1021,7 +1021,7 @@ do
                     </div><!-- end col -->
 
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <div class="ads sidebar">
+                        <div class="ads-article sidebar">
 
                         </div><!-- end sidebar -->
                     </div><!-- end col -->
