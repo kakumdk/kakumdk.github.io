@@ -120,6 +120,7 @@ $(function() {
         $('.blog-list-type .blog-box').removeClass('hidden');
         $('.blog-list-category .blog-box').removeClass('hidden');
         $(this).addClass('hidden');
+        $("html, body").animate({ scrollTop: $(document).height() }, 3000);
     });
     $(".post-sharing-top").html(writeSocialShareLinks('blog'));
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));

@@ -1,0 +1,125 @@
+diff --git a/js/custom.js b/js/custom.js
+index c91e758..81064e9 100644
+--- a/js/custom.js
++++ b/js/custom.js
+@@ -78,6 +78,7 @@ function openCategory(evt, catName) {
+ /******************************************************************************************************************/
+ /******************************************************************************************************************/
+ /******************************************************************************************************************/
++const numberofArticlesPerPage = 3;
+ $(function() {
+ 
+     $("#head").load("content/head.html");
+@@ -94,24 +95,28 @@ $(function() {
+         var output = writeBlogsHomepage(data);
+         $('.blog-list-homepage-blogs').html(output);
+         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
++        $('.pagination').html(writeBlogsPagination(data, '.blog-list-homepage-blogs'));
+     });
+     readFile("/../blogs-content-merged/blogs.json", function(text){
+         var data = JSON.parse(text);
+         var output = writeBlogs(data);
+         $('.blog-list-blogs').html(output);
+         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
++        $('.pagination').html(writeBlogsPagination(data, '.blog-list-blogs'));
+     });
+     readFile("/../../blogs-content-merged/blogs.json", function(text){
+         var data = JSON.parse(text);
+         var output = writeBlogTypes(data);
+         $('.blog-list-type').html(output);
+         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
++        $('.pagination').html(writeBlogsPagination(data, '.blog-list-type'));
+     });
+     readFile("../../../blogs-content-merged/blogs.json", function(text){
+         var data = JSON.parse(text);
+         var output = writeBlogTypeCategories(data);
+         $('.blog-list-category').html(output);
+         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
++        $('.pagination').html(writeBlogsPagination(data, '.blog-list-category'));
+     });
+     $("#see-more").click(function() {
+         $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
+@@ -130,7 +135,46 @@ $(function() {
+     readFile("/../../../blogs-content-merged/blogs.json", function(text){
+         $(".prevnext-articles").html(writePreviousNextArticles(JSON.parse(text)));
+     });
++    setTimeout(function() {
++        $('.pagination .page-link').click(function() {
++            var pageClick = this.className.split(' ')[1];
++            showBlogsOnPagination(pageClick, '.blog-list-homepage-blogs', '.blog-box');
++            showBlogsOnPagination(pageClick, '.blog-list-blogs', 'div');
++            showBlogsOnPagination(pageClick, '.blog-list-blogs', 'blog-box');
++            showBlogsOnPagination(pageClick, '.blog-list-type', 'blog-box');
++            showBlogsOnPagination(pageClick, '.blog-list-category', 'blog-box');
++        });
++    }, 1000);
+ });
++function showBlogsOnPagination(pageClick, className, childClassName) {
++    var showArticlesFrom = Math.imul(numberofArticlesPerPage, (pageClick - 1));
++    var showArticlesTo = Math.imul(numberofArticlesPerPage, pageClick) - 1;
++    if ($(className).length > 0) {
++        var blogs = $(className).children(childClassName);
++        $.each(blogs, function(index, value) {
++            if (index.isBetween(showArticlesFrom, showArticlesTo)) {
++                $(value).removeClass('hidden');
++            }
++            else {
++                $(value).addClass('hidden');
++            }
++        });
++        $('html,body').animate({
++            scrollTop: $(className).offset().top
++        }, 'slow');
++    }
++}
++if (typeof(Number.prototype.isBetween) === "undefined") {
++    Number.prototype.isBetween = function(min, max, notBoundaries) {
++        var between = false;
++        if (notBoundaries) {
++            if ((this < max) && (this > min)) between = true;
++        } else {
++            if ((this <= max) && (this >= min)) between = true;
++        }
++        return between;
++    }
++}
+ function readFile(file, callback) {
+     var rawFile = new XMLHttpRequest();
+     rawFile.overrideMimeType("application/json");
+@@ -214,7 +258,6 @@ function writeBlogsHomepageHeader(data) {
+     }
+     return output;
+ }
+-const numberofArticlesPerPage = 6;
+ function writeBlogsHomepage(data) {
+     var output = '';
+     var itr = 0;
+@@ -582,6 +625,28 @@ function writePreviousNextArticles(data) {
+     }
+     return output + "</div>";
+ }
++function writeBlogsPagination(data, className) {
++    if ($(className).length > 0) {
++        var output = '';
++        var length = $(className).children('.blog-box').length;
++        if (length >= numberofArticlesPerPage) {
++            for (var i = 1; i <= Math.ceil(data.length / numberofArticlesPerPage); i++) {
++                output += '<li class="page-item">\n' +
++                    '<button class="page-link '+i+'">'+i+'</button>' +
++                    '</li>';
++            }
++        }
++        // var length1 = $(className).children('div').length;
++        // if (length1 >= numberofArticlesPerPage) {
++        //     for (var j = 1; j <= Math.ceil(data.length / numberofArticlesPerPage); j++) {
++        //         output += '<li class="page-item">\n' +
++        //             '<button class="page-link '+j+'">'+j+'</button>' +
++        //             '</li>';
++        //     }
++        // }
++        return output;
++    }
++}
+ 
+ /******************************************************************************************************************/
+ /************************************** ADS ***********************************************************************/
