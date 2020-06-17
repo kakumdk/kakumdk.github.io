@@ -697,7 +697,8 @@ function writeAds728x90(data, page) {
         '</div><!-- end banner -->' +
         '</div><!-- end col -->' +
         '</div><!-- end row -->' +
-        '<hr class="invis1">';
+        // '<hr class="invis1">' +
+        '';
     return output;
 }
 function writeAds1200x1200(data, page) {
