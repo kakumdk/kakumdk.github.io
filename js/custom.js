@@ -264,10 +264,7 @@ function writeBlogsHomepage(data) {
             '</div><!-- end meta -->' +
             '</div><!-- end blog-box -->';
         output += '<hr class="invis">';
-        if (itr === 2) {
-            output += '<div class="ads-page-6"></div>';
-        }
-        if (itr === 4) {
+        if (itr % 2 === 0) {
             output += '<div class="ads-page-6"></div>';
         }
     }
@@ -307,10 +304,7 @@ function writeBlogs(data) {
             '</div><!-- end blog-box -->' +
             '</div>'+
             '<hr class="invis">';
-        if (itr === 2) {
-            output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
-        }
-        if (itr === 4) {
+        if (itr % 2 === 0) {
             output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
         }
     }
@@ -356,10 +350,7 @@ function writeBlogTypes(data) {
                     '</div><!-- end meta -->' +
                     '</div><!-- end blog-box -->' +
                     '<hr class="invis">';
-                if (itr === 2) {
-                    output += '<div class="ads-page-4"></div>';
-                }
-                if (itr === 4) {
+                if (itr % 2 === 0) {
                     output += '<div class="ads-page-4"></div>';
                 }
             }
@@ -406,10 +397,7 @@ function writeBlogTypeCategories(data) {
                         '</div><!-- end meta -->' +
                         '</div><!-- end blog-box -->' +
                         '<hr class="invis">';
-                    if (itr === 2) {
-                        output += '<div class="ads-page-3"></div>';
-                    }
-                    if (itr === 4) {
+                    if (itr % 2 === 0) {
                         output += '<div class="ads-page-3"></div>';
                     }
                 }
