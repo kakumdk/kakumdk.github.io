@@ -149,8 +149,7 @@ $(function() {
             $(this).siblings('.ads-page-3').hide();
             $(this).siblings('.blog-box').each(function () {
                 var title = $(this).find('h4').children('a').text().toLowerCase();
-                // var title = $(this).find('.blog-content-overflow');
-                // console.log(title);
+                title += " " + $(this).find('.blog-content-overflow').text();
                 var search = event.currentTarget.value.toLowerCase();
                 if (title.indexOf(search) !== -1) {
                     $(this).show();
@@ -164,6 +163,7 @@ $(function() {
             $(this).parent().siblings('.ads-page-5').hide();
             $(this).parent().siblings('div').each(function () {
                 var title = $(this).find('h4').children('a').text().toLowerCase();
+                title += " " + $(this).find('.blog-content-overflow').text();
                 var search = event.currentTarget.value.toLowerCase();
                 if (title.indexOf(search) !== -1) {
                     $(this).show();
