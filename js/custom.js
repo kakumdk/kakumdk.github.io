@@ -145,6 +145,7 @@ $(function() {
     setTimeout(function () {
         $("#peoplessearch").on("keyup", function(event) {
             $(this).siblings('.ads-page-6').hide();
+            $(this).siblings('.ads-page-4').hide();
             $(this).siblings('.blog-box').each(function () {
                 var title = $(this).find('h4').children('a').text().toLowerCase();
                 // var title = $(this).find('.blog-content-overflow');
@@ -345,7 +346,9 @@ function writeBlogs(data) {
     return output;
 }
 function writeBlogTypes(data) {
+    var currentpath = window.location.pathname.split('/');
     var output = '';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on Peoples Blog" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -355,7 +358,6 @@ function writeBlogTypes(data) {
             var path = '/blogs/' + currentType + '/' +
                 category[0].trim().replace(" ", "-") + '/' +
                 data[i]['file'].replace(".json", ".html");
-            var currentpath = window.location.pathname.split('/');
             if (currentType === currentpath[2]) {
                 if (itr >= numberofArticlesPerPage) {
                     output += '<div class="blog-box row hidden">';
