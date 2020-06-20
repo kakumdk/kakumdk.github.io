@@ -2001,6 +2001,7 @@ body .peoples-quotes {
     font-size: 12px;
     font-weight: bold;
     border-radius: 0 3px 3px 0;
+    cursor: pointer;
 }
 .newsletter-widget-subscribe .error {
     color: #ffffff;
@@ -2015,6 +2016,7 @@ body .peoples-quotes {
 }
 .read-article-section span {
     padding: 0 4px;
+    cursor: pointer;
 }
 .contact .btn.btn-primary {
     padding: 8px 24px !important;
