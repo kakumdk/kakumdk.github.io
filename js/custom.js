@@ -158,6 +158,19 @@ $(function() {
                 }
             });
         });
+        $("#peoplessearchblog").on("keyup", function(event) {
+            $(this).parent().siblings('.ads-page-5').hide();
+            $(this).parent().siblings('div').each(function () {
+                var title = $(this).find('h4').children('a').text().toLowerCase();
+                var search = event.currentTarget.value.toLowerCase();
+                if (title.indexOf(search) !== -1) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            });
+        });
     }, 2000);
 });
 function readFile(file, callback) {
@@ -290,6 +303,9 @@ function writeBlogsHomepage(data) {
 }
 function writeBlogs(data) {
     var output = '';
+    output += '<div class="col-md-12">' +
+        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on Peoples Blog" /><hr class="invis">' +
+        '</div>';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
