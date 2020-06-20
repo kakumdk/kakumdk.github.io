@@ -1933,6 +1933,9 @@ body .dmtop {
 .section .page-wrapper .color-orange > a:hover {
     color: #fff !important;
 }
+.blog-top {
+    margin-bottom: 0 !important;
+}
 .blog-top h1 {
     font-size: 19px !important;
     margin-bottom: 0;

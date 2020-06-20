@@ -142,6 +142,23 @@ $(function() {
     readFile("/../../../blogs-content-merged/blogs.json", function(text){
         $(".prevnext-articles").html(writePreviousNextArticles(JSON.parse(text)));
     });
+    setTimeout(function () {
+        $("#peoplessearch").on("keyup", function(event) {
+            $(this).siblings('.ads-page-6').hide();
+            $(this).siblings('.blog-box').each(function () {
+                var title = $(this).find('h4').children('a').text().toLowerCase();
+                // var title = $(this).find('.blog-content-overflow');
+                // console.log(title);
+                var search = event.currentTarget.value.toLowerCase();
+                if (title.indexOf(search) !== -1) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            });
+        });
+    }, 2000);
 });
 function readFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -229,6 +246,7 @@ function writeBlogsHomepageHeader(data) {
 const numberofArticlesPerPage = 6;
 function writeBlogsHomepage(data) {
     var output = '';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search articles on Peoples Blog" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
