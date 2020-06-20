@@ -47,5 +47,33 @@
     "img728x90": "ads/img728x90/public/715ec+DXUuL._SY450_.jpg",
     "img1200x1200": "ads/img1200x1200/public/715ec+DXUuL._SY450_.jpg",
     "price": "₹ 1099.00 /-"
+  },
+  {
+    "url": "https://amzn.to/3ek8fly",
+    "img300x600": "ads/img300x600/public/5119qMYKkKL._SY437_BO1,204,203,200_.jpg",
+    "img728x90": "ads/img728x90/public/5119qMYKkKL._SY437_BO1,204,203,200_.jpg",
+    "img1200x1200": "ads/img1200x1200/public/5119qMYKkKL._SY437_BO1,204,203,200_.jpg",
+    "price": "₹ 499.00 /-"
+  },
+  {
+    "url": "https://amzn.to/2NddSWy",
+    "img300x600": "ads/img300x600/public/614ytmjgJUL._SY350_.jpg",
+    "img728x90": "ads/img728x90/public/614ytmjgJUL._SY350_.jpg",
+    "img1200x1200": "ads/img1200x1200/public/614ytmjgJUL._SY350_.jpg",
+    "price": "₹ 209.00 /-"
+  },
+  {
+    "url": "https://amzn.to/2Yfx0d0",
+    "img300x600": "ads/img300x600/public/71eMxZxF5ZL._UY441_.jpg",
+    "img728x90": "ads/img728x90/public/71eMxZxF5ZL._UY441_.jpg",
+    "img1200x1200": "ads/img1200x1200/public/71eMxZxF5ZL._UY441_.jpg",
+    "price": "₹ 319.00 /-"
+  },
+  {
+    "url": "https://amzn.to/3ehBJ3y",
+    "img300x600": "ads/img300x600/public/817p59j0-HL._UY441_.jpg",
+    "img728x90": "ads/img728x90/public/817p59j0-HL._UY441_.jpg",
+    "img1200x1200": "ads/img1200x1200/public/817p59j0-HL._UY441_.jpg",
+    "price": "₹ 499.00 /-"
   }
 ]
