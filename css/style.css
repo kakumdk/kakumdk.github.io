@@ -2044,6 +2044,7 @@ body .peoples-quotes {
 }
 .policy-container p {
     margin-bottom: 0;
+    font-size: 15px;
 }
 .policy-container .policy-button {
     border: none;
