@@ -100,7 +100,7 @@ do
     <div id="wrapper">
         <header class="tech-header header">
         <div class="container-fluid">
-            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -138,6 +138,9 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                        <li class="google_translate_element">
+                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -269,6 +272,13 @@ do
 
     <div id="policy-container"></div>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "en"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>' > $blogsfilepath
    ## Types
@@ -361,7 +371,7 @@ do
     <div id="wrapper">
         <header class="tech-header header">
         <div class="container-fluid">
-            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -399,6 +409,9 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                        <li class="google_translate_element">
+                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -528,6 +541,13 @@ do
 
     <div id="policy-container"></div>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "en"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>' > $blogsfilepath'/'index.html
      ## Category
@@ -619,7 +639,7 @@ do
     <div id="wrapper">
         <header class="tech-header header">
         <div class="container-fluid">
-            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -657,6 +677,9 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                        <li class="google_translate_element">
+                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -787,6 +810,13 @@ do
 
     <div id="policy-container"></div>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "en"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>' > $blogsfolderpath'/'index.html
        categories+='<small><a href="/blogs/'${_type// /-}'/'${_category// /-}'">'$_category'</a></small>'
@@ -873,7 +903,7 @@ do
     <div id="wrapper">
         <header class="tech-header header">
         <div class="container-fluid">
-            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -911,6 +941,9 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                        <li class="google_translate_element">
+                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -1093,6 +1126,13 @@ do
     <script src="../../../js/custom.js"></script>
 
     <div id="policy-container"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "en"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>' > $blogsfilepath
