@@ -137,9 +137,6 @@ do
                             <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
                         </li>
                     </ul>
@@ -242,7 +239,6 @@ do
                                 <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
@@ -402,9 +398,6 @@ do
                             <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
                         </li>
                     </ul>
@@ -505,7 +498,6 @@ do
                                 <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
@@ -664,9 +656,6 @@ do
                             <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
                         </li>
                     </ul>
@@ -768,7 +757,6 @@ do
                                 <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
@@ -920,9 +908,6 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
@@ -1081,7 +1066,6 @@ do
                                 <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
