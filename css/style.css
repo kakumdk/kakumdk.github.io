@@ -2015,8 +2015,11 @@ body .peoples-quotes {
     font-size: 14px;
 }
 .read-article-section span {
-    padding: 0 4px;
+    padding: 0 2px 0 0;
     cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px dashed #5d6a77;
+
 }
 .contact .btn.btn-primary {
     padding: 8px 24px !important;
