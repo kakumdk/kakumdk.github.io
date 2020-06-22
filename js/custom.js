@@ -1057,6 +1057,7 @@ $(function() {
 
     setTimeout(function() {
         showTopBar();
+        fontIncreaseDecreaseReset();
     }, 10);
 
 });
@@ -1067,6 +1068,11 @@ function showTopBar() {
     var output = '';
     output = '' +
         '<div class="container-fluid text-right">' +
+        '<span class="sizechanger">' +
+        '<a id="text_resize_decrease" >-A</a>' +
+        '<a id="text_resize_reset">A</a>' +
+        '<a id="text_resize_increase">+A</a>' +
+        '</span>' +
         '<div class="dropdown">' +
         '<button class="dropbtn">Language</button>' +
         '<div class="dropdown-content">' +
@@ -1080,4 +1086,29 @@ function showTopBar() {
         '</div>' +
         '</div>';
     $('#top-bar').html(output);
+}
+function fontIncreaseDecreaseReset() {
+    var $affectedElements = $("p, li, small"); // Can be extended, ex. $("div, p, span.someClass")
+    $affectedElements.each( function(){
+        var $this = $(this);
+        $this.data("orig-size", $this.css("font-size") );
+    });
+    $("#text_resize_increase").click(function() {
+        changeFontSize(1);
+    })
+    $("#text_resize_decrease").click(function(){
+        changeFontSize(-1);
+    })
+    $("#text_resize_reset").click(function(){
+        $affectedElements.each( function(){
+            var $this = $(this);
+            $this.css( "font-size" , $this.data("orig-size") );
+        });
+    })
+    function changeFontSize(direction){
+        $affectedElements.each( function(){
+            var $this = $(this);
+            $this.css( "font-size" , parseInt($this.css("font-size"))+direction );
+        });
+    }
 }

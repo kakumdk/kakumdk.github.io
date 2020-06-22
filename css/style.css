@@ -2108,9 +2108,25 @@ body .single-wrapper {
     display: block;
     font-size: 12px;
 }
-.dropdown-content a:hover {background-color: #fff;}
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+.sizechanger {
+    padding-right: 18px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.sizechanger a {
+    color: #fff !important;
+    padding: 6px 8px;
+}
+.sizechanger a:hover {
+    background-color: #fff;
+    color: #000;
+}
 
 
 
