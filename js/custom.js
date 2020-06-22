@@ -1049,3 +1049,35 @@ function getStoredValue(key) {
         return $.cookies.get(key);
     }
 }
+
+/******************************************************************************************************************/
+/************************************** TopBar ********************************************************************/
+/******************************************************************************************************************/
+$(function() {
+
+    setTimeout(function() {
+        showTopBar();
+    }, 10);
+
+});
+function showTopBar() {
+    var url = window.location.href;
+    url = url.split(/[?#]/)[0];
+    console.log(url);
+    var output = '';
+    output = '' +
+        '<div class="container-fluid text-right">' +
+        '<div class="dropdown">' +
+        '<button class="dropbtn">Language</button>' +
+        '<div class="dropdown-content">' +
+        '<a href="'+url+'?ln=kn#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English</a>' +
+        '<a href="'+url+'?ln=hi#googtrans(en|hi)" class="lang-hi lang-select" data-lang="hi">Hindi</a>' +
+        '<a href="'+url+'?ln=kn#googtrans(en|kn)" class="lang-kn lang-select" data-lang="kn">Kannada</a>' +
+        '<a href="'+url+'?ln=ml#googtrans(en|ml)" class="lang-ml lang-select" data-lang="ml">Malayalam</a>' +
+        '<a href="'+url+'?ln=ta#googtrans(en|ta)" class="lang-kn lang-select" data-lang="kn">Tamil</a>' +
+        '<a href="'+url+'?ln=te#googtrans(en|te)" class="lang-te lang-select" data-lang="te">Telugu</a>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+    $('#top-bar').html(output);
+}

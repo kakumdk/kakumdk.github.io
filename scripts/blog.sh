@@ -98,6 +98,7 @@ do
 <body>
 
     <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
         <header class="tech-header header">
         <div class="container-fluid">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -138,9 +139,6 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                        <li class="google_translate_element">
-                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -369,6 +367,7 @@ do
 <body>
 
     <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
         <header class="tech-header header">
         <div class="container-fluid">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -409,9 +408,6 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                        <li class="google_translate_element">
-                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -637,6 +633,7 @@ do
 <body>
 
     <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
         <header class="tech-header header">
         <div class="container-fluid">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -677,9 +674,6 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                        <li class="google_translate_element">
-                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>
@@ -901,6 +895,7 @@ do
 </head>
 <body>
     <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
         <header class="tech-header header">
         <div class="container-fluid">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -941,9 +936,6 @@ do
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                        <li class="google_translate_element">
-                            <div id="google_translate_element"></div>
                         </li>
                     </ul>
                 </div>

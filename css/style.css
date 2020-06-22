@@ -1905,7 +1905,7 @@ body .page-title .breadcrumb li a:hover {
 .tag-cloud-single span,
 .page-title i, .btn:hover, .sitemap-wrapper .year, .btn:focus, .navbar-inverse .navbar-toggler,
 .blog-list-widget small, .newsletter-widget .btn, .newsletter-widget .btn:hover,
-.policy-container .policy-button {
+.policy-container .policy-button, .top-bar .dropbtn {
     /*background-color: #7cbc48 !important;*/
     background-color: #269f42 !important;
     background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
@@ -2073,12 +2073,44 @@ body nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse {
     box-shadow: none !important;
     padding: 0 !important;
 }
-li.google_translate_element {
-    padding: 14px 0 0 16px;
-}
+/*li.google_translate_element {*/
+/*    padding: 14px 0 0 16px;*/
+/*}*/
 body .single-wrapper {
     margin-top: 0 !important;
 }
+.top-bar {
+    background-color: #064771;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0 18px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 4px 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+.dropdown-content a:hover {background-color: #fff;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 
