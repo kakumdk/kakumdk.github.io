@@ -1013,7 +1013,7 @@ $(function() {
     }, 1000);
     setTimeout(function() {
         storeValue(key, '');
-    }, 30 * 60 * 1000);
+    }, 60 * 60 * 1000);
 
 });
 function showAcceptCookie(cookie) {
