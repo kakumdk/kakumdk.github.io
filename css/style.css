@@ -1872,7 +1872,7 @@ body a:hover {
     color: #4e4e4e !important;
     /*border-bottom: 1px solid #fff !important;*/
 }
-body .page-title {
+body .page-title, .top-bar {
     background-image: url(../images/bg-shapes.svg);
     background-position: 10px 1000px;
     background-repeat: repeat-x;
@@ -2081,6 +2081,7 @@ body .single-wrapper {
 }
 .top-bar {
     background-color: #064771;
+    line-height: 1.2rem;
 }
 .dropbtn {
     background-color: #4CAF50;
@@ -2093,6 +2094,7 @@ body .single-wrapper {
 .dropdown {
     position: relative;
     display: inline-block;
+    top: -1px;
 }
 .dropdown-content {
     display: none;
@@ -2103,7 +2105,7 @@ body .single-wrapper {
 }
 .dropdown-content a {
     color: black;
-    padding: 4px 18px;
+    padding: 0.2rem 1.2rem;
     text-decoration: none;
     display: block;
     font-size: 12px;
