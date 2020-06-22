@@ -2088,6 +2088,7 @@ body .single-wrapper {
     color: white;
     padding: 0 18px;
     font-size: 12px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
 }
