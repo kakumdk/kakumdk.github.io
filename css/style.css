@@ -2127,7 +2127,13 @@ body .single-wrapper {
     background-color: #fff;
     color: #000;
 }
-
+.goog-te-banner-frame{visibility:hidden !important;}
+body{top:0 !important;}
+#goog-gt-tt{display: none !important; top: 0px !important; }
+.goog-tooltip skiptranslate{display: none !important; top: 0px !important; }
+.activity-root { display: hide !important;}
+.status-message { display: hide !important;}
+.started-activity-container { display: hide !important;}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */

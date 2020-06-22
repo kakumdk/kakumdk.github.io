@@ -1076,7 +1076,7 @@ function showTopBar() {
         '<div class="dropdown">' +
         '<button class="dropbtn">Language</button>' +
         '<div class="dropdown-content">' +
-        '<a href="'+url+'?ln=kn#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English</a>' +
+        '<a href="'+url+'?ln=en#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English</a>' +
         '<a href="'+url+'?ln=hi#googtrans(en|hi)" class="lang-hi lang-select" data-lang="hi">Hindi</a>' +
         '<a href="'+url+'?ln=kn#googtrans(en|kn)" class="lang-kn lang-select" data-lang="kn">Kannada</a>' +
         '<a href="'+url+'?ln=ml#googtrans(en|ml)" class="lang-ml lang-select" data-lang="ml">Malayalam</a>' +
