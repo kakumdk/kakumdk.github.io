@@ -2270,6 +2270,9 @@ and (max-device-width : 480px) {
     .dropbtn {
         padding: 10px 18px !important;
     }
+    .dropdown-content a {
+        padding: 0.4rem 1.1rem;
+    }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -2404,6 +2407,9 @@ and (max-width : 320px) {
     .dropbtn {
         padding: 10px 18px !important;
     }
+    .dropdown-content a {
+        padding: 0.4rem 1.1rem;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2530,6 +2536,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .dropbtn {
         padding: 10px 18px !important;
+    }
+    .dropdown-content a {
+        padding: 0.4rem 1.1rem;
     }
 }
 /* iPads (portrait and landscape) ----------- */
