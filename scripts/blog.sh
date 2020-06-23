@@ -423,7 +423,7 @@ do
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="/blogs">Blog</a></li>
                             <li class="breadcrumb-item active">'$_type'</li>
                         </ol>
@@ -689,7 +689,7 @@ do
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="/blogs">Blog</a></li>
                             <li class="breadcrumb-item"><a href="/blogs/'${_type// /-}'">'$_type'</a></li>
                             <li class="breadcrumb-item active">'$_category'</li>
