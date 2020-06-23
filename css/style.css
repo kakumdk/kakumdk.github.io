@@ -1899,6 +1899,9 @@ body .page-title h2, body .page-title h2 small,
 body .page-title .breadcrumb li, body .page-title .breadcrumb li:before, body .page-title .breadcrumb li a {
     color: #fff !important;
 }
+body .page-title .breadcrumb li a {
+    text-transform: capitalize;
+}
 body .page-title .breadcrumb li a:hover {
     border-bottom: 1px solid #fff !important;
 }
