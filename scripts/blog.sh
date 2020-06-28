@@ -165,13 +165,13 @@ do
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads-blogs sidebar">
 
                         </div><!-- end sidebar -->
                     </div><!-- end col -->
 
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-grid-system">
                                 <div class="row blog-list-blogs">
@@ -435,7 +435,7 @@ do
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-list-type blog-list clearfix">
 
@@ -457,7 +457,7 @@ do
                         </div><!-- end row -->
                     </div><!-- end col -->
 
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads-type sidebar">
 
                         </div><!-- end sidebar -->
@@ -702,7 +702,7 @@ do
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-list-category blog-custom-build">
 
@@ -724,7 +724,7 @@ do
                         </div><!-- end row -->
                     </div><!-- end col -->
 
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads sidebar">
 
                         </div><!-- end sidebar -->
@@ -946,7 +946,7 @@ do
         <section class="section single-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-title-area text-center">
                                 <ol class="breadcrumb hidden-xs-down">
@@ -1041,7 +1041,7 @@ do
                         </div><!-- end page-wrapper -->
                     </div><!-- end col -->
 
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                         <div class="ads-article sidebar">
 
                         </div><!-- end sidebar -->

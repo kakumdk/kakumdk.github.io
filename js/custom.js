@@ -298,7 +298,7 @@ function writeBlogsHomepage(data) {
             '</div><!-- end blog-box -->';
         output += '<hr class="invis">';
         if (itr % 2 === 0) {
-            output += '<div class="ads-page-6"></div>';
+            // output += '<div class="ads-page-6"></div>';
         }
     }
     return output;
@@ -341,7 +341,7 @@ function writeBlogs(data) {
             '</div>'+
             '<hr class="invis">';
         if (itr % 2 === 0) {
-            output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
+            // output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
         }
     }
     return output;
@@ -388,7 +388,7 @@ function writeBlogTypes(data) {
                     '</div><!-- end blog-box -->' +
                     '<hr class="invis">';
                 if (itr % 2 === 0) {
-                    output += '<div class="ads-page-4"></div>';
+                    // output += '<div class="ads-page-4"></div>';
                 }
             }
             continue;
@@ -436,7 +436,7 @@ function writeBlogTypeCategories(data) {
                         '</div><!-- end blog-box -->' +
                         '<hr class="invis">';
                     if (itr % 2 === 0) {
-                        output += '<div class="ads-page-3"></div>';
+                        // output += '<div class="ads-page-3"></div>';
                     }
                 }
             }
@@ -630,6 +630,15 @@ $(function() {
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
         adShowHidePage('ads-page-6');
     });
@@ -638,6 +647,15 @@ $(function() {
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
         adShowHidePage('ads-page-5');
     });
@@ -645,6 +663,7 @@ $(function() {
         $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
         $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'type'));
         adShowHidePage('ads-page-4');
     });
@@ -652,6 +671,11 @@ $(function() {
         $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         setTimeout(function() {
             $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
@@ -667,6 +691,11 @@ $(function() {
         }, 8000);
         var ads_article = $('.ads-article');
         ads_article.html(writeAds1200x1200(JSON.parse(text), 'cat'));
+        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
         ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
         ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
         ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
@@ -1059,6 +1088,12 @@ $(function() {
         showTopBar();
         fontIncreaseDecreaseReset();
     }, 10);
+
+    setTimeout(function() {
+        $('p').filter(function() {
+            return $.trim($(this).text()) === ''
+        }).hide();
+    }, 1000);
 
 });
 function showTopBar() {

@@ -557,6 +557,8 @@ div.tab button:hover {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    position: relative;
+    z-index: 1000 !important;
 }
 
 .masonry-box img,
@@ -1270,10 +1272,14 @@ hr.invis3 {
 }
 
 .blog-list .blog-meta.big-meta h4 {
-    margin-left: -20%;
+    margin-left: -40%;
     margin-top: 1rem;
     background-color: #ffffff;
     padding: 1rem 1.5rem 1rem;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .blog-custom-build .blog-meta {
@@ -1681,7 +1687,7 @@ hr.invis3 {
 #################################################################################################################
 #################################################################################################################*/
 .blog-content-overflow {
-    height: 85px;
+    height: 135px;
     overflow: hidden;
 }
 #see-more:hover {
@@ -2179,7 +2185,7 @@ and (max-device-width : 480px) {
         margin-top: 2.9rem;
         padding: 1rem 0 0.5rem 0;
     }
-    section.section .col-lg-3.col-md-12.col-sm-12.col-xs-12 {
+    section.section .col-lg-2.col-md-12.col-sm-12.col-xs-12 {
         display: none;
     }
     /*section.section {*/
@@ -2316,7 +2322,7 @@ and (max-width : 320px) {
         margin-top: 2.9rem;
         padding: 1rem 0 0.5rem 0;
     }
-    section.section .col-lg-3.col-md-12.col-sm-12.col-xs-12 {
+    section.section .col-lg-2.col-md-12.col-sm-12.col-xs-12 {
         display: none;
     }
     /*section.section {*/
@@ -2446,7 +2452,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         margin-top: 2.9rem;
         padding: 1rem 0 0.5rem 0;
     }
-    section.section .col-lg-3.col-md-12.col-sm-12.col-xs-12 {
+    section.section .col-lg-1.col-md-12.col-sm-12.col-xs-12 {
         display: none;
     }
     /*section.section {*/
