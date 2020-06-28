@@ -1992,6 +1992,10 @@ body .peoples-quotes {
 .prevnextpost .float-left {
     margin-right: 1rem !important;
 }
+.prevnextpost .blog-list-widget small i {
+    font-size: 12px;
+    font-weight: bold;
+}
 .newsletter-widget .form-inline .form-control {
     height: 40px !important;
     width: 250px;

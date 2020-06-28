@@ -204,7 +204,9 @@ function writeBlogsHomepageHeader(data) {
             output +=
                 '<div class="first-slot">' +
                     '<div class="masonry-box post-media">' +
+                        '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                         '<img alt="Peoples Blog" src="'+data[i]['banner788x443']+'" class="img-fluid">' +
+                        '</a>' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
@@ -222,7 +224,9 @@ function writeBlogsHomepageHeader(data) {
             output +=
                 '<div class="second-slot">' +
                     '<div class="masonry-box post-media">' +
+                        '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                         '<img alt="Peoples Blog" src="'+data[i]['banner394x449']+'" class="img-fluid">' +
+                        '</a>' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
@@ -240,7 +244,9 @@ function writeBlogsHomepageHeader(data) {
             output +=
                 '<div class="last-slot">' +
                     '<div class="masonry-box post-media">' +
+                        '<a href="' + path + '" title="' + data[i]['title'] + '">' +
                         '<img alt="Peoples Blog" src="'+data[i]['banner394x449']+'" class="img-fluid">' +
+                        '</a>' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
@@ -554,7 +560,7 @@ function writePreviousNextArticles(data) {
                     '<div class="w-100 justify-content-between text-right">' +
                     '<img src="../../../'+data[prev]['banner800x460']+'" alt="" class="img-fluid float-right">' +
                     '<h5 class="mb-1">'+data[prev]['title']+'</h5>' +
-                    '<small>Prev Post</small>' +
+                    '<small><i class="fa fa-angle-double-left"></i> Prev Post</small>' +
                     '</div>' +
                     '</a>' +
                     '</div>' +
@@ -592,7 +598,7 @@ function writePreviousNextArticles(data) {
                     '<div class="w-100 justify-content-between">' +
                     '<img src="../../../'+data[next]['banner800x460']+'" alt="" class="img-fluid float-left">' +
                     '<h5 class="mb-1">'+data[next]['title']+'</h5>' +
-                    '<small>Next Post</small>' +
+                    '<small>Next Post <i class="fa fa-angle-double-right"></i></small>' +
                     '</div>' +
                     '</a>' +
                     '</div>' +
