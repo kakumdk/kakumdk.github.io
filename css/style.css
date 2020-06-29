@@ -2201,6 +2201,7 @@ and (max-device-width : 480px) {
     .blog-list .blog-meta.big-meta h4 {
         margin-top: 0 !important;
         padding: 0.5rem 0 0 0 !important;
+        white-space: initial;
     }
     .blog-meta.big-meta p {
         margin-bottom: 0 !important;
@@ -2338,6 +2339,7 @@ and (max-width : 320px) {
     .blog-list .blog-meta.big-meta h4 {
         margin-top: 0 !important;
         padding: 0.5rem 0 0 0 !important;
+        white-space: initial;
     }
     .blog-meta.big-meta p {
         margin-bottom: 0 !important;
@@ -2468,6 +2470,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     .blog-list .blog-meta.big-meta h4 {
         margin-top: 0 !important;
         padding: 0.5rem 0 0 0 !important;
+        white-space: initial;
     }
     .blog-meta.big-meta p {
         margin-bottom: 0 !important;
