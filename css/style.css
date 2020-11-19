@@ -2288,6 +2288,9 @@ and (max-device-width : 480px) {
     .dropdown-content a {
         padding: 0.4rem 1.1rem;
     }
+    .top-bar {
+        height: 2.4rem;
+    }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -2426,6 +2429,9 @@ and (max-width : 320px) {
     .dropdown-content a {
         padding: 0.4rem 1.1rem;
     }
+    .top-bar {
+        height: 2.4rem;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2556,6 +2562,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .dropdown-content a {
         padding: 0.4rem 1.1rem;
+    }
+    .top-bar {
+        height: 2.4rem;
     }
 }
 /* iPads (portrait and landscape) ----------- */
