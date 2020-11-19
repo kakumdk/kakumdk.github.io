@@ -132,6 +132,9 @@ do
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
@@ -401,6 +404,9 @@ do
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
@@ -667,6 +673,9 @@ do
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
@@ -927,6 +936,9 @@ do
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html" title="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>

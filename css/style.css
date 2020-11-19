@@ -1954,7 +1954,7 @@ body .dmtop {
 }
 .site-links {
     padding: 0 0 4px 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 .site-links span {
     padding-right: 8px;
@@ -2095,6 +2095,7 @@ body .single-wrapper {
 .top-bar {
     background-color: #064771;
     line-height: 1.2rem;
+    height: 1.2rem;
 }
 .dropbtn {
     background-color: #4CAF50;

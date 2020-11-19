@@ -515,6 +515,7 @@ function writeSocialShareLinks(region) {
 function writeLinks(data) {
     var output = '';
     var itr = 0;
+    var links = [];
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
         var category = data[i]['category'].split(',');
@@ -523,19 +524,18 @@ function writeLinks(data) {
             for (var k = 0; k < category.length; k++) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var baseurl = window.location.origin;
-                var typeLink = baseurl+'/blogs/'+currentType;
                 var catLink = baseurl+'/blogs/'+currentType+'/'+currentCat;
-                var path = baseurl+'/blogs/' + currentType + '/' +
-                    category[0].trim().replace(" ", "-") + '/' +
-                    data[i]['file'].replace(".json", ".html");
-                output += '<div class="site-links">' +
-                    '<span><i class="fa fa-file"></i> <a href="'+typeLink+'">'+type[j]+'</a></span>' +
-                    '<span><i class="fa fa-tag"></i> <a href="'+catLink+'">'+currentCat+'</a></span>' +
-                    '<span><i class="fa fa-book"></i> <a href="'+path+'">'+path+'</a></span>' +
-                    '</div>';
+                links[currentCat] = '<span><i class="fa fa-tag"></i> <a href="'+catLink+'" target="_blank">'+currentCat+'</a></span>';
             }
         }
     }
+    output += '<div class="site-links">';
+    for (var key in links) {
+        if (links.hasOwnProperty(key)) {
+            output += links[key];
+        }
+    }
+    output += '</div>';
     return output;
 }
 function writePreviousNextArticles(data) {
@@ -572,14 +572,12 @@ function writePreviousNextArticles(data) {
                     '<div class="col-lg-6">' +
                     '<div class="blog-list-widget">' +
                     '<div class="list-group">' +
-                    '<a href="'+url+'" class="list-group-item list-group-item-action flex-column align-items-start">' +
                     '<div class="w-100 justify-content-between text-right">' +
                     '<h5 class="mb-1 subscribe">Subscribe for latest posts</h5>' +
                     '<div class="newsletter-widget-subscribe newsletter-widget text-left">' +
                     '<form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>' +
                     '</div>' +
                     '</div>' +
-                    '</a>' +
                     '</div>' +
                     '</div>' +
                     '</div><!-- end col -->';
@@ -610,14 +608,12 @@ function writePreviousNextArticles(data) {
                     '<div class="col-lg-6">' +
                     '<div class="blog-list-widget">' +
                     '<div class="list-group">' +
-                    '<a href="" class="list-group-item list-group-item-action flex-column align-items-start">' +
                     '<div class="w-100 justify-content-between">' +
                     '<h5 class="mb-1 subscribe">Subscribe for latest posts</h5>' +
                     '<div class="newsletter-widget-subscribe newsletter-widget text-left">' +
                     '<form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>' +
                     '</div>' +
                     '</div>' +
-                    '</a>' +
                     '</div>' +
                     '</div>' +
                     '</div><!-- end col -->';
