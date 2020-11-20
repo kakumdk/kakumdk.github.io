@@ -525,7 +525,7 @@ function writeLinks(data) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var baseurl = window.location.origin;
                 var catLink = baseurl+'/blogs/'+currentType+'/'+currentCat;
-                links[currentCat] = '<span><i class="fa fa-tag"></i> <a href="'+catLink+'" target="_blank">'+currentCat+'</a></span>';
+                links[currentCat] = '<span><i class="fa fa-tag"></i> <a href="'+catLink+'">'+currentCat+'</a></span>';
             }
         }
     }
