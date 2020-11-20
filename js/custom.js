@@ -1149,3 +1149,41 @@ function fontIncreaseDecreaseReset() {
         });
     }
 }
+
+/******************************************************************************************************************/
+/************************************** Security ******************************************************************/
+/******************************************************************************************************************/
+$(function() {
+    setTimeout(function() {
+        if (localEnv() === false) {
+            disableCtrlU();
+            disableInspectElement();
+        }
+    }, 10);
+});
+function localEnv() {
+    var baseurl = window.location.origin;
+    if (baseurl === 'http://kakumdk.local') {
+        return true;
+    }
+    return false;
+}
+function disableCtrlU() {
+    document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 67 ||
+                e.keyCode === 86 ||
+                e.keyCode === 85 ||
+                e.keyCode === 117)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
+}
+function disableInspectElement() {
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+}
