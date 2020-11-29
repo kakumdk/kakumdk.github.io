@@ -1964,6 +1964,11 @@ body .dmtop {
 }
 .banner-img img {
     max-width: 830px !important;
+    transition: width 1s, height 1s, transform 1s;
+    background: transparent;
+}
+.sidebar .banner-img img:hover {
+    transform: rotate(360deg);
 }
 body .peoples-quotes {
     font-size: 12px;
