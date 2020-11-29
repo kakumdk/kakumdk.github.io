@@ -66,8 +66,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../images/logo_new.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/logo_new.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -339,8 +339,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../images/logo_new.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/logo_new.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -609,8 +609,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../images/logo_new.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/logo_new.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -876,8 +876,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../images/logo_new.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/logo_new.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
