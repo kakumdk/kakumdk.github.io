@@ -54,7 +54,7 @@ do
     <meta property="og:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/" />
     <meta property="og:image" content="../../../images/logo_new.png" />
-<!--    <meta name="google-site-verification" content="" />-->
+<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
     <script>
@@ -327,7 +327,7 @@ do
     <meta property="og:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
     <meta property="og:image" content="../../../images/logo_new.png" />
-<!--    <meta name="google-site-verification" content="" />-->
+<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
     <script>
@@ -597,7 +597,7 @@ do
     <meta property="og:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <meta property="og:image" content="../../../images/logo_new.png" />
-<!--    <meta name="google-site-verification" content="" />-->
+<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
     <script>
@@ -864,7 +864,7 @@ do
     <meta property="og:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta property="og:image" content="../../../images/logo_new.png" />
-<!--    <meta name="google-site-verification" content="" />-->
+<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93645678-6"></script>
     <script>
