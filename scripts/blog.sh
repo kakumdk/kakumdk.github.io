@@ -38,21 +38,21 @@ do
     <title>Blogs - Peoples Blog</title>
     <meta name="description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Peoples Blogs">
-    <link rel="canonical" href="https://kakumdk.github.io/blogs/" />
-    <link rel="shortlink" href="https://kakumdk.github.io/blogs/index.html" />
-    <link rel="revision" href="https://kakumdk.github.io/blogs/" />
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/index.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="Blogs - Peoples Blog" />
     <meta property="og:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
-    <meta property="og:url" content="https://kakumdk.github.io/blogs/" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/" />
     <meta property="og:image" content="../../../images/logo_new.png" />
 <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -311,21 +311,21 @@ do
     <title>'$_type' - Peoples Blog</title>
     <meta name="description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Peoples Blogs">
-    <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
-    <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/index.html" />
-    <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$_type' - Peoples Blog" />
     <meta property="og:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
-    <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/" />
     <meta property="og:image" content="../../../images/logo_new.png" />
 <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -581,21 +581,21 @@ do
     <title>'$_category' - Peoples Blog</title>
     <meta name="description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Peoples Blogs">
-    <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
-    <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
-    <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$_category' - Peoples Blog" />
     <meta property="og:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
-    <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/" />
     <meta property="og:image" content="../../../images/logo_new.png" />
 <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -848,21 +848,21 @@ do
     <title>'$title' - Peoples Blog</title>
     <meta name="description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Peoples Blogs">
-    <link rel="canonical" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
-    <link rel="shortlink" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
-    <link rel="revision" href="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://kakumdk.github.io)" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$title' - Peoples Blog" />
     <meta property="og:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
-    <meta property="og:url" content="https://kakumdk.github.io/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta property="og:image" content="../../../images/logo_new.png" />
 <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -1164,13 +1164,13 @@ jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
 date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-          <url><loc>https://kakumdk.github.io</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs/Sci-Tech</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs/Lifestyle</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs/Food</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs/Travel</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://kakumdk.github.io/blogs/Social-Media</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
+          <url><loc>https://peoplesblog.co.in</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Food</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Travel</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Social-Media</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
@@ -1181,9 +1181,9 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     for _category_i in "${category_array[@]}"
     do
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
-      echo '          <url><loc>https://kakumdk.github.io/blogs/'$(_jq '.type')'/'${_category// /-}'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '          <url><loc>https://peoplesblog.co.in/blogs/'$(_jq '.type')'/'${_category// /-}'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
-      echo '          <url><loc>https://kakumdk.github.io/blogs/'$(_jq '.type')'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '          <url><loc>https://peoplesblog.co.in/blogs/'$(_jq '.type')'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
 done
 echo '</urlset>' >> $pwd'/sitemap.xml'
@@ -1206,4 +1206,4 @@ Disallow: /scripts/
 Disallow: /content
 Disallow: /content/
 Disallow: /tmp.html
-Sitemap: https://kakumdk.github.io/sitemap.xml' > $pwd'/robots.txt'
+Sitemap: https://peoplesblog.co.in/sitemap.xml' > $pwd'/robots.txt'
