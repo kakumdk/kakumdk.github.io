@@ -1165,6 +1165,11 @@ date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
           <url><loc>https://peoplesblog.co.in</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/blogs</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/blogs/Lifestyle</loc><lastmod>'$date'</lastmod></url>
