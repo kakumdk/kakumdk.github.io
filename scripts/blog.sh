@@ -1199,7 +1199,7 @@ echo '</urlset>' >> $pwd'/sitemap.xml'
 ##### Robots.txt
 #################################################################################################################
 #################################################################################################################
-echo 'User-agent: *
+echo 'User-agent: Googlebot
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -1211,4 +1211,19 @@ Disallow: /scripts/
 Disallow: /content
 Disallow: /content/
 Disallow: /tmp.html
+Allow: /*.html$
+
+User-agent: *
+Disallow: /ads/ads.json
+Disallow: /blogs-content
+Disallow: /blogs-content/
+Disallow: /blogs-content-merged
+Disallow: /blogs-content-merged/
+Disallow: /quotes/quotes.json
+Disallow: /scripts
+Disallow: /scripts/
+Disallow: /content
+Disallow: /content/
+Disallow: /tmp.html
+
 Sitemap: https://peoplesblog.co.in/sitemap.xml' > $pwd'/robots.txt'
