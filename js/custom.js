@@ -210,7 +210,7 @@ function writeBlogsHomepageHeader(data) {
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
-                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '" title="' + currentTypeLabel + '">' + currentTypeLabel + '</a></span>' +
+                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '/index.html" title="' + currentTypeLabel + '">' + currentTypeLabel + '</a></span>' +
                                     '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                                     '<small>' + data[i]['created'] + '</small>' +
                                     '<small>by ' + data[i]['author'] + '</small>' +
@@ -230,7 +230,7 @@ function writeBlogsHomepageHeader(data) {
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
-                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '" title="' + currentTypeLabel + '">' + currentTypeLabel + '</a></span>' +
+                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '/index.html" title="' + currentTypeLabel + '">' + currentTypeLabel + '</a></span>' +
                                     '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                                     '<small>' + data[i]['created'] + '</small>' +
                                     '<small>by ' + data[i]['author'] + '</small>' +
@@ -250,7 +250,7 @@ function writeBlogsHomepageHeader(data) {
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
                                 '<div class="blog-meta">' +
-                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '" title="' + currentTypeLabel + '">' + currentTypeLabel + '</a></span>' +
+                                    '<span class="bg-orange"><a href="/blogs/' + currentType + '/index.html" title="' + currentTypeLabel + '">' + currentTypeLabel + '</a></span>' +
                                     '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                                     '<small>' + data[i]['created'] + '</small>' +
                                     '<small>by ' + data[i]['author'] + '</small>' +
@@ -296,7 +296,7 @@ function writeBlogsHomepage(data) {
             '<div class="blog-meta big-meta col-md-8">' +
             '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
             '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-            '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+type[0].replace(" ", "-")+'" title="' + type[0] + '">' + type[0] + '</a></small>' +
+            '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+type[0].replace(" ", "-")+'/index.html" title="' + type[0] + '">' + type[0] + '</a></small>' +
             '<small>' + data[i]['created'] + '</small>' +
             '<small>by ' + data[i]['author'] + '</small>' +
             // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
@@ -337,7 +337,7 @@ function writeBlogs(data) {
             '</a>' +
             '</div><!-- end media -->' +
             '<div class="blog-meta big-meta">' +
-            '<span class="color-orange"><a href="/blogs/'+type[0].replace(" ", "-")+'" title="' + type[0] + '">' + type[0] + '</a></span>' +
+            '<span class="color-orange"><a href="/blogs/'+type[0].replace(" ", "-")+'/index.html" title="' + type[0] + '">' + type[0] + '</a></span>' +
             '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
             '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
             '<small>' + data[i]['created'] + '</small>' +
@@ -386,7 +386,7 @@ function writeBlogTypes(data) {
                     '<div class="blog-meta big-meta col-md-8">' +
                     '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                     '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-                    '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/'+category[0].replace(" ", "-")+'" title="' + category[0] + '">' + category[0] + '</a></small>' +
+                    '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/'+category[0].replace(" ", "-")+'/index.html" title="' + category[0] + '">' + category[0] + '</a></small>' +
                     '<small>' + data[i]['created'] + '</small>' +
                     '<small>by ' + data[i]['author'] + '</small>' +
                     // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
@@ -435,7 +435,7 @@ function writeBlogTypeCategories(data) {
                         '<div class="blog-meta big-meta text-center">' +
                         '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                         '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'" title="' + type[j].trim() + '">' + type[j].trim() + '</a></small>' +
+                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/index.html" title="' + type[j].trim() + '">' + type[j].trim() + '</a></small>' +
                         '<small>' + data[i]['created'] + '</small>' +
                         '<small>by ' + data[i]['author'] + '</small>' +
                         '</div><!-- end meta -->' +
@@ -464,7 +464,7 @@ function writeBlogsFooter(data) {
             var category = data[i]['category'].split(',');
             for (var k = 0; k < category.length; k++) {
                 var currentCat = category[k].trim().replace(" ", "-");
-                allCat[currentCat] = '/blogs/' + currentType + '/' + currentCat;
+                allCat[currentCat] = '/blogs/' + currentType + '/' + currentCat + '/index.html';
             }
         }
     }
@@ -524,7 +524,7 @@ function writeLinks(data) {
             for (var k = 0; k < category.length; k++) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var baseurl = window.location.origin;
-                var catLink = baseurl+'/blogs/'+currentType+'/'+currentCat;
+                var catLink = baseurl+'/blogs/'+currentType+'/'+currentCat+'/index.html';
                 links[currentCat] = '<span><i class="fa fa-tag"></i> <a href="'+catLink+'">'+currentCat+'</a></span>';
             }
         }
