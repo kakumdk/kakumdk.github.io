@@ -1243,4 +1243,49 @@ Disallow: /content
 Disallow: /content/
 Disallow: /tmp.html
 
+Sitemap: https://peoplesblog.co.in/sitemap.xml
+
+User-agent: *
+Allow: /index.html
+Allow: /about.html
+Allow: /links.html
+Allow: /privacy.html
+Allow: /terms-and-conditions.html
+Allow: /contact.html
+Allow: /blogs/index.html
+Allow: /blogs/Sci-Tech/index.html
+Allow: /blogs/Lifestyle/index.html
+Allow: /blogs/Food/index.html
+Allow: /blogs/Travel/index.html
+Allow: /blogs/Social-Media/index.html' >> $pwd'/robots.txt'
+data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
+for row in $(echo "${data}" | jq -r '.[] | @base64'); do
+    _jq() {
+     echo ${row} | base64 --decode | jq -r ${1}
+    }
+    IFS=',' read -ra category_array <<< "$(_jq '.category')"
+    categories=''
+    for _category_i in "${category_array[@]}"
+    do
+      _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
+      _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
+      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
+#      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-} >> $pwd'/robots.txt'
+      jsonfile=$(_jq '.file')
+      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
+#      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
+    done
+done
+echo 'Disallow: /ads/ads.json
+Disallow: /blogs-content
+Disallow: /blogs-content/
+Disallow: /blogs-content-merged
+Disallow: /blogs-content-merged/
+Disallow: /quotes/quotes.json
+Disallow: /scripts
+Disallow: /scripts/
+Disallow: /content
+Disallow: /content/
+Disallow: /tmp.html
+
 Sitemap: https://peoplesblog.co.in/sitemap.xml' >> $pwd'/robots.txt'
