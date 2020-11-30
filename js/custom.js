@@ -650,6 +650,7 @@ $(function() {
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
         adShowHidePage('ads-page-6');
     });
