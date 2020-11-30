@@ -1170,12 +1170,12 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
           <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Food</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Travel</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Social-Media</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
+          <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
@@ -1185,10 +1185,11 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     categories=''
     for _category_i in "${category_array[@]}"
     do
+      _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
-      echo '          <url><loc>https://peoplesblog.co.in/blogs/'$(_jq '.type')'/'${_category// /-}'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
-      echo '          <url><loc>https://peoplesblog.co.in/blogs/'$(_jq '.type')'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
 done
 echo '</urlset>' >> $pwd'/sitemap.xml'
@@ -1200,7 +1201,37 @@ echo '</urlset>' >> $pwd'/sitemap.xml'
 #################################################################################################################
 #################################################################################################################
 echo 'User-agent: Googlebot
-Disallow: /ads/ads.json
+Allow: /index.html
+Allow: /about.html
+Allow: /links.html
+Allow: /privacy.html
+Allow: /terms-and-conditions.html
+Allow: /contact.html
+Allow: /blogs/index.html
+Allow: /blogs/Sci-Tech/index.html
+Allow: /blogs/Lifestyle/index.html
+Allow: /blogs/Food/index.html
+Allow: /blogs/Travel/index.html
+Allow: /blogs/Social-Media/index.html' > $pwd'/robots.txt'
+data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
+for row in $(echo "${data}" | jq -r '.[] | @base64'); do
+    _jq() {
+     echo ${row} | base64 --decode | jq -r ${1}
+    }
+    IFS=',' read -ra category_array <<< "$(_jq '.category')"
+    categories=''
+    for _category_i in "${category_array[@]}"
+    do
+      _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
+      _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
+      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
+#      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-} >> $pwd'/robots.txt'
+      jsonfile=$(_jq '.file')
+      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
+#      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
+    done
+done
+echo 'Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
 Disallow: /blogs-content-merged
@@ -1211,19 +1242,5 @@ Disallow: /scripts/
 Disallow: /content
 Disallow: /content/
 Disallow: /tmp.html
-Allow: /*.html$
 
-User-agent: *
-Disallow: /ads/ads.json
-Disallow: /blogs-content
-Disallow: /blogs-content/
-Disallow: /blogs-content-merged
-Disallow: /blogs-content-merged/
-Disallow: /quotes/quotes.json
-Disallow: /scripts
-Disallow: /scripts/
-Disallow: /content
-Disallow: /content/
-Disallow: /tmp.html
-
-Sitemap: https://peoplesblog.co.in/sitemap.xml' > $pwd'/robots.txt'
+Sitemap: https://peoplesblog.co.in/sitemap.xml' >> $pwd'/robots.txt'
