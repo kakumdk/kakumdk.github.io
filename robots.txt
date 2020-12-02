@@ -71,6 +71,12 @@ Allow: /blogs/Food/Tomatoes/index.html
 Allow: /blogs/Food/Tomatoes/2020-06-28-Growing-Enough-Food-to-Feed-a-Family.html
 Allow: /blogs/Social-Media/Missile/index.html
 Allow: /blogs/Social-Media/Missile/2020-11-30-Worlds-fastest-anti-ship-cruise-missile-in-operation.html
+Allow: /blogs/Travel/Bangalore/index.html
+Allow: /blogs/Travel/Bangalore/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
+Allow: /blogs/Travel/Ooty/index.html
+Allow: /blogs/Travel/Ooty/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
+Allow: /blogs/Travel/Couple/index.html
+Allow: /blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -158,6 +164,12 @@ Allow: /blogs/Food/Tomatoes/index.html
 Allow: /blogs/Food/Tomatoes/2020-06-28-Growing-Enough-Food-to-Feed-a-Family.html
 Allow: /blogs/Social-Media/Missile/index.html
 Allow: /blogs/Social-Media/Missile/2020-11-30-Worlds-fastest-anti-ship-cruise-missile-in-operation.html
+Allow: /blogs/Travel/Bangalore/index.html
+Allow: /blogs/Travel/Bangalore/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
+Allow: /blogs/Travel/Ooty/index.html
+Allow: /blogs/Travel/Ooty/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
+Allow: /blogs/Travel/Couple/index.html
+Allow: /blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/

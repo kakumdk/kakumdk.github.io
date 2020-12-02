@@ -53,8 +53,13 @@ do
     <meta property="og:title" content="Blogs - Peoples Blog" />
     <meta property="og:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/index.html" />
-    <meta property="og:image" content="../../../images/logo_new.png" />
-<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.png" />
+    <meta name="twitter:title" content="Blogs - Peoples Blog">
+    <meta name="twitter:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
     <script>
@@ -326,8 +331,13 @@ do
     <meta property="og:title" content="'$_type' - Peoples Blog" />
     <meta property="og:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
-    <meta property="og:image" content="../../../images/logo_new.png" />
-<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.png" />
+    <meta name="twitter:title" content="'$_type' - Peoples Blog">
+    <meta name="twitter:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
     <script>
@@ -596,8 +606,13 @@ do
     <meta property="og:title" content="'$_category' - Peoples Blog" />
     <meta property="og:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
-    <meta property="og:image" content="../../../images/logo_new.png" />
-<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.png" />
+    <meta name="twitter:title" content="'$_category' - Peoples Blog">
+    <meta name="twitter:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
     <script>
@@ -863,8 +878,13 @@ do
     <meta property="og:title" content="'$title' - Peoples Blog" />
     <meta property="og:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
-    <meta property="og:image" content="../../../images/logo_new.png" />
-<meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta property="og:image" content="https://peoplesblog.co.in/'$banner'" />
+    <meta name="twitter:title" content="'$title' - Peoples Blog">
+    <meta name="twitter:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/'$banner'">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
     <script>
