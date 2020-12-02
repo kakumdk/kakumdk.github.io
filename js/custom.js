@@ -490,6 +490,9 @@ function writeSocialShareLinks(region) {
     var whatsapp = 'https://web.whatsapp.com/send?text='+url;
     var whatsapp_phone = 'https://api.whatsapp.com/send?text='+url;
     var mail = 'mailto:?Subject='+title+'&amp;Body='+title+' '+url+'';
+    var facebook_social = 'https://www.facebook.com/peoplesblog1989';
+    var twitter_social = 'https://twitter.com/peoplesblog1989';
+    var instagram_social = 'https://www.instagram.com/peoplesblog1989';
     if (region === 'blog') {
         var output = '' +
             '<ul class="list-inline">' +
@@ -504,12 +507,13 @@ function writeSocialShareLinks(region) {
     }
     if (region === 'footer') {
         return '' +
-            '<a href="'+linkedin+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>' +
-            '<a href="'+twitter+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>' +
-            '<a href="'+facebook+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>' +
-            '<a class="whatsapp-desktop" href="'+whatsapp+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
-            '<a class="whatsapp-mobile" href="'+whatsapp_phone+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
-            '<a href="'+mail+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
+            // '<a href="'+linkedin+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>' +
+            '<a href="'+facebook_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>' +
+            '<a href="'+twitter_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>' +
+            '<a href="'+instagram_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-instagram"></i></a>';
+            // '<a class="whatsapp-desktop" href="'+whatsapp+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
+            // '<a class="whatsapp-mobile" href="'+whatsapp_phone+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
+            // '<a href="'+mail+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
     }
 }
 function writeLinks(data) {
