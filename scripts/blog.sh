@@ -53,10 +53,10 @@ do
     <meta property="og:title" content="Blogs - Peoples Blog" />
     <meta property="og:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/index.html" />
-    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.png" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
     <meta name="twitter:title" content="Blogs - Peoples Blog">
     <meta name="twitter:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.png">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
 
@@ -71,8 +71,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -110,7 +110,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -213,7 +213,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png" class="img-fluid"></a>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -331,10 +331,10 @@ do
     <meta property="og:title" content="'$_type' - Peoples Blog" />
     <meta property="og:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
-    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.png" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
     <meta name="twitter:title" content="'$_type' - Peoples Blog">
     <meta name="twitter:description" content="'$_type' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.png">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
 
@@ -349,8 +349,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -388,7 +388,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -489,7 +489,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png" class="img-fluid"></a>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -606,10 +606,10 @@ do
     <meta property="og:title" content="'$_category' - Peoples Blog" />
     <meta property="og:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
-    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.png" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
     <meta name="twitter:title" content="'$_category' - Peoples Blog">
     <meta name="twitter:description" content="'$_category' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.png">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
 
@@ -624,8 +624,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -663,7 +663,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -765,7 +765,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png" class="img-fluid"></a>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -896,8 +896,8 @@ do
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../../upload/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="../../../upload/favicon.png">
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
 
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -934,7 +934,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -1091,7 +1091,7 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.png" class="img-fluid"></a>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
                             <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
