@@ -1207,7 +1207,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     do
       _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
-      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+#      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
       echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
@@ -1244,7 +1244,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     do
       _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
-      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
+#      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
 #      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-} >> $pwd'/robots.txt'
       jsonfile=$(_jq '.file')
       echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
@@ -1289,7 +1289,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     do
       _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
-      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
+#      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
 #      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-} >> $pwd'/robots.txt'
       jsonfile=$(_jq '.file')
       echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
