@@ -46,6 +46,8 @@ Allow: /blogs/Travel/Ooty/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
 Allow: /blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
 Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
 Allow: /blogs/Lifestyle/Couple/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
+Allow: /blogs/Social-Media/India/2020-12-08-National-Education-Policy-NEP-2020.html
+Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -108,6 +110,8 @@ Allow: /blogs/Travel/Ooty/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
 Allow: /blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html
 Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
 Allow: /blogs/Lifestyle/Couple/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
+Allow: /blogs/Social-Media/India/2020-12-08-National-Education-Policy-NEP-2020.html
+Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
