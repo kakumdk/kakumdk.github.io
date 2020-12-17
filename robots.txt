@@ -48,6 +48,9 @@ Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-No
 Allow: /blogs/Lifestyle/Couple/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
 Allow: /blogs/Social-Media/India/2020-12-08-National-Education-Policy-NEP-2020.html
 Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
+Allow: /blogs/Sci-Tech/RainHarvesting/2020-12-18-Rain-water-collection-storage-purification.html
+Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
+Allow: /blogs/Sci-Tech/House/2020-12-18-Rain-water-collection-storage-purification.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -112,6 +115,9 @@ Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-No
 Allow: /blogs/Lifestyle/Couple/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
 Allow: /blogs/Social-Media/India/2020-12-08-National-Education-Policy-NEP-2020.html
 Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
+Allow: /blogs/Sci-Tech/RainHarvesting/2020-12-18-Rain-water-collection-storage-purification.html
+Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
+Allow: /blogs/Sci-Tech/House/2020-12-18-Rain-water-collection-storage-purification.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
