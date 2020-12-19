@@ -2161,11 +2161,22 @@ body{top:0 !important;}
 body, p {
     color: #000000 !important;
 }
-.blog-content p, .blog-content ul li {
+.blog-content p, .blog-content div {
     /*font-family: "mr-eaves-xl-modern", Arial !important;*/
     /*font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;*/
+    font-size: 18px !important;
+    line-height: 30px !important;
+    font-family: Droid Sans !important;
+}
+.blog-content ul li {
     font-size: 17.5px;
     line-height: 30px;
+    font-family: Droid Sans !important;
+}
+.blog-content-overflow p {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    font-family: Droid Sans !important;
 }
 
 
