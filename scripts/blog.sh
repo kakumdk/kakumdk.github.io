@@ -924,6 +924,35 @@ do
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html"
+        },
+        "headline": "'$title'",
+        "description": "'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology",
+        "image": "https://peoplesblog.co.in/'$banner'",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "'$created'",
+        "dateModified": "'$created'"
+      }
+    </script>
+
 </head>
 <body>
     <div id="wrapper">
