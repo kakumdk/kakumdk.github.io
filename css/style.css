@@ -1968,7 +1968,8 @@ body .dmtop {
     background: transparent;
 }
 .sidebar .banner-img img:hover {
-    transform: rotate(360deg);
+    /*transform: rotate(360deg);*/
+    transform: scale(1.1);
 }
 body .peoples-quotes {
     font-size: 12px;
