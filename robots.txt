@@ -30,6 +30,7 @@ Allow: /blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.ht
 Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
 Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
 Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
+Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -76,6 +77,7 @@ Allow: /blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.ht
 Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html
 Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
 Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
+Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
