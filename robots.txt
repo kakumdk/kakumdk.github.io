@@ -31,6 +31,7 @@ Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-No
 Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
 Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
 Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
+Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -78,6 +79,7 @@ Allow: /blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-No
 Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html
 Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
 Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
+Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
