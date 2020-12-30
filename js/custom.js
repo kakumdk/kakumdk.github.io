@@ -473,7 +473,7 @@ function writeBlogsFooter(data) {
         if($.inArray(el, uniqueCat) === -1) {
             if (f_itr <= 4) {
                 uniqueCat[i] = el;
-                output += '<li><a href="'+el+'" title="Peoples Blog">'+i+'</a></li>';
+                output += '<li><a href="'+el+'" title="Peoples Blog">'+i.replace("-", " ")+'</a></li>';
                 f_itr = f_itr + 1;
             }
         }
