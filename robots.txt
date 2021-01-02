@@ -32,6 +32,7 @@ Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-20
 Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
 Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
 Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
+Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -80,6 +81,7 @@ Allow: /blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-20
 Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html
 Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
 Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
+Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
