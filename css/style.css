@@ -39,7 +39,7 @@ p,
 .navbar-inverse .navbar-nav .nav-link,
 .header .dropdown-menu,
 .navbar-nav .nav-link {
-    font-family: 'Roboto', serif;
+    /*font-family: 'Roboto', serif;*/
 }
 
 h1,
@@ -705,7 +705,7 @@ div.tab button:hover {
 **************************************/
 
 .notfound h2 {
-    font-family: Comic Sans MS;
+    /*font-family: Comic Sans MS;*/
     font-size: 140px;
     padding: 0 0 1.7rem;
     margin: 0;
@@ -1773,6 +1773,7 @@ div.ads-home.sidebar .widget .ad-open, div.ads-home.sidebar .widget .ad-close,
 div.ads-blogs.sidebar .widget .ad-open, div.ads-blogs.sidebar .widget .ad-close,
 div.ads-type.sidebar .widget .ad-open, div.ads-type.sidebar .widget .ad-close,
 div.ads.sidebar .widget .ad-open, div.ads.sidebar .widget .ad-close,
+div.ads-article.sidebar .widget .ad-open, div.ads-article.sidebar .widget .ad-close,
 div.ads-page-1 .ad-open, div.ads-page-1 .ad-close,
 div.ads-page-2 .ad-open, div.ads-page-2 .ad-close,
 div.ads-page-3 .ad-open, div.ads-page-3 .ad-close,
@@ -1780,18 +1781,22 @@ div.ads-page-4 .ad-open, div.ads-page-4 .ad-close,
 div.ads-page-5 .ad-open, div.ads-page-5 .ad-close,
 div.ads-page-6 .ad-open, div.ads-page-6 .ad-close {
     color: #000;
-    font-size: 8px;
-    padding: 0 2px 0 0;
+    font-size: 10px;
+    padding: 0 0 0 10px;
     background-color: #fff;
     position: relative;
     display: flex;
     justify-content: right;
-    height: 18px;
+    height: 0;
+    z-index: 10;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: white;
 }
 div.ads-home.sidebar .widget .ad-open i, div.ads-home.sidebar .widget .ad-close i,
 div.ads-blogs.sidebar .widget .ad-open i, div.ads-blogs.sidebar .widget .ad-close i,
 div.ads-type.sidebar .widget .ad-open i, div.ads-type.sidebar .widget .ad-close i,
 div.ads.sidebar .widget .ad-open i, div.ads.sidebar .widget .ad-close i,
+div.ads-article.sidebar .widget .ad-open i, div.ads-article.sidebar .widget .ad-close i,
 div.ads-page-1 .ad-open i, div.ads-page-1 .ad-close i,
 div.ads-page-2 .ad-open i, div.ads-page-2 .ad-close i,
 div.ads-page-3 .ad-open i, div.ads-page-3 .ad-close i,
@@ -1850,6 +1855,15 @@ body .contact .btn {
 }
 body .blog-meta small a, body .blog-meta small {
     text-transform: none;
+    font-size: 13px !important;
+}
+.blog-meta small > i {
+    color: black !important;
+    font-style: italic !important;
+}
+.blog-meta small > i > div {
+    display: inline-block;
+    font-family: 'Poppins' !important;
 }
 footer {
     background-color: #064771 !important;
@@ -1985,12 +1999,14 @@ body .peoples-quotes {
     position: absolute;
     color: #000;
     right: 0;
+    bottom: 0;
     padding: 4px 6px 2px 6px;
     border-radius: 4px;
     font-size: 12px;
     background-color: #fff;
-    margin: 8px 6px 0 0;
+    margin: 0 4px 4px 0;
     line-height: 16px;
+    z-index: 10;
 }
 .blog-list-widget img {
     margin-right: 0 !important;
@@ -2027,18 +2043,6 @@ body .peoples-quotes {
 }
 .blog-list-widget #subscribe-email {
     width: 250px;
-}
-.read-article-section {
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-}
-.read-article-section span {
-    padding: 0 2px 0 0;
-    cursor: pointer;
-    font-size: 16px;
-    border-bottom: 1px dashed #5d6a77;
-
 }
 .contact .btn.btn-primary {
     padding: 8px 24px !important;
@@ -2166,18 +2170,22 @@ body, p {
     /*font-family: "mr-eaves-xl-modern", Arial !important;*/
     /*font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;*/
     font-size: 18px !important;
-    line-height: 30px !important;
-    font-family: Droid Sans !important;
+    line-height: 34px !important;
+    /*font-family: Droid Sans !important;*/
 }
 .blog-content ul li {
-    font-size: 17.5px;
-    line-height: 30px;
-    font-family: Droid Sans !important;
+    font-size: 17px;
+    line-height: 32px;
+    /*font-family: Droid Sans !important;*/
 }
 .blog-content-overflow p {
-    font-size: 16px !important;
-    line-height: 26px !important;
-    font-family: Droid Sans !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+    font-weight: 100;
+    /*font-family: Droid Sans !important;*/
+}
+.blog-title-area.tag {
+    margin-bottom: 0 !important;
 }
 
 
@@ -2318,6 +2326,12 @@ and (max-device-width : 480px) {
     }
     .top-bar {
         height: 2.4rem;
+    }
+    .blog-meta small {
+        margin-right: 3px;
+    }
+    .blog-meta small:after {
+        padding-left: 6px;
     }
 }
 /* Smartphones (landscape) ----------- */
@@ -2460,6 +2474,12 @@ and (max-width : 320px) {
     .top-bar {
         height: 2.4rem;
     }
+    .blog-meta small {
+        margin-right: 3px;
+    }
+    .blog-meta small:after {
+        padding-left: 6px;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2593,6 +2613,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .top-bar {
         height: 2.4rem;
+    }
+    .blog-meta small {
+        margin-right: 3px;
+    }
+    .blog-meta small:after {
+        padding-left: 6px;
     }
 }
 /* iPads (portrait and landscape) ----------- */

@@ -840,7 +840,7 @@ do
 
 </body>
 </html>' > $blogsfolderpath'/'index.html
-       categories+='<small><a href="/blogs/'${_type// /-}'/'${_category// /-}'">'$_category'</a></small>'
+       categories+='<small><a href="/blogs/'${_type// /-}'/'${_category// /-}'/index.html">'$_category'</a></small>'
        ## Article
        blogspath=$blogsfolderpath'/'$file
        blogsfilepath=${blogspath/%.json}.html
@@ -1021,26 +1021,30 @@ do
                                     <li class="breadcrumb-item active">'$title'</li>
                                 </ol>
 
-                                <span class="color-orange"><a href="/blogs/'${_type// /-}'/index.html" title="'$_type'">'$_type'</a></span>
+                                <!-- span class="color-orange"><a href="/blogs/'${_type// /-}'/index.html" title="'$_type'">'$_type'</a></span -->
 
                                 <h1 class="read-article-title">'$title'</h1>
 
                                 <div class="blog-meta big-meta">
-                                    <small>'$created'</small>
-                                    <small>by '$author'</small>
-                                    <!-- small><i class="fa fa-eye"></i> '$views'</small -->
+                                    <small><i>'$created'</i></small>
+                                    <small>by <i>'$author'</i></small>
+                                    <small class="read-article-section">
+                                      <i class="fa fa-play read-article"> <div>Read Article</div></i>
+                                      <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
+                                      <i class="fa fa-play read-article-resume"> <div>Resume</div></i>
+                                      <i class="fa fa-stop read-article-stop"> <div>Stop</div></i>
+                                    </small>
                                 </div><!-- end meta -->
 
-                                <div class="read-article-section">
+                                <!-- div class="read-article-section">
                                     <span class="read-article"><i class="fa fa-play"> Read Article</i></span>
                                     <span class="read-article-pause"><i class="fa fa-pause"> Pause</i></span>
                                     <span class="read-article-resume"><i class="fa fa-play"> Resume</i></span>
                                     <span class="read-article-stop"><i class="fa fa-stop"> Stop</i></span>
-                                </div>
+                                </div -->
 
-                                <div class="post-sharing-top post-sharing">
+                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
 
-                                </div><!-- end post-sharing -->
                             </div><!-- end title -->
 
                             <div class="single-post-media">
@@ -1051,27 +1055,23 @@ do
                                 <div>'$content'</div>
                             </div><!-- end content -->
 
-                            <div class="blog-title-area">
+                            <div class="blog-title-area tag">
                                 <div class="tag-cloud-single">
                                     <span>Tags</span>
                                     '$categories'
                                 </div><!-- end meta -->
 
                                 <br/>
-                                <div class="post-sharing-top post-sharing">
-
-                                </div><!-- end post-sharing -->
+                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
 
                             </div><!-- end title -->
 
                             <div class="ads-page-1"></div><!-- end ads-page-1 -->
 
-                            <hr class="invis1">
-                            <div class="prevnext-articles custombox prevnextpost clearfix">
+                            <!-- hr class="invis1" -->
+                            <!-- div class="prevnext-articles custombox prevnextpost clearfix"></div -->
 
-                            </div>
-
-                            <hr class="invis1">
+                            <!-- hr class="invis1" -->
                             <div class="custombox clearfix">
                                 <h4 class="small-title">Comments</h4>
                                 <div class="row">
@@ -1100,7 +1100,10 @@ do
                                 </div>
                             </div>
 
-                            <!-- div class="ads-page-2"></div --><!-- end ads-page-2 -->
+                            <hr class="invis0">
+                            <div class="prevnext-articles custombox prevnextpost clearfix"></div>
+
+                            <div class="ads-page-2"></div><!-- end ads-page-1 -->
 
                         </div><!-- end page-wrapper -->
                     </div><!-- end col -->

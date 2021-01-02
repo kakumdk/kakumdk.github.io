@@ -23,7 +23,8 @@ body,
 .dropdown-item,
 .form-control,
 p {
-    font-family: 'Ubuntu',sans-serif !important;
+    /*font-family: 'Ubuntu',sans-serif !important;*/
+    font-family: 'Poppins', serif !important;
 }
 
 h1,

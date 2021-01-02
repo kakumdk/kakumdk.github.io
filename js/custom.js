@@ -715,6 +715,20 @@ $(function() {
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         setTimeout(function() {
             $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
             adShowHidePage('ads-page-1');
@@ -727,27 +741,13 @@ $(function() {
             $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
             adShowHidePage('ads-page-3');
         }, 8000);
-        var ads_article = $('.ads-article');
-        ads_article.html(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        ads_article.append(writeAds1200x1200(JSON.parse(text), 'cat'));
     });
     setTimeout(function() {
         adShowHide('ads-home');
         adShowHide('ads-blogs');
         adShowHide('ads-type');
         adShowHide('ads');
+        adShowHide('ads-article');
     }, 3000);
 
 });
