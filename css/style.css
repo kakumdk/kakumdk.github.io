@@ -901,7 +901,8 @@ div.tab button:hover {
 
 .post-sharing span,
 .post-sharing li {
-    display: inline-block !important;
+    /*display: inline-block !important;*/
+    padding: 0 1px;
 }
 
 .single-post-media {
@@ -1708,7 +1709,7 @@ hr.invis3 {
     z-index: 1;
     display: inline-block;
     padding: 0;
-    margin: 10px;
+    margin: 4px 0 4px 4px;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;
@@ -1717,13 +1718,13 @@ hr.invis3 {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    width: 47px;
-    height: 47px;
+    width: 40px;
+    height: 40px;
 }
 .post-sharing .btn-lg {
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
+    padding: .7rem 0.85rem;
+    font-size: 1rem;
+    line-height: 1;
     box-shadow: none !important;
 }
 .post-sharing .btn-li, .post-sharing .btn-li:hover {
@@ -1756,6 +1757,20 @@ hr.invis3 {
     font-size: 18px;
     margin-left: -2px;
     color: #fff;
+}
+.post-sharing-top.post-sharing {
+    display: block;
+    position: fixed;
+    margin: 0;
+    left: 34px;
+    top: 25%;
+    width: 50px;
+    text-align: left;
+    background-color: transparent;
+    z-index: 20;
+}
+.post-sharing-top.post-sharing > ul {
+    margin: 0;
 }
 .blog-title-area {
     margin-bottom: 2rem !important;
@@ -2280,10 +2295,16 @@ and (max-device-width : 480px) {
         margin: 0;
     }
     .post-sharing .btn-lg {
-        margin: 0 8px;
+        margin: 4px 8px;
     }
     .post-sharing-top.post-sharing {
-        margin-top: 0.5rem;
+        margin: 0;
+        background-color: transparent;
+        z-index: 20;
+        left: unset;
+        right: 24px;
+        top: unset;
+        bottom: 75px;
     }
     .blog-title-area, .single-post-media {
         margin-bottom: 1rem !important
@@ -2427,10 +2448,16 @@ and (max-width : 320px) {
         margin: 0;
     }
     .post-sharing .btn-lg {
-        margin: 0 8px;
+        margin: 4px 8px;
     }
     .post-sharing-top.post-sharing {
-        margin-top: 0.5rem;
+        margin: 0;
+        background-color: transparent;
+        z-index: 20;
+        left: unset;
+        right: 24px;
+        top: unset;
+        bottom: 75px;
     }
     .blog-title-area, .single-post-media {
         margin-bottom: 1rem !important
@@ -2567,10 +2594,16 @@ only screen and (min-device-pixel-ratio : 1.5) {
         margin: 0;
     }
     .post-sharing .btn-lg {
-        margin: 0 8px;
+        margin: 4px 8px;
     }
     .post-sharing-top.post-sharing {
-        margin-top: 0.5rem;
+        margin: 0;
+        background-color: transparent;
+        z-index: 20;
+        left: unset;
+        right: 24px;
+        top: unset;
+        bottom: 75px;
     }
     .blog-title-area, .single-post-media {
         margin-bottom: 1rem !important

@@ -1036,14 +1036,7 @@ do
                                     </small>
                                 </div><!-- end meta -->
 
-                                <!-- div class="read-article-section">
-                                    <span class="read-article"><i class="fa fa-play"> Read Article</i></span>
-                                    <span class="read-article-pause"><i class="fa fa-pause"> Pause</i></span>
-                                    <span class="read-article-resume"><i class="fa fa-play"> Resume</i></span>
-                                    <span class="read-article-stop"><i class="fa fa-stop"> Stop</i></span>
-                                </div -->
-
-                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
+                                <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
 
                             </div><!-- end title -->
 
