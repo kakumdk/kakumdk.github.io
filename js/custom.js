@@ -137,10 +137,10 @@ $(function() {
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
 
     readFile("/blogs-content-merged/blogs.json", function(text){
-        $(".techblog-links").html('<h5>Categories</h5>');
-        $(".techblog-links").append(writeLinks(JSON.parse(text)));
-        $(".techblog-links").append('<hr class="invis"><h5 id="authors">Authors</h5>');
-        $(".techblog-links").append(
+        $(".peoplesblog-links").html('<h5>Categories</h5>');
+        $(".peoplesblog-links").append(writeLinks(JSON.parse(text)));
+        $(".peoplesblog-links").append('<hr class="invis"><h5 id="authors">Authors</h5>');
+        $(".peoplesblog-links").append(
             '<div class="site-links">' +
             '<span><i class="fa fa-user"></i> <a href="">Hanukkah John</a></span> ' +
             '<span><i class="fa fa-user"></i> <a href="">Leela Vasundhara</a></span> ' +
