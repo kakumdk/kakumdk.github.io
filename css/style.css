@@ -2205,6 +2205,12 @@ body, p {
 .blog-title-area.tag {
     margin-bottom: 0 !important;
 }
+.page-title h2 > span {
+    position: absolute;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 4px;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -2356,6 +2362,9 @@ and (max-device-width : 480px) {
     }
     .blog-meta small:after {
         padding-left: 6px;
+    }
+    .author-content-wrapper {
+        margin-top: 2rem;
     }
 }
 /* Smartphones (landscape) ----------- */
@@ -2510,6 +2519,9 @@ and (max-width : 320px) {
     .blog-meta small:after {
         padding-left: 6px;
     }
+    .author-content-wrapper {
+        margin-top: 2rem;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2655,6 +2667,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .blog-meta small:after {
         padding-left: 6px;
+    }
+    .author-content-wrapper {
+        margin-top: 2rem;
     }
 }
 /* iPads (portrait and landscape) ----------- */

@@ -394,7 +394,7 @@ do
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h2><i class="fa fa-user bg-orange"></i> Author : '$author'</h2>
+                    <h2><i class="fa fa-user bg-orange"></i><span>Author : '$author'</span></h2>
                 </div><!-- end col -->
                 <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                     <ol class="breadcrumb">
@@ -417,14 +417,13 @@ do
                             <h4 class="small-title">About Author</h4>
                             <hr class="invis">
                             <div class="row">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 author-image-wrapper">
                                     <img src="'$banner400x400'" alt="" class="img-fluid rounded-circle">
                                 </div><!-- end col -->
-
-                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
                                     <h4>'$author'</h4>
                                     <p>'$intro'</p>
-
                                     <div class="topsocial">
                                         <a href="'$linkedin'" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
                                         <a href="'$twitter'" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -433,8 +432,8 @@ do
                                         <a href="'$youtube'" data-toggle="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>
                                         <a href="'$website'" data-toggle="tooltip" data-placement="bottom" title="Website"><i class="fa fa-link"></i></a>
                                     </div><!-- end social -->
-
                                 </div><!-- end col -->
+
                             </div><!-- end row -->
                         </div><!-- end author-box -->
 
