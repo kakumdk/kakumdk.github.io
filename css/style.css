@@ -2363,6 +2363,12 @@ and (max-device-width : 480px) {
     .blog-meta small:after {
         padding-left: 6px;
     }
+    .author-image-wrapper {
+        margin-top: -25px;
+    }
+    .author-image-wrapper > img {
+        width: 50%;
+    }
     .author-content-wrapper {
         margin-top: 2rem;
     }
@@ -2519,6 +2525,12 @@ and (max-width : 320px) {
     .blog-meta small:after {
         padding-left: 6px;
     }
+    .author-image-wrapper {
+        margin-top: -25px;
+    }
+    .author-image-wrapper > img {
+        width: 50%;
+    }
     .author-content-wrapper {
         margin-top: 2rem;
     }
@@ -2667,6 +2679,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .blog-meta small:after {
         padding-left: 6px;
+    }
+    .author-image-wrapper {
+        margin-top: -25px;
+    }
+    .author-image-wrapper > img {
+        width: 50%;
     }
     .author-content-wrapper {
         margin-top: 2rem;
