@@ -159,12 +159,6 @@ echo '<!DOCTYPE html>
                     <div class="page-wrapper">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="site-links">
-                                    <span><i class="fa fa-user"></i> <a href="/authors/Hanukkah-John.html">Hanukkah John</a></span>
-                                    <span><i class="fa fa-user"></i> <a href="/authors/Leela-Vasundhara.html">Leela Vasundhara</a></span>
-                                    <span><i class="fa fa-user"></i> <a href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a></span>
-                                </div>
-                                HARDCODED
                                 <div class="peoplesblog-authors"></div>
                             </div>
                         </div>
@@ -446,75 +440,12 @@ do
 
                         <hr class="invis">
 
-                        <input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles of author Jessica on Peoples Blog" />
+                        <div class="blog-list-blogs-authors blog-list clearfix">
 
-                        <hr class="invis">
+                        </div>
 
-                        <div class="blog-list clearfix">
-
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
-                                        <a href="/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html" title="Rainwater Collection, Storage &amp; Purification">
-                                            <img loading="lazy" alt="Peoples Blog" src="../upload/banner600x500/public/Rain-Water-Harvesting1.jpeg" class="img-fluid">
-                                            <div class="hovereffect"></div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-                                <div class="blog-meta big-meta col-md-8">
-                                    <h4>
-                                        <a href="/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html" title="Rainwater Collection, Storage &amp; Purification">Rainwater Collection, Storage &amp; Purification</a>
-                                    </h4>
-                                    <div class="blog-content-overflow"><p>Rainwater Harvesting is the <strong>collection &amp; storage of rain water</strong>, rather than allowing it to run off. Rainwater is <strong>collected from</strong> a roof-like surface and <strong>redirected to</strong> a tank, cistern, deep pit (well, shaft, or borehole), aquifer, or a reservoir with percolation. We <strong>can utilize this water for many purposes</strong> like, include watering gardens, livestock, irrigation, domestic use with proper treatment, and domestic heating. Importantly, <strong>purifying rain water for drinking &amp; cooking</strong> purposes.</p><p>Also, The harvested water can also be committed to <strong>groundwater recharge</strong>.</p><p>We are taking about rainwater harvesting, utilization &amp; purification <strong>for a family</strong>, Lets see different ways where they are <strong>optimal, reliable and doable</strong> by a family.</p></div>
-                                    <small class="firstsmall"><a class="bg-orange" href="/blogs/Sci-Tech/Environment/index.html" title="Environment">Environment</a></small>
-                                    <small>18 December, 2020</small>
-                                    <small>by Karthik Kumar D K</small>
-                                </div><!-- end meta -->
-                            </div>
-
-                            <hr class="invis">
-
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
-                                        <a href="/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html" title="Rainwater Collection, Storage &amp; Purification">
-                                            <img loading="lazy" alt="Peoples Blog" src="../upload/banner600x500/public/Rain-Water-Harvesting1.jpeg" class="img-fluid">
-                                            <div class="hovereffect"></div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-                                <div class="blog-meta big-meta col-md-8">
-                                    <h4>
-                                        <a href="/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html" title="Rainwater Collection, Storage &amp; Purification">Rainwater Collection, Storage &amp; Purification</a>
-                                    </h4>
-                                    <div class="blog-content-overflow"><p>Rainwater Harvesting is the <strong>collection &amp; storage of rain water</strong>, rather than allowing it to run off. Rainwater is <strong>collected from</strong> a roof-like surface and <strong>redirected to</strong> a tank, cistern, deep pit (well, shaft, or borehole), aquifer, or a reservoir with percolation. We <strong>can utilize this water for many purposes</strong> like, include watering gardens, livestock, irrigation, domestic use with proper treatment, and domestic heating. Importantly, <strong>purifying rain water for drinking &amp; cooking</strong> purposes.</p><p>Also, The harvested water can also be committed to <strong>groundwater recharge</strong>.</p><p>We are taking about rainwater harvesting, utilization &amp; purification <strong>for a family</strong>, Lets see different ways where they are <strong>optimal, reliable and doable</strong> by a family.</p></div>
-                                    <small class="firstsmall"><a class="bg-orange" href="/blogs/Sci-Tech/Environment/index.html" title="Environment">Environment</a></small>
-                                    <small>18 December, 2020</small>
-                                    <small>by Karthik Kumar D K</small>
-                                </div><!-- end meta -->
-                            </div>
-
-                            <hr class="invis">
-
-                        </div><!-- end blog-list -->
                     </div><!-- end page-wrapper -->
 
-                    <hr class="invis">
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-start">
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
                 </div><!-- end col -->
 
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
@@ -613,3 +544,11 @@ do
 </body>
 </html>' > $authorsfilepath
 done
+
+#################################################################################################################
+#################################################################################################################
+##### JSON content, Multiple to Single
+#################################################################################################################
+#################################################################################################################
+authorscontentmerged=$pwd/authors-content-merged
+jq -s '[.[][]]' $authorscontent'/'*.json > $authorscontentmerged'/authors.json'

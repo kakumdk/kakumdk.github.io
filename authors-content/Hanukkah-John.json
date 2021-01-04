@@ -1,14 +1,14 @@
 {
   "content": {
     "author": "Hanukkah John",
-    "banner400x400": "upload/author_02.jpg",
-    "intro": "",
-    "linkedin": "",
-    "twitter": "",
-    "facebook": "",
-    "instagram": "",
-    "youtube": "",
-    "website": "",
+    "banner400x400": "../upload/author.jpg",
+    "intro": "@todo",
+    "linkedin": "https://linkedin",
+    "twitter": "https://twitter",
+    "facebook": "https://facebook",
+    "instagram": "https://instagram",
+    "youtube": "https://youtube",
+    "website": "https://website",
     "file": "Hanukkah-John.json"
   }
 }

@@ -137,19 +137,17 @@ $(function() {
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
 
     readFile("/blogs-content-merged/blogs.json", function(text){
-        $(".peoplesblog-links").html('<h5>Categories</h5>');
-        $(".peoplesblog-links").append(writeLinks(JSON.parse(text)));
-        $(".peoplesblog-links").append('<hr class="invis"><h5 id="authors">Authors</h5>');
-        $(".peoplesblog-links").append(
-            '<div class="site-links">' +
-            '<span><i class="fa fa-user"></i> <a href="">Hanukkah John</a></span> ' +
-            '<span><i class="fa fa-user"></i> <a href="">Leela Vasundhara</a></span> ' +
-            '<span><i class="fa fa-user"></i> <a href="">Karthik Kumar D K</a></span> ' +
-            '</div>'
-        );
+        $(".peoplesblog-categories-links").html('<h5>Categories</h5>');
+        $(".peoplesblog-categories-links").append(writeLinks(JSON.parse(text)));
     });
     readFile("/../../../blogs-content-merged/blogs.json", function(text){
         $(".prevnext-articles").html(writePreviousNextArticles(JSON.parse(text)));
+    });
+    readFile("/../blogs-content-merged/blogs.json", function(text){
+        var data = JSON.parse(text);
+        var output = writeAuthorBlogs(data);
+        $('.blog-list-blogs-authors').html(output);
+        $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     setTimeout(function () {
         $("#peoplessearch").on("keyup", function(event) {
@@ -638,6 +636,62 @@ function writePreviousNextArticles(data) {
         }
     }
     return output + "</div>";
+}
+function writeAuthorBlogs(data) {
+    var output = '';
+    var currentpath = window.location.pathname.split('/');
+    if (currentpath['2']) {
+        if (currentpath['2'].replaceAll('.html', '')) {
+            if (currentpath['2'].replaceAll('.html', '').replaceAll('-', ' ')) {
+                var author = currentpath['2'].replaceAll('.html', '').replaceAll('-', ' ');
+                // output += '<div class="">' +
+                //     '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles, Authored by ' + author + ' on Peoples Blog" /><hr class="invis">' +
+                //     '</div>';
+                var itr = 0;
+                for (var i = data.length - 1; i >= 0; i--) {
+                    if (author === data[i]['author']) {
+                        var type = data[i]['type'].split(',');
+                        var category = data[i]['category'].split(',');
+                        var path = '/blogs/' +
+                            type[0].replace(" ", "-") + '/' +
+                            category[0].replace(" ", "-") + '/' +
+                            data[i]['file'].replace(".json", ".html");
+                        if (itr >= numberofArticlesPerPage) {
+                            output += '<div class="blog-box row hidden">';
+                        }
+                        else {
+                            output += '<div class="blog-box row">';
+                        }
+                        itr = itr + 1;
+                        output +=
+                            '<div class="col-md-4">' +
+                            '<div class="post-media">' +
+                            '<a href="' + path + '" title="' + data[i]['title'] + '">' +
+                            // '<img loading="lazy" alt="Peoples Blog" src="../../../' + val.banner + '" class="img-fluid">' +
+                            '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
+                            '<div class="hovereffect"></div>' +
+                            '</a>' +
+                            '</div><!-- end media -->' +
+                            '</div><!-- end col -->' +
+                            '<div class="blog-meta big-meta col-md-8">' +
+                            '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
+                            '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
+                            '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+type[0].replace(" ", "-")+'/index.html" title="' + type[0] + '">' + type[0] + '</a></small>' +
+                            '<small>' + data[i]['created'] + '</small>' +
+                            '<small>by ' + data[i]['author'] + '</small>' +
+                            // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
+                            '</div><!-- end meta -->' +
+                            '</div><!-- end blog-box -->'+
+                            '<hr class="invis">';
+                        if (itr % 2 === 0) {
+                            // output += '<div class="col-md-12"><div class="ads-page-5"></div></div>';
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return output;
 }
 
 /******************************************************************************************************************/
@@ -1231,4 +1285,41 @@ function disableInspectElement() {
     document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
     });
+}
+
+
+/******************************************************************************************************************/
+/************************************** Authors ******************************************************************/
+/******************************************************************************************************************/
+$(function() {
+
+    readFile("/authors-content-merged/authors.json", function (text) {
+        $(".peoplesblog-authors-links").html(writeAuthorLinks(JSON.parse(text)));
+        $(".peoplesblog-authors").append(writeAuthors(JSON.parse(text)));
+    });
+
+});
+function writeAuthorLinks(data) {
+    var output = '';
+    output += '<hr class="invis"><h5 id="authors">Authors</h5>' +
+        '<div class="site-links">';
+    for (var i = 0; i < data.length; i++) {
+        var author = data[i]['author'];
+        var authorLink = '/authors/' + data[i]['file'].replaceAll('.json', '.html');
+        output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span>';
+    }
+    output += '</div>';
+    console.log(output);
+    return output;
+}
+function writeAuthors(data) {
+    var output = '';
+    output += '<div class="site-links">';
+    for (var i = 0; i < data.length; i++) {
+        var author = data[i]['author'];
+        var authorLink = '/authors/' + data[i]['file'].replaceAll('.json', '.html');
+        output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span><br/>';
+    }
+    output += '</div>';
+    return output;
 }
