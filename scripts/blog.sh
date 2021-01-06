@@ -188,24 +188,12 @@ do
                             </div>
                         </div><!-- end page-wrapper -->
 
-                        <hr class="invis">
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="_pager">
-
-                                </div>
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-
                         <div class="row">
                             <div class="col-md-12">
                                 <nav aria-label="Page navigation">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item">
-                                            <button id="see-more" class="page-link">See More</button>
-                                        </li>
-                                    </ul>
+                                    <div class="blog-list-blogs_pager">
+
+                                    </div>
                                 </nav>
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -472,11 +460,9 @@ do
                         <div class="row">
                             <div class="col-md-12">
                                 <nav aria-label="Page navigation">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item">
-                                            <button id="see-more" class="page-link">See More</button>
-                                        </li>
-                                    </ul>
+                                    <div class="blog-list-type_pager">
+
+                                    </div>
                                 </nav>
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -748,11 +734,9 @@ do
                         <div class="row">
                             <div class="col-md-12">
                                 <nav aria-label="Page navigation">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item">
-                                            <button id="see-more" class="page-link">See More</button>
-                                        </li>
-                                    </ul>
+                                    <div class="blog-list-category_pager">
+
+                                    </div>
                                 </nav>
                             </div><!-- end col -->
                         </div><!-- end row -->

@@ -100,18 +100,21 @@ $(function() {
         var data = JSON.parse(text);
         var output = writeBlogs(data);
         $('.blog-list-blogs').html(output);
+        $(".blog-list-blogs_pager").append(writeBlogsPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     readFile("/../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogTypes(data);
         $('.blog-list-type').html(output);
+        $(".blog-list-type_pager").append(writeBlogTypesPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     readFile("../../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogTypeCategories(data);
         $('.blog-list-category').html(output);
+        $(".blog-list-category_pager").append(writeBlogTypeCategoriesPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     // $("#see-more").click(function() {
@@ -127,10 +130,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 500) {
             // $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
-            $('.blog-list-blogs div').removeClass('hidden');
-            $('.blog-list-blogs .blog-box').removeClass('hidden');
-            $('.blog-list-type .blog-box').removeClass('hidden');
-            $('.blog-list-category .blog-box').removeClass('hidden');
+            // $('.blog-list-blogs div').removeClass('hidden');
+            // $('.blog-list-blogs .blog-box').removeClass('hidden');
+            // $('.blog-list-type .blog-box').removeClass('hidden');
+            // $('.blog-list-category .blog-box').removeClass('hidden');
             $("#see-more").hide();
         }
     });
@@ -342,7 +345,7 @@ function writeBlogs(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= numberofArticlesPerPage) {
+        if (itr >= (numberofArticlesPerPage + 1)) {
             output += '<div class="col-md-6 hidden">';
         }
         else {
@@ -438,7 +441,7 @@ function writeBlogTypeCategories(data) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var path = '/blogs/' + currentType + '/' + currentCat + '/' + data[i]['file'].replace(".json", ".html");
                 if (currentCat === currentpath[3]) {
-                    if (itr >= numberofArticlesPerPage) {
+                    if (itr >= (numberofArticlesPerPage - 2)) {
                         output += '<div class="blog-box hidden">';
                     }
                     else {
@@ -722,56 +725,33 @@ $(function() {
     });
     readFile("/../ads/ads.json", function(text){
         $('.ads-blogs').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
-        // $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
         adShowHidePage('ads-page-5');
     });
     readFile("/../../ads/ads.json", function(text){
-        // $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        // $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'type'));
         adShowHidePage('ads-page-4');
     });
     readFile("/../../../ads/ads.json", function(text){
         $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
-        // $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
-        // $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
@@ -1350,6 +1330,83 @@ $(function() {
             $("html, body").animate({ scrollTop: 0 }, "slow");
         });
     }, 2000);
+    setTimeout(function () {
+        $(".blog-list-blogs_pager ._pager li").click(function() {
+            var clickedPageArray = $(this).attr('class').split(/\s+/);
+            var clickedPage = clickedPageArray[0];
+            var i = 1;
+            var from = (clickedPage - 1) * (numberofArticlesPerPage + 1)
+            var to = from + (numberofArticlesPerPage + 1);
+            $("ul._pager li").each(function () {
+                $(this).removeClass('prev');
+                $(this).removeClass('active');
+                $(this).removeClass('next');
+            });
+            $(this).prev().addClass('prev');
+            $(this).addClass('active');
+            $(this).next().addClass('next');
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $(".blog-grid-system .blog-list-blogs > div.col-md-6").each(function() {
+                if (i > from && i < (to + 1)) {
+                    $(this).removeClass('hidden');
+                }
+                else {
+                    $(this).addClass('hidden');
+                }
+                i++;
+            });
+        });
+        $(".blog-list-type_pager ._pager li").click(function() {
+            var clickedPageArray = $(this).attr('class').split(/\s+/);
+            var clickedPage = clickedPageArray[0];
+            var i = 1;
+            var from = (clickedPage - 1) * numberofArticlesPerPage
+            var to = from + numberofArticlesPerPage;
+            $("ul._pager li").each(function () {
+                $(this).removeClass('prev');
+                $(this).removeClass('active');
+                $(this).removeClass('next');
+            });
+            $(this).prev().addClass('prev');
+            $(this).addClass('active');
+            $(this).next().addClass('next');
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $(".blog-list-type div.blog-box").each(function() {
+                if (i > from && i < (to + 1)) {
+                    $(this).removeClass('hidden');
+                }
+                else {
+                    $(this).addClass('hidden');
+                }
+                i++;
+            });
+        });
+        $(".blog-list-category_pager ._pager li").click(function() {
+            var clickedPageArray = $(this).attr('class').split(/\s+/);
+            var clickedPage = clickedPageArray[0];
+            var i = 1;
+            var from = (clickedPage - 1) * (numberofArticlesPerPage - 2)
+            var to = from + (numberofArticlesPerPage - 2);
+            $("ul._pager li").each(function () {
+                $(this).removeClass('prev');
+                $(this).removeClass('active');
+                $(this).removeClass('next');
+            });
+            $(this).prev().addClass('prev');
+            $(this).addClass('active');
+            $(this).next().addClass('next');
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $(".blog-list-category div.blog-box").each(function() {
+                if (i > from && i < (to + 1)) {
+                    $(this).removeClass('hidden');
+                }
+                else {
+                    $(this).addClass('hidden');
+                }
+                i++;
+            });
+        });
+    }, 2000);
 
 });
 function writeBlogsHomepagePager(data) {
@@ -1369,5 +1426,97 @@ function writeBlogsHomepagePager(data) {
     }
     output += '' +
         '</ul>';
+    return output;
+}
+function writeBlogsPager(data) {
+    var pagerItems = Math.ceil(data.length / (numberofArticlesPerPage + 1));
+    var output = '';
+    output += '<ul class="_pager pagination justify-content-center">';
+    for (var i = 1; i <= pagerItems; i++) {
+        if (i === 1) {
+            output += '<li class="'+i+' page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+        }
+        else if (i === 2) {
+            output += '<li class="'+i+' page-item next"><a class="page-link" href="#">'+i+'</a></li>';
+        }
+        else {
+            output += '<li class="'+i+' page-item"><a class="page-link" href="#">'+i+'</a></li>';
+        }
+    }
+    output += '' +
+        '</ul>';
+    return output;
+}
+function writeBlogTypesPager(data) {
+    var currentpath = window.location.pathname.split('/');
+    var pageCount = 0;
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        for (var j = 0; j < type.length; j++) {
+            var currentType = type[j].trim().replace(" ", "-");
+            var path = '/blogs/' + currentType + '/' +
+                category[0].trim().replace(" ", "-") + '/' +
+                data[i]['file'].replace(".json", ".html");
+            if (currentType === currentpath[2]) {
+                pageCount++;
+            }
+        }
+    }
+    var pagerItems = Math.ceil(pageCount / numberofArticlesPerPage);
+    var output = '';
+    if (pageCount > numberofArticlesPerPage) {
+        output += '<ul class="_pager pagination justify-content-center">';
+        for (var i = 1; i <= pagerItems; i++) {
+            if (i === 1) {
+                output += '<li class="'+i+' page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+            else if (i === 2) {
+                output += '<li class="'+i+' page-item next"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+            else {
+                output += '<li class="'+i+' page-item"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+        }
+        output += '' +
+            '</ul>';
+    }
+    return output;
+}
+function writeBlogTypeCategoriesPager(data) {
+    var currentpath = window.location.pathname.split('/');
+    var pageCount = 0;
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        for (var j = 0; j < type.length; j++) {
+            var currentType = type[j].trim().replace(" ", "-");
+            for (var k = 0; k < category.length; k++) {
+                var currentCat = category[k].trim().replace(" ", "-");
+                var path = '/blogs/' + currentType + '/' + currentCat + '/' + data[i]['file'].replace(".json", ".html");
+                if (currentCat === currentpath[3]) {
+                    pageCount++;
+                }
+            }
+        }
+    }
+    var pagerItems = Math.ceil(pageCount / (numberofArticlesPerPage - 2));
+    var output = '';
+    if (pageCount > (numberofArticlesPerPage - 2)) {
+        output += '<ul class="_pager pagination justify-content-center">';
+        for (var i = 1; i <= pagerItems; i++) {
+            if (i === 1) {
+                output += '<li class="'+i+' page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+            else if (i === 2) {
+                output += '<li class="'+i+' page-item next"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+            else {
+                output += '<li class="'+i+' page-item"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+        }
+        output += '' +
+            '</ul>';
+    }
     return output;
 }
