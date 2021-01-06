@@ -192,6 +192,14 @@ do
 
                         <div class="row">
                             <div class="col-md-12">
+                                <div class="_pager">
+
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
                                 <nav aria-label="Page navigation">
                                     <ul class="pagination justify-content-center">
                                         <li class="page-item">
@@ -259,7 +267,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Peoples Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -535,7 +543,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Peoples Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -811,7 +819,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Peoples Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -1162,7 +1170,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright"><i class="fa fa-copyright"></i> Copyright Peoples Blog 2020. All Rights Reserved.</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
                 </div>
             </div>
         </div><!-- end container -->

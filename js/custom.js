@@ -93,6 +93,7 @@ $(function() {
         var data = JSON.parse(text);
         var output = writeBlogsHomepage(data);
         $('.blog-list-homepage-blogs').html(output);
+        $(".blog-list-homepage-blogs_pager").append(writeBlogsHomepagePager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     readFile("/../blogs-content-merged/blogs.json", function(text){
@@ -125,7 +126,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 500) {
-            $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
+            // $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
             $('.blog-list-blogs div').removeClass('hidden');
             $('.blog-list-blogs .blog-box').removeClass('hidden');
             $('.blog-list-type .blog-box').removeClass('hidden');
@@ -151,6 +152,12 @@ $(function() {
     });
     setTimeout(function () {
         $("#peoplessearch").on("keyup", function(event) {
+            $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
+            $('.blog-list-blogs div').removeClass('hidden');
+            $('.blog-list-blogs .blog-box').removeClass('hidden');
+            $('.blog-list-type .blog-box').removeClass('hidden');
+            $('.blog-list-category .blog-box').removeClass('hidden');
+            $('._pager').css('display', 'none');
             $(this).siblings('.ads-page-6').hide();
             $(this).siblings('.ads-page-4').hide();
             $(this).siblings('.ads-page-3').hide();
@@ -167,6 +174,12 @@ $(function() {
             });
         });
         $("#peoplessearchblog").on("keyup", function(event) {
+            $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
+            $('.blog-list-blogs div').removeClass('hidden');
+            $('.blog-list-blogs .blog-box').removeClass('hidden');
+            $('.blog-list-type .blog-box').removeClass('hidden');
+            $('.blog-list-category .blog-box').removeClass('hidden');
+            $('._pager').css('display', 'none');
             $(this).parent().siblings('.ads-page-5').hide();
             $(this).parent().siblings('div').each(function () {
                 var title = $(this).find('h4').children('a').text().toLowerCase();
@@ -271,7 +284,7 @@ function writeBlogsHomepageHeader(data) {
     }
     return output;
 }
-const numberofArticlesPerPage = 6;
+const numberofArticlesPerPage = 5;
 function writeBlogsHomepage(data) {
     var output = '';
     output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search articles on Peoples Blog" /><hr class="invis">';
@@ -699,29 +712,11 @@ function writeAuthorBlogs(data) {
 /******************************************************************************************************************/
 $(function() {
     readFile("/ads/ads.json", function(text){
-        // $('.ads-home').html(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').html(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        // $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
-        // $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
-        // $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
-        // $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
         adShowHidePage('ads-page-6');
     });
@@ -1200,7 +1195,6 @@ $(function() {
 function showTopBar() {
     var url = window.location.href;
     url = url.split(/[?#]/)[0];
-    console.log(url);
     var output = '';
     output = '' +
         '<div class="container-fluid text-right">' +
@@ -1309,7 +1303,7 @@ function writeAuthorLinks(data) {
         output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span>';
     }
     output += '</div>';
-    console.log(output);
+    // console.log(output);
     return output;
 }
 function writeAuthors(data) {
@@ -1321,5 +1315,59 @@ function writeAuthors(data) {
         output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span><br/>';
     }
     output += '</div>';
+    return output;
+}
+
+/******************************************************************************************************************/
+/************************************** Pager ******************************************************************/
+/******************************************************************************************************************/
+$(function() {
+
+    setTimeout(function () {
+        $(".blog-list-homepage-blogs_pager ._pager li").click(function() {
+            var clickedPageArray = $(this).attr('class').split(/\s+/);
+            var clickedPage = clickedPageArray[0];
+            var i = 1;
+            var from = (clickedPage - 1) * numberofArticlesPerPage
+            var to = from + numberofArticlesPerPage;
+            $("ul._pager li").each(function () {
+                $(this).removeClass('prev');
+                $(this).removeClass('active');
+                $(this).removeClass('next');
+            });
+            $(this).prev().addClass('prev');
+            $(this).addClass('active');
+            $(this).next().addClass('next');
+            $(".blog-list-homepage-blogs div.blog-box").each(function() {
+                if (i > from && i < (to + 1)) {
+                    $(this).removeClass('hidden');
+                }
+                else {
+                    $(this).addClass('hidden');
+                }
+                i++;
+            });
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+    }, 2000);
+
+});
+function writeBlogsHomepagePager(data) {
+    var pagerItems = Math.ceil(data.length / numberofArticlesPerPage);
+    var output = '';
+    output += '<ul class="_pager pagination justify-content-center">';
+    for (var i = 1; i <= pagerItems; i++) {
+        if (i === 1) {
+            output += '<li class="'+i+' page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+        }
+        else if (i === 2) {
+            output += '<li class="'+i+' page-item next"><a class="page-link" href="#">'+i+'</a></li>';
+        }
+        else {
+            output += '<li class="'+i+' page-item"><a class="page-link" href="#">'+i+'</a></li>';
+        }
+    }
+    output += '' +
+        '</ul>';
     return output;
 }

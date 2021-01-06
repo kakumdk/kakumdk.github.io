@@ -2211,6 +2211,75 @@ body, p {
     font-size: 20px;
     padding-top: 4px;
 }
+._pager .page-item {
+    display: none !important;
+}
+._pager .page-item.prev, ._pager .page-item.active, ._pager .page-item.next {
+    display: block !important;
+}
+._pager .page-item.prev a, ._pager .page-item.next a {
+    display: none;
+}
+._pager .page-item.prev:after {
+    content: "< prev";
+    /*background-color: #edeff2 !important;*/
+    border: 0 dashed #e2e2e2;
+    border-top-color: rgb(226, 226, 226);
+    border-right-color: rgb(226, 226, 226);
+    border-bottom-color: rgb(226, 226, 226);
+    border-left-color: rgb(226, 226, 226);
+    border-radius: 0;
+    /*color: #a3a5a8 !important;*/
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 6px;
+    padding: 0.8rem 0.8rem;
+    position: relative;
+    text-transform: capitalize;
+    color: #ffffff !important;
+    background-color: #269f42 !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
+    background-image: linear-gradient(-180deg, #2fcb53,#269f42 90%) !important;
+    background-position: -.5em !important;
+    border-color: rgba(27,31,35,.5) !important;
+    box-shadow: none !important;
+}
+._pager .page-item.next:after {
+    content: 'next >';
+    /*background-color: #edeff2 !important;*/
+    border: 0 dashed #e2e2e2;
+    border-top-color: rgb(226, 226, 226);
+    border-right-color: rgb(226, 226, 226);
+    border-bottom-color: rgb(226, 226, 226);
+    border-left-color: rgb(226, 226, 226);
+    border-radius: 0;
+    /*color: #a3a5a8 !important;*/
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 6px;
+    padding: 0.8rem 0.8rem;
+    position: relative;
+    text-transform: capitalize;
+    color: #ffffff !important;
+    background-color: #269f42 !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
+    background-image: linear-gradient(-180deg, #2fcb53,#269f42 90%) !important;
+    background-position: -.5em !important;
+    border-color: rgba(27,31,35,.5) !important;
+    box-shadow: none !important;
+}
+._pager .page-item .page-link:hover {
+    color: #ffffff !important;
+    /*background: rgba(0, 0, 0, 0) linear-gradient(to right, #233751 0px, #243449 100%) repeat scroll 0 0 !important;*/
+    background-color: #269f42 !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#2fcb53),color-stop(90%,#269f42)) !important;
+    background-image: linear-gradient(-180deg, #2fcb53,#269f42 90%) !important;
+    background-position: -.5em !important;
+    border-color: rgba(27,31,35,.5) !important;
+    box-shadow: none !important;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
