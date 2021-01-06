@@ -151,6 +151,7 @@ $(function() {
         var data = JSON.parse(text);
         var output = writeAuthorBlogs(data);
         $('.blog-list-blogs-authors').html(output);
+        $(".blog-list-blogs-authors_pager").append(writeAuthorBlogsPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
     });
     setTimeout(function () {
@@ -672,7 +673,7 @@ function writeAuthorBlogs(data) {
                             type[0].replace(" ", "-") + '/' +
                             category[0].replace(" ", "-") + '/' +
                             data[i]['file'].replace(".json", ".html");
-                        if (itr >= numberofArticlesPerPage) {
+                        if (itr >= (numberofArticlesPerPage - 1)) {
                             output += '<div class="blog-box row hidden">';
                         }
                         else {
@@ -1406,6 +1407,31 @@ $(function() {
                 i++;
             });
         });
+        $(".blog-list-blogs-authors_pager ._pager li").click(function() {
+            var clickedPageArray = $(this).attr('class').split(/\s+/);
+            var clickedPage = clickedPageArray[0];
+            var i = 1;
+            var from = (clickedPage - 1) * (numberofArticlesPerPage - 1)
+            var to = from + (numberofArticlesPerPage - 1);
+            $("ul._pager li").each(function () {
+                $(this).removeClass('prev');
+                $(this).removeClass('active');
+                $(this).removeClass('next');
+            });
+            $(this).prev().addClass('prev');
+            $(this).addClass('active');
+            $(this).next().addClass('next');
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $(".blog-list-blogs-authors div.blog-box").each(function() {
+                if (i > from && i < (to + 1)) {
+                    $(this).removeClass('hidden');
+                }
+                else {
+                    $(this).addClass('hidden');
+                }
+                i++;
+            });
+        });
     }, 2000);
 
 });
@@ -1501,6 +1527,42 @@ function writeBlogTypeCategoriesPager(data) {
         }
     }
     var pagerItems = Math.ceil(pageCount / (numberofArticlesPerPage - 2));
+    var output = '';
+    if (pageCount > (numberofArticlesPerPage - 2)) {
+        output += '<ul class="_pager pagination justify-content-center">';
+        for (var i = 1; i <= pagerItems; i++) {
+            if (i === 1) {
+                output += '<li class="'+i+' page-item active"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+            else if (i === 2) {
+                output += '<li class="'+i+' page-item next"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+            else {
+                output += '<li class="'+i+' page-item"><a class="page-link" href="#">'+i+'</a></li>';
+            }
+        }
+        output += '' +
+            '</ul>';
+    }
+    return output;
+}
+function writeAuthorBlogsPager(data) {
+    var currentpath = window.location.pathname.split('/');
+    var pageCount = 0;
+    if (currentpath['2']) {
+        if (currentpath['2'].replaceAll('.html', '')) {
+            if (currentpath['2'].replaceAll('.html', '').replaceAll('-', ' ')) {
+                var author = currentpath['2'].replaceAll('.html', '').replaceAll('-', ' ');
+                for (var i = data.length - 1; i >= 0; i--) {
+                    if (author === data[i]['author']) {
+                        pageCount++;
+                    }
+                }
+            }
+        }
+    }
+    console.log(pageCount);
+    var pagerItems = Math.ceil(pageCount / (numberofArticlesPerPage - 1));
     var output = '';
     if (pageCount > (numberofArticlesPerPage - 2)) {
         output += '<ul class="_pager pagination justify-content-center">';

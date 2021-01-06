@@ -1701,6 +1701,7 @@ hr.invis3 {
 .blog-list-homepage-blogs .blog-box.hidden,
 .blog-list-type .blog-box.hidden,
 .blog-list-category .blog-box.hidden,
+.blog-list-blogs-authors .blog-box.hidden,
 #see-more.hidden {
     display: none;
 }

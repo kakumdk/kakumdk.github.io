@@ -443,12 +443,18 @@ do
 
                         </div>
 
+                        <nav aria-label="Page navigation">
+                            <div class="blog-list-blogs-authors_pager">
+
+                            </div>
+                        </nav>
+
                     </div><!-- end page-wrapper -->
 
                 </div><!-- end col -->
 
                 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                    <div class="ads-blogs sidebar">
+                    <div class="ads-type sidebar">
 
                     </div><!-- end sidebar -->
                 </div><!-- end col -->
