@@ -425,12 +425,12 @@ do
                                     <h4>'$author'</h4>
                                     <p>'$intro'</p>
                                     <div class="topsocial">
-                                        <a href="'$linkedin'" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                        <a href="'$twitter'" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                        <a href="'$facebook'" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                        <a href="'$instagram'" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
-                                        <a href="'$youtube'" data-toggle="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>
-                                        <a href="'$website'" data-toggle="tooltip" data-placement="bottom" title="Website"><i class="fa fa-link"></i></a>
+                                        <a target="_blank" href="'$linkedin'" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                        <a target="_blank" href="'$twitter'" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                        <a target="_blank" href="'$facebook'" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                        <a target="_blank" href="'$instagram'" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                                        <a target="_blank" href="'$youtube'" data-toggle="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>
+                                        <a target="_blank" href="'$website'" data-toggle="tooltip" data-placement="bottom" title="Website"><i class="fa fa-link"></i></a>
                                     </div><!-- end social -->
                                 </div><!-- end col -->
 
