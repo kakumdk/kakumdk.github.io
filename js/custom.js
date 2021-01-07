@@ -507,7 +507,7 @@ function writeBlogsFooter(data) {
 function writeSocialShareLinks(region) {
     var title = $(document).find("title").text();
     var url = window.location.href;
-    var hashtags = 'TechBlog'
+    var hashtags = 'PeoplesBlog'
     var linkedin = 'http://www.linkedin.com/shareArticle?mini=true&amp;url=' + url;
     var twitter = 'https://twitter.com/share?url='+url+'&amp;text='+title+'&amp;hashtags='+hashtags;
     var facebook = 'http://www.facebook.com/sharer.php?u='+url;
