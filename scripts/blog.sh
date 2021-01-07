@@ -1019,7 +1019,7 @@ do
 
                                 <div class="blog-meta big-meta">
                                     <small><i>'$created'</i></small>
-                                    <small>by <i>'$author'</i></small>
+                                    <small class="author-by">by <i><a href="/authors/'${author// /-}'.html">'$author'</a></i></small>
                                     <small class="read-article-section">
                                       <i class="fa fa-play read-article"> <div>Read Article</div></i>
                                       <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
