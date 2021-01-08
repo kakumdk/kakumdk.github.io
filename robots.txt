@@ -33,6 +33,7 @@ Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-puri
 Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
 Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
 Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
+Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
@@ -82,6 +83,7 @@ Allow: /blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-puri
 Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html
 Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
 Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
+Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
 Disallow: /ads/ads.json
 Disallow: /blogs-content
 Disallow: /blogs-content/
