@@ -23,6 +23,11 @@ Allow: /blogs/Sci-Tech/Drupal/2017-03-14-creating-twitter-share-block-programmat
 Allow: /blogs/Sci-Tech/Drupal/2017-03-26-integrating-codeception-drupal-have-added-support-tdd.html
 Allow: /blogs/Sci-Tech/Drupal/2017-09-03-aegir-docker-develop-test-easier-deployment.html
 Allow: /blogs/Sci-Tech/Drupal/2018-02-01-secure-website-running-apache-lets-encrypt-linux.html
+Allow: /blogs/Sci-Tech/Drupal/2018-06-27-sites-still-vulnerable-drupalgeddon-2.html
+Allow: /blogs/Sci-Tech/Php/2019-06-11-aes-encrypt-decrypt.html
+Allow: /blogs/Sci-Tech/Drupal/2019-06-24-store-drupal-logs-amazon-s3.html
+Allow: /blogs/Sci-Tech/Drupal/2019-06-26-cache-set-get-and-invalidate-user-drupal-7.html
+Allow: /blogs/Sci-Tech/Drupal/2019-11-08-drupal-jsonapi-get-post-patch-and-delete-samples.html
 Allow: /blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html
 Allow: /blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html
 Allow: /blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html
@@ -89,6 +94,11 @@ Allow: /blogs/Sci-Tech/Drupal/2017-03-14-creating-twitter-share-block-programmat
 Allow: /blogs/Sci-Tech/Drupal/2017-03-26-integrating-codeception-drupal-have-added-support-tdd.html
 Allow: /blogs/Sci-Tech/Drupal/2017-09-03-aegir-docker-develop-test-easier-deployment.html
 Allow: /blogs/Sci-Tech/Drupal/2018-02-01-secure-website-running-apache-lets-encrypt-linux.html
+Allow: /blogs/Sci-Tech/Drupal/2018-06-27-sites-still-vulnerable-drupalgeddon-2.html
+Allow: /blogs/Sci-Tech/Php/2019-06-11-aes-encrypt-decrypt.html
+Allow: /blogs/Sci-Tech/Drupal/2019-06-24-store-drupal-logs-amazon-s3.html
+Allow: /blogs/Sci-Tech/Drupal/2019-06-26-cache-set-get-and-invalidate-user-drupal-7.html
+Allow: /blogs/Sci-Tech/Drupal/2019-11-08-drupal-jsonapi-get-post-patch-and-delete-samples.html
 Allow: /blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html
 Allow: /blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html
 Allow: /blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html

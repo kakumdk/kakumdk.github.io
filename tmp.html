@@ -38,28 +38,31 @@
 
 
 
-                                <p>Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server.</p>
-                                <p>Let's make it easier with the help of Let's Encrypt. One can easily encrypt data of your website free of charge using Let's Encrypt.</p>
-                                <p>If your Site is running on Apache, run this below one to enable ssl..</p>
-                                <pre><code>sudo a2enmode ssl</code></pre><pre><code>sudo a2ensite default-ssl</code></pre><p>Next restart the apache webserver</p>
-                                <pre><code>sudo systemctl restart apache2</code></pre><p>If you hit your domain, you will see</p>
-                                <p><code>Your Connection is not Secured</code></p>
-                                <p>Download and Install Let's Encrypt</p>
-                                <pre><code>sudo git clone <a class="vglnk" href="https://github.com/letsencrypt/letsencrypt" rel="nofollow"><span>https</span><span>://</span><span>github</span><span>.</span><span>com</span><span>/</span><span>letsencrypt</span><span>/</span><span>letsencrypt</span></a> /opt/letsencrypt</code></pre><p>Next generate the Certificate</p>
-                                <pre><code>cd /opt/letsencrypt</code></pre><pre><code>sudo ./letsencrypt-auto --apache -d http://kkk.com</code></pre><p>During installation you will need to specify your E-mail address and also agree to the terms of service.</p>
-                                <p>Once completed, One can see&nbsp;list all of&nbsp;certificate files at&nbsp;<code>/etc/letsencrypt/live</code>&nbsp;directory..</p>
-                                <p>And you can access <code>https://kkk.com</code></p>
-                                <p>You can also verify the status of your SSL certificate by visiting the URL&nbsp;<code><a class="vglnk" href="https://www.ssllabs.com/ssltest/analyze.html?d=yourdomain.com&amp;latest" rel="nofollow"><span>https</span><span>://</span><span>www</span><span>.</span><span>ssllabs</span><span>.</span><span>com</span><span>/</span><span>ssltest</span><span>/</span><span>analyze</span><span>.</span><span>html</span><span>?</span><span>d</span><span>=</span><span>yourdomain</span><span>.</span><span>com</span><span>&amp;</span><span>latest</span></a></code></p>
-                                <p><strong>How to Renew Lets Encrypt Certificates ??</strong></p>
-                                <p>By default, SSL certificates issued by Let's Encrypt are valid for 90 days. So it is recommended to renew the certificate before the expiration date.</p>
-                                <p>You can renew the SSL certificates manually</p>
-                                <pre><code>cd /opt/letsencrypt</code></pre><pre><code>sudo ./letsencrypt-auto certonly --renew-by-default -d <a class="vglnk" href="http://kkk.com" rel="nofollow"><span>kkk</span><span>.</span><span>com</span></a></code></pre><p>to Automate this process, lets have the Cron job for this to do..</p>
-                                <pre><code>sudo nano /etc/crontab
-</code>
-<code> @monthly root /opt/letsencrypt/letsencrypt-auto certonly --renew-by-default -d <a class="vglnk" href="http://kkk.com" rel="nofollow"><span>kkk</span><span>.</span><span>com</span></a></code></pre><p>Save this file and Every month, this cron job would run..</p>
-                                <p><strong>Upgrade Let's Encrypt</strong></p>
-                                <pre><code>cd /opt/letsencrypt</code></pre><p>Pull the latest changes from the git repository..</p>
-                                <p>Cheers :)</p>
+                                <p>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern</p>
+                                <p><strong>HTTP Methods</strong></p>
+                                <p>JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.</p>
+                                <ul>
+                                    <li>GET - Retrieve data, can be a collection of resources or an individual resource</li>
+                                    <li>POST - Create a new resource</li>
+                                    <li>PATCH - Update an existing resource</li>
+                                    <li>DELETE - Remove an existing resource</li>
+                                </ul>
+                                <p><strong>Authentication</strong></p>
+                                <p>Typically some form of authentication is used for POST requests. The examples below all use Basic Authentication. Enable the HTTP Basic Authentication module, set the permission for the API user (and role) and set the encoded username and password to the 'Authorization' request header.</p>
+                                <p><strong>Headers</strong></p>
+                                <p>Make sure to use 'Content type' and 'Accept' headers when appropriate</p>
+                                <pre><code>Accept: application/vnd.api+json
+Content-Type: application/vnd.api+json</code>
+</pre><p><strong>Response codes</strong></p>
+                                <p>The JSON:API Specification also dictates&nbsp;acceptable responses. The Drupal implementation uses a subset of those. The module can respond with the following codes:</p>
+                                <ul class="check">
+                                    <li>200 OK - All successful GET and PATCH requests</li>
+                                    <li>201 Created - All successful POST requests (response includes the newly created resource)</li>
+                                    <li>204 No Content - All successful DELETE requests</li>
+                                </ul>
+                                <p>And here's the detailed documentation - <a href="https://www.drupal.org/docs/8/modules/jsonapi/get-post-patch-and-delete">https://www.drupal.org/docs/8/modules/jsonapi/get-post-patch-and-delete</a></p>
+                                <p>And here's the sample postman collection - <a href="https://gitlab.com/heykarthikwithu/drupal-jsonapi---sample-api-calls">https://gitlab.com/heykarthikwithu/drupal-jsonapi---sample-api-calls</a></p>
+                                <p>Thanks :)</p>
 
 
 
