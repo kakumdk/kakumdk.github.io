@@ -1,0 +1,17 @@
+{
+  "content": {
+    "title": "Aegir on Docker - Develop, Test, With Easier Deployment",
+    "created": "03 Sep, 2017",
+    "author": "Karthik Kumar D K",
+    "views": "463",
+    "summary": "Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments.\n\nDocker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting",
+    "content": "<p>Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments.</p>\n                                <p>Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting.</p>\n                                <p>Here you go???</p>\n                                <p>Better Task Queue..! This process is usually handled by \"Supervisor\"</p>\n                                <p>The \"task queue runner\" is just a continuous process that aegir must always have running, so that it can respond to actions on the front-end in a reasonable amount of time.</p>\n                                <p>Upon Docker Container's run, if we have \"drush @hostmaster hosting-queued\" it keeps queued items running.</p>\n                                <p>Starting OR Re-starting Nginx/Apache would be handled by Aegir's \"Verify\" task.</p>\n                                <p>This Could be one of the Future Feature of Aegir..&nbsp;Since, In case of Process Failures.. Docker containers can be back up-running in seconds.</p>\n                                <div class=\"ads-page-3\"></div>\n                                <p>Faster and Easier Local Development could be made, once the images are downloaded.. Having Development, Preview and Production folders which could individually read each Dockerfiles, this would be next-gen local Drupal development tool..</p>\n                                <p>Have Behat OR Codeception tests to make sure everything is moved between Platforms is tested well..</p>\n                                <p>Travis could be better integration to have the CI in place, with this setup..</p>\n                                <p>In near future, I would get this setup in place.. Stay tuned for more posts on Aegir and Docker..</p>",
+    "type": "Sci-Tech",
+    "category": "Drupal",
+    "banner394x449": "upload/banner394x449/public/maxresdefault.jpg",
+    "banner600x500": "upload/banner600x500/public/maxresdefault.jpg",
+    "banner788x443": "upload/banner788x443/public/maxresdefault.jpg",
+    "banner800x460": "upload/banner800x460/public/maxresdefault.jpg",
+    "file": "2017-09-03-aegir-docker-develop-test-easier-deployment.json"
+  }
+}

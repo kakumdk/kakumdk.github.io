@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Drupal Multisite development environment Configuration in Ubuntu14 | Peoples Blog</title>
+    <meta name="description" content="Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes inside the file as mentioned below">
+    <meta name="author" content="Peoples Blogs">
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Drupal Multisite development environment Configuration in Ubuntu14 | Peoples Blog" />
+    <meta property="og:description" content="Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes inside the file as mentioned below" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banner800x460/public/drupalconf_screenshot.png" />
+    <meta name="twitter:title" content="Drupal Multisite development environment Configuration in Ubuntu14 | Peoples Blog">
+    <meta name="twitter:description" content="Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes inside the file as mentioned below">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banner800x460/public/drupalconf_screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-3RSZRK91SH");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/style.css" rel="stylesheet">
+
+    <!-- Responsive styles for this template -->
+    <link href="../../../css/responsive.css" rel="stylesheet">
+
+    <!-- Colors for this template -->
+    <link href="../../../css/colors.css" rel="stylesheet">
+
+    <!-- Version Tech CSS for this template -->
+    <link href="../../../css/version/tech.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/index.html"
+        },
+        "headline": "Drupal Multisite development environment Configuration in Ubuntu14",
+        "description": "Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes inside the file as mentioned below",
+        "image": "https://peoplesblog.co.in/upload/banner800x460/public/drupalconf_screenshot.png",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "08 Jul, 2015",
+        "dateModified": "08 Jul, 2015"
+      }
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
+        <header class="tech-header header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html" title="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+
+        <section class="section single-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area text-center">
+                                <ol class="breadcrumb hidden-xs-down">
+                                    <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/index.html">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/index.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/Drupal/index.html">Drupal</a></li>
+                                    <li class="breadcrumb-item active">Drupal Multisite development environment Configuration in Ubuntu14</li>
+                                </ol>
+
+                                <!-- span class="color-orange"><a href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a></span -->
+
+                                <h1 class="read-article-title">Drupal Multisite development environment Configuration in Ubuntu14</h1>
+
+                                <div class="blog-meta big-meta">
+                                    <small><i>08 Jul, 2015</i></small>
+                                    <small class="author-by">by <i><a href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a></i></small>
+                                    <small class="read-article-section">
+                                      <i class="fa fa-play read-article"> <div>Read Article</div></i>
+                                      <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
+                                      <i class="fa fa-play read-article-resume"> <div>Resume</div></i>
+                                      <i class="fa fa-stop read-article-stop"> <div>Stop</div></i>
+                                    </small>
+                                </div><!-- end meta -->
+
+                                <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="single-post-media">
+                                <img loading="lazy" alt="Peoples Blog" src="../../../upload/banner800x460/public/drupalconf_screenshot.png" class="img-fluid">
+                            </div><!-- end media -->
+
+                            <div class="blog-content read-article-content">
+                                <div><p><strong>Prerequisite</strong> Requires a working drupal installation</p> <p><strong>Set up your hosts file</strong> Add the following lines to <code>/etc/hosts</code>:</p> <pre>127.0.0.1 testsite.localhost 127.0.0.1 testsite2.localhost </pre><h3>Set up Virtual Hosts</h3> <p>Add the following code to <code>/etc/apache2/sites-available</code>:</p> <p>Goto to the folder <code>/etc/apache2/sites-available</code>, copy the existing <code>000-default.conf</code> file to a new file <code>testsite.localhost</code> and make the changes inside the file as mentioned below.</p> <pre><\virtualhost> DocumentRoot /var/www/drupal ServerName testsite.localhost <\/virtualhost> </pre><p>Do the same thing for <code>testsite2.localhost</code> also.</p> <p>After this, restart Apache:</p> <p><code>sudo /etc/init.d/apache2 restart</code></p> <h3>Set up your databases</h3> <p>Create the two databases <code>testsite</code> and the other <code>testsite2</code>.</p> <h3>Set up your sites folders</h3> <p>From the command prompt, navigate to <code>/var/www/drupal/sites/</code> or wherever you have your sites folder installed.</p> <p>The default directory will serve as a template for our other sites. Create a writable files directory in the default directory to make sure every one of your site folders get this directory:</p> <p><code>sudo mkdir -pm 777 default/files</code></p> <p>Copy the default directory to create your new site directories:</p> <p><code>sudo cp -a default/ testsite.localhost</code></p> <p><code>sudo cp -a default/ testsite2.localhost</code></p> <p>Rename the <code>default.settings.php</code> files to <code>settings.php</code> and change the permissions to make them writable, so that the web server can access them in step 7:</p> <p><code>sudo mv testsite.localhost/default.settings.php testsite.localhost/settings.php</code></p> <p><code>sudo mv testsite2.localhost/default.settings.php testsite2.localhost/settings.php</code></p> <p><code>sudo chmod a+w testsite.localhost/settings.php</code></p> <p><code>sudo chmod a+w testsite2.localhost/settings.php</code></p> <h3>Configure your sites to use the appropriate databases</h3> <p>In the <code>/var/www/drupal/sites/testsite.localhost/</code> directory, edit the <code>settings.php</code> file as follows</p> <pre>$databases = array ( 'default' =&gt; array ( 'default' =&gt; array ( 'database' =&gt; 'testsite', 'username' =&gt; 'testuser', 'password' =&gt; 'password', 'host' =&gt; 'localhost', 'port' =&gt; '', 'driver' =&gt; 'mysql', 'prefix' =&gt; '', ), ), ); </pre><p>Repeat for <code>/var/www/drupal/sites/testsite2.localhost/</code>, except replace <code>testsite</code> with <code>testsite2</code>.</p> <h3>Run the installation script for your sites</h3> <p>In a web browser, visit <code>http://testsite.localhost/install.php</code>.</p> <h3>Remove write permissions from your sites <code>settings.php</code> files</h3> <p>From the command prompt, navigate to <code>/var/www/drupal/sites</code> and remove the write permissions for the <code>settings.php</code> files:</p> <p><code>sudo chmod a-w testsite.localhost/settings.php</code></p> <p><code>sudo chmod a-w testsite2.localhost/settings.php</code></p> <h3>You're done!</h3> <p>You can visit your sites at:</p> <p><code>http://testsite.localhost/index.php</code></p> <p><code>http://testsite2.localhost/index.php</code></p> <p>Thank you :)</p></div>
+                            </div><!-- end content -->
+
+                            <div class="blog-title-area tag">
+                                <div class="tag-cloud-single">
+                                    <span>Tags</span>
+                                    <small><a href="/blogs/Sci-Tech/Drupal/index.html">Drupal</a></small>
+                                </div><!-- end meta -->
+
+                                <br/>
+                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="ads-page-1"></div><!-- end ads-page-1 -->
+
+                            <!-- hr class="invis1" -->
+                            <!-- div class="prevnext-articles custombox prevnextpost clearfix"></div -->
+
+                            <!-- hr class="invis1" -->
+                            <div class="custombox clearfix">
+                                <h4 class="small-title">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <!-- script src="https://utteranc.es/client.js"
+                                                    repo="kakumdk/kakumdk.github.io"
+                                                    issue-term="url"
+                                                    theme="github-light"
+                                                    crossorigin="anonymous"
+                                                    async>
+                                            </script -->
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="invis0">
+                            <div class="prevnext-articles custombox prevnextpost clearfix"></div>
+
+                            <div class="ads-page-2"></div><!-- end ads-page-1 -->
+
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar">
+
+                        </div><!-- end sidebar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="widget">
+                        <div class="footer-text text-left">
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <div class="post-sharing-footer social">
+
+                            </div>
+
+                            <hr class="invis">
+
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
+
+                        </div><!-- end footer-text -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Popular Categories</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Misc</h2>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                </div>
+            </div>
+        </div><!-- end container -->
+        </footer>
+
+        <div class="dmtop">Scroll to Top</div>
+    </div><!-- end wrapper -->
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery.validate.min.js"></script>
+    <script src="../../../js/tether.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+
+    <div id="policy-container"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

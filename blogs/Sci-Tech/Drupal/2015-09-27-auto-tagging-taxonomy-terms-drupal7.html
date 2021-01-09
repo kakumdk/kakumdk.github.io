@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Auto Tagging of Taxonomy terms in Drupal7 | Peoples Blog</title>
+    <meta name="description" content="This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave()">
+    <meta name="author" content="Peoples Blogs">
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Auto Tagging of Taxonomy terms in Drupal7 | Peoples Blog" />
+    <meta property="og:description" content="This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave()" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banner800x460/public/multiTaxonomy.png" />
+    <meta name="twitter:title" content="Auto Tagging of Taxonomy terms in Drupal7 | Peoples Blog">
+    <meta name="twitter:description" content="This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave()">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banner800x460/public/multiTaxonomy.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-3RSZRK91SH");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/style.css" rel="stylesheet">
+
+    <!-- Responsive styles for this template -->
+    <link href="../../../css/responsive.css" rel="stylesheet">
+
+    <!-- Colors for this template -->
+    <link href="../../../css/colors.css" rel="stylesheet">
+
+    <!-- Version Tech CSS for this template -->
+    <link href="../../../css/version/tech.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/index.html"
+        },
+        "headline": "Auto Tagging of Taxonomy terms in Drupal7",
+        "description": "This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave()",
+        "image": "https://peoplesblog.co.in/upload/banner800x460/public/multiTaxonomy.png",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "27 Sep, 2015",
+        "dateModified": "27 Sep, 2015"
+      }
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
+        <header class="tech-header header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html" title="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+
+        <section class="section single-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area text-center">
+                                <ol class="breadcrumb hidden-xs-down">
+                                    <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/index.html">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/index.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/Drupal/index.html">Drupal</a></li>
+                                    <li class="breadcrumb-item active">Auto Tagging of Taxonomy terms in Drupal7</li>
+                                </ol>
+
+                                <!-- span class="color-orange"><a href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a></span -->
+
+                                <h1 class="read-article-title">Auto Tagging of Taxonomy terms in Drupal7</h1>
+
+                                <div class="blog-meta big-meta">
+                                    <small><i>27 Sep, 2015</i></small>
+                                    <small class="author-by">by <i><a href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a></i></small>
+                                    <small class="read-article-section">
+                                      <i class="fa fa-play read-article"> <div>Read Article</div></i>
+                                      <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
+                                      <i class="fa fa-play read-article-resume"> <div>Resume</div></i>
+                                      <i class="fa fa-stop read-article-stop"> <div>Stop</div></i>
+                                    </small>
+                                </div><!-- end meta -->
+
+                                <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="single-post-media">
+                                <img loading="lazy" alt="Peoples Blog" src="../../../upload/banner800x460/public/multiTaxonomy.png" class="img-fluid">
+                            </div><!-- end media -->
+
+                            <div class="blog-content read-article-content">
+                                <div><p>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the <code>hook_node_presave()</code>.</p> <p>In our case lets consider the <code>field_tags</code> is the taxonomy field, and we are autotagging based on the content present in <code>title</code> and <code>body</code> fields.</p> <p>All these actions are implemented inside the <code>hook_node_presave()</code>.</p> <div> <p><strong>1. First thing is getting the list of terms of the <code>field_tags</code> vocabulary, this is done in the below code.</strong></p> <p><code>$field = field_info_field('field_tags');</code><br> // read the field information.<br> <code>$voc_name = $field["settings"]["allowed_values"][0]["vocabulary"];</code><br> // get the vocabulary name which is been configured for the tag field.<br> <code>$voc = taxonomy_vocabulary_machine_name_load($voc_name);</code><br> // load the vocabulary object.<br> <code>$terms = taxonomy_term_load_multiple(array(), array('vid' =&gt; $voc-&gt;vid));</code><br> // get all the terms in the vocabulary.<br> <code>$termnames = array();<br> foreach($terms as $termskey =&gt; $termsvalue) {<br> &nbsp;&nbsp;&nbsp; $termnames[$termskey] = $termsvalue-&gt;name;<br> }</code><br> // iterating the terms objects and getting out the terms names out of it.</p> <p> <span style="font-size:20px;"><strong>2. So now we have the <code>$termnames</code> which needs to be cross checked with the content in the <code>title</code> and <code>body</code> fields, this is done in the below code.</strong></span></p> </div> <p>// read the node title and body and stored in the $content.<br> <code>$content = $node-&gt;title;</code><br> <code>$content .= $node-&gt;body['und'][0]['value'];</code><br> // Iterate all the terms and compare with the content words, if matched then store them in seperate array.<br> <code>$node_tids = array();<br> foreach($termnames as $termname) {<br> &nbsp;&nbsp;&nbsp; if (strpos($content, $termname) !== false) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $term = taxonomy_get_term_by_name($termname);<br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; foreach($term as $termkey =&gt; $termvalue) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $node_tids[] = (array) $termvalue;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br> &nbsp;&nbsp;&nbsp; }<br> }</code></p> <p> <span style="font-size:20px;"><strong>3. After this, we will have the term ids <code>$node_tids</code> which needs to be saved as autagged terms, this is just assinging to node object <code>$node</code>.</strong></span></p> <p><code>$node-&gt;field_tags["und"] = $node_tids;</code></p> <p><span style="font-size:20px;"><strong>Note: </strong></span>In case of exisisting node in be updated, we should take care of the existing terms which are saved in the node, to do this we need to add some code which does it.</p> <p><code>$node_tids_all = array();</code><br> // check if any existing terms are their in the field_tags<br> <code>if(!empty($node-&gt;field_tags)) {</code><br> &nbsp; &nbsp; &nbsp;&nbsp; // in case not empty, merge the terms with the existing terms.<br> <code>&nbsp;&nbsp;&nbsp; $node_tids_all = array_merge_recursive($node-&gt;field_tags["und"], $node_tids);<br> }</code><br> // In case any duplicates exist, get out the unique ones.<br> <code>$node_tids_all = array_map("unserialize", array_unique(array_map("serialize", $node_tids_all)));</code><br> // then assign the selected terms to the node object.<br> <code>$node-&gt;field_tags["und"] = $node_tids_all;</code></p> <p>So, thats it, return the <code>$node</code> object at the end of the <code>hook_node_presave()</code>. this autotags the term field with title and body field.</p> <p>Thank you :)</p></div>
+                            </div><!-- end content -->
+
+                            <div class="blog-title-area tag">
+                                <div class="tag-cloud-single">
+                                    <span>Tags</span>
+                                    <small><a href="/blogs/Sci-Tech/Drupal/index.html">Drupal</a></small>
+                                </div><!-- end meta -->
+
+                                <br/>
+                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="ads-page-1"></div><!-- end ads-page-1 -->
+
+                            <!-- hr class="invis1" -->
+                            <!-- div class="prevnext-articles custombox prevnextpost clearfix"></div -->
+
+                            <!-- hr class="invis1" -->
+                            <div class="custombox clearfix">
+                                <h4 class="small-title">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <!-- script src="https://utteranc.es/client.js"
+                                                    repo="kakumdk/kakumdk.github.io"
+                                                    issue-term="url"
+                                                    theme="github-light"
+                                                    crossorigin="anonymous"
+                                                    async>
+                                            </script -->
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="invis0">
+                            <div class="prevnext-articles custombox prevnextpost clearfix"></div>
+
+                            <div class="ads-page-2"></div><!-- end ads-page-1 -->
+
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar">
+
+                        </div><!-- end sidebar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="widget">
+                        <div class="footer-text text-left">
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <div class="post-sharing-footer social">
+
+                            </div>
+
+                            <hr class="invis">
+
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
+
+                        </div><!-- end footer-text -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Popular Categories</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Misc</h2>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                </div>
+            </div>
+        </div><!-- end container -->
+        </footer>
+
+        <div class="dmtop">Scroll to Top</div>
+    </div><!-- end wrapper -->
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery.validate.min.js"></script>
+    <script src="../../../js/tether.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+
+    <div id="policy-container"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
