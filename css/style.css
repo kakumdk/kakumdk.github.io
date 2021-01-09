@@ -1901,7 +1901,7 @@ body .blog-meta small a, body .blog-meta small {
     font-size: 14px !important;
 }
 body .blog-meta > small > a:hover {
-    text-decoration: underline !important;
+    /*text-decoration: underline !important;*/
 }
 .blog-meta small > i {
     color: #4e4e4e !important;

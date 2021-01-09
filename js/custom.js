@@ -442,31 +442,54 @@ function writeBlogTypeCategories(data) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var path = '/blogs/' + currentType + '/' + currentCat + '/' + data[i]['file'].replace(".json", ".html");
                 if (currentCat === currentpath[3]) {
-                    if (itr >= (numberofArticlesPerPage - 2)) {
-                        output += '<div class="blog-box hidden">';
+                    if (itr >= numberofArticlesPerPage) {
+                        output += '<div class="blog-box row hidden">';
                     }
                     else {
-                        output += '<div class="blog-box">';
+                        output += '<div class="blog-box row">';
                     }
                     itr = itr + 1;
+                    // output +=
+                    //     '<div class="post-media">' +
+                    //     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
+                    //     '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
+                    //     '</a>' +
+                    //     '</div>' +
+                    //     '<!-- end media -->' +
+                    //     '<div class="blog-meta big-meta text-center">' +
+                    //     '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
+                    //     '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
+                    //     '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/index.html" title="' + type[j].trim() + '">' + type[j].trim() + '</a></small>' +
+                    //     '<small>' + data[i]['created'] + ' / by <a href="/authors/'+data[i]['author'].replaceAll(" ", "-")+'.html">' + data[i]['author'] + '</a></small>' +
+                    //     // '<small>by ' + data[i]['author'] + '</small>' +
+                    //     '</div><!-- end meta -->' +
+                    //     '</div><!-- end blog-box -->' +
+                    //     '<hr class="invis">';
+                    // if (itr % 2 === 0) {
+                    //     // output += '<div class="ads-page-3"></div>';
+                    // }
                     output +=
+                        '<div class="col-md-4">' +
                         '<div class="post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                        '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
+                        // '<img loading="lazy" alt="Peoples Blog" src="../../../' + val.banner + '" class="img-fluid">' +
+                        '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
+                        '<div class="hovereffect"></div>' +
                         '</a>' +
-                        '</div>' +
-                        '<!-- end media -->' +
-                        '<div class="blog-meta big-meta text-center">' +
+                        '</div><!-- end media -->' +
+                        '</div><!-- end col -->' +
+                        '<div class="blog-meta big-meta col-md-8">' +
                         '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                         '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/index.html" title="' + type[j].trim() + '">' + type[j].trim() + '</a></small>' +
+                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/'+category[0].replace(" ", "-")+'/index.html" title="' + category[0] + '">' + category[0] + '</a></small>' +
                         '<small>' + data[i]['created'] + ' / by <a href="/authors/'+data[i]['author'].replaceAll(" ", "-")+'.html">' + data[i]['author'] + '</a></small>' +
                         // '<small>by ' + data[i]['author'] + '</small>' +
+                        // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
                         '</div><!-- end meta -->' +
                         '</div><!-- end blog-box -->' +
                         '<hr class="invis">';
                     if (itr % 2 === 0) {
-                        // output += '<div class="ads-page-3"></div>';
+                        // output += '<div class="ads-page-4"></div>';
                     }
                 }
             }
@@ -745,15 +768,11 @@ $(function() {
         adShowHidePage('ads-page-4');
     });
     readFile("/../../../ads/ads.json", function(text){
-        $('.ads').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
@@ -1386,8 +1405,8 @@ $(function() {
             var clickedPageArray = $(this).attr('class').split(/\s+/);
             var clickedPage = clickedPageArray[0];
             var i = 1;
-            var from = (clickedPage - 1) * (numberofArticlesPerPage - 2)
-            var to = from + (numberofArticlesPerPage - 2);
+            var from = (clickedPage - 1) * numberofArticlesPerPage
+            var to = from + numberofArticlesPerPage;
             $("ul._pager li").each(function () {
                 $(this).removeClass('prev');
                 $(this).removeClass('active');
@@ -1526,9 +1545,9 @@ function writeBlogTypeCategoriesPager(data) {
             }
         }
     }
-    var pagerItems = Math.ceil(pageCount / (numberofArticlesPerPage - 2));
+    var pagerItems = Math.ceil(pageCount / numberofArticlesPerPage);
     var output = '';
-    if (pageCount > (numberofArticlesPerPage - 2)) {
+    if (pageCount > numberofArticlesPerPage) {
         output += '<ul class="_pager pagination justify-content-center">';
         for (var i = 1; i <= pagerItems; i++) {
             if (i === 1) {

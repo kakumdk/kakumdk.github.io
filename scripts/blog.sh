@@ -725,7 +725,7 @@ do
                 <div class="row">
                     <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                            <div class="blog-list-category blog-custom-build">
+                            <div class="blog-list-category blog-list clearfix">
 
                             </div><!-- end blog-list -->
                         </div><!-- end page-wrapper -->
