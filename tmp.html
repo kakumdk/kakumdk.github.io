@@ -35,139 +35,28 @@
 <!--                                    <li>Do Intercropping</li>-->
 <!--                                </ul>-->
 
-                                <div data-quickedit-field-id="node/71/field_search_in_detail_result/und/full">
 
-                                    <p><strong>What is Sass?</strong>Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output.</p>
-                                    <h4><strong>Prerquisites</strong></h4>
-                                    <p>We can compile sass into css with tools, in different ways, below i have mention few of these ways (Any of these tools should be installed on your machine).</p>
-                                    <ul>
-                                        <li>You require Ruby installed, then install a gem <code>gem install sass</code> and compile it by running <code>sassc example.scss output.css</code>. </li>
-                                        <li>Or, You can install Compass, and compile by using <code>compass watch example.scss output.css</code>. </li>
-                                        <li>Or,  You can also install libsass via NPM with node-sass <code>npm install node-sass</code>.</li>
-                                    </ul>
-                                    <p>Which one to use, is completelty depends on you, and the project which you are working on</p>
-                                    <p>And Using Sass helps developer writing maintainable CSS easier. You can get more done, in less code, more readably, in less time.</p>
-                                    <h3>Get into detail, how it works</h3>
-                                    <h4><strong>1. Variables</strong></h4>
-                                    <p>Sass brings variables to CSS.</p>
-                                    <p>Acceptable values for variables include numbers, strings, colors, null, lists and maps.</p>
-                                    <p>Variables in Sass are scoped using the $ symbol. Lets create our first variable:</p>
-                                    <pre>$GreyColor: #ccc;</pre><pre>body {
-    background: $GreyColor;
-}
-p a {
-   color: $GreyColor;
-}
 
-<strong># Can override the variable value</strong>
-body {
-    $GreyColor: #aaa;
-    background: $GreyColor;
-}
 
-<strong># "!global" which makes the variable value global value.</strong>
-body {
-    $GreyColor: #aaa !global;
-    background: $GreyColor;
-}
-</pre><p><br></p>
-                                    <h4><strong>2. Math</strong></h4>
-                                    <p>Unlike CSS, Sass allows us to use mathematical expressions</p>
-                                    <p>Before moving forward, I want to make a note of two points with Sass math.</p>
-                                    <p>First, because the / symbol is used in shorthand CSS font properties like font: 14px/16px, if you want to use the division operator on non-variable values, you need to wrap them in parentheses like:</p>
-                                    <pre>$font: (14px/16px);</pre><p>Second, you can’t mix value units, Instead, for this particular example you could use the css calc function</p>
-                                    <pre>$width: 100% - 20px;</pre><p>Now, lets create a dynamic column declaration, based upon a base container width</p>
-                                    <pre>$container-width: 100%;
-.container {
-  width: $container-width;
-}
-.col-4 {
-  width: $container-width / 4;
-}
+                                <p><strong>Step 1</strong> Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC1.jpg" />
+                                <p><br/><strong>Step 2</strong> And next create/resue the Taxonomy term field for the other content type, In this article lets take example for Article content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC2.jpg" />
+                                <p><br/><strong>Step 3</strong> Then, Create a content for the basic page content type, Enter title of the field, other fields, and enter the data in the Tags field as "Java" as shown in the image and Save the content.</p>
+                                <p>Actually, on save of this node, a Taxonomy term as "Java" will be created</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC3.jpg" />
+                                <p><br/><strong>Step 4</strong> Next, Create a content for the Article content type, Enter title of the field, other fields, and enter the data in the Tags field as "Java", this time the term "Java" will be autopopulated as shown in the below image and save the content.</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC4.jpg" />
+                                <p><br/><strong>Step 5</strong> Next, Create a View block, which list all the content, below image shows the created view</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC5.jpg" />
+                                <p><br/><strong>Step 6</strong> Then, add a contextual filter select the field "field_tags", which is created earlier in the article, below image describes the settings of this field.</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC6.jpg" />
+                                <p><br/>Assign this view block to the header/highlight region or any the region, which will be visible in the node pages</p>
+                                <p><strong>Step 7</strong> Then, visit any node which you have created earilier in the article, this block lists the two contents which are having the Java tag in their nodes, as shown in the below image.</p>
+                                <img class="img-fluid" src="../../../upload/blogs/RC7.jpg" />
+                                <p><br/>Thank you :)</p>
 
-//  Compiles to:
-//  .container {
-//   width: 100%;
-//  }
-//
-//  .col-4 {
-//      width: 25%;
-//  }
-</pre><p><br></p>
-                                    <h4><strong>3. Functions</strong></h4>
-                                    <p>In my opinion its good to use it’s built in functions. You can see the full list <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">here</a>. It is <em>EXTENSIVE</em>.</p>
-                                    <h4><strong>4. Nesting</strong></h4>
-                                    <p>This concept, way of working with this will be understood by seeing the sample code.</p>
-                                    <pre>a.myAnchor {
-    color: blue;
-    &amp;:hover {
-        text-decoration: underline;
-    }
-    &amp;:visited {
-        color: purple;
-    }
-}
 
-// on compiling this we get output as
-// a.myAnchor { color: blue; }
-// a.myAnchor:hover { color: blue; text-decoration: underline; }
-// a.myAnchor:visited { color: purple; }
-</pre><p>
-                                        <br></p>
-                                    <h4><strong>5. Imports</strong></h4>
-                                    <p>through this concept you can break you sass files and include them into single file.</p>
-                                    <pre>@import "grids.scss";</pre><p>One more important thing, Sass compilers also include a concept called “partials”. If you prefix a .sass or .scss file with an underscore, it will not get compiled to CSS. This is helpful if your file only exists to get imported into a master style.scss and not explicitly compiled.</p>
-                                    <h4><strong>6. Extends &amp; Placeholders</strong></h4>
-                                    <p>In Sass, the @extend directive is an way to inherit already existing styles.</p>
-                                    <pre>.input {
-  border-radius: 3px;
-  border: 4px solid #ddd;
-  color: #555;
-  font-size: 17px;
-  padding: 10px 20px;
-  display: inline-block;
-  outline: 0;
-}
-
-.error-input {
-  @extend .input;
-  border:4px solid #e74c3c;
-}
-</pre><p>
-                                        <br></p>
-                                    <h4><strong>7. Mixins and Function Directives</strong></h4>
-                                    <p>These are very important things in sass, and can be rapidly used., i will just give one sample about these.</p>
-                                    <pre><strong># mixin</strong>
-.container {
-    width: 900px;
-    @include media("(max-width: 767px)"){
-        width: 100%;
-    }
-}
-
-<strong># function directive</strong>
-@function getColumnWidth($width, $columns,$margin){
-    @return ($width / $columns) - ($margin * 2);
-}
-
-$container-width: 100%;
-$column-count: 4;
-$margin: 1%;
-
-.container {
-  width: $container-width;
-}
-
-.column {
-  background: #1abc9c;
-  height: 200px;
-  display: block;
-  float: left;
-  width: getColumnWidth($container-width,$column-count,$margin);
-  margin: 0 $margin;
-}
-</pre><p>Thank you</p>
-                                </div>
 
 
                             </div><!-- end content -->

@@ -1,0 +1,17 @@
+{
+  "content": {
+    "title": "Creating a Twitter Share block programmatically in Drupal 8",
+    "created": "14 Mar, 2017",
+    "author": "Karthik Kumar D K",
+    "views": "463",
+    "summary": "How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like\n\nAccessing the Current Node data in Block.\nHow do we create the link programmatically.\nDisable cache for particular block.\n",
+    "content": "<p>How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like</p>\n                                <ul class=\"check\">\n                                    <li>Accessing the Current Node data in Block.</li>\n                                    <li>How do we create the link programmatically.</li>\n                                    <li>Disable cache for particular block.</li>\n                                </ul>\n                                <pre><code>  public function build() {\n    $node = \\Drupal::request()-&gt;attributes-&gt;get('node');\n    $options = array(\n      'query' =&gt; array(\n        'text' =&gt; t($node-&gt;getTitle()),\n        'hashtags' =&gt; t('drupal'),\n        'via' =&gt; t('heykarthikwithu'),\n      ),\n      'attributes' =&gt; array(\n        'target' =&gt; '_blank',\n        'class' =&gt; 'twitter-share'\n      ),\n    );\n    $url = Url::fromUri('https://twitter.com/share', $options);\n    $link = Link::fromTextAndUrl('Share it on Twitter..?', $url);\n    $build['#markup'] = $link-&gt;toString();\n    $build['#cache']['max-age'] = 0;\n    return $build;\n  }</code></pre>\n                                <p>Well this was the piece of code which is written in this site to share content in Twitter..</p>\n                                <p><strong>1. Accessing&nbsp;the Current Node data in Block</strong></p>\n                                <p><code>$node = \\Drupal::request()-&gt;attributes-&gt;get('node');</code></p>\n                                <p><strong>2. To&nbsp;Create the link programmatically</strong></p>\n                                <pre>    $options = array(\n      'query' =&gt; array(\n        'text' =&gt; t($node-&gt;getTitle()),\n        'hashtags' =&gt; t('drupal'),\n        'via' =&gt; t('heykarthikwithu'),\n      ),\n      'attributes' =&gt; array(\n        'target' =&gt; '_blank',\n        'class' =&gt; 'twitter-share'\n      ),\n    );\n    $url = Url::fromUri('https://twitter.com/share', $options);\n    $link = Link::fromTextAndUrl('Share it on Twitter..?', $url);\n    $build['#markup'] = $link-&gt;toString();\n</pre>\n                                <p><strong>3. To disable cache for particular block</strong></p>\n                                <p><code>$build['#cache']['max-age'] = 0;</code></p>\n                                <p>Thank you :)</p>",
+    "type": "Sci-Tech",
+    "category": "Drupal",
+    "banner394x449": "upload/banner394x449/public/drupal-content-related.png",
+    "banner600x500": "upload/banner600x500/public/drupal-content-related.png",
+    "banner788x443": "upload/banner788x443/public/drupal-content-related.png",
+    "banner800x460": "upload/banner800x460/public/drupal-content-related.png",
+    "file": "2017-03-14-creating-twitter-share-block-programmatically-drupal-8.json"
+  }
+}

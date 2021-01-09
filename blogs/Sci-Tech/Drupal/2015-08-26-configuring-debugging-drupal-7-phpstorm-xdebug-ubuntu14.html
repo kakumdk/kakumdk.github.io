@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Configuring & Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14 | Peoples Blog</title>
+    <meta name="description" content="Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed">
+    <meta name="author" content="Peoples Blogs">
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Configuring & Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14 | Peoples Blog" />
+    <meta property="og:description" content="Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed" />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banner800x460/public/phpstorm-xdebug-drupal.jpg" />
+    <meta name="twitter:title" content="Configuring & Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14 | Peoples Blog">
+    <meta name="twitter:description" content="Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banner800x460/public/phpstorm-xdebug-drupal.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-3RSZRK91SH");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/style.css" rel="stylesheet">
+
+    <!-- Responsive styles for this template -->
+    <link href="../../../css/responsive.css" rel="stylesheet">
+
+    <!-- Colors for this template -->
+    <link href="../../../css/colors.css" rel="stylesheet">
+
+    <!-- Version Tech CSS for this template -->
+    <link href="../../../css/version/tech.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/index.html"
+        },
+        "headline": "Configuring & Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14",
+        "description": "Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed",
+        "image": "https://peoplesblog.co.in/upload/banner800x460/public/phpstorm-xdebug-drupal.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "26 Aug, 2015",
+        "dateModified": "26 Aug, 2015"
+      }
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
+        <header class="tech-header header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html" title="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+
+        <section class="section single-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area text-center">
+                                <ol class="breadcrumb hidden-xs-down">
+                                    <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/index.html">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/index.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/Drupal/index.html">Drupal</a></li>
+                                    <li class="breadcrumb-item active">Configuring & Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</li>
+                                </ol>
+
+                                <!-- span class="color-orange"><a href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a></span -->
+
+                                <h1 class="read-article-title">Configuring & Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</h1>
+
+                                <div class="blog-meta big-meta">
+                                    <small><i>26 Aug, 2015</i></small>
+                                    <small class="author-by">by <i><a href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a></i></small>
+                                    <small class="read-article-section">
+                                      <i class="fa fa-play read-article"> <div>Read Article</div></i>
+                                      <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
+                                      <i class="fa fa-play read-article-resume"> <div>Resume</div></i>
+                                      <i class="fa fa-stop read-article-stop"> <div>Stop</div></i>
+                                    </small>
+                                </div><!-- end meta -->
+
+                                <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="single-post-media">
+                                <img loading="lazy" alt="Peoples Blog" src="../../../upload/banner800x460/public/phpstorm-xdebug-drupal.jpg" class="img-fluid">
+                            </div><!-- end media -->
+
+                            <div class="blog-content read-article-content">
+                                <div><p>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.</p> <p>Initally open terminal, and check the php version</p> <blockquote><p><code>$ php -v</code></p> </blockquote> <p>you will get the following output</p> <p style="margin-left: 40px;"><kbd><small>PHP 5.6.12-1+deb.sury.org~trusty+1 (cli)<br>Copyright (c) 1997-2015 The PHP Group<br>Zend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies<br>&nbsp;&nbsp;&nbsp; with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2015, by Zend Technologies<br>&nbsp;&nbsp;&nbsp; with Xdebug v2.3.2, Copyright (c) 2002-2015, by Derick Rethans</small></kbd></p> <p>In my case, since xdebug is already installed, it showing xdebug else you should install the xdebug., follow below command to install xdebug.</p> <blockquote><p><code>$ pecl install xdebug</code></p> </blockquote> <p>Next find the path of the file where <code>xdebug.so</code> is located, you can find by this command <code>$ locate xdebug.so</code></p> <p>Next, you got to the <code>php.ini</code> file, in my case its located in <code>/etc/php5/apache2/php.ini</code> Or to find where its is located you can find by this command <code>$ locate php.ini</code></p> <p>Next, you need to add below lines to the <code>php.ini</code> file</p> <blockquote><p>zend_extension="/usr/lib/php5/20131226/xdebug.so"<br>xdebug.remote_port="9001"<br>xdebug.remote_enable="1"<br>xdebug.idekey="PHPSTORM"</p> </blockquote> <p>Next, Open PhpStorm -&gt; <em>File</em> -&gt; <em>Default Settings</em> -&gt; In the search box search with <em>debug</em>, Change <em>Debug port</em> to <strong>9001</strong>, apply and ok.</p> <p>Again Open <em>File</em> -&gt; <em>Default Settings</em> -&gt; Search for <em>IDE Key</em>, Set IDE key as <em>PHPSTORM</em>, Apply &amp; OK</p> <p>Next, Goto you browser, install an <a href="https://chrome.google.com/webstore/unsupported/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en">Xdebug helper</a> extension.</p> <p>Once you have enabled extension then you need to add Debugger bookmarklets for chrome. Go to <a href="https://www.jetbrains.com/phpstorm/marklets/">https://www.jetbrains.com/phpstorm/marklets/</a> page &amp; Generate XDebugger bookmarks.</p> <p><strong>Note</strong> : IDE key should be PHPSTORM, as we set in PhpStorm settings.</p> <p>Now Drag &amp; drop - Start debugger &amp; Stop debugger to your browsers bookmarks Bar.</p> <p>Now its time to debug our drupal 7 site with phpstorm &amp; your browser.</p> <p>Open PhpStorm with drupal 7 project &amp; click <em>Start listen for PHP Debug connections</em> (These option are at Top Right corner of your phpstorm)</p> <p>Now open your browser &amp; click on <em>Start debugger</em> in the bookmark toolbar.</p> <p>Again, Goto phpstorm. Now add breakpoint in index.php file.</p> <p>Next, Again visit your browser and load any page (localhost/drupal7). For the first time phpstorm you will ask be asked for confirmation dialogue box to accept connection from browser. Once you accept it, you will be automatically&nbsp; taken to you phpstorm's breakpoint.</p> <p>In this way you can put multiple breakpoints and debug the code.</p></div>
+                            </div><!-- end content -->
+
+                            <div class="blog-title-area tag">
+                                <div class="tag-cloud-single">
+                                    <span>Tags</span>
+                                    <small><a href="/blogs/Sci-Tech/Drupal/index.html">Drupal</a></small>
+                                </div><!-- end meta -->
+
+                                <br/>
+                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="ads-page-1"></div><!-- end ads-page-1 -->
+
+                            <!-- hr class="invis1" -->
+                            <!-- div class="prevnext-articles custombox prevnextpost clearfix"></div -->
+
+                            <!-- hr class="invis1" -->
+                            <div class="custombox clearfix">
+                                <h4 class="small-title">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <!-- script src="https://utteranc.es/client.js"
+                                                    repo="kakumdk/kakumdk.github.io"
+                                                    issue-term="url"
+                                                    theme="github-light"
+                                                    crossorigin="anonymous"
+                                                    async>
+                                            </script -->
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="invis0">
+                            <div class="prevnext-articles custombox prevnextpost clearfix"></div>
+
+                            <div class="ads-page-2"></div><!-- end ads-page-1 -->
+
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar">
+
+                        </div><!-- end sidebar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="widget">
+                        <div class="footer-text text-left">
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <div class="post-sharing-footer social">
+
+                            </div>
+
+                            <hr class="invis">
+
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
+
+                        </div><!-- end footer-text -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Popular Categories</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Misc</h2>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                </div>
+            </div>
+        </div><!-- end container -->
+        </footer>
+
+        <div class="dmtop">Scroll to Top</div>
+    </div><!-- end wrapper -->
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery.validate.min.js"></script>
+    <script src="../../../js/tether.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+
+    <div id="policy-container"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
