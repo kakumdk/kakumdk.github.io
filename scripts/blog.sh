@@ -1269,6 +1269,10 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     done
 done
 echo 'Disallow: /ads/ads.json
+Disallow: /authors-content
+Disallow: /authors-content/
+Disallow: /authors-content-merged
+Disallow: /authors-content-merged/
 Disallow: /blogs-content
 Disallow: /blogs-content/
 Disallow: /blogs-content-merged
@@ -1314,6 +1318,10 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     done
 done
 echo 'Disallow: /ads/ads.json
+Disallow: /authors-content
+Disallow: /authors-content/
+Disallow: /authors-content-merged
+Disallow: /authors-content-merged/
 Disallow: /blogs-content
 Disallow: /blogs-content/
 Disallow: /blogs-content-merged

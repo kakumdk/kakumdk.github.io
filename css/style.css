@@ -945,17 +945,20 @@ div.tab button:hover {
     font-weight: unset;
     text-transform: unset;
     letter-spacing: unset;
-    color: #000 !important;
+    color: #4e4e4e !important;
 }
 .page-wrapper .blog-title-area .blog-meta .author-by i > a:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #4e4e4e;
 }
 .blog-meta small.read-article-section i {
     padding-bottom: 3px;
 }
 .blog-meta small.read-article-section i:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #4e4e4e;
     cursor: pointer;
+}
+.blog-meta small.read-article-section i:before {
+    padding-right: 2px;
 }
 
 .blog-title-area .breadcrumb-item.active,
@@ -1140,7 +1143,7 @@ div.tab button:hover {
     display: inline-block;
     margin-bottom: 0;
     padding-bottom: 0;
-    color: #111111;
+    color:  #4e4e4e;
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 0.5rem;
@@ -1213,9 +1216,15 @@ hr.invis3 {
 }
 
 .shadow-desc .blog-meta small::after,
-.shadow-desc .blog-meta a,
+/*.shadow-desc .blog-meta a,*/
 .shadow-desc .blog-meta h4 a {
     color: #ffffff !important;
+}
+.shadow-desc .blog-meta a {
+    color: #999 !important;
+}
+.shadow-desc .blog-meta a:hover {
+    text-decoration: underline !important;
 }
 
 .small-box .shadow-desc h4 {
@@ -1889,11 +1898,14 @@ body .contact .btn {
 }
 body .blog-meta small a, body .blog-meta small {
     text-transform: none;
-    font-size: 13px !important;
+    font-size: 14px !important;
+}
+body .blog-meta > small > a:hover {
+    text-decoration: underline !important;
 }
 .blog-meta small > i {
-    color: black !important;
-    font-style: italic !important;
+    color: #4e4e4e !important;
+    font-style: normal !important;
 }
 .blog-meta small > i > div {
     display: inline-block;
