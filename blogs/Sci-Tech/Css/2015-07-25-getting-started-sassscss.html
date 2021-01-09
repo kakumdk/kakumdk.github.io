@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Getting Started with Sass/SCSS | Peoples Blog</title>
+    <meta name="description" content="Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output.">
+    <meta name="author" content="Peoples Blogs">
+    <link rel="canonical" href="https://peoplesblog.co.in/blogs/Sci-Tech/Css/2015-07-25-getting-started-sassscss.html" />
+    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/Sci-Tech/Css/2015-07-25-getting-started-sassscss.html" />
+    <link rel="revision" href="https://peoplesblog.co.in/blogs/Sci-Tech/Css/2015-07-25-getting-started-sassscss.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="icbm" content="13.1071,77.5931" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Bangalore" />
+    <meta name="geo.position" content="13.1071,77.5931" />
+    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Getting Started with Sass/SCSS | Peoples Blog" />
+    <meta property="og:description" content="Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output." />
+    <meta property="og:url" content="https://peoplesblog.co.in/blogs/Sci-Tech/Css/2015-07-25-getting-started-sassscss.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banner800x460/public/hwr7c2c2najfq9p5ie5k.jpg" />
+    <meta name="twitter:title" content="Getting Started with Sass/SCSS | Peoples Blog">
+    <meta name="twitter:description" content="Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output.">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banner800x460/public/hwr7c2c2najfq9p5ie5k.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-3RSZRK91SH");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../../../upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../../../upload/favicon.webp">
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/style.css" rel="stylesheet">
+
+    <!-- Responsive styles for this template -->
+    <link href="../../../css/responsive.css" rel="stylesheet">
+
+    <!-- Colors for this template -->
+    <link href="../../../css/colors.css" rel="stylesheet">
+
+    <!-- Version Tech CSS for this template -->
+    <link href="../../../css/version/tech.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://peoplesblog.co.in/blogs/Sci-Tech/Css/index.html"
+        },
+        "headline": "Getting Started with Sass/SCSS",
+        "description": "Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output.",
+        "image": "https://peoplesblog.co.in/upload/banner800x460/public/hwr7c2c2najfq9p5ie5k.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "25 Jul, 2015",
+        "dateModified": "25 Jul, 2015"
+      }
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top-bar" class="top-bar"></div>
+        <header class="tech-header header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html" title="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html" title="Links">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+
+        <section class="section single-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area text-center">
+                                <ol class="breadcrumb hidden-xs-down">
+                                    <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/index.html">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/index.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item"><a href="/blogs/Sci-Tech/Css/index.html">Css</a></li>
+                                    <li class="breadcrumb-item active">Getting Started with Sass/SCSS</li>
+                                </ol>
+
+                                <!-- span class="color-orange"><a href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a></span -->
+
+                                <h1 class="read-article-title">Getting Started with Sass/SCSS</h1>
+
+                                <div class="blog-meta big-meta">
+                                    <small><i>25 Jul, 2015</i></small>
+                                    <small class="author-by">by <i><a href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a></i></small>
+                                    <small class="read-article-section">
+                                      <i class="fa fa-play read-article"> <div>Read Article</div></i>
+                                      <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
+                                      <i class="fa fa-play read-article-resume"> <div>Resume</div></i>
+                                      <i class="fa fa-stop read-article-stop"> <div>Stop</div></i>
+                                    </small>
+                                </div><!-- end meta -->
+
+                                <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="single-post-media">
+                                <img loading="lazy" alt="Peoples Blog" src="../../../upload/banner800x460/public/hwr7c2c2najfq9p5ie5k.jpg" class="img-fluid">
+                            </div><!-- end media -->
+
+                            <div class="blog-content read-article-content">
+                                <div><p><strong>What is Sass?</strong> Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output.</p> <h4><strong>Prerquisites</strong></h4> <p>We can compile sass into css with tools, in different ways, below i have mention few of these ways (Any of these tools should be installed on your machine).</p> <ul> <li>You require Ruby installed, then install a gem <code>gem install sass</code> and compile it by running <code>sassc example.scss output.css</code>. </li> <li>Or, You can install Compass, and compile by using <code>compass watch example.scss output.css</code>. </li> <li>Or, You can also install libsass via NPM with node-sass <code>npm install node-sass</code>.</li> </ul> <p>Which one to use, is completelty depends on you, and the project which you are working on</p> <p>And Using Sass helps developer writing maintainable CSS easier. You can get more done, in less code, more readably, in less time.</p> <h3>Get into detail, how it works</h3> <h4><strong>1. Variables</strong></h4> <p>Sass brings variables to CSS.</p> <p>Acceptable values for variables include numbers, strings, colors, null, lists and maps.</p> <p>Variables in Sass are scoped using the $ symbol. Lets create our first variable:</p> <pre>$GreyColor: #ccc;</pre><pre>body { background: $GreyColor; } p a { color: $GreyColor; } <strong># Can override the variable value</strong> body { $GreyColor: #aaa; background: $GreyColor; } <strong># "!global" which makes the variable value global value.</strong> body { $GreyColor: #aaa !global; background: $GreyColor; } </pre><p><br></p> <h4><strong>2. Math</strong></h4> <p>Unlike CSS, Sass allows us to use mathematical expressions</p> <p>Before moving forward, I want to make a note of two points with Sass math.</p> <p>First, because the / symbol is used in shorthand CSS font properties like font: 14px/16px, if you want to use the division operator on non-variable values, you need to wrap them in parentheses like:</p> <pre>$font: (14px/16px);</pre><p>Second, you can’t mix value units, Instead, for this particular example you could use the css calc function</p> <pre>$width: 100% - 20px;</pre><p>Now, lets create a dynamic column declaration, based upon a base container width</p> <pre>$container-width: 100%; .container { width: $container-width; } .col-4 { width: $container-width / 4; } // Compiles to: // .container { // width: 100%; // } // // .col-4 { // width: 25%; // } </pre><p><br></p> <h4><strong>3. Functions</strong></h4> <p>In my opinion its good to use it’s built in functions. You can see the full list <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">here</a>. It is <em>EXTENSIVE</em>.</p> <h4><strong>4. Nesting</strong></h4> <p>This concept, way of working with this will be understood by seeing the sample code.</p> <pre>a.myAnchor { color: blue; &amp;:hover { text-decoration: underline; } &amp;:visited { color: purple; } } // on compiling this we get output as // a.myAnchor { color: blue; } // a.myAnchor:hover { color: blue; text-decoration: underline; } // a.myAnchor:visited { color: purple; } </pre><p> <br></p> <h4><strong>5. Imports</strong></h4> <p>through this concept you can break you sass files and include them into single file.</p> <pre>@import "grids.scss";</pre><p>One more important thing, Sass compilers also include a concept called “partials”. If you prefix a .sass or .scss file with an underscore, it will not get compiled to CSS. This is helpful if your file only exists to get imported into a master style.scss and not explicitly compiled.</p> <h4><strong>6. Extends &amp; Placeholders</strong></h4> <p>In Sass, the @extend directive is an way to inherit already existing styles.</p> <pre>.input { border-radius: 3px; border: 4px solid #ddd; color: #555; font-size: 17px; padding: 10px 20px; display: inline-block; outline: 0; } .error-input { @extend .input; border:4px solid #e74c3c; } </pre><p> <br></p> <h4><strong>7. Mixins and Function Directives</strong></h4> <p>These are very important things in sass, and can be rapidly used., i will just give one sample about these.</p> <pre><strong># mixin</strong> .container { width: 900px; @include media("(max-width: 767px)"){ width: 100%; } } <strong># function directive</strong> @function getColumnWidth($width, $columns,$margin){ @return ($width / $columns) - ($margin about.html ads author.html authors authors-content authors-content-merged blogs blogs-content blogs-content-merged CNAME contact.html content css fonts images index.html js links.html pagination.patch privacy.html quotes Readme.txt robots.txt scripts sitemap.xml terms-and-conditions.html tmp.html upload 2); } $container-width: 100%; $column-count: 4; $margin: 1%; .container { width: $container-width; } .column { background: #1abc9c; height: 200px; display: block; float: left; width: getColumnWidth($container-width,$column-count,$margin); margin: 0 $margin; } </pre><p>Thank you</p></div>
+                            </div><!-- end content -->
+
+                            <div class="blog-title-area tag">
+                                <div class="tag-cloud-single">
+                                    <span>Tags</span>
+                                    <small><a href="/blogs/Sci-Tech/Css/index.html">Css</a></small>
+                                </div><!-- end meta -->
+
+                                <br/>
+                                <!-- div class="post-sharing-top post-sharing"></div --><!-- end post-sharing -->
+
+                            </div><!-- end title -->
+
+                            <div class="ads-page-1"></div><!-- end ads-page-1 -->
+
+                            <!-- hr class="invis1" -->
+                            <!-- div class="prevnext-articles custombox prevnextpost clearfix"></div -->
+
+                            <!-- hr class="invis1" -->
+                            <div class="custombox clearfix">
+                                <h4 class="small-title">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <!-- script src="https://utteranc.es/client.js"
+                                                    repo="kakumdk/kakumdk.github.io"
+                                                    issue-term="url"
+                                                    theme="github-light"
+                                                    crossorigin="anonymous"
+                                                    async>
+                                            </script -->
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="invis0">
+                            <div class="prevnext-articles custombox prevnextpost clearfix"></div>
+
+                            <div class="ads-page-2"></div><!-- end ads-page-1 -->
+
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar">
+
+                        </div><!-- end sidebar -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="widget">
+                        <div class="footer-text text-left">
+                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <div class="post-sharing-footer social">
+
+                            </div>
+
+                            <hr class="invis">
+
+                            <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                            </div>
+
+                        </div><!-- end footer-text -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Popular Categories</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Misc</h2>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                </div>
+            </div>
+        </div><!-- end container -->
+        </footer>
+
+        <div class="dmtop">Scroll to Top</div>
+    </div><!-- end wrapper -->
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery.validate.min.js"></script>
+    <script src="../../../js/tether.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/custom.js"></script>
+
+    <div id="policy-container"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

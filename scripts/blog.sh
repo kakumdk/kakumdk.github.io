@@ -842,6 +842,7 @@ do
        ##### BLOG
        #################################################################################################################
        #################################################################################################################
+       echo "Writing Article - "$file
        echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1227,6 +1228,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
 #      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
+      echo "Writing sitemap.xml - "$jsonfile
       echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
 done
@@ -1265,6 +1267,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
 #      echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/index.html' >> $pwd'/robots.txt'
 #      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-} >> $pwd'/robots.txt'
       jsonfile=$(_jq '.file')
+      echo "Writing robots.txt - "$jsonfile
       echo 'Allow: /blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
 #      echo 'Allow: https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html >> $pwd'/robots.txt'
     done

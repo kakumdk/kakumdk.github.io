@@ -34,59 +34,141 @@
 <!--                                <ul class="check">-->
 <!--                                    <li>Do Intercropping</li>-->
 <!--                                </ul>-->
-<p>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.</p>
-<p>This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.</p>
-<p>Create your custom module, which contains <code>custom.info</code> and <code>custom.module</code> files</p>
-<p>The below code put in your <code>custom.module</code> file</p>
-<pre>function custom_menu() {<br/>
-&nbsp;$items['admin/custom_batch'] = array(<br/>
-&nbsp; &nbsp;'title' =&gt; 'Custom Batch',<br/>
-&nbsp; &nbsp;'description' =&gt; 'Custom Batch Process',<br/>
-&nbsp; &nbsp;'type' =&gt; MENU_NORMAL_ITEM,<br/>
-&nbsp; &nbsp;'access callback' =&gt; TRUE,<br/>
-&nbsp; &nbsp;'page callback' =&gt; 'drupal_get_form',<br/>
-&nbsp; &nbsp;'page arguments' =&gt; array('custom_batch_form'),<br/>
-&nbsp;);<br/>
-&nbsp;return $items;<br/>}</pre>
-<pre>function custom_batch_form($form, $form_state) {<br/>
-&nbsp;$form["text"]['#markup'] = "Custom batch process to update nodes.... ";<br/>
-&nbsp;$form['submit'] = array(<br/>
-&nbsp; &nbsp;'#type' =&gt; 'submit',<br/>
-&nbsp; &nbsp;'#value' =&gt; t('Run Batch'),<br/>
-&nbsp;);<br/>
-&nbsp;return $form;<br/>}</pre>
-<pre>function custom_batch_form_submit($form, $form_state) {<br/>
-&nbsp;batch_set(custom_batch_update_nodes());<br/>}</pre>
-<pre>function custom_batch_update_nodes() {<br/>
-&nbsp;drupal_set_message('Updating Nodes');<br/>
-&nbsp;$nodes = node_load_multiple(array(), array('type' =&gt; "story_song"));<br/>
-&nbsp;$node_count = count($nodes);<br/>
-&nbsp;foreach($nodes as $nid=&gt;$node) {<br/>
-&nbsp; &nbsp;$operations[] = array('custom_batch_each_operation', array($node));<br/>
-&nbsp;}<br/>
-&nbsp;$batch = array(<br/>
-&nbsp; &nbsp;'operations' =&gt; $operations,<br/>
-&nbsp; &nbsp;'finished' =&gt; 'custom_batch_update_nodes_finished',<br/>
-&nbsp;);<br/>
-&nbsp;return $batch;<br/>}</pre>
-<pre>function custom_batch_each_operation($node, &amp;$context) {<br/>
-&nbsp;$context['results'][] = $node-&gt;nid . ' : ' . check_plain($node-&gt;title);<br/>
-&nbsp;$context['message'] = t('Processing node "@title"', array('@title' =&gt; $node-&gt;title));<br/>
-&nbsp;$updated = FALSE;<br/>
-&nbsp;if ($updated) {<br/>
-&nbsp; &nbsp;node_save($node);<br/>
-&nbsp; &nbsp;$path = drupal_lookup_path("alias", "node/" . $node-&gt;nid);<br/>
-&nbsp; &nbsp;drupal_set_message("&lt;a href='/$path'&gt;" . $node-&gt;title . "&lt;/a&gt; updated.");<br/>
-&nbsp;}<br/>}</pre>
-<pre>function custom_batch_update_nodes_finished($success, $results, $operations) {<br/>
-&nbsp;if ($success) {<br/>
-&nbsp; &nbsp;drupal_set_message(t('@count nodes processed.', array('@count' =&gt; count($results))));<br/>
-&nbsp;}<br/>
-&nbsp;else {<br/>
-&nbsp; &nbsp;$error_operation = reset($operations);<br/>
-&nbsp; &nbsp;drupal_set_message(t('An error occurred while processing @operation with arguments : @args', array('@operation' =&gt; $error_operation[0], '@args' =&gt; print_r($error_operation[0], TRUE))));<br/>
-&nbsp;}<br/>}</pre>
-<p>Thank you. </p>
+
+                                <div data-quickedit-field-id="node/71/field_search_in_detail_result/und/full">
+
+                                    <p><strong>What is Sass?</strong>Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor. Its somthing like, write your sass programm, compile it get your css output.</p>
+                                    <h4><strong>Prerquisites</strong></h4>
+                                    <p>We can compile sass into css with tools, in different ways, below i have mention few of these ways (Any of these tools should be installed on your machine).</p>
+                                    <ul>
+                                        <li>You require Ruby installed, then install a gem <code>gem install sass</code> and compile it by running <code>sassc example.scss output.css</code>. </li>
+                                        <li>Or, You can install Compass, and compile by using <code>compass watch example.scss output.css</code>. </li>
+                                        <li>Or,  You can also install libsass via NPM with node-sass <code>npm install node-sass</code>.</li>
+                                    </ul>
+                                    <p>Which one to use, is completelty depends on you, and the project which you are working on</p>
+                                    <p>And Using Sass helps developer writing maintainable CSS easier. You can get more done, in less code, more readably, in less time.</p>
+                                    <h3>Get into detail, how it works</h3>
+                                    <h4><strong>1. Variables</strong></h4>
+                                    <p>Sass brings variables to CSS.</p>
+                                    <p>Acceptable values for variables include numbers, strings, colors, null, lists and maps.</p>
+                                    <p>Variables in Sass are scoped using the $ symbol. Lets create our first variable:</p>
+                                    <pre>$GreyColor: #ccc;</pre><pre>body {
+    background: $GreyColor;
+}
+p a {
+   color: $GreyColor;
+}
+
+<strong># Can override the variable value</strong>
+body {
+    $GreyColor: #aaa;
+    background: $GreyColor;
+}
+
+<strong># "!global" which makes the variable value global value.</strong>
+body {
+    $GreyColor: #aaa !global;
+    background: $GreyColor;
+}
+</pre><p><br></p>
+                                    <h4><strong>2. Math</strong></h4>
+                                    <p>Unlike CSS, Sass allows us to use mathematical expressions</p>
+                                    <p>Before moving forward, I want to make a note of two points with Sass math.</p>
+                                    <p>First, because the / symbol is used in shorthand CSS font properties like font: 14px/16px, if you want to use the division operator on non-variable values, you need to wrap them in parentheses like:</p>
+                                    <pre>$font: (14px/16px);</pre><p>Second, you can’t mix value units, Instead, for this particular example you could use the css calc function</p>
+                                    <pre>$width: 100% - 20px;</pre><p>Now, lets create a dynamic column declaration, based upon a base container width</p>
+                                    <pre>$container-width: 100%;
+.container {
+  width: $container-width;
+}
+.col-4 {
+  width: $container-width / 4;
+}
+
+//  Compiles to:
+//  .container {
+//   width: 100%;
+//  }
+//
+//  .col-4 {
+//      width: 25%;
+//  }
+</pre><p><br></p>
+                                    <h4><strong>3. Functions</strong></h4>
+                                    <p>In my opinion its good to use it’s built in functions. You can see the full list <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">here</a>. It is <em>EXTENSIVE</em>.</p>
+                                    <h4><strong>4. Nesting</strong></h4>
+                                    <p>This concept, way of working with this will be understood by seeing the sample code.</p>
+                                    <pre>a.myAnchor {
+    color: blue;
+    &amp;:hover {
+        text-decoration: underline;
+    }
+    &amp;:visited {
+        color: purple;
+    }
+}
+
+// on compiling this we get output as
+// a.myAnchor { color: blue; }
+// a.myAnchor:hover { color: blue; text-decoration: underline; }
+// a.myAnchor:visited { color: purple; }
+</pre><p>
+                                        <br></p>
+                                    <h4><strong>5. Imports</strong></h4>
+                                    <p>through this concept you can break you sass files and include them into single file.</p>
+                                    <pre>@import "grids.scss";</pre><p>One more important thing, Sass compilers also include a concept called “partials”. If you prefix a .sass or .scss file with an underscore, it will not get compiled to CSS. This is helpful if your file only exists to get imported into a master style.scss and not explicitly compiled.</p>
+                                    <h4><strong>6. Extends &amp; Placeholders</strong></h4>
+                                    <p>In Sass, the @extend directive is an way to inherit already existing styles.</p>
+                                    <pre>.input {
+  border-radius: 3px;
+  border: 4px solid #ddd;
+  color: #555;
+  font-size: 17px;
+  padding: 10px 20px;
+  display: inline-block;
+  outline: 0;
+}
+
+.error-input {
+  @extend .input;
+  border:4px solid #e74c3c;
+}
+</pre><p>
+                                        <br></p>
+                                    <h4><strong>7. Mixins and Function Directives</strong></h4>
+                                    <p>These are very important things in sass, and can be rapidly used., i will just give one sample about these.</p>
+                                    <pre><strong># mixin</strong>
+.container {
+    width: 900px;
+    @include media("(max-width: 767px)"){
+        width: 100%;
+    }
+}
+
+<strong># function directive</strong>
+@function getColumnWidth($width, $columns,$margin){
+    @return ($width / $columns) - ($margin * 2);
+}
+
+$container-width: 100%;
+$column-count: 4;
+$margin: 1%;
+
+.container {
+  width: $container-width;
+}
+
+.column {
+  background: #1abc9c;
+  height: 200px;
+  display: block;
+  float: left;
+  width: getColumnWidth($container-width,$column-count,$margin);
+  margin: 0 $margin;
+}
+</pre><p>Thank you</p>
+                                </div>
+
 
                             </div><!-- end content -->
 
