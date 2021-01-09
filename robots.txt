@@ -11,6 +11,7 @@ Allow: /blogs/Lifestyle/index.html
 Allow: /blogs/Food/index.html
 Allow: /blogs/Travel/index.html
 Allow: /blogs/Social-Media/index.html
+Allow: /blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html
 Allow: /blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html
 Allow: /blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html
 Allow: /blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html
@@ -65,6 +66,7 @@ Allow: /blogs/Lifestyle/index.html
 Allow: /blogs/Food/index.html
 Allow: /blogs/Travel/index.html
 Allow: /blogs/Social-Media/index.html
+Allow: /blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html
 Allow: /blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html
 Allow: /blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html
 Allow: /blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html

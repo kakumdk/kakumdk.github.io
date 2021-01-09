@@ -1216,16 +1216,16 @@ hr.invis3 {
 }
 
 .shadow-desc .blog-meta small::after,
-/*.shadow-desc .blog-meta a,*/
+.shadow-desc .blog-meta a,
 .shadow-desc .blog-meta h4 a {
     color: #ffffff !important;
 }
-.shadow-desc .blog-meta a {
+.shadow-desc .blog-meta small > a {
     color: #999 !important;
 }
-.shadow-desc .blog-meta a:hover {
-    text-decoration: underline !important;
-}
+/*.shadow-desc .blog-meta a:hover {*/
+/*    text-decoration: underline !important;*/
+/*}*/
 
 .small-box .shadow-desc h4 {
     font-size: 16px;
@@ -2220,6 +2220,12 @@ body, p {
     line-height: 34px !important;
     /*font-family: Droid Sans !important;*/
 }
+.blog-content pre {
+    font-size: 16px !important;
+    line-height: 32px !important;
+    background-color: #efefef;
+    padding: 10px 14px;
+}
 .blog-content ul li {
     font-size: 17px;
     line-height: 32px;
@@ -2309,6 +2315,7 @@ body, p {
     border-color: rgba(27,31,35,.5) !important;
     box-shadow: none !important;
 }
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
