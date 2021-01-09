@@ -12,6 +12,7 @@ do
    created=`jq -r '.content .created' $filepath`
    author=`jq -r '.content .author' $filepath`
    views=`jq -r '.content .views' $filepath`
+   summary=`jq -r '.content .summary' $filepath`
    content=`jq -r '.content .content' $filepath`
    type=`jq -r '.content .type' $filepath`
    category=`jq -r '.content .category' $filepath`
@@ -853,7 +854,7 @@ do
 
     <!-- Site Metas -->
     <title>'$title' - Peoples Blog</title>
-    <meta name="description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="description" content="'$title' - '$summary'">
     <meta name="author" content="Peoples Blogs">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
@@ -868,11 +869,11 @@ do
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="'$title' - Peoples Blog" />
-    <meta property="og:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:description" content="'$title' - '$summary'" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta property="og:image" content="https://peoplesblog.co.in/'$banner'" />
     <meta name="twitter:title" content="'$title' - Peoples Blog">
-    <meta name="twitter:description" content="'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:description" content="'$title' - '$summary'">
     <meta name="twitter:image" content="https://peoplesblog.co.in/'$banner'">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -926,7 +927,7 @@ do
           "@id": "https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html"
         },
         "headline": "'$title'",
-        "description": "'$title' - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology",
+        "description": "'$title' - '$summary'",
         "image": "https://peoplesblog.co.in/'$banner'",
         "author": {
           "@type": "Person",
