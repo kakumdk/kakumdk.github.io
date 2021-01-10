@@ -2326,6 +2326,23 @@ body, p {
 .sizechanger a:hover {
     cursor: pointer
 }
+.copyright {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20%;
+    margin: 12px 0 0 0;
+    font-style: italic;
+}
+.copyright span._copyright {
+    padding: 14px 0 0 0;
+    display: block;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
 
 
 
@@ -2459,7 +2476,8 @@ and (max-device-width : 480px) {
         position: unset;
     }
     .policy-container {
-        width: 90%;
+        width: 95%;
+        margin: 10px;
     }
     .dropbtn {
         padding: 10px 18px !important;
@@ -2484,6 +2502,16 @@ and (max-device-width : 480px) {
     }
     .author-content-wrapper {
         margin-top: 2rem;
+    }
+    .copyright {
+        padding: 0;
+        margin: 0;
+    }
+    .copyright .affliate br {
+        display: none;
+    }
+    .copyright span._copyright {
+        padding: 12px;
     }
 }
 /* Smartphones (landscape) ----------- */
@@ -2618,7 +2646,8 @@ and (max-width : 320px) {
         position: unset;
     }
     .policy-container {
-        width: 90%;
+        width: 95%;
+        margin: 10px;
     }
     .dropbtn {
         padding: 10px 18px !important;
@@ -2643,6 +2672,16 @@ and (max-width : 320px) {
     }
     .author-content-wrapper {
         margin-top: 2rem;
+    }
+    .copyright {
+        padding: 0;
+        margin: 0;
+    }
+    .copyright .affliate br {
+        display: none;
+    }
+    .copyright span._copyright {
+        padding: 12px;
     }
 }
 /* iPhone 4 ----------- */
@@ -2770,7 +2809,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
         position: unset;
     }
     .policy-container {
-        width: 90%;
+        width: 95%;
+        margin: 10px;
     }
     .dropbtn {
         padding: 10px 18px !important;
@@ -2795,6 +2835,16 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .author-content-wrapper {
         margin-top: 2rem;
+    }
+    .copyright {
+        padding: 0;
+        margin: 0;
+    }
+    .copyright .affliate br {
+        display: none;
+    }
+    .copyright span._copyright {
+        padding: 12px;
     }
 }
 /* iPads (portrait and landscape) ----------- */
