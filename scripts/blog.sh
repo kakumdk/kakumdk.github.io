@@ -36,9 +36,9 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>Blogs - Peoples Blog</title>
-    <meta name="description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Peoples Blogs">
+    <title>Blogs | Peoples BLOG</title>
+    <meta name="description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="author" content="Peoples BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/index.html" />
     <link rel="shortlink" href="https://peoplesblog.co.in/blogs/index.html" />
     <link rel="revision" href="https://peoplesblog.co.in/blogs/index.html" />
@@ -47,16 +47,16 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOGs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Blogs - Peoples Blog" />
-    <meta property="og:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:title" content="Blogs | Peoples BLOG" />
+    <meta property="og:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="Blogs - Peoples Blog">
-    <meta name="twitter:description" content="Blogs - Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:title" content="Blogs | Peoples BLOG">
+    <meta name="twitter:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -111,7 +111,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -210,8 +210,8 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
-                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
                             </div>
@@ -256,7 +256,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples BLOG</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -310,9 +310,9 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_type' | Peoples Blog</title>
-    <meta name="description" content="'$_type' Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Peoples Blogs">
+    <title>'$_type' | Peoples BLOG</title>
+    <meta name="description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="author" content="Peoples BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
@@ -321,16 +321,16 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOGs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_type' | Peoples Blog" />
-    <meta property="og:description" content="'$_type' Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:title" content="'$_type' | Peoples BLOG" />
+    <meta property="og:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="'$_type' | Peoples Blog">
-    <meta name="twitter:description" content="'$_type' Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:title" content="'$_type' | Peoples BLOG">
+    <meta name="twitter:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -385,7 +385,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -484,8 +484,8 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
-                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
                             </div>
@@ -530,7 +530,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples BLOG</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -583,9 +583,9 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_category' | Peoples Blog</title>
-    <meta name="description" content="'$_category' Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="Peoples Blogs">
+    <title>'$_category' | Peoples BLOG</title>
+    <meta name="description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="author" content="Peoples BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
@@ -594,16 +594,16 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOGs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_category' | Peoples Blog" />
-    <meta property="og:description" content="'$_category' Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:title" content="'$_category' | Peoples BLOG" />
+    <meta property="og:description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="'$_category' | Peoples Blog">
-    <meta name="twitter:description" content="'$_category' Peoples Blog articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:title" content="'$_category' | Peoples BLOG">
+    <meta name="twitter:description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -658,7 +658,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -758,8 +758,8 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
-                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
                             </div>
@@ -804,7 +804,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples BLOG</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -854,9 +854,9 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$title' | Peoples Blog</title>
+    <title>'$title' | Peoples BLOG</title>
     <meta name="description" content="'$summary'">
-    <meta name="author" content="Peoples Blogs">
+    <meta name="author" content="Peoples BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
@@ -865,15 +865,15 @@ do
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="Peoples Blogs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOGs (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$title' | Peoples Blog" />
+    <meta property="og:title" content="'$title' | Peoples BLOG" />
     <meta property="og:description" content="'$summary'" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta property="og:image" content="https://peoplesblog.co.in/'$banner'" />
-    <meta name="twitter:title" content="'$title' | Peoples Blog">
+    <meta name="twitter:title" content="'$title' | Peoples BLOG">
     <meta name="twitter:description" content="'$summary'">
     <meta name="twitter:image" content="https://peoplesblog.co.in/'$banner'">
     <meta name="twitter:card" content="summary_large_image">
@@ -957,7 +957,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp"></a>
+                <a class="navbar-brand" href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -1035,7 +1035,7 @@ do
                             </div><!-- end title -->
 
                             <div class="single-post-media">
-                                <img loading="lazy" alt="Peoples Blog" src="../../../'$banner'" class="img-fluid">
+                                <img loading="lazy" alt="Peoples BLOG" src="../../../'$banner'" class="img-fluid">
                             </div><!-- end media -->
 
                             <div class="blog-content read-article-content">
@@ -1110,8 +1110,8 @@ do
                 <div class="col-lg-7">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/index.html"><img loading="lazy" alt="Peoples Blog" src="../../../upload/logo_new.webp" class="img-fluid"></a>
-                            <p>Peoples Blog has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
+                            <a href="/index.html"><img loading="lazy" alt="Peoples BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
+                            <p>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
                             </div>
@@ -1156,7 +1156,7 @@ do
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
-                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples Blog</div>
+                    <div class="copyright">Copyright <i class="fa fa-copyright"></i> 2020 - 2021 Peoples BLOG</div>
                 </div>
             </div>
         </div><!-- end container -->

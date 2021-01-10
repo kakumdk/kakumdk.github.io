@@ -1,7 +1,7 @@
 /**************************************
 
     File Name: style.css
-    Template Name: Peoples Blog
+    Template Name: Peoples BLOG
     Created By: HTML.Design
     http://themeforest.net/user/wpdestek
 
@@ -2046,9 +2046,9 @@ body .peoples-quotes {
     color: #000;
     right: 0;
     bottom: 0;
-    padding: 6px 0px 4px 6px;
+    padding: 2px 0 2px 6px;
     border-radius: 6px 0 0 6px;
-    font-size: 14px;
+    font-size: 12px;
     background-color: #fff;
     margin: 0 0 10px 0;
     line-height: 16px;
@@ -2321,6 +2321,11 @@ body, p {
     border-color: rgba(27,31,35,.5) !important;
     box-shadow: none !important;
 }
+.policy-container span.x:hover, .policy-container .policy-button,
+._pager .page-item,
+.sizechanger a:hover {
+    cursor: pointer
+}
 
 
 
@@ -2405,9 +2410,9 @@ and (max-device-width : 480px) {
         position: absolute;
         color: #888;
         right: 0;
-        padding: 10px 0 7px 10px;
+        padding: 5px 0 5px 5px;
         border-radius: 4px 0 0 4px;
-        font-size: 13px;
+        font-size: 12px;
         margin: 0 0 4px 0;
         line-height: 10px;
     }
@@ -2564,9 +2569,9 @@ and (max-width : 320px) {
         position: absolute;
         color: #888;
         right: 0;
-        padding: 10px 0 7px 10px;
+        padding: 5px 0 5px 5px;
         border-radius: 4px 0 0 4px;
-        font-size: 13px;
+        font-size: 12px;
         margin: 0 0 4px 0;
         line-height: 10px;
     }
@@ -2716,9 +2721,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
         position: absolute;
         color: #888;
         right: 0;
-        padding: 10px 0 7px 10px;
+        padding: 5px 0 5px 5px;
         border-radius: 4px 0 0 4px;
-        font-size: 13px;
+        font-size: 12px;
         margin: 0 0 4px 0;
         line-height: 10px;
     }

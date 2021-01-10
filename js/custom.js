@@ -1,6 +1,6 @@
 /**************************************
     File Name: custom.js
-    Template Name: Peoples Blog
+    Template Name: Peoples BLOG
     Created By: HTML.Design
     http://themeforest.net/user/wpdestek
 **************************************/
@@ -229,7 +229,7 @@ function writeBlogsHomepageHeader(data) {
                 '<div class="first-slot">' +
                     '<div class="masonry-box post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                        '<img loading="lazy" alt="Peoples Blog" src="'+data[i]['banner788x443']+'" class="img-fluid">' +
+                        '<img loading="lazy" alt="Peoples BLOG" src="'+data[i]['banner788x443']+'" class="img-fluid">' +
                         '</a>' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
@@ -249,7 +249,7 @@ function writeBlogsHomepageHeader(data) {
                 '<div class="second-slot">' +
                     '<div class="masonry-box post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                        '<img loading="lazy" alt="Peoples Blog" src="'+data[i]['banner394x449']+'" class="img-fluid">' +
+                        '<img loading="lazy" alt="Peoples BLOG" src="'+data[i]['banner394x449']+'" class="img-fluid">' +
                         '</a>' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
@@ -269,7 +269,7 @@ function writeBlogsHomepageHeader(data) {
                 '<div class="last-slot">' +
                     '<div class="masonry-box post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                        '<img loading="lazy" alt="Peoples Blog" src="'+data[i]['banner394x449']+'" class="img-fluid">' +
+                        '<img loading="lazy" alt="Peoples BLOG" src="'+data[i]['banner394x449']+'" class="img-fluid">' +
                         '</a>' +
                         '<div class="shadoweffect">' +
                             '<div class="shadow-desc">' +
@@ -291,7 +291,7 @@ function writeBlogsHomepageHeader(data) {
 const numberofArticlesPerPage = 5;
 function writeBlogsHomepage(data) {
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search articles on Peoples Blog" /><hr class="invis">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search articles on Peoples BLOG" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -311,8 +311,8 @@ function writeBlogsHomepage(data) {
             '<div class="col-md-4">' +
             '<div class="post-media">' +
             '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-            // '<img loading="lazy" alt="Peoples Blog" src="../../../' + val.banner + '" class="img-fluid">' +
-            '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
+            // '<img loading="lazy" alt="Peoples BLOG" src="../../../' + val.banner + '" class="img-fluid">' +
+            '<img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
             '<div class="hovereffect"></div>' +
             '</a>' +
             '</div><!-- end media -->' +
@@ -336,7 +336,7 @@ function writeBlogsHomepage(data) {
 function writeBlogs(data) {
     var output = '';
     output += '<div class="col-md-12">' +
-        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on Peoples Blog" /><hr class="invis">' +
+        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on Peoples BLOG" /><hr class="invis">' +
         '</div>';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
@@ -357,7 +357,7 @@ function writeBlogs(data) {
             '<div class="blog-box">' +
             '<div class="post-media">' +
             '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-            '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
+            '<img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
             '</a>' +
             '</div><!-- end media -->' +
             '<div class="blog-meta big-meta">' +
@@ -379,7 +379,7 @@ function writeBlogs(data) {
 function writeBlogTypes(data) {
     var currentpath = window.location.pathname.split('/');
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on Peoples Blog" /><hr class="invis">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on Peoples BLOG" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -401,8 +401,8 @@ function writeBlogTypes(data) {
                     '<div class="col-md-4">' +
                     '<div class="post-media">' +
                     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                    // '<img loading="lazy" alt="Peoples Blog" src="../../../' + val.banner + '" class="img-fluid">' +
-                    '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
+                    // '<img loading="lazy" alt="Peoples BLOG" src="../../../' + val.banner + '" class="img-fluid">' +
+                    '<img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
                     '<div class="hovereffect"></div>' +
                     '</a>' +
                     '</div><!-- end media -->' +
@@ -431,7 +431,7 @@ function writeBlogTypes(data) {
 function writeBlogTypeCategories(data) {
     var currentpath = window.location.pathname.split('/');
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[3]+' related articles on Peoples Blog" /><hr class="invis">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[3]+' related articles on Peoples BLOG" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -452,7 +452,7 @@ function writeBlogTypeCategories(data) {
                     // output +=
                     //     '<div class="post-media">' +
                     //     '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                    //     '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
+                    //     '<img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['banner800x460']+'" class="img-fluid">' +
                     //     '</a>' +
                     //     '</div>' +
                     //     '<!-- end media -->' +
@@ -472,8 +472,8 @@ function writeBlogTypeCategories(data) {
                         '<div class="col-md-4">' +
                         '<div class="post-media">' +
                         '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                        // '<img loading="lazy" alt="Peoples Blog" src="../../../' + val.banner + '" class="img-fluid">' +
-                        '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
+                        // '<img loading="lazy" alt="Peoples BLOG" src="../../../' + val.banner + '" class="img-fluid">' +
+                        '<img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
                         '<div class="hovereffect"></div>' +
                         '</a>' +
                         '</div><!-- end media -->' +
@@ -520,7 +520,7 @@ function writeBlogsFooter(data) {
         if($.inArray(el, uniqueCat) === -1) {
             if (f_itr <= 4) {
                 uniqueCat[i] = el;
-                output += '<li><a href="'+el+'" title="Peoples Blog">'+i.replace("-", " ")+'</a></li>';
+                output += '<li><a href="'+el+'" title="Peoples BLOG">'+i.replace("-", " ")+'</a></li>';
                 f_itr = f_itr + 1;
             }
         }
@@ -685,7 +685,7 @@ function writeAuthorBlogs(data) {
             if (currentpath['2'].replaceAll('.html', '').replaceAll('-', ' ')) {
                 var author = currentpath['2'].replaceAll('.html', '').replaceAll('-', ' ');
                 // output += '<div class="">' +
-                //     '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles, Authored by ' + author + ' on Peoples Blog" /><hr class="invis">' +
+                //     '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles, Authored by ' + author + ' on Peoples BLOG" /><hr class="invis">' +
                 //     '</div>';
                 var itr = 0;
                 for (var i = data.length - 1; i >= 0; i--) {
@@ -707,8 +707,8 @@ function writeAuthorBlogs(data) {
                             '<div class="col-md-4">' +
                             '<div class="post-media">' +
                             '<a href="' + path + '" title="' + data[i]['title'] + '">' +
-                            // '<img loading="lazy" alt="Peoples Blog" src="../../../' + val.banner + '" class="img-fluid">' +
-                            '<img loading="lazy" alt="Peoples Blog" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
+                            // '<img loading="lazy" alt="Peoples BLOG" src="../../../' + val.banner + '" class="img-fluid">' +
+                            '<img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['banner600x500']+'" class="img-fluid">' +
                             '<div class="hovereffect"></div>' +
                             '</a>' +
                             '</div><!-- end media -->' +
@@ -818,16 +818,16 @@ function writeAds300x600(data, page) {
         '<div class="banner-img">' +
         '';
     if (page === 'home') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="'+random['img300x600']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="'+random['img300x600']+'" class="img-fluid"></a>';
     }
     else if (page === 'blogs') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../'+random['img300x600']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../'+random['img300x600']+'" class="img-fluid"></a>';
     }
     else if (page === 'type') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../../'+random['img300x600']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../'+random['img300x600']+'" class="img-fluid"></a>';
     }
     else if (page === 'cat') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../../../'+random['img300x600']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../../'+random['img300x600']+'" class="img-fluid"></a>';
     }
         output += '' +
         '</div><!-- end banner-img -->' +
@@ -845,16 +845,16 @@ function writeAds728x90(data, page) {
         '<div class="banner-spot clearfix">' +
         '<div class="banner-img">';
     if (page === 'home') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="'+random['img728x90']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="'+random['img728x90']+'" class="img-fluid"></a>';
     }
     if (page === 'blogs') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../'+random['img728x90']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../'+random['img728x90']+'" class="img-fluid"></a>';
     }
     if (page === 'type') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../../'+random['img728x90']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../'+random['img728x90']+'" class="img-fluid"></a>';
     }
     if (page === 'cat') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../../../'+random['img728x90']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../../'+random['img728x90']+'" class="img-fluid"></a>';
     }
     output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
@@ -872,16 +872,16 @@ function writeAds1200x1200(data, page) {
         '<div class="banner-spot clearfix">' +
         '<div class="banner-img">';
     if (page === 'home') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="'+random['img1200x1200']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="'+random['img1200x1200']+'" class="img-fluid"></a>';
     }
     if (page === 'blogs') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../'+random['img1200x1200']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../'+random['img1200x1200']+'" class="img-fluid"></a>';
     }
     if (page === 'type') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../../'+random['img1200x1200']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../'+random['img1200x1200']+'" class="img-fluid"></a>';
     }
     if (page === 'cat') {
-        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples Blog" src="../../../'+random['img1200x1200']+'" class="img-fluid"></a>';
+        output += '<a target="_blank" href="'+random['url']+'"><span class="price">'+random['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../../'+random['img1200x1200']+'" class="img-fluid"></a>';
     }
     output += '</div><!-- end banner-img -->' +
         '</div><!-- end banner -->' +
