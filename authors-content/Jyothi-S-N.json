@@ -1,14 +1,14 @@
 {
   "content": {
     "author": "Jyothi S N",
-    "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
-    "linkedin": "https://www.linkedin.com",
+    "banner400x400": "../upload/authors/jyothi-s-n.jpg",
+    "intro": "<p>Dr. Jyothi S N practices at a Dental Clinic in Bangalore.</p>\n                                <p>Provides an accurate and honest assessment for dental diseases and conditions. Will guide our patients regarding growth and development issues (teething, habits and orthodontics).</p>\n                                <p>Give a plan for emergency treatment, including pain or dental trauma. Also refers to other dental specialists when care could and should not be provided within the dental home</p>",
+    "linkedin": "https://in.linkedin.com/in/jyothisn",
     "twitter": "https://twitter.com",
     "facebook": "https://www.facebook.com",
     "instagram": "https://www.instagram.com",
     "youtube": "https://www.youtube.com",
-    "website": "/authors/Hanukkah-John.html",
+    "website": "https://jyothisnagaraja.github.io",
     "file": "Jyothi-S-N.json"
   }
 }

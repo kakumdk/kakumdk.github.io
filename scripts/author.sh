@@ -276,7 +276,7 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$author' | Peoples BLOG</title>
+    <title>'$author' - Author | Peoples BLOG</title>
     <meta name="description" content="'$author' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="Peoples BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/authors/'${file/%.json}.html'" />
@@ -291,7 +291,7 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$author' | Peoples BLOG" />
+    <meta property="og:title" content="'$author' - Author | Peoples BLOG" />
     <meta property="og:description" content="'$author' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/authors/'${file/%.json}.html'" />
     <meta property="og:image" content="images/logo_new.webp" />

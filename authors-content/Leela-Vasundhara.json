@@ -2,13 +2,13 @@
   "content": {
     "author": "Leela Vasundhara",
     "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
-    "linkedin": "https://www.linkedin.com",
+    "intro": "<p>Technical Writer at Bharat Electronics</p>\n                                <ul class=\"check\">\n                                    <li>Electronics Geek</li>\n                                    <li>Book worm</li>\n                                </ul>",
+    "linkedin": "https://in.linkedin.com/in/leelavasundaradk",
     "twitter": "https://twitter.com",
     "facebook": "https://www.facebook.com",
     "instagram": "https://www.instagram.com",
     "youtube": "https://www.youtube.com",
-    "website": "/authors/Hanukkah-John.html",
+    "website": "/authors/Leela-Vasundhara.html",
     "file": "Leela-Vasundhara.json"
   }
 }

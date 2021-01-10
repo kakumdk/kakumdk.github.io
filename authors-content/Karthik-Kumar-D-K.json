@@ -1,8 +1,8 @@
 {
   "content": {
     "author": "Karthik Kumar D K",
-    "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
+    "banner400x400": "../upload/authors/karthikkumardk.jpeg",
+    "intro": "<p>A Techie at heart, Karthik has a penchant for programming and open source. His repertoire includes expertise in JAVA and PHP. His work includes developing innovative Drupal modules and contributing to the Drupal Community in every possible way.</p>\n                                <p>Software programmer / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>",
     "linkedin": "https://www.linkedin.com/in/karthikkumardk",
     "twitter": "https://twitter.com/heykarthikwithu",
     "facebook": "https://www.facebook.com/karthikkumardk",

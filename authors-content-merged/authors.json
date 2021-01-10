@@ -2,8 +2,8 @@
   {
     "author": "Hanukkah John",
     "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
-    "linkedin": "https://www.linkedin.com",
+    "intro": "<p>A keen observer of emotions in people. An explorer of something that is so valid enough but cannot be seen through mere eyes. I believe every human is unique in his or her own thinking pattern or personality. Trying to take tiny steps in the change of outlook towards mental health, I aspire to be a psychologist.</p>\n                                <p>It is thrilling as I realize in my journey that human mind is an unending discovery. I am pursuing my degree in English, Journalism and Psychology. Looking forward to intern in journalism or psychology fields.</p>",
+    "linkedin": "https://in.linkedin.com/in/hanukkah-john-227907186",
     "twitter": "https://twitter.com",
     "facebook": "https://www.facebook.com",
     "instagram": "https://www.instagram.com",
@@ -13,20 +13,20 @@
   },
   {
     "author": "Jyothi S N",
-    "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
-    "linkedin": "https://www.linkedin.com",
+    "banner400x400": "../upload/authors/jyothi-s-n.jpg",
+    "intro": "<p>Dr. Jyothi S N practices at a Dental Clinic in Bangalore.</p>\n                                <p>Provides an accurate and honest assessment for dental diseases and conditions. Will guide our patients regarding growth and development issues (teething, habits and orthodontics).</p>\n                                <p>Give a plan for emergency treatment, including pain or dental trauma. Also refers to other dental specialists when care could and should not be provided within the dental home</p>",
+    "linkedin": "https://in.linkedin.com/in/jyothisn",
     "twitter": "https://twitter.com",
     "facebook": "https://www.facebook.com",
     "instagram": "https://www.instagram.com",
     "youtube": "https://www.youtube.com",
-    "website": "/authors/Hanukkah-John.html",
+    "website": "https://jyothisnagaraja.github.io",
     "file": "Jyothi-S-N.json"
   },
   {
     "author": "Karthik Kumar D K",
-    "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
+    "banner400x400": "../upload/authors/karthikkumardk.jpeg",
+    "intro": "<p>A Techie at heart, Karthik has a penchant for programming and open source. His repertoire includes expertise in JAVA and PHP. His work includes developing innovative Drupal modules and contributing to the Drupal Community in every possible way.</p>\n                                <p>Software programmer / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>",
     "linkedin": "https://www.linkedin.com/in/karthikkumardk",
     "twitter": "https://twitter.com/heykarthikwithu",
     "facebook": "https://www.facebook.com/karthikkumardk",
@@ -38,13 +38,13 @@
   {
     "author": "Leela Vasundhara",
     "banner400x400": "../upload/author.jpg",
-    "intro": "@todo",
-    "linkedin": "https://www.linkedin.com",
+    "intro": "<p>Technical Writer at Bharat Electronics</p>\n                                <ul class=\"check\">\n                                    <li>Electronics Geek</li>\n                                    <li>Book worm</li>\n                                </ul>",
+    "linkedin": "https://in.linkedin.com/in/leelavasundaradk",
     "twitter": "https://twitter.com",
     "facebook": "https://www.facebook.com",
     "instagram": "https://www.instagram.com",
     "youtube": "https://www.youtube.com",
-    "website": "/authors/Hanukkah-John.html",
+    "website": "/authors/Leela-Vasundhara.html",
     "file": "Leela-Vasundhara.json"
   }
 ]
