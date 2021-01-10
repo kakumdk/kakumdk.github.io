@@ -1135,6 +1135,9 @@ $(function() {
             storeValue(key, 'true');
             $("#policy-container").hide(1000);
         });
+        $("span.x").click(function() {
+            $("#policy-container").hide(1000);
+        });
     }, 1000);
     setTimeout(function() {
         storeValue(key, '');
@@ -1148,16 +1151,15 @@ function showAcceptCookie(cookie) {
     var output = '';
     output = '' +
         '<div class="container-fluid policy-container">' +
-        '        <div class="row">' +
-        '            <div class="col-md-9">' +
-        '                <h3 class="policy-title">We Need Your Consent</h3>' +
-        '                <p class="policy-text">By clicking “I Accept Cookies”, you agree to the storing of cookies on your device to enhance site navigation & analyze site usage.</p>' +
-        '            </div>' +
-        '            <div class="col-md-3">' +
-        '                <button class="policy-button" tabindex="0">I Accept Cookies</button>' +
-        '            </div>' +
-        '        </div>' +
-        '    </div>';
+        '   <div class="title">' +
+        '       <span>We Need Your Consent</span>' +
+        '       <span class="x"><i class="fa fa-close"></i></span>' +
+        '   </div>' +
+        '   <div class="desc">' +
+        '       <span>By clicking “I Accept Cookies”, you agree to the storing of cookies on your device to enhance site navigation & analyze site usage.</span>' +
+        '   </div>' +
+        '   <div class="policy-button">I Accept Cookies</div>' +
+        '</div>';
     $('#policy-container').html(output);
 }
 function storeValue(key, value) {
