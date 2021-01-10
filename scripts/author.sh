@@ -439,6 +439,12 @@ do
 
                         <hr class="invis">
 
+                        <div class="blog-top clearfix">
+                            <h1 class="pull-left"><i class="fa fa-book"></i> Articles by '$author'</h1>
+                        </div><!-- end blog-top -->
+
+                        <hr class="invis">
+
                         <div class="blog-list-blogs-authors blog-list clearfix">
 
                         </div>

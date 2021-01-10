@@ -37,14 +37,14 @@
   },
   {
     "author": "Leela Vasundhara",
-    "banner400x400": "../upload/author.jpg",
+    "banner400x400": "../upload/authors/leela-vasundhara.jpeg",
     "intro": "<p>Technical Writer at Bharat Electronics</p>\n                                <ul class=\"check\">\n                                    <li>Electronics Geek</li>\n                                    <li>Book worm</li>\n                                </ul>",
     "linkedin": "https://in.linkedin.com/in/leelavasundaradk",
     "twitter": "https://twitter.com",
     "facebook": "https://www.facebook.com",
     "instagram": "https://www.instagram.com",
     "youtube": "https://www.youtube.com",
-    "website": "/authors/Leela-Vasundhara.html",
+    "website": "https://www.quora.com/profile/Leela-Vasundhara-Dondla",
     "file": "Leela-Vasundhara.json"
   }
 ]
