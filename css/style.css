@@ -2343,6 +2343,16 @@ body, p {
     font-size: 12px;
     letter-spacing: 2px;
 }
+.peoplesblog-categories-links .site-links .child,
+.peoplesblog-authors-links .site-links .child {
+    width: 16%;
+    float: left;
+}
+.peoplesblog-authors-links {
+    clear: both;
+    display: block;
+    padding-top: 1px;
+}
 
 
 
@@ -2512,6 +2522,9 @@ and (max-device-width : 480px) {
     }
     .copyright span._copyright {
         padding: 12px;
+    }
+    .peoplesblog-categories-links .site-links .child, .peoplesblog-authors-links .site-links .child {
+        width: 49%;
     }
 }
 /* Smartphones (landscape) ----------- */
@@ -2683,6 +2696,9 @@ and (max-width : 320px) {
     .copyright span._copyright {
         padding: 12px;
     }
+    .peoplesblog-categories-links .site-links .child, .peoplesblog-authors-links .site-links .child {
+        width: 49%;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -2845,6 +2861,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     .copyright span._copyright {
         padding: 12px;
+    }
+    .peoplesblog-categories-links .site-links .child, .peoplesblog-authors-links .site-links .child {
+        width: 49%;
     }
 }
 /* iPads (portrait and landscape) ----------- */

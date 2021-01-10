@@ -580,7 +580,7 @@ function writeLinks(data) {
                 var currentCat = category[k].trim().replace(" ", "-");
                 var baseurl = window.location.origin;
                 var catLink = baseurl+'/blogs/'+currentType+'/'+currentCat+'/index.html';
-                links[currentCat] = '<span><i class="fa fa-tag"></i> <a href="'+catLink+'">'+currentCat+'</a></span>';
+                links[currentCat] = '<div class="child"><span><i class="fa fa-tag"></i> <a href="'+catLink+'">'+currentCat+'</a></span></div>';
             }
         }
     }
@@ -1302,7 +1302,7 @@ function writeAuthorLinks(data) {
     for (var i = 0; i < data.length; i++) {
         var author = data[i]['author'];
         var authorLink = '/authors/' + data[i]['file'].replaceAll('.json', '.html');
-        output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span>';
+        output += '<div class="child"><span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span></div>';
     }
     output += '</div>';
     // console.log(output);
