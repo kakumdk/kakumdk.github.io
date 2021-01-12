@@ -808,7 +808,35 @@ $(function() {
         adShowHide('ads-article');
     }, 3000);
 
+    setTimeout(function() {
+        showSlidesAds();
+    }, 10000);
+
 });
+function showSlidesAds() {
+    var itr = 0;
+    var slides = 4;
+    setInterval(function() {
+        $(".ads-home.sidebar .widget").each(function (index) {
+            if (itr >= 5) {
+                itr = 0;
+            }
+            if (itr === index) {
+                $(this).addClass('hide');
+            }
+            else if (itr === (index + 2)) {
+                $(this).addClass('hide');
+            }
+            else if (itr === (index - 3)) {
+                $(this).addClass('hide');
+            }
+            else {
+                $(this).removeClass('hide');
+            }
+        });
+        itr++;
+    }, 500);
+}
 function writeAds300x600(data, page) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
