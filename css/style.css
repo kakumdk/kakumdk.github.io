@@ -1826,7 +1826,8 @@ div.ads-page-6 .ad-open, div.ads-page-6 .ad-close {
     padding: 0 0 0 10px;
     background-color: #fff;
     position: relative;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     justify-content: right;
     height: 0;
     z-index: 10;
