@@ -1217,6 +1217,11 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
           <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$date'</lastmod></url>
           <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$date'</lastmod></url>
@@ -1255,6 +1260,11 @@ Allow: /links.html
 Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /contact.html
+Allow: /authors/index.html
+Allow: /authors/Hanukkah-John.html
+Allow: /authors/Jyothi-S-N.html
+Allow: /authors/Karthik-Kumar-D-K.html
+Allow: /authors/Leela-Vasundhara.html
 Allow: /blogs/index.html
 Allow: /blogs/Sci-Tech/index.html
 Allow: /blogs/Lifestyle/index.html
@@ -1305,6 +1315,11 @@ Allow: /links.html
 Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /contact.html
+Allow: /authors/index.html
+Allow: /authors/Hanukkah-John.html
+Allow: /authors/Jyothi-S-N.html
+Allow: /authors/Karthik-Kumar-D-K.html
+Allow: /authors/Leela-Vasundhara.html
 Allow: /blogs/index.html
 Allow: /blogs/Sci-Tech/index.html
 Allow: /blogs/Lifestyle/index.html

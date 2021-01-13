@@ -5,6 +5,11 @@ Allow: /links.html
 Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /contact.html
+Allow: /authors/index.html
+Allow: /authors/Hanukkah-John.html
+Allow: /authors/Jyothi-S-N.html
+Allow: /authors/Karthik-Kumar-D-K.html
+Allow: /authors/Leela-Vasundhara.html
 Allow: /blogs/index.html
 Allow: /blogs/Sci-Tech/index.html
 Allow: /blogs/Lifestyle/index.html
@@ -51,6 +56,7 @@ Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-
 Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
 Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
 Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
+Allow: /blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -76,6 +82,11 @@ Allow: /links.html
 Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /contact.html
+Allow: /authors/index.html
+Allow: /authors/Hanukkah-John.html
+Allow: /authors/Jyothi-S-N.html
+Allow: /authors/Karthik-Kumar-D-K.html
+Allow: /authors/Leela-Vasundhara.html
 Allow: /blogs/index.html
 Allow: /blogs/Sci-Tech/index.html
 Allow: /blogs/Lifestyle/index.html
@@ -122,6 +133,7 @@ Allow: /blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-
 Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html
 Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
 Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
+Allow: /blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
