@@ -57,6 +57,7 @@ Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.h
 Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
 Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
 Allow: /blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html
+Allow: /blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -134,6 +135,7 @@ Allow: /blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.h
 Allow: /blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html
 Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
 Allow: /blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html
+Allow: /blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/

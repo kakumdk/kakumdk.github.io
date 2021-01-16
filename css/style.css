@@ -1738,7 +1738,7 @@ hr.invis3 {
     z-index: 1;
     display: inline-block;
     padding: 0;
-    margin: 4px 0 4px 4px;
+    margin: 2px 0;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;
@@ -1791,7 +1791,7 @@ hr.invis3 {
     display: block;
     position: fixed;
     margin: 0;
-    left: 0;
+    left: 40px;
     top: 25%;
     width: 50px;
     text-align: left;
@@ -2033,7 +2033,7 @@ body .dmtop {
 }
 .sidebar .banner-img img:hover {
     /*transform: rotate(360deg);*/
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 body .peoples-quotes {
     font-size: 12px;
