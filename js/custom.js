@@ -945,8 +945,9 @@ function adShowHidePage(ad) {
 function writeAdsSlideshow(data) {
     var output = '';
     output += '<div class="ads-article-slideshow">';
+    var itr = Math.floor(Math.random() * data.length);
     for (var i = 0; i < data.length; i++) {
-        if (i == 0) {
+        if (i == itr) {
             output += '<a class="show" target="_blank" href="'+data[i]['url']+'"><span class="price">'+data[i]['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['img1200x1200']+'" class="img-fluid"></a>';
         }
         else {
