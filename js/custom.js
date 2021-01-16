@@ -774,19 +774,7 @@ $(function() {
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads-article').append(writeAdsSlideshow(JSON.parse(text)));
         setTimeout(function() {
             $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
             adShowHidePage('ads-page-1');
@@ -809,33 +797,28 @@ $(function() {
     }, 3000);
 
     setTimeout(function() {
-        showSlidesAds();
+        showSlidesArticleAds();
     }, 10000);
 
 });
-function showSlidesAds() {
+function showSlidesArticleAds() {
     var itr = 0;
-    var slides = 4;
     setInterval(function() {
-        $(".ads-home.sidebar .widget").each(function (index) {
-            if (itr >= 5) {
+        $(".ads-article-slideshow > a").each(function (index) {
+            if (itr >= 15) {
                 itr = 0;
             }
             if (itr === index) {
-                $(this).addClass('hide');
-            }
-            else if (itr === (index + 2)) {
-                $(this).addClass('hide');
-            }
-            else if (itr === (index - 3)) {
-                $(this).addClass('hide');
+                $(this).removeClass('hide');
+                $(this).addClass('show');
             }
             else {
-                $(this).removeClass('hide');
+                $(this).removeClass('show');
+                $(this).addClass('hide');
             }
         });
         itr++;
-    }, 500);
+    }, 2000);
 }
 function writeAds300x600(data, page) {
     var output = "";
@@ -951,7 +934,20 @@ function adShowHidePage(ad) {
         $(this).siblings('.ad-close').show();
     });
 }
-
+function writeAdsSlideshow(data) {
+    var output = '';
+    output += '<div class="ads-article-slideshow">';
+    for (var i = 0; i < data.length; i++) {
+        if (i == 0) {
+            output += '<a class="show" target="_blank" href="'+data[i]['url']+'"><span class="price">'+data[i]['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['img1200x1200']+'" class="img-fluid"></a>';
+        }
+        else {
+            output += '<a class="hide" target="_blank" href="'+data[i]['url']+'"><span class="price">'+data[i]['price']+'</span><img loading="lazy" alt="Peoples BLOG" src="../../../'+data[i]['img1200x1200']+'" class="img-fluid"></a>';
+        }
+    }
+    output += '</div>';
+    return output;
+}
 
 /******************************************************************************************************************/
 /************************************** QADSuotes ***********************************************************************/
@@ -969,11 +965,23 @@ $(function() {
     readFile("/../../../quotes/quotes.json", function (text) {
         $('.peoples-quotes').html(writeQuotes(JSON.parse(text)));
     });
+    readFile("/../../../quotes/quotes.json", function (text) {
+        setTimeout(function () {
+            $('.ads-article').append(writeArticleQuotes(JSON.parse(text)));
+        }, 100);
+    });
+
 });
 function writeQuotes(data) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
     output += '<span>'+random['quote']+'</span>';
+    return output;
+}
+function writeArticleQuotes(data) {
+    var output = "";
+    var random = data[Math.floor(Math.random() * data.length)];
+    output += '<div class="ads-article-quote"><i class="fa fa-quote-left"></i> '+random['quote']+' <i class="fa fa-quote-right"></i></div>';
     return output;
 }
 
