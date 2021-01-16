@@ -985,6 +985,7 @@ div.tab button:hover {
     margin-bottom: 7px;
     margin-top: 0;
     overflow-wrap: break-word;
+    color: #4e4e4e;
 }
 
 .user_name {
@@ -1788,7 +1789,7 @@ hr.invis3 {
     display: block;
     position: fixed;
     margin: 0;
-    left: 34px;
+    left: 0;
     top: 25%;
     width: 50px;
     text-align: left;
@@ -2030,7 +2031,7 @@ body .dmtop {
 }
 .sidebar .banner-img img:hover {
     /*transform: rotate(360deg);*/
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 body .peoples-quotes {
     font-size: 12px;
@@ -2047,14 +2048,14 @@ body .peoples-quotes {
     color: #000;
     right: 0;
     bottom: 0;
-    padding: 2px 0 2px 6px;
-    border-radius: 6px 0 0 6px;
-    font-size: 12px;
+    padding: 2px 0px 0px 6px;
+    /* border-radius: 6px 0 0 6px; */
+    font-size: 10px;
     background-color: #fff;
     margin: 0 0 10px 0;
     line-height: 16px;
     z-index: 10;
-    letter-spacing: 1px;
+    letter-spacing: 0;
 }
 .blog-list-widget img {
     margin-right: 0 !important;
