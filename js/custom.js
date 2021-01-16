@@ -739,40 +739,47 @@ function writeAuthorBlogs(data) {
 /******************************************************************************************************************/
 $(function() {
     readFile("/ads/ads.json", function(text){
-        $('.ads-home').html(writeAds300x600(JSON.parse(text), 'home'));
+        $('.ads-home').html(writeAds1200x1200(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
         $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds300x600(JSON.parse(text), 'home'));
-        $('.ads-page-6').html(writeAds728x90(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
         adShowHidePage('ads-page-6');
     });
     readFile("/../ads/ads.json", function(text){
         $('.ads-blogs').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds300x600(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
+        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
         $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
         $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
         adShowHidePage('ads-page-5');
     });
     readFile("/../../ads/ads.json", function(text){
-        $('.ads-type').html(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').html(writeAds1200x1200(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
         $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds300x600(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
         $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'type'));
         adShowHidePage('ads-page-4');
     });
     readFile("/../../../ads/ads.json", function(text){
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds300x600(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').append(writeAdsSlideshow(JSON.parse(text)));
         setTimeout(function() {
@@ -801,11 +808,12 @@ $(function() {
     }, 10000);
 
 });
+const totalNumberofAds = 15;
 function showSlidesArticleAds() {
     var itr = 0;
     setInterval(function() {
         $(".ads-article-slideshow > a").each(function (index) {
-            if (itr >= 15) {
+            if (itr >= totalNumberofAds) {
                 itr = 0;
             }
             if (itr === index) {
