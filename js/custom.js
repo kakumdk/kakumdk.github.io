@@ -818,7 +818,7 @@ function showSlidesArticleAds() {
             }
         });
         itr++;
-    }, 2000);
+    }, 3000);
 }
 function writeAds300x600(data, page) {
     var output = "";
