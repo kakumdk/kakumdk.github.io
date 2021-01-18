@@ -1,1 +1,1 @@
-Peoples Blog
+People&#039;s Blog
