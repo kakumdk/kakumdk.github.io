@@ -1,5 +1,5 @@
 User-agent: Googlebot
-Allow: /index.html
+Allow: /
 Allow: /about.html
 Allow: /links.html
 Allow: /privacy.html
@@ -77,7 +77,7 @@ Disallow: /tmp.html
 Sitemap: https://peoplesblog.co.in/sitemap.xml
 
 User-agent: *
-Allow: /index.html
+Allow: /
 Allow: /about.html
 Allow: /links.html
 Allow: /privacy.html
