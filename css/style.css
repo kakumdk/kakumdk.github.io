@@ -2027,7 +2027,7 @@ body .dmtop {
     color: #269f42 !important;
 }
 .banner-img img {
-    max-width: 830px !important;
+    max-width: 1024px !important;
     transition: width 1s, height 1s, transform 1s;
     background: transparent;
 }
