@@ -37,15 +37,18 @@
 
 
 
-                                <p>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. <a href="https://www.drupal.org/project/api_docs" target="_blank">API Docs</a> is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.</p>
-                                <h5>Prerequisite</h5>
-                                <p>Install this API Docs module as any other drupal module, Its recommened to install this module via Composer.</p>
-                                <p><code>composer require 'drupal/api_docs'</code></p>
-                                <h5>Available options</h5>
-                                <p>This module is dependent on couple other contributed modules Redoc Field Formatter & Swagger UI Field Formatter. These module use the Redoc & Swagger library and give a drupal field formatters.</p>
-                                <p>One can upload YAML, YML or JSON format OAS files while creating API Doc content.</p>
-                                <p>Few admin page are created, like Listing, Redoc & Swagger pages using the API Doc Content type, which will be available on API Docs module install on your drupal portal.</p>
-                                <p>Overall, API Docs is a simple module which helps administrators install module and using the Redoc & Swagger UI features for API Docs on Drupal Portal.</p>
+                                <p>Send Mail with Custom Email Template & with Dynamic values via Drupal Mail Service</p>
+                                <p>Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from <code>hook_mail()</code> from the module sending the email. Any module can modify the composed email message array using <code>hook_mail_alter()</code>. Finally <code>\Drupal::service('plugin.manager.mail')->mail()</code> sends the email, which can be reused if the exact same composed email is to be sent to multiple recipients.</p>
+                                <p>Below function's <code>triggerMail</code> code, can be written in any submit handlers or post actions in Drupal.</p>
+                                <pre>function triggerMail() {<br/>&nbsp;&nbsp;$module = "x_module";<br/>&nbsp;&nbsp;$key = "x_mail";<br/>&nbsp;&nbsp;$to = "example@gmail.com";<br/>&nbsp;&nbsp;$langcode = 'en';<br/>&nbsp;&nbsp;\Drupal::service('plugin.manager.mail')->mail($module, $key, $to, $langcode);<br/>}</pre>
+                                <p>Below is the <code>hook_mail()</code> usage, written in <code>x_module.module</code> file.</p>
+                                <pre>function x_module_mail($key, &$message, $params) {<br/>&nbsp;&nbsp;switch($key) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;// To Trigger email on x_mail key.<br/>&nbsp;&nbsp;&nbsp;&nbsp;case 'x_mail':<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$message['headers'] = [<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'content-type' => 'text/html'<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$message['subject'] = t('X Mail subject');<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$message['body'][] = (string) getXMailMessageBody();<br/>&nbsp;&nbsp;}<br/>}</pre>
+                                <p>Below is the helper function <code>getXMailMessageBody()</code> which can pull the dynamic data from the system and pass it through.</p>
+                                <pre>function getXMailMessageBody() {<br/>&nbsp;&nbsp;// Get Dynamic values.. then pass to twig file..<br/>&nbsp;&nbsp;return twig_render_template(<br/>&nbsp;&nbsp;&nbsp;&nbsp;drupal_get_path('module', 'x_module') . '/templates/x-mail.html.twig',<br/>&nbsp;&nbsp;&nbsp;&nbsp;[<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'theme_hook_original' => 'not-applicable',<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'dynamic_key1' => "{value1}",<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'dynamic_key2' => "{value2}<br/>&nbsp;&nbsp;&nbsp;&nbsp;]<br/>&nbsp;&nbsp;);<br/>}</pre>
+                                <p>Create a twig template file <code>x-mail.html.twig</code> in the module folder within templates folder.</p>
+                                <pre>Email Body and with dynamic values here {{ dynamic_key1 }} & {{ dynamic_key2 }}.</pre>
+                                <p>So, with these Drupal Mail service & custom template, you can send emails with customized message mails from your Drupal application.</p>
+                                <p>Thank you :)</p>
 
 
 
