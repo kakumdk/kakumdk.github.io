@@ -37,18 +37,19 @@
 
 
 
-                                <p>Send Mail with Custom Email Template & with Dynamic values via Drupal Mail Service</p>
-                                <p>Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from <code>hook_mail()</code> from the module sending the email. Any module can modify the composed email message array using <code>hook_mail_alter()</code>. Finally <code>\Drupal::service('plugin.manager.mail')->mail()</code> sends the email, which can be reused if the exact same composed email is to be sent to multiple recipients.</p>
-                                <p>Below function's <code>triggerMail</code> code, can be written in any submit handlers or post actions in Drupal.</p>
-                                <pre>function triggerMail() {<br/>&nbsp;&nbsp;$module = "x_module";<br/>&nbsp;&nbsp;$key = "x_mail";<br/>&nbsp;&nbsp;$to = "example@gmail.com";<br/>&nbsp;&nbsp;$langcode = 'en';<br/>&nbsp;&nbsp;\Drupal::service('plugin.manager.mail')->mail($module, $key, $to, $langcode);<br/>}</pre>
-                                <p>Below is the <code>hook_mail()</code> usage, written in <code>x_module.module</code> file.</p>
-                                <pre>function x_module_mail($key, &$message, $params) {<br/>&nbsp;&nbsp;switch($key) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;// To Trigger email on x_mail key.<br/>&nbsp;&nbsp;&nbsp;&nbsp;case 'x_mail':<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$message['headers'] = [<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'content-type' => 'text/html'<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$message['subject'] = t('X Mail subject');<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$message['body'][] = (string) getXMailMessageBody();<br/>&nbsp;&nbsp;}<br/>}</pre>
-                                <p>Below is the helper function <code>getXMailMessageBody()</code> which can pull the dynamic data from the system and pass it through.</p>
-                                <pre>function getXMailMessageBody() {<br/>&nbsp;&nbsp;// Get Dynamic values.. then pass to twig file..<br/>&nbsp;&nbsp;return twig_render_template(<br/>&nbsp;&nbsp;&nbsp;&nbsp;drupal_get_path('module', 'x_module') . '/templates/x-mail.html.twig',<br/>&nbsp;&nbsp;&nbsp;&nbsp;[<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'theme_hook_original' => 'not-applicable',<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'dynamic_key1' => "{value1}",<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'dynamic_key2' => "{value2}<br/>&nbsp;&nbsp;&nbsp;&nbsp;]<br/>&nbsp;&nbsp;);<br/>}</pre>
-                                <p>Create a twig template file <code>x-mail.html.twig</code> in the module folder within templates folder.</p>
-                                <pre>Email Body and with dynamic values here {{ dynamic_key1 }} & {{ dynamic_key2 }}.</pre>
-                                <p>So, with these Drupal Mail service & custom template, you can send emails with customized message mails from your Drupal application.</p>
-                                <p>Thank you :)</p>
+                                <p>What to Eat & What to Avoid, after a Tooth Extraction</p>
+                                <p>Tooth extraction is a long chain of steps where you have to take care of the area of the extraction for weeks of extration steps. Means you need to take care of brushing and cleaning the area properly & avoiding too much activity right after the extraction.</p>
+                                <p>Since you have to consume food everyday, you can do by <strong>taking certain restrictions</strong> like what you can eat and what you cannot eat after having a tooth extraction.</p>
+                                <h3>How to Eat?</h3>
+                                <p>It is recommended to use the opposite side of the tooth extrated site in the mouth to chew and eat your food for a few days post-extraction.</p>
+                                <p>You would be in <strong>liquid diet post-extration</strong>. Its important to note, <strong>don't use straw..</strong> Using straw to suck the liquid food may cause the blood clot to get dislodged and <strong>increase your healing period</strong>.</p>
+                                <h3>What to Eat?</h3>
+                                <p>For the first 48 hours, liquid and soft food is the only food you need to consume. Gradually you can take normal food once you feel comfortable.</p>
+                                <p>Recommended food for first few days are like.. scrambled eggs, yoghurt, sauce etc. Also you can have Ice cream, but <strong>not chewing</strong> ones.</p>
+                                <p>Make sure, you take <strong>food which is at room temperature</strong>.. not too hot or not too cold..</p>
+                                <h3>What to Avoid?</h3>
+                                <p>For the first few days, completely avoid food where you need to chew.. Also grainy & crispy foods are <strong>not recommended</strong>. Your choice of food should be Dairy products, but not Meat..</p>
+                                <p>Overall, <br/>Tooth extraction can take few weeks to recover fully, even when everything goes good.<br/>In <strong>case of a sudden pain</strong>, you must immediately get back to soft foods and get in touch with a <a target="_blank" title="Dr. Jyothi S N" href="https://jyothisnagaraja.github.io/">Dentist</a> .</p>
 
 
 

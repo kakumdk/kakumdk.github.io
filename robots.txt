@@ -59,6 +59,7 @@ Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
 Allow: /blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html
 Allow: /blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html
 Allow: /blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html
+Allow: /blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -138,6 +139,7 @@ Allow: /blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html
 Allow: /blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html
 Allow: /blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html
 Allow: /blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html
+Allow: /blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
