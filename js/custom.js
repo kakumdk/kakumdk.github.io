@@ -141,7 +141,7 @@ $(function() {
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
 
     readFile("/blogs-content-merged/blogs.json", function(text){
-        $(".peoplesblog-categories-links").html('<h5>Categories</h5>');
+        $(".peoplesblog-categories-links").html('<h4>Categories</h4>');
         $(".peoplesblog-categories-links").append(writeLinks(JSON.parse(text)));
     });
     readFile("/../../../blogs-content-merged/blogs.json", function(text){
@@ -990,7 +990,7 @@ function writeQuotes(data) {
 function writeArticleQuotes(data) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
-    output += '<div class="ads-article-quote"><i class="fa fa-quote-left"></i> '+random['quote']+' <i class="fa fa-quote-right"></i></div>';
+    output += '<div class="ads-article-quote"><i class="fa fa-quote-left"></i><span>'+random['quote']+'</span></div>';
     return output;
 }
 
@@ -1342,7 +1342,7 @@ $(function() {
 });
 function writeAuthorLinks(data) {
     var output = '';
-    output += '<hr class="invis"><h5 id="authors">Authors</h5>' +
+    output += '<hr class="invis"><h4 id="authors">Authors</h4>' +
         '<div class="site-links">';
     for (var i = 0; i < data.length; i++) {
         var author = data[i]['author'];
