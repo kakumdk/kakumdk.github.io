@@ -2058,14 +2058,15 @@ body .peoples-quotes {
     color: #000;
     right: 0;
     bottom: 0;
-    padding: 2px 0px 0px 6px;
+    padding: 2px 2px 0px 6px;
     /* border-radius: 6px 0 0 6px; */
-    font-size: 10px;
+    font-size: 12px;
     background-color: #fff;
     margin: 0 0 10px 0;
     line-height: 16px;
     z-index: 10;
     letter-spacing: 0;
+    font-family: 'Ubuntu',sans-serif !important;
 }
 .blog-list-widget img {
     margin-right: 0 !important;
