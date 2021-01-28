@@ -336,7 +336,7 @@ function writeBlogsHomepage(data) {
 function writeBlogs(data) {
     var output = '';
     output += '<div class="col-md-12">' +
-        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on People&#039;s BLOG" /><hr class="invis">' +
+        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on People&#039;s BLOG" /><hr class="invis0">' +
         '</div>';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
@@ -379,7 +379,7 @@ function writeBlogs(data) {
 function writeBlogTypes(data) {
     var currentpath = window.location.pathname.split('/');
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on People&#039;s BLOG" /><hr class="invis">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on People&#039;s BLOG" /><hr class="invis0">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -431,7 +431,7 @@ function writeBlogTypes(data) {
 function writeBlogTypeCategories(data) {
     var currentpath = window.location.pathname.split('/');
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[3]+' related articles on People&#039;s BLOG" /><hr class="invis">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[3]+' related articles on People&#039;s BLOG" /><hr class="invis0">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -540,9 +540,9 @@ function writeSocialShareLinks(region) {
     if (region === 'blog') {
         var output = '' +
             '<ul class="list-inline">' +
-            '<li><a title="Share now on Linkedin" href="'+linkedin+'" target="_blank" class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>' +
-            '<li><a title="Share now on Twitter" href="'+twitter+'" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>' +
-            '<li><a title="Share now on Facebook" href="'+facebook+'" target="_blank" class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>' +
+            '<li class="whatsapp-desktop"><a title="Share now on Linkedin" href="'+linkedin+'" target="_blank" class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>' +
+            '<li class="whatsapp-desktop"><a title="Share now on Twitter" href="'+twitter+'" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>' +
+            '<li class="whatsapp-desktop"><a title="Share now on Facebook" href="'+facebook+'" target="_blank" class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>' +
             '<li class="whatsapp-desktop"><a title="Share now on Whatsapp web" href="'+whatsapp+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
             '<li class="whatsapp-mobile"><a href="'+whatsapp_phone+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
             // '<li><a title="Share now on E-mail" href="'+mail+'" target="_blank" class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>' +

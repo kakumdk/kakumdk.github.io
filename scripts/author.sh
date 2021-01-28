@@ -140,9 +140,9 @@ echo '<!DOCTYPE html>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h1><i class="fa fa-user bg-orange"></i> Authors <small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h1>
+                    <h1><i class="fa fa-user bg-orange"></i><span>Authors</span><small class="hidden-xs-down hidden-sm-down peoples-quotes"></small></h1>
                 </div><!-- end col -->
-                <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item active">Authors</li>
@@ -396,12 +396,12 @@ do
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h2><i class="fa fa-user bg-orange"></i><span>Author : '$author'</span></h2>
+                    <h1><i class="fa fa-user bg-orange"></i><span>'$author'</span></h1>
                 </div><!-- end col -->
-                <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/authors/index.html">Author</a></li>
+                        <li class="breadcrumb-item"><a href="/authors/index.html">Authors</a></li>
                         <li class="breadcrumb-item active">'$author'</li>
                     </ol>
                 </div><!-- end col -->
