@@ -2440,7 +2440,7 @@ body strong {
     color: #064771 !important;
 }
 .prevnext-articles.custombox.prevnextpost.clearfix {
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
 }
 .page-title.lb.single-wrapper span {
     padding-left: 6px;
