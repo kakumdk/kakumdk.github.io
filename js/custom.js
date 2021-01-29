@@ -143,6 +143,10 @@ $(function() {
         event.preventDefault();
         socialCopyLink();
     });
+    $(".social-web-share-api").click(function (event) {
+        event.preventDefault();
+        socialWebShare();
+    });
 
     readFile("/blogs-content-merged/blogs.json", function(text){
         $(".peoplesblog-categories-links").html('<h4>Categories</h4>');
@@ -552,6 +556,7 @@ function writeSocialShareLinks(region) {
             '<li class="whatsapp-mobile sticky"><a href="'+whatsapp_phone+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
             // '<li><a title="Share now on E-mail" href="'+mail+'" target="_blank" class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>' +
             '<li class=""><a title="Copy Link" href="'+url+'" class="btn-floating btn-lg social-copy" type="button" role="button"><i class="fa fa-link"></i></a></li>' +
+            '<li class="whatsapp-mobile"><a title="'+title+'" href="'+url+'" class="btn-floating btn-lg social-web-share-api" type="button" role="button"><i class="fa fa-share-alt"></i></a></li>' +
             '</ul>';
         return output;
     }
@@ -580,6 +585,17 @@ function socialCopyLink() {
         e.preventDefault();
     }, true);
     document.execCommand("copy");
+}
+function socialWebShare() {
+    if (navigator.share) {
+        navigator.share({
+            url: $(".social-web-share-api").attr("href"),
+            title: $(".social-web-share-api").attr("title")
+            // text: 'An example page implementing the Web Share API.'
+        });
+    }
+    // var title = $(".social-web-share-api").attr("title");
+    // console.log(title);
 }
 function writeLinks(data) {
     var output = '';
