@@ -489,7 +489,7 @@ function writeBlogTypeCategories(data) {
                         '<div class="blog-meta big-meta col-md-8">' +
                         '<h4><a href="' + path + '" title="' + data[i]['title'] + '">' + data[i]['title'] + '</a></h4>' +
                         '<div class="blog-content-overflow"><p>' + data[i]['content'] + '</p></div>' +
-                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/'+category[0].replace(" ", "-")+'/index.html" title="' + category[0] + '">' + category[0] + '</a></small>' +
+                        '<small class="firstsmall"><a class="bg-orange" href="/blogs/'+currentType+'/index.html" title="title="' + type[j].trim() + '"">' + type[j].trim() + '</a></small>' +
                         '<small>' + data[i]['created'] + ' / by <a href="/authors/'+data[i]['author'].replaceAll(" ", "-")+'.html">' + data[i]['author'] + '</a></small>' +
                         // '<small>by ' + data[i]['author'] + '</small>' +
                         // '<small><a href="single.html" title=""><i class="fa fa-eye"></i> 1114</a></small>' +
