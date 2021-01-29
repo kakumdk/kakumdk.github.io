@@ -139,6 +139,10 @@ $(function() {
     });
     $(".post-sharing-top").html(writeSocialShareLinks('blog'));
     $(".post-sharing-footer").html(writeSocialShareLinks('footer'));
+    $(".social-copy").click(function (event) {
+        event.preventDefault();
+        socialCopyLink();
+    });
 
     readFile("/blogs-content-merged/blogs.json", function(text){
         $(".peoplesblog-categories-links").html('<h4>Categories</h4>');
@@ -540,12 +544,14 @@ function writeSocialShareLinks(region) {
     if (region === 'blog') {
         var output = '' +
             '<ul class="list-inline">' +
-            '<li class="whatsapp-desktop"><a title="Share now on Linkedin" href="'+linkedin+'" target="_blank" class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>' +
-            '<li class="whatsapp-desktop"><a title="Share now on Twitter" href="'+twitter+'" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>' +
-            '<li class="whatsapp-desktop"><a title="Share now on Facebook" href="'+facebook+'" target="_blank" class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>' +
+            '<li class=""><a title="Share now on Linkedin" href="'+linkedin+'" target="_blank" class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fa fa-linkedin"></i></a></li>' +
+            '<li class=""><a title="Share now on Twitter" href="'+twitter+'" target="_blank" class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fa fa-twitter"></i></a></li>' +
+            '<li class=""><a title="Share now on Facebook" href="'+facebook+'" target="_blank" class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fa fa-facebook"></i></a></li>' +
             '<li class="whatsapp-desktop"><a title="Share now on Whatsapp web" href="'+whatsapp+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
             '<li class="whatsapp-mobile"><a href="'+whatsapp_phone+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
+            '<li class="whatsapp-mobile sticky"><a href="'+whatsapp_phone+'" target="_blank" class="btn-floating btn-lg btn-whatsapp" type="button" role="button"><i class="fa fa-whatsapp"></i></a></li>' +
             // '<li><a title="Share now on E-mail" href="'+mail+'" target="_blank" class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>' +
+            '<li class=""><a title="Copy Link" href="'+url+'" class="btn-floating btn-lg social-copy" type="button" role="button"><i class="fa fa-link"></i></a></li>' +
             '</ul>';
         return output;
     }
@@ -566,6 +572,14 @@ function writeSocialShareLinks(region) {
             // '<a class="whatsapp-mobile" href="'+whatsapp_phone+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
             // '<a href="'+mail+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
     }
+}
+function socialCopyLink() {
+    var url = $(".social-copy").attr("href");
+    document.addEventListener('copy', function(e) {
+        e.clipboardData.setData('text/plain', url);
+        e.preventDefault();
+    }, true);
+    document.execCommand("copy");
 }
 function writeLinks(data) {
     var output = '';

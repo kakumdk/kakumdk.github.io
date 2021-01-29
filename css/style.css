@@ -853,10 +853,10 @@ div.tab button:hover {
 }
 
 .post-sharing {
-    display: block;
-    width: 100%;
-    position: relative;
-    margin: 1rem 0 0;
+    /*display: block;*/
+    /*width: 100%;*/
+    /*position: relative;*/
+    /*margin: 1rem 0 0;*/
 }
 
 .gp-button.btn-primary:hover,
@@ -886,9 +886,9 @@ div.tab button:hover {
 }
 
 .post-sharing .btn {
-    padding: 0.3rem 1.6rem;
-    border-radius: 3px;
-    color: #ffffff !important;
+    /*padding: 0.3rem 1.6rem;*/
+    /*border-radius: 3px;*/
+    /*color: #ffffff !important;*/
 }
 
 .post-sharing .btn:hover {
@@ -899,9 +899,8 @@ div.tab button:hover {
     padding: 0.8rem 1rem !important;
 }
 
-.post-sharing span,
-.post-sharing li {
-    /*display: inline-block !important;*/
+.post-sharing span, .post-sharing li {
+    display: inline-block !important;
     padding: 0 1px;
 }
 
@@ -910,8 +909,9 @@ div.tab button:hover {
     position: relative;
     overflow: hidden;
     width: 50%;
-    padding: 0 0 10px 10px;
-    float: right;
+    padding: 0 14px 0 0;
+    float: left;
+    margin-top: 10px;
 }
 
 .single-post-media img {
@@ -934,7 +934,8 @@ div.tab button:hover {
 }
 
 .blog-title-area.text-center .breadcrumb {
-    text-align: center;
+    /*text-align: center;*/
+    text-align: left;
 }
 
 .blog-title-area .blog-meta a {
@@ -981,6 +982,12 @@ div.tab button:hover {
     border-radius: 3px;
 }
 
+.blog-title-area h1 {
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px !important;
+    padding-bottom: 6px;
+}
 .blog-title-area h1, .blog-title-area h3 {
     font-size: 36px;
     line-height: 40px;
@@ -1131,6 +1138,10 @@ div.tab button:hover {
     font-size: 21px;
 }
 
+.blog-meta.big-meta {
+    /*text-align: left;*/
+    display: inline-block;
+}
 .blog-meta.big-meta h4 {
     padding: 1rem 0 0.6rem;
     margin: 0;
@@ -1744,7 +1755,7 @@ hr.invis3 {
     z-index: 1;
     display: inline-block;
     padding: 0;
-    margin: 2px 0;
+    margin: 0 2px;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;
@@ -1753,14 +1764,20 @@ hr.invis3 {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .post-sharing .btn-lg {
-    padding: .7rem 0.85rem;
+    padding: .4rem 0.5rem;
     font-size: 1rem;
     line-height: 1;
     box-shadow: none !important;
+    text-align: center;
+}
+.post-sharing .social-copy {
+    border: 1px solid #656465;
+    font-size: 0.9rem;
+    padding: 7px;
 }
 .post-sharing .btn-li, .post-sharing .btn-li:hover {
     background-color: #0082ca !important;
@@ -1794,21 +1811,24 @@ hr.invis3 {
     color: #fff;
 }
 .post-sharing-top.post-sharing {
-    display: block;
-    position: fixed;
-    margin: 0;
-    left: 40px;
-    top: 25%;
-    width: 50px;
-    text-align: left;
-    background-color: transparent;
-    z-index: 20;
+    /*display: block;*/
+    /*position: fixed;*/
+    /*margin: 0;*/
+    /*left: 40px;*/
+    /*top: 25%;*/
+    /*width: 50px;*/
+    /*text-align: left;*/
+    /*background-color: transparent;*/
+    /*z-index: 20;*/
+    display: inline-block;
+    position:relative;
+    float:right;
 }
 .post-sharing-top.post-sharing > ul {
-    margin: 0;
+    margin: 2px 4px 0 0;
 }
 .blog-title-area {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1.5rem !important;
 }
 .custombox {
     padding: 2rem 2rem 1rem 2rem !important;
@@ -2534,13 +2554,15 @@ and (max-device-width : 480px) {
         display: none;
     }
     .post-sharing .btn-floating {
-        border-radius: 20% 0 0 20%;
+        border-radius: 50%;
     }
     .blog-title-area h1, .blog-title-area h3 {
         font-size: 20px !important;
         line-height: 1.5;
-        margin-bottom: 2px;
+        margin-bottom: 0 !important;
         font-weight: 500 !important;
+        border-bottom: unset;
+        text-align: center;
     }
     .blog-content h1, .blog-content h3 {
         font-size: 18px !important;
@@ -2559,22 +2581,41 @@ and (max-device-width : 480px) {
         margin: 0;
     }
     .post-sharing .btn-lg {
-        margin: 4px 8px;
+        margin: 12px 2px 0 2px;
     }
     .post-sharing-top.post-sharing {
         margin: 0;
         background-color: transparent;
         z-index: 20;
-        left: unset;
+        position: unset;
+        display: block;
+        float: initial;
+    }
+    .post-sharing-top.post-sharing > ul {
+        margin: 0;
+    }
+    .post-sharing-top.post-sharing > ul > li {
+        display: inline-block;
+    }
+    .post-sharing-top.post-sharing > ul > li.sticky {
+        position: fixed;
         right: 0;
-        top: unset;
         bottom: 50%;
+        z-index: 99;
+    }
+    .post-sharing-top.post-sharing > ul > li.sticky > a {
+        height: 40px;
+        width: 45px;
+        font-size: 25px;
+        border-radius: 20% 0 0 20%;
+        padding: 8px 0 0 0;
     }
     .blog-title-area, .single-post-media {
         margin-bottom: 1rem !important;
         width: 100%;
         padding: 0;
         clear: both;
+        margin-top: 0;
     }
     .custombox {
         padding: 2rem 1rem 1rem 1rem !important;
@@ -2750,13 +2791,15 @@ and (max-width : 320px) {
         display: none;
     }
     .post-sharing .btn-floating {
-        border-radius: 20% 0 0 20%;
+        border-radius: 50%;
     }
     .blog-title-area h1, .blog-title-area h3 {
         font-size: 20px !important;
         line-height: 1.5;
-        margin-bottom: 2px;
+        margin-bottom: 0 !important;
         font-weight: 500 !important;
+        border-bottom: unset;
+        text-align: center;
     }
     .blog-content h1, .blog-content h3 {
         font-size: 18px !important;
@@ -2775,22 +2818,41 @@ and (max-width : 320px) {
         margin: 0;
     }
     .post-sharing .btn-lg {
-        margin: 4px 8px;
+        margin: 12px 2px 0 2px;
     }
     .post-sharing-top.post-sharing {
         margin: 0;
         background-color: transparent;
         z-index: 20;
-        left: unset;
+        position: unset;
+        display: block;
+        float: initial;
+    }
+    .post-sharing-top.post-sharing > ul {
+        margin: 0;
+    }
+    .post-sharing-top.post-sharing > ul > li {
+        display: inline-block;
+    }
+    .post-sharing-top.post-sharing > ul > li.sticky {
+        position: fixed;
         right: 0;
-        top: unset;
         bottom: 50%;
+        z-index: 99;
+    }
+    .post-sharing-top.post-sharing > ul > li.sticky > a {
+        height: 40px;
+        width: 45px;
+        font-size: 25px;
+        border-radius: 20% 0 0 20%;
+        padding: 8px 0 0 0;
     }
     .blog-title-area, .single-post-media {
         margin-bottom: 1rem !important;
         width: 100%;
         padding: 0;
         clear: both;
+        margin-top: 0;
     }
     .custombox {
         padding: 2rem 1rem 1rem 1rem !important;
@@ -2959,13 +3021,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
         display: none;
     }
     .post-sharing .btn-floating {
-        border-radius: 20% 0 0 20%;
+        border-radius: 50%;
     }
     .blog-title-area h1, .blog-title-area h3 {
         font-size: 20px !important;
         line-height: 1.5;
-        margin-bottom: 2px;
+        margin-bottom: 0 !important;
         font-weight: 500 !important;
+        border-bottom: unset;
+        text-align: center;
     }
     .blog-content h1, .blog-content h3 {
         font-size: 18px !important;
@@ -2984,22 +3048,41 @@ only screen and (min-device-pixel-ratio : 1.5) {
         margin: 0;
     }
     .post-sharing .btn-lg {
-        margin: 4px 8px;
+        margin: 12px 2px 0 2px;
     }
     .post-sharing-top.post-sharing {
         margin: 0;
         background-color: transparent;
         z-index: 20;
-        left: unset;
+        position: unset;
+        display: block;
+        float: initial;
+    }
+    .post-sharing-top.post-sharing > ul {
+        margin: 0;
+    }
+    .post-sharing-top.post-sharing > ul > li {
+        display: inline-block;
+    }
+    .post-sharing-top.post-sharing > ul > li.sticky {
+        position: fixed;
         right: 0;
-        top: unset;
         bottom: 50%;
+        z-index: 99;
+    }
+    .post-sharing-top.post-sharing > ul > li.sticky > a {
+        height: 40px;
+        width: 45px;
+        font-size: 25px;
+        border-radius: 20% 0 0 20%;
+        padding: 8px 0 0 0;
     }
     .blog-title-area, .single-post-media {
         margin-bottom: 1rem !important;
         width: 100%;
         padding: 0;
         clear: both;
+        margin-top: 0;
     }
     .custombox {
         padding: 2rem 1rem 1rem 1rem !important;

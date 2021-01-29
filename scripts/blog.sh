@@ -1012,7 +1012,7 @@ do
                 <div class="row">
                     <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                            <div class="blog-title-area text-center">
+                            <div class="blog-title-area">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="/">Home</a></li>
                                     <li class="breadcrumb-item"><a href="/blogs/index.html">Blog</a></li>
