@@ -560,6 +560,7 @@ function writeSocialShareLinks(region) {
             // '<li><a title="Share now on E-mail" href="'+mail+'" target="_blank" class="btn-floating btn-lg btn-email" type="button" role="button"><i class="fa fa-envelope"></i></a></li>' +
             '<li class="whatsapp-desktop"><a title="Copy Link" href="'+url+'" class="btn-floating btn-lg social-copy" type="button" role="button"><i class="fa fa-link"></i></a></li>' +
             '<li class="whatsapp-mobile"><a title="'+title+'" href="'+url+'" class="btn-floating btn-lg social-web-share-api" type="button" role="button"><i class="fa fa-share-alt"></i></a></li>' +
+            '<li class="whatsapp-mobile sticky sticky1"><a title="'+title+'" href="'+url+'" class="btn-floating btn-lg social-web-share-api" type="button" role="button"><i class="fa fa-share-alt"></i></a></li>' +
             '</ul>';
         return output;
     }
