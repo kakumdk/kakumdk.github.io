@@ -816,7 +816,6 @@ $(function() {
         $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         // $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').html(writeAdsSlideshow(JSON.parse(text)));
-        $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
         setTimeout(function() {
             $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
             adShowHidePage('ads-page-1');
@@ -829,6 +828,9 @@ $(function() {
             $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
             adShowHidePage('ads-page-3');
         }, 8000);
+    });
+    readFile("/../../../ads/ads-video.json", function(text){
+        $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
     });
     setTimeout(function() {
         adShowHide('ads-home');
@@ -995,17 +997,10 @@ function writeAdsSlideshow(data) {
 function writeVideoAdsSlideshow(data) {
     var output = '';
     output += '<div class="ads-video">';
-    // var itr = Math.floor(Math.random() * data.length);
-    // for (var i = 0; i < data.length; i++) {
-    //     if (i == itr) {
-    //         output += '<a class="show" target="_blank" href="'+data[i]['url']+'"><span class="price">'+data[i]['price']+'</span><img title="Only '+data[i]['price']+' Checkout this product on Amazon" loading="lazy" alt="People&#039;s BLOG" src="../../../'+data[i]['img1200x1200']+'" class="img-fluid"></a>';
-    //     }
-    //     else {
-    //         output += '<a class="hide" target="_blank" href="'+data[i]['url']+'"><span class="price">'+data[i]['price']+'</span><img title="Only '+data[i]['price']+' Checkout this product on Amazon" loading="lazy" alt="People&#039;s BLOG" src="../../../'+data[i]['img1200x1200']+'" class="img-fluid"></a>';
-    //     }
-    // }
+    var itr = Math.floor(Math.random() * data.length);
+    var video = data[itr]['video'];
     output += '<div class="video-responsive">\n' +
-        '    <iframe width="420" height="315" src="https://www.youtube.com/embed/RnC4XBquqLA?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>\n' +
+        '    <iframe width="420" height="315" src="https://www.youtube.com/embed/'+video+'?autoplay=1&mute=1&&loop=1&controls=0&origin=https://peoplesblog.co.in" frameborder="0" allowfullscreen></iframe>\n' +
         '</div>';
     output += '</div>';
     return output;
