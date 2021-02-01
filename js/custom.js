@@ -1000,7 +1000,7 @@ function writeVideoAdsSlideshow(data) {
     var itr = Math.floor(Math.random() * data.length);
     var video = data[itr]['video'];
     output += '<div class="video-responsive">\n' +
-        '    <iframe width="420" height="315" src="https://www.youtube.com/embed/'+video+'?autoplay=1&mute=1&&loop=1&controls=0&origin=https://peoplesblog.co.in" frameborder="0" allowfullscreen></iframe>\n' +
+        '    <iframe width="420" height="315" src="https://www.youtube.com/embed/'+video+'?autoplay=1&mute=0&&loop=1&controls=1&origin=https://peoplesblog.co.in" frameborder="0" allowfullscreen></iframe>\n' +
         '</div>';
     output += '</div>';
     return output;
