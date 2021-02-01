@@ -2399,10 +2399,10 @@ body, p {
     transition: 0.6s ease;
 }
 .ads-article-slideshow {
-    position: fixed;
-    right: 119px;
-    bottom: 25px;
-    width: 12%;
+    /*position: fixed;*/
+    /*right: 119px;*/
+    /*bottom: 25px;*/
+    /*width: 12%;*/
     z-index: 1;
 }
 .ads-article-slideshow .show {
@@ -2411,6 +2411,32 @@ body, p {
 .ads-article-slideshow .hide {
     display: none;
 }
+.ads-video {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 21%;
+    z-index: 1;
+}
+.ads-video .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.ads-video .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*.ads-video .show {*/
+/*    display: block;*/
+/*}*/
+/*.ads-video .hide {*/
+/*    display: none;*/
+/*}*/
 .ads-article.sidebar > .widget {
     margin-bottom: 1rem;
 }
