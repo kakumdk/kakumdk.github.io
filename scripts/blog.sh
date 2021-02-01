@@ -1059,7 +1059,7 @@ do
 
                             </div><!-- end title -->
 
-                            <div class="ads-page-1"></div><!-- end ads-page-1 -->
+                            <!-- div class="ads-page-1"></div --><!-- end ads-page-1 -->
 
                             <!-- hr class="invis1" -->
                             <!-- div class="prevnext-articles custombox prevnextpost clearfix"></div -->
@@ -1096,7 +1096,7 @@ do
                             <hr class="invis0">
                             <div class="prevnext-articles custombox prevnextpost clearfix"></div>
 
-                            <div class="ads-page-2"></div><!-- end ads-page-1 -->
+                            <!-- div class="ads-page-2"></div --><!-- end ads-page-1 -->
 
                         </div><!-- end page-wrapper -->
                     </div><!-- end col -->
