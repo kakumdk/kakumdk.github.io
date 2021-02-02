@@ -95,13 +95,18 @@ $(function() {
         $('.blog-list-homepage-blogs').html(output);
         $(".blog-list-homepage-blogs_pager").append(writeBlogsHomepagePager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        setTimeout(function () {
+            $('.ads-home').append(writePopularBlogs(JSON.parse(text)));
+        }, 200);
     });
     readFile("/../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
-        var output = writeBlogs(data);
-        $('.blog-list-blogs').html(output);
+        $('.blog-list-blogs').html(writeBlogs(data));
         $(".blog-list-blogs_pager").append(writeBlogsPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        setTimeout(function () {
+            $('.ads-blogs').append(writePopularBlogs(JSON.parse(text)));
+        }, 200);
     });
     readFile("/../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
@@ -109,6 +114,9 @@ $(function() {
         $('.blog-list-type').html(output);
         $(".blog-list-type_pager").append(writeBlogTypesPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        setTimeout(function () {
+            $('.ads-type').append(writePopularBlogs(JSON.parse(text)));
+        }, 200);
     });
     readFile("../../../blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
@@ -116,6 +124,13 @@ $(function() {
         $('.blog-list-category').html(output);
         $(".blog-list-category_pager").append(writeBlogTypeCategoriesPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        setTimeout(function () {
+            $('.ads').append(writePopularBlogs(JSON.parse(text)));
+            $('.ads-article').append(writePopularBlogs(JSON.parse(text)));
+        }, 200);
+        setTimeout(function () {
+            $('.ads-article').append(writeRecentBlogs(JSON.parse(text)));
+        }, 300);
     });
     // $("#see-more").click(function() {
     //     $('.blog-list-homepage-blogs .blog-box').removeClass('hidden');
@@ -296,7 +311,7 @@ function writeBlogsHomepageHeader(data) {
     }
     return output;
 }
-const numberofArticlesPerPage = 5;
+const numberofArticlesPerPage = 4;
 function writeBlogsHomepage(data) {
     var output = '';
     output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search articles on People&#039;s BLOG" /><hr class="invis">';
@@ -354,7 +369,7 @@ function writeBlogs(data) {
             type[0].replace(" ", "-") + '/' +
             category[0].replace(" ", "-") + '/' +
             data[i]['file'].replace(".json", ".html");
-        if (itr >= (numberofArticlesPerPage + 1)) {
+        if (itr >= (numberofArticlesPerPage)) {
             output += '<div class="col-md-6 hidden">';
         }
         else {
@@ -533,6 +548,39 @@ function writeBlogsFooter(data) {
             }
         }
     });
+    return output;
+}
+function writePopularBlogs(data) {
+    var output = '';
+    output += "<hr class='invis0'><h3>Popular Articles</h3><ul class='popular-articles'>";
+    for (var i = 1; i <= 10; i++) {
+        var random = Math.floor(Math.random() * (data.length - 1) + 1);
+        if (random < data.length) {
+            var title = data[random]['title'];
+            var url = '/blogs/'+data[random]['type']+'/'+data[random]['category']+'/'+data[random]['file'].replace(".json", ".html");
+            output += '<li><a href="'+url+'">'+title+'</a></li>';
+        }
+        else {
+            console.log(random);
+        }
+    }
+    output += '</ul>';
+    return output;
+}
+function writeRecentBlogs(data) {
+    var output = '';
+    output += "<hr class='invis0'><h3>Recent Articles</h3><ul class='recent-articles'>";
+    for (var i = 1; i <= 6; i++) {
+        if (i < data.length) {
+            var title = data[i]['title'];
+            var url = '/blogs/'+data[i]['type']+'/'+data[i]['category']+'/'+data[i]['file'].replace(".json", ".html");
+            output += '<li><a href="'+url+'">'+title+'</a></li>';
+        }
+        else {
+            console.log(random);
+        }
+    }
+    output += '</ul>';
     return output;
 }
 function writeSocialShareLinks(region) {
@@ -773,47 +821,21 @@ function writeAuthorBlogs(data) {
 /******************************************************************************************************************/
 $(function() {
     readFile("/ads/ads.json", function(text){
-        $('.ads-home').html(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAds1200x1200(JSON.parse(text), 'home'));
-        adShowHidePage('ads-page-6');
+        // $('.ads-home').html(writeAds1200x1200(JSON.parse(text), 'home'));
+        $('.ads-home').append(writeAdsSlideshow(JSON.parse(text)));
     });
     readFile("/../ads/ads.json", function(text){
-        $('.ads-blogs').html(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-blogs').append(writeAds1200x1200(JSON.parse(text), 'blogs'));
-        $('.ads-page-5').html(writeAds728x90(JSON.parse(text), 'blogs'));
-        adShowHidePage('ads-page-5');
+        $('.ads-blogs').append(writeAdsSlideshow(JSON.parse(text)));
+        // adShowHidePage('ads-page-5');
     });
     readFile("/../../ads/ads.json", function(text){
-        $('.ads-type').html(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
-        $('.ads-page-4').html(writeAds728x90(JSON.parse(text), 'type'));
-        adShowHidePage('ads-page-4');
+        $('.ads-type').append(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
+        // adShowHidePage('ads-page-4');
     });
     readFile("/../../../ads/ads.json", function(text){
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
+        $('.ads').append(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         // $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
         $('.ads-article').html(writeAdsSlideshow(JSON.parse(text)));
         setTimeout(function() {
@@ -830,7 +852,15 @@ $(function() {
         }, 8000);
     });
     readFile("/../../../ads/ads-video.json", function(text){
-        $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+        setTimeout(function() {
+            $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+        }, 100);
+        setTimeout(function() {
+            $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+        }, 300);
+        setTimeout(function() {
+            $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+        }, 500);
     });
     setTimeout(function() {
         adShowHide('ads-home');
@@ -999,7 +1029,7 @@ function writeVideoAdsSlideshow(data) {
     output += '<div class="ads-video">';
     var itr = Math.floor(Math.random() * data.length);
     var video = data[itr]['video'];
-    output += '<div class="video-responsive">\n' +
+    output += '<hr class="invis0"><div class="video-responsive">\n' +
         '    <iframe width="420" height="315" src="https://www.youtube.com/embed/'+video+'?autoplay=1&mute=0&&loop=1&controls=1&origin=https://peoplesblog.co.in" frameborder="0" allowfullscreen></iframe>\n' +
         '</div>';
     output += '</div>';
@@ -1024,6 +1054,10 @@ $(function() {
     });
     readFile("/../../../quotes/quotes.json", function (text) {
         setTimeout(function () {
+            $('.ads-home').append(writeArticleQuotes(JSON.parse(text)));
+            $('.ads-blogs').append(writeArticleQuotes(JSON.parse(text)));
+            $('.ads-type').append(writeArticleQuotes(JSON.parse(text)));
+            $('.ads').append(writeArticleQuotes(JSON.parse(text)));
             $('.ads-article').append(writeArticleQuotes(JSON.parse(text)));
         }, 100);
     });
@@ -1038,7 +1072,7 @@ function writeQuotes(data) {
 function writeArticleQuotes(data) {
     var output = "";
     var random = data[Math.floor(Math.random() * data.length)];
-    output += '<div class="ads-article-quote"><i class="fa fa-quote-left"></i><span>'+random['quote']+'</span></div>';
+    output += '<hr class="invis0"><div class="ads-article-quote"><i class="fa fa-quote-left"></i><span>'+random['quote']+'</span></div>';
     return output;
 }
 
@@ -1292,7 +1326,7 @@ function showTopBar() {
     url = url.split(/[?#]/)[0];
     var output = '';
     output = '' +
-        '<div class="container-fluid text-right">' +
+        '<div class="container text-right">' +
         '<span class="sizechanger">' +
         '<a id="text_resize_decrease" >-A</a>' +
         '<a id="text_resize_reset">A</a>' +
@@ -1450,8 +1484,8 @@ $(function() {
             var clickedPageArray = $(this).attr('class').split(/\s+/);
             var clickedPage = clickedPageArray[0];
             var i = 1;
-            var from = (clickedPage - 1) * (numberofArticlesPerPage + 1)
-            var to = from + (numberofArticlesPerPage + 1);
+            var from = (clickedPage - 1) * (numberofArticlesPerPage)
+            var to = from + (numberofArticlesPerPage);
             $("ul._pager li").each(function () {
                 $(this).removeClass('prev');
                 $(this).removeClass('active');
@@ -1569,7 +1603,7 @@ function writeBlogsHomepagePager(data) {
     return output;
 }
 function writeBlogsPager(data) {
-    var pagerItems = Math.ceil(data.length / (numberofArticlesPerPage + 1));
+    var pagerItems = Math.ceil(data.length / (numberofArticlesPerPage));
     var output = '';
     output += '<ul class="_pager pagination justify-content-center">';
     for (var i = 1; i <= pagerItems; i++) {

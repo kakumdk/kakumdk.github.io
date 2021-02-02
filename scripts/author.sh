@@ -87,7 +87,7 @@ echo '<!DOCTYPE html>
 <div id="wrapper">
     <div id="top-bar" class="top-bar"></div>
     <header class="tech-header header">
-        <div class="container-fluid">
+        <div class="container">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -121,12 +121,12 @@ echo '<!DOCTYPE html>
                         <li class="nav-item">
                             <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
-                        </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>-->
+<!--                            </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
                         </li>
@@ -343,7 +343,7 @@ do
 <div id="wrapper">
     <div id="top-bar" class="top-bar"></div>
     <header class="tech-header header">
-        <div class="container-fluid">
+        <div class="container">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -377,12 +377,12 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/links.html" title="Links">Links</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>
-                        </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>-->
+<!--                            </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
                         </li>
@@ -413,7 +413,7 @@ do
     <section class="section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-wrapper">
                         <div class="custombox authorbox clearfix">
                             <h4 class="small-title">About Author</h4>
@@ -461,7 +461,7 @@ do
 
                 </div><!-- end col -->
 
-                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                     <div class="ads-type sidebar">
 
                     </div><!-- end sidebar -->
