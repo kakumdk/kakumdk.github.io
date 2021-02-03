@@ -2645,12 +2645,13 @@ and (max-device-width : 480px) {
     .price {
         position: absolute;
         color: #888;
-        right: 0;
-        padding: 5px 0 5px 5px;
+        right: 10px;
+        padding: 24px 10px 10px 10px;
         border-radius: 4px 0 0 4px;
-        font-size: 12px;
+        font-size: 15px;
         margin: 0 0 4px 0;
         line-height: 10px;
+        top: 10px;
     }
     .blog-title-area span {
         margin: 0;
@@ -2906,12 +2907,13 @@ and (max-width : 320px) {
     .price {
         position: absolute;
         color: #888;
-        right: 0;
-        padding: 5px 0 5px 5px;
+        right: 10px;
+        padding: 24px 10px 10px 10px;
         border-radius: 4px 0 0 4px;
-        font-size: 12px;
+        font-size: 15px;
         margin: 0 0 4px 0;
         line-height: 10px;
+        top: 10px;
     }
     .blog-title-area span {
         margin: 0;
@@ -3160,12 +3162,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
     .price {
         position: absolute;
         color: #888;
-        right: 0;
-        padding: 5px 0 5px 5px;
+        right: 10px;
+        padding: 24px 10px 10px 10px;
         border-radius: 4px 0 0 4px;
-        font-size: 12px;
+        font-size: 15px;
         margin: 0 0 4px 0;
         line-height: 10px;
+        top: 10px;
     }
     .blog-title-area span {
         margin: 0;
