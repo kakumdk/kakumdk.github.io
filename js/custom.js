@@ -359,7 +359,7 @@ function writeBlogsHomepage(data) {
 function writeBlogs(data) {
     var output = '';
     output += '<div class="col-md-12">' +
-        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on People&#039;s BLOG" /><hr class="invis0">' +
+        '<input class="form-control" type="text" id="peoplessearchblog" placeholder="Search articles on People&#039;s BLOG" /><hr class="invis">' +
         '</div>';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
@@ -402,7 +402,7 @@ function writeBlogs(data) {
 function writeBlogTypes(data) {
     var currentpath = window.location.pathname.split('/');
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on People&#039;s BLOG" /><hr class="invis0">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[2]+' related articles on People&#039;s BLOG" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -454,7 +454,7 @@ function writeBlogTypes(data) {
 function writeBlogTypeCategories(data) {
     var currentpath = window.location.pathname.split('/');
     var output = '';
-    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[3]+' related articles on People&#039;s BLOG" /><hr class="invis0">';
+    output += '<input class="form-control" type="text" id="peoplessearch" placeholder="Search for '+currentpath[3]+' related articles on People&#039;s BLOG" /><hr class="invis">';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');

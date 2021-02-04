@@ -36,25 +36,24 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>Blogs | People&#039;s BLOG</title>
-    <meta name="description" content="Blogs People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="People&#039;s BLOG">
+    <title>Blogs</title>
+    <meta name="description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="People&#039;s BLOGs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Blogs | People&#039;s BLOG" />
-    <meta property="og:description" content="Blogs People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:title" content="Blogs" />
+    <meta property="og:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="Blogs | People&#039;s BLOG">
-    <meta name="twitter:description" content="Blogs People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:title" content="Blogs">
+    <meta name="twitter:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -311,25 +310,24 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_type' - Blogs | People&#039;s BLOG</title>
-    <meta name="description" content="'$_type' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="People&#039;s BLOG">
+    <title>'$_type' - Blogs</title>
+    <meta name="description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="People&#039;s BLOGs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_type' - Blogs | People&#039;s BLOG" />
-    <meta property="og:description" content="'$_type' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:title" content="'$_type' - Blogs" />
+    <meta property="og:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="'$_type' - Blogs | People&#039;s BLOG">
-    <meta name="twitter:description" content="'$_type' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:title" content="'$_type' - Blogs">
+    <meta name="twitter:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -584,25 +582,24 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_category' - '$_type' Blogs | People&#039;s BLOG</title>
-    <meta name="description" content="'$_category' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="author" content="People&#039;s BLOG">
+    <title>'$_category' - '$_type' Blogs</title>
+    <meta name="description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="People&#039;s BLOGs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_category' - '$_type' Blogs | People&#039;s BLOG" />
-    <meta property="og:description" content="'$_category' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
+    <meta property="og:title" content="'$_category' - '$_type' Blogs" />
+    <meta property="og:description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="'$_category' - '$_type' Blogs | People&#039;s BLOG">
-    <meta name="twitter:description" content="'$_category' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
+    <meta name="twitter:title" content="'$_category' - '$_type' Blogs">
+    <meta name="twitter:description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
@@ -855,24 +852,23 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$title' - '$_category' Blogs | People&#039;s BLOG</title>
+    <title>'$title' - '$_category' Blogs</title>
     <meta name="description" content="'$summary'">
-    <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
     <meta name="geo.placename" content="Bangalore" />
     <meta name="geo.position" content="13.1071,77.5931" />
-    <meta name="Generator" content="People&#039;s BLOGs (https://peoplesblog.co.in)" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$title' - '$_category' Blogs | People&#039;s BLOG" />
+    <meta property="og:title" content="'$title' - '$_category' Blogs" />
     <meta property="og:description" content="'$summary'" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta property="og:image" content="https://peoplesblog.co.in/'$banner'" />
-    <meta name="twitter:title" content="'$title' - '$_category' Blogs | People&#039;s BLOG">
+    <meta name="twitter:title" content="'$title' - '$_category' Blogs">
     <meta name="twitter:description" content="'$summary'">
     <meta name="twitter:image" content="https://peoplesblog.co.in/'$banner'">
     <meta name="twitter:card" content="summary_large_image">
@@ -931,11 +927,11 @@ do
         "image": "https://peoplesblog.co.in/'$banner'",
         "author": {
           "@type": "Person",
-          "name": "Karthik"
+          "name": "'$author'"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "People&#039;s BLOG",
+          "name": "Peoples BLOG",
           "logo": {
             "@type": "ImageObject",
             "url": "https://peoplesblog.co.in/upload/favicon.webp"
