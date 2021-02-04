@@ -2491,7 +2491,7 @@ body strong {
     padding-left: 6px;
 }
 hr.invis0 {
-    border: 0;
+    border: 1px dashed #dadada;
     margin: 1rem 0;
 }
 ul.popular-articles, .recent-articles {
@@ -2711,6 +2711,10 @@ and (max-device-width : 480px) {
     .footer .newsletter-widget .btn, .footer .newsletter-widget .btn:hover {
         padding: 0.3rem 1rem !important;
         margin-top: 0 !important;
+    }
+    .footer > .container > .row > .col-lg-3,
+    .footer > .container > .row > .col-lg-2 {
+        width: auto;
     }
     .blog-list-widget .subscribe,
     .blog-list-widget .newsletter-widget-subscribe {
@@ -2974,6 +2978,10 @@ and (max-width : 320px) {
         padding: 0.3rem 1rem !important;
         margin-top: 0 !important;
     }
+    .footer > .container > .row > .col-lg-3,
+    .footer > .container > .row > .col-lg-2 {
+        width: auto;
+    }
     .blog-list-widget .subscribe,
     .blog-list-widget .newsletter-widget-subscribe {
         padding: 0 16px;
@@ -3228,6 +3236,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
     .footer .newsletter-widget .btn, .footer .newsletter-widget .btn:hover {
         padding: 0.3rem 1rem !important;
         margin-top: 0 !important;
+    }
+    .footer > .container > .row > .col-lg-3,
+    .footer > .container > .row > .col-lg-2 {
+        width: auto;
     }
     .blog-list-widget .subscribe,
     .blog-list-widget .newsletter-widget-subscribe {

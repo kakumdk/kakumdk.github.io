@@ -552,7 +552,7 @@ function writeBlogsFooter(data) {
 }
 function writePopularBlogs(data) {
     var output = '';
-    output += "<hr class='invis0'><h3>Popular Articles</h3><ul class='popular-articles'>";
+    output += "<hr class='invis0'><h3>Popular Blogs</h3><ul class='popular-articles'>";
     for (var i = 1; i <= 10; i++) {
         var random = Math.floor(Math.random() * (data.length - 1) + 1);
         if (random < data.length) {
@@ -569,7 +569,7 @@ function writePopularBlogs(data) {
 }
 function writeRecentBlogs(data) {
     var output = '';
-    output += "<hr class='invis0'><h3>Recent Articles</h3><ul class='recent-articles'>";
+    output += "<hr class='invis0'><h3>Recent Blogs</h3><ul class='recent-articles'>";
     for (var i = 1; i <= 6; i++) {
         if (i < data.length) {
             var title = data[i]['title'];

@@ -1094,7 +1094,7 @@ do
                                 </div>
                             </div>
 
-                            <hr class="invis0">
+                            <hr class="invis">
                             <div class="prevnext-articles custombox prevnextpost clearfix"></div>
 
                             <!-- div class="ads-page-2"></div --><!-- end ads-page-1 -->
