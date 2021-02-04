@@ -945,6 +945,13 @@ div.tab button:hover {
     padding: 0;
     color: #a3a5a8;
     margin: 0;
+    white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.blog-title-area .breadcrumb::-webkit-scrollbar {
+    display: none;
 }
 
 .blog-title-area.text-center .breadcrumb {
