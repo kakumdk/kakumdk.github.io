@@ -22,8 +22,6 @@ echo '<!DOCTYPE html>
     <meta name="description" content="Authors People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/authors/index.html" />
-    <link rel="shortlink" href="https://peoplesblog.co.in/authors/index.html" />
-    <link rel="revision" href="https://peoplesblog.co.in/authors/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
@@ -282,8 +280,6 @@ do
     <meta name="description" content="'$author' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/authors/'${file/%.json}.html'" />
-    <link rel="shortlink" href="https://peoplesblog.co.in/authors/'${file/%.json}.html'" />
-    <link rel="revision" href="https://peoplesblog.co.in/authors/'${file/%.json}.html'" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />

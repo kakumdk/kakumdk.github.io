@@ -40,8 +40,6 @@ do
     <meta name="description" content="Blogs People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/index.html" />
-    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/index.html" />
-    <link rel="revision" href="https://peoplesblog.co.in/blogs/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
@@ -317,8 +315,6 @@ do
     <meta name="description" content="'$_type' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
-    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
-    <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
@@ -592,8 +588,6 @@ do
     <meta name="description" content="'$_category' People&#039;s BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
-    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
-    <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
@@ -865,8 +859,6 @@ do
     <meta name="description" content="'$summary'">
     <meta name="author" content="People&#039;s BLOG">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
-    <link rel="shortlink" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
-    <link rel="revision" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${file/%.json}.html'" />
     <meta name="robots" content="index, follow">
     <meta name="icbm" content="13.1071,77.5931" />
     <meta name="geo.region" content="IN" />
