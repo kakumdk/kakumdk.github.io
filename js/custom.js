@@ -570,14 +570,13 @@ function writePopularBlogs(data) {
 function writeRecentBlogs(data) {
     var output = '';
     output += "<hr class='invis0'><h3>Recent Blogs</h3><ul class='recent-articles'>";
-    for (var i = 1; i <= 6; i++) {
-        if (i < data.length) {
+    var itr = 0;
+    for (var i = data.length - 1; i >= 0; i--) {
+        if (itr <= 5) {
             var title = data[i]['title'];
             var url = '/blogs/'+data[i]['type']+'/'+data[i]['category']+'/'+data[i]['file'].replace(".json", ".html");
             output += '<li><a href="'+url+'">'+title+'</a></li>';
-        }
-        else {
-            console.log(random);
+            itr++;
         }
     }
     output += '</ul>';
