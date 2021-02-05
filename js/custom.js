@@ -1436,13 +1436,26 @@ function writeAuthorLinks(data) {
 }
 function writeAuthors(data) {
     var output = '';
-    output += '<div class="site-links">';
+    output += '<div class="site-links"><div class="row">';
     for (var i = 0; i < data.length; i++) {
         var author = data[i]['author'];
         var authorLink = '/authors/' + data[i]['file'].replaceAll('.json', '.html');
-        output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'</a></span><br/>';
+        // output += '<span><i class="fa fa-user"></i> <a href="'+authorLink+'">'+author+'_KK</a></span><br/>';
+        output += '' +
+            '<div class="col-md-4 author-wrapper">\n' +
+            '   <img src="'+data[i]['banner400x400']+'" alt="" class="img-fluid rounded-circle">\n' +
+            '   <h5><a href="'+authorLink+'">'+data[i]['author']+'</a></h5>\n' +
+            '   <div class="topsocial">\n' +
+            '       <a target="_blank" href="'+data[i]['linkedin']+'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>\n' +
+            '       <a target="_blank" href="'+data[i]['twitter']+'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>\n' +
+            '       <a target="_blank" href="'+data[i]['facebook']+'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>\n' +
+            '       <a target="_blank" href="'+data[i]['instagram']+'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a>\n' +
+            '       <a target="_blank" href="'+data[i]['youtube']+'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a>\n' +
+            '       <a target="_blank" href="'+data[i]['website']+'" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a>\n' +
+            '   </div>' +
+            '</div>';
     }
-    output += '</div>';
+    output += '</div></div>';
     return output;
 }
 
