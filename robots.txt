@@ -62,6 +62,7 @@ Allow: /blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-an
 Allow: /blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html
 Allow: /blogs/Lifestyle/Book/2021-01-30-Benefits-of-Reading-Why-You-Should-Read.html
 Allow: /blogs/Social-Media/Health/2021-02-04-World-Cancer-Day-February-4th.html
+Allow: /blogs/Social-Media/Agriculture/2021-02-09-If-farmers-have-greater-choice-to-sell-to-whoever-and-wherever.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -144,6 +145,7 @@ Allow: /blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-an
 Allow: /blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html
 Allow: /blogs/Lifestyle/Book/2021-01-30-Benefits-of-Reading-Why-You-Should-Read.html
 Allow: /blogs/Social-Media/Health/2021-02-04-World-Cancer-Day-February-4th.html
+Allow: /blogs/Social-Media/Agriculture/2021-02-09-If-farmers-have-greater-choice-to-sell-to-whoever-and-wherever.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
