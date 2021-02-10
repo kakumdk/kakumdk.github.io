@@ -557,7 +557,7 @@ function writePopularBlogs(data) {
         var random = Math.floor(Math.random() * (data.length - 1) + 1);
         if (random < data.length) {
             var title = data[random]['title'];
-            var url = '/blogs/'+data[random]['type']+'/'+data[random]['category']+'/'+data[random]['file'].replace(".json", ".html");
+            var url = '/blogs/'+data[random]['type'].replace(" ", "-")+'/'+data[random]['category'].replace(" ", "-")+'/'+data[random]['file'].replace(".json", ".html");
             output += '<li><a href="'+url+'">'+title+'</a></li>';
         }
         else {
@@ -574,7 +574,7 @@ function writeRecentBlogs(data) {
     for (var i = data.length - 1; i >= 0; i--) {
         if (itr <= 5) {
             var title = data[i]['title'];
-            var url = '/blogs/'+data[i]['type']+'/'+data[i]['category']+'/'+data[i]['file'].replace(".json", ".html");
+            var url = '/blogs/'+data[i]['type'].replace(" ", "-")+'/'+data[i]['category'].replace(" ", "-")+'/'+data[i]['file'].replace(".json", ".html");
             output += '<li><a href="'+url+'">'+title+'</a></li>';
             itr++;
         }
