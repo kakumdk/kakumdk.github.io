@@ -20,7 +20,6 @@ Allow: /blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environmen
 Allow: /blogs/Sci-Tech/Drupal/2015-07-11-create-related-content-different-content-types-through-taxonomy-drupal7.html
 Allow: /blogs/Sci-Tech/Drupal/2015-07-11-filter-content-between-date-ranges-drupal7.html
 Allow: /blogs/Sci-Tech/Drupal/2015-07-12-drupal7-simple-test-case-custom-module.html
-Allow: /blogs/Sci-Tech/Css/2015-07-25-getting-started-sassscss.html
 Allow: /blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html
 Allow: /blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html
 Allow: /blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html
@@ -104,7 +103,6 @@ Allow: /blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environmen
 Allow: /blogs/Sci-Tech/Drupal/2015-07-11-create-related-content-different-content-types-through-taxonomy-drupal7.html
 Allow: /blogs/Sci-Tech/Drupal/2015-07-11-filter-content-between-date-ranges-drupal7.html
 Allow: /blogs/Sci-Tech/Drupal/2015-07-12-drupal7-simple-test-case-custom-module.html
-Allow: /blogs/Sci-Tech/Css/2015-07-25-getting-started-sassscss.html
 Allow: /blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html
 Allow: /blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html
 Allow: /blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html

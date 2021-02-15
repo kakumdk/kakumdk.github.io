@@ -95,6 +95,7 @@ $(function() {
         $('.blog-list-homepage-blogs').html(output);
         $(".blog-list-homepage-blogs_pager").append(writeBlogsHomepagePager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads-home').append(writePopularBlogs(JSON.parse(text)));
         }, 200);
@@ -104,6 +105,7 @@ $(function() {
         $('.blog-list-blogs').html(writeBlogs(data));
         $(".blog-list-blogs_pager").append(writeBlogsPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads-blogs').append(writePopularBlogs(JSON.parse(text)));
         }, 200);
@@ -114,6 +116,7 @@ $(function() {
         $('.blog-list-type').html(output);
         $(".blog-list-type_pager").append(writeBlogTypesPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads-type').append(writePopularBlogs(JSON.parse(text)));
         }, 200);
@@ -124,6 +127,7 @@ $(function() {
         $('.blog-list-category').html(output);
         $(".blog-list-category_pager").append(writeBlogTypeCategoriesPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads').append(writePopularBlogs(JSON.parse(text)));
             $('.ads-article').append(writePopularBlogs(JSON.parse(text)));
@@ -163,9 +167,11 @@ $(function() {
         socialWebShare();
     });
 
-    readFile("/blogs-content-merged/blogs.json", function(text){
-        $(".peoplesblog-categories-links").html('<h4>Categories</h4>');
-        $(".peoplesblog-categories-links").append(writeLinks(JSON.parse(text)));
+    readFile("/blogs-content-merged/blogs.json", function(text) {
+        $(".peoplesblog-blog-types-links").html('<h4>Types</h4>');
+        $(".peoplesblog-blog-types-links").append(writeBlogTypesLinks(JSON.parse(text)));
+        $(".peoplesblog-categories-links").append('<h4>Categories</h4>');
+        $(".peoplesblog-categories-links").append(writeCategoriesLinks(JSON.parse(text)));
     });
     readFile("/../../../blogs-content-merged/blogs.json", function(text){
         $(".prevnext-articles").html(writePreviousNextArticles(JSON.parse(text)));
@@ -176,6 +182,7 @@ $(function() {
         $('.blog-list-blogs-authors').html(output);
         $(".blog-list-blogs-authors_pager").append(writeAuthorBlogsPager(data));
         $('.blog-list-homepage-footer').html(writeBlogsFooter(data));
+        $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
     });
     setTimeout(function () {
         $("#peoplessearch").on("keyup", function(event) {
@@ -541,13 +548,24 @@ function writeBlogsFooter(data) {
     var f_itr = 0;
     $.each(allCat, function(i, el){
         if($.inArray(el, uniqueCat) === -1) {
-            if (f_itr <= 4) {
+            if (f_itr <= 7) {
                 uniqueCat[i] = el;
                 output += '<li><a href="'+el+'" title="People&#039;s BLOG">'+i.replace("-", " ")+'</a></li>';
                 f_itr = f_itr + 1;
             }
         }
     });
+    return output;
+}
+function writeBlogsFooterTrending(data) {
+    var random = Math.floor(Math.random() * (data.length - 8) + 1);
+    console.log(random);
+    var output = '';
+    for (var i = random; i <= random + 7; i++) {
+        var title = data[i]['title'];
+        var url = '/blogs/'+data[i]['type'].replace(" ", "-")+'/'+data[i]['category'].replace(" ", "-")+'/'+data[i]['file'].replace(".json", ".html");
+        output += '<li><a href="'+url+'">'+title+'</a></li>';
+    }
     return output;
 }
 function writePopularBlogs(data) {
@@ -648,7 +666,30 @@ function socialWebShare() {
     // var title = $(".social-web-share-api").attr("title");
     // console.log(title);
 }
-function writeLinks(data) {
+function writeBlogTypesLinks(data) {
+    var output = '';
+    var itr = 0;
+    var links = [];
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        // var category = data[i]['category'].split(',');
+        for (var j = 0; j < type.length; j++) {
+            var baseurl = window.location.origin;
+            var currentType = type[j].trim().replace(" ", "-");
+            var typeLink = baseurl+'/blogs/'+currentType+'/index.html';
+            links[currentType] = '<div class="child"><span><i class="fa fa-tag"></i> <a href="'+typeLink+'">'+currentType.replace("-", " ")+'</a></span></div>';
+        }
+    }
+    output += '<div class="site-links">';
+    for (var key in links) {
+        if (links.hasOwnProperty(key)) {
+            output += links[key];
+        }
+    }
+    output += '</div>';
+    return output;
+}
+function writeCategoriesLinks(data) {
     var output = '';
     var itr = 0;
     var links = [];
@@ -1416,7 +1457,7 @@ function disableInspectElement() {
 $(function() {
 
     readFile("/authors-content-merged/authors.json", function (text) {
-        $(".peoplesblog-authors-links").html(writeAuthorLinks(JSON.parse(text)));
+        // $(".peoplesblog-authors-links").html(writeAuthorLinks(JSON.parse(text)));
         $(".peoplesblog-authors").append(writeAuthors(JSON.parse(text)));
     });
 

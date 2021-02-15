@@ -134,9 +134,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
+<!--                            </li>-->
 <!--                            <li class="nav-item">-->
 <!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
 <!--                            </li>-->
@@ -205,7 +205,7 @@ do
         <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
@@ -224,9 +224,20 @@ do
                     </div><!-- end widget -->
                 </div><!-- end col -->
 
-                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Popular Categories</h2>
+                        <h2 class="widget-title">Trending Blogs</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer-trending">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Recent</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
 
@@ -240,12 +251,14 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a title="About" href="/about.html">About</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="RSS" href="/rss.xml" target="_blank">RSS</a></li>
+                                <li><a title="Links" href="/links.html">Types</a></li>
+                                <li><a title="Links" href="/links.html">Categories</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
-                                <li><a title="Contact" href="/contact.html">Contact</a></li>
-                            </ul>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>                            </ul>
                         </div><!-- end link-widget -->
                     </div><!-- end widget -->
                 </div><!-- end col -->
@@ -408,9 +421,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
+<!--                            </li>-->
 <!--                            <li class="nav-item">-->
 <!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
 <!--                            </li>-->
@@ -478,7 +491,7 @@ do
         <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
@@ -497,9 +510,20 @@ do
                     </div><!-- end widget -->
                 </div><!-- end col -->
 
-                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Popular Categories</h2>
+                        <h2 class="widget-title">Trending Blogs</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer-trending">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Recent</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
 
@@ -513,10 +537,13 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a title="About" href="/about.html">About</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="RSS" href="/rss.xml" target="_blank">RSS</a></li>
+                                <li><a title="Links" href="/links.html">Types</a></li>
+                                <li><a title="Links" href="/links.html">Categories</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
@@ -680,9 +707,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
+<!--                            </li>-->
 <!--                            <li class="nav-item">-->
 <!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
 <!--                            </li>-->
@@ -751,7 +778,7 @@ do
         <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
@@ -770,9 +797,20 @@ do
                     </div><!-- end widget -->
                 </div><!-- end col -->
 
-                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Popular Categories</h2>
+                        <h2 class="widget-title">Trending Blogs</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer-trending">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Recent</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
 
@@ -786,10 +824,13 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a title="About" href="/about.html">About</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="RSS" href="/rss.xml" target="_blank">RSS</a></li>
+                                <li><a title="Links" href="/links.html">Types</a></li>
+                                <li><a title="Links" href="/links.html">Categories</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
@@ -978,9 +1019,9 @@ do
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html" title="About">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/links.html" title="Links">Links</a>
-                        </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
+<!--                            </li>-->
 <!--                            <li class="nav-item">-->
 <!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
 <!--                            </li>-->
@@ -1102,7 +1143,7 @@ do
         <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
                             <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp" class="img-fluid"></a>
@@ -1121,9 +1162,20 @@ do
                     </div><!-- end widget -->
                 </div><!-- end col -->
 
-                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <div class="widget">
-                        <h2 class="widget-title">Popular Categories</h2>
+                        <h2 class="widget-title">Trending Blogs</h2>
+                        <div class="link-widget">
+                            <ul class="blog-list-homepage-footer-trending">
+
+                            </ul>
+                        </div><!-- end link-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">Recent</h2>
                         <div class="link-widget">
                             <ul class="blog-list-homepage-footer">
 
@@ -1137,10 +1189,13 @@ do
                         <h2 class="widget-title">Misc</h2>
                         <div class="link-widget">
                             <ul>
-                                <li><a title="About" href="/about.html">About</a></li>
-                                <li><a title="Links" href="/links.html">Links</a></li>
+                                <li><a title="RSS" href="/rss.xml" target="_blank">RSS</a></li>
+                                <li><a title="Links" href="/links.html">Types</a></li>
+                                <li><a title="Links" href="/links.html">Categories</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
                                 <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                 <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
                                 <li><a title="Contact" href="/contact.html">Contact</a></li>
                             </ul>
                         </div><!-- end link-widget -->
@@ -1200,23 +1255,23 @@ jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
 date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-          <url><loc>https://peoplesblog.co.in/</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
+          <url><loc>https://peoplesblog.co.in/</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>'$created'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>'$created'</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
@@ -1231,7 +1286,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
 #      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
       echo "Writing sitemap.xml - "$jsonfile
-      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$created'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
 done
 echo '</urlset>' >> $pwd'/sitemap.xml'
@@ -1350,3 +1405,48 @@ Disallow: /content/
 Disallow: /tmp.html
 
 Sitemap: https://peoplesblog.co.in/sitemap.xml' >> $pwd'/robots.txt'
+
+#################################################################################################################
+#################################################################################################################
+##### RSS/Atom feeds
+#################################################################################################################
+#################################################################################################################
+echo '<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<meta content="noindex, nofollow" name="robots"/>
+<channel>
+<title>Peoples BLOG - Enriching thoughts for your daily life</title>
+<link>https://peoplesblog.co.in/</link>
+<atom:link href="https://peoplesblog.co.in/rss.xml" rel="self" type="application/rss+xml"/>
+<description>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas and Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science and Technology..</description>
+<language>en-US</language>' > $pwd'/rss.xml'
+data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
+for row in $(echo "${data}" | jq -r '.[] | @base64'); do
+    _jq() {
+     echo ${row} | base64 --decode | jq -r ${1}
+    }
+    IFS=',' read -ra category_array <<< "$(_jq '.category')"
+    categories=''
+    for _category_i in "${category_array[@]}"
+    do
+      _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
+      _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
+      title=$(echo "$(_jq '.title')" | sed -e 's/&/and/g')
+      summary=$(echo "$(_jq '.summary')" | sed -e 's/&/and/g')
+      created=$(_jq '.created')
+      banner="https://peoplesblog.co.in/"$(_jq '.banner788x443')
+      jsonfile=$(_jq '.file')
+      echo "Writing rss.xml - "$jsonfile
+      echo '<item>
+        <title><![CDATA[ '$title' ]]></title>
+        <link>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</link>
+        <description><![CDATA[ '$summary' ]]></description>
+        <pubDate>'$created'</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</guid>
+        <comments>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html#comments'</comments>
+        <enclosure length="0" type="image/jpeg" url="'$banner'"/>
+        <content:encoded><![CDATA[ '$summary' ]]></content:encoded>
+      </item>' >> $pwd'/rss.xml'
+    done
+done
+echo '</channel>
+</rss>' >> $pwd'/rss.xml'

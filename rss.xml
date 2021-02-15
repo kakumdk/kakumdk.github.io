@@ -1,0 +1,480 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<meta content="noindex, nofollow" name="robots"/>
+<channel>
+<title>Peoples BLOG - Enriching thoughts for your daily life</title>
+<link>https://peoplesblog.co.in/</link>
+<atom:link href="https://peoplesblog.co.in/rss.xml" rel="self" type="application/rss+xml"/>
+<description>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas and Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science and Technology..</description>
+<language>en-US</language>
+<item>
+        <title><![CDATA[ Drupal Multisite development environment Configuration in Ubuntu14 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html</link>
+        <description><![CDATA[ Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes inside the file as mentioned below ]]></description>
+        <pubDate>08 Jul, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-08-drupal-multisite-development-environment-configuration-ubuntu14.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/drupalconf_screenshot.png"/>
+        <content:encoded><![CDATA[ Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes inside the file as mentioned below ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Create Related Content of Different Content Types through Taxonomy in Drupal7 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-11-create-related-content-different-content-types-through-taxonomy-drupal7.html</link>
+        <description><![CDATA[ Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field ]]></description>
+        <pubDate>11 Jul, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-11-create-related-content-different-content-types-through-taxonomy-drupal7.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-11-create-related-content-different-content-types-through-taxonomy-drupal7.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/RC6.jpg"/>
+        <content:encoded><![CDATA[ Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Filter content between Date ranges in Drupal 7 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-11-filter-content-between-date-ranges-drupal7.html</link>
+        <description><![CDATA[ It is tempting to believe that using the "is between" on a date fields will work. However, this option is used only in the case of events "Starting" on a range of date. ]]></description>
+        <pubDate>11 Jul, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-11-filter-content-between-date-ranges-drupal7.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-11-filter-content-between-date-ranges-drupal7.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Figure1.jpeg"/>
+        <content:encoded><![CDATA[ It is tempting to believe that using the "is between" on a date fields will work. However, this option is used only in the case of events "Starting" on a range of date. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Drupal7 Simple Test case in Custom Module ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-12-drupal7-simple-test-case-custom-module.html</link>
+        <description><![CDATA[ Why to write test case? Very simple, in one word, Its waste of time and effort of checking something we changed in code and that effects other part, and to make sure every time what change we make that should not effect any other code, so this task can be done by our test cases ]]></description>
+        <pubDate>12 Jul, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-12-drupal7-simple-test-case-custom-module.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-07-12-drupal7-simple-test-case-custom-module.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/testcase.jpg"/>
+        <content:encoded><![CDATA[ Why to write test case? Very simple, in one word, Its waste of time and effort of checking something we changed in code and that effects other part, and to make sure every time what change we make that should not effect any other code, so this task can be done by our test cases ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Custom Batch processing in Drupal 7 to update Nodes - Batch API ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html</link>
+        <description><![CDATA[ Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors. ]]></description>
+        <pubDate>17 Aug, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-17-custom-batch-processing-drupal-7-update-nodes-batch-api.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/D7install5_0.png"/>
+        <content:encoded><![CDATA[ Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Configuring and Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html</link>
+        <description><![CDATA[ Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed ]]></description>
+        <pubDate>26 Aug, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-08-26-configuring-debugging-drupal-7-phpstorm-xdebug-ubuntu14.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/phpstorm-xdebug-drupal.jpg"/>
+        <content:encoded><![CDATA[ Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug. The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Auto Tagging of Taxonomy terms in Drupal7 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html</link>
+        <description><![CDATA[ This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave() ]]></description>
+        <pubDate>27 Sep, 2015</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2015-09-27-auto-tagging-taxonomy-terms-drupal7.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/multiTaxonomy.png"/>
+        <content:encoded><![CDATA[ This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave() ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Creating a Twitter Share block programmatically in Drupal 8 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-03-14-creating-twitter-share-block-programmatically-drupal-8.html</link>
+        <description><![CDATA[ How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like Accessing the Current Node data in Block. How do we create the link programmatically. Disable cache for particular block. ]]></description>
+        <pubDate>14 Mar, 2017</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-03-14-creating-twitter-share-block-programmatically-drupal-8.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-03-14-creating-twitter-share-block-programmatically-drupal-8.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/drupal-content-related.png"/>
+        <content:encoded><![CDATA[ How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like Accessing the Current Node data in Block. How do we create the link programmatically. Disable cache for particular block. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Integrating Codeception with Drupal to have added support for TDD ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-03-26-integrating-codeception-drupal-have-added-support-tdd.html</link>
+        <description><![CDATA[ Getting Codeception into Drupal, will have added support for Test Driven Development.. Specifically in having the Acceptance Tests in the project.. Since Test Driven Development would be one the most integral part of the project.. And also internal team and vendor team would be having more confidence in the version releases of their project.. one can prefer TDD. ]]></description>
+        <pubDate>26 Mar, 2017</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-03-26-integrating-codeception-drupal-have-added-support-tdd.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-03-26-integrating-codeception-drupal-have-added-support-tdd.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/testdriven-development-with-drupal-and-codeception-drupalcamp-brighton-1-638.jpg"/>
+        <content:encoded><![CDATA[ Getting Codeception into Drupal, will have added support for Test Driven Development.. Specifically in having the Acceptance Tests in the project.. Since Test Driven Development would be one the most integral part of the project.. And also internal team and vendor team would be having more confidence in the version releases of their project.. one can prefer TDD. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Aegir on Docker - Develop, Test, With Easier Deployment ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-09-03-aegir-docker-develop-test-easier-deployment.html</link>
+        <description><![CDATA[ Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments. Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting ]]></description>
+        <pubDate>03 Sep, 2017</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-09-03-aegir-docker-develop-test-easier-deployment.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2017-09-03-aegir-docker-develop-test-easier-deployment.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/maxresdefault.jpg"/>
+        <content:encoded><![CDATA[ Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments. Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Secure Website running on Apache with Let's Encrypt on Linux ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2018-02-01-secure-website-running-apache-lets-encrypt-linux.html</link>
+        <description><![CDATA[ Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server ]]></description>
+        <pubDate>01 Feb, 2018</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2018-02-01-secure-website-running-apache-lets-encrypt-linux.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2018-02-01-secure-website-running-apache-lets-encrypt-linux.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/letsencrypt_bpic.jpg"/>
+        <content:encoded><![CDATA[ Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Sites Still Vulnerable to Drupalgeddon 2 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2018-06-27-sites-still-vulnerable-drupalgeddon-2.html</link>
+        <description><![CDATA[ Attackers are exploiting Drupalgeddon 2 critical vulnerability in Drupal to compromise systems and secretly turn them into malicious cryptocurrency mining machines like cryptojacking malware, mine for Monero. The only side effects a victim might notice is that their system is running slower or doing more work than usual. ]]></description>
+        <pubDate>27 Jun, 2018</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2018-06-27-sites-still-vulnerable-drupalgeddon-2.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2018-06-27-sites-still-vulnerable-drupalgeddon-2.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/web-application-firewall-blogpost-image.png"/>
+        <content:encoded><![CDATA[ Attackers are exploiting Drupalgeddon 2 critical vulnerability in Drupal to compromise systems and secretly turn them into malicious cryptocurrency mining machines like cryptojacking malware, mine for Monero. The only side effects a victim might notice is that their system is running slower or doing more work than usual. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ AES Encrypt and Decrypt ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Php/2019-06-11-aes-encrypt-decrypt.html</link>
+        <description><![CDATA[ Advanced Encryption Standard, where we use "AES-256" to encrypt the data with Cipher. Encrypt and Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC". ]]></description>
+        <pubDate>11 Jun, 2019</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Php/2019-06-11-aes-encrypt-decrypt.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Php/2019-06-11-aes-encrypt-decrypt.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/1_4BDmgHbEkjYDUtEK-ntr6Q.png"/>
+        <content:encoded><![CDATA[ Advanced Encryption Standard, where we use "AES-256" to encrypt the data with Cipher. Encrypt and Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC". ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Store Drupal logs on Amazon S3 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-06-24-store-drupal-logs-amazon-s3.html</link>
+        <description><![CDATA[ Store Drupal logs on Amazon S3 via hook_watchdog, so that you can get rid of heavy logs on your drupal database and can later read from the S3 ]]></description>
+        <pubDate>24 Jun, 2019</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-06-24-store-drupal-logs-amazon-s3.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-06-24-store-drupal-logs-amazon-s3.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/amazons3_drupal.png"/>
+        <content:encoded><![CDATA[ Store Drupal logs on Amazon S3 via hook_watchdog, so that you can get rid of heavy logs on your drupal database and can later read from the S3 ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Cache Set, Get and Invalidate per User in Drupal 7 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-06-26-cache-set-get-and-invalidate-user-drupal-7.html</link>
+        <description><![CDATA[ How to Set, Get and Invalidate the caches per user in Drupal 7, this blog article will explain a brief of how to do such implementation on Drupal using the default drupal cache functions ]]></description>
+        <pubDate>26 Jun, 2019</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-06-26-cache-set-get-and-invalidate-user-drupal-7.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-06-26-cache-set-get-and-invalidate-user-drupal-7.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/cache_segments_and_caching_in_drupal_7.jpg"/>
+        <content:encoded><![CDATA[ How to Set, Get and Invalidate the caches per user in Drupal 7, this blog article will explain a brief of how to do such implementation on Drupal using the default drupal cache functions ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Drupal JSON:API GET, POST, PATCH and DELETE Samples ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-11-08-drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
+        <description><![CDATA[ The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern HTTP Methods JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included. ]]></description>
+        <pubDate>11 Nov, 2019</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-11-08-drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2019-11-08-drupal-jsonapi-get-post-patch-and-delete-samples.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Decoupled Drupal 8 with JSON API.jpg"/>
+        <content:encoded><![CDATA[ The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern HTTP Methods JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ 'PigeonBot' is the first robot that can bend its wings like a real bird ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html</link>
+        <description><![CDATA[ Pigeons may be considered rats of the sky, but some scientists have found greater value in these urban birds: the blueprint for a new generation of flying machines ]]></description>
+        <pubDate>31 May, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Social-Media/Robot/2020-05-31-PigeonBot-is-the-first-robot-that-can-bend-its-wings.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/pigeon-bot_feat.jpg"/>
+        <content:encoded><![CDATA[ Pigeons may be considered rats of the sky, but some scientists have found greater value in these urban birds: the blueprint for a new generation of flying machines ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Scientists Have Created Hexagonal Salt, For First Time Ever ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html</link>
+        <description><![CDATA[ While it probably won't make it to your dining table, a new scientific achievement might be able to help in everything from radar equipment to electric cars: scientists have been able to form salt, aka sodium chloride (NaCl), in a hexagonal shape ]]></description>
+        <pubDate>01 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Salt/2020-06-01-Scientists-Have-Created-Hexagonal-Salt.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/salt-2.jpg"/>
+        <content:encoded><![CDATA[ While it probably won't make it to your dining table, a new scientific achievement might be able to help in everything from radar equipment to electric cars: scientists have been able to form salt, aka sodium chloride (NaCl), in a hexagonal shape ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Courtship time - Make it memorable, ways to add some spice ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html</link>
+        <description><![CDATA[ Finally you found a guy/girl with whom you can't wait to start most excitement time of your life.. But you see lot of time for wedding and So you got lot of time to know each other even more better.. The Best you can do is make this time memorable ]]></description>
+        <pubDate>04 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Love/2020-06-04-Courtship-time-Make-it-memorable-ways-to-add-some-spice.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/courtship_1.jpg"/>
+        <content:encoded><![CDATA[ Finally you found a guy/girl with whom you can't wait to start most excitement time of your life.. But you see lot of time for wedding and So you got lot of time to know each other even more better.. The Best you can do is make this time memorable ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Egg Stuffed Paratha Recipe - Home made ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Food/Egg/2020-06-04-Egg-Stuffed-Paratha-Home-made-recipe.html</link>
+        <description><![CDATA[ Egg Stuffed Paratha is a delicious and healthy Paratha dish, filled with egg mixture. Both the eggs and whole wheat are healthy as it provides the right amount of proteins and carbs. The egg mixture has finely chopped onions, green chili and coriander leaves. This is then slided into the half cooked paratha pockets and cooked further. The Egg Stuffed Parathas are quite filling in itself ]]></description>
+        <pubDate>04 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Food/Egg/2020-06-04-Egg-Stuffed-Paratha-Home-made-recipe.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Food/Egg/2020-06-04-Egg-Stuffed-Paratha-Home-made-recipe.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/egg.jpg"/>
+        <content:encoded><![CDATA[ Egg Stuffed Paratha is a delicious and healthy Paratha dish, filled with egg mixture. Both the eggs and whole wheat are healthy as it provides the right amount of proteins and carbs. The egg mixture has finely chopped onions, green chili and coriander leaves. This is then slided into the half cooked paratha pockets and cooked further. The Egg Stuffed Parathas are quite filling in itself ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Bangalore <=> Mysore (2 Days + 1 Night, Ride Plan) ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Travel/Couple/2020-06-04-Two-days-trip-from-Bangalore-to-Mysore.html</link>
+        <description><![CDATA[ Two days Ride from Bangalore Mysore Bangalore, If you are a Couple riding on Bike or You are riding with a Friend in two different Bikes, then this plan for two days works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route ]]></description>
+        <pubDate>04 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Travel/Couple/2020-06-04-Two-days-trip-from-Bangalore-to-Mysore.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Travel/Couple/2020-06-04-Two-days-trip-from-Bangalore-to-Mysore.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/b-m-b_0.webp"/>
+        <content:encoded><![CDATA[ Two days Ride from Bangalore Mysore Bangalore, If you are a Couple riding on Bike or You are riding with a Friend in two different Bikes, then this plan for two days works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ UnConditional Love in a Couple's Relationship ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Couple/2020-06-06-Un-Conditional-Love-in-a-relationship.html</link>
+        <description><![CDATA[ It is commonly said that Women are complex in mental nature while Men remain easy to understand and simple. Whatever be the reasons that backup this comment, in relationships both Men and Women follow slightly diverted paths. What Men look for in a relationship is not what motivates Women to fall in relationships ]]></description>
+        <pubDate>06 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Couple/2020-06-06-Un-Conditional-Love-in-a-relationship.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Couple/2020-06-06-Un-Conditional-Love-in-a-relationship.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/rafal_0.jpg"/>
+        <content:encoded><![CDATA[ It is commonly said that Women are complex in mental nature while Men remain easy to understand and simple. Whatever be the reasons that backup this comment, in relationships both Men and Women follow slightly diverted paths. What Men look for in a relationship is not what motivates Women to fall in relationships ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Checklist for making a Eco-Friendly Home ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-07-Home-with-low-impact-on-envirnoment.html</link>
+        <description><![CDATA[ To build a home, which makes low-impact environmentally. And built using materials and technology that lowers its energy needs in future. And also make sure built home is reliable for few decades with minimal energy spent on it. To do this, you have to consider Energy? what Sustainable materials to be used? how it impacts on our health? And what is costs ]]></description>
+        <pubDate>07 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-07-Home-with-low-impact-on-envirnoment.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-07-Home-with-low-impact-on-envirnoment.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/eco-home.jpg"/>
+        <content:encoded><![CDATA[ To build a home, which makes low-impact environmentally. And built using materials and technology that lowers its energy needs in future. And also make sure built home is reliable for few decades with minimal energy spent on it. To do this, you have to consider Energy? what Sustainable materials to be used? how it impacts on our health? And what is costs ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Indian style Spanish omelette, Egg + Potato + Onion ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Food/Egg/2020-06-07-Indian-style-spanish-omellete.html</link>
+        <description><![CDATA[ Egg with Potato plus Onion will make a delicious and healthy breakfast, You have have it as a Breakfast or you can have it as a Snack in the day, will also be a great starter in the barbecue. This combination of dish is called Spanish omelette, but lets make it in Indian Style ]]></description>
+        <pubDate>07 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Food/Egg/2020-06-07-Indian-style-spanish-omellete.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Food/Egg/2020-06-07-Indian-style-spanish-omellete.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/spanish-omelette.jpg"/>
+        <content:encoded><![CDATA[ Egg with Potato plus Onion will make a delicious and healthy breakfast, You have have it as a Breakfast or you can have it as a Snack in the day, will also be a great starter in the barbecue. This combination of dish is called Spanish omelette, but lets make it in Indian Style ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Bangalore <=> Ghati Subramanya (Morning Ride Plan) ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Travel/GhatiSubramanya/2020-06-12-Short-trip-from-Bangalore-to-Ghati.html</link>
+        <description><![CDATA[ Ghati Subramanya is an ancient Hindu temple, 50 kms away from Bangalore towards Doddaballapur situated on the outskirts of Bangalore. Ghati Subramanya has a recorded history of more than 600 years. Ghati Subramanya Temple was first developed by the Ghorpade rulers of Sandur who ruled parts of Bellary ]]></description>
+        <pubDate>12 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Travel/GhatiSubramanya/2020-06-12-Short-trip-from-Bangalore-to-Ghati.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Travel/GhatiSubramanya/2020-06-12-Short-trip-from-Bangalore-to-Ghati.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Peoples-Blog-Bangalore-Ghati-Subramanya.webp"/>
+        <content:encoded><![CDATA[ Ghati Subramanya is an ancient Hindu temple, 50 kms away from Bangalore towards Doddaballapur situated on the outskirts of Bangalore. Ghati Subramanya has a recorded history of more than 600 years. Ghati Subramanya Temple was first developed by the Ghorpade rulers of Sandur who ruled parts of Bellary ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Openness in a Couples Relationships can be Secret/Private ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Couple/2020-06-14-Openness-in-Relationships-Secret-or-Private.html</link>
+        <description><![CDATA[ In a healthy romantic relationship, as time goes on trust is earned, and we eventually open up more and more. Based on each others mutual respect and valuing, couples are sometimes unclear in how much they should or want to share within each other. Each of them have right to privacy and each decide, how much to share or how much to open up ]]></description>
+        <pubDate>14 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Couple/2020-06-14-Openness-in-Relationships-Secret-or-Private.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Couple/2020-06-14-Openness-in-Relationships-Secret-or-Private.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Peoples-Blog-Openness-in-couples-relationship_0.jpg"/>
+        <content:encoded><![CDATA[ In a healthy romantic relationship, as time goes on trust is earned, and we eventually open up more and more. Based on each others mutual respect and valuing, couples are sometimes unclear in how much they should or want to share within each other. Each of them have right to privacy and each decide, how much to share or how much to open up ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Construction materials for Thermal Resistance Walls, Earth Bricks ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-20-Construction-materials-for-Thermal-Resistant-Walls.html</link>
+        <description><![CDATA[ Construction process can be tedious, time consuming, and expensive. To overcome this during construction, varied methods of construction is being considered and developed. Also, materials and equipment used for construction are also being fabricated to enhance the quality of construction and furthermore minimize the time and cost. Interlocking bricks is one such advancement in construction industry ]]></description>
+        <pubDate>20 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-20-Construction-materials-for-Thermal-Resistant-Walls.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-20-Construction-materials-for-Thermal-Resistant-Walls.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Peoples-Blog-Interlock-Clay-Brick.webp"/>
+        <content:encoded><![CDATA[ Construction process can be tedious, time consuming, and expensive. To overcome this during construction, varied methods of construction is being considered and developed. Also, materials and equipment used for construction are also being fabricated to enhance the quality of construction and furthermore minimize the time and cost. Interlocking bricks is one such advancement in construction industry ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Why to have a Green Roof or Eco Friendly Roof on a Building ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-21-Why-to-have-a-Green-Roof-or-Eco-Friendly-Roof-on-a-Building.html</link>
+        <description><![CDATA[ A roof of a building that is partially or completely covered with vegetation, that is planted over a waterproofing membrane. It may also include additional layers such as a root barrier and drainage and irrigation systems. Rooftop ponds are another form of green roofs which are used to treat greywater ]]></description>
+        <pubDate>21 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-21-Why-to-have-a-Green-Roof-or-Eco-Friendly-Roof-on-a-Building.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-06-21-Why-to-have-a-Green-Roof-or-Eco-Friendly-Roof-on-a-Building.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Peoples-Blog-Green-Roof.jpg"/>
+        <content:encoded><![CDATA[ A roof of a building that is partially or completely covered with vegetation, that is planted over a waterproofing membrane. It may also include additional layers such as a root barrier and drainage and irrigation systems. Rooftop ponds are another form of green roofs which are used to treat greywater ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Bangalore -> Murdeshwar -> Gokarna -> Goa -> Dandeli -> Bangalore ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Travel/Bangalore/2020-06-23-Bangalore-Murdeshwar-Gokarna-Goa-Dandeli.html</link>
+        <description><![CDATA[ Ten days Ride from Bangalore Murdeshwar Gokarna Goa Dandeli Bangalore, If you are a Couple riding on Bike or You are riding with a Friend in two different Bikes, then this plan for ten days works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route ]]></description>
+        <pubDate>23 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Travel/Bangalore/2020-06-23-Bangalore-Murdeshwar-Gokarna-Goa-Dandeli.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Travel/Bangalore/2020-06-23-Bangalore-Murdeshwar-Gokarna-Goa-Dandeli.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Peoples-Blog-Bangalore-Goa.webp"/>
+        <content:encoded><![CDATA[ Ten days Ride from Bangalore Murdeshwar Gokarna Goa Dandeli Bangalore, If you are a Couple riding on Bike or You are riding with a Friend in two different Bikes, then this plan for ten days works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Growing Enough Food to Feed a Family Year-Round by Yourself ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Food/Family/2020-06-28-Growing-Enough-Food-to-Feed-a-Family.html</link>
+        <description><![CDATA[ It's a great thought of growing enough food to feed your family year round by yourself. Certain things are really important for such a though, like how much food is needed for your family, which crops to plant, how to get the most from your plot, and how to preserve your extra harvest ]]></description>
+        <pubDate>28 Jun, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Food/Family/2020-06-28-Growing-Enough-Food-to-Feed-a-Family.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Food/Family/2020-06-28-Growing-Enough-Food-to-Feed-a-Family.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Peoples-Blog-Growing-Enough-Food-to-Feed-a-Family.jpg"/>
+        <content:encoded><![CDATA[ It's a great thought of growing enough food to feed your family year round by yourself. Certain things are really important for such a though, like how much food is needed for your family, which crops to plant, how to get the most from your plot, and how to preserve your extra harvest ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ World's Fastest Anti-Ship Cruise Missile in Operation ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Social-Media/Missile/2020-11-30-Worlds-fastest-anti-ship-cruise-missile-in-operation.html</link>
+        <description><![CDATA[ BrahMos is a medium-range ramjet supersonic cruise missile that can be launched from submarine, ships, aircraft, or land. It is the fastest supersonic cruise missile in the world. It is a joint venture between the Russian Federation's NPO Mashinostroyeniya and India's Defence Research and Development Organisation (DRDO), who together have formed BrahMos Aerospace. The name BrahMos is formed from the names of two rivers, the Brahmaputra of India and the Moskva of Russia ]]></description>
+        <pubDate>30 Nov, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Social-Media/Missile/2020-11-30-Worlds-fastest-anti-ship-cruise-missile-in-operation.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Social-Media/Missile/2020-11-30-Worlds-fastest-anti-ship-cruise-missile-in-operation.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Worlds-fastest-anti-ship-cruise-missile-in-operation_1.jpg"/>
+        <content:encoded><![CDATA[ BrahMos is a medium-range ramjet supersonic cruise missile that can be launched from submarine, ships, aircraft, or land. It is the fastest supersonic cruise missile in the world. It is a joint venture between the Russian Federation's NPO Mashinostroyeniya and India's Defence Research and Development Organisation (DRDO), who together have formed BrahMos Aerospace. The name BrahMos is formed from the names of two rivers, the Brahmaputra of India and the Moskva of Russia ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Bangalore <=> Ooty (3 Days + 2 Nights, Trip Plan) ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html</link>
+        <description><![CDATA[ Three days Trip from Bangalore Ooty Bangalore, If you are a Couple riding on Bike or You are a Family driving in Car, then this three days plan works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route. Ooty known as the Queen of the hill stations in South India, It is a magical experience for people looking for a peaceful and scenic retreat ]]></description>
+        <pubDate>02 Dec, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Travel/Couple/2020-12-02-Three-Days-Trip-from-Bangalore-to-Ooty.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/bangalore-ooty.webp"/>
+        <content:encoded><![CDATA[ Three days Trip from Bangalore Ooty Bangalore, If you are a Couple riding on Bike or You are a Family driving in Car, then this three days plan works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route. Ooty known as the Queen of the hill stations in South India, It is a magical experience for people looking for a peaceful and scenic retreat ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Fighting in a Couple's Relationship is Normal ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html</link>
+        <description><![CDATA[ Every Couple will fight and it's completely Normal, unless its scares both of them. No two people are exactly the same way, each of them are unique. Couples can occasionally or often might have conflicts or disagreements which might lead to an argument of fight. If that particular conflict of argument is taken as a healthy discussion, then you will be knowing more about your partner and you both will surely work as a team ]]></description>
+        <pubDate>04 Dec, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Relationship/2020-12-04-Fighting-in-a-Relationship-is-Normal.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/2020-12-04-Fighting-in-a-Relationship-is-Normal_0.jpg"/>
+        <content:encoded><![CDATA[ Every Couple will fight and it's completely Normal, unless its scares both of them. No two people are exactly the same way, each of them are unique. Couples can occasionally or often might have conflicts or disagreements which might lead to an argument of fight. If that particular conflict of argument is taken as a healthy discussion, then you will be knowing more about your partner and you both will surely work as a team ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ National Education Policy 2020, Government of India (NEP 2020) ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html</link>
+        <description><![CDATA[ National Education Policy (NEP 2020) has been approved by Union Cabinet on 29 July 2020. Its major aim is to introduce changes in the Indian Education System right from the school to the college level of education. Making India a Global Knowledge Superpower is the ultimate objective of the NEP 2020. It is the third major change in education systems in India since independence in 1947. Earlier two revamps in the education systems were done in 1968 and 1986 ]]></description>
+        <pubDate>08 Dec, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Social-Media/Education/2020-12-08-National-Education-Policy-NEP-2020.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/NEP-2020.jpg"/>
+        <content:encoded><![CDATA[ National Education Policy (NEP 2020) has been approved by Union Cabinet on 29 July 2020. Its major aim is to introduce changes in the Indian Education System right from the school to the college level of education. Making India a Global Knowledge Superpower is the ultimate objective of the NEP 2020. It is the third major change in education systems in India since independence in 1947. Earlier two revamps in the education systems were done in 1968 and 1986 ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Rainwater Collection, Storage and Purification ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html</link>
+        <description><![CDATA[ Rainwater Harvesting is the collection and storage of rain water, rather than allowing it to run off. Rainwater is collected from a roof-like surface and redirected to a tank, cistern, deep pit (well, shaft, or borehole), aquifer, or a reservoir with percolation. We can utilize this water for many purposes like, include watering gardens, livestock, irrigation, domestic use with proper treatment, and domestic heating. Importantly, purifying rain water for drinking and cooking purposes ]]></description>
+        <pubDate>18 Dec, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Environment/2020-12-18-Rain-water-collection-storage-purification.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/Rain-Water-Harvesting1.jpeg"/>
+        <content:encoded><![CDATA[ Rainwater Harvesting is the collection and storage of rain water, rather than allowing it to run off. Rainwater is collected from a roof-like surface and redirected to a tank, cistern, deep pit (well, shaft, or borehole), aquifer, or a reservoir with percolation. We can utilize this water for many purposes like, include watering gardens, livestock, irrigation, domestic use with proper treatment, and domestic heating. Importantly, purifying rain water for drinking and cooking purposes ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ It is OK.. to not be ok !!! - Hanukkah John ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html</link>
+        <description><![CDATA[ Ever felt that you are worthless or a burden to others? Ever felt so exhausted mentally? Ever felt sad not for a day or two but for weeks continuously? I'm not talking about grieving over a loss but feeling sad for something which you could have let go easily at least after a day or two. ]]></description>
+        <pubDate>29 Dec, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Mental-Health/2020-12-29-It-is-ok-to-not-be-ok-Hanukkah-John.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/ok-hanukkah-john.jpeg"/>
+        <content:encoded><![CDATA[ Ever felt that you are worthless or a burden to others? Ever felt so exhausted mentally? Ever felt sad not for a day or two but for weeks continuously? I'm not talking about grieving over a loss but feeling sad for something which you could have let go easily at least after a day or two. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Indian Farms Reforms of 2020 ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html</link>
+        <description><![CDATA[ The Indian Farms Reforms of 2020 refer to the agricultural bills passed by the Lok Sabha on 17th September 2020 and by the Rajya Sabha on 20th September 2020. The bills collectively seek to provide farmers with multiple marketing channels and provide a legal framework for farmers to enter into pre-arranged contracts among other things. ]]></description>
+        <pubDate>30 Dec, 2020</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Social-Media/Agriculture/2020-12-30-Indian-Farms-Reforms-of-2020.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/2020-12-30-Indian-Farms-Reforms-of-2020.jpeg"/>
+        <content:encoded><![CDATA[ The Indian Farms Reforms of 2020 refer to the agricultural bills passed by the Lok Sabha on 17th September 2020 and by the Rajya Sabha on 20th September 2020. The bills collectively seek to provide farmers with multiple marketing channels and provide a legal framework for farmers to enter into pre-arranged contracts among other things. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Reading a book, it's not my thing; is it your instant reply? ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html</link>
+        <description><![CDATA[ Reading a book expands your thinking dimensions and gives a better perspective about things going on around you. If you agree with what you read just now, Let's have a look at two books which make ]]></description>
+        <pubDate>02 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Book/2021-01-02-Reading-a-book-its-not-my-thing-is-it-your-instant-reply.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/2019_03_02_66706_1551461528._large_0.jpeg"/>
+        <content:encoded><![CDATA[ Reading a book expands your thinking dimensions and gives a better perspective about things going on around you. If you agree with what you read just now, Let's have a look at two books which make ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Your Oral Health is Your Total Health ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html</link>
+        <description><![CDATA[ We human beings, to live and survive consume food as a basic need. How many of us have thought that food we consume orally is keeping one's dental health in good condition. ]]></description>
+        <pubDate>08 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Food/Health/2021-01-08-Your-Oral-Health-is-Your-Total-Health.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/teeth1.jpeg"/>
+        <content:encoded><![CDATA[ We human beings, to live and survive consume food as a basic need. How many of us have thought that food we consume orally is keeping one's dental health in good condition. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Saving Vegetable seeds for your backyard gardening ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html</link>
+        <description><![CDATA[ To become more food self-sufficient, we should plan to collect, store and use some of the seed for your own garden. With this we can create new, custom varieties of vegetables that grow best in our backyard. This can be done with small amount of effort involved. Also you will have fun in the process too. ]]></description>
+        <pubDate>14 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Food/Family/2021-01-14-Saving-Vegetable-seeds-for-your-backyard-gardening.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/gardening-seeds.jpeg"/>
+        <content:encoded><![CDATA[ To become more food self-sufficient, we should plan to collect, store and use some of the seed for your own garden. With this we can create new, custom varieties of vegetables that grow best in our backyard. This can be done with small amount of effort involved. Also you will have fun in the process too. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ API Docs Drupal Module simple way to show OAS Docs on Drupal Portal ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html</link>
+        <description><![CDATA[ If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module. ]]></description>
+        <pubDate>16 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2021-01-16-API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/swagger_drupal_cover.jpg"/>
+        <content:encoded><![CDATA[ If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Send Mail with Custom Email Template and with Dynamic values via Drupal Mail Service ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html</link>
+        <description><![CDATA[ Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from hook_mail() from the module sending the email. Any module can modify the composed email message array using hook_mail_alter(). Finally Drupal::service('plugin.manager.mail')->mail() sends the email, which can be reused if the exact same composed email is to be sent to multiple recipients. ]]></description>
+        <pubDate>20 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Sci-Tech/Drupal/2021-01-20-Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/drupal_8_mail_system.jpeg"/>
+        <content:encoded><![CDATA[ Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from hook_mail() from the module sending the email. Any module can modify the composed email message array using hook_mail_alter(). Finally Drupal::service('plugin.manager.mail')->mail() sends the email, which can be reused if the exact same composed email is to be sent to multiple recipients. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ What to Eat and What to Avoid, after a Tooth Extraction ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html</link>
+        <description><![CDATA[ Tooth extraction is a long chain of steps where you have to take care of the area of the extraction for weeks of extration steps. Means you need to take care of brushing and cleaning the area properly and avoiding too much activity right after the extraction. ]]></description>
+        <pubDate>21 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Food/Dental/2021-01-21-What-to-Eat-and-What-to-Avoid-after-a-Tooth-Extraction.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/foods-to-eat-after-teeth-removal.jpeg"/>
+        <content:encoded><![CDATA[ Tooth extraction is a long chain of steps where you have to take care of the area of the extraction for weeks of extration steps. Means you need to take care of brushing and cleaning the area properly and avoiding too much activity right after the extraction. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Benefits of Reading - Why You Should Read? ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Lifestyle/Book/2021-01-30-Benefits-of-Reading-Why-You-Should-Read.html</link>
+        <description><![CDATA[ By the way, when was the last time you read a book, or read an article on internet? Or you generally tend to look across tweets, facebook updates etc. If you are one of them who is not having an habit of reading regularly, you are missing out few things. Actually reading has few benefits, and i'm gona share few of the benefits of reading, so that you start reading! ]]></description>
+        <pubDate>30 Jan, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Lifestyle/Book/2021-01-30-Benefits-of-Reading-Why-You-Should-Read.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Lifestyle/Book/2021-01-30-Benefits-of-Reading-Why-You-Should-Read.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/the-power-of-reading_1.jpeg"/>
+        <content:encoded><![CDATA[ By the way, when was the last time you read a book, or read an article on internet? Or you generally tend to look across tweets, facebook updates etc. If you are one of them who is not having an habit of reading regularly, you are missing out few things. Actually reading has few benefits, and i'm gona share few of the benefits of reading, so that you start reading! ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ World Cancer Day, February 4th - Early detection of Cancer can lead to Improved outcomes and Cure. ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Social-Media/Health/2021-02-04-World-Cancer-Day-February-4th.html</link>
+        <description><![CDATA[ Cancer is a large group of diseases that can start in almost any organ or tissue of the body when abnormal cells grow uncontrollably, go beyond their usual boundaries to invade adjoining parts of the body and/or spread to other organs. The latter process is called metastasizing which is a major cause of death from cancer. A neoplasm and malignant tumour are other common names for cancer. ]]></description>
+        <pubDate>04 Feb, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Social-Media/Health/2021-02-04-World-Cancer-Day-February-4th.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Social-Media/Health/2021-02-04-World-Cancer-Day-February-4th.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/world-cancer-day-fb.jpeg"/>
+        <content:encoded><![CDATA[ Cancer is a large group of diseases that can start in almost any organ or tissue of the body when abnormal cells grow uncontrollably, go beyond their usual boundaries to invade adjoining parts of the body and/or spread to other organs. The latter process is called metastasizing which is a major cause of death from cancer. A neoplasm and malignant tumour are other common names for cancer. ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ If farmers have greater choice to sell to whoever and wherever! Why still Farmers are protesting? ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Social-Media/Agriculture/2021-02-09-If-farmers-have-greater-choice-to-sell-to-whoever-and-wherever.html</link>
+        <description><![CDATA[ If farmers have greater choice to sell to whoever and wherever, if there is contract farming with safeguards to give assured price and improve quality, if trading and storage restrictions are removed. Why still Farmers are protesting? Let's take a look ]]></description>
+        <pubDate>09 Feb, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Social-Media/Agriculture/2021-02-09-If-farmers-have-greater-choice-to-sell-to-whoever-and-wherever.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Social-Media/Agriculture/2021-02-09-If-farmers-have-greater-choice-to-sell-to-whoever-and-wherever.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/115764061_mediaitem115764060.jpeg"/>
+        <content:encoded><![CDATA[ If farmers have greater choice to sell to whoever and wherever, if there is contract farming with safeguards to give assured price and improve quality, if trading and storage restrictions are removed. Why still Farmers are protesting? Let's take a look ]]></content:encoded>
+      </item>
+<item>
+        <title><![CDATA[ Bangalore to Rameswaram (3 Days + 2 Nights, Trip Plan) ]]></title>
+        <link>https://peoplesblog.co.in/blogs/Travel/Bangalore/2021-02-10-Bangalore-to-Rameswaram-3-days-2-nights-trip-plan.html</link>
+        <description><![CDATA[ Three days Trip from Bangalore to Rameswaram to Bangalore, If you are a Couple riding on Bike or You are a Family driving in Car, then this three days plan works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route. Rameshwaram is a small Hindu pilgrimage town and is considered to be one of the reverenced places to visit in Tamil Nadu. ]]></description>
+        <pubDate>10 Feb, 2021</pubDate>
+        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/Travel/Bangalore/2021-02-10-Bangalore-to-Rameswaram-3-days-2-nights-trip-plan.html</guid>
+        <comments>https://peoplesblog.co.in/blogs/Travel/Bangalore/2021-02-10-Bangalore-to-Rameswaram-3-days-2-nights-trip-plan.html#comments</comments>
+        <enclosure length="0" type="image/jpeg" url="https://peoplesblog.co.in/upload/banner788x443/public/bangalore-to-rameshwaram.png"/>
+        <content:encoded><![CDATA[ Three days Trip from Bangalore to Rameswaram to Bangalore, If you are a Couple riding on Bike or You are a Family driving in Car, then this three days plan works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route. Rameshwaram is a small Hindu pilgrimage town and is considered to be one of the reverenced places to visit in Tamil Nadu. ]]></content:encoded>
+      </item>
+</channel>
+</rss>
