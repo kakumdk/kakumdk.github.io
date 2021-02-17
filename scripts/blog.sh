@@ -1252,7 +1252,7 @@ jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
 ##### SiteMap
 #################################################################################################################
 #################################################################################################################
-date=$(date +'%Y-%m-%d')
+#date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
           <url><loc>https://peoplesblog.co.in/</loc><lastmod>'$created'</lastmod></url>
@@ -1283,6 +1283,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     do
       _type=`echo $(_jq '.type') | sed -e 's/^[[:space:]]*//'`
       _category=`echo $_category_i | sed -e 's/^[[:space:]]*//'`
+      created=$(_jq '.created')
 #      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
       echo "Writing sitemap.xml - "$jsonfile
