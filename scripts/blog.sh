@@ -1252,26 +1252,26 @@ jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
 ##### SiteMap
 #################################################################################################################
 #################################################################################################################
-#date=$(date +'%Y-%m-%d')
+date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-          <url><loc>https://peoplesblog.co.in/</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>'$created'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>'$created'</lastmod></url>' > $pwd'/sitemap.xml'
+          <url><loc>https://peoplesblog.co.in/</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>'$date'</lastmod></url>
+          <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
@@ -1287,7 +1287,7 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
 #      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
       echo "Writing sitemap.xml - "$jsonfile
-      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$created'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
 done
 echo '</urlset>' >> $pwd'/sitemap.xml'
