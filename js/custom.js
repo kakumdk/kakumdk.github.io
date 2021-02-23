@@ -134,6 +134,10 @@ $(function() {
         }, 200);
         setTimeout(function () {
             $('.ads-article').append(writeRecentBlogs(JSON.parse(text)));
+            var currentUrl = (window.location.href).split('/');
+            if (currentUrl[6] == "2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html") {
+                $('.coronaviruses-discovery').append("<iframe width='620' height='415' src='https://www.youtube.com/embed/bDBqk6QyGgY?autoplay=1&mute=0&&loop=1&controls=1&origin=https://peoplesblog.co.in' frameborder='0' allowfullscreen></iframe>");
+            }
         }, 300);
     });
     // $("#see-more").click(function() {

@@ -66,6 +66,7 @@ Allow: /blogs/Travel/Bangalore/2021-02-10-Bangalore-to-Rameswaram-3-days-2-night
 Allow: /blogs/Lifestyle/Life/2021-02-18-Tips-to-Live-a-Happy-Life-How-to-be-Happy.html
 Allow: /blogs/Lifestyle/Dental/2021-02-21-Choosing-the-best-Toothbrush.html
 Allow: /blogs/Social-Media/Language/2021-02-21-International-Mother-Language-Day.html
+Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -152,6 +153,7 @@ Allow: /blogs/Travel/Bangalore/2021-02-10-Bangalore-to-Rameswaram-3-days-2-night
 Allow: /blogs/Lifestyle/Life/2021-02-18-Tips-to-Live-a-Happy-Life-How-to-be-Happy.html
 Allow: /blogs/Lifestyle/Dental/2021-02-21-Choosing-the-best-Toothbrush.html
 Allow: /blogs/Social-Media/Language/2021-02-21-International-Mother-Language-Day.html
+Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
