@@ -2817,6 +2817,10 @@ and (max-device-width : 480px) {
         border: none;
         padding: 20px 15px;
     }
+    p.coronaviruses-discovery iframe {
+        width: auto !important;
+        height: auto !important;
+    }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -3091,6 +3095,10 @@ and (max-width : 320px) {
         border: none;
         padding: 20px 15px;
     }
+    p.coronaviruses-discovery iframe {
+        width: auto !important;
+        height: auto !important;
+    }
 }
 /* iPhone 4 ----------- */
 @media
@@ -3357,6 +3365,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
         margin-bottom: 5px;
         border: none;
         padding: 20px 15px;
+    }
+    p.coronaviruses-discovery iframe {
+        width: auto !important;
+        height: auto !important;
     }
 }
 /* iPads (portrait and landscape) ----------- */
