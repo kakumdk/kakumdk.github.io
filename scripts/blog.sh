@@ -1254,24 +1254,24 @@ jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
 #################################################################################################################
 date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
-        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-          <url><loc>https://peoplesblog.co.in/</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>'$date'</lastmod></url>
-          <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>'$date'</lastmod></url>' > $pwd'/sitemap.xml'
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url><loc>https://peoplesblog.co.in/</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>2021-02-24</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>2021-02-24</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
@@ -1286,8 +1286,12 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
       created=$(_jq '.created')
 #      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
       jsonfile=$(_jq '.file')
+      Y=$(echo "$jsonfile" | cut -d- -f1)
+      M=$(echo "$jsonfile" | cut -d- -f2)
+      D=$(echo "$jsonfile" | cut -d- -f3)
+      rest=$(echo "$jsonfile" | cut -d- -f4-)
       echo "Writing sitemap.xml - "$jsonfile
-      echo '          <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$date'</lastmod></url>' >> $pwd'/sitemap.xml'
+      echo '  <url><loc>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</loc><lastmod>'$Y'-'$M'-'$D'</lastmod></url>' >> $pwd'/sitemap.xml'
     done
 done
 echo '</urlset>' >> $pwd'/sitemap.xml'
@@ -1413,13 +1417,13 @@ Sitemap: https://peoplesblog.co.in/sitemap.xml' >> $pwd'/robots.txt'
 #################################################################################################################
 #################################################################################################################
 echo '<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
-<meta content="noindex, nofollow" name="robots"/>
-<channel>
-<title>Peoples BLOG - Enriching thoughts for your daily life</title>
-<link>https://peoplesblog.co.in/</link>
-<atom:link href="https://peoplesblog.co.in/rss.xml" rel="self" type="application/rss+xml"/>
-<description>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas and Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science and Technology..</description>
-<language>en-US</language>' > $pwd'/rss.xml'
+        <meta content="noindex, nofollow" name="robots"/>
+        <channel>
+                <title>Peoples BLOG - Enriching thoughts for your daily life</title>
+                <link>https://peoplesblog.co.in/</link>
+                <atom:link href="https://peoplesblog.co.in/rss.xml" rel="self" type="application/rss+xml"/>
+                <description>Peoples BLOG has a mixture of articles which came out of Thoughts, Ideas and Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science and Technology..</description>
+                <language>en-US</language>' > $pwd'/rss.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
@@ -1437,17 +1441,17 @@ for row in $(echo "${data}" | jq -r '.[] | @base64'); do
       banner="https://peoplesblog.co.in/"$(_jq '.banner788x443')
       jsonfile=$(_jq '.file')
       echo "Writing rss.xml - "$jsonfile
-      echo '<item>
-        <title><![CDATA[ '$title' ]]></title>
-        <link>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</link>
-        <description><![CDATA[ '$summary' ]]></description>
-        <pubDate>'$created'</pubDate>
-        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</guid>
-        <comments>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html#comments'</comments>
-        <enclosure length="0" type="image/jpeg" url="'$banner'"/>
-        <content:encoded><![CDATA[ '$summary' ]]></content:encoded>
-      </item>' >> $pwd'/rss.xml'
+      echo '                <item>
+                        <title><![CDATA[ '$title' ]]></title>
+                        <link>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</link>
+                        <description><![CDATA[ '$summary' ]]></description>
+                        <pubDate>'$created'</pubDate>
+                        <guid isPermaLink="true">https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html'</guid>
+                        <comments>https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/'${jsonfile/%.json}.html#comments'</comments>
+                        <enclosure length="0" type="image/jpeg" url="'$banner'"/>
+                        <content:encoded><![CDATA[ '$summary' ]]></content:encoded>
+                </item>' >> $pwd'/rss.xml'
     done
 done
-echo '</channel>
+echo '        </channel>
 </rss>' >> $pwd'/rss.xml'

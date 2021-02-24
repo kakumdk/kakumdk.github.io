@@ -68,6 +68,7 @@ Allow: /blogs/Lifestyle/Dental/2021-02-21-Choosing-the-best-Toothbrush.html
 Allow: /blogs/Social-Media/Language/2021-02-21-International-Mother-Language-Day.html
 Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html
 Allow: /blogs/Crime/Rape/2021-02-23-Prime-accused-in-gang-rape-case-nabbed-after-two-decades.html
+Allow: /blogs/Food/Plants/2021-02-24-Researchers-solve-riddle-of-plant-immune-system.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -156,6 +157,7 @@ Allow: /blogs/Lifestyle/Dental/2021-02-21-Choosing-the-best-Toothbrush.html
 Allow: /blogs/Social-Media/Language/2021-02-21-International-Mother-Language-Day.html
 Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html
 Allow: /blogs/Crime/Rape/2021-02-23-Prime-accused-in-gang-rape-case-nabbed-after-two-decades.html
+Allow: /blogs/Food/Plants/2021-02-24-Researchers-solve-riddle-of-plant-immune-system.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
