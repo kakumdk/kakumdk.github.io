@@ -67,6 +67,7 @@ Allow: /blogs/Lifestyle/Life/2021-02-18-Tips-to-Live-a-Happy-Life-How-to-be-Happ
 Allow: /blogs/Lifestyle/Dental/2021-02-21-Choosing-the-best-Toothbrush.html
 Allow: /blogs/Social-Media/Language/2021-02-21-International-Mother-Language-Day.html
 Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html
+Allow: /blogs/Crime/Rape/2021-02-23-Prime-accused-in-gang-rape-case-nabbed-after-two-decades.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -154,6 +155,7 @@ Allow: /blogs/Lifestyle/Life/2021-02-18-Tips-to-Live-a-Happy-Life-How-to-be-Happ
 Allow: /blogs/Lifestyle/Dental/2021-02-21-Choosing-the-best-Toothbrush.html
 Allow: /blogs/Social-Media/Language/2021-02-21-International-Mother-Language-Day.html
 Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html
+Allow: /blogs/Crime/Rape/2021-02-23-Prime-accused-in-gang-rape-case-nabbed-after-two-decades.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
