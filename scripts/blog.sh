@@ -110,43 +110,7 @@ do
                 </button>
                 <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about.html" title="About">About</a>
-                        </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>-->
-<!--                            </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                    </ul>
+
                 </div>
             </nav>
         </div><!-- end container-fluid -->
@@ -397,43 +361,7 @@ do
                 </button>
                 <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about.html" title="About">About</a>
-                        </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>-->
-<!--                            </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                    </ul>
+
                 </div>
             </nav>
         </div><!-- end container-fluid -->
@@ -683,43 +611,7 @@ do
                 </button>
                 <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about.html" title="About">About</a>
-                        </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>-->
-<!--                            </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                    </ul>
+
                 </div>
             </nav>
         </div><!-- end container-fluid -->
@@ -995,43 +887,7 @@ do
                 </button>
                 <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.webp"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/index.html" title="Blogs">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Sci-Tech/index.html" title="Sci-Tech">Sci-Tech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Lifestyle/index.html" title="Lifestyle">Lifestyle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Food/index.html" title="Food">Food</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Travel/index.html" title="Travel">Travel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blogs/Social-Media/index.html" title="Social Media">Social Media</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about.html" title="About">About</a>
-                        </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/links.html" title="Links">Links</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/privacy.html" title="Privacy">Privacy</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" href="/terms-and-conditions.html" title="T & C">T & C</a>-->
-<!--                            </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html" title="Contact">Contact</a>
-                        </li>
-                    </ul>
+
                 </div>
             </nav>
         </div><!-- end container-fluid -->

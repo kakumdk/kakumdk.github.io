@@ -84,6 +84,8 @@ $(function() {
     $("#header").load("content/header.html");
     $("#footer").load("content/footer.html");
 
+    $("#navbarCollapse").html(writeHeaderLinks());
+
     readFile("/blogs-content-merged/blogs.json", function(text){
         var data = JSON.parse(text);
         var output = writeBlogsHomepageHeader(data);
@@ -233,6 +235,40 @@ $(function() {
         });
     }, 2000);
 });
+function writeHeaderLinks() {
+    var output = '<ul class="navbar-nav mr-auto">';
+    var main_links = {
+        'Blogs': 'Blogs',
+        'Sci-Tech': 'Sci-Tech',
+        'Lifestyle': 'Lifestyle',
+        'Food': 'Food',
+        'Travel': 'Travel',
+        'Crime': 'Crime',
+        'Coronavirus': 'Coronavirus',
+        'Social-Media': 'Social Media',
+    };
+    for (var key in main_links) {
+        var title = main_links[key];
+        if (key == "Blogs") {
+            output += '<li class="nav-item"><a class="nav-link" href="/blogs/index.html" title="'+title+'">'+title+'</a></li>';
+        }
+        else {
+            output += '<li class="nav-item"><a class="nav-link" href="/blogs/'+key+'/index.html" title="'+title+'">'+title+'</a></li>';
+        }
+    }
+    output += '</ul>' +
+        '<ul class="navbar-nav">';
+    var misc_links = {
+        'about.html': 'About',
+        'contact.html': 'Contact',
+    };
+    for (var key in misc_links) {
+        var title = misc_links[key];
+        output += '<li class="nav-item"><a class="nav-link" href="/'+key+'" title="'+title+'">'+title+'</a></li>';
+    }
+    output += '</ul>';
+    return output;
+}
 function readFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
