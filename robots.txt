@@ -70,6 +70,7 @@ Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-196
 Allow: /blogs/Crime/Rape/2021-02-23-Prime-accused-in-gang-rape-case-nabbed-after-two-decades.html
 Allow: /blogs/Food/Plants/2021-02-24-Researchers-solve-riddle-of-plant-immune-system.html
 Allow: /blogs/Lifestyle/Relationship/2021-02-25-06-Lessons-Learnt-from-3-years-of-Relationship.html
+Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-Sexual-Assault-Victim.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -160,6 +161,7 @@ Allow: /blogs/Coronavirus/Discovery/2021-02-22-Coronavirus-Discovered-in-the-196
 Allow: /blogs/Crime/Rape/2021-02-23-Prime-accused-in-gang-rape-case-nabbed-after-two-decades.html
 Allow: /blogs/Food/Plants/2021-02-24-Researchers-solve-riddle-of-plant-immune-system.html
 Allow: /blogs/Lifestyle/Relationship/2021-02-25-06-Lessons-Learnt-from-3-years-of-Relationship.html
+Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-Sexual-Assault-Victim.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
