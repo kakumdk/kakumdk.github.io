@@ -2546,7 +2546,10 @@ ul.popular-articles > li a:hover, .recent-articles > li a:hover {
 a.author_item:hover {
     text-decoration: underline !important;
 }
-
+.footer-text .post-sharing-footer.social span {
+    color: #fff;
+    font-size: 16px;
+}
 
 
 

@@ -674,14 +674,16 @@ function writeSocialShareLinks(region) {
         var twitter_social = 'https://twitter.com/peoplesblog1989';
         var instagram_social = 'https://www.instagram.com/peoplesblog1989';
         var tumbler_social = 'https://peoplesblog1989.tumblr.com';
-        // var quora_social = 'https://www.quora.com/q/peoplesblog1989';
-        return '' +
+        var quora_social = 'https://www.quora.com/q/peoplesblog1989';
+        var telegram_social = 'https://t.me/PeoplesBLOG';
+        return '<span>Stay connected on : </span>' +
             // '<a href="'+linkedin+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>' +
-            '<a href="'+facebook_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook-square"></i></a>' +
-            '<a href="'+twitter_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter-square"></i></a>' +
-            '<a href="'+instagram_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>' +
-            '<a href="'+tumbler_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Tumbler"><i class="fa fa-tumblr-square"></i></a>';
+            '<a href="'+facebook_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>' +
+            '<a href="'+twitter_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>' +
+            // '<a href="'+instagram_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>' +
+            // '<a href="'+tumbler_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Tumbler"><i class="fa fa-tumblr-square"></i></a>';
             // '<a href="'+quora_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Quora"><i class="fa fa-quora"></i></a>';
+            '<a href="'+telegram_social+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Telegram"><i class="fa fa-telegram"></i></a>';
             // '<a class="whatsapp-desktop" href="'+whatsapp+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
             // '<a class="whatsapp-mobile" href="'+whatsapp_phone+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>' +
             // '<a href="'+mail+'" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>';
