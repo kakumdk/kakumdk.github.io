@@ -72,6 +72,7 @@ Allow: /blogs/Food/Plants/2021-02-24-Researchers-solve-riddle-of-plant-immune-sy
 Allow: /blogs/Lifestyle/Relationship/2021-02-25-06-Lessons-Learnt-from-3-years-of-Relationship.html
 Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-Sexual-Assault-Victim.html
 Allow: /blogs/Health/Dental/2021-02-27-08-How-to-keep-your-Kids-Teeth-Healthy-Strong.html
+Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -164,6 +165,7 @@ Allow: /blogs/Food/Plants/2021-02-24-Researchers-solve-riddle-of-plant-immune-sy
 Allow: /blogs/Lifestyle/Relationship/2021-02-25-06-Lessons-Learnt-from-3-years-of-Relationship.html
 Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-Sexual-Assault-Victim.html
 Allow: /blogs/Health/Dental/2021-02-27-08-How-to-keep-your-Kids-Teeth-Healthy-Strong.html
+Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
