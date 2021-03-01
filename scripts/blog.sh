@@ -36,7 +36,7 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>Blogs</title>
+    <title>Blogs - Peoples BLOG</title>
     <meta name="description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/index.html" />
     <meta name="robots" content="index, follow">
@@ -48,11 +48,11 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Blogs" />
+    <meta property="og:title" content="Blogs - Peoples BLOG" />
     <meta property="og:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="Blogs">
+    <meta name="twitter:title" content="Blogs - Peoples BLOG">
     <meta name="twitter:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -287,7 +287,7 @@ do
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Metas -->
-    <title>'$_type' - Blogs</title>
+    <title>'$_type' - Peoples BLOG</title>
     <meta name="description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <link rel="canonical" href="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <meta name="robots" content="index, follow">
@@ -299,11 +299,11 @@ do
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="'$_type' - Blogs" />
+    <meta property="og:title" content="'$_type' - Peoples BLOG" />
     <meta property="og:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.webp" />
-    <meta name="twitter:title" content="'$_type' - Blogs">
+    <meta name="twitter:title" content="'$_type' - Peoples BLOG">
     <meta name="twitter:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
@@ -1111,23 +1111,26 @@ jq -s '[.[][]]' $blogscontent'/'*.json > $blogscontentmerged'/blogs.json'
 date=$(date +'%Y-%m-%d')
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url><loc>https://peoplesblog.co.in/</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>2021-02-24</lastmod></url>
-  <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>2021-02-24</lastmod></url>' > $pwd'/sitemap.xml'
+  <url><loc>https://peoplesblog.co.in/</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/about.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/links.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/privacy.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/terms-and-conditions.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/contact.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Hanukkah-John.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Jyothi-S-N.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Karthik-Kumar-D-K.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/authors/Leela-Vasundhara.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Sci-Tech/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Lifestyle/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Food/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Travel/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Health/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Crime/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Coronavirus/index.html</loc><lastmod>2021-03-01</lastmod></url>
+  <url><loc>https://peoplesblog.co.in/blogs/Social-Media/index.html</loc><lastmod>2021-03-01</lastmod></url>' > $pwd'/sitemap.xml'
 data=`jq -r '' $pwd/blogs-content-merged/blogs.json`
 for row in $(echo "${data}" | jq -r '.[] | @base64'); do
     _jq() {
