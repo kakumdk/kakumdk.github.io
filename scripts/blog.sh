@@ -57,6 +57,7 @@ do
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
@@ -308,6 +309,7 @@ do
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
@@ -558,6 +560,7 @@ do
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
@@ -806,6 +809,7 @@ do
     <meta name="twitter:image" content="https://peoplesblog.co.in/'$banner'">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
