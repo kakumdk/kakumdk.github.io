@@ -2550,7 +2550,10 @@ a.author_item:hover {
     color: #fff;
     font-size: 16px;
 }
-
+/* logo */
+a.navbar-brand > img, .footer-text > a > img {
+    width: 193px !important;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */

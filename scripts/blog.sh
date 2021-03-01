@@ -51,10 +51,10 @@ do
     <meta property="og:title" content="Blogs - Peoples BLOG" />
     <meta property="og:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/index.html" />
-    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.jpg" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo.png" />
     <meta name="twitter:title" content="Blogs - Peoples BLOG">
     <meta name="twitter:description" content="Blogs Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.jpg">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
@@ -110,7 +110,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg"></a>
+                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 </div>
@@ -174,7 +174,7 @@ do
                 <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg" class="img-fluid"></a>
+                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>People&#039;s BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -304,10 +304,10 @@ do
     <meta property="og:title" content="'$_type' - Peoples BLOG" />
     <meta property="og:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/index.html" />
-    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.jpg" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo.png" />
     <meta name="twitter:title" content="'$_type' - Peoples BLOG">
     <meta name="twitter:description" content="'$_type' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.jpg">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
@@ -363,7 +363,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg"></a>
+                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 </div>
@@ -426,7 +426,7 @@ do
                 <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg" class="img-fluid"></a>
+                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>People&#039;s BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -556,10 +556,10 @@ do
     <meta property="og:title" content="'$_category' - '$_type' Blogs" />
     <meta property="og:description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology" />
     <meta property="og:url" content="https://peoplesblog.co.in/blogs/'${_type// /-}'/'${_category// /-}'/index.html" />
-    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo_new.jpg" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/logo.png" />
     <meta name="twitter:title" content="'$_category' - '$_type' Blogs">
     <meta name="twitter:description" content="'$_category' Peoples BLOG articles, came out of Thoughts, Ideas & Experiences. Articles about Lifestyle, Travel, Food, Science & Technology">
-    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo_new.jpg">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
     <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
@@ -615,7 +615,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg"></a>
+                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 </div>
@@ -679,7 +679,7 @@ do
                 <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg" class="img-fluid"></a>
+                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>People&#039;s BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
@@ -893,7 +893,7 @@ do
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg"></a>
+                <a class="navbar-brand" href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png"></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 </div>
@@ -1010,7 +1010,7 @@ do
                 <div class="col-lg-4">
                     <div class="widget">
                         <div class="footer-text text-left">
-                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo_new.jpg" class="img-fluid"></a>
+                            <a href="/"><img loading="lazy" alt="People&#039;s BLOG" src="../../../upload/logo.png" class="img-fluid"></a>
                             <p>People&#039;s BLOG has a mixture of articles which came out of Thoughts, Ideas & Experiences of People behind this Blog, We generally write articles about Lifestyle, Travel, Food, Science & Technology.. <a class="read-more" href="/about.html">Read More >></a></p>
                             <div class="post-sharing-footer social">
 
