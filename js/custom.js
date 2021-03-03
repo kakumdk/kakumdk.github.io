@@ -1552,8 +1552,8 @@ $(function() {
             var clickedPageArray = $(this).attr('class').split(/\s+/);
             var clickedPage = clickedPageArray[0];
             var i = 1;
-            var from = (clickedPage - 1) * numberofArticlesPerPage
-            var to = from + numberofArticlesPerPage;
+            var from = (clickedPage - 1) * (numberofArticlesPerPage + 1);
+            var to = from + numberofArticlesPerPage + 1;
             $("ul._pager li").each(function () {
                 $(this).removeClass('prev');
                 $(this).removeClass('active');
