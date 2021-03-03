@@ -73,6 +73,7 @@ Allow: /blogs/Lifestyle/Relationship/2021-02-25-06-Lessons-Learnt-from-3-years-o
 Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-Sexual-Assault-Victim.html
 Allow: /blogs/Health/Dental/2021-02-27-08-How-to-keep-your-Kids-Teeth-Healthy-Strong.html
 Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
+Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -166,6 +167,7 @@ Allow: /blogs/Lifestyle/Relationship/2021-02-25-06-Lessons-Learnt-from-3-years-o
 Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-Sexual-Assault-Victim.html
 Allow: /blogs/Health/Dental/2021-02-27-08-How-to-keep-your-Kids-Teeth-Healthy-Strong.html
 Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
+Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
