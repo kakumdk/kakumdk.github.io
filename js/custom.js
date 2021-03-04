@@ -671,7 +671,7 @@ function writeSocialShareLinks(region) {
     }
     if (region === 'footer') {
         var facebook_social = 'https://www.facebook.com/peoplesblog1989';
-        var twitter_social = 'https://twitter.com/peoplesblog1989';
+        var twitter_social = 'https://twitter.com/_PeoplesBLOG';
         var instagram_social = 'https://www.instagram.com/peoplesblog1989';
         var tumbler_social = 'https://peoplesblog1989.tumblr.com';
         var quora_social = 'https://www.quora.com/q/peoplesblog1989';
