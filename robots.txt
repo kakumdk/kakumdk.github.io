@@ -74,6 +74,7 @@ Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-S
 Allow: /blogs/Health/Dental/2021-02-27-08-How-to-keep-your-Kids-Teeth-Healthy-Strong.html
 Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
 Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
+Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Tips-to-Prevent-Chain-Snatching.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -168,6 +169,7 @@ Allow: /blogs/Crime/Sexual-Assault/2021-02-26-06-Reduce-the-Risk-of-Becoming-a-S
 Allow: /blogs/Health/Dental/2021-02-27-08-How-to-keep-your-Kids-Teeth-Healthy-Strong.html
 Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
 Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
+Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Tips-to-Prevent-Chain-Snatching.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/

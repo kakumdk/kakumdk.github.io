@@ -2555,6 +2555,11 @@ a.author_item:hover {
 a.navbar-brand > img, .footer-text > a > img {
     width: 193px !important;
 }
+.check1 {
+    padding: 0 0 0 18px !important;
+}
+
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
