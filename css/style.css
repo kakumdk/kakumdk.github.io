@@ -2232,13 +2232,16 @@ body .single-wrapper {
 }
 .top-bar {
     background-color: #064771;
-    line-height: 1.2rem;
-    height: 1.2rem;
+    /*line-height: 1.2rem;*/
+    /*height: 1.2rem;*/
 }
-.dropbtn {
+.top-bar .p-2.bd-highlight {
+    padding: 0 0.5rem !important;
+}
+.top-bar .p-2.bd-highlight .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 0 18px;
+    padding: 1px 25px;
     font-size: 12px;
     font-weight: bold;
     border: none;
@@ -2247,14 +2250,14 @@ body .single-wrapper {
 .dropdown {
     position: relative;
     display: inline-block;
-    top: -1px;
+    /*top: -1px;*/
 }
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
-    z-index: 1;
+    z-index: 11;
 }
 .dropdown-content a {
     color: black;
@@ -2270,7 +2273,7 @@ body .single-wrapper {
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 .sizechanger {
-    padding-right: 18px;
+    /*padding-right: 18px;*/
     font-size: 12px;
     font-weight: bold;
 }
@@ -2530,6 +2533,10 @@ ul.popular-articles > li:before, .recent-articles > li:before {
 ul.popular-articles > li, .recent-articles > li {
     padding-bottom: 10px;
 }
+ul.popular-articles > li a, .recent-articles > li a {
+    color: #000000 !important;
+    font-weight: 100;
+}
 ul.popular-articles > li a:hover, .recent-articles > li a:hover {
     color: #064771 !important;
     /*text-decoration: underline !important;*/
@@ -2786,13 +2793,13 @@ and (max-device-width : 480px) {
         margin: 10px;
     }
     .dropbtn {
-        padding: 4px 24px !important;
+        padding: 1px 24px !important;
     }
     .dropdown-content a {
         padding: 0.4rem 1.1rem;
     }
     .top-bar {
-        height: 1.5rem;
+        /*height: 1.5rem;*/
     }
     .blog-meta small {
         margin-right: 3px;
@@ -3064,13 +3071,13 @@ and (max-width : 320px) {
         margin: 10px;
     }
     .dropbtn {
-        padding: 4px 24px !important;
+        padding: 1px 24px !important;
     }
     .dropdown-content a {
         padding: 0.4rem 1.1rem;
     }
     .top-bar {
-        height: 1.5rem;
+        /*height: 1.5rem;*/
     }
     .blog-meta small {
         margin-right: 3px;
@@ -3335,13 +3342,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
         margin: 10px;
     }
     .dropbtn {
-        padding: 4px 24px !important;
+        padding: 1px 24px !important;
     }
     .dropdown-content a {
         padding: 0.4rem 1.1rem;
     }
     .top-bar {
-        height: 1.5rem;
+        /*height: 1.5rem;*/
     }
     .blog-meta small {
         margin-right: 3px;

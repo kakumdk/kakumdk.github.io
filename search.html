@@ -75,7 +75,32 @@
 <body>
 
     <div id="wrapper">
-        <div id="top-bar" class="top-bar"></div>
+        <div id="top-bar" class="top-bar">
+            <div class="container">
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">
+                        <div class="dropdown">
+                            <button class="dropbtn">Language</button>
+                            <div class="dropdown-content text-right">
+                                <a href="http://kakumdk.local/?ln=en#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English</a>
+                                <a href="http://kakumdk.local/?ln=hi#googtrans(en|hi)" class="lang-hi lang-select" data-lang="hi">Hindi</a>
+                                <a href="http://kakumdk.local/?ln=kn#googtrans(en|kn)" class="lang-kn lang-select" data-lang="kn">Kannada</a>
+                                <a href="http://kakumdk.local/?ln=ml#googtrans(en|ml)" class="lang-ml lang-select" data-lang="ml">Malayalam</a>
+                                <a href="http://kakumdk.local/?ln=ta#googtrans(en|ta)" class="lang-kn lang-select" data-lang="kn">Tamil</a>
+                                <a href="http://kakumdk.local/?ln=te#googtrans(en|te)" class="lang-te lang-select" data-lang="te">Telugu</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <span class="sizechanger">
+                            <a id="text_resize_decrease">-A</a>
+                            <a id="text_resize_reset">A</a>
+                            <a id="text_resize_increase">+A</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header class="tech-header header">
         <div class="container">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">

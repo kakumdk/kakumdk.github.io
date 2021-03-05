@@ -1407,25 +1407,30 @@ function showTopBar() {
     var url = window.location.href;
     url = url.split(/[?#]/)[0];
     var output = '';
-    output = '' +
-        '<div class="container text-right">' +
-        '<span class="sizechanger">' +
-        '<a id="text_resize_decrease" >-A</a>' +
-        '<a id="text_resize_reset">A</a>' +
-        '<a id="text_resize_increase">+A</a>' +
-        '</span>' +
-        '<div class="dropdown">' +
-        '<button class="dropbtn">Language</button>' +
-        '<div class="dropdown-content">' +
-        '<a href="'+url+'?ln=en#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English</a>' +
-        '<a href="'+url+'?ln=hi#googtrans(en|hi)" class="lang-hi lang-select" data-lang="hi">Hindi</a>' +
-        '<a href="'+url+'?ln=kn#googtrans(en|kn)" class="lang-kn lang-select" data-lang="kn">Kannada</a>' +
-        '<a href="'+url+'?ln=ml#googtrans(en|ml)" class="lang-ml lang-select" data-lang="ml">Malayalam</a>' +
-        '<a href="'+url+'?ln=ta#googtrans(en|ta)" class="lang-kn lang-select" data-lang="kn">Tamil</a>' +
-        '<a href="'+url+'?ln=te#googtrans(en|te)" class="lang-te lang-select" data-lang="te">Telugu</a>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
+    output += '<div class="container">\n' +
+        '                <div class="d-flex flex-row-reverse bd-highlight">\n' +
+        '                    <div class="p-2 bd-highlight">\n' +
+        '                        <div class="dropdown">\n' +
+        '                            <button class="dropbtn">Language</button>\n' +
+        '                            <div class="dropdown-content text-right">\n' +
+        '                               <a href="'+url+'?ln=en#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English</a>' +
+        '                               <a href="'+url+'?ln=hi#googtrans(en|hi)" class="lang-hi lang-select" data-lang="hi">Hindi</a>' +
+        '                               <a href="'+url+'?ln=kn#googtrans(en|kn)" class="lang-kn lang-select" data-lang="kn">Kannada</a>' +
+        '                               <a href="'+url+'?ln=ml#googtrans(en|ml)" class="lang-ml lang-select" data-lang="ml">Malayalam</a>' +
+        '                               <a href="'+url+'?ln=ta#googtrans(en|ta)" class="lang-kn lang-select" data-lang="kn">Tamil</a>' +
+        '                               <a href="'+url+'?ln=te#googtrans(en|te)" class="lang-te lang-select" data-lang="te">Telugu</a>' +
+        '                            </div>\n' +
+        '                        </div>\n' +
+        '                    </div>\n' +
+        '                    <div class="p-2 bd-highlight">\n' +
+        '                        <span class="sizechanger">\n' +
+        '                            <a id="text_resize_decrease">-A</a>\n' +
+        '                            <a id="text_resize_reset">A</a>\n' +
+        '                            <a id="text_resize_increase">+A</a>\n' +
+        '                        </span>\n' +
+        '                    </div>\n' +
+        '                </div>\n' +
+        '            </div>';
     $('#top-bar').html(output);
 }
 function fontIncreaseDecreaseReset() {
