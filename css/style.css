@@ -2285,6 +2285,89 @@ body .single-wrapper {
     background-color: #fff;
     color: #000;
 }
+.top-bar .p-2.bd-highlight .search-link {
+    color: #fff !important;
+}
+.top-bar .search-link-desktop {
+    display: flex;
+}
+.top-bar .search-link-desktop input, .top-bar .search-link-desktop button {
+    line-height: 0;
+}
+.top-bar .search-link-desktop .search-field {
+    background: #bce3fa;
+    border: none;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
+    outline: 0;
+    padding: .1em 1em 0.1em 0.5em;
+    margin-top: 0.2em;
+    font-size: 12px;
+    height: 24px;
+    width: 250px;
+}
+.top-bar .search-link-desktop .search-icon {
+    width: 24px;
+    vertical-align: middle;
+    padding: 2px;
+    margin-top: 0.1em;
+    margin-left: 5px;
+}
+.top-bar .search-link-mobile {
+    display: none;
+}
+.top-bar .search-link-mobile a {
+    color: #fff !important;
+    font-weight: 500;
+}
+.search-blogs-result.hidden {
+    display: none;
+}
+.search-blogs > div > input#search-blogs {
+    margin-bottom: 10px;
+}
+.search-blogs .search-blogs-result {
+    overflow: hidden;
+    padding: 8px 0;
+}
+.search-blogs .search-blogs-result h3 {
+    font-size: 1.231em;
+    margin: 0;
+}
+.search-blogs .search-blogs-result h3 a {
+    color: #0678be !important;
+}
+.search-blogs .search-blogs-result p {
+    color: #4e4e4e;
+    font-size: 0.92307em;
+    margin-bottom: 0;
+}
+.search-blogs .search-blogs-result p a {
+    color: #0678be !important;
+    font-size: 14px;
+}
+.search-blogs .search-blogs-result p a:hover {
+    text-decoration: underline !important;
+}
+.search-blogs .search-blogs-result .search-snippet-info .search-snippet {
+    height: 50px;
+    overflow: hidden;
+}
+.search-blogs .search-blogs-result .search-snippet-info .search-snippet strong {
+    color: #4e4e4e !important;
+}
+.search-blogs .search-blogs-result .search-snippet-info .search-info span {
+    font-size: 14px;
+    padding-right: 8px;
+    color: #0678be;
+}
+.search-blogs .search-blogs-result .search-snippet-info .search-info a {
+    color: #0678be !important;
+    font-size: 14px;
+}
+.search-blogs .search-blogs-result .search-snippet-info .search-info a:hover {
+    text-decoration: underline !important;
+}
 .goog-te-banner-frame{visibility:hidden !important;}
 body{top:0 !important;}
 #goog-gt-tt{display: none !important; top: 0px !important; }
@@ -2844,6 +2927,8 @@ and (max-device-width : 480px) {
         width: auto !important;
         height: auto !important;
     }
+    .top-bar .search-link-desktop { display: none; }
+    .top-bar .search-link-mobile { display: flex; }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -3122,6 +3207,8 @@ and (max-width : 320px) {
         width: auto !important;
         height: auto !important;
     }
+    .top-bar .search-link-desktop { display: none; }
+    .top-bar .search-link-mobile { display: flex; }
 }
 /* iPhone 4 ----------- */
 @media
@@ -3393,6 +3480,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
         width: auto !important;
         height: auto !important;
     }
+    .top-bar .search-link-desktop { display: none; }
+    .top-bar .search-link-mobile { display: flex; }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen

@@ -77,7 +77,23 @@
     <div id="wrapper">
         <div id="top-bar" class="top-bar">
             <div class="container">
-                <div class="d-flex flex-row-reverse bd-highlight">
+                <div class="d-flex bd-highlight">
+                    <div class="mr-auto p-2 bd-highlight">
+                        <div class="search-link-desktop">
+                            <input class="search-field" type="text" placeholder="Search blogs on People's BLOG..">
+                            <input class="search-icon" type="image" src="../../../upload/icon-w-search.svg">
+                        </div>
+                        <div class="search-link-mobile">
+                            <a href="/search.html"><i class="fa fa-search"></i> <span>Search</span></a>
+                        </div>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <span class="sizechanger">
+                            <a id="text_resize_decrease">-A</a>
+                            <a id="text_resize_reset">A</a>
+                            <a id="text_resize_increase">+A</a>
+                        </span>
+                    </div>
                     <div class="p-2 bd-highlight">
                         <div class="dropdown">
                             <button class="dropbtn">Language</button>
@@ -90,13 +106,6 @@
                                 <a href="http://kakumdk.local/?ln=te#googtrans(en|te)" class="lang-te lang-select" data-lang="te">Telugu</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-2 bd-highlight">
-                        <span class="sizechanger">
-                            <a id="text_resize_decrease">-A</a>
-                            <a id="text_resize_reset">A</a>
-                            <a id="text_resize_increase">+A</a>
-                        </span>
                     </div>
                 </div>
             </div>
@@ -135,31 +144,11 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <div class="ads-blogs sidebar">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row search-blogs">
 
-                        </div><!-- end sidebar -->
-                    </div><!-- end col -->
-
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <div class="page-wrapper">
-                            <div class="blog-grid-system">
-                                <div class="row blog-list-blogs">
-
-                                </div>
-                            </div>
-                        </div><!-- end page-wrapper -->
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav aria-label="Page navigation">
-                                    <div class="blog-list-blogs_pager">
-
-                                    </div>
-                                </nav>
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                    </div><!-- end col -->
+                        </div>
+                    </div>
 
                 </div><!-- end row -->
             </div><!-- end container -->

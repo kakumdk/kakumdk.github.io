@@ -233,6 +233,20 @@ $(function() {
                 }
             });
         });
+        $("#search-blogs").on("keyup", function(event) {
+            $('.search-blogs div').removeClass('hidden');
+            $(this).siblings('.search-blogs-result').each(function () {
+                var title = $(this).find('h3').children('a').text().toLowerCase();
+                title += " " + $(this).find('.search-snippet').text().toLowerCase();
+                var search = event.currentTarget.value.toLowerCase();
+                if (title.indexOf(search) !== -1) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            });
+        });
     }, 2000);
 });
 function writeHeaderLinks() {
@@ -244,7 +258,7 @@ function writeHeaderLinks() {
         'Food': 'Food',
         'Travel': 'Travel',
         'Crime': 'Crime',
-        'Coronavirus': 'Coronavirus',
+        // 'Coronavirus': 'Coronavirus',
         'Social-Media': 'Social Media',
     };
     for (var key in main_links) {
@@ -260,6 +274,7 @@ function writeHeaderLinks() {
         '<ul class="navbar-nav">';
     var misc_links = {
         'about.html': 'About',
+        'links.html': 'Links',
         'contact.html': 'Contact',
     };
     for (var key in misc_links) {
@@ -599,7 +614,6 @@ function writeBlogsFooter(data) {
 }
 function writeBlogsFooterTrending(data) {
     var random = Math.floor(Math.random() * (data.length - 8) + 1);
-    console.log(random);
     var output = '';
     for (var i = random; i <= random + 7; i++) {
         var title = data[i]['title'];
@@ -638,6 +652,43 @@ function writeRecentBlogs(data) {
         }
     }
     output += '</ul>';
+    return output;
+}
+function writeSearchBlogs(data, search) {
+    var output = '';
+    output += '<div class="col-md-12">' +
+        '<input class="form-control" type="text" id="search-blogs" placeholder="Search..." />';
+    var itr = 0;
+    for (var i = data.length - 1; i >= 0; i--) {
+        var type = data[i]['type'].split(',');
+        var category = data[i]['category'].split(',');
+        var path = '/blogs/' +
+            type[0].replace(" ", "-") + '/' +
+            category[0].replace(" ", "-") + '/' +
+            data[i]['file'].replace(".json", ".html");
+        itr = itr + 1;
+        var title = data[i]['title'].toLowerCase()+" "+data[i]['content'].toLowerCase();
+        search = search.toLowerCase();
+        var status = title.indexOf(search) !== -1;
+        var hide = '';
+        if (status == false) {
+            hide = 'hidden';
+        }
+        output += '<div class="search-blogs-result '+hide+'">' +
+            '<h3 class="title">' +
+            '   <a href="' + path + '">' + data[i]['title'] + '</a>' +
+            '</h3>' +
+            '<p class="submitted"> By <a href="/authors/'+data[i]['author'].replaceAll(" ", "-")+'.html">' + data[i]['author'] + '</a> on <em class="created">' + data[i]['created'] + '</em></p>' +
+            '<div class="search-snippet-info">\n' +
+            '   <div class="search-snippet">' + data[i]['content'] + '</div>\n' +
+            '   <div class="search-info">' +
+            '       <span><i class="fa fa-tag"></i> <a href="/blogs/'+type[0].replace(" ", "-")+'/index.html" title="' + type[0] + '">' + type[0] + '</a></span>' +
+            '       <span><i class="fa fa-tag"></i> <a href="/blogs/'+type[0].replace(" ", "-")+'/'+category[0].replace(" ", "-")+'/index.html" title="' + category[0] + '">' + category[0] + '</a></span>' +
+            '   </div>' +
+            '</div>' +
+            '</div>';
+    }
+    output += '</div>';
     return output;
 }
 function writeSocialShareLinks(region) {
@@ -1408,7 +1459,23 @@ function showTopBar() {
     url = url.split(/[?#]/)[0];
     var output = '';
     output += '<div class="container">\n' +
-        '                <div class="d-flex flex-row-reverse bd-highlight">\n' +
+        '                <div class="d-flex bd-highlight">\n' +
+        '                    <div class="mr-auto p-2 bd-highlight">\n' +
+        '                        <div class="search-link-desktop">\n' +
+        '                            <input class="search-field" type="text" placeholder="Search...">\n' +
+        '                            <input class="search-icon" type="image" src="../../../upload/icon-w-search.svg">\n' +
+        '                        </div>\n' +
+        '                        <div class="search-link-mobile">\n' +
+        '                            <a href="/search.html"><i class="fa fa-search"></i> <span>Search</span></a>\n' +
+        '                        </div>\n' +
+        '                    </div>\n' +
+        '                    <div class="p-2 bd-highlight">\n' +
+        '                        <span class="sizechanger">\n' +
+        '                            <a id="text_resize_decrease">-A</a>\n' +
+        '                            <a id="text_resize_reset">A</a>\n' +
+        '                            <a id="text_resize_increase">+A</a>\n' +
+        '                        </span>\n' +
+        '                    </div>' +
         '                    <div class="p-2 bd-highlight">\n' +
         '                        <div class="dropdown">\n' +
         '                            <button class="dropbtn">Language</button>\n' +
@@ -1421,14 +1488,7 @@ function showTopBar() {
         '                               <a href="'+url+'?ln=te#googtrans(en|te)" class="lang-te lang-select" data-lang="te">Telugu</a>' +
         '                            </div>\n' +
         '                        </div>\n' +
-        '                    </div>\n' +
-        '                    <div class="p-2 bd-highlight">\n' +
-        '                        <span class="sizechanger">\n' +
-        '                            <a id="text_resize_decrease">-A</a>\n' +
-        '                            <a id="text_resize_reset">A</a>\n' +
-        '                            <a id="text_resize_increase">+A</a>\n' +
-        '                        </span>\n' +
-        '                    </div>\n' +
+        '                    </div>' +
         '                </div>\n' +
         '            </div>';
     $('#top-bar').html(output);
@@ -1458,6 +1518,29 @@ function fontIncreaseDecreaseReset() {
         });
     }
 }
+
+/******************************************************************************************************************/
+/************************************** Search (Topbar) ***********************************************************/
+/******************************************************************************************************************/
+$(function() {
+    setTimeout(function() {
+        $('.search-link-desktop .search-icon').click(function() {
+            var search = document.querySelector('.search-link-desktop .search-field').value;
+            if (search != '') {
+                storeValue('peoples-blog-search', search);
+                window.location = "/search.html";
+            }
+        });
+    }, 10);
+    setTimeout(function() {
+        readFile("/../blogs-content-merged/blogs.json", function(text) {
+            var search = getStoredValue('peoples-blog-search');
+            storeValue('peoples-blog-search', '');
+            var data = JSON.parse(text);
+            $('.search-blogs').html(writeSearchBlogs(data, search));
+        });
+    }, 20);
+});
 
 /******************************************************************************************************************/
 /************************************** Security ******************************************************************/
@@ -1504,7 +1587,7 @@ function disableInspectElement() {
 $(function() {
 
     readFile("/authors-content-merged/authors.json", function (text) {
-        // $(".peoplesblog-authors-links").html(writeAuthorLinks(JSON.parse(text)));
+        $(".peoplesblog-authors-links").html(writeAuthorLinks(JSON.parse(text)));
         $(".peoplesblog-authors").append(writeAuthors(JSON.parse(text)));
     });
 
@@ -1809,7 +1892,7 @@ function writeAuthorBlogsPager(data) {
             }
         }
     }
-    console.log(pageCount);
+    // console.log(pageCount);
     var pagerItems = Math.ceil(pageCount / (numberofArticlesPerPage - 1));
     var output = '';
     if (pageCount > (numberofArticlesPerPage - 2)) {
