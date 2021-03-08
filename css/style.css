@@ -2307,7 +2307,7 @@ body .single-wrapper {
     width: 250px;
 }
 .top-bar .search-link-desktop .search-icon {
-    width: 24px;
+    width: 18px;
     vertical-align: middle;
     padding: 2px;
     margin-top: 0.1em;
@@ -2328,7 +2328,9 @@ body .single-wrapper {
 }
 .search-blogs .search-blogs-result {
     overflow: hidden;
-    padding: 8px 0;
+    padding: 8px 16px;
+    margin: 8px 0;
+    background-color: whitesmoke;
 }
 .search-blogs .search-blogs-result h3 {
     font-size: 1.231em;
@@ -2928,7 +2930,7 @@ and (max-device-width : 480px) {
         height: auto !important;
     }
     .top-bar .search-link-desktop { display: none; }
-    .top-bar .search-link-mobile { display: flex; }
+    .top-bar .search-link-mobile { display: flex; padding-top: 2px; }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen
@@ -3208,7 +3210,7 @@ and (max-width : 320px) {
         height: auto !important;
     }
     .top-bar .search-link-desktop { display: none; }
-    .top-bar .search-link-mobile { display: flex; }
+    .top-bar .search-link-mobile { display: flex; padding-top: 2px; }
 }
 /* iPhone 4 ----------- */
 @media
@@ -3481,7 +3483,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         height: auto !important;
     }
     .top-bar .search-link-desktop { display: none; }
-    .top-bar .search-link-mobile { display: flex; }
+    .top-bar .search-link-mobile { display: flex; padding-top: 2px; }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen

@@ -657,7 +657,7 @@ function writeRecentBlogs(data) {
 function writeSearchBlogs(data, search) {
     var output = '';
     output += '<div class="col-md-12">' +
-        '<input class="form-control" type="text" id="search-blogs" placeholder="Search..." />';
+        '<input class="form-control" type="text" id="search-blogs" placeholder="Search..." value="'+search+'" />';
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         var type = data[i]['type'].split(',');
@@ -1466,7 +1466,7 @@ function showTopBar() {
         '                            <input class="search-icon" type="image" src="../../../upload/icon-w-search.svg">\n' +
         '                        </div>\n' +
         '                        <div class="search-link-mobile">\n' +
-        '                            <a href="/search.html"><i class="fa fa-search"></i> <span>Search</span></a>\n' +
+        '                            <a href="/search.html"><i class="fa fa-search"></i></a>\n' +
         '                        </div>\n' +
         '                    </div>\n' +
         '                    <div class="p-2 bd-highlight">\n' +
