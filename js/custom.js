@@ -770,7 +770,7 @@ function writeBlogTypesLinks(data) {
             var baseurl = window.location.origin;
             var currentType = type[j].trim().replace(" ", "-");
             var typeLink = baseurl+'/blogs/'+currentType+'/index.html';
-            links[currentType] = '<div class="child"><span><i class="fa fa-tag"></i> <a href="'+typeLink+'">'+currentType.replace("-", " ")+'</a></span></div>';
+            links[currentType] = '<div class="child"><span><i class="fa fa-file"></i>&nbsp;<a href="'+typeLink+'">'+currentType.replace("-", " ")+'</a></span></div>';
         }
     }
     output += '<div class="site-links">';

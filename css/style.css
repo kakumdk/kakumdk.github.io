@@ -2079,6 +2079,7 @@ body .dmtop {
     padding-right: 8px;
 }
 .site-links span i {
+    width: 16px;
     color: #269f42 !important;
 }
 .site-links .author-wrapper {
