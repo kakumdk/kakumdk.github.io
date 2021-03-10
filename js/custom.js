@@ -255,11 +255,11 @@ function writeHeaderLinks() {
         'Blogs': 'Blogs',
         'Sci-Tech': 'Sci-Tech',
         'Lifestyle': 'Lifestyle',
-        'Food': 'Food',
+        // 'Food': 'Food',
         'Travel': 'Travel',
-        'Crime': 'Crime',
-        // 'Coronavirus': 'Coronavirus',
         'Social-Media': 'Social Media',
+        'Crime': 'Crime',
+        'Coronavirus': 'Coronavirus',
     };
     for (var key in main_links) {
         var title = main_links[key];
