@@ -76,6 +76,7 @@ Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
 Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
 Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Tips-to-Prevent-Chain-Snatching.html
 Allow: /blogs/Lifestyle/Relationship/2021-03-05-10-UNSAID-CONFESSIONS.html
+Allow: /blogs/Coronavirus/Vaccination/2021-03-10-14-COVID-19-Vaccination-in-India.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -172,6 +173,7 @@ Allow: /blogs/Sci-Tech/Book/2021-03-02-06-Things-to-know-about-Proofreading.html
 Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
 Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Tips-to-Prevent-Chain-Snatching.html
 Allow: /blogs/Lifestyle/Relationship/2021-03-05-10-UNSAID-CONFESSIONS.html
+Allow: /blogs/Coronavirus/Vaccination/2021-03-10-14-COVID-19-Vaccination-in-India.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
