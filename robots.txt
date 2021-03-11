@@ -77,6 +77,7 @@ Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
 Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Tips-to-Prevent-Chain-Snatching.html
 Allow: /blogs/Lifestyle/Relationship/2021-03-05-10-UNSAID-CONFESSIONS.html
 Allow: /blogs/Coronavirus/Vaccination/2021-03-10-14-COVID-19-Vaccination-in-India.html
+Allow: /blogs/Lifestyle/Life/2021-03-11-15-Lines-worth-reading.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -174,6 +175,7 @@ Allow: /blogs/Social-Media/World/2021-03-03-14-World-Wildlife-Day.html
 Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Tips-to-Prevent-Chain-Snatching.html
 Allow: /blogs/Lifestyle/Relationship/2021-03-05-10-UNSAID-CONFESSIONS.html
 Allow: /blogs/Coronavirus/Vaccination/2021-03-10-14-COVID-19-Vaccination-in-India.html
+Allow: /blogs/Lifestyle/Life/2021-03-11-15-Lines-worth-reading.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
