@@ -78,6 +78,7 @@ Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Ti
 Allow: /blogs/Lifestyle/Relationship/2021-03-05-10-UNSAID-CONFESSIONS.html
 Allow: /blogs/Coronavirus/Vaccination/2021-03-10-14-COVID-19-Vaccination-in-India.html
 Allow: /blogs/Lifestyle/Life/2021-03-11-15-Lines-worth-reading.html
+Allow: /blogs/Social-Media/Bank/2021-03-15-12-Privatisation-of-Public-Sector-Banks-Banks-Strike-March-2021.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
@@ -176,6 +177,7 @@ Allow: /blogs/Crime/Chain-Snatching/2021-03-04-14-Be-Aware-of-Chain-Snatchers-Ti
 Allow: /blogs/Lifestyle/Relationship/2021-03-05-10-UNSAID-CONFESSIONS.html
 Allow: /blogs/Coronavirus/Vaccination/2021-03-10-14-COVID-19-Vaccination-in-India.html
 Allow: /blogs/Lifestyle/Life/2021-03-11-15-Lines-worth-reading.html
+Allow: /blogs/Social-Media/Bank/2021-03-15-12-Privatisation-of-Public-Sector-Banks-Banks-Strike-March-2021.html
 Disallow: /ads/ads.json
 Disallow: /authors-content
 Disallow: /authors-content/
