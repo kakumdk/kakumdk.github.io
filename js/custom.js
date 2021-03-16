@@ -1466,7 +1466,7 @@ function showTopBar() {
         '                <div class="d-flex bd-highlight">\n' +
         '                    <div class="mr-auto p-2 bd-highlight">\n' +
         '                        <div class="search-link-desktop">\n' +
-        '                            <input class="search-field" type="text" placeholder="Search...">\n' +
+        '                            <input id="search-field" class="search-field" type="text" placeholder="Search...">\n' +
         '                            <input class="search-icon" type="image" src="../../../upload/icon-w-search.svg">\n' +
         '                        </div>\n' +
         '                        <div class="search-link-mobile">\n' +
@@ -1528,6 +1528,13 @@ function fontIncreaseDecreaseReset() {
 /******************************************************************************************************************/
 $(function() {
     setTimeout(function() {
+        var input = document.getElementById("search-field");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                $('.search-link-desktop .search-icon').click();
+            }
+        });
         $('.search-link-desktop .search-icon').click(function() {
             var search = document.querySelector('.search-link-desktop .search-field').value;
             if (search != '') {
