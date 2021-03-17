@@ -1200,12 +1200,12 @@ $(function() {
     });
     readFile("/../../../quotes/quotes.json", function (text) {
         setTimeout(function () {
-            // $('.ads-home').append(writeArticleQuotes(JSON.parse(text)));
-            // $('.ads-blogs').append(writeArticleQuotes(JSON.parse(text)));
+            $('.ads-home').append(writeArticleQuotes(JSON.parse(text)));
+            $('.ads-blogs').append(writeArticleQuotes(JSON.parse(text)));
             // $('.ads-type').append(writeArticleQuotes(JSON.parse(text)));
             // $('.ads').append(writeArticleQuotes(JSON.parse(text)));
             // $('.ads-article').append(writeArticleQuotes(JSON.parse(text)));
-        }, 100);
+        }, 500);
     });
 
 });
