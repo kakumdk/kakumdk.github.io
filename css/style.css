@@ -1930,6 +1930,7 @@ div.ads-page-6 .ad-open i, div.ads-page-6 .ad-close i{
     text-transform: unset;
     font-size: 14px;
     padding: 30px 15px;
+    /*font-weight: 600;*/
 }
 #navbarCollapse .nav-item .nav-link:hover {
     color: #000 !important;
@@ -2296,7 +2297,8 @@ body .single-wrapper {
     line-height: 0;
 }
 .top-bar .search-link-desktop .search-field {
-    background: #bce3fa;
+    /*background: #bce3fa;*/
+    background-color: #fff;
     border: none;
     border-radius: 3px;
     -webkit-font-smoothing: antialiased;
@@ -2308,11 +2310,16 @@ body .single-wrapper {
     width: 250px;
 }
 .top-bar .search-link-desktop .search-icon {
-    width: 24px;
-    vertical-align: middle;
-    padding: 2px;
-    margin-top: 0.1em;
-    margin-left: 5px;
+    /*width: 24px;*/
+    /*vertical-align: middle;*/
+    /*padding: 2px;*/
+    /*margin-top: 0.1em;*/
+    /*margin-left: 5px;*/
+    width: auto;
+    padding: 0 8px;
+    margin-top: 0.05em;
+    color: #fff;
+    font-size: 18px;
 }
 .top-bar .search-link-mobile {
     display: none;

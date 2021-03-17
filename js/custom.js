@@ -1475,8 +1475,9 @@ function showTopBar() {
         '                <div class="d-flex bd-highlight">\n' +
         '                    <div class="mr-auto p-2 bd-highlight">\n' +
         '                        <div class="search-link-desktop">\n' +
-        '                            <input id="search-field" class="search-field" type="text" placeholder="Search...">\n' +
-        '                            <input class="search-icon" type="image" src="../../../upload/icon-w-search.svg">\n' +
+        '                            <input id="search-field" class="search-field" type="text" placeholder="Search">\n' +
+        // '                            <input class="search-icon" type="image" src="">' +
+        '<span class="search-icon"><i class="fa fa-search"></i></span>\n' +
         '                        </div>\n' +
         '                        <div class="search-link-mobile">\n' +
         '                            <a href="/search.html"><i class="fa fa-search"></i></a>\n' +
