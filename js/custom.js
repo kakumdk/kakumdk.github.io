@@ -100,6 +100,7 @@ $(function() {
         $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads-home').append(writePopularBlogs(JSON.parse(text)));
+            $('.ads-home').append(writeRecentBlogs(JSON.parse(text)));
         }, 200);
     });
     readFile("/../blogs-content-merged/blogs.json", function(text){
@@ -110,6 +111,7 @@ $(function() {
         $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads-blogs').append(writePopularBlogs(JSON.parse(text)));
+            $('.ads-blogs').append(writeRecentBlogs(JSON.parse(text)));
         }, 200);
     });
     readFile("/../../blogs-content-merged/blogs.json", function(text){
@@ -121,6 +123,7 @@ $(function() {
         $('.blog-list-homepage-footer-trending').html(writeBlogsFooterTrending(data));
         setTimeout(function () {
             $('.ads-type').append(writePopularBlogs(JSON.parse(text)));
+            $('.ads-type').append(writeRecentBlogs(JSON.parse(text)));
         }, 200);
     });
     readFile("../../../blogs-content-merged/blogs.json", function(text){
@@ -136,6 +139,8 @@ $(function() {
         }, 200);
         setTimeout(function () {
             $('.ads-article').append(writeRecentBlogs(JSON.parse(text)));
+            $(".ads-article").append('<h2>Categories</h2>');
+            $(".ads-article").append('<div class="article-categories">'+writeCategoriesLinks(JSON.parse(text))+'</div>');
             var currentUrl = (window.location.href).split('/');
             if (currentUrl[6] == "2021-02-22-Coronavirus-Discovered-in-the-1960s-Serious-Respiratory-Tract-Infections.html") {
                 $('.coronaviruses-discovery').append("<iframe width='620' height='415' src='https://www.youtube.com/embed/bDBqk6QyGgY?autoplay=1&mute=0&&loop=1&controls=1&origin=https://peoplesblog.co.in' frameborder='0' allowfullscreen></iframe>");
@@ -624,7 +629,9 @@ function writeBlogsFooterTrending(data) {
 }
 function writePopularBlogs(data) {
     var output = '';
-    output += "<hr class='invis0'><h3>Popular Blogs</h3><ul class='popular-articles'>";
+    output += "" +
+        // "<hr class='invis0'>" +
+        "<h2>Popular Blogs</h2><ul class='popular-articles'>";
     for (var i = 1; i <= 10; i++) {
         var random = Math.floor(Math.random() * (data.length - 1) + 1);
         if (random < data.length) {
@@ -641,7 +648,9 @@ function writePopularBlogs(data) {
 }
 function writeRecentBlogs(data) {
     var output = '';
-    output += "<hr class='invis0'><h3>Recent Blogs</h3><ul class='recent-articles'>";
+    output += "" +
+        // "<hr class='invis0'>" +
+        "<h2>Recent Blogs</h2><ul class='recent-articles'>";
     var itr = 0;
     for (var i = data.length - 1; i >= 0; i--) {
         if (itr <= 5) {
@@ -959,52 +968,52 @@ function writeAuthorBlogs(data) {
 $(function() {
     readFile("/ads/ads.json", function(text){
         // $('.ads-home').html(writeAds1200x1200(JSON.parse(text), 'home'));
-        $('.ads-home').append(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads-home').append(writeAdsSlideshow(JSON.parse(text)));
     });
     readFile("/../ads/ads.json", function(text){
-        $('.ads-blogs').append(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads-blogs').append(writeAdsSlideshow(JSON.parse(text)));
         // adShowHidePage('ads-page-5');
     });
     readFile("/../../ads/ads.json", function(text){
-        $('.ads-type').append(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads-type').append(writeAdsSlideshow(JSON.parse(text)));
         // $('.ads-type').append(writeAds1200x1200(JSON.parse(text), 'type'));
         // adShowHidePage('ads-page-4');
     });
     readFile("/../../../ads/ads.json", function(text){
-        $('.ads').append(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads').append(writeAdsSlideshow(JSON.parse(text)));
         // $('.ads').append(writeAds1200x1200(JSON.parse(text), 'cat'));
         // $('.ads-article').html(writeAds1200x1200(JSON.parse(text), 'cat'));
-        $('.ads-article').html(writeAdsSlideshow(JSON.parse(text)));
+        // $('.ads-article').html(writeAdsSlideshow(JSON.parse(text)));
         setTimeout(function() {
-            $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
-            adShowHidePage('ads-page-1');
+            // $('.ads-page-1').html(writeAds728x90(JSON.parse(text), 'cat'));
+            // adShowHidePage('ads-page-1');
         }, 3000);
         setTimeout(function() {
-            $('.ads-page-2').html(writeAds728x90(JSON.parse(text), 'cat'));
-            adShowHidePage('ads-page-2');
+            // $('.ads-page-2').html(writeAds728x90(JSON.parse(text), 'cat'));
+            // adShowHidePage('ads-page-2');
         }, 5000);
         setTimeout(function() {
-            $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
-            adShowHidePage('ads-page-3');
+            // $('.ads-page-3').html(writeAds728x90(JSON.parse(text), 'cat'));
+            // adShowHidePage('ads-page-3');
         }, 8000);
     });
     readFile("/../../../ads/ads-video.json", function(text){
         setTimeout(function() {
-            $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+            // $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
         }, 100);
         setTimeout(function() {
-            $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+            // $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
         }, 300);
         setTimeout(function() {
-            $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
+            // $('.ads-article').append(writeVideoAdsSlideshow(JSON.parse(text)));
         }, 500);
     });
     setTimeout(function() {
-        adShowHide('ads-home');
-        adShowHide('ads-blogs');
-        adShowHide('ads-type');
-        adShowHide('ads');
-        adShowHide('ads-article');
+        // adShowHide('ads-home');
+        // adShowHide('ads-blogs');
+        // adShowHide('ads-type');
+        // adShowHide('ads');
+        // adShowHide('ads-article');
     }, 3000);
 
     setTimeout(function() {
@@ -1191,11 +1200,11 @@ $(function() {
     });
     readFile("/../../../quotes/quotes.json", function (text) {
         setTimeout(function () {
-            $('.ads-home').append(writeArticleQuotes(JSON.parse(text)));
-            $('.ads-blogs').append(writeArticleQuotes(JSON.parse(text)));
-            $('.ads-type').append(writeArticleQuotes(JSON.parse(text)));
-            $('.ads').append(writeArticleQuotes(JSON.parse(text)));
-            $('.ads-article').append(writeArticleQuotes(JSON.parse(text)));
+            // $('.ads-home').append(writeArticleQuotes(JSON.parse(text)));
+            // $('.ads-blogs').append(writeArticleQuotes(JSON.parse(text)));
+            // $('.ads-type').append(writeArticleQuotes(JSON.parse(text)));
+            // $('.ads').append(writeArticleQuotes(JSON.parse(text)));
+            // $('.ads-article').append(writeArticleQuotes(JSON.parse(text)));
         }, 100);
     });
 

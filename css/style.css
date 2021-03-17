@@ -2618,6 +2618,7 @@ ul.popular-articles > li:before, .recent-articles > li:before {
 }
 ul.popular-articles > li, .recent-articles > li {
     padding-bottom: 10px;
+    line-height: 24px;
 }
 ul.popular-articles > li a, .recent-articles > li a {
     color: #000000 !important;
@@ -2651,7 +2652,21 @@ a.navbar-brand > img, .footer-text > a > img {
 .check1 {
     padding: 0 0 0 18px !important;
 }
-
+.article-categories .site-links .child {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: underline !important;
+}
+.article-categories .site-links .child:hover {
+    text-decoration: none !important;
+}
+.article-categories .site-links .child span i {
+    display: none;
+}
+.article-categories .site-links .child span a:hover {
+    color: #064771 !important;
+    border-bottom: 1px solid #064771 !important;
+}
 
 
 
