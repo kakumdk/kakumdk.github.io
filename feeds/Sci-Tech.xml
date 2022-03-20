@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Sci-Tech - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Sci-Tech.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Improve Drupal Search with Solr, Locally configured via Lando</title>
+			<link>https://peoplesblog.co.in/articles/Improve-Drupal-Search-with-Solr-Locally-configured-via-Lando.html</link>
+			<description>In this article, we are going to learn how Drupal search can be improved with Solr which provides great performance, and is suitable even for use on large commercial websites. And along with this using the search_api &amp; search_api_solr modules, helps to configure the Facets &amp; Multilingual content can be handled in an improved manner. And let's see how we can configure this locally with the help of </description>
+			<pubDate>Mon, 21 Feb 2022 19:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Improve-Drupal-Search-with-Solr-Locally-configured-via-Lando.html</guid>
+    </item><item>
+			<title>When to use hook_update_N &amp; hook_post_update_NAME?</title>
+			<link>https://peoplesblog.co.in/articles/When-to-use-hook_update_N-and-hook_post_update_NAME.html</link>
+			<description>In this article, we are going to learn when to use hook_update_N and hook_post_update_NAME. In general, I was using hook_update_N for any database-related changes or with any configuration additions or updates. And I was using hook_post_update_NAME for any content creation or updating or for the creation or updating any taxonomy terms etc, sometimes for clearing site caches as well. But, let’s h</description>
+			<pubDate>Tue, 08 Feb 2022 12:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/When-to-use-hook_update_N-and-hook_post_update_NAME.html</guid>
+    </item><item>
+			<title>Improvements for Editor Experience in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Improvements-for-Editor-Experience-in-Drupal.html</link>
+			<description>In this article, we are going to learn what Drupal offers for text editors or content managers as a content management framework within Drupal Core &amp; Contributed modules. Earlier versions of Drupal have several useful features to help content editors to manage their content on a daily basis. And in the newer versions of Drupal (from when Symfony was introduced), there are a few more improvements i</description>
+			<pubDate>Wed, 22 Dec 2021 13:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Improvements-for-Editor-Experience-in-Drupal.html</guid>
+    </item><item>
+			<title>Why do dentists suggest Clear aligners (invisalign)?</title>
+			<link>https://peoplesblog.co.in/articles/Why-do-dentists-suggest-Clear-aligners-invisalign.html</link>
+			<description>Every patient wants their teeth to be in the proper correct position. In young patients they go for orthodontist braces treatment for the correction of their teeth. Patients demand for esthetic orthodontic appliances as made for clear aligners into mainstream modern orthodontics. Clear aligners actually began in 1926, by Orrin Remensydre’s Flex-o-Tite, the gum massage appliance which has side ef</description>
+			<pubDate>Fri, 03 Dec 2021 16:00:00 +0530</pubDate>
+			<dc:creator>Jyothi S N</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Why-do-dentists-suggest-Clear-aligners-invisalign.html</guid>
+    </item><item>
+			<title>What Drupal offers as Responsive Web Design within Core</title>
+			<link>https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</link>
+			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
+			<pubDate>Thu, 07 Oct 2021 16:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</guid>
+    </item><item>
+			<title>Know why Symfony framework was picked by Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</link>
+			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
+			<pubDate>Sun, 22 Aug 2021 10:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</guid>
+    </item><item>
+			<title>Understand why Twig is replacing PHP Template in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</link>
+			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
+                            Twig is a PHP-based compiled templating </description>
+			<pubDate>Sat, 14 Aug 2021 16:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</guid>
+    </item><item>
+			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/In-laymans-terms-Services-and-Dependency-Injection-in-Drupal.html</link>
+			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
+                            With Dependency Injection, the class is no longer responsible for in</description>
+			<pubDate>Wed, 04 Aug 2021 09:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/In-laymans-terms-Services-and-Dependency-Injection-in-Drupal.html</guid>
+    </item><item>
+			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
+			<link>https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</link>
+			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
+                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
+			<pubDate>Sat, 31 Jul 2021 15:10:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</guid>
+    </item><item>
+			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Multisite-Local-environment-setup-with-Lando-and-Drupal.html</link>
+			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.
+                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collectio</description>
+			<pubDate>Fri, 30 Jul 2021 14:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Multisite-Local-environment-setup-with-Lando-and-Drupal.html</guid>
+    </item>
+</channel>
+</rss>

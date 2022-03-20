@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Security - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Security.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
+			<link>https://peoplesblog.co.in/articles/Fix-SSL-error-in-Citrix-Web-Receiver-on-Ubuntu.html</link>
+			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.
+                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to syste</description>
+			<pubDate>Mon, 05 Jul 2021 18:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Fix-SSL-error-in-Citrix-Web-Receiver-on-Ubuntu.html</guid>
+    </item><item>
+			<title>Security Hardening - Nginx Response Headers</title>
+			<link>https://peoplesblog.co.in/articles/Security-Hardening-Nginx-Response-Headers.html</link>
+			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.
+                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of info</description>
+			<pubDate>Sun, 20 Jun 2021 11:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Security-Hardening-Nginx-Response-Headers.html</guid>
+    </item>
+</channel>
+</rss>

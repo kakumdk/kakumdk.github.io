@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Editor - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Editor.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Improvements for Editor Experience in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Improvements-for-Editor-Experience-in-Drupal.html</link>
+			<description>In this article, we are going to learn what Drupal offers for text editors or content managers as a content management framework within Drupal Core &amp; Contributed modules. Earlier versions of Drupal have several useful features to help content editors to manage their content on a daily basis. And in the newer versions of Drupal (from when Symfony was introduced), there are a few more improvements i</description>
+			<pubDate>Wed, 22 Dec 2021 13:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Improvements-for-Editor-Experience-in-Drupal.html</guid>
+    </item>
+</channel>
+</rss>

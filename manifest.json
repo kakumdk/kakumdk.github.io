@@ -1,0 +1,25 @@
+{
+  "name": "Peoples BLOG",
+  "short_name": "Peoples BLOG",
+  "description": "We hope & wish, you get some enriching thoughts in your daily life through our articles.",
+  "theme_color": "#0477be",
+  "background_color": "#0477be",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/upload/favicon.webp",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/upload/favicon.webp",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

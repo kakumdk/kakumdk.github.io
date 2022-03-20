@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Salt - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Salt.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Scientists Have Created Hexagonal Salt, For First Time Ever</title>
+			<link>https://peoplesblog.co.in/articles/Scientists-Have-Created-Hexagonal-Salt.html</link>
+			<description>While it probably won't make it to your dining table, a new scientific achievement might be able to help in everything from radar equipment to electric cars: scientists have been able to form salt, aka sodium chloride (NaCl), in a hexagonal shapeThis is work done at the smallest of scales, with researchers able to get a thin film of hexagonal salt to form on top of a layer of diamond, due to the c</description>
+			<pubDate>Mon, 01 Jun 2020 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Scientists-Have-Created-Hexagonal-Salt.html</guid>
+    </item>
+</channel>
+</rss>

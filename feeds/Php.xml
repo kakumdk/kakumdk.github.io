@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Php - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Php.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>What Drupal offers as Responsive Web Design within Core</title>
+			<link>https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</link>
+			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
+			<pubDate>Thu, 07 Oct 2021 16:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</guid>
+    </item><item>
+			<title>Know why Symfony framework was picked by Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</link>
+			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
+			<pubDate>Sun, 22 Aug 2021 10:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</guid>
+    </item><item>
+			<title>Understand why Twig is replacing PHP Template in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</link>
+			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
+                            Twig is a PHP-based compiled templating </description>
+			<pubDate>Sat, 14 Aug 2021 16:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</guid>
+    </item><item>
+			<title>AES Encrypt &amp; Decrypt</title>
+			<link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
+			<description>Advanced Encryption Standard, where we use "AES-256" to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC".
+                                AES Encrypt
+                                
+                                    We would have the "Secret" stored in a file which is other than the web root.
+                                
+    </description>
+			<pubDate>Tue, 11 Jun 2019 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
+    </item><item>
+			<title>Configuring &amp; Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</title>
+			<link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
+			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.
+                                The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.
+                                Init</description>
+			<pubDate>Tue, 29 Jun 2021 17:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
+    </item>
+</channel>
+</rss>

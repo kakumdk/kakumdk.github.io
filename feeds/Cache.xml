@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Cache - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Cache.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
+			<link>https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</link>
+			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
+                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
+			<pubDate>Sat, 31 Jul 2021 15:10:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</guid>
+    </item>
+</channel>
+</rss>

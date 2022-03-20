@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Services - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Services.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/In-laymans-terms-Services-and-Dependency-Injection-in-Drupal.html</link>
+			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
+                            With Dependency Injection, the class is no longer responsible for in</description>
+			<pubDate>Wed, 04 Aug 2021 09:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/In-laymans-terms-Services-and-Dependency-Injection-in-Drupal.html</guid>
+    </item>
+</channel>
+</rss>

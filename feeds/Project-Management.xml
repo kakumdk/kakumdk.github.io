@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Project Management - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/Project-Management.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>What to Know for Estimating Projects</title>
+			<link>https://peoplesblog.co.in/articles/What-to-Know-for-Estimating-Projects.html</link>
+			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.
+                            If one needs to deliver a project successfully then one must estimate the project as better as possible.
+               </description>
+			<pubDate>Tue, 27 Jul 2021 16:10:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/What-to-Know-for-Estimating-Projects.html</guid>
+    </item>
+</channel>
+</rss>
