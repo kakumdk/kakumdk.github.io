@@ -13,6 +13,7 @@ Allow: /quick-read
 Allow: /videos
 Allow: /search.html
 Allow: /feeds
+Allow: /articles/friend-what-comes-to-your-mind-when-you-hear-this-word.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/dream-small-info-on-it.html
 Allow: /articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html
@@ -220,6 +221,8 @@ Allow: /articles/Feedback.html
 Allow: /articles/Fluorosis.html
 Allow: /articles/Food.html
 Allow: /articles/Freedom.html
+Allow: /articles/Friend.html
+Allow: /articles/Friendship.html
 Allow: /articles/Fruit.html
 Allow: /articles/Gandikota.html
 Allow: /articles/GhatiSubramanya.html
@@ -339,6 +342,8 @@ Allow: /feeds/Feedback.xml
 Allow: /feeds/Fluorosis.xml
 Allow: /feeds/Food.xml
 Allow: /feeds/Freedom.xml
+Allow: /feeds/Friend.xml
+Allow: /feeds/Friendship.xml
 Allow: /feeds/Fruit.xml
 Allow: /feeds/Gandikota.xml
 Allow: /feeds/GhatiSubramanya.xml

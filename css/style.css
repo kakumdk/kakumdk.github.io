@@ -3035,6 +3035,7 @@ body .copyright {
 .single-article .popular-articles .article img {
     width: 76px;
     margin-right: 2px;
+    height: 63px;
 }
 .single-article .popular-articles .article h5 {
     font-size: 14px;
