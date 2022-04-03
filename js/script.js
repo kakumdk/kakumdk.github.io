@@ -594,6 +594,35 @@ function searchVideosListPage() {
 }
 
 /******************************************************************************************************************/
+/************************************** Search Quotes *************************************************************/
+/******************************************************************************************************************/
+$(function() {
+    searchQuotesListPage();
+});
+function searchQuotesListPage() {
+    $("#search-quotes").on("keyup", function(event) {
+        console.log('aa');
+        $('.search-quotes .quotes').removeClass('hide');
+        $('.search-quotes').children('.quotes').each(function () {
+            console.log(title);
+            var title = $(this).find('.quote-title').text().toLowerCase();
+            title += " " + $(this).find('.author').text().toLowerCase();
+            title += " " + $(this).find('.tags a').text().toLowerCase();
+            var search = event.currentTarget.value.toLowerCase();
+            var searchFor = search.split(' ');
+            for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                if (title.indexOf(searchFor[i]) !== -1) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            }
+        });
+    });
+}
+
+/******************************************************************************************************************/
 /************************************** Global Search *************************************************************/
 /******************************************************************************************************************/
 $(function() {

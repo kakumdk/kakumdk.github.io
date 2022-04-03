@@ -13,6 +13,7 @@ Allow: /quick-read
 Allow: /videos
 Allow: /search.html
 Allow: /feeds
+Allow: /quotes
 Allow: /articles/friend-what-comes-to-your-mind-when-you-hear-this-word.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/dream-small-info-on-it.html
@@ -421,6 +422,15 @@ Allow: /feeds/Web.xml
 Allow: /feeds/World.xml
 Allow: /feeds/Writing.xml
 Allow: /feeds/Youth.xml
+Allow: /quotes/Friendship.html
+Allow: /quotes/Humor.html
+Allow: /quotes/Intelligence.html
+Allow: /quotes/Life.html
+Allow: /quotes/Love.html
+Allow: /quotes/Marriage.html
+Allow: /quotes/Motivational.html
+Allow: /quotes/Self.html
+Allow: /quotes/Trust.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read-sitemap.xml
