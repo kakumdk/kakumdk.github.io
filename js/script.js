@@ -375,7 +375,7 @@ $(function() {
 });
 function localEnv() {
     var baseurl = window.location.origin;
-    if (baseurl === 'http://kakumdk.local') {
+    if (baseurl === 'https://peoplesblog.local:8089') {
         return true;
     }
     return false;
