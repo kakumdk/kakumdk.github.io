@@ -58,7 +58,7 @@ self.addEventListener("install", e => {
     // Tell the active service worker to take control of the page immediately.
     self.clients.claim();
 }), self.addEventListener("fetch", e => {
-    console.log('[Service Worker] Fetch', event.request.url);
+    // console.log('[Service Worker] Fetch', event.request.url);
     if (event.request.mode === 'navigate') {
         event.respondWith((async () => {
             try {

@@ -46,13 +46,10 @@
     <link href="/css/custom-fonts.css" rel="stylesheet" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="/css/style.css" rel="stylesheet" />
-    <link href="/css/responsive.css" rel="stylesheet" />
-    <link href="/css/colors.css" rel="stylesheet" />
-    <link href="/css/version/tech.css" rel="stylesheet" />
+    <link href="/css/styles-2.css" rel="stylesheet" />
 </head>
 <body>
-  <div id="global_search_popup" class="global_search_modal">
+  <!-- div id="global_search_popup" class="global_search_modal">
         <div class="global_search_modal_content">
             <span class="global_search_modal_content_close">&times;</span>
             <div class="modal-header">
@@ -64,12 +61,12 @@
                 <input type="button" value="Search" />
             </div>
         </div>
-    </div>
+    </div -->
     <div class="global-progress-bar-on-scroll-wrapper">
         <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
     </div>
     <div id="wrapper">
-        <div id="top-bar" class="top-bar">
+        <!-- div id="top-bar" class="top-bar">
             <div class="container">
                 <div class="d-flex bd-highlight">
                     <div class="mr-auto p-2 bd-highlight">
@@ -99,7 +96,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div -->
         <header class="tech-header header">
         <div class="container">
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -118,10 +115,10 @@
                            <!-- li class="nav-item"><a class="nav-link" href="/articles/Coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
                         </ul>
                         <ul class="navbar-nav">
-                           <li class="nav-item"><a class="nav-link" href="/articles" title="Articles">Articles</a></li>
-                           <li class="nav-item"><a class="nav-link" href="/quick-read" title="Quick Read">Quick Read</a></li>
-                           <li class="nav-item"><a class="nav-link" href="/quotes" title="Quotes">Quotes</a></li>
-                           <li class="nav-item"><a class="nav-link" href="/videos" title="Videos">Videos</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li>
                            <li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li>
                         </ul>
                 </div>
@@ -137,7 +134,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item"><a href="/articles">Articles</a></li>
+                            <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
                             <li class="breadcrumb-item active">Migrate</li>
                         </ol>
                     </div><!-- end col -->
@@ -150,7 +147,9 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
-                            <div class="articles label-articles"><div class="article">
+                          <div class="articles label-articles">
+                            <div class="row"><div class="col-md-4">
+        <div class="article">
                   <div class="articles-image">
                     <a href="/articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html" title="Migrate your site from Drupal 7 To Drupal 9?">
                         <img loading="lazy" src="/upload/banners/2022-03-17-13-migrate-your-site-from-drupal-seven-to-drupal-nine.jpg" class="img-fluid" alt="Migrate your site from Drupal 7 To Drupal 9?" title="Migrate your site from Drupal 7 To Drupal 9?" />
@@ -158,10 +157,13 @@
                   </div>
                   <div class="articles-content">
                     <h4><a href="/articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html" title="Migrate your site from Drupal 7 To Drupal 9?">Migrate your site from Drupal 7 To Drupal 9?</a></h4>
-                    <div class="articles-author">By <a class="author_item" href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a> on 17th Mar 2022</div>
+                    <!-- div class="articles-author">By <a class="author_item" href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a> on 17th Mar 2022</div -->
+                    <div class="articles-author"><em>By</em><a class="author_item" href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a><em>on</em><span>17th Mar 2022</span></div>
                     <div class="articles-summary">In this article, we are going to see what are the important things you need to understand for the migration of your Drupal 7 site to the Drupal 9 site. And if you see from your Business perspective, Drupal 7 was launched nine years ago, and this is the perfect time for some reassessment of the needs of site users & content managers. And if you see from Drupal’s end, Initially, Drupal 7 end of li</div>
                   </div>
-                </div><div class="article">
+        </div>
+                </div><div class="col-md-4">
+        <div class="article">
                   <div class="articles-image">
                     <a href="/articles/Drupal--to-DrupalAudits.html" title="Drupal 7 to Drupal 8/9 Audits">
                         <img loading="lazy" src="/upload/banner788x443/public/Audit-drupal.png" class="img-fluid" alt="Drupal 7 to Drupal 8/9 Audits" title="Drupal 7 to Drupal 8/9 Audits" />
@@ -169,13 +171,19 @@
                   </div>
                   <div class="articles-content">
                     <h4><a href="/articles/Drupal--to-DrupalAudits.html" title="Drupal 7 to Drupal 8/9 Audits">Drupal 7 to Drupal 8/9 Audits</a></h4>
-                    <div class="articles-author">By <a class="author_item" href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a> on 24th Apr 2021</div>
+                    <!-- div class="articles-author">By <a class="author_item" href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a> on 24th Apr 2021</div -->
+                    <div class="articles-author"><em>By</em><a class="author_item" href="/authors/Karthik-Kumar-D-K.html">Karthik Kumar D K</a><em>on</em><span>24th Apr 2021</span></div>
                     <div class="articles-summary">Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.
                        </div>
                   </div>
+        </div>
                 </div>
-                                <div class="message">Showing articles of label <span>Migrate</span>. <a href="/articles">Show all articles</a></div>
-                            </div><!-- end blog-list --><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+                              <div class="col-md-12">
+                                <div class="message">Showing articles of label <span>Migrate</span>. <a href="/articles/index.html">Show all articles</a></div>
+                              </div>
+                            </div><!-- end blog-list -->
+                            </div>
+                            </div><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
      crossorigin="anonymous"></script -->
 <!-- Sample Display ad (Horizontal 2) -->
 <ins class="adsbygoogle"
@@ -245,7 +253,7 @@
                                     <li><a title="About" href="/about.html">About</a></li>
                                     <li><a title="Contact" href="/contact.html">Contact</a></li>
                                     <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
-                                    <li><a title="Sitemaps" href="/sitemaps">Sitemaps</a></li>
+                                    <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
                                     <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
                                     <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
                                 </ul>
@@ -257,11 +265,11 @@
                             <h2 class="widget-title">Navigation</h2>
                             <div class="link-widget">
                                 <ul class="mobile">
-                                    <li><a title="Articles" href="/articles">Articles</a></li>
-                                    <li><a title="Quick Read" href="/quick-read">Quick Read</a></li>
-                                    <li><a title="Quotes" href="/quotes">Quotes</a></li>
-                                    <li><a title="Videos" href="/videos">Videos</a></li>
-                                    <li><a title="Authors" href="/authors">Authors</a></li>
+                                    <li><a title="Articles" href="/articles/index.html">Articles</a></li>
+                                    <li><a title="Quick Read" href="/quick-read/index.html">Quick Read</a></li>
+                                    <li><a title="Quotes" href="/quotes/index.html">Quotes</a></li>
+                                    <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                    <li><a title="Authors" href="/authors/index.html">Authors</a></li>
                                     <li><a title="Search" href="/search.html">Search</a></li>
                                     <li><a title="World Clock" href="/world-clock.html">World Clock</a></li>
                                 </ul>
@@ -278,7 +286,7 @@
                     </div>
                 </div>
             </div><!-- end container -->
-        </footer><div class="dmtop">Scroll to Top</div>
+        </footer><!-- div class="dmtop">Scroll to Top</div -->
     </div><!-- end wrapper -->
     <!-- JS -->
     <script src="/js/jquery.min.js"></script>

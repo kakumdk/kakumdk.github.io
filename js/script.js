@@ -416,24 +416,24 @@ $(function() {
         var hoursDifference = Math.floor(difference/1000/60/60);
         var minutesDifference = Math.floor(difference/1000/60);
         if (yearsDifference > 0) {
-            if (yearsDifference == 1) { $('.last-updated').html('Updated '+yearsDifference+' year ago'); }
-            else { $('.last-updated').html('Updated '+yearsDifference+' years ago'); }
+            if (yearsDifference == 1) { $('.last-updated').html('<em>Updated</em>'+yearsDifference+' year ago'); }
+            else { $('.last-updated').html('<em>Updated</em>'+yearsDifference+' years ago'); }
         }
         else if (monthsDifference > 0) {
-            if (monthsDifference == 1) { $('.last-updated').html('Updated '+monthsDifference+' month ago'); }
-            else { $('.last-updated').html('Updated '+monthsDifference+' months ago'); }
+            if (monthsDifference == 1) { $('.last-updated').html('<em>Updated</em>'+monthsDifference+' month ago'); }
+            else { $('.last-updated').html('<em>Updated</em>'+monthsDifference+' months ago'); }
         }
         else if (daysDifference > 0) {
-            if (yearsDifference == 1) { $('.last-updated').html('Updated '+daysDifference+' day ago'); }
-            else { $('.last-updated').html('Updated '+daysDifference+' days ago'); }
+            if (yearsDifference == 1) { $('.last-updated').html('<em>Updated</em>'+daysDifference+' day ago'); }
+            else { $('.last-updated').html('<em>Updated</em>'+daysDifference+' days ago'); }
         }
         else if (hoursDifference > 0) {
-            if (hoursDifference == 1) { $('.last-updated').html('Updated '+hoursDifference+' hour ago'); }
-            else { $('.last-updated').html('Updated '+hoursDifference+' hours ago'); }
+            if (hoursDifference == 1) { $('.last-updated').html('<em>Updated</em>'+hoursDifference+' hour ago'); }
+            else { $('.last-updated').html('<em>Updated</em>'+hoursDifference+' hours ago'); }
         }
         else if (minutesDifference > 0) {
-            if (minutesDifference == 1) { $('.last-updated').html('Updated '+minutesDifference+' minute ago'); }
-            else { $('.last-updated').html('Updated '+minutesDifference+' minutes ago'); }
+            if (minutesDifference == 1) { $('.last-updated').html('<em>Updated</em>'+minutesDifference+' minute ago'); }
+            else { $('.last-updated').html('<em>Updated</em>'+minutesDifference+' minutes ago'); }
         }
     }, 500);
 });
@@ -544,8 +544,8 @@ $(function() {
 function searchQuickReadListPage() {
     $("#search-quick-read").on("keyup", function(event) {
         console.log('aa');
-        $('.search-quick-read .quick-read').removeClass('hide');
-        $('.search-quick-read').children('.quick-read').each(function () {
+        $('.search-quick-read .row .col-md-4 .quick-read').removeClass('hide');
+        $('.search-quick-read .row').children('.col-md-4').each(function () {
             var title = $(this).find('.quick-read-title').text().toLowerCase();
             title += " " + $(this).find('.quick-read-content').text().toLowerCase();
             title += " " + $(this).find('.quick-read-author').text().toLowerCase();
@@ -849,7 +849,7 @@ function globalProgressBarOnScroll() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("globalProgressBarOnScroll").style.width = scrolled + "%";
-  document.getElementById("globalProgressBarOnScroll").style.backgroundColor = "#43ac48";
+  document.getElementById("globalProgressBarOnScroll").style.backgroundColor = "#292b2c";
 }
 
 /******************************************************************************************************************/
@@ -857,5 +857,5 @@ function globalProgressBarOnScroll() {
 /******************************************************************************************************************/
 setTimeout(function () {
     $(".webpushr-notification-img").attr('alt', 'Peoples BLOG - Webpushr');
-    console.log('hello');
+    // console.log('hello');
 }, 2000);
