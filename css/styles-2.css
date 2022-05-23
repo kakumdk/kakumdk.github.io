@@ -962,6 +962,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-title-area .blog-meta {
     display: inline-block;
+    text-align: center;
 }
 .blog-title-area .blog-meta .articles-author {
     font-size: 14px;
@@ -999,21 +1000,22 @@ body .quotes-browse .tag-quotes-section a:hover {
 
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile {
-    display: inline-block;
+    display: none;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile.sticky {
     position: fixed;
     right: 0;
-    bottom: 51%;
+    bottom: 41%;
     z-index: 99;
     padding: 5px 0 5px 12px;
     border: 1px solid #e7ebed;
     border-right: none;
     border-radius: 5px 0 0 5px;
     background-color: #fff;
+    display: block;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile.sticky.sticky1 {
-    bottom: 45%;
+    bottom: 36%;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-desktop {
     display: none;
@@ -1088,7 +1090,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .prevnext-articles-fixed a {
     position: fixed;
-    bottom: 38%;
+    bottom: 30%;
     z-index: 99;
     padding: 5px 0 5px 12px;
     border: 1px solid #e7ebed;
@@ -1413,6 +1415,49 @@ h3.author-articles-heading::after {
 .clock .date-time {
     font-weight: bold;
 }
+#policy-container {
+    position: fixed;
+    z-index: 2147483645;
+    background-color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+    box-shadow: 0 0 18px rgba(0,0,0,.2);
+    padding: 5px;
+}
+#policy-container .policy-container {
+    margin: 15px auto;
+}
+#policy-container .policy-container .title {
+    font-size: 20px;
+    margin: 15px auto;
+}
+#policy-container .policy-container .title .x {
+    position: absolute;
+    right: 20px;
+}
+#policy-container .policy-container .title .x:hover {
+    cursor: pointer;
+}
+#policy-container .policy-container .desc {
+    margin: 15px auto;
+    font-size: 14px;
+}
+#policy-container .policy-container .policy-button {
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #546E7A;
+    color: #fff;
+    border-color: #546E7A;
+    padding: 6px;
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+}
+#policy-container .policy-container .policy-button:hover {
+    cursor: pointer;
+}
 
 
 
@@ -1571,6 +1616,9 @@ h3.author-articles-heading::after {
     .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile {
         display: none;
     }
+    .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile.sticky {
+        display: none;
+    }
     .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-desktop {
         display: inline-block;
     }
@@ -1609,6 +1657,17 @@ h3.author-articles-heading::after {
     }
     .page-title.single-wrapper h1:after {
         margin-top: 18px;
+    }
+    #policy-container {
+        width: 98%;
+        left: 15px;
+        bottom: 15px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    #policy-container .policy-container .policy-button {
+        width: 15%;
+        margin: auto;
     }
     
 }

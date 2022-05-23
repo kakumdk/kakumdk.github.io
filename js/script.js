@@ -94,6 +94,7 @@ function scrollTopBottom() {
 function cookiePolicy() {
     var key = 'peoples-blog-cookie';
     var cookie = getStoredValue(key);
+    console.log(cookie);
     if (cookie === 'true') {
         $("#policy-container").hide();
     }
@@ -104,9 +105,9 @@ function cookiePolicy() {
     $("span.x").click(function() {
         $("#policy-container").hide(1000);
     });
-    // setTimeout(function() {
-    //     storeValue(key, '');
-    // }, 60 * 60 * 1000);
+    setTimeout(function() {
+        storeValue(key, '');
+    }, 60 * 60 * 1000);
 }
 
 function storeValue(key, value) {

@@ -1,19 +1,19 @@
 User-agent: *
 Allow: /
-Allow: /articles
+Allow: /articles/index.html
 Allow: /about.html
 Allow: /contact.html
-Allow: /authors
+Allow: /authors/index.html
 Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /site-links.html
 Allow: /world-clock.html
-Allow: /sitemaps
-Allow: /quick-read
-Allow: /videos
+Allow: /sitemaps/index.html
+Allow: /quick-read/index.html
+Allow: /videos/index.html
 Allow: /search.html
-Allow: /feeds
-Allow: /quotes
+Allow: /feeds/index.html
+Allow: /quotes/index.html
 Allow: /articles/friend-what-comes-to-your-mind-when-you-hear-this-word.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/dream-small-info-on-it.html
@@ -434,6 +434,7 @@ Allow: /quotes/Trust.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read-sitemap.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/quotes-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/videos-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/authors-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/labels-sitemap.xml
