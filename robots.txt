@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/is-banking-dental-stem-cells-today-is-important.html
 Allow: /articles/friend-what-comes-to-your-mind-when-you-hear-this-word.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/dream-small-info-on-it.html
@@ -284,6 +285,7 @@ Allow: /articles/Smoking.html
 Allow: /articles/Social-Media.html
 Allow: /articles/Software.html
 Allow: /articles/Solr.html
+Allow: /articles/Stem-Cells.html
 Allow: /articles/Symfony.html
 Allow: /articles/Technical-Writing.html
 Allow: /articles/Teeth.html
@@ -405,6 +407,7 @@ Allow: /feeds/Smoking.xml
 Allow: /feeds/Social-Media.xml
 Allow: /feeds/Software.xml
 Allow: /feeds/Solr.xml
+Allow: /feeds/Stem-Cells.xml
 Allow: /feeds/Symfony.xml
 Allow: /feeds/Technical-Writing.xml
 Allow: /feeds/Teeth.xml
