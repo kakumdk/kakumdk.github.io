@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/unconditional-love.html
 Allow: /articles/is-banking-dental-stem-cells-today-is-important.html
 Allow: /articles/friend-what-comes-to-your-mind-when-you-hear-this-word.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
@@ -297,6 +298,7 @@ Allow: /articles/Trekking.html
 Allow: /articles/Twig.html
 Allow: /articles/USA.html
 Allow: /articles/Uncertainty.html
+Allow: /articles/Understanding.html
 Allow: /articles/Vaccination.html
 Allow: /articles/Veneers.html
 Allow: /articles/Web.html
@@ -419,6 +421,7 @@ Allow: /feeds/Trekking.xml
 Allow: /feeds/Twig.xml
 Allow: /feeds/USA.xml
 Allow: /feeds/Uncertainty.xml
+Allow: /feeds/Understanding.xml
 Allow: /feeds/Vaccination.xml
 Allow: /feeds/Veneers.xml
 Allow: /feeds/Web.xml
