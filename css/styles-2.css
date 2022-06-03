@@ -133,10 +133,19 @@ body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slidesh
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .articles-labels span a:hover {
     color: #263238;
 }
-body .blog-list-homepage-single.articles ol.carousel-indicators,
+body .blog-list-homepage-single.articles ol.carousel-indicators {
+    display: none;
+}
 body .blog-list-homepage-single.articles .carousel-control-prev,
 body .blog-list-homepage-single.articles .carousel-control-next {
-    display: none;
+    font-size: 20px;
+    color: #282b2c;
+    background-color: #f9f9f9;
+    height: 30px;
+    border-radius: 50%;
+    top: 75px;
+    margin: 5px;
+    width: 30px;
 }
 .footer {
     padding: 30px 0;
@@ -1521,6 +1530,11 @@ h3.author-articles-heading::after {
     }
     .blog-list-homepage-blogs.blog-list .blog-box img {
         border-radius: 5px 0 0 5px;
+    }
+    body .blog-list-homepage-single.articles .carousel-control-prev, body .blog-list-homepage-single.articles .carousel-control-next {
+        height: 40px;
+        top: 100px;
+        width: 40px;
     }
     .footer .widget .newsletter-widget-subscribe button {
         font-size: revert;
