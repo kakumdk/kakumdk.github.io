@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/benefits-of-aloe-vera-in-oral-health.html
 Allow: /articles/unconditional-love.html
 Allow: /articles/is-banking-dental-stem-cells-today-is-important.html
 Allow: /articles/friend-what-comes-to-your-mind-when-you-hear-this-word.html
@@ -184,6 +185,7 @@ Allow: /authors/Jyothi-S-N.html
 Allow: /authors/Hanukkah-John.html
 Allow: /articles/Agile.html
 Allow: /articles/Agriculture.html
+Allow: /articles/Aloe-vera.html
 Allow: /articles/Audit.html
 Allow: /articles/Bangalore.html
 Allow: /articles/Bank.html
@@ -261,6 +263,7 @@ Allow: /articles/Movie.html
 Allow: /articles/Nambi-Narayanan.html
 Allow: /articles/Negative-Thoughts.html
 Allow: /articles/Nginx.html
+Allow: /articles/Oral-Health.html
 Allow: /articles/Orange.html
 Allow: /articles/PHP-Template.html
 Allow: /articles/Pachadi.html
@@ -307,6 +310,7 @@ Allow: /articles/Writing.html
 Allow: /articles/Youth.html
 Allow: /feeds/Agile.xml
 Allow: /feeds/Agriculture.xml
+Allow: /feeds/Aloe-vera.xml
 Allow: /feeds/Audit.xml
 Allow: /feeds/Bangalore.xml
 Allow: /feeds/Bank.xml
@@ -384,6 +388,7 @@ Allow: /feeds/Movie.xml
 Allow: /feeds/Nambi-Narayanan.xml
 Allow: /feeds/Negative-Thoughts.xml
 Allow: /feeds/Nginx.xml
+Allow: /feeds/Oral-Health.xml
 Allow: /feeds/Orange.xml
 Allow: /feeds/PHP-Template.xml
 Allow: /feeds/Pachadi.xml
