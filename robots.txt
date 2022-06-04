@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/drupal-configuration-management-local-dev-test-and-live.html
 Allow: /articles/benefits-of-aloe-vera-in-oral-health.html
 Allow: /articles/unconditional-love.html
 Allow: /articles/is-banking-dental-stem-cells-today-is-important.html
@@ -201,6 +202,8 @@ Allow: /articles/Chutney.html
 Allow: /articles/Clear-Aligners.html
 Allow: /articles/Confession.html
 Allow: /articles/Confident.html
+Allow: /articles/Configuration-Split.html
+Allow: /articles/Configuration-management.html
 Allow: /articles/Content-Writing.html
 Allow: /articles/Coronavirus.html
 Allow: /articles/Couple.html
@@ -216,6 +219,7 @@ Allow: /articles/District.html
 Allow: /articles/Docker.html
 Allow: /articles/Dream.html
 Allow: /articles/Drupal.html
+Allow: /articles/Drupal-Module.html
 Allow: /articles/ELK.html
 Allow: /articles/Editor.html
 Allow: /articles/Education.html
@@ -326,6 +330,8 @@ Allow: /feeds/Chutney.xml
 Allow: /feeds/Clear-Aligners.xml
 Allow: /feeds/Confession.xml
 Allow: /feeds/Confident.xml
+Allow: /feeds/Configuration-Split.xml
+Allow: /feeds/Configuration-management.xml
 Allow: /feeds/Content-Writing.xml
 Allow: /feeds/Coronavirus.xml
 Allow: /feeds/Couple.xml
@@ -341,6 +347,7 @@ Allow: /feeds/District.xml
 Allow: /feeds/Docker.xml
 Allow: /feeds/Dream.xml
 Allow: /feeds/Drupal.xml
+Allow: /feeds/Drupal-Module.xml
 Allow: /feeds/ELK.xml
 Allow: /feeds/Editor.xml
 Allow: /feeds/Education.xml

@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Drupal Configuration management (Local, Dev, Test and Live)</title>
+			<link>https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</link>
+			<description>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.  Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp;amp; views.  Making the configurations direct</description>
+			<pubDate>Sat, 04 Jun 2022 15:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</guid>
+    </item><item>
 			<title>Migrate your site from Drupal 7 To Drupal 9?</title>
 			<link>https://peoplesblog.co.in/articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html</link>
 			<description>In this article, we are going to see what are the important things you need to understand for the migration of your Drupal 7 site to the Drupal 9 site. And if you see from your Business perspective, Drupal 7 was launched nine years ago, and this is the perfect time for some reassessment of the needs of site users &amp; content managers. And if you see from Drupal’s end, Initially, Drupal 7 end of li</description>
@@ -71,14 +78,6 @@
 			<pubDate>Sat, 31 Jul 2021 15:10:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</guid>
-    </item><item>
-			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
-			<link>https://peoplesblog.co.in/articles/Multisite-Local-environment-setup-with-Lando-and-Drupal.html</link>
-			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.
-                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collectio</description>
-			<pubDate>Fri, 30 Jul 2021 14:15:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/Multisite-Local-environment-setup-with-Lando-and-Drupal.html</guid>
     </item>
 </channel>
 </rss>
