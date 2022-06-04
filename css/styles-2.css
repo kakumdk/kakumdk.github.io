@@ -24,7 +24,7 @@ body h4 {
 }
 body code {
     background-color: #fff;
-    
+
 }
 /****************************************************************************************************************************/
 /****************************************************************************************************************************/
@@ -1001,6 +1001,9 @@ body .quotes-browse .tag-quotes-section a:hover {
     padding: 4px 14px 6px 12px;
     border-radius: 5px;
     display: inline-block;
+}
+.blog-title-area .blog-meta .read-article-section:hover {
+    cursor: pointer;
 }
 .blog-title-area .blog-meta .read-article-section i > div {
     display: inline-block;
