@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/configuration-management-via-quicksilver-on-pantheon.html
 Allow: /articles/drupal-configuration-management-local-dev-test-and-live.html
 Allow: /articles/benefits-of-aloe-vera-in-oral-health.html
 Allow: /articles/unconditional-love.html
@@ -272,6 +273,7 @@ Allow: /articles/Orange.html
 Allow: /articles/PHP-Template.html
 Allow: /articles/Pachadi.html
 Allow: /articles/Pachi-Pulusu.html
+Allow: /articles/Pantheon.html
 Allow: /articles/Personality.html
 Allow: /articles/Php.html
 Allow: /articles/Plants.html
@@ -309,6 +311,7 @@ Allow: /articles/Understanding.html
 Allow: /articles/Vaccination.html
 Allow: /articles/Veneers.html
 Allow: /articles/Web.html
+Allow: /articles/WebOps.html
 Allow: /articles/World.html
 Allow: /articles/Writing.html
 Allow: /articles/Youth.html
@@ -400,6 +403,7 @@ Allow: /feeds/Orange.xml
 Allow: /feeds/PHP-Template.xml
 Allow: /feeds/Pachadi.xml
 Allow: /feeds/Pachi-Pulusu.xml
+Allow: /feeds/Pantheon.xml
 Allow: /feeds/Personality.xml
 Allow: /feeds/Php.xml
 Allow: /feeds/Plants.xml
@@ -437,6 +441,7 @@ Allow: /feeds/Understanding.xml
 Allow: /feeds/Vaccination.xml
 Allow: /feeds/Veneers.xml
 Allow: /feeds/Web.xml
+Allow: /feeds/WebOps.xml
 Allow: /feeds/World.xml
 Allow: /feeds/Writing.xml
 Allow: /feeds/Youth.xml

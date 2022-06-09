@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>WebOps - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/WebOps.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Configuration management via Quicksilver on Pantheon</title>
+			<link>https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</link>
+			<description>As we saw in the earlier article, like how we manage the configuration across the environments.  In this article we are going to see how Drupal configurations can be deployed or imported across the environments with the help of Quicksilver which hooks into platform workflows to automate your Pantheon WebOps workflow across the environments.  In the pantheon environment&amp;rsquo;s drupal code base, yo</description>
+			<pubDate>Thu, 09 Jun 2022 20:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</guid>
+    </item>
+</channel>
+</rss>

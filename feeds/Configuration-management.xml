@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Configuration management via Quicksilver on Pantheon</title>
+			<link>https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</link>
+			<description>As we saw in the earlier article, like how we manage the configuration across the environments.  In this article we are going to see how Drupal configurations can be deployed or imported across the environments with the help of Quicksilver which hooks into platform workflows to automate your Pantheon WebOps workflow across the environments.  In the pantheon environment&amp;rsquo;s drupal code base, yo</description>
+			<pubDate>Thu, 09 Jun 2022 20:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</guid>
+    </item><item>
 			<title>Drupal Configuration management (Local, Dev, Test and Live)</title>
 			<link>https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</link>
 			<description>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.  Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp;amp; views.  Making the configurations direct</description>
