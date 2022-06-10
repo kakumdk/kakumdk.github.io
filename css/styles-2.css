@@ -24,8 +24,9 @@ body h4 {
 }
 body code {
     background-color: #fff;
-
+    padding: 0;
 }
+
 /****************************************************************************************************************************/
 /****************************************************************************************************************************/
 /****************************************************************************************************************************/
@@ -1063,7 +1064,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     border-radius: 5px;
 }
 .blog-content.read-article-content p::first-letter {
-    text-transform: capitalize
+    /* text-transform: capitalize */
 }
 .blog-title-area.tag {
     margin: 30px auto;

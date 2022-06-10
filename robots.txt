@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/store-secrets-securely-on-pantheon-for-drupal-application.html
 Allow: /articles/configuration-management-via-quicksilver-on-pantheon.html
 Allow: /articles/drupal-configuration-management-local-dev-test-and-live.html
 Allow: /articles/benefits-of-aloe-vera-in-oral-health.html

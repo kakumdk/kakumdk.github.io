@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Store Secrets Securely on Pantheon for Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</link>
+			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file, and keep the file outside of the proj</description>
+			<pubDate>Fri, 10 Jun 2022 19:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</guid>
+    </item><item>
 			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/Fix-SSL-error-in-Citrix-Web-Receiver-on-Ubuntu.html</link>
 			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.
