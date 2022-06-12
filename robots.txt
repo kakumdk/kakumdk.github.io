@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/importance-of-good-sleep-for-health.html
 Allow: /articles/store-secrets-securely-on-pantheon-for-drupal-application.html
 Allow: /articles/configuration-management-via-quicksilver-on-pantheon.html
 Allow: /articles/drupal-configuration-management-local-dev-test-and-live.html
@@ -292,6 +293,7 @@ Allow: /articles/Security.html
 Allow: /articles/Self-Discipline.html
 Allow: /articles/Services.html
 Allow: /articles/Sexual-Assault.html
+Allow: /articles/Sleep.html
 Allow: /articles/Smoking.html
 Allow: /articles/Social-Media.html
 Allow: /articles/Software.html
@@ -422,6 +424,7 @@ Allow: /feeds/Security.xml
 Allow: /feeds/Self-Discipline.xml
 Allow: /feeds/Services.xml
 Allow: /feeds/Sexual-Assault.xml
+Allow: /feeds/Sleep.xml
 Allow: /feeds/Smoking.xml
 Allow: /feeds/Social-Media.xml
 Allow: /feeds/Software.xml
