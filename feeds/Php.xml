@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Usage of PHPCS on Github via Pull Request for Drupal Applications</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</link>
+			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.  If you are maintaini</description>
+			<pubDate>Mon, 20 Jun 2022 20:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</guid>
+    </item><item>
 			<title>What Drupal offers as Responsive Web Design within Core</title>
 			<link>https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</link>
 			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>

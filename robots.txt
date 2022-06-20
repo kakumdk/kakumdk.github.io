@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html
 Allow: /articles/why-do-people-worship.html
 Allow: /articles/importance-of-good-sleep-for-health.html
 Allow: /articles/store-secrets-securely-on-pantheon-for-drupal-application.html
@@ -239,6 +240,7 @@ Allow: /articles/Friendship.html
 Allow: /articles/Fruit.html
 Allow: /articles/Gandikota.html
 Allow: /articles/GhatiSubramanya.html
+Allow: /articles/Github.html
 Allow: /articles/HTTP.html
 Allow: /articles/Happy.html
 Allow: /articles/Headquarter.html
@@ -372,6 +374,7 @@ Allow: /feeds/Friendship.xml
 Allow: /feeds/Fruit.xml
 Allow: /feeds/Gandikota.xml
 Allow: /feeds/GhatiSubramanya.xml
+Allow: /feeds/Github.xml
 Allow: /feeds/HTTP.xml
 Allow: /feeds/Happy.xml
 Allow: /feeds/Headquarter.xml

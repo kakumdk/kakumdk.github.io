@@ -89,9 +89,15 @@ body .blog-list-homepage-single.articles .homepage-slideshow h2 {
     font-size: 22px;
     line-height: 1.2;
     font-weight: normal;
+    margin-bottom: 0.2rem;
 }
 body .blog-list-homepage-single.articles .homepage-slideshow h2 a {
     color: #292b2c;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
 }
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow {
     margin: 15px;

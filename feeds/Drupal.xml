@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Usage of PHPCS on Github via Pull Request for Drupal Applications</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</link>
+			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.  If you are maintaini</description>
+			<pubDate>Mon, 20 Jun 2022 20:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</guid>
+    </item><item>
 			<title>Store Secrets Securely on Pantheon for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</link>
 			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file, and keep the file outside of the proj</description>
@@ -68,14 +75,6 @@
 			<pubDate>Sun, 22 Aug 2021 10:20:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</guid>
-    </item><item>
-			<title>Understand why Twig is replacing PHP Template in Drupal</title>
-			<link>https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</link>
-			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
-                            Twig is a PHP-based compiled templating </description>
-			<pubDate>Sat, 14 Aug 2021 16:30:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</guid>
     </item>
 </channel>
 </rss>
