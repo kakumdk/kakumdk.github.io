@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Quick reference of Code Reviews for Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</link>
+			<description>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.  It&amp;rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.  Firstly, for the code reviews to be at their best, the committed code should be more organis</description>
+			<pubDate>Wed, 22 Jun 2022 21:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</guid>
+    </item><item>
 			<title>Usage of PHPCS on Github via Pull Request for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.  If you are maintaini</description>

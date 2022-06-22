@@ -93,11 +93,6 @@ body .blog-list-homepage-single.articles .homepage-slideshow h2 {
 }
 body .blog-list-homepage-single.articles .homepage-slideshow h2 a {
     color: #292b2c;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    width: 100%;
-    text-overflow: ellipsis;
 }
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow {
     margin: 15px;
@@ -1526,6 +1521,14 @@ h3.author-articles-heading::after {
     }
     body .blog-list-homepage-single.articles .homepage-slideshow img {
         border-radius: 5px 0 0 5px;
+    }
+    body .blog-list-homepage-single.articles .homepage-slideshow h2 a {
+        color: #292b2c;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+        text-overflow: ellipsis;
     }
     body .blog-list-homepage-single.articles .homepage-slideshow h2 a:hover {
         color: #0275d8;
