@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to work with Twig Templates in Drupal?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</link>
+			<description>In this article, we are going to see how a developer can work with Twig templates, and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sur</description>
+			<pubDate>Fri, 24 Jun 2022 19:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</guid>
+    </item><item>
 			<title>Quick reference of Code Reviews for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</link>
 			<description>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.  It&amp;rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.  Firstly, for the code reviews to be at their best, the committed code should be more organis</description>
@@ -68,13 +75,6 @@
 			<pubDate>Fri, 03 Dec 2021 16:00:00 +0530</pubDate>
 			<dc:creator>Jyothi S N</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/Why-do-dentists-suggest-Clear-aligners-invisalign.html</guid>
-    </item><item>
-			<title>What Drupal offers as Responsive Web Design within Core</title>
-			<link>https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</link>
-			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
-			<pubDate>Thu, 07 Oct 2021 16:20:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</guid>
     </item>
 </channel>
 </rss>

@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to work with Twig Templates in Drupal?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</link>
+			<description>In this article, we are going to see how a developer can work with Twig templates, and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sur</description>
+			<pubDate>Fri, 24 Jun 2022 19:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</guid>
+    </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</link>
 			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
