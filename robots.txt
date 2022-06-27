@@ -140,6 +140,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/a-comet-which-is-twice-the-everest-size-is-heading-toward-earth.html
 Allow: /quick-read/Fourth-QUAD-meet-on-th-February-.html
 Allow: /quick-read/Vikram-Misri-Is-New-Deputy-National-Security-Advisor.html
 Allow: /quick-read/Olympics-and-Paralympics-are-two-different-Olympic-Games.html
