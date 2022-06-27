@@ -462,15 +462,15 @@ Allow: /feeds/World.xml
 Allow: /feeds/Worship.xml
 Allow: /feeds/Writing.xml
 Allow: /feeds/Youth.xml
-Allow: /quotes/Friendship.html
-Allow: /quotes/Humor.html
-Allow: /quotes/Intelligence.html
-Allow: /quotes/Life.html
-Allow: /quotes/Love.html
-Allow: /quotes/Marriage.html
-Allow: /quotes/Motivational.html
-Allow: /quotes/Self.html
-Allow: /quotes/Trust.html
+Allow: /quotes/friendship.html
+Allow: /quotes/humor.html
+Allow: /quotes/intelligence.html
+Allow: /quotes/life.html
+Allow: /quotes/love.html
+Allow: /quotes/marriage.html
+Allow: /quotes/motivational.html
+Allow: /quotes/self.html
+Allow: /quotes/trust.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read-sitemap.xml
