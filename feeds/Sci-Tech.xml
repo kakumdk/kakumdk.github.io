@@ -75,6 +75,346 @@
 			<pubDate>Fri, 03 Dec 2021 16:00:00 +0530</pubDate>
 			<dc:creator>Jyothi S N</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/Why-do-dentists-suggest-Clear-aligners-invisalign.html</guid>
+    </item><item>
+			<title>What Drupal offers as Responsive Web Design within Core</title>
+			<link>https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</link>
+			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
+			<pubDate>Thu, 07 Oct 2021 16:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/What-Drupal-offers-as-Responsive-Web-Design-within-Core.html</guid>
+    </item><item>
+			<title>Know why Symfony framework was picked by Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</link>
+			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
+			<pubDate>Sun, 22 Aug 2021 10:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</guid>
+    </item><item>
+			<title>Understand why Twig is replacing PHP Template in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</link>
+			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
+                            Twig is a PHP-based compiled templating </description>
+			<pubDate>Sat, 14 Aug 2021 16:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Understand-why-Twig-is-replacing-PHP-Template-in-Drupal.html</guid>
+    </item><item>
+			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/In-laymans-terms-Services-and-Dependency-Injection-in-Drupal.html</link>
+			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
+                            With Dependency Injection, the class is no longer responsible for in</description>
+			<pubDate>Wed, 04 Aug 2021 09:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/In-laymans-terms-Services-and-Dependency-Injection-in-Drupal.html</guid>
+    </item><item>
+			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
+			<link>https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</link>
+			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
+                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
+			<pubDate>Sat, 31 Jul 2021 15:10:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Drupal-Cache-Clear-and-Cache-Rebuild.html</guid>
+    </item><item>
+			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Multisite-Local-environment-setup-with-Lando-and-Drupal.html</link>
+			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.
+                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collectio</description>
+			<pubDate>Fri, 30 Jul 2021 14:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Multisite-Local-environment-setup-with-Lando-and-Drupal.html</guid>
+    </item><item>
+			<title>Studies estimate long COVID-19 has over two hundred Symptoms</title>
+			<link>https://peoplesblog.co.in/articles/Studies-estimate-long-COVID-has-over-two-hundred-Symptoms.html</link>
+			<description>According to a Lancet's journal EClinicalMedicine, In the Coronavirus (Covid-19) patients who are facing prolonged symptoms have reported more than 200 symptoms across 10 organ systems.
+                            They have analysed the responses of 3,762 peoples from 56 different countries with confirmed or suspected Covid-19. And the data were collected from September 6, 2020, to November 25, 20</description>
+			<pubDate>Sat, 17 Jul 2021 08:50:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Studies-estimate-long-COVID-has-over-two-hundred-Symptoms.html</guid>
+    </item><item>
+			<title>Local environment setup with Lando &amp; Drupal</title>
+			<link>https://peoplesblog.co.in/articles/Local-environment-setup-with-Lando-and-Drupal.html</link>
+			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much more qui</description>
+			<pubDate>Fri, 09 Jul 2021 16:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Local-environment-setup-with-Lando-and-Drupal.html</guid>
+    </item><item>
+			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
+			<link>https://peoplesblog.co.in/articles/Fix-SSL-error-in-Citrix-Web-Receiver-on-Ubuntu.html</link>
+			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.
+                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to syste</description>
+			<pubDate>Mon, 05 Jul 2021 18:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Fix-SSL-error-in-Citrix-Web-Receiver-on-Ubuntu.html</guid>
+    </item><item>
+			<title>Why to have a Green Roof or Eco Friendly Roof on a Building</title>
+			<link>https://peoplesblog.co.in/articles/Why-to-have-a-Green-Roof-or-Eco-Friendly-Roof-on-a-Building.html</link>
+			<description>A roof of a building that is partially or completely covered with vegetation, that is planted over a waterproofing membrane. It may also include additional layers such as a root barrier and drainage and irrigation systems. Rooftop ponds are another form of green roofs which are used to treat greywater.
+                                Vegetation, soil, drainage layer, roof barrier and irrigation sy</description>
+			<pubDate>Tue, 22 Jun 2021 16:50:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Why-to-have-a-Green-Roof-or-Eco-Friendly-Roof-on-a-Building.html</guid>
+    </item><item>
+			<title>Security Hardening - Nginx Response Headers</title>
+			<link>https://peoplesblog.co.in/articles/Security-Hardening-Nginx-Response-Headers.html</link>
+			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.
+                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of info</description>
+			<pubDate>Sun, 20 Jun 2021 11:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Security-Hardening-Nginx-Response-Headers.html</guid>
+    </item><item>
+			<title>Why Dental Implants?</title>
+			<link>https://peoplesblog.co.in/articles/Why-Dental-Implants.html</link>
+			<description>Advanced dental treatments all over the world led to new advanced solutions for dental problems, one such is Implant. An implant is a medical device manufactured to replace a missing biological structure, support a damaged biological structure, or enhance an existing biological structure.
+                                In cases a like, 
+                                    A person’s teeth missi</description>
+			<pubDate>Tue, 15 Jun 2021 16:30:00 +0530</pubDate>
+			<dc:creator>Jyothi S N</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Why-Dental-Implants.html</guid>
+    </item><item>
+			<title>Black Fungus - Detected in Coronavirus Patients</title>
+			<link>https://peoplesblog.co.in/articles/Black-Fungus-Detected-in-Coronavirus-Patients.html</link>
+			<description>Black fungus is an infection caused by a fungus named mucormycosis. This fungal infection is being reported in a few Corona-affected patients during or post-recovery.
+                                People catch mucormycosis when they come in contact with the fungal spores in the environment. It can also be contacted through skin contact through a cut, burn, or any other form of skin trauma.
+     </description>
+			<pubDate>Sun, 13 Jun 2021 06:00:00 +0530</pubDate>
+			<dc:creator>Leela Vasundhara</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Black-Fungus-Detected-in-Coronavirus-Patients.html</guid>
+    </item><item>
+			<title>Drupal 7 to Drupal 8/9 Audits</title>
+			<link>https://peoplesblog.co.in/articles/Drupal--to-DrupalAudits.html</link>
+			<description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.
+                       </description>
+			<pubDate>Sat, 24 Apr 2021 12:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Drupal--to-DrupalAudits.html</guid>
+    </item><item>
+			<title>Technical Writing Vs Content Writing</title>
+			<link>https://peoplesblog.co.in/articles/Technical-Writing-Vs-Content-Writing.html</link>
+			<description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.
+                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the re</description>
+			<pubDate>Tue, 13 Apr 2021 18:00:00 +0530</pubDate>
+			<dc:creator>Leela Vasundhara</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Technical-Writing-Vs-Content-Writing.html</guid>
+    </item><item>
+			<title>Heat waves in India and Current Temperature Status and Warning for next five Days</title>
+			<link>https://peoplesblog.co.in/articles/Heat-waves-in-India-and-Current-Temperature-Status-and-Warning-for-next-five-Day.html</link>
+			<description>In 21st century due to climate changes, global temperature can increase means heat waves would be compartively more. This might affect human health a lot and in some cases can lead to death. We should know that, these heat waves will affect many people in small amount of time.
+                                In India, these Heat waves generally occur from March - June, &amp; in some cases, they might </description>
+			<pubDate>Mon, 29 Mar 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Heat-waves-in-India-and-Current-Temperature-Status-and-Warning-for-next-five-Day.html</guid>
+    </item><item>
+			<title>Locally Setup and Scan your Docker images via Clair</title>
+			<link>https://peoplesblog.co.in/articles/Locally-Setup-and-Scan-your-Docker-images-via-Clair.html</link>
+			<description>Docker Images contain not only application code, but a OS and additional utilities to make application run as expected. Images can also be vulnerable its better not have any CVE's in image. Running scans are one of the way to protect from CVE's. These container scanning tools scan for known vulnerabilities in the image.
+                                In this article, We use Clair to scan a Docker</description>
+			<pubDate>Wed, 24 Mar 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Locally-Setup-and-Scan-your-Docker-images-via-Clair.html</guid>
+    </item><item>
+			<title>Monitoring Web Application with ELK Stack</title>
+			<link>https://peoplesblog.co.in/articles/Monitoring-Web-Application-with-ELK-Stack.html</link>
+			<description>For Auditing &amp; Troubleshooting issues in an application, log data is very useful. And to make it easy to read the log data via some kind of tool will make developers &amp; maintainers happy. However, not all the log data for any event is not needed to be stored in the log record. Means, Each log record should have only the information needed for further notice or further debugging. Strictly all sensit</description>
+			<pubDate>Fri, 19 Mar 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Monitoring-Web-Application-with-ELK-Stack.html</guid>
+    </item><item>
+			<title>Things to know about Proofreading</title>
+			<link>https://peoplesblog.co.in/articles/Things-to-know-about-Proofreading.html</link>
+			<description>Proofreading is the process of looking for and correcting errors in your work i.e. finding and correcting spelling, grammar, punctuation, consistency and errors.
+                            Proofreading is the last step in your writing and editing process.
+                            You should have written and edited your work for general coherence and flow before proofreading.
+                  </description>
+			<pubDate>Wed, 04 Aug 2021 09:45:00 +0530</pubDate>
+			<dc:creator>Leela Vasundhara</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Things-to-know-about-Proofreading.html</guid>
+    </item><item>
+			<title>Coronavirus, Discovered in the 1960s, Serious Respiratory Tract Infections</title>
+			<link>https://peoplesblog.co.in/articles/Coronavirus-Discovered-in-the-s-Serious-Respiratory-Tract-Infections.html</link>
+			<description>Coronaviruses are a group of viruses that cause diseases in mammals and birds that include diarrhea in cows and pigs, and upper respiratory disease in chickens. In humans, the virus causes respiratory infections, which are often mild, but in rare cases are potentially lethal.
+                                There are no vaccines or antiviral drugs that are approved for prevention or treatment.
+   </description>
+			<pubDate>Mon, 22 Feb 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Coronavirus-Discovered-in-the-s-Serious-Respiratory-Tract-Infections.html</guid>
+    </item><item>
+			<title>World Cancer Day, February 4th - Early detection of Cancer can lead to Improved outcomes &amp; Cure.</title>
+			<link>https://peoplesblog.co.in/articles/World-Cancer-Day-February-th.html</link>
+			<description>Cancer is a large group of diseases that can start in almost any organ or tissue of the body when abnormal cells grow uncontrollably, go beyond their usual boundaries to invade adjoining parts of the body and/or spread to other organs. The latter process is called metastasizing which is a major cause of death from cancer. A neoplasm and malignant tumour are other common names for cancer.
+         </description>
+			<pubDate>Thu, 04 Feb 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/World-Cancer-Day-February-th.html</guid>
+    </item><item>
+			<title>Send Mail with Custom Email Template &amp; with Dynamic values via Drupal Mail Service</title>
+			<link>https://peoplesblog.co.in/articles/Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html</link>
+			<description>Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from hook_mail() from the module sending the email. Any module can modify the composed email message array using hook_mail_alter(). Finally \Drupal::service('plugin.manager.mail')->mail</description>
+			<pubDate>Wed, 20 Jan 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Send-Mail-with-Custom-Email-Template-and-with-Dynamic-values-via-Drupal-Mail-Service.html</guid>
+    </item><item>
+			<title>API Docs Drupal Module simple way to show OAS Docs on Drupal Portal</title>
+			<link>https://peoplesblog.co.in/articles/API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html</link>
+			<description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.
+                                Prereq</description>
+			<pubDate>Sat, 16 Jan 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/API-Docs-Drupal-Module-simple-way-to-show-OAS-API-Docs-on-Drupal-Portal.html</guid>
+    </item><item>
+			<title>Rainwater Collection, Storage &amp; Purification</title>
+			<link>https://peoplesblog.co.in/articles/Rain-water-collection-storage-purification.html</link>
+			<description>Rainwater Harvesting is the collection &amp; storage of rain water, rather than allowing it to run off. Rainwater is collected from a roof-like surface and redirected to a tank, cistern, deep pit (well, shaft, or borehole), aquifer, or a reservoir with percolation. We can utilize this water for many purposes like, include watering gardens, livestock, irrigation, domestic use with proper treatment, and</description>
+			<pubDate>Fri, 18 Dec 2020 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Rain-water-collection-storage-purification.html</guid>
+    </item><item>
+			<title>Construction materials for Thermal Resistance Walls, Earth Bricks</title>
+			<link>https://peoplesblog.co.in/articles/Construction-materials-for-Thermal-Resistant-Walls.html</link>
+			<description>Construction process can be tedious, time consuming, and expensive. To overcome this during construction, varied methods of construction is being considered and developed. Also, materials and equipment used for construction are also being fabricated to enhance the quality of construction and furthermore minimize the time and cost. Interlocking bricks are one such advancement in construction indust</description>
+			<pubDate>Thu, 17 Jun 2021 17:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Construction-materials-for-Thermal-Resistant-Walls.html</guid>
+    </item><item>
+			<title>Checklist for making a Eco-Friendly Home</title>
+			<link>https://peoplesblog.co.in/articles/Home-with-low-impact-on-envirnoment.html</link>
+			<description>To build a home, which makes low-impact environmentally. And built using materials &amp; technology that lowers its energy needs in future. And also make sure built home is reliable for few decades with minimal energy spent on it. To do this, you have to consider Energy? what Sustainable materials to be used? how it impacts on our health? And what is costs
+                                Before gettin</description>
+			<pubDate>Sun, 07 Jun 2020 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Home-with-low-impact-on-envirnoment.html</guid>
+    </item><item>
+			<title>Scientists Have Created Hexagonal Salt, For First Time Ever</title>
+			<link>https://peoplesblog.co.in/articles/Scientists-Have-Created-Hexagonal-Salt.html</link>
+			<description>While it probably won't make it to your dining table, a new scientific achievement might be able to help in everything from radar equipment to electric cars: scientists have been able to form salt, aka sodium chloride (NaCl), in a hexagonal shapeThis is work done at the smallest of scales, with researchers able to get a thin film of hexagonal salt to form on top of a layer of diamond, due to the c</description>
+			<pubDate>Mon, 01 Jun 2020 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/Scientists-Have-Created-Hexagonal-Salt.html</guid>
+    </item><item>
+			<title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
+			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
+			<description>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern
+                                HTTP Methods
+                                JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.
+                       </description>
+			<pubDate>Mon, 11 Nov 2019 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>
+    </item><item>
+			<title>Cache Set, Get and Invalidate per User in Drupal 7</title>
+			<link>https://peoplesblog.co.in/articles/cache-set-get-and-invalidate-user-drupal-.html</link>
+			<description>How to Set, Get and Invalidate the caches per user in Drupal 7, this blog article will explain a brief of how to do such implementation on Drupal using the default drupal cache functions.
+                                Here, we go with the steps
+                                
+                                    Initially, create the custom functions for Get, Set and Invalidate the caches per us</description>
+			<pubDate>Wed, 26 Jun 2019 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/cache-set-get-and-invalidate-user-drupal-.html</guid>
+    </item><item>
+			<title>Store Drupal logs on Amazon S3</title>
+			<link>https://peoplesblog.co.in/articles/store-drupal-logs-amazon-s.html</link>
+			<description>Store Drupal logs on Amazon S3 via hook_watchdog, so that you can get rid of heavy logs on your drupal database and can later read from the S3.
+                                For this todo on Drupal
+                                
+                                    You should use the "hook_watchdog" hook, where this hook allows modules to route log events to custom destinations.
+               </description>
+			<pubDate>Mon, 24 Jun 2019 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/store-drupal-logs-amazon-s.html</guid>
+    </item><item>
+			<title>AES Encrypt &amp; Decrypt</title>
+			<link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
+			<description>Advanced Encryption Standard, where we use "AES-256" to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC".
+                                AES Encrypt
+                                
+                                    We would have the "Secret" stored in a file which is other than the web root.
+                                
+    </description>
+			<pubDate>Tue, 11 Jun 2019 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
+    </item><item>
+			<title>Sites Still Vulnerable to Drupalgeddon 2</title>
+			<link>https://peoplesblog.co.in/articles/sites-still-vulnerable-drupalgeddon-.html</link>
+			<description>Attackers are exploiting Drupalgeddon 2 critical vulnerability in Drupal to compromise systems &amp; secretly turn them into malicious cryptocurrency mining machines like cryptojacking malware, mine for Monero.
+                                The only side effects a victim might notice is that their system is running slower or doing more work than usual.
+                                Still most of t</description>
+			<pubDate>Wed, 27 Jun 2018 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/sites-still-vulnerable-drupalgeddon-.html</guid>
+    </item><item>
+			<title>Secure Website running on Apache with Let's Encrypt on Linux</title>
+			<link>https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</link>
+			<description>Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server.
+                                Let's make it easier with the </description>
+			<pubDate>Thu, 01 Feb 2018 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</guid>
+    </item><item>
+			<title>Aegir on Docker - Develop, Test, With Easier Deployment</title>
+			<link>https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</link>
+			<description>Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments.
+                                Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting.
+                                Here you go???
+                                Better Task Queue..! This process is usua</description>
+			<pubDate>Sun, 03 Sep 2017 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</guid>
+    </item><item>
+			<title>Integrating Codeception with Drupal to have added support for TDD</title>
+			<link>https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</link>
+			<description>Getting Codeception into Drupal, will have added support for Test Driven Development.. Specifically in having the Acceptance Tests in the project.. Since Test Driven Development would be one the most integral part of the project.. And also internal team and vendor team would be having more confidence in the version releases of their project.. one can prefer TDD.
+                                Tes</description>
+			<pubDate>Sun, 26 Mar 2017 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</guid>
+    </item><item>
+			<title>Creating a Twitter Share block programmatically in Drupal 8</title>
+			<link>https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</link>
+			<description>How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like
+                                
+                                    Accessing the Current Node data in Block.
+                                    How do we create the link programmatically.
+                                    Disable cache for particular block.
+                                
+  </description>
+			<pubDate>Tue, 14 Mar 2017 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</guid>
+    </item><item>
+			<title>Auto Tagging of Taxonomy terms in Drupal7</title>
+			<link>https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</link>
+			<description>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave().
+                                In our case lets consider the field_tags is the taxonomy field, and we are autotagging based on the content present in title and body fields.
+                                Al</description>
+			<pubDate>Sun, 27 Sep 2015 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</guid>
+    </item><item>
+			<title>Configuring &amp; Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</title>
+			<link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
+			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.
+                                The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.
+                                Init</description>
+			<pubDate>Tue, 29 Jun 2021 17:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
+    </item><item>
+			<title>Custom Batch processing in Drupal 7 to update Nodes - Batch API</title>
+			<link>https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</link>
+			<description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.
+This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.
+Create your custom module, w</description>
+			<pubDate>Mon, 17 Aug 2015 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</guid>
+    </item><item>
+			<title>Drupal7 Simple Test case in Custom Module</title>
+			<link>https://peoplesblog.co.in/articles/drupal-simple-test-case-custom-module.html</link>
+			<description>Why to write test case? Very simple, in one word, Its waste of time and effort of checking something we changed in code and that effects other part, and to make sure every time what change we make that should not effect any other code, so this task can be done by our test cases
+                                In this article, giving a simple test example to create a drupal test case
+              </description>
+			<pubDate>Sun, 12 Jul 2015 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-simple-test-case-custom-module.html</guid>
     </item>
 </channel>
 </rss>
