@@ -317,7 +317,6 @@ Allow: /articles/The-Shawshank-Redemption.html
 Allow: /articles/Tirumala.html
 Allow: /articles/Tirupathi.html
 Allow: /articles/Travel.html
-Allow: /articles/Trek.html
 Allow: /articles/Trekking.html
 Allow: /articles/Twig.html
 Allow: /articles/USA.html
@@ -457,7 +456,6 @@ Allow: /feeds/the-shawshank-redemption.xml
 Allow: /feeds/tirumala.xml
 Allow: /feeds/tirupathi.xml
 Allow: /feeds/travel.xml
-Allow: /feeds/trek.xml
 Allow: /feeds/trekking.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
