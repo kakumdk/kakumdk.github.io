@@ -156,7 +156,6 @@ Allow: /quick-read/ISRO-successfully-conducted-the-Third-Test-on-Vikas-Engine-fo
 Allow: /quick-read/Heat-on-Earths-Atmosphere-is-Heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/Device-with-Two-Atoms-thick-Worlds-thinnest-device.html
 Allow: /quick-read/Questions-to-ask-Dentist-before-Dental-Implant.html
-Allow: /quick-read/Raw-Mango-Chutney-Andhra Style.html
 Allow: /quick-read/Powerful-Solar-Storm-approaching-Earth.html
 Allow: /videos/JExcDnvE-PQ.html
 Allow: /videos/I9K4G8kNI1o.html
