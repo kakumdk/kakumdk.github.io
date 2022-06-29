@@ -297,6 +297,22 @@ body .blog-list-homepage-single.articles .carousel-control-next {
 .blog-list-homepage-blogs.blog-list .blog-meta .articles-labels span a:hover {
     color: #263238;
 }
+.featured-quick-read-wrapper {
+    margin: 15px auto;
+}
+.featured-quick-read-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.featured-quick-read-wrapper h2:after {
+    content: '';
+    flex: 1;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: #e7ebed;
+    margin-top: 15px;
+}
 .labels-wrapper {
     margin: 15px auto;
 }
@@ -1191,6 +1207,11 @@ body .quotes-browse .tag-quotes-section a:hover {
 .author.peoplesblog-author {
     margin: 15px auto;
 }
+.author.peoplesblog-author img {
+    background-color: #292b2c;
+    width: 50%;
+    margin: 15px auto;
+}
 .author.peoplesblog-author .author-content-wrapper {
     margin-top: 15px;
 }
@@ -1678,6 +1699,9 @@ h3.author-articles-heading::after {
     }
     .articles.author-articles .article .articles-content .articles-summary {
         height: auto;
+    }
+    .author.peoplesblog-author img {
+        width: 100%;
     }
     .site-links-peoplesblog .site-links-articles span {
         display: inline-block;
