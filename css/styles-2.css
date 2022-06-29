@@ -687,8 +687,9 @@ section .articles.search-articles .article .articles-content .articles-labels sp
     padding: 15px 0;
 }
 .search-quotes .quoteDetails img {
-    width: 36px;
-    background-color: 292b2c;
+    width: 40px;
+    height: 40px;
+    background-color: #292b2c;
     border-radius: 50%;
 }
 .search-quotes .quoteDetails .quoteText {
@@ -776,8 +777,9 @@ body .quotes-browse .tag-quotes-section a:hover {
     padding: 15px 0;
 }
 .label-articles .quoteDetails img {
-    width: 36px;
-    background-color: 292b2c;
+    width: 40px;
+    height: 40px;
+    background-color: #292b2c;
     border-radius: 50%;
 }
 .label-articles .quoteDetails .quoteText {
