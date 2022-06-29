@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/dal-bhat-recipe--nepali-style.html
 Allow: /articles/how-to-work-with-twig-templates-in-drupal.html
 Allow: /articles/quick-reference-of-code-reviews-for-drupal-application.html
 Allow: /articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html
@@ -220,6 +221,7 @@ Allow: /articles/Couple.html
 Allow: /articles/Covaxin.html
 Allow: /articles/Covishield.html
 Allow: /articles/Crime.html
+Allow: /articles/Dal-Bhat.html
 Allow: /articles/Dental.html
 Allow: /articles/Dentist.html
 Allow: /articles/Dependency-Injection.html
@@ -235,6 +237,7 @@ Allow: /articles/Editor.html
 Allow: /articles/Education.html
 Allow: /articles/Egg.html
 Allow: /articles/Environment.html
+Allow: /articles/Everest.html
 Allow: /articles/Family.html
 Allow: /articles/Feedback.html
 Allow: /articles/Fluorosis.html
@@ -315,6 +318,7 @@ Allow: /articles/The-Shawshank-Redemption.html
 Allow: /articles/Tirumala.html
 Allow: /articles/Tirupathi.html
 Allow: /articles/Travel.html
+Allow: /articles/Trek.html
 Allow: /articles/Trekking.html
 Allow: /articles/Twig.html
 Allow: /articles/USA.html
@@ -357,6 +361,7 @@ Allow: /feeds/couple.xml
 Allow: /feeds/covaxin.xml
 Allow: /feeds/covishield.xml
 Allow: /feeds/crime.xml
+Allow: /feeds/dal-bhat.xml
 Allow: /feeds/dental.xml
 Allow: /feeds/dentist.xml
 Allow: /feeds/dependency-injection.xml
@@ -372,6 +377,7 @@ Allow: /feeds/editor.xml
 Allow: /feeds/education.xml
 Allow: /feeds/egg.xml
 Allow: /feeds/environment.xml
+Allow: /feeds/everest.xml
 Allow: /feeds/family.xml
 Allow: /feeds/feedback.xml
 Allow: /feeds/fluorosis.xml
@@ -452,6 +458,7 @@ Allow: /feeds/the-shawshank-redemption.xml
 Allow: /feeds/tirumala.xml
 Allow: /feeds/tirupathi.xml
 Allow: /feeds/travel.xml
+Allow: /feeds/trek.xml
 Allow: /feeds/trekking.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
