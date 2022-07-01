@@ -142,6 +142,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/isro-launched-three-singapore-satellites-with-pslv.html
 Allow: /quick-read/legislative-assistants-for-members-of-parliament-lamp-fellowship.html
 Allow: /quick-read/a-comet-which-is-twice-the-everest-size-is-heading-toward-earth.html
 Allow: /quick-read/Fourth-QUAD-meet-on-th-February-.html

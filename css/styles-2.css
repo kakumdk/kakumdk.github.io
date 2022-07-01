@@ -153,6 +153,17 @@ body .blog-list-homepage-single.articles .carousel-control-next {
     margin: 5px;
     width: 30px;
 }
+body #carouselQuickRead .carousel-control-prev,
+body #carouselQuickRead .carousel-control-next {
+    font-size: 20px;
+    color: #282b2c;
+    background-color: #f9f9f9;
+    height: 30px;
+    border-radius: 50%;
+    top: 75px;
+    margin: 5px;
+    width: 30px;
+}
 .footer {
     padding: 30px 0;
     background-color: #f9f9f9;
@@ -433,6 +444,15 @@ body .blog-list-homepage-single.articles .carousel-control-next {
     border-radius: 5px;
 }
 .homepage-recent-quick-read .quick-read p.quick-read-title.carousel-caption {
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: -1px 1px 0 #292b2c, 1px 1px 0 #292b2c, 1px -1px 0 #292b2c, -1px -1px 0 #292b2c;
+    margin: 0;
+}
+.featured-quick-read-wrapper .quick-read img {
+    border-radius: 5px;
+}
+.featured-quick-read-wrapper .quick-read p.quick-read-title.carousel-caption {
     font-size: 16px;
     font-weight: 500;
     text-shadow: -1px 1px 0 #292b2c, 1px 1px 0 #292b2c, 1px -1px 0 #292b2c, -1px -1px 0 #292b2c;
