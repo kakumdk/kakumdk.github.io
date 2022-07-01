@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to charge a Mobile phone with Solar power?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-charge-a-mobile-phone-with-solar-power.html</link>
+			<description>In this article, we are going to see what all options we have to charge a mobile phone with Solar power.  If you are going on treks which are primarily overnight or a few days of trek in some isolated place. In such cases obviously we won&amp;rsquo;t get any electrical power, In such cases for people Solar energy would be an alternative option to keep your device charged.  And let&amp;rsquo;s see what all</description>
+			<pubDate>Fri, 01 Jul 2022 15:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-charge-a-mobile-phone-with-solar-power.html</guid>
+    </item><item>
 			<title>How to work with Twig Templates in Drupal?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</link>
 			<description>In this article, we are going to see how a developer can work with Twig templates, and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sur</description>
@@ -406,15 +413,6 @@ Create your custom module, w</description>
 			<pubDate>Mon, 17 Aug 2015 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</guid>
-    </item><item>
-			<title>Drupal7 Simple Test case in Custom Module</title>
-			<link>https://peoplesblog.co.in/articles/drupal-simple-test-case-custom-module.html</link>
-			<description>Why to write test case? Very simple, in one word, Its waste of time and effort of checking something we changed in code and that effects other part, and to make sure every time what change we make that should not effect any other code, so this task can be done by our test cases
-                                In this article, giving a simple test example to create a drupal test case
-              </description>
-			<pubDate>Sun, 12 Jul 2015 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-simple-test-case-custom-module.html</guid>
     </item>
 </channel>
 </rss>
