@@ -51,12 +51,12 @@
     </item><item>
 			<title>AES Encrypt &amp; Decrypt</title>
 			<link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
-			<description>Advanced Encryption Standard, where we use "AES-256" to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC".
+			<description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC".
                                 AES Encrypt
                                 
                                     We would have the "Secret" stored in a file which is other than the web root.
                                 
-    </description>
+      </description>
 			<pubDate>Tue, 11 Jun 2019 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
