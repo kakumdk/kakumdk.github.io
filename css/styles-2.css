@@ -352,6 +352,32 @@ body #carouselQuickRead .carousel-control-next {
 .labels-wrapper .labels a:hover {
     text-decoration: unset;
 }
+.article-author-wrapper > h4 {
+    display: flex;
+}
+.article-author-wrapper > h4:after {
+    content: '';
+    flex: 1;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: #e7ebed;
+    margin-top: 15px;
+}
+.article-author-wrapper .author h4 {
+    font-size: 20px;
+}
+.article-author-wrapper .author h4 a {
+    color: #292b2c;
+}
+.article-author-wrapper .author p {
+    margin-bottom: 0.5rem;
+}
+.article-author-wrapper .author .topsocial {
+    margin: 15px auto;
+}
+.custombox.clearfix {
+    margin: 30px auto 15px;
+}
 .homepage-recent.articles {
     margin: 15px auto;
 }
