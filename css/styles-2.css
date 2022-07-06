@@ -22,6 +22,14 @@ body h4 {
     margin: 15px auto;
     border-radius: 5px;
 }
+.amazon-ad {
+    margin: 15px auto;
+}
+.amazon-ad img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 body code {
     background-color: #fff;
     padding: 0;
