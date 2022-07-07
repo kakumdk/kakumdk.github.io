@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/president-of-india-nominated-veerendra-heggade-pt-usha-ilaiyaraaja-and-vijayendra-prasad-to-the-rajya-sabha.html
 Allow: /articles/solo-everest-base-camp-trek-what-to-pack.html
 Allow: /articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html
 Allow: /articles/pudina-chutney-recipe-andhra-style.html
@@ -253,6 +254,7 @@ Allow: /articles/Fruit.html
 Allow: /articles/Gandikota.html
 Allow: /articles/GhatiSubramanya.html
 Allow: /articles/Github.html
+Allow: /articles/Government.html
 Allow: /articles/HTTP.html
 Allow: /articles/Happy.html
 Allow: /articles/Headquarter.html
@@ -295,6 +297,7 @@ Allow: /articles/Pantheon.html
 Allow: /articles/Personality.html
 Allow: /articles/Php.html
 Allow: /articles/Plants.html
+Allow: /articles/Politics.html
 Allow: /articles/Project.html
 Allow: /articles/Project-Management.html
 Allow: /articles/Rape.html
@@ -393,6 +396,7 @@ Allow: /feeds/fruit.xml
 Allow: /feeds/gandikota.xml
 Allow: /feeds/ghatisubramanya.xml
 Allow: /feeds/github.xml
+Allow: /feeds/government.xml
 Allow: /feeds/http.xml
 Allow: /feeds/happy.xml
 Allow: /feeds/headquarter.xml
@@ -435,6 +439,7 @@ Allow: /feeds/pantheon.xml
 Allow: /feeds/personality.xml
 Allow: /feeds/php.xml
 Allow: /feeds/plants.xml
+Allow: /feeds/politics.xml
 Allow: /feeds/project.xml
 Allow: /feeds/project-management.xml
 Allow: /feeds/rape.xml
