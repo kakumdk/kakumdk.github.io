@@ -1023,9 +1023,9 @@ Create your custom module, w</description>
   </item><item>
     <title>Filter content between Date ranges in Drupal 7</title>
     <link>https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</link>
-    <description>It is tempting to believe that using the "is between" on a date fields will work. However, this option is used only in the case of events "Starting" on a range of date.
-                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an "end date" for the event, only a date field with the "Collect an en</description>
-    <pubDate>Sat, 11 Jul 2015 08:00:00 +0530</pubDate>
+    <description>It is tempting to believe that using the is between on a date fields will work. However, this option is used only in the case of events Starting on a range of date.
+                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an "end date" for the event, only a date field with the "Collect an end da</description>
+    <pubDate>Thu, 07 Jul 2022 14:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</guid>
   </item><item>
