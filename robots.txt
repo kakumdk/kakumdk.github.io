@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/solo-everest-base-camp-trek-what-to-pack.html
 Allow: /articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html
 Allow: /articles/pudina-chutney-recipe-andhra-style.html
 Allow: /articles/how-to-charge-a-mobile-phone-with-solar-power.html
@@ -312,6 +313,7 @@ Allow: /articles/Sleep.html
 Allow: /articles/Smoking.html
 Allow: /articles/Social-Media.html
 Allow: /articles/Software.html
+Allow: /articles/Solo.html
 Allow: /articles/Solr.html
 Allow: /articles/Stem-Cells.html
 Allow: /articles/Symfony.html
@@ -451,6 +453,7 @@ Allow: /feeds/sleep.xml
 Allow: /feeds/smoking.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
+Allow: /feeds/solo.xml
 Allow: /feeds/solr.xml
 Allow: /feeds/stem-cells.xml
 Allow: /feeds/symfony.xml
