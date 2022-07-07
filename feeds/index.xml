@@ -927,13 +927,13 @@
   </item><item>
     <title>AES Encrypt &amp; Decrypt</title>
     <link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
-    <description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is "Cipher Block Chaining" method "AES-256-CBC".
+    <description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.
                                 AES Encrypt
                                 
-                                    We would have the "Secret" stored in a file which is other than the web root.
+                                    We would have the 'Secret' stored in a file which is other than the web root.
                                 
       </description>
-    <pubDate>Tue, 11 Jun 2019 08:00:00 +0530</pubDate>
+    <pubDate>Thu, 07 Jul 2022 14:10:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
   </item><item>
@@ -1024,7 +1024,7 @@ Create your custom module, w</description>
     <title>Filter content between Date ranges in Drupal 7</title>
     <link>https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</link>
     <description>It is tempting to believe that using the is between on a date fields will work. However, this option is used only in the case of events Starting on a range of date.
-                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an "end date" for the event, only a date field with the "Collect an end da</description>
+                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an 'end date' for the event, only a date field with the 'Collect an end da</description>
     <pubDate>Thu, 07 Jul 2022 14:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</guid>
