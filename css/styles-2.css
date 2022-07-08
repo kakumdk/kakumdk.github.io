@@ -186,7 +186,7 @@ body #carouselQuickRead .carousel-control-next {
     text-transform: uppercase;
 }
 .footer .widget .post-sharing-footer {
-    margin: 24px auto;
+    margin: 22px auto;
 }
 .footer .widget .post-sharing-footer a {
     color: #546E7A;
@@ -195,6 +195,9 @@ body #carouselQuickRead .carousel-control-next {
     margin: 4px auto;
     text-transform: uppercase;
     font-size: 12px;
+}
+.footer .widget .post-sharing-footer a i {
+    width: 15px;
 }
 .footer .widget .newsletter-widget-subscribe {
 
@@ -1638,8 +1641,7 @@ h3.author-articles-heading::after {
         cursor: pointer;
     }
     .footer .widget .post-sharing-footer a {
-        font-size: 13px;
-        margin: 9px auto;
+        margin: 5px auto;
     }
     .footer .widget .post-sharing-footer a:hover {
         color: #0275d8;
