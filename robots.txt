@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/how-to-work-with-drupal-paragraphs.html
 Allow: /articles/growing-enough-broccoli-to-feed-a-family-by-yourself.html
 Allow: /articles/help-people-to-recognize-the-physical-signs-of-stress-and-manage-the-stress.html
 Allow: /articles/president-of-india-nominated-veerendra-heggade-pt-usha-ilaiyaraaja-and-vijayendra-prasad-to-the-rajya-sabha.html

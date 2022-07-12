@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to work with Drupal Paragraphs?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</link>
+			<description>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.  Paragraphs is one of the&amp;nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide </description>
+			<pubDate>Tue, 12 Jul 2022 19:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</guid>
+    </item><item>
 			<title>Usage of PhpStan on Github via Pull Request for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development and code review process. We have a similar helpful article related to Phpcs, have a check of this.  To make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here come</description>

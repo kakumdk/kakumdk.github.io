@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to work with Drupal Paragraphs?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</link>
+			<description>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.  Paragraphs is one of the&amp;nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide </description>
+			<pubDate>Tue, 12 Jul 2022 19:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</guid>
+    </item><item>
 			<title>Drupal Configuration management (Local, Dev, Test and Live)</title>
 			<link>https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</link>
 			<description>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.  Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp;amp; views.  Making the configurations direct</description>
