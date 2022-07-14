@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/growing-enough-pudina-to-feed-a-family-by-yourself.html
 Allow: /articles/how-to-work-with-drupal-paragraphs.html
 Allow: /articles/growing-enough-broccoli-to-feed-a-family-by-yourself.html
 Allow: /articles/help-people-to-recognize-the-physical-signs-of-stress-and-manage-the-stress.html
@@ -304,6 +305,7 @@ Allow: /articles/Plants.html
 Allow: /articles/Politics.html
 Allow: /articles/Project.html
 Allow: /articles/Project-Management.html
+Allow: /articles/Pulses.html
 Allow: /articles/Rape.html
 Allow: /articles/Recipe.html
 Allow: /articles/Relationship.html
@@ -447,6 +449,7 @@ Allow: /feeds/plants.xml
 Allow: /feeds/politics.xml
 Allow: /feeds/project.xml
 Allow: /feeds/project-management.xml
+Allow: /feeds/pulses.xml
 Allow: /feeds/rape.xml
 Allow: /feeds/recipe.xml
 Allow: /feeds/relationship.xml
