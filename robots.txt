@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/tips-for-night-driving-on-motorcycle-on-roads-and-highways.html
 Allow: /articles/growing-enough-pudina-to-feed-a-family-by-yourself.html
 Allow: /articles/how-to-work-with-drupal-paragraphs.html
 Allow: /articles/growing-enough-broccoli-to-feed-a-family-by-yourself.html
@@ -289,6 +290,7 @@ Allow: /articles/Meditation.html
 Allow: /articles/Mental-Health.html
 Allow: /articles/Migrate.html
 Allow: /articles/Missile.html
+Allow: /articles/Motorcycle.html
 Allow: /articles/Movie.html
 Allow: /articles/Nambi-Narayanan.html
 Allow: /articles/Negative-Thoughts.html
@@ -433,6 +435,7 @@ Allow: /feeds/meditation.xml
 Allow: /feeds/mental-health.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
+Allow: /feeds/motorcycle.xml
 Allow: /feeds/movie.xml
 Allow: /feeds/nambi-narayanan.xml
 Allow: /feeds/negative-thoughts.xml
