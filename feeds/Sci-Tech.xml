@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Read Data to Paragraph Template in Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</link>
+			<description>In this article we are going to see how to read the dynamic data of the node or entity or field values to the template file, which are specific to the paragraph template.  Generally while the Paragraph module is used, default template suggestions given by the paragraph module or the template suggestions provided by the hooks are used and further template design is done. Here&amp;rsquo;s the article wh</description>
+			<pubDate>Sun, 17 Jul 2022 12:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</guid>
+    </item><item>
 			<title>How to work with Drupal Paragraphs?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</link>
 			<description>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.  Paragraphs is one of the&amp;nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide </description>
@@ -400,15 +407,6 @@
 			<pubDate>Tue, 14 Mar 2017 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</guid>
-    </item><item>
-			<title>Auto Tagging of Taxonomy terms in Drupal7</title>
-			<link>https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</link>
-			<description>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave().
-                                In our case lets consider the field_tags is the taxonomy field, and we are autotagging based on the content present in title and body fields.
-                                Al</description>
-			<pubDate>Sun, 27 Sep 2015 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</guid>
     </item>
 </channel>
 </rss>
