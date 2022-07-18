@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Cooking Food with Solar Power at Home</title>
+			<link>https://peoplesblog.co.in/articles/cooking-food-with-solar-power-at-home.html</link>
+			<description>On PeoplesBLOG, we were writing articles related to Eco friendly homes and how to use Solar energy and along the same lines, in this article we are going to see how people can cook their food with Solar energy.  Generally majority of the people nowadays use Gas stoves for Cooking at home and Solar is one of the best case of the replacement for this. People can make a major change on the Environmen</description>
+			<pubDate>Mon, 18 Jul 2022 14:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/cooking-food-with-solar-power-at-home.html</guid>
+    </item><item>
 			<title>Read Data to Paragraph Template in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</link>
 			<description>In this article we are going to see how to read the dynamic data of the node or entity or field values to the template file, which are specific to the paragraph template.  Generally while the Paragraph module is used, default template suggestions given by the paragraph module or the template suggestions provided by the hooks are used and further template design is done. Here&amp;rsquo;s the article wh</description>
@@ -394,19 +401,6 @@
 			<pubDate>Sun, 26 Mar 2017 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</guid>
-    </item><item>
-			<title>Creating a Twitter Share block programmatically in Drupal 8</title>
-			<link>https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</link>
-			<description>How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like
-                                
-                                    Accessing the Current Node data in Block.
-                                    How do we create the link programmatically.
-                                    Disable cache for particular block.
-                                
-  </description>
-			<pubDate>Tue, 14 Mar 2017 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</guid>
     </item>
 </channel>
 </rss>

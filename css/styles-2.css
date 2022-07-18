@@ -1550,7 +1550,7 @@ h3.author-articles-heading::after {
     border-color: #546E7A;
     padding: 6px;
     text-align: center;
-    width: 50%;
+    /* width: 50%; */
     margin-top: 20px;
 }
 #policy-container .policy-container .policy-button:hover {
@@ -1773,14 +1773,14 @@ h3.author-articles-heading::after {
         margin-top: 18px;
     }
     #policy-container {
-        width: 98%;
+        width: 25%;
         left: 15px;
         bottom: 15px;
         border-radius: 5px;
         padding: 8px;
     }
     #policy-container .policy-container .policy-button {
-        width: 15%;
+        /* width: 100%; */
         margin: auto;
     }
     
