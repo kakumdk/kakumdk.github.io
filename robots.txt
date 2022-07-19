@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/growing-enough-tomatoes-to-feed-a-family-by-yourself.html
 Allow: /articles/cooking-food-with-solar-power-at-home.html
 Allow: /articles/read-data-to-paragraph-template-in-drupal-application.html
 Allow: /articles/tips-for-night-driving-on-motorcycle-on-roads-and-highways.html
