@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/complete-guide-to-setup-and-usage-solar-panels-at-home.html
 Allow: /articles/growing-enough-tomatoes-to-feed-a-family-by-yourself.html
 Allow: /articles/cooking-food-with-solar-power-at-home.html
 Allow: /articles/read-data-to-paragraph-template-in-drupal-application.html
@@ -327,6 +328,7 @@ Allow: /articles/Sleep.html
 Allow: /articles/Smoking.html
 Allow: /articles/Social-Media.html
 Allow: /articles/Software.html
+Allow: /articles/Solar-Energy.html
 Allow: /articles/Solo.html
 Allow: /articles/Solr.html
 Allow: /articles/Stem-Cells.html
@@ -472,6 +474,7 @@ Allow: /feeds/sleep.xml
 Allow: /feeds/smoking.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
+Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
 Allow: /feeds/solr.xml
 Allow: /feeds/stem-cells.xml
