@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/droupadi-murmu-new-president-of-india.html
 Allow: /articles/solo-travel-to-gokarna-for-three-nights-and-four-days.html
 Allow: /articles/complete-guide-to-setup-and-usage-solar-panels-at-home.html
 Allow: /articles/growing-enough-tomatoes-to-feed-a-family-by-yourself.html
