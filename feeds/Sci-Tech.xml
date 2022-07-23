@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Usage of Local Php Security Checker for Drupal Applications</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</link>
+			<description>In this article, we are going to see how the Local PHP Security Checker library will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the Local PHP Security Checker library, which checks for any known vulnerabilities in the package dependencies.  Th</description>
+			<pubDate>Sat, 23 Jul 2022 14:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</guid>
+    </item><item>
 			<title>Complete Guide to Setup and Usage Solar Panels at Home</title>
 			<link>https://peoplesblog.co.in/articles/complete-guide-to-setup-and-usage-solar-panels-at-home.html</link>
 			<description>Going green is the best of the environment and if you are planning to go green, then we all know Sun is the non-renewable energy and we could use this energy for people&amp;#39;s survival. We have a few articles at PeoplesBLOG related to the Environment and going green, have a check of them.  Using the Electricity from Solar energy is one of the best combinations, because there is not much waste out o</description>
@@ -390,16 +397,6 @@
 			<pubDate>Thu, 01 Feb 2018 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</guid>
-    </item><item>
-			<title>Aegir on Docker - Develop, Test, With Easier Deployment</title>
-			<link>https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</link>
-			<description>Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments.
-                                Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting.
-                                Here you go???
-                                Better Task Queue..! This process is usua</description>
-			<pubDate>Sun, 03 Sep 2017 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</guid>
     </item>
 </channel>
 </rss>
