@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/monkeypox-outbreak-around-the-world.html
 Allow: /articles/stop-overthinking-your-thoughts-of-future.html
 Allow: /articles/usage-of-local-php-security-checker-for-drupal-applications.html
 Allow: /articles/droupadi-murmu-new-president-of-india.html
@@ -351,6 +352,7 @@ Allow: /articles/Understanding.html
 Allow: /articles/Vaccination.html
 Allow: /articles/Vegetable.html
 Allow: /articles/Veneers.html
+Allow: /articles/Virus.html
 Allow: /articles/Web.html
 Allow: /articles/WebOps.html
 Allow: /articles/World.html
@@ -497,6 +499,7 @@ Allow: /feeds/understanding.xml
 Allow: /feeds/vaccination.xml
 Allow: /feeds/vegetable.xml
 Allow: /feeds/veneers.xml
+Allow: /feeds/virus.xml
 Allow: /feeds/web.xml
 Allow: /feeds/webops.xml
 Allow: /feeds/world.xml
