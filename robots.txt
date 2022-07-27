@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/tips-to-overcome-suicidal-thoughts.html
 Allow: /articles/growing-enough-onions-to-feed-a-family-by-yourself.html
 Allow: /articles/monkeypox-outbreak-around-the-world.html
 Allow: /articles/stop-overthinking-your-thoughts-of-future.html
