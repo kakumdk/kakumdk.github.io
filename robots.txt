@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/ins-vikrant-delivered-to-indian-navy-first-indigenous-aircraft-carrier-by-india.html
 Allow: /articles/solo-everest-base-camp-trek-bangalore-to-kathmandu-then-to-salleri.html
 Allow: /articles/tips-to-overcome-suicidal-thoughts.html
 Allow: /articles/growing-enough-onions-to-feed-a-family-by-yourself.html
@@ -306,6 +307,7 @@ Allow: /articles/Missile.html
 Allow: /articles/Motorcycle.html
 Allow: /articles/Movie.html
 Allow: /articles/Nambi-Narayanan.html
+Allow: /articles/Navy.html
 Allow: /articles/Negative-Thoughts.html
 Allow: /articles/Nginx.html
 Allow: /articles/Oral-Health.html
@@ -455,6 +457,7 @@ Allow: /feeds/missile.xml
 Allow: /feeds/motorcycle.xml
 Allow: /feeds/movie.xml
 Allow: /feeds/nambi-narayanan.xml
+Allow: /feeds/navy.xml
 Allow: /feeds/negative-thoughts.xml
 Allow: /feeds/nginx.xml
 Allow: /feeds/oral-health.xml

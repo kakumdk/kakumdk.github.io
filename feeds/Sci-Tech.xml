@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>INS Vikrant Delivered to Indian Navy, First Indigenous Aircraft Carrier by India</title>
+			<link>https://peoplesblog.co.in/articles/ins-vikrant-delivered-to-indian-navy-first-indigenous-aircraft-carrier-by-india.html</link>
+			<description>INS Vikrant which is also known as Indigenous Aircraft Carrier 1 (IAC-1). It is the first aircraft carrier to be built in India. This is an Aircraft Carrier constructed by the Cochin Shipyard Limited (CSL) for the Indian Navy.  The name Vikrant means courageous in Sanskrit. The motto of the ship is Jayema Saṁ Yudhi Sprdhah, which means I defeat those who fight against me.  Brief of the backgroun</description>
+			<pubDate>Fri, 29 Jul 2022 20:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/ins-vikrant-delivered-to-indian-navy-first-indigenous-aircraft-carrier-by-india.html</guid>
+    </item><item>
 			<title>Usage of Local Php Security Checker for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how the Local PHP Security Checker library will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the Local PHP Security Checker library, which checks for any known vulnerabilities in the package dependencies.  Th</description>
@@ -389,14 +396,6 @@
 			<pubDate>Wed, 27 Jun 2018 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/sites-still-vulnerable-drupalgeddon-.html</guid>
-    </item><item>
-			<title>Secure Website running on Apache with Let's Encrypt on Linux</title>
-			<link>https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</link>
-			<description>Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server.
-                                Let's make it easier with the </description>
-			<pubDate>Thu, 01 Feb 2018 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</guid>
     </item>
 </channel>
 </rss>
