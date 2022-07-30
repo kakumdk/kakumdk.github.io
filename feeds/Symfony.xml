@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
+			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
+			<pubDate>Sat, 30 Jul 2022 21:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
+    </item><item>
 			<title>Know why Symfony framework was picked by Drupal</title>
 			<link>https://peoplesblog.co.in/articles/Know-why-Symfony-framework-was-picked-by-Drupal.html</link>
 			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>

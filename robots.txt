@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html
 Allow: /articles/ins-vikrant-delivered-to-indian-navy-first-indigenous-aircraft-carrier-by-india.html
 Allow: /articles/solo-everest-base-camp-trek-bangalore-to-kathmandu-then-to-salleri.html
 Allow: /articles/tips-to-overcome-suicidal-thoughts.html

@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
+    <link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
+    <description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
+    <pubDate>Sat, 30 Jul 2022 21:00:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
+  </item><item>
     <title>INS Vikrant Delivered to Indian Navy, First Indigenous Aircraft Carrier by India</title>
     <link>https://peoplesblog.co.in/articles/ins-vikrant-delivered-to-indian-navy-first-indigenous-aircraft-carrier-by-india.html</link>
     <description>INS Vikrant which is also known as Indigenous Aircraft Carrier 1 (IAC-1). It is the first aircraft carrier to be built in India. This is an Aircraft Carrier constructed by the Cochin Shipyard Limited (CSL) for the Indian Navy.  The name Vikrant means courageous in Sanskrit. The motto of the ship is Jayema Saṁ Yudhi Sprdhah, which means I defeat those who fight against me.  Brief of the backgroun</description>
