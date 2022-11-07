@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/bangalore-to-dharmasthala-solo-trip-plan.html
 Allow: /articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html
 Allow: /articles/ins-vikrant-delivered-to-indian-navy-first-indigenous-aircraft-carrier-by-india.html
 Allow: /articles/solo-everest-base-camp-trek-bangalore-to-kathmandu-then-to-salleri.html
@@ -250,6 +251,7 @@ Allow: /articles/Dal-Bhat.html
 Allow: /articles/Dental.html
 Allow: /articles/Dentist.html
 Allow: /articles/Dependency-Injection.html
+Allow: /articles/Dharmasthala.html
 Allow: /articles/Diabetes.html
 Allow: /articles/Discovery.html
 Allow: /articles/District.html
@@ -400,6 +402,7 @@ Allow: /feeds/dal-bhat.xml
 Allow: /feeds/dental.xml
 Allow: /feeds/dentist.xml
 Allow: /feeds/dependency-injection.xml
+Allow: /feeds/dharmasthala.xml
 Allow: /feeds/diabetes.xml
 Allow: /feeds/discovery.xml
 Allow: /feeds/district.xml
