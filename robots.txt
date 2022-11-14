@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/bangalore-to-lepakshi-solo-trip-plan.html
 Allow: /articles/everest-base-camp-trek-start-trekking-from-salleri-and-back-to-salleri.html
 Allow: /articles/bangalore-to-dharmasthala-solo-trip-plan.html
 Allow: /articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html
@@ -296,6 +297,7 @@ Allow: /articles/Kathmandu.html
 Allow: /articles/Lando.html
 Allow: /articles/Language.html
 Allow: /articles/Law.html
+Allow: /articles/Lepakshi.html
 Allow: /articles/Life.html
 Allow: /articles/Lifestyle.html
 Allow: /articles/Lockdown.html
@@ -447,6 +449,7 @@ Allow: /feeds/kathmandu.xml
 Allow: /feeds/lando.xml
 Allow: /feeds/language.xml
 Allow: /feeds/law.xml
+Allow: /feeds/lepakshi.xml
 Allow: /feeds/life.xml
 Allow: /feeds/lifestyle.xml
 Allow: /feeds/lockdown.xml
@@ -530,6 +533,7 @@ Allow: /quotes/marriage.html
 Allow: /quotes/motivational.html
 Allow: /quotes/self.html
 Allow: /quotes/trust.html
+Allow: /quotes/truth.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles-sitemap.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read-sitemap.xml
