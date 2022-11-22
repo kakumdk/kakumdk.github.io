@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/project-vs-product-plan-and-delivery-agile-characteristics.html
 Allow: /articles/bangalore-to-lepakshi-solo-trip-plan.html
 Allow: /articles/everest-base-camp-trek-start-trekking-from-salleri-and-back-to-salleri.html
 Allow: /articles/bangalore-to-dharmasthala-solo-trip-plan.html

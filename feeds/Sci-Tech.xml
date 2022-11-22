@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Project vs Product - Plan and Delivery, Agile Characteristics</title>
+			<link>https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</link>
+			<description>In the Services Industry, a Technical Lead or Technical Architect or Delivery Manager, one is always looking at the work, either as a Project or a Product, but I say, one should look at it as both, because work would be a Project for us but work would be a Product for the clients.  While working on Agile basis, being at the leading positions one will be seeing the scope of work, then prepare the b</description>
+			<pubDate>Tue, 22 Nov 2022 17:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</guid>
+    </item><item>
 			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
 			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
@@ -382,18 +389,6 @@
 			<pubDate>Mon, 24 Jun 2019 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/store-drupal-logs-amazon-s.html</guid>
-    </item><item>
-			<title>AES Encrypt &amp; Decrypt</title>
-			<link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
-			<description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.
-                                AES Encrypt
-                                
-                                    We would have the 'Secret' stored in a file which is other than the web root.
-                                
-      </description>
-			<pubDate>Thu, 07 Jul 2022 14:10:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
     </item>
 </channel>
 </rss>
