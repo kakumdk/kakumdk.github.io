@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Nginx - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/nginx.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Security Hardening - Nginx Response Headers</title>
+			<link>https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</link>
+			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.
+                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of info</description>
+			<pubDate>Sun, 20 Jun 2021 11:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</guid>
+    </item>
+</channel>
+</rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Hooks - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/hooks.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>When to use hook_update_N &amp; hook_post_update_NAME?</title>
+			<link>https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</link>
+			<description>In this article, we are going to learn when to use hook_update_N and hook_post_update_NAME. In general, I was using hook_update_N for any database-related changes or with any configuration additions or updates. And I was using hook_post_update_NAME for any content creation or updating or for the creation or updating any taxonomy terms etc, sometimes for clearing site caches as well. But, let’s h</description>
+			<pubDate>Tue, 08 Feb 2022 12:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</guid>
+    </item>
+</channel>
+</rss>

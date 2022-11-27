@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>World - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/world.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Monkeypox Outbreak around the World in 2022</title>
+			<link>https://peoplesblog.co.in/articles/monkeypox-outbreak-around-the-world.html</link>
+			<description>The outbreak of monkeypox, which is a viral disease, was confirmed in May 2022, once few cases were found in the United Kingdom. The first case was detected on 6th May 2022 and confirmed this case had travel links to Nigeria (where the disease is endemic).  From 18th May 2022 onwards, there was an increase in cases in Europe, North and South America, Asia, Africa, and Australia.  As of 23rd July 2</description>
+			<pubDate>Mon, 25 Jul 2022 13:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/monkeypox-outbreak-around-the-world.html</guid>
+    </item><item>
+			<title>World Wildlife Day</title>
+			<link>https://peoplesblog.co.in/articles/world-wildlife-day.html</link>
+			<description>On 20 December 2013, United Nations General Assembly (UNGA), in its resolution UN 68/205, decided to proclaim 3 March, the international day of the adoption of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) on the planet raise awareness and benefits fauna and flora in 1973, as World Wildlife Day, which was proposed by Thailand, to celebrate and raise aw</description>
+			<pubDate>Wed, 03 Mar 2021 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/world-wildlife-day.html</guid>
+    </item>
+</channel>
+</rss>

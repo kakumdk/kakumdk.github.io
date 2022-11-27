@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Audit - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/audit.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Drupal 7 to Drupal 8/9 Audits</title>
+			<link>https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</link>
+			<description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.
+                       </description>
+			<pubDate>Sat, 24 Apr 2021 12:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</guid>
+    </item>
+</channel>
+</rss>

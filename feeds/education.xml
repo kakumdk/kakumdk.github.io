@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Education - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/education.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>National Education Policy 2020, Government of India (NEP 2020)</title>
+			<link>https://peoplesblog.co.in/articles/national-education-policy-nep.html</link>
+			<description>National Education Policy (NEP 2020) has been approved by Union Cabinet on 29 July 2020. Its major aim is to introduce changes in the Indian Education System right from the school to the college level of education. Making India a Global Knowledge Superpower is the ultimate objective of the NEP 2020. It is the third major change in education systems in India since independence in 1947. Earlier two </description>
+			<pubDate>Tue, 08 Dec 2020 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/national-education-policy-nep.html</guid>
+    </item>
+</channel>
+</rss>
