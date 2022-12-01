@@ -532,6 +532,7 @@ Allow: /quotes/life.html
 Allow: /quotes/love.html
 Allow: /quotes/marriage.html
 Allow: /quotes/motivational.html
+Allow: /quotes/relationship.html
 Allow: /quotes/self.html
 Allow: /quotes/trust.html
 Allow: /quotes/truth.html
