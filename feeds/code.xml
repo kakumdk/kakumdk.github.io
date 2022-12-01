@@ -9,14 +9,14 @@
 			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
 			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
-			<pubDate>Mon, 01 Aug 2022 09:00:00 +0530</pubDate>
+			<pubDate>Sat, 30 Jul 2022 08:59:22 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
     </item><item>
 			<title>Quick reference of Code Reviews for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</link>
 			<description>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.  It&amp;rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.  Firstly, for the code reviews to be at their best, the committed code should be more organis</description>
-			<pubDate>Wed, 22 Jun 2022 21:45:00 +0530</pubDate>
+			<pubDate>Wed, 22 Jun 2022 08:59:22 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</guid>
     </item>

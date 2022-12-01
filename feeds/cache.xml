@@ -10,7 +10,7 @@
 			<link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
 			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
                             And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
-			<pubDate>Sat, 31 Jul 2021 15:10:00 +0530</pubDate>
+			<pubDate>Sat, 31 Jul 2021 08:59:22 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
     </item>
