@@ -9,7 +9,7 @@
 			<title>Monitoring Web Application with ELK Stack</title>
 			<link>https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</link>
 			<description>For Auditing &amp; Troubleshooting issues in an application, log data is very useful. And to make it easy to read the log data via some kind of tool will make developers &amp; maintainers happy. However, not all the log data for any event is not needed to be stored in the log record. Means, Each log record should have only the information needed for further notice or further debugging. Strictly all sensit</description>
-			<pubDate>Fri, 19 Mar 2021 08:59:22 +0530</pubDate>
+			<pubDate>Fri, 19 Mar 2021 09:05:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</guid>
     </item>
