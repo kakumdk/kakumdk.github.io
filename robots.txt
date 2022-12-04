@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/bangalore-to-pondicherry-solo-trip-plan.html
 Allow: /articles/project-vs-product-plan-and-delivery-agile-characteristics.html
 Allow: /articles/bangalore-to-lepakshi-solo-trip-plan.html
 Allow: /articles/everest-base-camp-trek-start-trekking-from-salleri-and-back-to-salleri.html
@@ -327,6 +328,7 @@ Allow: /articles/personality.html
 Allow: /articles/php.html
 Allow: /articles/plants.html
 Allow: /articles/politics.html
+Allow: /articles/pondicherry.html
 Allow: /articles/project.html
 Allow: /articles/project-management.html
 Allow: /articles/pulses.html
@@ -479,6 +481,7 @@ Allow: /feeds/personality.xml
 Allow: /feeds/php.xml
 Allow: /feeds/plants.xml
 Allow: /feeds/politics.xml
+Allow: /feeds/pondicherry.xml
 Allow: /feeds/project.xml
 Allow: /feeds/project-management.xml
 Allow: /feeds/pulses.xml
