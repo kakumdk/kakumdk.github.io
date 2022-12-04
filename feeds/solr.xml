@@ -9,7 +9,7 @@
 			<title>Improve Drupal Search with Solr, Locally configured via Lando</title>
 			<link>https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</link>
 			<description>In this article, we are going to learn how Drupal search can be improved with Solr which provides great performance, and is suitable even for use on large commercial websites. And along with this using the search_api &amp; search_api_solr modules, helps to configure the Facets &amp; Multilingual content can be handled in an improved manner. And let's see how we can configure this locally with the help of </description>
-			<pubDate>Mon, 21 Feb 2022 09:22:52 +0530</pubDate>
+			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</guid>
     </item>
