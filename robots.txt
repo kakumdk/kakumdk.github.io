@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/drupal-ten-is-coming-in-a-few-days.html
 Allow: /articles/bangalore-to-pondicherry-solo-trip-plan.html
 Allow: /articles/project-vs-product-plan-and-delivery-agile-characteristics.html
 Allow: /articles/bangalore-to-lepakshi-solo-trip-plan.html
