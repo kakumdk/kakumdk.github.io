@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/tips-to-trust-yourself-more.html
 Allow: /articles/drupal-ten-is-coming-in-a-few-days.html
 Allow: /articles/bangalore-to-pondicherry-solo-trip-plan.html
 Allow: /articles/project-vs-product-plan-and-delivery-agile-characteristics.html
@@ -362,6 +363,7 @@ Allow: /articles/tirumala.html
 Allow: /articles/tirupathi.html
 Allow: /articles/travel.html
 Allow: /articles/trekking.html
+Allow: /articles/trust.html
 Allow: /articles/twig.html
 Allow: /articles/usa.html
 Allow: /articles/uncertainty.html
@@ -515,6 +517,7 @@ Allow: /feeds/tirumala.xml
 Allow: /feeds/tirupathi.xml
 Allow: /feeds/travel.xml
 Allow: /feeds/trekking.xml
+Allow: /feeds/trust.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
 Allow: /feeds/uncertainty.xml
