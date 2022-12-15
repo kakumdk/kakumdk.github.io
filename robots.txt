@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/bangalore-to-srisailam-solo-trip-plan.html
 Allow: /articles/tips-to-trust-yourself-more.html
 Allow: /articles/drupal-ten-is-coming-in-a-few-days.html
 Allow: /articles/bangalore-to-pondicherry-solo-trip-plan.html
@@ -355,6 +356,7 @@ Allow: /articles/software.html
 Allow: /articles/solar-energy.html
 Allow: /articles/solo.html
 Allow: /articles/solr.html
+Allow: /articles/srisailam.html
 Allow: /articles/stem-cells.html
 Allow: /articles/symfony.html
 Allow: /articles/technical-writing.html
@@ -509,6 +511,7 @@ Allow: /feeds/software.xml
 Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
 Allow: /feeds/solr.xml
+Allow: /feeds/srisailam.xml
 Allow: /feeds/stem-cells.xml
 Allow: /feeds/symfony.xml
 Allow: /feeds/technical-writing.xml
