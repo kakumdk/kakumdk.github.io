@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Local environment setup with Lando &amp; Drupal 10</title>
+			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
+			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
+			<pubDate>Sun, 18 Dec 2022 12:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
+    </item><item>
 			<title>Drupal 10 is coming in a few days!</title>
 			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
 			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
