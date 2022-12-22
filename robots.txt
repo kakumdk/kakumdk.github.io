@@ -549,10 +549,10 @@ Allow: /quotes/self.html
 Allow: /quotes/trust.html
 Allow: /quotes/truth.html
 
-Sitemap: https://peoplesblog.co.in/sitemaps/articles-sitemap.xml
-Sitemap: https://peoplesblog.co.in/sitemaps/quick-read-sitemap.xml
-Sitemap: https://peoplesblog.co.in/sitemaps/quotes-sitemap.xml
-Sitemap: https://peoplesblog.co.in/sitemaps/videos-sitemap.xml
-Sitemap: https://peoplesblog.co.in/sitemaps/authors-sitemap.xml
-Sitemap: https://peoplesblog.co.in/sitemaps/labels-sitemap.xml
-Sitemap: https://peoplesblog.co.in/sitemaps/pages-sitemap.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/articles.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/quick-read.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/quotes.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/videos.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/authors.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/labels.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/pages.xml
