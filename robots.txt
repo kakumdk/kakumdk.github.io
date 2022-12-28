@@ -14,6 +14,7 @@ Allow: /videos/index.html
 Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
+Allow: /articles/eight-vegetables-that-can-be-grown-at-home.html
 Allow: /articles/local-environment-setup-with-lando-and-drupal-ten.html
 Allow: /articles/bangalore-to-srisailam-solo-trip-plan.html
 Allow: /articles/tips-to-trust-yourself-more.html
