@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Colima - similar tool like Docker Desktop, for Drupal Development</title>
+			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
+			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>
+			<pubDate>Sat, 31 Dec 2022 14:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</guid>
+    </item><item>
 			<title>What to Know for Estimating Projects</title>
 			<link>https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</link>
 			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.
