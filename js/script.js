@@ -703,7 +703,7 @@ function showGlobalSearchResults(search) {
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
                     if (title.indexOf(searchFor[i]) !== -1) {
                         var url = getArticleURL(_data.file);
-                        var _tmp = [_data.title, _data.summary, url, '<i class="fa fa-book"></i><span>Article</span>'];
+                        var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-book"></i><span>Article</span>'];
                         results.push(_tmp);
                     }
                 }
@@ -721,7 +721,7 @@ function showGlobalSearchResults(search) {
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
                     if (title.indexOf(searchFor[i]) !== -1) {
                         var url = getQuickReadURL(_data.file);
-                        var _tmp = [_data.title, _data.summary, url, '<i class="fa fa-file"></i><span>Quick Read</span>'];
+                        var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-file"></i><span>Quick Read</span>'];
                         results.push(_tmp);
                     }
                 }
@@ -757,7 +757,7 @@ function showGlobalSearchResults(search) {
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
                     if (title.indexOf(searchFor[i]) !== -1) {
                         var url = getAuthorsURL(_data.file);
-                        var _tmp = [_data.author, _data.intro, url, '<i class="fa fa-user"></i><span>Author</span>'];
+                        var _tmp = [_data.author, _data.intro, url.toLowerCase(), '<i class="fa fa-user"></i><span>Author</span>'];
                         results.push(_tmp);
                     }
                 }
