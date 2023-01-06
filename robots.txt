@@ -229,7 +229,7 @@ Allow: /videos/D3DShZBnIxE.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
-Allow: /authors/jyothi-s-n.html
+Allow: /authors/jyothi.html
 Allow: /authors/hanukkah-john.html
 Allow: /articles/agile.html
 Allow: /articles/agriculture.html
