@@ -228,6 +228,7 @@ Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
 Allow: /shop/b09xb8gfbq.html
+Allow: /shop/b09wqyflrx.html
 Allow: /shop/b09shj1c9w.html
 Allow: /shop/b09sg1chww.html
 Allow: /shop/b09gy48285.html
