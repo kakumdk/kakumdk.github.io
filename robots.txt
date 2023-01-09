@@ -196,6 +196,7 @@ Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-y
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/questions-to-ask-dentist-before-dental-implant.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /videos/PZ46Ru5fVZ0.html
 Allow: /videos/JExcDnvE-PQ.html
 Allow: /videos/I9K4G8kNI1o.html
 Allow: /videos/fHWaxbqnxec.html
