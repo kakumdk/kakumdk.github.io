@@ -240,6 +240,7 @@ Allow: /shop/b08n5vdlzf.html
 Allow: /shop/b083dyv9zw.html
 Allow: /shop/b07nbz43ph.html
 Allow: /shop/b078s4p3j9.html
+Allow: /shop/b014akzmnk.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
