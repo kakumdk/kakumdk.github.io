@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How does Captcha know that I'm not a Robot?</title>
+			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
+			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
+			<pubDate>Wed, 11 Jan 2023 21:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</guid>
+    </item><item>
 			<title>Usage of Local Php Security Checker for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how the Local PHP Security Checker library will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the Local PHP Security Checker library, which checks for any known vulnerabilities in the package dependencies.  Th</description>

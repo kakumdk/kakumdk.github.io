@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How does Captcha know that I'm not a Robot?</title>
+			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
+			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
+			<pubDate>Wed, 11 Jan 2023 21:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</guid>
+    </item><item>
 			<title>Local environment setup with Lando &amp; Drupal 10</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>

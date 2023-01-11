@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How does Captcha know that I'm not a Robot?</title>
+			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
+			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
+			<pubDate>Wed, 11 Jan 2023 21:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</guid>
+    </item><item>
 			<title>Colima - similar tool like Docker Desktop, for Drupal Development</title>
 			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
 			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>
@@ -372,13 +379,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/home-with-low-impact-on-envirnoment.html</guid>
-    </item><item>
-			<title>Scientists Have Created Hexagonal Salt, For First Time Ever</title>
-			<link>https://peoplesblog.co.in/articles/scientists-have-created-hexagonal-salt.html</link>
-			<description>While it probably won't make it to your dining table, a new scientific achievement might be able to help in everything from radar equipment to electric cars: scientists have been able to form salt, aka sodium chloride (NaCl), in a hexagonal shapeThis is work done at the smallest of scales, with researchers able to get a thin film of hexagonal salt to form on top of a layer of diamond, due to the c</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/scientists-have-created-hexagonal-salt.html</guid>
     </item>
 </channel>
 </rss>

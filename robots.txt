@@ -15,6 +15,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-does-captcha-know-that-iam-not-robot.html
 Allow: /articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html
 Allow: /articles/eight-vegetables-that-can-be-grown-at-home.html
 Allow: /articles/local-environment-setup-with-lando-and-drupal-ten.html
