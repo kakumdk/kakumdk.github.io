@@ -1762,6 +1762,7 @@ h3.author-articles-heading::after {
     border: 1px solid #e7ebed;
     text-align: center;
     border-radius: 5px;
+    min-height: 400px;
 }
 .shop-data .shop-data-results .shop-item:hover {
     background-color: #f9f9f9;
