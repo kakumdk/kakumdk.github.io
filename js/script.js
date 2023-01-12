@@ -874,6 +874,19 @@ function showGlobalSearchResults(search) {
             }
         }
     }, 100);
+    setTimeout(function () {
+        if (resultsCount > 0) {
+            console.log(resultsCount);
+            var search = getLocalStorageValue('global-search-value');
+            var output = '<span>Found ' + resultsCount + ' results containing the words: </span><strong>' + search + '</strong>';
+            $('.global-search-results .header').html(output);
+            console.log(search);
+        }
+        // document.getElementById('global_search_scroll').scrollIntoView({
+        //     behavior: 'smooth'
+        // });
+    }, 200);
+    
 }
 function readJsonFile(file, callback) {
     var rawFile = new XMLHttpRequest();
