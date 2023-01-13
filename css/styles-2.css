@@ -323,7 +323,7 @@ body #carouselQuickRead .carousel-control-next {
     color: #263238;
 }
 .featured-quick-read-wrapper {
-    margin: 15px auto;
+    margin: 45px auto;
 }
 .featured-quick-read-wrapper h2 {
     font-size: 24px;
@@ -393,7 +393,7 @@ body #carouselQuickRead .carousel-control-next {
     margin: 30px auto 15px;
 }
 .homepage-recent.articles {
-    margin: 15px auto;
+    margin: 45px auto;
 }
 .homepage-recent.articles h2 {
     font-size: 24px;
@@ -460,7 +460,7 @@ body #carouselQuickRead .carousel-control-next {
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 .homepage-recent-quick-read {
-    margin: 15px auto;
+    margin: 45px auto;
 }
 .homepage-recent-quick-read h2 {
     font-size: 24px;
@@ -522,7 +522,7 @@ body #carouselQuickRead .carousel-control-next {
     line-height: 1.25;
 }
 .homepage-recent-videos {
-    margin: 15px auto;
+    margin: 45px auto;
 }
 .homepage-recent-videos h2 {
     font-size: 24px;
@@ -1382,6 +1382,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .quick-read-img {
     margin: 15px auto;
+    margin-top: 0;
 }
 .quick-read-img img {
     border-radius: 5px;
@@ -1701,6 +1702,9 @@ h3.author-articles-heading::after {
     cursor: pointer;
 }
 
+.recent-shop.shop-data {
+    margin: 45px auto;
+}
 .shop-data .shop-category-wrapper {
     display: none;
 }
@@ -2167,6 +2171,9 @@ h3.author-articles-heading::after {
     .blog-title-area .blog-meta .read-article-section {
         display: inline-block;
         margin-left: 15px;
+    }
+    .blog-title-area.quick-read .blog-meta .read-article-section {
+        margin-left: 0;
     }
     .blog-title-area .post-sharing-top.post-sharing {
         display: inline-block;

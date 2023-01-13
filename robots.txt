@@ -178,6 +178,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/how-to-think-positive-and-best-out-of-a-situation-with-kings-painting.html
 Allow: /quick-read/keep-good-company-if-you-want-to-be-a-good-person.html
 Allow: /quick-read/dara-singh-randhawa.html
 Allow: /quick-read/isro-launched-three-singapore-satellites-with-pslv.html
@@ -197,6 +198,7 @@ Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-y
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/questions-to-ask-dentist-before-dental-implant.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /videos/pdv1uxO6hGc.html
 Allow: /videos/PZ46Ru5fVZ0.html
 Allow: /videos/JExcDnvE-PQ.html
 Allow: /videos/I9K4G8kNI1o.html
@@ -210,7 +212,6 @@ Allow: /videos/pT-_w1XW7cE.html
 Allow: /videos/rIM-iSpopks.html
 Allow: /videos/e4mGgl3jFyo.html
 Allow: /videos/W6O75vyB_7M.html
-Allow: /videos/7EB1XjS2oW4.html
 Allow: /videos/D9UDWIV3Hss.html
 Allow: /videos/PzKhg1AFN4g.html
 Allow: /videos/VvKplxP0P2Q.html
