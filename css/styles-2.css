@@ -2050,6 +2050,7 @@ h3.author-articles-heading::after {
         border: 1px solid #E7EBED;
         border-radius: 5px;
         margin-left: 8px;
+        background-color: #f5f7f8;
     }
     body .header .navbar .navbar-nav li.nav-item a.nav-link.search span {
         margin-left: 8px;
