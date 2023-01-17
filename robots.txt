@@ -230,6 +230,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b01auh8aww.html
 Allow: /shop/b0bdshrd8g.html
 Allow: /shop/b0bdrscggd.html
 Allow: /shop/b09qgr3576.html
