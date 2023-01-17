@@ -2131,6 +2131,9 @@ h3.author-articles-heading::after {
     section .page-wrapper .articles .article {
         margin-bottom: 15px;
     }
+    section .page-wrapper .articles.homepage-recent .article {
+        min-height: 325px;
+    }
     /* section .page-wrapper .articles .article .articles-image img {
         border-radius: 5px 0 0 5px;
     } */
