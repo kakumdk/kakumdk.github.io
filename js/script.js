@@ -95,7 +95,7 @@ function scrollTopBottom() {
 function cookiePolicy() {
     var key = 'peoples-blog-cookie';
     var cookie = getStoredValue(key);
-    console.log(cookie);
+    // console.log(cookie);
     if (cookie === 'true') {
         $("#policy-container").hide();
     }
@@ -763,15 +763,25 @@ function showGlobalSearchResults(search) {
         data.slice().reverse().forEach(function (_data) {
             var title = _data.title.toLowerCase();
             title += " " + _data.summary.toLowerCase();
+            title += " " + _data.content.toLowerCase();
             title += " " + _data.author.toLowerCase();
             if (search !== null) {
                 var searchFor = search.toLowerCase().split(' ');
+                var found = false;
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
-                    if (title.indexOf(searchFor[i]) !== -1) {
-                        var url = getArticleURL(_data.file);
-                        var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-book"></i><span>Article</span>'];
-                        results.push(_tmp);
+                    if (title.includes(searchFor[i])) {
+                        found = true;
                     }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = getArticleURL(_data.file);
+                    var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-book"></i><span>Article</span>'];
+                    results.push(_tmp);
+                    found = false;
                 }
             }
         });
@@ -781,15 +791,25 @@ function showGlobalSearchResults(search) {
         data.slice().reverse().forEach(function (_data) {
             var title = _data.title.toLowerCase();
             title += " " + _data.summary.toLowerCase();
+            title += " " + _data.content.toLowerCase();
             title += " " + _data.author.toLowerCase();
             if (search !== null) {
                 var searchFor = search.toLowerCase().split(' ');
+                var found = false;
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
-                    if (title.indexOf(searchFor[i]) !== -1) {
-                        var url = getQuickReadURL(_data.file);
-                        var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-file"></i><span>Quick Read</span>'];
-                        results.push(_tmp);
+                    if (title.includes(searchFor[i])) {
+                        found = true;
                     }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = getQuickReadURL(_data.file);
+                    var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-file"></i><span>Quick Read</span>'];
+                    results.push(_tmp);
+                    found = false;
                 }
             }
         });
@@ -798,16 +818,23 @@ function showGlobalSearchResults(search) {
         var data = JSON.parse(text);
         data.slice().reverse().forEach(function (_data) {
             var title = _data.title.toLowerCase();
-            // title += " " + _data.summary.toLowerCase();
-            // title += " " + _data.author.toLowerCase();
             if (search !== null) {
                 var searchFor = search.toLowerCase().split(' ');
+                var found = false;
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
-                    if (title.indexOf(searchFor[i]) !== -1) {
-                        var url = "/videos/"+_data.videoId+".html";
-                        var _tmp = [_data.title, "", url, '<i class="fa fa-youtube-play"></i><span>Video</span>'];
-                        results.push(_tmp);
+                    if (title.includes(searchFor[i])) {
+                        found = true;
                     }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = "/videos/"+_data.videoId+".html";
+                    var _tmp = [_data.title, "", url, '<i class="fa fa-youtube-play"></i><span>Video</span>'];
+                    results.push(_tmp);
+                    found = false;
                 }
             }
         });
@@ -816,16 +843,25 @@ function showGlobalSearchResults(search) {
         var data = JSON.parse(text);
         data.slice().reverse().forEach(function (_data) {
             var title = _data.title.toLowerCase();
-            // title += " " + _data.summary.toLowerCase();
-            // title += " " + _data.author.toLowerCase();
+            title += " " + _data.summary.toLowerCase();
+            title += " " + _data.asin.toLowerCase();
             if (search !== null) {
                 var searchFor = search.toLowerCase().split(' ');
+                var found = false;
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
-                    if (title.indexOf(searchFor[i]) !== -1) {
-                        var url = "/shop/"+_data.asin+".html";
-                        var _tmp = [_data.title, "", url.toLowerCase(), '<i class="fa fa-shopping-cart"></i><span>Shop</span>'];
-                        results.push(_tmp);
+                    if (title.includes(searchFor[i])) {
+                        found = true;
                     }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = "/shop/"+_data.asin+".html";
+                    var _tmp = [_data.title, "", url.toLowerCase(), '<i class="fa fa-shopping-cart"></i><span>Shop</span>'];
+                    results.push(_tmp);
+                    found = false;
                 }
             }
         });
@@ -835,16 +871,25 @@ function showGlobalSearchResults(search) {
         data.slice().reverse().forEach(function (_data) {
             var title = _data.author.toLowerCase();
             title += " " + _data.intro.toLowerCase();
-            // title += " " + _data.author.toLowerCase();
             if (search !== null) {
                 var searchFor = search.toLowerCase().split(' ');
+                var found = false;
                 for (var i = 0, ln = searchFor.length; i < ln; i++) {
-                    if (title.indexOf(searchFor[i]) !== -1) {
-                        var url = getAuthorsURL(_data.file);
-                        var _tmp = [_data.author, _data.intro, url.toLowerCase(), '<i class="fa fa-user"></i><span>Author</span>'];
-                        results.push(_tmp);
+                    if (title.includes(searchFor[i])) {
+                        found = true;
+                    }
+                    else {
+                        found = false;
+                        break;
                     }
                 }
+                if (found == true) {
+                    var url = getAuthorsURL(_data.file);
+                    var _tmp = [_data.author, _data.intro, url.toLowerCase(), '<i class="fa fa-user"></i><span>Author</span>'];
+                    results.push(_tmp);
+                    found = false;
+                }
+
             }
         });
     });
@@ -876,11 +921,11 @@ function showGlobalSearchResults(search) {
     }, 100);
     setTimeout(function () {
         if (resultsCount > 0) {
-            console.log(resultsCount);
+            // console.log(resultsCount);
             var search = getLocalStorageValue('global-search-value');
             var output = '<span>Found ' + resultsCount + ' results containing the words: </span><strong>' + search + '</strong>';
             $('.global-search-results .header').html(output);
-            console.log(search);
+            // console.log(search);
         }
         // document.getElementById('global_search_scroll').scrollIntoView({
         //     behavior: 'smooth'
