@@ -2268,5 +2268,8 @@ h3.author-articles-heading::after {
     .shop-details .shop-image img {
         margin: 15px auto;
     }
+    .clock {
+        min-height: 150px;
+    }
     
 }
