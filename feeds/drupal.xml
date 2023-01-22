@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Secure your Web Application's Reset Password flow</title>
+			<link>https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</link>
+			<description>Generally any application framework provides users to have a flow to reset the passwords by default, It is more like, use clicking on the Reset Password link and redirects to a page where he will asked for email, and reset link sent to users email, so that user can reset the password on their own.  This is a default or general flow that any application framework provides, but developers or archite</description>
+			<pubDate>Sun, 22 Jan 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</guid>
+    </item><item>
 			<title>Colima - similar tool like Docker Desktop, for Drupal Development</title>
 			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
 			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>

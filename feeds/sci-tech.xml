@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Secure your Web Application's Reset Password flow</title>
+			<link>https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</link>
+			<description>Generally any application framework provides users to have a flow to reset the passwords by default, It is more like, use clicking on the Reset Password link and redirects to a page where he will asked for email, and reset link sent to users email, so that user can reset the password on their own.  This is a default or general flow that any application framework provides, but developers or archite</description>
+			<pubDate>Sun, 22 Jan 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</guid>
+    </item><item>
 			<title>How does Captcha know that I'm not a Robot?</title>
 			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
 			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
@@ -371,14 +378,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/construction-materials-for-thermal-resistant-walls.html</guid>
-    </item><item>
-			<title>Checklist for making a Eco-Friendly Home</title>
-			<link>https://peoplesblog.co.in/articles/home-with-low-impact-on-envirnoment.html</link>
-			<description>To build a home, which makes low-impact environmentally. And built using materials &amp; technology that lowers its energy needs in future. And also make sure built home is reliable for few decades with minimal energy spent on it. To do this, you have to consider Energy? what Sustainable materials to be used? how it impacts on our health? And what is costs
-                                Before gettin</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/home-with-low-impact-on-envirnoment.html</guid>
     </item>
 </channel>
 </rss>
