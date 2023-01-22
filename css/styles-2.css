@@ -1551,7 +1551,7 @@ h3.author-articles-heading::after {
     display: inline-block;
     margin: 6px;
     font-size: 14px;
-    border-radius: 12px;
+    border-radius: 5px;
 }
 .site-links-peoplesblog .site-links-labels span i,
 .site-links-peoplesblog .site-links-authors span i,

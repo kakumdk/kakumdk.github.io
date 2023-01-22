@@ -308,6 +308,15 @@
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/heat-waves-in-india-and-current-temperature-status-and-warning-for-next-five-day.html</guid>
     </item><item>
+			<title>Drupal JSON API, Deep Dive - Part 2</title>
+			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</link>
+			<description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.
+                                Types
+                            </description>
+			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</guid>
+    </item><item>
 			<title>Locally Setup and Scan your Docker images via Clair</title>
 			<link>https://peoplesblog.co.in/articles/locally-setup-and-scan-your-docker-images-via-clair.html</link>
 			<description>Docker Images contain not only application code, but a OS and additional utilities to make application run as expected. Images can also be vulnerable its better not have any CVE's in image. Running scans are one of the way to protect from CVE's. These container scanning tools scan for known vulnerabilities in the image.
@@ -322,6 +331,13 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</guid>
+    </item><item>
+			<title>Drupal JSON API, Deep Dive - Part 1</title>
+			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-one.html</link>
+			<description>JSON:API module is implemented based on JSON:API Specification. Means, a specification that says how client should request the resources to be fetched or modified, &amp; also how server should respond to such requests. This JSON:API is designed to minimize the number of requests and also minimize the amount of data transmitted between clients &amp; servers. And such efficiency is achieved without compromi</description>
+			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-one.html</guid>
     </item><item>
 			<title>Things to know about Proofreading</title>
 			<link>https://peoplesblog.co.in/articles/things-to-know-about-proofreading.html</link>
@@ -364,20 +380,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</guid>
-    </item><item>
-			<title>Rainwater Collection, Storage &amp; Purification</title>
-			<link>https://peoplesblog.co.in/articles/rain-water-collection-storage-purification.html</link>
-			<description>Rainwater Harvesting is the collection &amp; storage of rain water, rather than allowing it to run off. Rainwater is collected from a roof-like surface and redirected to a tank, cistern, deep pit (well, shaft, or borehole), aquifer, or a reservoir with percolation. We can utilize this water for many purposes like, include watering gardens, livestock, irrigation, domestic use with proper treatment, and</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/rain-water-collection-storage-purification.html</guid>
-    </item><item>
-			<title>Construction materials for Thermal Resistance Walls, Earth Bricks</title>
-			<link>https://peoplesblog.co.in/articles/construction-materials-for-thermal-resistant-walls.html</link>
-			<description>Construction process can be tedious, time consuming, and expensive. To overcome this during construction, varied methods of construction is being considered and developed. Also, materials and equipment used for construction are also being fabricated to enhance the quality of construction and furthermore minimize the time and cost. Interlocking bricks are one such advancement in construction indust</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/construction-materials-for-thermal-resistant-walls.html</guid>
     </item>
 </channel>
 </rss>
