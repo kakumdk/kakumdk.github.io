@@ -72,6 +72,7 @@ Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/dream-small-info-on-it.html
 Allow: /articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html
 Allow: /articles/get-to-know-ones-personality-type.html
+Allow: /articles/do-you-know-your-brain-is-the-biggest-sex-organ.html
 Allow: /articles/having-good-sex-at-any-age-is-it-really-possible.html
 Allow: /articles/dental-fluorosis-types-prevention-and-treatments.html
 Allow: /articles/improve-drupal-search-with-solr-locally-configured-via-lando.html
