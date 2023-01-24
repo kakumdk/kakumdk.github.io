@@ -15,6 +15,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/egg-stuffed-paratha-home-made-recipe.html
 Allow: /articles/courtship-time-make-it-memorable-ways-to-add-some-spice.html
 Allow: /articles/secure-your-applications-reset-password-flow.html
 Allow: /articles/bangalore-to-kochi-solo-trip-plan.html
@@ -164,7 +165,6 @@ Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/home-with-low-impact-on-envirnoment.html
 Allow: /articles/un-conditional-love-in-a-relationship.html
 Allow: /articles/two-days-trip-from-bangalore-to-mysore.html
-Allow: /articles/egg-stuffed-paratha-home-made-recipe.html
 Allow: /articles/scientists-have-created-hexagonal-salt.html
 Allow: /articles/pigeonbot-is-the-first-robot-that-can-bend-its-wings.html
 Allow: /articles/drupal-jsonapi-get-post-patch-and-delete-samples.html
