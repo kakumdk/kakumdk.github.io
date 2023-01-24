@@ -27,6 +27,7 @@ Allow: /articles/local-environment-setup-with-lando-and-drupal-ten.html
 Allow: /articles/bangalore-to-srisailam-solo-trip-plan.html
 Allow: /articles/tips-to-trust-yourself-more.html
 Allow: /articles/drupal-ten-is-coming-in-a-few-days.html
+Allow: /articles/people-still-say-yes-to-condoms-instead-of-birth-control.html
 Allow: /articles/bangalore-to-pondicherry-solo-trip-plan.html
 Allow: /articles/project-vs-product-plan-and-delivery-agile-characteristics.html
 Allow: /articles/bangalore-to-lepakshi-solo-trip-plan.html
