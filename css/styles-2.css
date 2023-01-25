@@ -184,12 +184,17 @@ body #carouselQuickRead .carousel-control-next {
     padding: 15px 0;
 }
 .footer .widget .widget-title {
-    font-size: 16px;
+    font-size: 15px;
     color: #546E7A;
+    letter-spacing: 0.75px;
     text-transform: uppercase;
+    font-weight: 500;
+}
+.footer .widget .widget-title.subscribe {
+    margin-top: 30px;
 }
 .footer .widget .post-sharing-footer {
-    margin: 22px auto;
+    margin: 15px auto;
 }
 .footer .widget .post-sharing-footer a {
     color: #546E7A;
@@ -203,7 +208,7 @@ body #carouselQuickRead .carousel-control-next {
     width: 15px;
 }
 .footer .widget .newsletter-widget-subscribe {
-
+    margin: 15px auto;
 }
 .footer .widget .newsletter-widget-subscribe input {
     width: 65%;
