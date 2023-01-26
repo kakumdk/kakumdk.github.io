@@ -15,6 +15,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/multisite-local-environment-setup-with-ddev-and-drupal.html
 Allow: /articles/two-days-trip-from-bangalore-to-mysore.html
 Allow: /articles/egg-stuffed-paratha-home-made-recipe.html
 Allow: /articles/courtship-time-make-it-memorable-ways-to-add-some-spice.html
