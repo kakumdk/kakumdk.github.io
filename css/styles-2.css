@@ -833,8 +833,10 @@ section .articles.search-articles .article .articles-content .articles-labels sp
     box-shadow: 0 0 6px 0 #1183d6;
 }
 .search-quotes .quoteDetails {
-    border-bottom: 1px solid #e7ebed;
-    padding: 15px 0;
+    border: 1px solid #e7ebed;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
 }
 .search-quotes .quoteDetails img {
     width: 40px;
@@ -923,8 +925,10 @@ body .quotes-browse .tag-quotes-section a:hover {
     font-weight: bold;
 }
 .label-articles .quoteDetails {
-    border-bottom: 1px solid #e7ebed;
-    padding: 15px 0;
+    border: 1px solid #e7ebed;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
 }
 .label-articles .quoteDetails img {
     width: 40px;
@@ -2275,6 +2279,14 @@ h3.author-articles-heading::after {
     }
     .clock {
         min-height: 150px;
+    }
+    .search-quotes .quoteDetails .quoteText .author,
+    .label-articles .quoteDetails .quoteText .author {
+        display: block;
+        text-align: right;
+        margin-top: 15px;
+        position: absolute;
+        right: 35px;
     }
     
 }
