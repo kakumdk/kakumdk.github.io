@@ -172,6 +172,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/controlling-anger.html
 Allow: /quick-read/the-wet-pants.html
 Allow: /quick-read/bad-habits.html
 Allow: /quick-read/how-to-think-positive-and-best-out-of-a-situation-with-kings-painting.html
@@ -193,6 +194,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /videos/NYrBlHvf4G4.html
 Allow: /videos/pdv1uxO6hGc.html
 Allow: /videos/PZ46Ru5fVZ0.html
 Allow: /videos/JExcDnvE-PQ.html
@@ -225,6 +227,8 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0bkw6zypl.html
+Allow: /shop/b00ip6c1lw.html
 Allow: /shop/b07r47wxx9.html
 Allow: /shop/b08fhvq5ry.html
 Allow: /shop/b09hmkk4j9.html
