@@ -227,6 +227,9 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b08bkxsn46.html
+Allow: /shop/b095swyf6m.html
+Allow: /shop/b07xd8g2hr.html
 Allow: /shop/b01kzvpzas.html
 Allow: /shop/b076vf43gg.html
 Allow: /shop/b0bkw6zypl.html
