@@ -620,7 +620,9 @@ body #carouselQuickRead .carousel-control-next {
 }
 .page-title.single-wrapper .breadcrumb .breadcrumb-item,
 .page-title.single-wrapper .breadcrumb .breadcrumb-item a {
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
 }
 .page-title.single-wrapper .breadcrumb .breadcrumb-item a:hover {
     color: #292b2c;
