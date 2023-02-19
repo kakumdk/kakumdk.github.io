@@ -15,6 +15,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/checklist-for-building-an-eco-friendly-home.html
 Allow: /articles/un-conditional-love-in-a-relationship.html
 Allow: /articles/multisite-local-environment-setup-with-ddev-and-drupal.html
@@ -153,7 +154,6 @@ Allow: /articles/bangalore-murdeshwar-gokarna-goa-dandeli.html
 Allow: /articles/construction-materials-for-thermal-resistant-walls.html
 Allow: /articles/openness-in-relationships-secret-or-private.html
 Allow: /articles/short-trip-from-bangalore-to-ghati.html
-Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/scientists-have-created-hexagonal-salt.html
 Allow: /articles/pigeonbot-is-the-first-robot-that-can-bend-its-wings.html
 Allow: /articles/drupal-jsonapi-get-post-patch-and-delete-samples.html
@@ -228,6 +228,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b07xq3mqc7.html
 Allow: /shop/b0blv1gnln.html
 Allow: /shop/b09pyznzx3.html
 Allow: /shop/b084dg9k87.html
