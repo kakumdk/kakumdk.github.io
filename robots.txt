@@ -172,6 +172,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-other-side-of-the-wall.html
 Allow: /quick-read/the-dog-at-the-well.html
 Allow: /quick-read/controlling-anger.html
 Allow: /quick-read/the-wet-pants.html
@@ -228,6 +229,8 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b07drnszsz.html
+Allow: /shop/b086t4wgry.html
 Allow: /shop/b07xq3mqc7.html
 Allow: /shop/b0blv1gnln.html
 Allow: /shop/b09pyznzx3.html
