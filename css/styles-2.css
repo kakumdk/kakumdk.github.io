@@ -1828,6 +1828,11 @@ h3.author-articles-heading::after {
     line-height: 1.2;
     font-weight: normal;
     margin: 15px auto;
+    max-height: 80px;
+    min-height: 80px;
+    overflow: hidden;
+    /* display: grid;
+    align-content: center; */
 }
 .shop-data .shop-data-results .shop-item h4.shop-title a {
     color: #292b2c;
