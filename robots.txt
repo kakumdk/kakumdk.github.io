@@ -15,6 +15,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bengaluru-to-br-hills-and-kgudi-solo-trip-plan.html
 Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/checklist-for-building-an-eco-friendly-home.html
 Allow: /articles/un-conditional-love-in-a-relationship.html
@@ -229,6 +230,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0blsqvd6n.html
 Allow: /shop/b08q528dvf.html
 Allow: /shop/b07drnszsz.html
 Allow: /shop/b086t4wgry.html
@@ -278,6 +280,7 @@ Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
 Allow: /articles/agriculture.html
+Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
 Allow: /articles/book.html
 Allow: /articles/business.html
@@ -305,6 +308,7 @@ Allow: /articles/government.html
 Allow: /articles/happy.html
 Allow: /articles/health.html
 Allow: /articles/india.html
+Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kathmandu.html
 Allow: /articles/lando.html
@@ -353,6 +357,7 @@ Allow: /articles/world.html
 Allow: /feeds/index.xml
 Allow: /feeds/quick-read.xml
 Allow: /feeds/agriculture.xml
+Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
@@ -380,6 +385,7 @@ Allow: /feeds/government.xml
 Allow: /feeds/happy.xml
 Allow: /feeds/health.xml
 Allow: /feeds/india.xml
+Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kathmandu.xml
 Allow: /feeds/lando.xml
