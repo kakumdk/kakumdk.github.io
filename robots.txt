@@ -8,6 +8,7 @@ Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /site-links.html
 Allow: /world-clock.html
+Allow: /age-calculator.html
 Allow: /sitemaps/index.html
 Allow: /quick-read/index.html
 Allow: /videos/index.html

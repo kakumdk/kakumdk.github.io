@@ -546,7 +546,6 @@ $(function() {
 function searchQuickReadListPage() {
     $('input[type=text]#search-quick-read').focus();
     $("#search-quick-read").on("keyup", function(event) {
-        console.log('aa');
         $('.search-quick-read .row .col-md-4 .quick-read').removeClass('hide');
         $('.search-quick-read .row').children('.col-md-4').each(function () {
             var title = $(this).find('.quick-read-title').text().toLowerCase();
@@ -576,7 +575,6 @@ $(function() {
 function searchVideosListPage() {
     $('input[type=text]#search-videos').focus();
     $("#search-videos").on("keyup", function(event) {
-        console.log('aa');
         $('.search-videos .video').removeClass('hide');
         $('.search-videos').children('.video').each(function () {
             var title = $(this).find('.video-title').text().toLowerCase();
@@ -606,10 +604,8 @@ $(function() {
 function searchQuotesListPage() {
     $('input[type=text]#search-quotes').focus();
     $("#search-quotes").on("keyup", function(event) {
-        console.log('aa');
         $('.search-quotes .quotes').removeClass('hide');
         $('.search-quotes').children('.quotes').each(function () {
-            console.log(title);
             var title = $(this).find('.quote-title').text().toLowerCase();
             title += " " + $(this).find('.author').text().toLowerCase();
             title += " " + $(this).find('.tags a').text().toLowerCase();
@@ -1002,3 +998,65 @@ setTimeout(function () {
     $(".webpushr-notification-img").attr('alt', 'Peoples BLOG - Webpushr');
     // console.log('hello');
 }, 2000);
+
+/******************************************************************************************************************/
+/********************************************* Age Calculator *****************************************************/
+/******************************************************************************************************************/
+$(function() {
+    ageCalculator();
+});
+function ageCalculator() {
+    $(".age-calculator button[type=submit]").on("click", function(event) {
+        $(".age-calculator .error").html('');
+        $(".age-calculator .result").html('');
+        var fromDate = $('.age-calculator .dateFrom').val();
+        var dateTo = $('.age-calculator .dateTo').val();
+        if (fromDate != '' && dateTo != '') {
+            var from = new Date(fromDate);
+            var to = new Date(dateTo);
+            var milli_secs = to.getTime() - from.getTime();
+            if (milli_secs < 0) {
+                var output = "<span class='error'>Date of Birth should be earlier than the Age at the Date of.</span>";
+                $(".age-calculator .from").prepend(output);
+            }
+            else {
+                var results = _ageCalculator(fromDate, to);
+                var output = "<span class='age'>Age:</span><span>"+results+"</span>";
+                $(".age-calculator .result").append(output);
+            }
+        }
+        if (fromDate == '') {
+            var output = "<span class='error'>Date of Birth should be filled.</span>";
+            $(".age-calculator .from").append(output);
+        }
+        if (dateTo == '') {
+            var output = "<span class='error'>Age at the Date of should be filled.</span>";
+            $(".age-calculator .to").append(output);
+        }
+    });
+}
+function _ageCalculator(fromDate, toDate) {
+    fromDate = fromDate.toString().split("-");
+    var to = new Date(toDate);    
+    var year = to.getFullYear();
+    var month = to.getMonth() + 1;
+    var day = to.getDate();
+    var yy = parseInt(fromDate[0]);
+    var mm = parseInt(fromDate[1]);
+    var dd = parseInt(fromDate[2]);
+    var years, months, days;
+    // months
+    months = month - mm;
+    if (day < dd) {
+        months = months - 1;
+    }
+    // years
+    years = year - yy;
+    if (month * 100 + day < mm * 100 + dd) {
+        years = years - 1;
+        months = months + 12;
+    }
+    // days
+    days = Math.floor((to.getTime() - (new Date(yy + years, mm + months - 1, dd)).getTime()) / (24 * 60 * 60 * 1000));
+    return years + " years " + months + ' months ' + days + ' days ';
+}

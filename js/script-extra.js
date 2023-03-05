@@ -57,7 +57,7 @@ function getClocktoRender(place, date, tzString) {
     min_rotation = 6 * min;
     sec_rotation = 6 * sec;
     if (place == 'Bengaluru') {
-        hourBengaluru.style.transform = `rotate(${hr_rotation}deg)`;
+        // hourBengaluru.style.transform = `rotate(${hr_rotation}deg)`;
         minuteBengaluru.style.transform = `rotate(${min_rotation}deg)`;
         secondBengaluru.style.transform = `rotate(${sec_rotation}deg)`;
     }

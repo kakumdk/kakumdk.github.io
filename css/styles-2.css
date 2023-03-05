@@ -2075,6 +2075,51 @@ h3.author-articles-heading::after {
     margin-right: auto;
     padding: 15px;
 }
+.age-calculator {
+    padding: 15px;
+    border: 1px solid #e7ebed;
+    border-radius: 5px;
+}
+.age-calculator .from,
+.age-calculator .to {
+    margin: 15px auto;
+}
+.age-calculator .from span,
+.age-calculator .to span {
+    display: block;
+    margin: 4px auto;
+}
+.age-calculator .from input,
+.age-calculator .to input {
+    display: block;
+    width: 60%;
+    padding: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid #e7ebed;
+}
+.age-calculator button {
+    margin: 15px auto;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #546E7A !important;
+    border-color: #546E7A !important;
+}
+.age-calculator .result {
+    margin: 15px auto;
+}
+.age-calculator .result span {
+    display: block;
+    font-size: 18px;
+}
+.age-calculator .result span.age {
+    font-weight: bold;
+}
+.age-calculator .error {
+    color: red;
+    font-size: 13px;
+}
 
 
 
@@ -2355,6 +2400,17 @@ h3.author-articles-heading::after {
         margin-top: 15px;
         position: absolute;
         right: 35px;
+    }
+    /* .age-calculator .from,
+    .age-calculator .to {
+        margin: 15px auto;
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+    } */
+    .age-calculator .from input,
+    .age-calculator .to input {
+        width: auto;
     }
     
 }
