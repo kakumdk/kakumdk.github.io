@@ -1017,7 +1017,7 @@ function ageCalculator() {
             var milli_secs = to.getTime() - from.getTime();
             if (milli_secs < 0) {
                 var output = "<span class='error'>Date of Birth should be earlier than the Age at the Date of.</span>";
-                $(".age-calculator .from").prepend(output);
+                $(".age-calculator .from").before(output);
             }
             else {
                 var results = _ageCalculator(fromDate, to);
