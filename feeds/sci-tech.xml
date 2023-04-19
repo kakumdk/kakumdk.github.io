@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Fix Colima connection refused error: failed to get Info from .lima/colima/ha.sock on Mac</title>
+			<link>https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</link>
+			<description>This article is about fixing only a single error which you see with Colima on Mac machines. This might be a simple &amp;amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.  While you are running Colima on your mac machines, generally you get into such issue, when you power off or shut down your mac, without stopping the colima service (and de</description>
+			<pubDate>Wed, 19 Apr 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</guid>
+    </item><item>
 			<title>Checklist for building an Eco-Friendly Home</title>
 			<link>https://peoplesblog.co.in/articles/checklist-for-building-an-eco-friendly-home.html</link>
 			<description>To build a home, which makes low-impact environmentally. And built using materials &amp;amp; technology that lowers its energy needs in future. And also make sure built home is reliable for few decades with minimal energy spent on it.  To do this, you have to consider Energy? what Sustainable materials to be used? how it impacts on our health? And what is costs  Before getting into the details of each</description>
@@ -370,14 +377,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/send-mail-with-custom-email-template-and-with-dynamic-values-via-drupal-mail-service.html</guid>
-    </item><item>
-			<title>API Docs Drupal Module simple way to show OAS Docs on Drupal Portal</title>
-			<link>https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</link>
-			<description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.
-                                Prereq</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</guid>
     </item>
 </channel>
 </rss>

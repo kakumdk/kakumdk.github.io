@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html
 Allow: /articles/bengaluru-to-br-hills-and-kgudi-solo-trip-plan.html
 Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/short-trip-from-bangalore-to-ghati.html
@@ -289,6 +290,7 @@ Allow: /articles/business.html
 Allow: /articles/covid.html
 Allow: /articles/chutney.html
 Allow: /articles/code.html
+Allow: /articles/colima.html
 Allow: /articles/coronavirus.html
 Allow: /articles/couple.html
 Allow: /articles/crime.html
@@ -318,6 +320,7 @@ Allow: /articles/law.html
 Allow: /articles/lepakshi.html
 Allow: /articles/life.html
 Allow: /articles/lifestyle.html
+Allow: /articles/lima.html
 Allow: /articles/love.html
 Allow: /articles/madanapalle.html
 Allow: /articles/makalidurga.html
@@ -366,6 +369,7 @@ Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
 Allow: /feeds/chutney.xml
 Allow: /feeds/code.xml
+Allow: /feeds/colima.xml
 Allow: /feeds/coronavirus.xml
 Allow: /feeds/couple.xml
 Allow: /feeds/crime.xml
@@ -395,6 +399,7 @@ Allow: /feeds/law.xml
 Allow: /feeds/lepakshi.xml
 Allow: /feeds/life.xml
 Allow: /feeds/lifestyle.xml
+Allow: /feeds/lima.xml
 Allow: /feeds/love.xml
 Allow: /feeds/madanapalle.xml
 Allow: /feeds/makalidurga.xml
