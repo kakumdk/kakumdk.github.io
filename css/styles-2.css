@@ -2140,6 +2140,9 @@ h3.author-articles-heading::after {
     margin: auto 15px;
 }
 #site-fixed-ad-container {
+    display: none;
+}
+#site-fixed-ad-container {
     position: fixed;
     z-index: 2147483645;
     background-color: #fff;
@@ -2447,6 +2450,9 @@ h3.author-articles-heading::after {
         font-size: 13px;
         display: inline !important;
         position: absolute;
+    }
+    #site-fixed-ad-container {
+        display: block;
     }
     #site-fixed-ad-container {
         width: 25%;
