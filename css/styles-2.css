@@ -2139,6 +2139,22 @@ h3.author-articles-heading::after {
     width: auto;
     margin: auto 15px;
 }
+#site-fixed-ad-container {
+    position: fixed;
+    z-index: 2147483645;
+    background-color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+    box-shadow: 0 0 18px rgba(0,0,0,.2);
+    padding: 5px;
+}
+#site-fixed-ad-container .x {
+    position: absolute;
+    right: 4px;
+    top: -18px;
+}
 
 
 
@@ -2431,6 +2447,13 @@ h3.author-articles-heading::after {
         font-size: 13px;
         display: inline !important;
         position: absolute;
+    }
+    #site-fixed-ad-container {
+        width: 25%;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 5px;
+        padding: 8px;
     }
     
 }

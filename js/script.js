@@ -26,6 +26,7 @@ $(function() {
     searchArticlesListPage();
     topBarGoogleTranslation();
     scrollTopBottom();
+    siteFixedAd();
     cookiePolicy();
 
     $(".post-sharing-top").html(writeSocialShareLinks('blog'));
@@ -90,6 +91,15 @@ function scrollTopBottom() {
         jQuery('html, body').animate({scrollTop: '0px'}, 800);
         return false;
     });
+}
+
+function siteFixedAd() {
+    setTimeout(function() {
+        $("#site-fixed-ad-container .x").removeClass('d-none');
+        $("#site-fixed-ad-container .x").click(function() {
+            $("#site-fixed-ad-container").hide(1000);
+        });
+    }, 1000 * 10);
 }
 
 function cookiePolicy() {
