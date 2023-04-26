@@ -113,7 +113,7 @@ function cookiePolicy() {
         storeValue(key, 'true');
         $("#policy-container").hide(1000);
     });
-    $("span.x").click(function() {
+    $("#policy-container span.x").click(function() {
         $("#policy-container").hide(1000);
     });
     setTimeout(function() {
