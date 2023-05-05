@@ -16,7 +16,11 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/why-should-we-chant-hare-rama-hare-krishna-mahamantra.html
+Allow: /articles/how-to-secure-the-passwords-of-users-in-web-applications.html
 Allow: /articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html
+Allow: /articles/everest-base-camp-trek-what-should-you-know-before-you-start.html
+Allow: /articles/how-to-make-a-compost-without-worm-or-kitchen-composting-or-organic-composting.html
 Allow: /articles/bengaluru-to-br-hills-and-kgudi-solo-trip-plan.html
 Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/short-trip-from-bangalore-to-ghati.html
@@ -296,6 +300,7 @@ Allow: /articles/colima.html
 Allow: /articles/coronavirus.html
 Allow: /articles/couple.html
 Allow: /articles/crime.html
+Allow: /articles/devotion.html
 Allow: /articles/dharmasthala.html
 Allow: /articles/docker.html
 Allow: /articles/drupal.html
@@ -375,6 +380,7 @@ Allow: /feeds/colima.xml
 Allow: /feeds/coronavirus.xml
 Allow: /feeds/couple.xml
 Allow: /feeds/crime.xml
+Allow: /feeds/devotion.xml
 Allow: /feeds/dharmasthala.xml
 Allow: /feeds/docker.xml
 Allow: /feeds/drupal.xml

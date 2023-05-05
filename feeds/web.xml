@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to secure the Passwords of Users in Web Applications?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</link>
+			<description>Generally while working with Web applications, one of the important data related to Users is their passwords, and keeping them secured is one of the important jobs of the Web application.  In this article we gonna see a brief how a developer or admin can make sure the passwords are secure on the web application.  Here are some best practices to secure passwords in web applications:   Use Strong Pa</description>
+			<pubDate>Wed, 26 Apr 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</guid>
+    </item><item>
 			<title>Multisite Local environment setup with DDEV and Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</link>
 			<description>In this article we are going to see how we can set up a multisite environment with ddev on the local machine. Assuming people are aware of configuring the drupal multiple site from the drupal side of configurations.  As we all know ddev is an open source tool for running local PHP development environments in minutes, which makes developer life easier during the local environment setup process, her</description>

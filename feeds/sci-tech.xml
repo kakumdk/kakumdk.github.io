@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to secure the Passwords of Users in Web Applications?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</link>
+			<description>Generally while working with Web applications, one of the important data related to Users is their passwords, and keeping them secured is one of the important jobs of the Web application.  In this article we gonna see a brief how a developer or admin can make sure the passwords are secure on the web application.  Here are some best practices to secure passwords in web applications:   Use Strong Pa</description>
+			<pubDate>Wed, 26 Apr 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</guid>
+    </item><item>
 			<title>Fix Colima connection refused error: failed to get Info from .lima/colima/ha.sock on Mac</title>
 			<link>https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</link>
 			<description>This article is about fixing only a single error which you see with Colima on Mac machines. This might be a simple &amp;amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.  While you are running Colima on your mac machines, generally you get into such issue, when you power off or shut down your mac, without stopping the colima service (and de</description>
@@ -370,13 +377,6 @@
 			<pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/world-cancer-day-february-th.html</guid>
-    </item><item>
-			<title>Send Mail with Custom Email Template &amp; with Dynamic values via Drupal Mail Service</title>
-			<link>https://peoplesblog.co.in/articles/send-mail-with-custom-email-template-and-with-dynamic-values-via-drupal-mail-service.html</link>
-			<description>Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from hook_mail() from the module sending the email. Any module can modify the composed email message array using hook_mail_alter(). Finally \Drupal::service('plugin.manager.mail')->mail</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/send-mail-with-custom-email-template-and-with-dynamic-values-via-drupal-mail-service.html</guid>
     </item>
 </channel>
 </rss>
