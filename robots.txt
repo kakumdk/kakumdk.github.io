@@ -17,6 +17,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /articles/why-should-we-chant-hare-rama-hare-krishna-mahamantra.html
+Allow: /articles/how-do-i-deal-with-anxiety-during-sex.html
 Allow: /articles/how-to-secure-the-passwords-of-users-in-web-applications.html
 Allow: /articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html
 Allow: /articles/everest-base-camp-trek-what-should-you-know-before-you-start.html
@@ -24,9 +25,13 @@ Allow: /articles/how-to-make-a-compost-without-worm-or-kitchen-composting-or-org
 Allow: /articles/bdsm-role-play-how-does-it-work.html
 Allow: /articles/different-ways-to-get-more-out-of-six-nine-position.html
 Allow: /articles/curiosity-how-will-this-change-peoples-life.html
+Allow: /articles/how-can-i-evaluate-whether-counseling-is-working.html
+Allow: /articles/how-does-confidentiality-work.html
 Allow: /articles/bengaluru-to-br-hills-and-kgudi-solo-trip-plan.html
 Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/short-trip-from-bangalore-to-ghati.html
+Allow: /articles/what-happens-in-counseling-sessions.html
+Allow: /articles/when-should-one-seek-counseling.html
 Allow: /articles/checklist-for-building-an-eco-friendly-home.html
 Allow: /articles/un-conditional-love-in-a-relationship.html
 Allow: /articles/multisite-local-environment-setup-with-ddev-and-drupal.html
