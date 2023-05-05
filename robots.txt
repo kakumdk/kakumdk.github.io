@@ -21,6 +21,9 @@ Allow: /articles/how-to-secure-the-passwords-of-users-in-web-applications.html
 Allow: /articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html
 Allow: /articles/everest-base-camp-trek-what-should-you-know-before-you-start.html
 Allow: /articles/how-to-make-a-compost-without-worm-or-kitchen-composting-or-organic-composting.html
+Allow: /articles/bdsm-role-play-how-does-it-work.html
+Allow: /articles/different-ways-to-get-more-out-of-six-nine-position.html
+Allow: /articles/curiosity-how-will-this-change-peoples-life.html
 Allow: /articles/bengaluru-to-br-hills-and-kgudi-solo-trip-plan.html
 Allow: /articles/indian-style-spanish-omellete.html
 Allow: /articles/short-trip-from-bangalore-to-ghati.html
