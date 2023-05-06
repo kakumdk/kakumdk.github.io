@@ -246,6 +246,7 @@ Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
 Allow: /shop/b0bbvc2qvv.html
+Allow: /shop/b078s4p3j9.html
 Allow: /shop/b09f9yqq7b.html
 Allow: /shop/b0b5lw5dfq.html
 Allow: /shop/b0b5ddjnh4.html
