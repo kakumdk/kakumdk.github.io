@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-generate-good-revenue-from-blogging-websites.html
 Allow: /articles/how-to-improve-websites-seo-score-and-make-it-searchable-on-search-engines-like-google.html
 Allow: /articles/how-to-prepare-palak-paneer-at-home-palakpaneer-recipe.html
 Allow: /articles/how-to-prepare-mango-pickle-at-home-mango-pickle-recipe.html
