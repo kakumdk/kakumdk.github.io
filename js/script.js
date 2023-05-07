@@ -556,8 +556,8 @@ $(function() {
 function searchQuickReadListPage() {
     $('input[type=text]#search-quick-read').focus();
     $("#search-quick-read").on("keyup", function(event) {
-        $('.search-quick-read .row .col-md-4 .quick-read').removeClass('hide');
-        $('.search-quick-read .row').children('.col-md-4').each(function () {
+        $('.search-quick-read .row .col-md-3 .quick-read').removeClass('hide');
+        $('.search-quick-read .row').children('.col-md-3').each(function () {
             var title = $(this).find('.quick-read-title').text().toLowerCase();
             title += " " + $(this).find('.quick-read-content').text().toLowerCase();
             title += " " + $(this).find('.quick-read-author').text().toLowerCase();
