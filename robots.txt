@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-prepare-palak-paneer-at-home-palakpaneer-recipe.html
 Allow: /articles/how-to-prepare-mango-pickle-at-home-mango-pickle-recipe.html
 Allow: /articles/why-should-we-chant-hare-rama-hare-krishna-mahamantra.html
 Allow: /articles/how-do-i-deal-with-anxiety-during-sex.html
