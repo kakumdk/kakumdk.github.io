@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-prepare-mango-pickle-at-home-mango-pickle-recipe.html
 Allow: /articles/why-should-we-chant-hare-rama-hare-krishna-mahamantra.html
 Allow: /articles/how-do-i-deal-with-anxiety-during-sex.html
 Allow: /articles/how-to-secure-the-passwords-of-users-in-web-applications.html
@@ -352,6 +353,7 @@ Allow: /articles/mysore.html
 Allow: /articles/navy.html
 Allow: /articles/pantheon.html
 Allow: /articles/php.html
+Allow: /articles/pickle.html
 Allow: /articles/politics.html
 Allow: /articles/pondicherry.html
 Allow: /articles/project.html
@@ -432,6 +434,7 @@ Allow: /feeds/mysore.xml
 Allow: /feeds/navy.xml
 Allow: /feeds/pantheon.xml
 Allow: /feeds/php.xml
+Allow: /feeds/pickle.xml
 Allow: /feeds/politics.xml
 Allow: /feeds/pondicherry.xml
 Allow: /feeds/project.xml
