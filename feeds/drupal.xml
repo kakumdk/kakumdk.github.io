@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Best way to add additional estimates upon the original estimate for a Story in a Sprint?</title>
+			<link>https://peoplesblog.co.in/articles/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.html</link>
+			<description>When additional work or requirements are identified for a Story during a Sprint, it is important to ensure that the impact on the Sprint&amp;#39;s scope and timeline is understood and communicated to the team and stakeholders. Here are some steps that can be followed to add additional estimates to a Story in a Sprint:   Review the original estimate: First, review the original estimate for the Story an</description>
+			<pubDate>Mon, 08 May 2023 15:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.html</guid>
+    </item><item>
 			<title>Fix Colima connection refused error: failed to get Info from .lima/colima/ha.sock on Mac</title>
 			<link>https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</link>
 			<description>This article is about fixing only a single error which you see with Colima on Mac machines. This might be a simple &amp;amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.  While you are running Colima on your mac machines, generally you get into such issue, when you power off or shut down your mac, without stopping the colima service (and de</description>
@@ -389,15 +396,6 @@ Create your custom module, w</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</guid>
-    </item><item>
-			<title>Create Related Content of Different Content Types through Taxonomy in Drupal7</title>
-			<link>https://peoplesblog.co.in/articles/create-related-content-different-content-types-through-taxonomy-drupal.html</link>
-			<description>Step 1 Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.
-                                
-                                Step 2 And next create/resue the Taxonomy term field for the other content type, In this article lets take example</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/create-related-content-different-content-types-through-taxonomy-drupal.html</guid>
     </item>
 </channel>
 </rss>
