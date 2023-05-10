@@ -26,13 +26,7 @@ $(function() {
     searchArticlesListPage();
     topBarGoogleTranslation();
     scrollTopBottom();
-    // siteFixedAd - START
-    $("#site-fixed-ad-container").addClass('d-none');
-    setTimeout(function() {
-        $("#site-fixed-ad-container").removeClass('d-none');
-        siteFixedAd();
-    }, 1000 * 3);
-    // siteFixedAd - END
+    siteFixedAd();
     cookiePolicy();
 
     $(".post-sharing-top").html(writeSocialShareLinks('blog'));
