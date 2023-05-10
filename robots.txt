@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/why-do-people-use-shortcut-words-like-afk-etc.html
 Allow: /articles/node-get-recent-is-deprecated-in-drupal-ten.html
 Allow: /articles/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.html
 Allow: /articles/how-to-generate-good-revenue-from-blogging-websites.html
@@ -346,6 +347,7 @@ Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kathmandu.html
 Allow: /articles/lando.html
+Allow: /articles/language.html
 Allow: /articles/law.html
 Allow: /articles/lepakshi.html
 Allow: /articles/life.html
@@ -427,6 +429,7 @@ Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kathmandu.xml
 Allow: /feeds/lando.xml
+Allow: /feeds/language.xml
 Allow: /feeds/law.xml
 Allow: /feeds/lepakshi.xml
 Allow: /feeds/life.xml
