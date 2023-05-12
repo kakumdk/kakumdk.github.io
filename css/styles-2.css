@@ -1398,6 +1398,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     margin-top: 0;
 }
 .quick-read-img img {
+    width: 100%;
     border-radius: 5px;
 }
 .recent-videos .video {
