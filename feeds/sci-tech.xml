@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>What to know before you choose a Drupal Hosting Platform?</title>
+			<link>https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</link>
+			<description>In this article we are gonna see a few important notes which will be helpful for people who are looking out to host their Drupal application. When selecting a hosting platform for your Drupal website, there are several key factors to consider.  Here are some important things to know before making a decision:   Compatibility with Drupal: Ensure that the hosting platform is compatible with Drupal&amp;#3</description>
+			<pubDate>Tue, 16 May 2023 14:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</guid>
+    </item><item>
 			<title>node_get_recent() is deprecated in Drupal 10.1.x</title>
 			<link>https://peoplesblog.co.in/articles/node-get-recent-is-deprecated-in-drupal-ten.html</link>
 			<description>node_get_recent() is unused in core and is now deprecated, developers can use views or EntityQuery to get the nodes which are recently modified or added.  Earlier drupal developers used to use the function&amp;nbsp;node_get_recent() to get the recently changed nodes like seen in below example  $latest_updated_nodes = node_get_recent(10);  Now from Drupal 10.1.x onwards, developers need to use entity q</description>
@@ -364,13 +371,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/locally-setup-and-scan-your-docker-images-via-clair.html</guid>
-    </item><item>
-			<title>Monitoring Web Application with ELK Stack</title>
-			<link>https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</link>
-			<description>For Auditing &amp; Troubleshooting issues in an application, log data is very useful. And to make it easy to read the log data via some kind of tool will make developers &amp; maintainers happy. However, not all the log data for any event is not needed to be stored in the log record. Means, Each log record should have only the information needed for further notice or further debugging. Strictly all sensit</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</guid>
     </item>
 </channel>
 </rss>
