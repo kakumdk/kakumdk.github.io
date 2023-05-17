@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/brown-rice-vs-white-rice.html
 Allow: /articles/what-to-know-before-you-choose-drupal-hosting-platform.html
 Allow: /articles/discovering-wellness-through-work-life-integration.html
 Allow: /articles/should-people-really-vote-in-democracy.html
