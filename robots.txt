@@ -261,6 +261,8 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0bsxdgl49.html
+Allow: /shop/b0blnky3nr.html
 Allow: /shop/b07jlxc5br.html
 Allow: /shop/b00edjiwfy.html
 Allow: /shop/b00edjj7fs.html
