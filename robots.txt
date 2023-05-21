@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/leveraging-content-grouping-for-personalized-digital-experiences.html
 Allow: /articles/how-can-people-can-build-bond-with-other-people.html
 Allow: /articles/bridging-the-gap-between-work-and-fitness.html
 Allow: /articles/bangalore-to-kukke-subramanya-trip-plan.html
