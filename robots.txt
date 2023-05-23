@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/communication-and-self-reflection-strategies.html
 Allow: /articles/how-to-be-approachable-and-friendly.html
 Allow: /articles/leveraging-content-grouping-for-personalized-digital-experiences.html
 Allow: /articles/how-can-people-can-build-bond-with-other-people.html
