@@ -1070,3 +1070,29 @@ function _ageCalculator(fromDate, toDate) {
     days = Math.floor((to.getTime() - (new Date(yy + years, mm + months - 1, dd)).getTime()) / (24 * 60 * 60 * 1000));
     return years + " years " + months + ' months ' + days + ' days ';
 }
+
+/******************************************************************************************************************/
+/********************************************* Generate Password **************************************************/
+/******************************************************************************************************************/
+$(function() {
+    generatePassword();
+});
+function generatePassword() {
+    $(".generate-password .result").addClass('d-none');
+    $(".generate-password button[type=submit]").on("click", function(event) {
+        var password = _generatePassword();
+        $(".generate-password .result").removeClass('d-none');
+        $(".generate-password .result").html(password);
+    });
+}
+function _generatePassword() {
+    var pass = '';
+    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+            'abcdefghijklmnopqrstuvwxyz0123456789@#$';
+    for (let i = 1; i <= 8; i++) {
+        var char = Math.floor(Math.random()
+                    * str.length + 1);
+        pass += str.charAt(char)
+    }
+    return pass;
+}
