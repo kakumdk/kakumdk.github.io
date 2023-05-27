@@ -696,6 +696,33 @@ function searchShopListPageByCategory() {
 }
 
 /******************************************************************************************************************/
+/************************************** Search Great People *******************************************************/
+/******************************************************************************************************************/
+$(function() {
+    searchGreatPeopleListPage();
+});
+function searchGreatPeopleListPage() {
+    $('input[type=text]#search-great-people').focus();
+    $("input[type=text]#search-great-people").on("keyup", function(event) {
+        $('.great-people-data-results .row .col-md-4.great-people-item-wrapper').removeClass('d-none');
+        $('.great-people-data-results .row').children('.col-md-4.great-people-item-wrapper').each(function () {
+            var title = $(this).find('.great-people-title-value').text().toLowerCase();
+            title += " " + $(this).find('.summary').text().toLowerCase();
+            var search = event.currentTarget.value.toLowerCase();
+            var searchFor = search.split(' ');
+            for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                if (title.indexOf(searchFor[i]) !== -1) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            }
+        });
+    });
+}
+
+/******************************************************************************************************************/
 /************************************** Global Search *************************************************************/
 /******************************************************************************************************************/
 $(function() {
@@ -814,6 +841,34 @@ function showGlobalSearchResults(search) {
                 if (found == true) {
                     var url = getQuickReadURL(_data.file);
                     var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-file"></i><span>Quick Read</span>'];
+                    results.push(_tmp);
+                    found = false;
+                }
+            }
+        });
+    });
+    readJsonFile("/data/great-people.json", function(text){
+        var data = JSON.parse(text);
+        data.slice().reverse().forEach(function (_data) {
+            var title = _data.title.toLowerCase();
+            title += " " + _data.summary.toLowerCase();
+            title += " " + _data.content.toLowerCase();
+            // title += " " + _data.author.toLowerCase();
+            if (search !== null) {
+                var searchFor = search.toLowerCase().split(' ');
+                var found = false;
+                for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                    if (title.includes(searchFor[i])) {
+                        found = true;
+                    }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = getGreatPeopleURL(_data.file);
+                    var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-file"></i><span>Great People</span>'];
                     results.push(_tmp);
                     found = false;
                 }
@@ -967,6 +1022,15 @@ function getQuickReadURL(file) {
         .replaceAll('----', '')
         .replaceAll('---', '');
     return '/quick-read/' + url;
+}
+function getGreatPeopleURL(file) {
+    var url = '';
+    url = file
+        .replaceAll(".json", ".html")
+        .replace(/\d+/g, '')
+        .replaceAll('----', '')
+        .replaceAll('---', '');
+    return '/great-people/' + url;
 }
 function getAuthorsURL(file) {
     var url = '';
