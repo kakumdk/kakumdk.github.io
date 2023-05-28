@@ -234,9 +234,13 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/vallabhbhai-patel.html
+Allow: /great-people/srinivasa-ramanujan.html
+Allow: /great-people/satyendra-nath-bose.html
+Allow: /great-people/chandrasekhara-venkata-raman.html
 Allow: /great-people/apj-abdul-kalam.html
-Allow: /great-people/bhagat-singh.html
 Allow: /great-people/subhash-chandra-bose.html
+Allow: /great-people/bhagat-singh.html
 Allow: /videos/NYrBlHvf4G4.html
 Allow: /videos/pdv1uxO6hGc.html
 Allow: /videos/PZ46Ru5fVZ0.html
