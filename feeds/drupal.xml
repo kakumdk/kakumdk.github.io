@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Drupal LMS Features for Your Education Business</title>
+			<link>https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</link>
+			<description>If you&amp;#39;re running an education business and considering Drupal as the platform for your Learning Management System (LMS), there are several features and capabilities you should look for to ensure a robust and effective solution.  Here are some key Drupal LMS features to consider:   Course Management: A Drupal LMS should provide comprehensive course management capabilities. This includes the ab</description>
+			<pubDate>Tue, 30 May 2023 09:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</guid>
+    </item><item>
 			<title>Leveraging Content Grouping for Personalized Digital Experiences</title>
 			<link>https://peoplesblog.co.in/articles/leveraging-content-grouping-for-personalized-digital-experiences.html</link>
 			<description>Content grouping is a powerful technique that can be leveraged to create personalized digital experiences for users. By grouping content based on specific criteria, such as user preferences, demographics, or behavior, you can deliver targeted and relevant content to individual users. Here are some ways to utilize content grouping for personalized digital experiences:   User Segmentation: Segment y</description>
@@ -384,15 +391,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
-    </item><item>
-			<title>Custom Batch processing in Drupal 7 to update Nodes - Batch API</title>
-			<link>https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</link>
-			<description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.
-This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.
-Create your custom module, w</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</guid>
     </item>
 </channel>
 </rss>
