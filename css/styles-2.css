@@ -2257,10 +2257,11 @@ h3.author-articles-heading::after {
 .prevnext-articles .next span {
     display: block;
     font-size: 12px;
+    color: #636c72;
 }
 .prevnext-articles .prev a span,
 .prevnext-articles .next a span {
-    font-size: 1rem;
+    font-size: 20px;
     color: #292b2c;
 }
 .prevnext-articles .prev a:hover,
