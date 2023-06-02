@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-do-you-take-space-in-a-relationship-without-breaking-up.html
 Allow: /articles/how-to-express-thoughts-without-hurting-other-people.html
 Allow: /articles/mental-and-physical-wellbeing-connection.html
 Allow: /articles/drupal-lms-features-for-your-education-business.html
