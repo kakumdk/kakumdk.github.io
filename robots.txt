@@ -285,6 +285,10 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b09z6p1zyp.html
+Allow: /shop/b08cnlykw5.html
+Allow: /shop/b00te7qy7s.html
+Allow: /shop/b0085kk9oy.html
 Allow: /shop/b0b9x8lvj5.html
 Allow: /shop/b00f159rik.html
 Allow: /shop/b0bsxdgl49.html
