@@ -1404,6 +1404,12 @@ body .quotes-browse .tag-quotes-section a:hover {
 .ads-article.sidebar .popular-articles .article a:hover {
     color: #292b2c;
 }
+.blog-title-area.quick-read {
+    text-align: center;
+}
+.blog-title-area.quick-read .blog-meta.big-meta {
+    display: block;
+}
 .quick-read-img {
     margin: 15px auto;
     margin-top: 0;
