@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/psychological-facts-about-attracting-people.html
 Allow: /articles/how-do-you-take-space-in-a-relationship-without-breaking-up.html
 Allow: /articles/how-to-express-thoughts-without-hurting-other-people.html
 Allow: /articles/mental-and-physical-wellbeing-connection.html
@@ -240,6 +241,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/nilakantha-somayaji.html
 Allow: /great-people/ram-prasad-bismil.html
 Allow: /great-people/masti-venkatesha-iyengar.html
 Allow: /great-people/gunturu-seshendra-sarma.html
