@@ -212,6 +212,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-camel-and-the-baby.html
 Allow: /quick-read/the-farmer-and-the-well.html
 Allow: /quick-read/true-friends-love-you-anyway.html
 Allow: /quick-read/elephant-and-friends.html
@@ -287,6 +288,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b089m9hvqp.html
 Allow: /shop/b09z6p1zyp.html
 Allow: /shop/b08cnlykw5.html
 Allow: /shop/b00te7qy7s.html
