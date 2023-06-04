@@ -290,6 +290,8 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0c45n5vpt.html
+Allow: /shop/b09fsmn8qs.html
 Allow: /shop/b08svw5ktf.html
 Allow: /shop/b08m6z7v6l.html
 Allow: /shop/b089m9hvqp.html
