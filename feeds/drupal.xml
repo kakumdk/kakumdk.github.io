@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Why is Drupal Chosen by Large Organizations?</title>
+			<link>https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</link>
+			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic, and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applic</description>
+			<pubDate>Mon, 05 Jun 2023 09:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</guid>
+    </item><item>
 			<title>Drupal LMS Features for Your Education Business</title>
 			<link>https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</link>
 			<description>If you&amp;#39;re running an education business and considering Drupal as the platform for your Learning Management System (LMS), there are several features and capabilities you should look for to ensure a robust and effective solution.  Here are some key Drupal LMS features to consider:   Course Management: A Drupal LMS should provide comprehensive course management capabilities. This includes the ab</description>
@@ -382,15 +389,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</guid>
-    </item><item>
-			<title>Configuring &amp; Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</title>
-			<link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
-			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.
-                                The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.
-                                Init</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
     </item>
 </channel>
 </rss>

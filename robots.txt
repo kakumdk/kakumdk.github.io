@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/why-is-drupal-chosen-by-large-organizations.html
 Allow: /articles/increase-your-self-respect-with-these-ten-things.html
 Allow: /articles/psychological-facts-about-attracting-people.html
 Allow: /articles/how-do-you-take-space-in-a-relationship-without-breaking-up.html
