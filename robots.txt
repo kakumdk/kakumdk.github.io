@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/is-life-worth-living-without-marriage.html
 Allow: /articles/five-most-common-mind-games-people-play-on-you.html
 Allow: /articles/people-who-cares-the-least-has-the-most-power-in-a-relationship.html
 Allow: /articles/why-is-drupal-chosen-by-large-organizations.html
