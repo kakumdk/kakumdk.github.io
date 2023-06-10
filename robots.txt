@@ -302,6 +302,11 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0bmv4hy8q.html
+Allow: /shop/b0blshd1hh.html
+Allow: /shop/b0b7sc8pln.html
+Allow: /shop/b08lh79v3n.html
+Allow: /shop/b01grry9aq.html
 Allow: /shop/b0c46jkpsw.html
 Allow: /shop/b0byn5555j.html
 Allow: /shop/b09yrqqxr9.html
