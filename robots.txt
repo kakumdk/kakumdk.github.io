@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/security-checklist-for-drupal-application.html
 Allow: /articles/signs-of-someone-is-in-love-with-you.html
 Allow: /articles/things-to-keep-always-as-a-secret.html
 Allow: /articles/best-heartwarming-gestures-that-people-would-like-to-receive.html

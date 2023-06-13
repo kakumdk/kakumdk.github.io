@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Security Checklist for Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</link>
+			<description>Securing your Drupal website is crucial to protect your data, users, and overall website integrity. Here&amp;#39;s a security checklist for a Drupal website:   Keep Drupal Core and Modules Up to Date: Regularly update Drupal core and contributed modules to ensure you have the latest security patches. Enable update notifications to stay informed about available updates. Use Strong and Unique Passwords:</description>
+			<pubDate>Tue, 13 Jun 2023 09:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</guid>
+    </item><item>
 			<title>Why is Drupal Chosen by Large Organizations?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</link>
 			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic, and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applic</description>
