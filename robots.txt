@@ -16,6 +16,8 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-prepare-sambar-at-home-sambar-recipe.html
+Allow: /articles/create-a-mini-baking-soda-rocket.html
 Allow: /articles/bangalore-to-hyderabad-solo-trip-plan.html
 Allow: /articles/how-do-you-know-you-are-being-lonely.html
 Allow: /articles/ten-rules-of-life.html
@@ -421,6 +423,7 @@ Allow: /articles/editor.html
 Allow: /articles/egg.html
 Allow: /articles/environment.html
 Allow: /articles/everest.html
+Allow: /articles/experiment.html
 Allow: /articles/family.html
 Allow: /articles/food.html
 Allow: /articles/friend.html
@@ -504,6 +507,7 @@ Allow: /feeds/editor.xml
 Allow: /feeds/egg.xml
 Allow: /feeds/environment.xml
 Allow: /feeds/everest.xml
+Allow: /feeds/experiment.xml
 Allow: /feeds/family.xml
 Allow: /feeds/food.xml
 Allow: /feeds/friend.xml

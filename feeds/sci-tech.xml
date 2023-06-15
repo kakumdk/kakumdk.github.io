@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Create a Mini Baking Soda Rocket?</title>
+			<link>https://peoplesblog.co.in/articles/create-a-mini-baking-soda-rocket.html</link>
+			<description>Creating a mini baking soda rocket can be a fun and educational experiment. Here&amp;#39;s a simple guide to making one:  Materials you will need:   A film canister with a tight-fitting lid Baking soda (sodium bicarbonate) Vinegar Tissue or toilet paper Safety goggles (optional but recommended for eye protection)                      (adsbygoogle = window.adsbygoogle || []).push({});        Instructio</description>
+			<pubDate>Thu, 15 Jun 2023 10:35:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-mini-baking-soda-rocket.html</guid>
+    </item><item>
 			<title>Security Checklist for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</link>
 			<description>Securing your Drupal website is crucial to protect your data, users, and overall website integrity. Here&amp;#39;s a security checklist for a Drupal website:   Keep Drupal Core and Modules Up to Date: Regularly update Drupal core and contributed modules to ensure you have the latest security patches. Enable update notifications to stay informed about available updates. Use Strong and Unique Passwords:</description>
@@ -358,14 +365,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/black-fungus-detected-in-coronavirus-patients.html</guid>
-    </item><item>
-			<title>Drupal 7 to Drupal 8/9 Audits</title>
-			<link>https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</link>
-			<description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.
-                       </description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</guid>
     </item>
 </channel>
 </rss>
