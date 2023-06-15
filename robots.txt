@@ -16,6 +16,8 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-hyderabad-solo-trip-plan.html
+Allow: /articles/how-do-you-know-you-are-being-lonely.html
 Allow: /articles/ten-rules-of-life.html
 Allow: /articles/security-checklist-for-drupal-application.html
 Allow: /articles/signs-of-someone-is-in-love-with-you.html
@@ -428,6 +430,7 @@ Allow: /articles/github.html
 Allow: /articles/government.html
 Allow: /articles/happy.html
 Allow: /articles/health.html
+Allow: /articles/hyderabad.html
 Allow: /articles/india.html
 Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
@@ -510,6 +513,7 @@ Allow: /feeds/github.xml
 Allow: /feeds/government.xml
 Allow: /feeds/happy.xml
 Allow: /feeds/health.xml
+Allow: /feeds/hyderabad.xml
 Allow: /feeds/india.xml
 Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
