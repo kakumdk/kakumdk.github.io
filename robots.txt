@@ -440,6 +440,7 @@ Allow: /articles/india.html
 Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kathmandu.html
+Allow: /articles/kochi.html
 Allow: /articles/lando.html
 Allow: /articles/language.html
 Allow: /articles/law.html
@@ -524,6 +525,7 @@ Allow: /feeds/india.xml
 Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kathmandu.xml
+Allow: /feeds/kochi.xml
 Allow: /feeds/lando.xml
 Allow: /feeds/language.xml
 Allow: /feeds/law.xml
