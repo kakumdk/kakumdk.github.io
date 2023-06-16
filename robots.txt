@@ -16,6 +16,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/ten-things-to-stop-to-have-a-good-life.html
 Allow: /articles/how-to-prepare-sambar-at-home-sambar-recipe.html
 Allow: /articles/create-a-mini-baking-soda-rocket.html
 Allow: /articles/bangalore-to-hyderabad-solo-trip-plan.html
