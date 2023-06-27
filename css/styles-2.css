@@ -2279,6 +2279,71 @@ h3.author-articles-heading::after {
 .prevnext-articles .next a:hover {
     color: #292b2c;
 }
+.truth-dare-logo img {
+    width: 125px;
+}
+.truth-dare-wrapper {
+    background-image: url("../upload/site/truth-dare-banner-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.truth-dare-wrapper h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin: 45px auto;
+}
+.truth-dare-wrapper .truth-dare-users,
+.truth-dare {
+    margin: 15px auto;
+    background-color: #00000057;
+    padding: 30px;
+    border-radius: 5px;
+}
+.truth-dare-wrapper .truth-dare-users #play-truth-dare {
+    float: right;
+}
+.ticking-time img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.truth-dare-question p,
+p.player {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px auto;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+p.player-question {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.truth-dare-buttons {
+    margin: 15px auto;
+}
+button#truth,
+button#dare,
+button#play-truth-dare-next {
+    background-color: white;
+    border: unset;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px 32px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 40%;
+}
+button#dare,
+button#play-truth-dare-next {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+
 
 
 
@@ -2579,6 +2644,21 @@ h3.author-articles-heading::after {
         bottom: 15px;
         border-radius: 5px;
         padding: 8px;
+    }
+    .truth-dare-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../upload/site/truth-dare-banner.avif");
+    }
+    .truth-dare-wrapper h1 {
+        font-size: 80px;
+        margin: unset;
+    }
+    .truth-dare-wrapper .truth-dare-users,
+    .truth-dare {
+        background-color: #fb234a42;
     }
     
 }
