@@ -2344,6 +2344,9 @@ button#play-truth-dare-next {
     background-color: #dc3545;
     color: white;
 }
+.truth-dare-wrapper #policy-container {
+    display: none;
+}
 
 
 
