@@ -2017,6 +2017,11 @@ h3.author-articles-heading::after {
 .homepage-view-all a:hover {
     color: #0275d8;
 }
+.homepage-view-all a i {
+    font-size: 13px;
+    margin-left: 2px;
+    font-weight: bold;
+}
 /* .dynamic-clock.place-details.dynamic.show, */
 .clock,
 .dynamic-clock.text-center.show {
