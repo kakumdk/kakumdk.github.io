@@ -1,0 +1,139 @@
+
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Play Truth or Dare</title>
+    <meta name="description" content="Players are given the choice between giving an honest answer to any question (Truth), or performing what another person dares you to do (Dare).">
+    <link rel="canonical" href="https://peoplesblog.co.in/play-truth-or-dare.html">
+    <meta property="og:title" content="Play Truth or Dare">
+    <meta property="og:description" content="Players are given the choice between giving an honest answer to any question (Truth), or performing what another person dares you to do (Dare).">
+    <meta property="og:url" content="https://peoplesblog.co.in/play-truth-or-dare.html">
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/favicon.webp">
+    <meta name="twitter:title" content="Play Truth or Dare">
+    <meta name="twitter:description" content="Players are given the choice between giving an honest answer to any question (Truth), or performing what another person dares you to do (Dare).">
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/favicon.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+      <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/custom-fonts.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/styles-2.css" rel="stylesheet" />
+  </head>
+  <body class="truth-dare-wrapper">
+    <div class="container-fluid">
+        <h2 class="text-center truth-dare-logo">
+            <a title="Peoples BLOG" href="/">
+                <img loading="lazy" alt="Peoples BLOG" src="/upload/logo.png" title="Peoples BLOG">
+            </a>
+        </h2>
+        <h1>Truth OR Dare</h1>
+        <div class="truth-dare-users">    
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="inputFormRow">
+                        <div class="input-group mb-3">
+                            <input type="text" name="title[]" class="form-control m-input" placeholder="Enter player name" autocomplete="off">
+                            <div class="input-group-append">
+                                <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newRow"></div>
+                    <button id="addRow" type="button" class="btn btn-info">Add Player</button>
+                    <button id="play-truth-dare" type="button" class="btn btn-success">Play Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="truth-dare text-center d-none">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ticking-time">
+                        <img src="/upload/site/truth-dare-timer.gif" />
+                    </div>
+                    <div class="truth-dare-buttons">
+                        <p class="player"></p>
+                        <button id="truth" type="button" class="btn btn-info">Truth</button>
+                        <button id="dare" type="button" class="btn btn-success">Dare</button>
+                    </div>
+                    <div class="truth-dare-question">
+                        <p class="current_player"></p>
+                        <p class="truth-dare-type"></p>
+                        <p class="player-question"></p>
+                        <button id="play-truth-dare-next" type="button" class="btn btn-success">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/marquee.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script src="/js/truth-dare.js"></script>
+  </body>
+  </html>

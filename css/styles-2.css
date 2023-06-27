@@ -2279,6 +2279,9 @@ h3.author-articles-heading::after {
 .prevnext-articles .next a:hover {
     color: #292b2c;
 }
+.truth-dare-logo {
+    margin: 15px auto;
+}
 .truth-dare-logo img {
     width: 125px;
 }
@@ -2651,6 +2654,7 @@ button#play-truth-dare-next {
         left: 50%;
         transform: translate(-50%, -50%);
         background-image: url("../upload/site/truth-dare-banner.avif");
+        background-size: 110%;
     }
     .truth-dare-wrapper h1 {
         font-size: 80px;
