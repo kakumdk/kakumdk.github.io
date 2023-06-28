@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/ten-best-romantic-relationship-tips.html
 Allow: /articles/amplify-a-smartphone-science-experiment-for-kids.html
 Allow: /articles/doing-nothing-sometimes-could-be-everything.html
 Allow: /articles/ten-things-to-stop-to-have-a-good-life.html
