@@ -10,7 +10,7 @@ Allow: /site-links.html
 Allow: /world-clock.html
 Allow: /age-calculator.html
 Allow: /generate-password.html
-Allow: /play-truth-or-dare.html
+Allow: /truth-or-dare.html
 Allow: /sitemaps/index.html
 Allow: /quick-read/index.html
 Allow: /videos/index.html
