@@ -325,6 +325,9 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0c89m52y6.html
+Allow: /shop/b0c788njsk.html
+Allow: /shop/b07whs7mz4.html
 Allow: /shop/b0c497msqn.html
 Allow: /shop/b0bykc7rdc.html
 Allow: /shop/b0brzc7pg3.html
