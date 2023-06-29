@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /articles/what-will-be-biggest-regret-of-life.html
+Allow: /articles/prepare-cauliflower-peas-masala-at-home.html
 Allow: /articles/ten-best-romantic-relationship-tips.html
 Allow: /articles/amplify-a-smartphone-science-experiment-for-kids.html
 Allow: /articles/doing-nothing-sometimes-could-be-everything.html
