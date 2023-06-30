@@ -270,6 +270,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/mahendra-bhatnagar.html
 Allow: /great-people/satyendranath-dutta.html
 Allow: /great-people/harindranath-chattopadhyay.html
 Allow: /great-people/bhaktivinoda-thakur.html
