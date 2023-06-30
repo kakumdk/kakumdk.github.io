@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/ten-most-common-marriage-questions-and-answers.html
 Allow: /articles/what-will-be-biggest-regret-of-life.html
 Allow: /articles/prepare-cauliflower-peas-masala-at-home.html
 Allow: /articles/ten-best-romantic-relationship-tips.html
