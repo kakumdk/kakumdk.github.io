@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-wayanad-solo-trip-plan.html
 Allow: /articles/ten-most-common-marriage-questions-and-answers.html
 Allow: /articles/what-will-be-biggest-regret-of-life.html
 Allow: /articles/prepare-cauliflower-peas-masala-at-home.html
@@ -511,6 +512,7 @@ Allow: /articles/trust.html
 Allow: /articles/twig.html
 Allow: /articles/usa.html
 Allow: /articles/vegetable.html
+Allow: /articles/wayanad.html
 Allow: /articles/web.html
 Allow: /articles/webops.html
 Allow: /articles/world.html
@@ -596,6 +598,7 @@ Allow: /feeds/trust.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
 Allow: /feeds/vegetable.xml
+Allow: /feeds/wayanad.xml
 Allow: /feeds/web.xml
 Allow: /feeds/webops.xml
 Allow: /feeds/world.xml
