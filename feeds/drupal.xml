@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Why is Drupal the Best Choice for Non-Profit Websites?</title>
+			<link>https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</link>
+			<description>Drupal is often considered a great choice for non-profit websites due to several key factors that align with the unique needs and goals of non-profit organizations. Here are some reasons why Drupal is a popular choice for non-profit websites:   Cost-Effectiveness: Drupal is an open-source platform, which means it is free to use and distribute. This can be particularly advantageous for non-profit o</description>
+			<pubDate>Sun, 02 Jul 2023 11:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</guid>
+    </item><item>
 			<title>Security Checklist for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</link>
 			<description>Securing your Drupal website is crucial to protect your data, users, and overall website integrity. Here&amp;#39;s a security checklist for a Drupal website:   Keep Drupal Core and Modules Up to Date: Regularly update Drupal core and contributed modules to ensure you have the latest security patches. Enable update notifications to stay informed about available updates. Use Strong and Unique Passwords:</description>
@@ -374,19 +381,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</guid>
-    </item><item>
-			<title>Creating a Twitter Share block programmatically in Drupal 8</title>
-			<link>https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</link>
-			<description>How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like
-                                
-                                    Accessing the Current Node data in Block.
-                                    How do we create the link programmatically.
-                                    Disable cache for particular block.
-                                
-  </description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</guid>
     </item>
 </channel>
 </rss>

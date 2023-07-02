@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/why-is-drupal-the-best-choice-for-non-profit-websites.html
 Allow: /articles/where-can-people-find-happiness.html
 Allow: /articles/cook-pongal-at-home-pongal-recipe.html
 Allow: /articles/how-introverts-can-deal-with-marriage.html

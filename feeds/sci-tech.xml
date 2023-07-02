@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Why is Drupal the Best Choice for Non-Profit Websites?</title>
+			<link>https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</link>
+			<description>Drupal is often considered a great choice for non-profit websites due to several key factors that align with the unique needs and goals of non-profit organizations. Here are some reasons why Drupal is a popular choice for non-profit websites:   Cost-Effectiveness: Drupal is an open-source platform, which means it is free to use and distribute. This can be particularly advantageous for non-profit o</description>
+			<pubDate>Sun, 02 Jul 2023 11:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</guid>
+    </item><item>
 			<title>Amplify a Smartphone, Science Experiment for Kids</title>
 			<link>https://peoplesblog.co.in/articles/amplify-a-smartphone-science-experiment-for-kids.html</link>
 			<description>Amplifying the sound of a smartphone can indeed be turned into a science experiment, allowing kids to explore the principles of acoustics and sound amplification. Here&amp;#39;s a simple science experiment idea:  Title: Investigating Sound Amplification with Everyday Materials  Objective: To explore different materials and their effects on amplifying the sound of a smartphone.  Materials:   Smartphone</description>
@@ -355,14 +362,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-to-have-a-green-roof-or-eco-friendly-roof-on-a-building.html</guid>
-    </item><item>
-			<title>Security Hardening - Nginx Response Headers</title>
-			<link>https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</link>
-			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.
-                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of info</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</guid>
     </item>
 </channel>
 </rss>
