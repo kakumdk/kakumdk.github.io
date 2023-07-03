@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /articles/why-is-corporate-life-so-challenging-and-difficult.html
+Allow: /articles/watch-the-water-rise-kids-science-experiment.html
 Allow: /articles/why-is-drupal-the-best-choice-for-non-profit-websites.html
 Allow: /articles/where-can-people-find-happiness.html
 Allow: /articles/cook-pongal-at-home-pongal-recipe.html
