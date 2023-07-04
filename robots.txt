@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-kodaikanal-solo-trip-plan.html
 Allow: /articles/what-actually-matters-at-the-end-of-life.html
 Allow: /articles/why-is-corporate-life-so-challenging-and-difficult.html
 Allow: /articles/watch-the-water-rise-kids-science-experiment.html
@@ -481,6 +482,7 @@ Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kathmandu.html
 Allow: /articles/kochi.html
+Allow: /articles/kodaikanal.html
 Allow: /articles/lando.html
 Allow: /articles/language.html
 Allow: /articles/law.html
@@ -567,6 +569,7 @@ Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kathmandu.xml
 Allow: /feeds/kochi.xml
+Allow: /feeds/kodaikanal.xml
 Allow: /feeds/lando.xml
 Allow: /feeds/language.xml
 Allow: /feeds/law.xml
