@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to make your content more Accessible with plain language</title>
+			<link>https://peoplesblog.co.in/articles/how-to-make-your-content-more-accessible-with-plain-language.html</link>
+			<description>Making your content more accessible with plain language is a valuable practice that ensures your information is easily understood by a wide range of readers. Here are some tips to make your content more accessible and reader-friendly:   Use Clear and Simple Language: Use plain, straightforward language that is easy to understand. Avoid jargon, technical terms, and overly complex vocabulary. Write </description>
+			<pubDate>Fri, 07 Jul 2023 13:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-make-your-content-more-accessible-with-plain-language.html</guid>
+    </item><item>
 			<title>Watch the Water Rise, Kids Science Experiment</title>
 			<link>https://peoplesblog.co.in/articles/watch-the-water-rise-kids-science-experiment.html</link>
 			<description>Title: Watch the Water Rise - Absorption Experiment  Objective: To demonstrate the concept of absorption and observe how different materials absorb water.  Materials:   Clear cups or containers Water Various absorbent materials (e.g., paper towels, sponges, cotton balls, fabric scraps, tissue paper) Optional: Food coloring, markers, or colored paper for visual effect   Procedure:   Set up a worksp</description>
@@ -353,14 +360,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</guid>
-    </item><item>
-			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
-			<link>https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</link>
-			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.
-                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to syste</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</guid>
     </item>
 </channel>
 </rss>

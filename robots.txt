@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /articles/is-work-from-home-good-for-employees.html
+Allow: /articles/how-to-make-your-content-more-accessible-with-plain-language.html
 Allow: /articles/ten-ugly-truths-about-job-careers.html
 Allow: /articles/prepare-bisi-bele-bhath-at-home-bisi-bele-bhath-recipe.html
 Allow: /articles/how-can-you-spice-up-your-married-life.html
