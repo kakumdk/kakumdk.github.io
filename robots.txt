@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-munnar-solo-trip-plan.html
 Allow: /articles/how-to-identify-a-fake-person.html
 Allow: /articles/is-work-from-home-good-for-employees.html
 Allow: /articles/how-to-make-your-content-more-accessible-with-plain-language.html
@@ -287,6 +288,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/purushottam-das-tandon.html
 Allow: /great-people/venkaiah-naidu.html
 Allow: /great-people/dadabhai-naoroji.html
 Allow: /great-people/kd-sethna.html
@@ -509,6 +511,7 @@ Allow: /articles/marriage.html
 Allow: /articles/migrate.html
 Allow: /articles/missile.html
 Allow: /articles/movie.html
+Allow: /articles/munnar.html
 Allow: /articles/mysore.html
 Allow: /articles/navy.html
 Allow: /articles/pantheon.html
@@ -596,6 +599,7 @@ Allow: /feeds/marriage.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
 Allow: /feeds/movie.xml
+Allow: /feeds/munnar.xml
 Allow: /feeds/mysore.xml
 Allow: /feeds/navy.xml
 Allow: /feeds/pantheon.xml
