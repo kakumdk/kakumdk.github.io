@@ -1160,3 +1160,21 @@ function _generatePassword() {
     }
     return pass;
 }
+
+/******************************************************************************************************************/
+/********************************************* Hide Ads on pages **************************************************/
+/******************************************************************************************************************/
+$(function() {
+    hideAdsOnPages();
+});
+function hideAdsOnPages() {
+    const pages = [
+        "/articles/get-more-pleasure-from-lotus-position.html"
+    ];
+    for (var i = 0; i < pages.length; i++) {
+        var currentLocation = window.location.pathname;
+        if (pages[i] == currentLocation) {
+            $(".google-ad").addClass('d-none');
+        }
+    }
+}
