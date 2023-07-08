@@ -1175,6 +1175,7 @@ function hideAdsOnPages() {
         var currentLocation = window.location.pathname;
         if (pages[i] == currentLocation) {
             $(".google-ad").addClass('d-none');
+            $(".google-ad").html("");
         }
     }
 }
