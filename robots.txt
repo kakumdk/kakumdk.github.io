@@ -18,6 +18,8 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-prepare-veg-kurma-at-home-veg-kurma-recipe.html
+Allow: /articles/best-random-conversations-to-have-with-strangers.html
 Allow: /articles/bangalore-to-munnar-solo-trip-plan.html
 Allow: /articles/how-to-identify-a-fake-person.html
 Allow: /articles/is-work-from-home-good-for-employees.html
@@ -288,6 +290,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/bidhan-chandra-roy.html
 Allow: /great-people/purushottam-das-tandon.html
 Allow: /great-people/venkaiah-naidu.html
 Allow: /great-people/dadabhai-naoroji.html
