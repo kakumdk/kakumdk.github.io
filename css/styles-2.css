@@ -2256,6 +2256,7 @@ h3.author-articles-heading::after {
     font-size: 14px;
 }
 .prevnext-articles {
+    display: none;
     padding: 15px;
     margin: 15px auto;
     border: 1px solid #e7ebed;
@@ -2551,6 +2552,9 @@ button#play-truth-dare-next {
     }
     .prevnext-articles-fixed a {
         bottom: 48%;
+    }
+    .prevnext-articles {
+        display: block;
     }
     .blog-title-area .post-sharing-top.post-sharing.videos {
         margin-left: 0;
