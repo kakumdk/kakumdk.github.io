@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to build the engaging digital experience via Drupal</title>
+			<link>https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</link>
+			<description>Building an engaging digital experience using Drupal involves combining effective design, user-friendly features, and content that resonates with your audience. Here are some tips to help you create an engaging digital experience using Drupal:   Define Your Target Audience: Understand your target audience and their needs, preferences, and goals. Tailor your digital experience to meet their expecta</description>
+			<pubDate>Mon, 10 Jul 2023 11:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</guid>
+    </item><item>
 			<title>Why is Drupal the Best Choice for Non-Profit Websites?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</link>
 			<description>Drupal is often considered a great choice for non-profit websites due to several key factors that align with the unique needs and goals of non-profit organizations. Here are some reasons why Drupal is a popular choice for non-profit websites:   Cost-Effectiveness: Drupal is an open-source platform, which means it is free to use and distribute. This can be particularly advantageous for non-profit o</description>
@@ -373,14 +380,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</guid>
-    </item><item>
-			<title>Integrating Codeception with Drupal to have added support for TDD</title>
-			<link>https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</link>
-			<description>Getting Codeception into Drupal, will have added support for Test Driven Development.. Specifically in having the Acceptance Tests in the project.. Since Test Driven Development would be one the most integral part of the project.. And also internal team and vendor team would be having more confidence in the version releases of their project.. one can prefer TDD.
-                                Tes</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</guid>
     </item>
 </channel>
 </rss>

@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /articles/seven-pointless-rules-set-by-parents.html
+Allow: /articles/how-to-build-the-engaging-digital-experience-via-drupal.html
 Allow: /articles/how-to-prepare-veg-kurma-at-home-veg-kurma-recipe.html
 Allow: /articles/best-random-conversations-to-have-with-strangers.html
 Allow: /articles/bangalore-to-munnar-solo-trip-plan.html
