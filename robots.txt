@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/reasons-why-people-leave-their-job.html
 Allow: /articles/is-life-really-unfair-for-people.html
 Allow: /articles/seven-pointless-rules-set-by-parents.html
 Allow: /articles/how-to-build-the-engaging-digital-experience-via-drupal.html
