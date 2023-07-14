@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-do-you-know-you-are-sacrificing-a-too-much-when-compromising.html
 Allow: /articles/stuff-that-should-never-be-shared-with-anyone.html
 Allow: /articles/bangalore-to-kanyakumari-solo-trip-plan.html
 Allow: /articles/reasons-why-people-leave-their-job.html
