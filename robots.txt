@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/grow-an-avocado-tree-science-experiment-for-children.html
 Allow: /articles/do-you-feel-suffocated-with-no-interest-in-life.html
 Allow: /articles/how-do-you-know-you-are-sacrificing-a-too-much-when-compromising.html
 Allow: /articles/stuff-that-should-never-be-shared-with-anyone.html
@@ -497,6 +498,7 @@ Allow: /articles/bangalore.html
 Allow: /articles/book.html
 Allow: /articles/business.html
 Allow: /articles/covid.html
+Allow: /articles/children.html
 Allow: /articles/chutney.html
 Allow: /articles/code.html
 Allow: /articles/colima.html
@@ -586,6 +588,7 @@ Allow: /feeds/bangalore.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
+Allow: /feeds/children.xml
 Allow: /feeds/chutney.xml
 Allow: /feeds/code.xml
 Allow: /feeds/colima.xml
