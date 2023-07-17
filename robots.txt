@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/craft-stick-chain-reaction-kids-science-experiment.html
 Allow: /articles/how-to-cook-lemon-rice-at-home-lemon-rice-recipe.html
 Allow: /articles/grow-an-avocado-tree-science-experiment-for-children.html
 Allow: /articles/do-you-feel-suffocated-with-no-interest-in-life.html
