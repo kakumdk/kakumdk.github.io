@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to improve drupal website performance</title>
+			<link>https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</link>
+			<description>Improving the performance of a Drupal website involves optimizing various aspects of its configuration and content. Here are some tips to enhance the performance of your Drupal website:   Enable Caching: Enable Drupal&amp;#39;s built-in caching mechanisms to store pre-generated content and reduce the need for repeated processing. Go to Configuration &amp;gt; Performance and enable caching options like pag</description>
+			<pubDate>Wed, 19 Jul 2023 17:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</guid>
+    </item><item>
 			<title>How to build the engaging digital experience via Drupal</title>
 			<link>https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</link>
 			<description>Building an engaging digital experience using Drupal involves combining effective design, user-friendly features, and content that resonates with your audience. Here are some tips to help you create an engaging digital experience using Drupal:   Define Your Target Audience: Understand your target audience and their needs, preferences, and goals. Tailor your digital experience to meet their expecta</description>

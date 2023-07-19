@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to improve drupal website performance</title>
+			<link>https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</link>
+			<description>Improving the performance of a Drupal website involves optimizing various aspects of its configuration and content. Here are some tips to enhance the performance of your Drupal website:   Enable Caching: Enable Drupal&amp;#39;s built-in caching mechanisms to store pre-generated content and reduce the need for repeated processing. Go to Configuration &amp;gt; Performance and enable caching options like pag</description>
+			<pubDate>Wed, 19 Jul 2023 17:45:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</guid>
+    </item><item>
 			<title>Floating fish, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/floating-fish-science-experiment-for-children.html</link>
 			<description>Title: Floating Fish - Density and Buoyancy Experiment  Objective: To explore the concepts of density and buoyancy by creating a floating fish.  Materials:   Clay or playdough Plasticine or modeling clay Plastic toy fish or small plastic object A basin, tub, or container filled with water   Procedure:   Start by shaping the plasticine or modeling clay into a small ball or disc shape. This will ser</description>
@@ -349,14 +356,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
-    </item><item>
-			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
-			<link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
-			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
-                            With Dependency Injection, the class is no longer responsible for in</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
     </item>
 </channel>
 </rss>
