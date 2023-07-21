@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/make-a-compass-science-experiment-for-children.html
 Allow: /articles/elephant-toothpaste-science-experiment-for-children.html
 Allow: /articles/life-skills-that-are-important-for-future-stability.html
 Allow: /articles/milk-bottle-xylophone-science-experiment-for-children.html
@@ -309,6 +310,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/cornelia-sorabji.html
 Allow: /great-people/dhan-gopal-mukerji.html
 Allow: /great-people/rg-bhandarkar.html
 Allow: /great-people/thirunalloor-karunakaran.html
