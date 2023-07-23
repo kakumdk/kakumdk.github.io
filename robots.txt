@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /articles/stuff-that-people-should-never-do-in-their-life.html
+Allow: /articles/color-changing-invisible-ink-kids-science-experiment.html
 Allow: /articles/seven-tips-to-have-a-healthy-relationship.html
 Allow: /articles/make-a-compass-science-experiment-for-children.html
 Allow: /articles/elephant-toothpaste-science-experiment-for-children.html
