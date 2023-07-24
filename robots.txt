@@ -18,6 +18,8 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/paper-bridge-science-experiment-for-children.html
+Allow: /articles/bangalore-to-coorg-solo-trip-plan.html
 Allow: /articles/stuff-that-people-should-never-do-in-their-life.html
 Allow: /articles/color-changing-invisible-ink-kids-science-experiment.html
 Allow: /articles/seven-tips-to-have-a-healthy-relationship.html
@@ -525,6 +527,7 @@ Allow: /articles/children.html
 Allow: /articles/chutney.html
 Allow: /articles/code.html
 Allow: /articles/colima.html
+Allow: /articles/coorg.html
 Allow: /articles/coronavirus.html
 Allow: /articles/couple.html
 Allow: /articles/crime.html
@@ -615,6 +618,7 @@ Allow: /feeds/children.xml
 Allow: /feeds/chutney.xml
 Allow: /feeds/code.xml
 Allow: /feeds/colima.xml
+Allow: /feeds/coorg.xml
 Allow: /feeds/coronavirus.xml
 Allow: /feeds/couple.xml
 Allow: /feeds/crime.xml
