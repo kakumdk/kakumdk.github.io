@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Sticky ice, science experiment for children</title>
+			<link>https://peoplesblog.co.in/articles/sticky-ice-science-experiment-for-children.html</link>
+			<description>Title: Sticky Ice - Exploring Surface Tension Experiment  Objective: To investigate surface tension by creating &amp;quot;sticky&amp;quot; ice cubes that can cling to various surfaces.  Materials:   Ice cube tray Water Salt String or thread Various surfaces to test (e.g., plastic, glass, metal, fabric) Optional: Food coloring for visual effect   Procedure:   Fill the ice cube tray with water, leaving some</description>
+			<pubDate>Tue, 25 Jul 2023 10:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/sticky-ice-science-experiment-for-children.html</guid>
+    </item><item>
 			<title>Paper bridge, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/paper-bridge-science-experiment-for-children.html</link>
 			<description>Title: Paper Bridge - Engineering and Structural Strength Experiment  Objective: To design and build a paper bridge that can support the weight of objects and explore the concept of structural strength.  Materials:   Sheets of paper (construction paper or printer paper) Scissors Rulers Books or other small objects to serve as weights Optional: Tape or glue (to reinforce the bridge)   Procedure:   </description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</guid>
-    </item><item>
-			<title>Improve Drupal Search with Solr, Locally configured via Lando</title>
-			<link>https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</link>
-			<description>In this article, we are going to learn how Drupal search can be improved with Solr which provides great performance, and is suitable even for use on large commercial websites. And along with this using the search_api &amp; search_api_solr modules, helps to configure the Facets &amp; Multilingual content can be handled in an improved manner. And let's see how we can configure this locally with the help of </description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</guid>
     </item>
 </channel>
 </rss>
