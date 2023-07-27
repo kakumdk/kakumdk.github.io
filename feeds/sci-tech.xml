@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Marshmallow catapult, science experiment for children</title>
+			<link>https://peoplesblog.co.in/articles/marshmallow-catapult-science-experiment-for-children.html</link>
+			<description>Title: Marshmallow Catapult - Exploring Projectile Motion Experiment  Objective: To build and test a marshmallow catapult, exploring principles of force, motion, and projectile trajectory.  Materials:   Popsicle sticks or craft sticks Rubber bands Plastic spoon Small marshmallows or soft projectiles Tape Optional: Decorative materials (markers, stickers) for customization   Procedure:   Begin by d</description>
+			<pubDate>Thu, 27 Jul 2023 16:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/marshmallow-catapult-science-experiment-for-children.html</guid>
+    </item><item>
 			<title>Sticky ice, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/sticky-ice-science-experiment-for-children.html</link>
 			<description>Title: Sticky Ice - Exploring Surface Tension Experiment  Objective: To investigate surface tension by creating &amp;quot;sticky&amp;quot; ice cubes that can cling to various surfaces.  Materials:   Ice cube tray Water Salt String or thread Various surfaces to test (e.g., plastic, glass, metal, fabric) Optional: Food coloring for visual effect   Procedure:   Fill the ice cube tray with water, leaving some</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</guid>
-    </item><item>
-			<title>Drupal Configuration management (Local, Dev, Test and Live)</title>
-			<link>https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</link>
-			<description>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.  Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp;amp; views.  Making the configurations direct</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</guid>
     </item>
 </channel>
 </rss>
