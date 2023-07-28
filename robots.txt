@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-can-you-identify-intelligent-people.html
 Allow: /articles/marshmallow-catapult-science-experiment-for-children.html
 Allow: /articles/how-to-cook-onion-rava-dosa-at-home-onion-rava-dosa-recipe.html
 Allow: /articles/sticky-ice-science-experiment-for-children.html
