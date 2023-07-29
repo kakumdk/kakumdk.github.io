@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/hoop-and-straw-airplane-kids-science-experiment.html
 Allow: /articles/bangalore-to-varkala-solo-trip-plan.html
 Allow: /articles/leaf-breathing-science-experiment-for-children.html
 Allow: /articles/how-can-you-identify-intelligent-people.html
@@ -596,6 +597,7 @@ Allow: /articles/relationship.html
 Allow: /articles/russia.html
 Allow: /articles/salleri.html
 Allow: /articles/sci-tech.html
+Allow: /articles/science.html
 Allow: /articles/security.html
 Allow: /articles/sexual-health.html
 Allow: /articles/social-media.html
@@ -688,6 +690,7 @@ Allow: /feeds/relationship.xml
 Allow: /feeds/russia.xml
 Allow: /feeds/salleri.xml
 Allow: /feeds/sci-tech.xml
+Allow: /feeds/science.xml
 Allow: /feeds/security.xml
 Allow: /feeds/sexual-health.xml
 Allow: /feeds/social-media.xml
