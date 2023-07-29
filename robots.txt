@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-varkala-solo-trip-plan.html
 Allow: /articles/leaf-breathing-science-experiment-for-children.html
 Allow: /articles/how-can-you-identify-intelligent-people.html
 Allow: /articles/marshmallow-catapult-science-experiment-for-children.html
@@ -610,6 +611,7 @@ Allow: /articles/trekking.html
 Allow: /articles/trust.html
 Allow: /articles/twig.html
 Allow: /articles/usa.html
+Allow: /articles/varkala.html
 Allow: /articles/vegetable.html
 Allow: /articles/wayanad.html
 Allow: /articles/web.html
@@ -701,6 +703,7 @@ Allow: /feeds/trekking.xml
 Allow: /feeds/trust.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
+Allow: /feeds/varkala.xml
 Allow: /feeds/vegetable.xml
 Allow: /feeds/wayanad.xml
 Allow: /feeds/web.xml
