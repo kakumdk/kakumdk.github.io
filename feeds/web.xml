@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>API Docs, Drupal contributed module for your Developer Portal</title>
+			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
+			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
+			<pubDate>Sat, 29 Jul 2023 17:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</guid>
+    </item><item>
 			<title>How to improve drupal website performance</title>
 			<link>https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</link>
 			<description>Improving the performance of a Drupal website involves optimizing various aspects of its configuration and content. Here are some tips to enhance the performance of your Drupal website:   Enable Caching: Enable Drupal&amp;#39;s built-in caching mechanisms to store pre-generated content and reduce the need for repeated processing. Go to Configuration &amp;gt; Performance and enable caching options like pag</description>

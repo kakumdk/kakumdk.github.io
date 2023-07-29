@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>API Docs, Drupal contributed module for your Developer Portal</title>
+			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
+			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
+			<pubDate>Sat, 29 Jul 2023 17:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</guid>
+    </item><item>
 			<title>Hoop and straw airplane, kids science experiment</title>
 			<link>https://peoplesblog.co.in/articles/hoop-and-straw-airplane-kids-science-experiment.html</link>
 			<description>Title: Hoop and Straw Aeroplane - Exploring Aerodynamics Experiment  Objective: To build and test a hoop and straw aeroplane, investigating the principles of aerodynamics and flight.  Materials:   Drinking straw Lightweight paper (such as construction paper or printer paper) Scissors Tape Hoop or circular object (e.g., a plastic lid, a small hoop made from a pipe cleaner) Optional: Decorative mate</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</guid>
-    </item><item>
-			<title>Usage of PHPCS on Github via Pull Request for Drupal Applications</title>
-			<link>https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</link>
-			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.  If you are maintaini</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</guid>
     </item>
 </channel>
 </rss>

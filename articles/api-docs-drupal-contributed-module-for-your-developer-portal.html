@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>API Docs, Drupal contributed module for your Developer Portal</title>
+    <meta name="description" content="This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp; views.  Here&#39;s a s" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html" />
+    <meta property="og:title" content="API Docs, Drupal contributed module for your Developer Portal" />
+    <meta property="og:description" content="This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp; views.  Here&#39;s a s" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/api-docs-drupal-contributed-module-for-your-developer-portal.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="API Docs, Drupal contributed module for your Developer Portal" />
+    <meta name="twitter:description" content="This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp; views.  Here&#39;s a s" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/api-docs-drupal-contributed-module-for-your-developer-portal.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/custom-fonts.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/styles-2.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html"
+        },
+        "headline": "API Docs, Drupal contributed module for your Developer Portal",
+        "description": "This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp; views.  Here&#39;s a s",
+        "image": "https://peoplesblog.co.in/upload/banners/api-docs-drupal-contributed-module-for-your-developer-portal.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "29th Jul 2023",
+        "dateModified": "2023-07-29T17:15:00+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/"><img loading="lazy" alt="Peoples BLOG" src="/upload/logo.png" title="Peoples BLOG" /></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Sci-Tech">Sci-Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li>
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/api.html">API</a></li>
+                                    <li class="breadcrumb-item active">API Docs, Drupal contributed module for your Developer Portal</li>
+                                </ol>
+                                <h1 class="read-article-title">API Docs, Drupal contributed module for your Developer Portal</h1>
+                                <div class="blog-meta big-meta">
+                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 29th Jul 2023, <span class="last-updated">2023-07-29T17:15:00+05:30</span></small -->
+                                    <small class="articles-author"><em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a><em>on</em><span>29th Jul 2023</span>, <span class="last-updated">2023-07-29T17:15:00+05:30</span></small>
+                                    <small class="read-article-section">
+                                      <i class="fa fa-play read-article"> <div>Read Article</div></i>
+                                      <i class="fa fa-pause read-article-pause"> <div>Pause</div></i>
+                                      <i class="fa fa-play read-article-resume"> <div>Resume</div></i>
+                                      <i class="fa fa-stop read-article-stop"> <div>Stop</div></i>
+                                    </small>
+                                </div><!-- end meta -->
+                                <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
+                            </div><!-- end title -->
+                            <div class="single-post-media">
+                                <img loading="lazy" alt="API Docs, Drupal contributed module for your Developer Portal" src="/upload/banners/api-docs-drupal-contributed-module-for-your-developer-portal.jpg" class="img-fluid" title="API Docs, Drupal contributed module for your Developer Portal" />
+                            </div><!-- end media -->
+                            <div class="blog-content read-article-content">
+                                <div><p>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp; views.</p>  <p>Here&#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.</p>  <p><strong>Download &amp; Enable the Module</strong>:</p>  <ul> <li>Visit the Drupal.org website and navigate to the API Docs module&#39;s page that you want to download, here&rsquo;s the module link - <a href='https://www.drupal.org/project/api_docs' target='_blank'>https://www.drupal.org/project/api_docs</a>.</li> <li>Use the composer command to download the module</li> </ul>  <p style='margin-left:40px'><code>composer require &#39;drupal/api_docs:^2.0&#39;</code></p>  <ul> <li>Log in to your Drupal site as an administrator.</li> <li>Navigate to the &quot;Extend&quot; page by clicking on &quot;Manage&quot; and then &quot;Extend&quot; or by visiting <code>/admin/modules</code> on your site.</li> <li>Find the module in the list of available modules and check the checkbox next to the module&#39;s name and click the &quot;Install&quot; button. This will enable the module.</li> </ul>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><strong>Configure the Module</strong>:</p>  <ul> <li>After enabling the module, navigate to <em>Add API Docs</em> <code>/node/add/api_docs</code>.  <ul> <li>Fill the <em>API Doc Name</em>, <em>Description</em>, <em>Status</em> &amp; <em>Open API Specification</em>, Save the content by clicking <em>Save</em>.</li> <li>Similarly, Admin will be able to create as many API Docs.</li> </ul> </li> <li>Navigate to <em>API Docs</em> via <code>/api-docs</code>. <ul> <li>Users can see a list of <em>API Docs</em> published in the site, filtered by <em>API Doc Status</em>, with minimal details of the API Doc.</li> <li>Each API Doc in this list will have <em>View Redoc UI</em> &amp; <em>View Swagger UI</em>, users will be able to navigate to respective API Doc pages.</li> </ul> </li> </ul>  <div class='google-ad'>     <ins class='adsbygoogle'             style='display:block; text-align:center;'             data-ad-layout='in-article'             data-ad-format='fluid'             data-ad-client='ca-pub-2683569506254139'             data-ad-slot='5228875751'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><strong>Customizations</strong>:</p>  <ul> <li>API Docs is providing a <em>Field Formatter</em>, <em>Open API</em> Field Formatter.  <ul> <li>Open API field formatter can be used in for any file field type within your site</li> <li>Open API field formatter, can render the file in two possible ways <ul> <li>One with <em>Redoc UI</em> format.</li> <li>Other with <em>Swagger UI</em> format.</li> </ul> </li> <li>Admin will have the flexibility to change this configuration of the Open API field formatter.</li> </ul> </li> <li>API Docs is providing two <em>View modes</em>, they are <em>Redoc UI</em> &amp; <em>Swagger UI</em>, these View modes are used in the API Docs content type displays &amp; API Docs View. If needed these can be customized at API Docs display level.</li> </ul>  <p>This is how the API Docs module will help you to maintain the Open API spec as API Docs in your Developer Portal.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p></div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h3>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/api.html">API</a></span><span><a href="/articles/drupal.html">Drupal</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span><span><a href="/articles/software.html">Software</a></span><span><a href="/articles/web.html">Web</a></span>                                </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title --><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                          <a href="/authors/karthik-kumar-d-k.html">
+                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
+                          </a>
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4><a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a></h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="https://karthikkumardk.peoplesblog.co.in" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/hoop-and-straw-airplane-kids-science-experiment.html" title="Hoop and straw airplane, kids science experiment">
+                              <img class="img-fluid logo" src="/upload/banners/hoop-and-straw-airplane-kids-science-experiment.jpg" alt="Hoop and straw airplane, kids science experiment" title="Hoop and straw airplane, kids science experiment" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/hoop-and-straw-airplane-kids-science-experiment.html" title="Hoop and straw airplane, kids science experiment">
+                                <span class="title">Hoop and straw airplane, kids science experiment</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/hoop-and-straw-airplane-kids-science-experiment.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/how-to-improve-drupal-website-performance.html">
+                  How to improve drupal website performance
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-build-the-engaging-digital-experience-via-drupal.html">
+                  How to build the engaging digital experience via Drupal
+                </a>
+              </div><div class="article">
+                <a href="/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html">
+                  Why is Drupal the Best Choice for Non-Profit Websites?
+                </a>
+              </div><div class="article">
+                <a href="/articles/security-checklist-for-drupal-application.html">
+                  Security Checklist for Drupal Application
+                </a>
+              </div><div class="article">
+                <a href="/articles/why-is-drupal-chosen-by-large-organizations.html">
+                  Why is Drupal Chosen by Large Organizations?
+                </a>
+              </div></div><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/stuff-that-people-should-never-do-in-their-life.html">
+            Stuff that people should never do in their life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/color-changing-invisible-ink-kids-science-experiment.html">
+            Color changing invisible ink, kids science experiment
+          </a>
+        </div><div class="article">
+          <a href="/articles/seven-tips-to-have-a-healthy-relationship.html">
+            Seven tips to have a healthy relationship
+          </a>
+        </div><div class="article">
+          <a href="/articles/make-a-compass-science-experiment-for-children.html">
+            Make a compass, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/elephant-toothpaste-science-experiment-for-children.html">
+            Elephant toothpaste, science experiment for children
+          </a>
+        </div>
+    </div><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html">
+            API Docs, Drupal contributed module for your Developer Portal
+          </a>
+        </div><div class="article">
+          <a href="/articles/hoop-and-straw-airplane-kids-science-experiment.html">
+            Hoop and straw airplane, kids science experiment
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-varkala-solo-trip-plan.html">
+            Bangalore to Varkala Solo Trip Plan
+          </a>
+        </div><div class="article">
+          <a href="/articles/leaf-breathing-science-experiment-for-children.html">
+            Leaf breathing, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-can-you-identify-intelligent-people.html">
+            How can you identify intelligent people?
+          </a>
+        </div>
+    </div><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/be-wise-while-counting.html">
+            Be wise while counting
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/a-wise-old-owl.html">
+            A Wise Old Owl
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-milkmaid-and-her-pail.html">
+            The Milkmaid and Her Pail
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-proud-rose.html">
+            The Proud Rose
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-grapes.html">
+            The Fox and the Grapes
+          </a>
+        </div>
+    </div><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+    crossorigin="anonymous"></script -->
+<!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/guru-amar-das.html">
+            Guru Amar Das
+          </a>
+        </div><div class="article">
+          <a href="/great-people/tyagaraja.html">
+            Tyagaraja
+          </a>
+        </div><div class="article">
+          <a href="/great-people/zakir-husain-khan.html">
+            Zakir Husain Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vk-krishna-menon.html">
+            V K Krishna Menon
+          </a>
+        </div><div class="article">
+          <a href="/great-people/satyajit-ray.html">
+            Satyajit Ray
+          </a>
+        </div>
+    </div>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+     crossorigin="anonymous"></script -->
+<!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                    <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                    <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+                                    <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>
+                                    <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                    <!-- a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Quora"><i class="fa fa-quora"></i> <span>Quora</span></a -->
+                                    <!-- a rel="noreferrer" href="https://peoplesblog.co.in/feeds/index.xml" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Feeds"><i class="fa fa-rss"></i> <span>Rss</span></a -->
+                                    <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                    <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p2">
+                        <div class="widget">
+                            <h2 class="widget-title">Popular</h2>
+                            <div class="link-widget">
+                                <ul class="mobile">
+                                    <li><a title="Drupal" href="/articles/drupal.html">Drupal</a></li>
+                                    <li><a title="Science & Technology" href="/articles/sci-tech.html">Sci-Tech</a></li>
+                                    <li><a title="Lifestyle" href="/articles/lifestyle.html">Lifestyle</a></li>
+                                    <li><a title="Travel" href="/articles/travel.html">Travel</a></li>
+                                    <li><a title="Social Media" href="/articles/social-media.html">Social Media</a></li>
+                                    <li><a title="Food" href="/articles/food.html">Food</a></li>
+                                    <!-- li><a title="Coronavirus" href="/articles/coronavirus.html">Coronavirus</a></li -->
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/drupal.html">Drupal</a></li><li><a href="/articles/experiment.html">Experiment</a></li><li><a href="/articles/bangalore.html">Bangalore</a></li><li><a href="/articles/life.html">Life</a></li><li><a href="/articles/recipe.html">Recipe</a></li><li><a href="/articles/web.html">Web</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p4">
+                      <div class="widget">
+                          <h2 class="widget-title">Navigation</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Articles" href="/articles/index.html">Articles</a></li>
+                                <li><a title="Quick Read" href="/quick-read/index.html">Quick Read</a></li>
+                                <li><a title="Great People" href="/great-people/index.html">Great People</a></li>
+                                <li><a title="Quotes" href="/quotes/index.html">Quotes</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a title="Shop" href="/shop/index.html">Shop</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p4">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Search" href="/search.html">Search</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="World Clock" href="/world-clock.html">World Clock</a></li>
+                          <li><a title="Age Calculator" href="/age-calculator.html">Age Calculator</a></li>
+                          <li><a title="Generate Password" href="/generate-password.html">Generate Password</a></li>
+                          <li><a title="Truth / Dare" href="/truth-or-dare.html">Truth / Dare</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                          <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                          <!-- li><a title="News" href="https://news.peoplesblog.co.in" target="_blank">News</a></li -->
+                          <!-- li><a title="Alcohol" href="https://alcohol.peoplesblog.co.in" target="_blank">Alcohol</a></li -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2023, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
+    crossorigin="anonymous"></script -->
+    <!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/marquee.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+</body>
+</html>
