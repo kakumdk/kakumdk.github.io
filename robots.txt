@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-prepare-gobi-manchurian-at-home-gobi-manchurian-recipe.html
 Allow: /articles/api-docs-drupal-contributed-module-for-your-developer-portal.html
 Allow: /articles/hoop-and-straw-airplane-kids-science-experiment.html
 Allow: /articles/bangalore-to-varkala-solo-trip-plan.html
