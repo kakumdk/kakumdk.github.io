@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Film canister rocket, science experiment for children</title>
+			<link>https://peoplesblog.co.in/articles/film-canister-rocket-science-experiment-for-children.html</link>
+			<description>Title: Film Canister Rocket - Exploring Chemical Reactions and Propulsion Experiment  Objective: To create a film canister rocket and investigate the principles of chemical reactions and propulsion.  Materials:   Film canister with a tight-fitting lid Alka-Seltzer tablets Water Safety goggles Optional: Decorative materials (markers, stickers) for customization   Procedure:   Begin by discussing th</description>
+			<pubDate>Sun, 30 Jul 2023 11:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/film-canister-rocket-science-experiment-for-children.html</guid>
+    </item><item>
 			<title>API Docs, Drupal contributed module for your Developer Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
 			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</guid>
-    </item><item>
-			<title>Quick reference of Code Reviews for Drupal Application</title>
-			<link>https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</link>
-			<description>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.  It&amp;rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.  Firstly, for the code reviews to be at their best, the committed code should be more organis</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</guid>
     </item>
 </channel>
 </rss>
