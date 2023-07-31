@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/coin-inertia-science-experiment-for-children.html
 Allow: /articles/harsh-truth-of-life-that-you-learn-from-your-bad-time.html
 Allow: /articles/film-canister-rocket-science-experiment-for-children.html
 Allow: /articles/how-to-prepare-gobi-manchurian-at-home-gobi-manchurian-recipe.html
