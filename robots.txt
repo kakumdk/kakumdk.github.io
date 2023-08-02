@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/coffee-ground-fossils-science-experiment-for-children.html
 Allow: /articles/four-vedas-heart-of-hinduism.html
 Allow: /articles/bangalore-to-hampi-solo-trip-plan.html
 Allow: /articles/coin-inertia-science-experiment-for-children.html
