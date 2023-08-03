@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/walking-water-science-experiment-for-children.html
 Allow: /articles/how-to-prepare-paneer-kulcha-at-home-paneer-kulcha-recipe.html
 Allow: /articles/how-to-keep-an-eye-on-social-commitments-to-avoid-overloading-your-schedule-around-deadlines.html
 Allow: /articles/coffee-ground-fossils-science-experiment-for-children.html
