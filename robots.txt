@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/habits-that-can-improve-a-persons-life.html
 Allow: /articles/walking-water-science-experiment-for-children.html
 Allow: /articles/how-to-prepare-paneer-kulcha-at-home-paneer-kulcha-recipe.html
 Allow: /articles/how-to-keep-an-eye-on-social-commitments-to-avoid-overloading-your-schedule-around-deadlines.html
@@ -438,6 +439,8 @@ Allow: /shop/b07cpg3j2k.html
 Allow: /shop/b0784zqfhz.html
 Allow: /shop/b0bqj68hhc.html
 Allow: /shop/b08vb57558.html
+Allow: /shop/b084lgqkd7.html
+Allow: /shop/b07nbz43ph.html
 Allow: /shop/b0c2tnr2x2.html
 Allow: /shop/b0bmgd9y2x.html
 Allow: /shop/b0bkg5pq6t.html
@@ -447,8 +450,6 @@ Allow: /shop/b0bbvbcl3f.html
 Allow: /shop/b0b4n6jvmw.html
 Allow: /shop/b0b3rrwsf6.html
 Allow: /shop/b0b3n7lr6k.html
-Allow: /shop/b084lgqkd7.html
-Allow: /shop/b07nbz43ph.html
 Allow: /shop/b09n3znhty.html
 Allow: /shop/b08tv2p1n8.html
 Allow: /shop/b08n5w4nnb.html
