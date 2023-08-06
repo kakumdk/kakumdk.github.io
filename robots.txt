@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-mahabalipuram-solo-trip-plan.html
 Allow: /articles/sunscreen-test-science-experiment-for-children.html
 Allow: /articles/habits-that-can-improve-a-persons-life.html
 Allow: /articles/walking-water-science-experiment-for-children.html
@@ -608,6 +609,7 @@ Allow: /articles/lifestyle.html
 Allow: /articles/lima.html
 Allow: /articles/love.html
 Allow: /articles/madanapalle.html
+Allow: /articles/mahabalipuram.html
 Allow: /articles/makalidurga.html
 Allow: /articles/marriage.html
 Allow: /articles/migrate.html
@@ -702,6 +704,7 @@ Allow: /feeds/lifestyle.xml
 Allow: /feeds/lima.xml
 Allow: /feeds/love.xml
 Allow: /feeds/madanapalle.xml
+Allow: /feeds/mahabalipuram.xml
 Allow: /feeds/makalidurga.xml
 Allow: /feeds/marriage.xml
 Allow: /feeds/migrate.xml
