@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/pencils-through-a-bag-of-water-kids-science-experiment.html
 Allow: /articles/things-that-a-teacher-should-tell-their-students.html
 Allow: /articles/solar-oven-science-experiment-for-children.html
 Allow: /articles/how-to-prepare-pizza-at-home.html
