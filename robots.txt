@@ -566,6 +566,7 @@ Allow: /shop/b09gy48285.html
 Allow: /shop/b09sg1chww.html
 Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b07nbz43ph.html
+Allow: /authors/peoplesblog.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
