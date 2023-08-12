@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-prepare-pasta-at-home.html
 Allow: /articles/best-things-for-a-person-to-do-after-forty-years-of-age.html
 Allow: /articles/bangalore-to-alleppey-solo-trip-plan.html
 Allow: /articles/pencils-through-a-bag-of-water-kids-science-experiment.html
