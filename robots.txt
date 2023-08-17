@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-thekkady-solo-trip-plan.html
 Allow: /articles/horrible-secrets-that-you-cannot-share-with-your-partner-and-why.html
 Allow: /articles/instant-hot-ice-science-experiment-for-children.html
 Allow: /articles/how-to-prepare-pasta-at-home.html
@@ -656,6 +657,7 @@ Allow: /articles/solar-energy.html
 Allow: /articles/solo.html
 Allow: /articles/srisailam.html
 Allow: /articles/symfony.html
+Allow: /articles/thekkady.html
 Allow: /articles/tirumala.html
 Allow: /articles/tirupathi.html
 Allow: /articles/travel.html
@@ -752,6 +754,7 @@ Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
 Allow: /feeds/srisailam.xml
 Allow: /feeds/symfony.xml
+Allow: /feeds/thekkady.xml
 Allow: /feeds/tirumala.xml
 Allow: /feeds/tirupathi.xml
 Allow: /feeds/travel.xml
