@@ -351,6 +351,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/balasaraswati.html
 Allow: /great-people/fakhruddin-ali-ahmed.html
 Allow: /great-people/ronald-ross.html
 Allow: /great-people/saadat-hasan-manto.html
@@ -465,6 +466,7 @@ Allow: /shop/b0784zqfhz.html
 Allow: /shop/b0bqj68hhc.html
 Allow: /shop/b08vb57558.html
 Allow: /shop/b084lgqkd7.html
+Allow: /shop/b07nbz43ph.html
 Allow: /shop/b0c2tnr2x2.html
 Allow: /shop/b0bmgd9y2x.html
 Allow: /shop/b0bkg5pq6t.html
@@ -477,7 +479,6 @@ Allow: /shop/b0b3n7lr6k.html
 Allow: /shop/b09n3znhty.html
 Allow: /shop/b08tv2p1n8.html
 Allow: /shop/b08n5w4nnb.html
-Allow: /shop/b07nbz43ph.html
 Allow: /shop/b0bz48h8jx.html
 Allow: /shop/b0bsttk7hs.html
 Allow: /shop/b086t9ck7s.html
