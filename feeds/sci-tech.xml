@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Lava lamp, science experiment for children</title>
+			<link>https://peoplesblog.co.in/articles/lava-lamp-science-experiment-for-children.html</link>
+			<description>Title: Homemade Lava Lamp - Exploring Density and Immiscible Liquids Experiment  Objective: To create a homemade lava lamp and explore the concepts of density and immiscible liquids.  Materials:   Clear plastic bottle or glass container Water Vegetable oil Food coloring Alka-Seltzer tablet or effervescent antacid tablet Flashlight or small LED light (optional for illuminating the lava lamp)   Proc</description>
+			<pubDate>Tue, 22 Aug 2023 08:30:00 +0530</pubDate>
+			<dc:creator>PeoplesBLOG</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/lava-lamp-science-experiment-for-children.html</guid>
+    </item><item>
 			<title>Self inflating balloon, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/self-inflating-balloon-science-experiment-for-children.html</link>
 			<description>Title: Self-Inflating Balloon - Investigating Gas Generation Experiment  Objective: To create a self-inflating balloon using a simple chemical reaction and explore the concept of gas generation.  Materials:   Small empty plastic water or soda bottle Balloon Baking soda (sodium bicarbonate) Vinegar Funnel Optional: Safety goggles (recommended during the experiment)   Procedure:   Begin by discussin</description>
@@ -348,13 +355,6 @@
 			<pubDate>Mon, 05 Dec 2022 12:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</guid>
-    </item><item>
-			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
-			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
-			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
     </item>
 </channel>
 </rss>

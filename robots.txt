@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/lava-lamp-science-experiment-for-children.html
 Allow: /articles/horrible-secrets-that-you-should-share-with-your-partner-and-how.html
 Allow: /articles/self-inflating-balloon-science-experiment-for-children.html
 Allow: /articles/vankaya-pappu-recipe-andhra-style.html
