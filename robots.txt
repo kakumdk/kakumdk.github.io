@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-bheemeshwari-solo-trip-plan.html
 Allow: /articles/lava-lamp-science-experiment-for-children.html
 Allow: /articles/horrible-secrets-that-you-should-share-with-your-partner-and-how.html
 Allow: /articles/self-inflating-balloon-science-experiment-for-children.html
@@ -597,6 +598,7 @@ Allow: /articles/agriculture.html
 Allow: /articles/alleppey.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
+Allow: /articles/bheemeshwari.html
 Allow: /articles/book.html
 Allow: /articles/business.html
 Allow: /articles/covid.html
@@ -694,6 +696,7 @@ Allow: /feeds/agriculture.xml
 Allow: /feeds/alleppey.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
+Allow: /feeds/bheemeshwari.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
