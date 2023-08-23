@@ -463,6 +463,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b012au6pwy.html
 Allow: /shop/b07vz68s5q.html
 Allow: /shop/b0cbttcjl6.html
 Allow: /shop/b0c7cnvkqj.html
@@ -479,7 +480,6 @@ Allow: /shop/b0784zqfhz.html
 Allow: /shop/b0bqj68hhc.html
 Allow: /shop/b08vb57558.html
 Allow: /shop/b084lgqkd7.html
-Allow: /shop/b07nbz43ph.html
 Allow: /shop/b0c2tnr2x2.html
 Allow: /shop/b0bmgd9y2x.html
 Allow: /shop/b0bkg5pq6t.html
@@ -492,6 +492,7 @@ Allow: /shop/b0b3n7lr6k.html
 Allow: /shop/b09n3znhty.html
 Allow: /shop/b08tv2p1n8.html
 Allow: /shop/b08n5w4nnb.html
+Allow: /shop/b07nbz43ph.html
 Allow: /shop/b0bz48h8jx.html
 Allow: /shop/b0bsttk7hs.html
 Allow: /shop/b086t9ck7s.html
