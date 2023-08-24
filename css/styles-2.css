@@ -1053,7 +1053,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .peoplesblog-authors .author img {
     width: 100px;
-    /* background-color: #292b2c; */
+    background-color: #292b2c;
     /* border: 0; */
 }
 .peoplesblog-authors .author h4 {
