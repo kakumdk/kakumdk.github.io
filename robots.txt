@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/gongura-pappu-recipe-andhra-style.html
 Allow: /articles/eight-things-will-tell-you-that-you-are-not-happy-with-your-salary.html
 Allow: /articles/bangalore-to-bheemeshwari-solo-trip-plan.html
 Allow: /articles/lava-lamp-science-experiment-for-children.html
