@@ -601,6 +601,7 @@ Allow: /shop/b09sg1chww.html
 Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b07nbz43ph.html
 Allow: /authors/valli-k.html
+Allow: /authors/sathya-d-k.html
 Allow: /authors/peoplesblog.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
