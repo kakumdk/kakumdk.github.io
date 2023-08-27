@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to run PHPUnit test cases on your local machine for Drupal</title>
+			<link>https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</link>
+			<description>Running PHPUnit tests helps ensure that your Drupal module behaves as expected and provides a reliable way to identify and fix issues during development.  To run PHPUnit test cases on your local machine for Drupal, follow these steps:  Install PHPUnit and its dependency:   Make sure you have PHP and Composer installed on your local machine. If you don&amp;#39;t have PHPUnit installed, you can install </description>
+			<pubDate>Sun, 27 Aug 2023 11:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</guid>
+    </item><item>
 			<title>API Docs, Drupal contributed module for your Developer Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
 			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>

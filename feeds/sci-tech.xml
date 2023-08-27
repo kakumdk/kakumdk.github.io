@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to run PHPUnit test cases on your local machine for Drupal</title>
+			<link>https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</link>
+			<description>Running PHPUnit tests helps ensure that your Drupal module behaves as expected and provides a reliable way to identify and fix issues during development.  To run PHPUnit test cases on your local machine for Drupal, follow these steps:  Install PHPUnit and its dependency:   Make sure you have PHP and Composer installed on your local machine. If you don&amp;#39;t have PHPUnit installed, you can install </description>
+			<pubDate>Sun, 27 Aug 2023 11:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</guid>
+    </item><item>
 			<title>Sundial, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/sundial-science-experiment-for-children.html</link>
 			<description>Title: Sundial - Exploring Time and Shadows Experiment  Objective: To construct a sundial and explore the concept of using shadows to measure time.  Materials:   Paper plate or circular cardboard Pencil or pen Ruler Small stick or dowel Compass (or any circular object for tracing) Clock or watch Sunny outdoor location   Procedure:   Begin by discussing the concept of a sundial with the children. E</description>
@@ -348,13 +355,6 @@
 			<pubDate>Sun, 18 Dec 2022 12:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
-    </item><item>
-			<title>Drupal 10 is coming in a few days!</title>
-			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
-			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
-			<pubDate>Thu, 08 Dec 2022 11:30:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</guid>
     </item>
 </channel>
 </rss>
