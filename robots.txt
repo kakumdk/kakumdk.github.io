@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-udupi-solo-trip-plan.html
 Allow: /articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html
 Allow: /articles/sundial-science-experiment-for-children.html
 Allow: /articles/when-life-puts-you-in-tough-situations-dont-say-why-me-say-try-me.html
@@ -708,6 +709,7 @@ Allow: /articles/trekking.html
 Allow: /articles/trust.html
 Allow: /articles/twig.html
 Allow: /articles/usa.html
+Allow: /articles/udupi.html
 Allow: /articles/varkala.html
 Allow: /articles/vegetable.html
 Allow: /articles/wayanad.html
@@ -807,6 +809,7 @@ Allow: /feeds/trekking.xml
 Allow: /feeds/trust.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
+Allow: /feeds/udupi.xml
 Allow: /feeds/varkala.xml
 Allow: /feeds/vegetable.xml
 Allow: /feeds/wayanad.xml
