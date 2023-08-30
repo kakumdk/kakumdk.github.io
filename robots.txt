@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/can-you-have-a-good-life-without-kids.html
 Allow: /articles/ragi-roti-with-tomato-chutney-andhra-style.html
 Allow: /articles/bangalore-to-udupi-solo-trip-plan.html
 Allow: /articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html
