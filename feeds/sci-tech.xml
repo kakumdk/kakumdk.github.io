@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Tornado in bottle, science experiment for children</title>
+			<link>https://peoplesblog.co.in/articles/tornado-in-bottle-science-experiment-for-children.html</link>
+			<description>Title: Tornado in a Bottle - Exploring Vortex Formation Experiment  Objective: To create a vortex or &amp;quot;tornado&amp;quot; effect in a bottle and explore the concept of fluid dynamics.  Materials:   Clear plastic bottle with a tight-fitting cap (e.g., 2-liter soda bottle) Water Dishwashing liquid or liquid soap Glitter or small pieces of paper (optional for visual effect) Optional: Food coloring   P</description>
+			<pubDate>Thu, 31 Aug 2023 08:55:00 +0530</pubDate>
+			<dc:creator>PeoplesBLOG</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/tornado-in-bottle-science-experiment-for-children.html</guid>
+    </item><item>
 			<title>How to run PHPUnit test cases on your local machine for Drupal</title>
 			<link>https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</link>
 			<description>Running PHPUnit tests helps ensure that your Drupal module behaves as expected and provides a reliable way to identify and fix issues during development.  To run PHPUnit test cases on your local machine for Drupal, follow these steps:  Install PHPUnit and its dependency:   Make sure you have PHP and Composer installed on your local machine. If you don&amp;#39;t have PHPUnit installed, you can install </description>
@@ -348,13 +355,6 @@
 			<pubDate>Sat, 31 Dec 2022 14:45:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</guid>
-    </item><item>
-			<title>Local environment setup with Lando &amp; Drupal 10</title>
-			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
-			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
-			<pubDate>Sun, 18 Dec 2022 12:30:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
     </item>
 </channel>
 </rss>
