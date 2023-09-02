@@ -486,6 +486,9 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0c4ycs7by.html
+Allow: /shop/b00j4jkox6.html
+Allow: /shop/b0006aas5q.html
 Allow: /shop/b097c3pwdv.html
 Allow: /shop/b08w3cb5bg.html
 Allow: /shop/b08dht1z6n.html
