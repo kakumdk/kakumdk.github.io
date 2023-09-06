@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-do-people-know-if-someone-is-mature-or-not.html
 Allow: /articles/color-cabbage-science-experiment-for-children.html
 Allow: /articles/difference-between-an-indian-housewife-and-foreign-housewife.html
 Allow: /articles/jonna-roti-with-chili-chutney-andhra-style.html
