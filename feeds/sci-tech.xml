@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>What is a Customer Data Platform and which one is best for your Business?</title>
+			<link>https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</link>
+			<description>Customer Data Platform (CDP) is a sophisticated software system that aggregates and manages customer data across various touchpoints and channels. Its primary purpose is to create a unified and comprehensive view of individual customers or segments of customers. This centralized data is then made accessible to other systems and tools for marketing, analytics, and customer engagement.  Key features</description>
+			<pubDate>Thu, 07 Sep 2023 11:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</guid>
+    </item><item>
 			<title>Color cabbage, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/color-cabbage-science-experiment-for-children.html</link>
 			<description>Title: Colorful Cabbage - Exploring pH Indicators Experiment  Objective: To use red cabbage as a natural pH indicator and observe color changes in different solutions.  Materials:   Red cabbage Blender or knife and cutting board Water Small bowls or containers Various household liquids to test (e.g., lemon juice, vinegar, baking soda solution, soapy water, milk, orange juice) Optional: Pipettes or</description>
@@ -348,13 +355,6 @@
 			<pubDate>Sun, 22 Jan 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</guid>
-    </item><item>
-			<title>How does Captcha know that I'm not a Robot?</title>
-			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
-			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
-			<pubDate>Wed, 11 Jan 2023 21:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</guid>
     </item>
 </channel>
 </rss>
