@@ -500,6 +500,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0b56ywx99.html
 Allow: /shop/b08fb2h6y4.html
 Allow: /shop/b0cf587jft.html
 Allow: /shop/b0bvzr7bhc.html
