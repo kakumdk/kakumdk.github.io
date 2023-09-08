@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html
 Allow: /articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html
 Allow: /articles/difference-between-an-indian-husband-and-foreign-husband.html
 Allow: /articles/how-do-people-know-if-someone-is-mature-or-not.html

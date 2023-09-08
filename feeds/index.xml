@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Unable to install Update Manager, update.settings already exists in active configuration</title>
+    <link>https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</link>
+    <description>Generally you see this error while you try to install the update manager module via UI or via Drush command.  Not really sure how you came up with this issue. But if you are seeing this issue, you have an entry in your site&amp;#39;s configuration saying that the update module is already installed.  1. You can simply delete this configuration with the below command  $ drush cdel update.settings  Which</description>
+    <pubDate>Fri, 08 Sep 2023 09:15:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</guid>
+  </item><item>
     <title>What is a Customer Data Platform and which one is best for your Business?</title>
     <link>https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</link>
     <description>Customer Data Platform (CDP) is a sophisticated software system that aggregates and manages customer data across various touchpoints and channels. Its primary purpose is to create a unified and comprehensive view of individual customers or segments of customers. This centralized data is then made accessible to other systems and tools for marketing, analytics, and customer engagement.  Key features</description>
