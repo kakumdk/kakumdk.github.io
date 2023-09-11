@@ -136,7 +136,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img loading="lazy" alt="Usage of PHPCS on Github via Pull Request for Drupal Applications" src="/upload/banners/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.png" class="img-fluid" title="Usage of PHPCS on Github via Pull Request for Drupal Applications" />
+                                <img loading="lazy" alt="Usage of PHPCS on Github via Pull Request for Drupal Applications" src="/upload/banners/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.png" class="img-fluid" title="Usage of PHPCS on Github via Pull Request for Drupal Applications" width="825" height="464" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p>In this article, we are going to see how some tools &amp; libraries will make people&#39;s lives easier during the development &amp; code review process.</p>  <p>And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.</p>  <p>If you are maintaining your code in Github, then Github is providing continuous integration support within their workflows.</p>  <p>It&#39;s pretty simple, if we already know PHPCS and PHPCBF libraries are used to do the code reviews and checks on your local machines and the same thing can be done once the pull request is raised by the developer.</p>  <p>Having the code standard checks done at this level (on PR create level), will ensure the project is maintained with proper drupal coding standards.</p>  <p>To do this, you need to create a folder structure like <code>.github/workflows</code> within your project (if not created) and Create a file <code>ci.yml</code> within the folder, once created the file path will look as seen below</p>  <p><code>.github/workflows/ci.yml</code></p>  <p>Add the below code to the <code>ci.yml</code> file.</p>  <p><code>name: pr-review<br /> on: [pull_request]<br /> jobs:<br /> &nbsp; &nbsp; check-drupal-code-standards:<br /> &nbsp; &nbsp; &nbsp; &nbsp; runs-on: ubuntu-latest<br /> &nbsp; &nbsp; &nbsp; &nbsp; steps:<br /> &nbsp; &nbsp; &nbsp; &nbsp; - name: Install PHPCS<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; run: composer global require &ndash;dev drupal/coder dealerdirect/php codesniffer-composer-installer<br /> &nbsp; &nbsp; &nbsp; &nbsp; - name: Clone code<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; run: actions/checkout@v3<br /> &nbsp; &nbsp; &nbsp; &nbsp; - name: Check drupal coding standards<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; run: ~/.composer/vendor/bin/phpcs &ndash;standard=&rdquo;Drupal,DrupalPractice&rdquo; &ndash;extensions=&rdquo;php,module,inc,install,test,profile,theme,css,info&rdquo;</code></p> <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div> <p>The YML file is configured to trigger a job upon the pull request creation.</p>  <ul> <li>Where this job run&rsquo;s on the Ubuntu machine.</li> <li>This job has 3 steps <ul> <li>To install PHPCS</li> <li>To clone the code</li> <li>To run the phpcs checks (like we run locally)</li> </ul> </li> </ul>  <p>Once this <code>ci.yml</code> is pushed to your github repository, then from next time onwards if any PR is created then this automatic checks will be triggered and will show the pass or fail data on the PR itself.</p>  <p>By this, One level of coding standard check is performed before you push the code to master branch or branch which has the stable code.</p></div>
@@ -161,7 +161,7 @@
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
                           <a href="/authors/karthik-kumar-d-k.html">
-                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
+                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" width="113" height="113" />
                           </a>
                         </div><!-- end col -->
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
@@ -207,7 +207,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <a href="/articles/why-do-people-worship.html" title="Why do people Worship?">
-                              <img class="img-fluid logo" src="/upload/banners/why-do-people-worship.png" alt="Why do people Worship?" title="Why do people Worship?" />
+                              <img class="img-fluid logo" src="/upload/banners/why-do-people-worship.png" alt="Why do people Worship?" title="Why do people Worship?" width="107" height="60" />
                             </a>
                           </div>
                           <div class="col-md-8">
@@ -231,7 +231,7 @@
                           </div>
                           <div class="col-md-4">
                             <a href="/articles/quick-reference-of-code-reviews-for-drupal-application.html" title="Quick reference of Code Reviews for Drupal Application">
-                              <img class="img-fluid logo" src="/upload/banners/quick-reference-of-code-reviews-for-drupal-application.jpg" alt="Quick reference of Code Reviews for Drupal Application" title="Quick reference of Code Reviews for Drupal Application" />
+                              <img class="img-fluid logo" src="/upload/banners/quick-reference-of-code-reviews-for-drupal-application.jpg" alt="Quick reference of Code Reviews for Drupal Application" title="Quick reference of Code Reviews for Drupal Application" width="107" height="60" />
                             </a>
                           </div>
                         </div>

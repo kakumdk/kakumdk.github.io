@@ -136,7 +136,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img loading="lazy" alt="node_get_recent() is deprecated in Drupal 10.1.x" src="/upload/banners/node-get-recent-is-deprecated-in-drupal-ten.jpg" class="img-fluid" title="node_get_recent() is deprecated in Drupal 10.1.x" />
+                                <img loading="lazy" alt="node_get_recent() is deprecated in Drupal 10.1.x" src="/upload/banners/node-get-recent-is-deprecated-in-drupal-ten.jpg" class="img-fluid" title="node_get_recent() is deprecated in Drupal 10.1.x" width="825" height="464" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p><code>node_get_recent()</code> is unused in core and is now deprecated, developers can use views or EntityQuery to get the nodes which are recently modified or added.</p>  <p>Earlier drupal developers used to use the function&nbsp;<code>node_get_recent()</code> to get the recently changed nodes like seen in below example</p>  <p><code>$latest_updated_nodes = node_get_recent(10);</code></p>  <p>Now from Drupal 10.1.x onwards, developers need to use entity query to fetch the recently changed nodes like seen in below example</p>  <div class='google-ad'>     <ins class='adsbygoogle'             style='display:block; text-align:center;'             data-ad-layout='in-article'             data-ad-format='fluid'             data-ad-client='ca-pub-2683569506254139'             data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><code>$nids = \Drupal::entityQuery(&#39;node&#39;)<br /> &nbsp; -&gt;accessCheck(TRUE)<br /> &nbsp; -&gt;condition(&#39;status&#39;, NodeInterface::PUBLISHED)<br /> &nbsp; -&gt;sort(&#39;changed&#39;, &#39;DESC&#39;)<br /> &nbsp; -&gt;range(0, 10)<br /> &nbsp; -&gt;addTag(&#39;node_access&#39;)<br /> &nbsp; -&gt;execute();<br /> $latest_updated_nodes = !empty($nids) ? Node::loadMultiple($nids) : [];</code></p>  <p>Or Drupal Developers can use Views, where you create a View and add sort criteria with the latest updated date and fetch expected number of records.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p></div>
@@ -161,7 +161,7 @@
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
                           <a href="/authors/karthik-kumar-d-k.html">
-                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
+                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" width="113" height="113" />
                           </a>
                         </div><!-- end col -->
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
@@ -207,7 +207,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <a href="/articles/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.html" title="Best way to add additional estimates upon the original estimate for a Story in a Sprint?">
-                              <img class="img-fluid logo" src="/upload/banners/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.jpg" alt="Best way to add additional estimates upon the original estimate for a Story in a Sprint?" title="Best way to add additional estimates upon the original estimate for a Story in a Sprint?" />
+                              <img class="img-fluid logo" src="/upload/banners/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.jpg" alt="Best way to add additional estimates upon the original estimate for a Story in a Sprint?" title="Best way to add additional estimates upon the original estimate for a Story in a Sprint?" width="107" height="60" />
                             </a>
                           </div>
                           <div class="col-md-8">
@@ -231,7 +231,7 @@
                           </div>
                           <div class="col-md-4">
                             <a href="/articles/why-do-people-use-shortcut-words-like-afk-etc.html" title="Why do people use shortcut words like AFK etc?">
-                              <img class="img-fluid logo" src="/upload/banners/why-do-people-use-shortcut-words-like-afk-etc.jpg" alt="Why do people use shortcut words like AFK etc?" title="Why do people use shortcut words like AFK etc?" />
+                              <img class="img-fluid logo" src="/upload/banners/why-do-people-use-shortcut-words-like-afk-etc.jpg" alt="Why do people use shortcut words like AFK etc?" title="Why do people use shortcut words like AFK etc?" width="107" height="60" />
                             </a>
                           </div>
                         </div>

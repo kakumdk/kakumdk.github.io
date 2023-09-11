@@ -136,7 +136,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img loading="lazy" alt="When to use hook_update_N & hook_post_update_NAME?" src="/upload/banners/When-to-use-hook_update_N-and-hook_post_update_NAME.png" class="img-fluid" title="When to use hook_update_N & hook_post_update_NAME?" />
+                                <img loading="lazy" alt="When to use hook_update_N & hook_post_update_NAME?" src="/upload/banners/When-to-use-hook_update_N-and-hook_post_update_NAME.png" class="img-fluid" title="When to use hook_update_N & hook_post_update_NAME?" width="825" height="464" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p>In this article, we are going to learn when to use <code>hook_update_N</code> and <code>hook_post_update_NAME</code>. In general, I was using <code>hook_update_N</code> for any <strong>database-related</strong> changes or with any <strong>configuration additions or updates</strong>. And I was using <code>hook_post_update_NAME</code> for any <strong>content creation or updating</strong> or for the <strong>creation or updating any taxonomy terms</strong> etc, sometimes for <strong>clearing site caches</strong> as well.</p> <p>But, let’s have a check like <strong>why Drupal is offering us these two features</strong> and what is the flow of execution of these two.</p> <p>I have <strong>checked few core modules</strong> and a <strong>few contributed modules</strong> and understood that In a few of the modules there is <strong>no clear separation in the usage</strong> of these two hooks and in a few of the modules <code>hook_update_N</code> is used to modify field definitions and <code>hook_post_update_NAME</code> is used for creating or updating data.</p> <p>I have <strong>gone through a few of the articles and documentations</strong>, and understood that within <code>hook_update_N</code> it's better to do config or database related changes & in the <code>hook_post_update_NAME</code> it's better to do entity changes or content changes or something else.</p> <p>To <strong>get to know more about about</strong>, had a check in the drupal core code and found the <code>DbUpdateController</code> class, in which <code>triggerBatch</code> method is doing the stuff on running <code>https://drupal.local/update.php</code></p> <ul class='check'> <li>Initially all <code>hook_update_N</code> are found here, and on the basis of module name they are picked up into the batch.</li> <li>Later <code>hook_post_update_NAME</code> are found and added to the batch. In case if any exist then all the caches are flushed at this point.</li> </ul> <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div> <p>Also check the Drush, to understand how drush triggers this stuff. And <code>UpdateDBCommands</code> is the class, in which <code>updateBatch</code> method is doing the stuff on running <code>drush updb</code>.</p> <ul class='check'> <li>Initially gets all the <code>hook_update_N</code>, and sorts on the basis of module name and adds to the batch to process and flush caches.</li> <li>In case if any <code>hook_post_update_NAME</code> exists, add all <code>hook_post_update_NAME</code> to the batch to process.</li> </ul> <p><strong>Small difference</strong> on running <code>update.php</code> and <code>drush updb</code>, its flushing caches during the process, apart from this else is the same.</p> <p><strong>Overall, it's not clear</strong> which one to use for what actions. And I see, <strong>better</strong> would be using <code>hook_update_N</code> for <strong>doing database changes or configuration changes</strong> and using <code>hook_post_update_NAME</code> for <strong>doing any entity changes or content changes</strong>. Let me know your thoughts in the comments.</p></div>
@@ -161,7 +161,7 @@
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
                           <a href="/authors/karthik-kumar-d-k.html">
-                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
+                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" width="113" height="113" />
                           </a>
                         </div><!-- end col -->
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
@@ -207,7 +207,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <a href="/articles/why-madanapalle-should-be-the-headquarters-of-the-proposed-annamayya-district.html" title="Why Madanapalle should be headquarters of proposed Annamayya District?">
-                              <img class="img-fluid logo" src="/upload/banners/Madanapalle-should-be-the-headquarters-of-the-proposed-Annamayya-District.png" alt="Why Madanapalle should be headquarters of proposed Annamayya District?" title="Why Madanapalle should be headquarters of proposed Annamayya District?" />
+                              <img class="img-fluid logo" src="/upload/banners/Madanapalle-should-be-the-headquarters-of-the-proposed-Annamayya-District.png" alt="Why Madanapalle should be headquarters of proposed Annamayya District?" title="Why Madanapalle should be headquarters of proposed Annamayya District?" width="107" height="60" />
                             </a>
                           </div>
                           <div class="col-md-8">
@@ -231,7 +231,7 @@
                           </div>
                           <div class="col-md-4">
                             <a href="/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html" title="Improve Drupal Search with Solr, Locally configured via Lando">
-                              <img class="img-fluid logo" src="/upload/banners/drupal-solr-lando.jpeg" alt="Improve Drupal Search with Solr, Locally configured via Lando" title="Improve Drupal Search with Solr, Locally configured via Lando" />
+                              <img class="img-fluid logo" src="/upload/banners/drupal-solr-lando.jpeg" alt="Improve Drupal Search with Solr, Locally configured via Lando" title="Improve Drupal Search with Solr, Locally configured via Lando" width="107" height="60" />
                             </a>
                           </div>
                         </div>
