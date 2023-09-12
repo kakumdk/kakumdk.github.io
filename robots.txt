@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-agumbe-solo-trip-plan.html
 Allow: /articles/what-is-it-like-being-an-indian-husband.html
 Allow: /articles/what-is-it-like-being-an-indian-housewife.html
 Allow: /articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html
@@ -665,6 +666,7 @@ Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
 Allow: /articles/api.html
 Allow: /articles/agriculture.html
+Allow: /articles/agumbe.html
 Allow: /articles/alleppey.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
@@ -766,6 +768,7 @@ Allow: /feeds/index.xml
 Allow: /feeds/quick-read.xml
 Allow: /feeds/api.xml
 Allow: /feeds/agriculture.xml
+Allow: /feeds/agumbe.xml
 Allow: /feeds/alleppey.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
