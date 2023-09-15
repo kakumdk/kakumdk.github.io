@@ -136,7 +136,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img loading="lazy" alt="Drupal Configuration management (Local, Dev, Test and Live)" src="/upload/banners/drupal-configuration-management-local-dev-test-and-live.png" class="img-fluid" title="Drupal Configuration management (Local, Dev, Test and Live)" width="825" height="464" />
+                                <img loading="lazy" alt="Drupal Configuration management (Local, Dev, Test and Live)" src="/upload/banners/drupal-configuration-management-local-dev-test-and-live.png" class="img-fluid" title="Drupal Configuration management (Local, Dev, Test and Live)" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.</p>  <p>Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp; views.</p>  <p>Making the configurations directly in the higher environment is not recommended, every configuration should go to a higher environment via code change (which is maintained in version control).</p>  <p>Drupal core provides the feature to import, export &amp; synchronise the configurations. Drupal provides drush commands for the same feature (which is even more helpful).</p>  <p><code>$settings[&#39;config_sync_directory&#39;] = &#39;../config/sync&#39;;</code></p>  <p>We can use the Configuration Split contributed module. This module allows us to create a group of configurations that can be exported to different folders during exporting. This can be configured from the <code>settings.php</code>, like what folder should be active for which environment.</p>  <p>Create four environments in the config split configuration.</p>  <ol> <li>Local</li> <li>Dev</li> <li>Test</li> <li>Live</li> </ol>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div> <p>Here goes the folder structure of the config.</p> <p><code>config</code></p>  <ul> <li><code>default</code></li> <li><code>env</code> <ul> <li><code>local</code></li> <li><code>dev</code></li> <li><code>test</code></li> <li><code>live</code></li> </ul> </li> </ul>  <p>And in the <code>settings.php</code> file, configuration for this should go like below</p>  <p><code>switch ($env) {</code></p>  <p><code>&nbsp; &nbsp; case &lsquo;dev&rsquo;:</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.local&rsquo;][&#39;status&#39;] = FALSE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.dev&#39;][&#39;status&#39;] = TRUE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.test&#39;][&#39;status&#39;] = FALSE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.live&#39;][&#39;status&#39;] = FALSE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; &hellip;.</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; Similarly set for all env&rsquo;s</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; &hellip;.</code></p>  <p><code>&nbsp; &nbsp; case &lsquo;default&rsquo;:</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.local&rsquo;][&#39;status&#39;] = TRUE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.dev&#39;][&#39;status&#39;] = FALSE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.test&#39;][&#39;status&#39;] = FALSE;</code></p>  <p><code>&nbsp; &nbsp; &nbsp; &nbsp; $config[&#39;config_split.config_split.live&#39;][&#39;status&#39;] = FALSE;</code></p>  <p><code>}</code></p>  <p>To export &amp; import the configuration, you can use the <code>drush cex</code> &amp; <code>drush cim</code>, and commit the changes to the repository.</p>  <p>This way would be best to manage the configuration in the drupal applications.</p></div>
@@ -161,7 +161,7 @@
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
                           <a href="/authors/karthik-kumar-d-k.html">
-                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" width="113" height="113" />
+                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
                           </a>
                         </div><!-- end col -->
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
@@ -207,7 +207,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <a href="/articles/unconditional-love.html" title="Unconditional love...">
-                              <img class="img-fluid logo" src="/upload/banners/unconditional-love.jpeg" alt="Unconditional love..." title="Unconditional love..." width="107" height="60" />
+                              <img class="img-fluid logo" src="/upload/banners/unconditional-love.jpeg" alt="Unconditional love..." title="Unconditional love..." />
                             </a>
                           </div>
                           <div class="col-md-8">
@@ -231,7 +231,7 @@
                           </div>
                           <div class="col-md-4">
                             <a href="/articles/configuration-management-via-quicksilver-on-pantheon.html" title="Configuration management via Quicksilver on Pantheon">
-                              <img class="img-fluid logo" src="/upload/banners/configuration-management-via-quicksilver-on-pantheon.png" alt="Configuration management via Quicksilver on Pantheon" title="Configuration management via Quicksilver on Pantheon" width="107" height="60" />
+                              <img class="img-fluid logo" src="/upload/banners/configuration-management-via-quicksilver-on-pantheon.png" alt="Configuration management via Quicksilver on Pantheon" title="Configuration management via Quicksilver on Pantheon" />
                             </a>
                           </div>
                         </div>

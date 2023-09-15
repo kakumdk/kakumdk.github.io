@@ -136,7 +136,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img loading="lazy" alt="Multisite Local environment setup with DDEV and Drupal" src="/upload/banners/multisite-local-environment-setup-with-ddev-and-drupal.jpg" class="img-fluid" title="Multisite Local environment setup with DDEV and Drupal" width="825" height="464" />
+                                <img loading="lazy" alt="Multisite Local environment setup with DDEV and Drupal" src="/upload/banners/multisite-local-environment-setup-with-ddev-and-drupal.jpg" class="img-fluid" title="Multisite Local environment setup with DDEV and Drupal" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p>In this article we are going to see how we can set up a multisite environment with ddev on the local machine. Assuming people are aware of configuring the drupal multiple site from the <a href='/articles/drupal.html'>drupal</a> side of configurations.</p>  <p>As we all know ddev is an open source tool for running local PHP development environments in minutes, which makes developer life easier during the local environment setup process, here&rsquo;s the <a href='https://github.com/drud/ddev-contrib/tree/master/recipes/drupal8-multisite'>recipe</a> provided by ddev.</p>  <p>Assuming you already have <code>ddev</code> installed and a <a href='/articles/drupal.html'>drupal</a> site is up and running on local. If so check the site details by running <code>ddev describe</code>.</p>  <p>Initially create a file <code>config.multisite.yaml</code> within the <code>.ddev</code> directory, with additional hostnames and post hooks.</p>  <p style='margin-left:40px'>(reference: <a href='https://github.com/drud/ddev-contrib/blob/master/recipes/drupal8-multisite/dot.ddev/config.multisite.yaml'>config.multisite.yaml</a>)</p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p>Next, create the directories for each of the site within sites folder and create entries in <code>sites.php</code> (by default Drupal allows this configuration)</p>  <p style='margin-left:40px'>(reference: <a href='https://www.drupal.org/docs/multisite-drupal'>drupal multisite</a>)</p>  <p>Next, add the <code>settings.ddev.php</code> files for each of the site, and add the configurations and also check if the environment is <code>IS_DDEV_PROJECT</code> from the env variables.</p>  <p style='margin-left:40px'>(reference: <a href='https://github.com/drud/ddev-contrib/blob/master/recipes/drupal8-multisite/web/sites/default/settings.base.php'>settings.ddev.php</a>)</p>  <p>Next, restart the ddev with the command <code>ddev restart</code>.</p>  <p>Once the containers are up and running, then run the <code>ddev describe</code> and see the multi site urls.</p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='5228875751'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p>You can use drush commands like, <code>drush status -l &lt;multisite-domain&gt;</code>, allowed by drush. Or create drush aliases and use them for each site.</p>  <p style='margin-left:40px'>(reference: <a href='https://github.com/drud/ddev-contrib/tree/master/recipes/drupal8-multisite/drush/sites'>drush aliases</a>)</p>  <p>In case you are configuring ddev multi site for existing <a href='/articles/drupal.html'>drupal</a> site, you might need to import the db to the relevant databases (do it manually, in case locally you are using only on database container)</p>  <p><code>docker exec -i &lt;db-container-name&gt; mysql -u&lt;user&gt; -p&lt;pass&gt; &lt;database-name&gt; &lt; &lt;backup.sql&gt;</code></p>  <p>Thanks for reading the article, <a href='/articles/drupal.html'>for more drupal related articles</a> <a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p></div>
@@ -161,7 +161,7 @@
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
                           <a href="/authors/karthik-kumar-d-k.html">
-                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" width="113" height="113" />
+                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
                           </a>
                         </div><!-- end col -->
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
@@ -207,7 +207,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <a href="/articles/two-days-trip-from-bangalore-to-mysore.html" title="Bangalore to Mysore Solo Trip plan (2 Days + 1 Night)">
-                              <img class="img-fluid logo" src="/upload/banners/two-days-trip-from-bangalore-to-mysore.jpg" alt="Bangalore to Mysore Solo Trip plan (2 Days + 1 Night)" title="Bangalore to Mysore Solo Trip plan (2 Days + 1 Night)" width="107" height="60" />
+                              <img class="img-fluid logo" src="/upload/banners/two-days-trip-from-bangalore-to-mysore.jpg" alt="Bangalore to Mysore Solo Trip plan (2 Days + 1 Night)" title="Bangalore to Mysore Solo Trip plan (2 Days + 1 Night)" />
                             </a>
                           </div>
                           <div class="col-md-8">
@@ -231,7 +231,7 @@
                           </div>
                           <div class="col-md-4">
                             <a href="/articles/un-conditional-love-in-a-relationship.html" title="UnConditional Love in a Couples Relationship">
-                              <img class="img-fluid logo" src="/upload/banners/un-conditional-love-in-a-relationship.jpg" alt="UnConditional Love in a Couples Relationship" title="UnConditional Love in a Couples Relationship" width="107" height="60" />
+                              <img class="img-fluid logo" src="/upload/banners/un-conditional-love-in-a-relationship.jpg" alt="UnConditional Love in a Couples Relationship" title="UnConditional Love in a Couples Relationship" />
                             </a>
                           </div>
                         </div>
