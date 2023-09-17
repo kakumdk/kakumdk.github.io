@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/what-to-do-after-a-breakup-in-a-relationship.html
 Allow: /articles/vegetable-biryani-recipe-andhra-style.html
 Allow: /articles/bangalore-to-agumbe-solo-trip-plan.html
 Allow: /articles/what-is-it-like-being-an-indian-husband.html
