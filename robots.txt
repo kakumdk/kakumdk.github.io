@@ -905,6 +905,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/india-shifted-launch-of-its-chandrayaan-3-moon-lander-to-avoid-space-objects.html
+Allow: /news/china-to-expand-its-space-station-into-six-modules-posing-an-alternative-to-international-space-station-101696501901194.html
+Allow: /news/khushi-kapoor-and-betty-cooper-have-a-lot-in-common-4452987.html
+Allow: /news/putin-warns-the-west-attempts-to-turn-india-away-pointless-4454841.html
+Allow: /news/sikkim-flash-flood-updates-death-toll-over-100-missing-rescue-work-on-amid-bad-weather-101696554230148.html
 Allow: /news/in-chittorgarh-pm-modis-all-out-attack-on-ashok-gehlot-govt-destroyed-rajasthan-101696230285760.html
 Allow: /news/manoj-bajpayee-wife-shabana-felt-insulted-humiliated-after-watching-film-stop-doing-films-for-money.html
 Allow: /news/chemical-reactions-spark-life-into-self-folding-micro-origami-machines.html
