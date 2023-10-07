@@ -670,6 +670,11 @@ Allow: /shop/b0b72bsw7k.html
 Allow: /shop/b014akzmnk.html
 Allow: /shop/b083dyv9zw.html
 Allow: /shop/b09t4t4596.html
+Allow: /shop/b09y64h8vs.html
+Allow: /shop/b095s8ggkb.html
+Allow: /shop/b07g3f1g7t.html
+Allow: /shop/b0cgdqrr9y.html
+Allow: /shop/b084j4mzqm.html
 Allow: /shop/b078s4p3j9.html
 Allow: /shop/b09xtqffcg.html
 Allow: /shop/b0b4j28ntr.html
