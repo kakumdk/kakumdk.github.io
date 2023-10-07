@@ -643,8 +643,10 @@ $(function() {
 function searchShopListPage() {
     $('input[type=text]#search-shop').focus();
     $("#search-shop").on("keyup", function(event) {
-        $('.shop-data-results .row .col-md-4.shop-item-wrapper').removeClass('hide');
-        $('.shop-data-results .row').children('.col-md-4.shop-item-wrapper').each(function () {
+        $(".shop-category ul li input").prop('checked', false);
+        $(".shop-category .clear").addClass('hide');
+        $('.shop-data-results .row .shop-item-wrapper').removeClass('hide');
+        $('.shop-data-results .row').children('.shop-item-wrapper').each(function () {
             var title = $(this).find('.shop-title-value').text().toLowerCase();
             title += " " + $(this).find('.summary').text().toLowerCase();
             // title += " " + $(this).find('.quick-read-author').text().toLowerCase();
@@ -664,7 +666,7 @@ function searchShopListPage() {
 }
 function searchShopListPageByCategory() {
     $(".shop-category ul li input").on("click", function(event) {
-        $('.shop-data-results .row .col-md-4.shop-item-wrapper').removeClass('hide');
+        $('.shop-data-results .row .shop-item-wrapper').removeClass('hide');
         $(".shop-category .clear").removeClass('hide');
         $('.shop-category ul').children('li').each(function () {
             $(this).find('input').prop('checked', false);
@@ -672,7 +674,7 @@ function searchShopListPageByCategory() {
                 $(this).find('input').prop('checked', true);
             }
         });
-        $('.shop-data-results .row').children('.col-md-4.shop-item-wrapper').each(function () {
+        $('.shop-data-results .row').children('.shop-item-wrapper').each(function () {
             var category = $(this).find('.category').text().toLowerCase();
             var search = event.currentTarget.value.toLowerCase();
             var searchFor = search.split('-SHOPSEARCH-');
@@ -687,7 +689,7 @@ function searchShopListPageByCategory() {
         });
     });
     $(".shop-category .clear").on("click", function(event) {
-        $('.shop-data-results .row .col-md-4.shop-item-wrapper').show();
+        $('.shop-data-results .row .shop-item-wrapper').show();
         $('.shop-category ul').children('li').each(function () {
             $(this).find('input').prop('checked', false);
         });
