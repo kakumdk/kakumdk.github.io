@@ -518,6 +518,13 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0bph3kvrn.html
+Allow: /shop/b09yrr542x.html
+Allow: /shop/b096fylb46.html
+Allow: /shop/b0cg1x67v1.html
+Allow: /shop/b0c7wgpm6r.html
+Allow: /shop/b096vf5yyf.html
+Allow: /shop/b0b3n7lr6k.html
 Allow: /shop/b0c69ptc6m.html
 Allow: /shop/b0c8vkrlry.html
 Allow: /shop/b08hv83hl3.html
@@ -599,7 +606,6 @@ Allow: /shop/b0bqj68hhc.html
 Allow: /shop/b0bh8s16yy.html
 Allow: /shop/b084lgqkd7.html
 Allow: /shop/b07nbz43ph.html
-Allow: /shop/b0b3n7lr6k.html
 Allow: /shop/b0b3rrwsf6.html
 Allow: /shop/b0bf57rn3k.html
 Allow: /shop/b0b4n6jvmw.html

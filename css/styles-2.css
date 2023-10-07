@@ -1836,7 +1836,7 @@ h3.author-articles-heading::after {
     max-height: 80px;
     min-height: 80px;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     /* display: grid;
     align-content: center; */
 }
@@ -1851,7 +1851,7 @@ h3.author-articles-heading::after {
     margin-top: 15px;
     border-top: 1px solid #e7ebed;
     padding-top: 15px;
-    text-align: center;
+    text-align: left;
 }
 .shop-data .shop-data-results .shop-item .price .discountprice {
     margin-right: 5px;
@@ -1870,7 +1870,7 @@ h3.author-articles-heading::after {
 }
 .shop-data .shop-data-results .shop-item .store {
     margin-top: 5px;
-    text-align: center;
+    text-align: left;
 }
 .shop-data .shop-data-results .col-md-4.shop-item-wrapper.hide,
 .shop-data .shop-data-results .shop-item .summary.hide,
