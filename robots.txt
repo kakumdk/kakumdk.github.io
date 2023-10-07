@@ -382,6 +382,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/nt-rama-rao.html
 Allow: /great-people/dv-paluskar.html
 Allow: /great-people/minoo-masani.html
 Allow: /great-people/vinayak-damodar-savarkar.html
@@ -928,6 +929,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/thank-you-for-coming-box-office-day-1-bhumi-pednekar-led-film-opens-over-1-crore-mark.html
+Allow: /news/israel-gaza-attack-live-updates-rockets-fired-gaza-strip-israel-declares-war-livenews-8606764.html
 Allow: /news/india-shifted-launch-of-its-chandrayaan-3-moon-lander-to-avoid-space-objects.html
 Allow: /news/china-to-expand-its-space-station-into-six-modules-posing-an-alternative-to-international-space-station-101696501901194.html
 Allow: /news/khushi-kapoor-and-betty-cooper-have-a-lot-in-common-4452987.html
