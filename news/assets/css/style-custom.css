@@ -19,6 +19,10 @@ p {
     border-radius: 5px;
     font-weight: 600;
 }
+.navbar .navbar-top .logo span {
+    display: block;
+    font-size: 9px;
+}
 .navbar .navbar-bottom-menu {
     border: unset;
 }
@@ -336,7 +340,7 @@ footer p.footer-notes a:hover {
         text-align: center;
     }
     .navbar .navbar-top .logo {
-        font-size: 28px;
+        /* font-size: 28px; */
     }
     .navbar .navbar-bottom-menu {
         border-top: 1px solid #dbdbdb;
