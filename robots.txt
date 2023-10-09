@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-be-selfish-and-focus-more-on-self.html
 Allow: /articles/egg-biryani-recipe-andhra-style.html
 Allow: /articles/what-happens-if-people-are-having-milk-everyday.html
 Allow: /articles/how-do-people-feel-when-their-ex-gets-married.html
@@ -382,6 +383,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/k-satchidanandan.html
 Allow: /great-people/nt-rama-rao.html
 Allow: /great-people/dv-paluskar.html
 Allow: /great-people/minoo-masani.html
@@ -781,6 +783,7 @@ Allow: /articles/russia.html
 Allow: /articles/salleri.html
 Allow: /articles/sci-tech.html
 Allow: /articles/security.html
+Allow: /articles/self.html
 Allow: /articles/sexual-health.html
 Allow: /articles/social-media.html
 Allow: /articles/software.html
@@ -883,6 +886,7 @@ Allow: /feeds/russia.xml
 Allow: /feeds/salleri.xml
 Allow: /feeds/sci-tech.xml
 Allow: /feeds/security.xml
+Allow: /feeds/self.xml
 Allow: /feeds/sexual-health.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
