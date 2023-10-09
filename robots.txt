@@ -341,6 +341,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-stork-and-the-crab.html
 Allow: /quick-read/the-brahmins-dream.html
 Allow: /quick-read/the-foolish-thief.html
 Allow: /quick-read/the-monkey-and-the-crocodile.html
@@ -521,6 +522,8 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b09wn3src7.html
+Allow: /shop/b0cg5stqfq.html
 Allow: /shop/b07s5fby3j.html
 Allow: /shop/b00vfmfxrc.html
 Allow: /shop/b07yy9n6ty.html
