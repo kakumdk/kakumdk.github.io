@@ -19,9 +19,17 @@ p {
     border-radius: 5px;
     font-weight: 600;
 }
-.navbar .navbar-top .logo span {
+.navbar .navbar-top .logo .primary,
+.navbar .navbar-top .logo .secondary {
+    color: #fff;
+}
+.navbar .navbar-top .logo .secondary {
     display: block;
     font-size: 9px;
+}
+.navbar .navbar-top .logo .primary:hover,
+.navbar .navbar-top .logo .secondary:hover {
+    text-decoration: unset;
 }
 .navbar .navbar-bottom-menu {
     border: unset;
