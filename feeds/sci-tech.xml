@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to setup solar power for you home</title>
+			<link>https://peoplesblog.co.in/articles/how-to-setup-solar-power-for-you-home.html</link>
+			<description>Setting up a solar power system for a family of four in India involves several steps. Please note that the costs provided are approximate and can vary based on factors like location, system size, quality of components, and labor costs.  Additionally, government incentives and rebates can affect the final cost.  Step-by-Step Guide:  Step 1: Assess Your Energy Needs   Determine Your Energy Consumpti</description>
+			<pubDate>Wed, 11 Oct 2023 18:10:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-setup-solar-power-for-you-home.html</guid>
+    </item><item>
 			<title>Unable to install Update Manager, update.settings already exists in active configuration</title>
 			<link>https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</link>
 			<description>Generally you see this error while you try to install the update manager module via UI or via Drush command.  Not really sure how you came up with this issue. But if you are seeing this issue, you have an entry in your site&amp;#39;s configuration saying that the update module is already installed.  1. You can simply delete this configuration with the below command  $ drush cdel update.settings  Which</description>
@@ -348,13 +355,6 @@
 			<pubDate>Sun, 29 Jan 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/checklist-for-building-an-eco-friendly-home.html</guid>
-    </item><item>
-			<title>Multisite Local environment setup with DDEV and Drupal</title>
-			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</link>
-			<description>In this article we are going to see how we can set up a multisite environment with ddev on the local machine. Assuming people are aware of configuring the drupal multiple site from the drupal side of configurations.  As we all know ddev is an open source tool for running local PHP development environments in minutes, which makes developer life easier during the local environment setup process, her</description>
-			<pubDate>Thu, 26 Jan 2023 09:30:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</guid>
     </item>
 </channel>
 </rss>
