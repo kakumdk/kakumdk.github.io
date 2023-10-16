@@ -1,0 +1,375 @@
+
+
+.header-area .main-header-area .logo {
+    text-align: center;
+    margin-top: 10px;
+}
+.header-area .main-header-area .logo img {
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 4px;
+    outline: 4px solid #019cde;
+}
+.header-area .main-header-area .logo span {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0 0 10px #000;
+}
+.slicknav_btn {
+    top: -34px;
+    right: 12px;
+}
+.slicknav_icon-bar {
+    background-color: #fff !important;
+}
+.home .header-area .main-header-area .main-menu ul li a {
+    color: #000000;
+}
+.header-area .main-header-area .main-menu ul li a,
+.home .header-area .main-header-area.sticky .main-menu ul li a {
+    color: #ffffff;
+}
+.header-area .main-header-area .main-menu ul li a {
+    text-decoration-line: underline;
+    text-decoration-color: #019cde;
+    text-underline-offset: 4px;
+}
+.home .header-area .main-header-area .main-menu ul li a:hover,
+.header-area .main-header-area .main-menu ul li a:hover {
+    color: #019cde !important;
+    text-decoration-color: #000000;
+}
+.header-area .main-header-area .main-menu ul li a:hover {
+    text-decoration-color: #ffffff;
+}
+.slider_area .single_slider .slider_text h3 {
+    font-size: 24px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 15px;
+    margin: 0;
+    line-height: 1.5;
+    border-radius: 10px;
+    text-decoration-line: underline;
+    text-decoration-color: #019cde;
+    text-underline-offset: 4px;
+}
+.slider_bg_1 {
+    background-image: url(../img/home-banner.jpeg);
+    /* background-image: url(../img/banner/bradcam.png); */
+}
+.header-area .main-header-area .main-menu ul li {
+    margin: 0 20px;
+}
+.header-area .main-header-area .search_icon {
+    text-align: center;
+}
+.header-area .main-header-area .search_icon a {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    padding: 4px;
+    outline: 3px solid #019cde;
+    padding-top: 8px;
+    vertical-align: bottom;
+    padding-left: 5px;
+}
+.header-area .main-header-area .search_icon a i {
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: top;
+}
+.bradcam_area {
+    padding: 220px 0 120px 0;
+}
+.bradcam_area h3,
+.bradcam_area p {
+    text-shadow: 4px 2px 2px #000;
+}
+.bradcam_bg_1.category_bg {
+    background-image: url("../img/banner/alcohol-banner.jpeg");
+    padding: 258px 0 148px 0;
+}
+.bradcam_bg_1.static_bg {
+    background-image: url("../img/banner/alcohol-static-banner.png");
+}
+.bradcam_bg_1.whiskey_bg { background-image: url("../img/banner/whiskey-banner.jpeg"); }
+.bradcam_bg_1.vodka_bg { background-image: url("../img/banner/vodka-banner.png"); }
+.bradcam_bg_1.tequila_bg { background-image: url("../img/banner/alcohol-banner.jpeg"); }
+.bradcam_bg_1.gin_bg { background-image: url("../img/banner/alcohol-banner.jpeg"); }
+.bradcam_bg_1.rum_bg { background-image: url("../img/banner/alcohol-banner.jpeg"); }
+.bradcam_bg_1.brandy_bg { background-image: url("../img/banner/alcohol-banner.jpeg"); }
+.bradcam_bg_1.wine_bg { background-image: url("../img/banner/alcohol-banner.jpeg"); }
+.bradcam_bg_1.beer_bg { background-image: url("../img/banner/alcohol-banner.jpeg"); }
+.home .recepie_area {
+    margin: 60px auto;
+    padding: unset;
+}
+.recepie_area {
+    padding: unset;
+}
+.recepie_area .single_recepie {
+    margin-bottom: 50px;
+    margin: 30px auto;
+    padding: 15px;
+}
+.recepie_area .single_recepie .recepie_thumb {
+    width: 150px;
+    height: 150px;
+    border-radius: unset;
+}
+.recepie_area .single_recepie .recepie_thumb img {
+    height: 150px;
+    width: auto;
+}
+footer .footer-vertical-nav.bottom-footer {
+    padding: 15px;
+    margin: unset;
+}
+footer .footer-vertical-nav li {
+    display: inline-block;
+}
+footer .footer-vertical-nav.bottom-footer li a {
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #fff;
+    padding-right: 1rem;
+}
+footer p,
+footer p a {
+    color: #fff;
+}
+/* footer p a, */
+footer p a:hover,
+footer .footer-vertical-nav.bottom-footer li a:hover {
+    color: #fff;
+    text-decoration-line: underline;
+    text-decoration-color: #019cde;
+    text-underline-offset: 4px;
+}
+.recepie_details_area {
+    padding-top: unset;
+    margin: 15px auto;
+    padding: 15px;
+}
+.recepie_details_area .recepies_thumb {
+    margin: 15px auto;
+}
+.recepie_details_area .recepies_thumb img {
+    width: auto;
+    height: 250px;
+    transform: scale(1);
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+}
+.recepie_details_area .recepies_thumb img:hover {
+    transform: scale(1.2);
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+}
+/* .recepie_details_area .recepies_thumb img:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+} */
+.recepie_details_area .recepies_info .resepies_details ul li p strong {
+    font-weight: 400;
+}
+.recepie_videoes_area {
+    padding: unset;
+}
+.recepie_videoes_area .category_wrapper {
+    padding: 15px;
+    margin: 15px auto;
+}
+.recepie_videoes_area .category_wrapper .recepie_info {
+    padding: unset;
+    margin: 15px auto;
+}
+.recepie_videoes_area .category_wrapper .recepie_info h3 {
+    font-size: 60px;
+}
+.recepie_videoes_area .category_wrapper .recepie_info > p {
+    margin: unset;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.static_page p {
+    margin-bottom: 1rem;
+}
+.global_search {
+    margin: 30px auto;
+}
+.global_search input#search-alcohol {
+    border: 1px solid #dbdbdb;
+    padding: 15px;
+    text-align: center;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right;
+    cursor: pointer;
+    opacity: 0.7;
+    background-origin: content-box;
+    box-shadow: 0 0 6px 0 #1183d6;
+    margin: 15px auto 25px;
+}
+.global_search .alcohol {
+    margin: 15px auto;
+}
+.global_search .alcohol ._alcohol {
+    padding: 15px;
+    border-radius: 5px;
+}
+.global_search .alcohol ._alcohol img {
+    height: 150px;
+    margin: 15px auto;
+}
+.global_search .alcohol ._alcohol p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding-right: 15px;
+}
+ol.breadcrumb {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 14px;
+    margin: 15px auto;
+}
+ol.breadcrumb li,
+ol.breadcrumb li a {
+    color: #000;
+}
+ol.breadcrumb li a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #019cde;
+    text-underline-offset: 4px;
+}
+.section-title {
+    display: flex;
+}
+.section-title:after {
+    content: '';
+    flex: 1;
+    margin-left: 1rem;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 15px;
+}
+.truth-dare-wrapper {
+    background-image: url("../img/truth-dare-banner-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.truth-dare-wrapper h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin: 45px auto;
+}
+.truth-dare-wrapper .truth-dare-users,
+.truth-dare {
+    margin: 15px auto;
+    background-color: #00000057;
+    padding: 30px;
+    border-radius: 5px;
+}
+.truth-dare-wrapper .truth-dare-users #play-truth-dare {
+    float: right;
+}
+.ticking-time img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.truth-dare-question p,
+p.player {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px auto;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+p.player-question {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.truth-dare-buttons {
+    margin: 15px auto;
+}
+button#truth,
+button#dare,
+button#play-truth-dare-next {
+    background-color: white;
+    border: unset;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px 32px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 40%;
+}
+button#dare,
+button#play-truth-dare-next {
+    background-color: #dc3545;
+    color: white;
+}
+
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/********************************************************* Desktop **********************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+/****************************************************************************************************************************/
+@media (min-width: 600px) {
+
+    .header-area .main-header-area .logo img {
+        width: 50px;
+    }
+    .slider_area .single_slider .slider_text h3 {
+        padding: 30px;
+    }
+    .recepie_details_area .recepies_thumb img {
+        width: auto;
+        height: 350px;
+    }
+    .truth-dare-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../img/truth-dare-banner.avif");
+    }
+    .truth-dare-wrapper h1 {
+        font-size: 80px;
+        margin: unset;
+    }
+    .truth-dare-wrapper .truth-dare-users,
+    .truth-dare {
+        background-color: #fb234a42;
+    }
+}
