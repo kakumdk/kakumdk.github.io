@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-horanadu-solo-trip-plan.html
 Allow: /articles/ways-to-understand-the-tricks-played-by-people-around-you.html
 Allow: /articles/how-to-setup-solar-power-for-you-home.html
 Allow: /articles/how-to-be-selfish-and-focus-more-on-self.html
@@ -772,6 +773,7 @@ Allow: /articles/government.html
 Allow: /articles/hampi.html
 Allow: /articles/happy.html
 Allow: /articles/health.html
+Allow: /articles/horanadu.html
 Allow: /articles/hyderabad.html
 Allow: /articles/india.html
 Allow: /articles/kgudi.html
@@ -875,6 +877,7 @@ Allow: /feeds/government.xml
 Allow: /feeds/hampi.xml
 Allow: /feeds/happy.xml
 Allow: /feeds/health.xml
+Allow: /feeds/horanadu.xml
 Allow: /feeds/hyderabad.xml
 Allow: /feeds/india.xml
 Allow: /feeds/kgudi.xml
