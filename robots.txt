@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/is-it-true-that-peace-begins-with-a-smile.html
 Allow: /articles/bangalore-to-horanadu-solo-trip-plan.html
 Allow: /articles/ways-to-understand-the-tricks-played-by-people-around-you.html
 Allow: /articles/how-to-setup-solar-power-for-you-home.html
@@ -387,6 +388,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/anthony-de-mello.html
 Allow: /great-people/nargis.html
 Allow: /great-people/francis-younghusband.html
 Allow: /great-people/charan-singh.html
