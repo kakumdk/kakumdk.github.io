@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/why-is-spinach-called-a-superfood.html
 Allow: /articles/is-it-true-that-peace-begins-with-a-smile.html
 Allow: /articles/bangalore-to-horanadu-solo-trip-plan.html
 Allow: /articles/ways-to-understand-the-tricks-played-by-people-around-you.html
