@@ -2356,7 +2356,12 @@ button#play-truth-dare-next {
 .truth-dare-wrapper #policy-container {
     display: none;
 }
-
+.page-not-found {
+    margin: 15px auto;
+}
+.page-not-found p {
+    margin: unset;
+}
 
 
 
@@ -2679,5 +2684,11 @@ button#play-truth-dare-next {
     .truth-dare {
         background-color: #fb234a42;
     }
-    
+    .page-not-found {
+        text-align: center;
+        max-width: 420px;
+    }
+    .page-not-found p {
+        font-size: 18px;
+    }
 }
