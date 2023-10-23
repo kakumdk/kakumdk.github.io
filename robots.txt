@@ -999,6 +999,16 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/respiratory-issues-can-disrupt-your-sleep-heres-how-to-manage-them-naturally-101698048902668.html
+Allow: /news/chandrayaan-3-isros-dormant-lunar-mission-faces-new-challenges-on-the-moon-check-details-here-6435758.html
+Allow: /news/october-28-29-lunar-eclipse-to-be-visible-from-all-places-in-india-4506118.html
+Allow: /news/ganapath-box-office-collection-day-3-tiger-shroff-kriti-sanon-film-opening-weekend-101698029917924.html
+Allow: /news/leke-prabhu-ka-naam-from-tiger-3-salman-khan-katrina-kaif-arijit-singh-watch-video-101698038495362.html
+Allow: /news/elon-musk-says-he-will-give-1-billion-to-wikipedia-if-it-changes-name-to-2452584-2023-10-23.html
+Allow: /news/why-did-nawaz-sharif-rake-up-kashmir-issue-in-his-speech-after-return-to-pakistan-101697983731702.html
+Allow: /news/israel-hamas-war-news-live-updates-day-17-october-23-2023-palestine-attack-gaza-strip-aid-netanyahu-101698022873014.html
+Allow: /news/jasmer-singh-new-york-sikh-elderly-sikh-assaulted-by-us-man-after-their-cars-collided-dies-4506242.html
+Allow: /news/wagh-bakri-scion-parag-desai-49-dies-after-attack-by-street-dogs-101698038027720.html
 Allow: /news/vivek-agnihotri-pallavi-joshi-announce-new-mahabharata-film-parva-an-epic-tale-of-dharma-101697872017707.html
 Allow: /news/us-uk-support-canada-amid-row-with-india-over-diplomatic-presence-649485.html
 Allow: /news/isros-unmanned-test-flight-for-its-first-human-spaceflight-mission-gaganyaan-lifts-off-in-second-attempt-4501802.html
