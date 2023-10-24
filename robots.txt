@@ -999,6 +999,17 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/scientists-discover-ancient-tectonic-plate-that-disappeared-20-million-years-ago-650437.html
+Allow: /news/best-anti-pollution-masks.html
+Allow: /news/paytm-founder-vijay-shekhar-sharma-launches-fund-to-invest-in-ai-ev-startups-11587921.html
+Allow: /news/akbar-al-baker-to-step-down-as-qatar-airways-5-things-to-know-about-him-101698067172429.html
+Allow: /news/can-talk-about-israel-hamas-ceasefire-only-after-hostages-freed-joe-biden-4508499.html
+Allow: /news/bengaluru-two-men-seen-on-video-stealing-rs-13-lakh-from-parked-bmw-11698070416492.html
+Allow: /news/siachen-agniveer-death-how-harsh-is-weather-of-worlds-highest-battlefield-101698039951353.html
+Allow: /news/canadian-diplomats-misusing-powers-to-give-visas-to-khalistan-supporters-top-govt-sources-exclusive-8630014.html
+Allow: /news/tdp-jana-sena-alliance-is-a-vaccine-to-eliminate-pest-called-ysrcp-says-pawan-kalyan.html
+Allow: /news/chhattisgarh-elections-2023-bhupesh-baghel-promises-farm-loan-waiver-if-congress-wins-again-2679117.html
+Allow: /news/cyclone-hamoon-will-heavy-rain-dampen-durga-pujas-festive-spirits-in-bengal-odisha-know-details-11698063164687.html
 Allow: /news/respiratory-issues-can-disrupt-your-sleep-heres-how-to-manage-them-naturally-101698048902668.html
 Allow: /news/chandrayaan-3-isros-dormant-lunar-mission-faces-new-challenges-on-the-moon-check-details-here-6435758.html
 Allow: /news/october-28-29-lunar-eclipse-to-be-visible-from-all-places-in-india-4506118.html
