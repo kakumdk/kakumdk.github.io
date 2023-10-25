@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/look-deep-into-the-nature-and-then-you-will-understand-everything-better.html
 Allow: /articles/technical-information-to-know-about-the-solar-energy-setup-for-your-home.html
 Allow: /articles/why-is-spinach-called-a-superfood.html
 Allow: /articles/is-it-true-that-peace-begins-with-a-smile.html
