@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/always-keep-it-classy-and-stay-strong-because-strong-is-beautiful.html
 Allow: /articles/look-deep-into-the-nature-and-then-you-will-understand-everything-better.html
 Allow: /articles/technical-information-to-know-about-the-solar-energy-setup-for-your-home.html
 Allow: /articles/why-is-spinach-called-a-superfood.html
@@ -391,6 +392,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/atul-chitnis.html
 Allow: /great-people/bhajan-lal.html
 Allow: /great-people/george-fernandes.html
 Allow: /great-people/baburao-painter.html
@@ -1519,6 +1521,13 @@ Allow: /alcohol/old-monk-xxx-dark-rum.html
 Allow: /alcohol/hapusa-himalayan-dry-gin.html
 Allow: /alcohol/paul-john-xo-brandy.html
 Allow: /alcohol/carlsberg-elephant-strong.html
+Allow: /dentofacts/index.html
+Allow: /dentofacts/privacy-policy.html
+Allow: /dentofacts/terms-and-conditions.html
+Allow: /dentofacts/about.html
+Allow: /dentofacts/shorts/what-to-do-with-dark-cavities-on-teeth.html
+Allow: /dentofacts/shorts/healthy-diet-to-keep-your-teeth-healthy.html
+Allow: /dentofacts/articles/have-you-noticed-tongue-tie-in-children.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read.xml
@@ -1530,3 +1539,4 @@ Sitemap: https://peoplesblog.co.in/sitemaps/labels.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/pages.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/news.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/alcohol.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/dentofacts.xml
