@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-srikalahasti-solo-trip-plan.html
 Allow: /articles/always-keep-it-classy-and-stay-strong-because-strong-is-beautiful.html
 Allow: /articles/look-deep-into-the-nature-and-then-you-will-understand-everything-better.html
 Allow: /articles/technical-information-to-know-about-the-solar-energy-setup-for-your-home.html
@@ -392,6 +393,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/banda-singh-bahadur.html
 Allow: /great-people/atul-chitnis.html
 Allow: /great-people/bhajan-lal.html
 Allow: /great-people/george-fernandes.html
@@ -859,6 +861,7 @@ Allow: /articles/social-media.html
 Allow: /articles/software.html
 Allow: /articles/solar-energy.html
 Allow: /articles/solo.html
+Allow: /articles/srikalahasti.html
 Allow: /articles/srisailam.html
 Allow: /articles/symfony.html
 Allow: /articles/thekkady.html
@@ -963,6 +966,7 @@ Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
 Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
+Allow: /feeds/srikalahasti.xml
 Allow: /feeds/srisailam.xml
 Allow: /feeds/symfony.xml
 Allow: /feeds/thekkady.xml
