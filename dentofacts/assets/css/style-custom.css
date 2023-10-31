@@ -194,6 +194,28 @@ input#search-news {
 #mobile-nav-toggle {
     position: absolute;
 }
+#site-fixed-ad-container {
+    display: none;
+}
+#site-fixed-ad-container {
+    position: fixed;
+    z-index: 2147483645;
+    background-color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+    box-shadow: 0 0 18px rgba(0,0,0,.2);
+    padding: 5px;
+}
+#site-fixed-ad-container .x {
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+#site-fixed-ad-container .x:hover {
+    cursor: pointer;
+}
 
 
 /*  */
@@ -254,5 +276,15 @@ input#search-news {
     }
     #about .content h2 {
         font-size: 36px;
+    }
+    #site-fixed-ad-container {
+        display: block;
+    }
+    #site-fixed-ad-container {
+        width: 25%;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 5px;
+        padding: 8px;
     }
 }
