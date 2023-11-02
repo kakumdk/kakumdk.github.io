@@ -1009,6 +1009,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/two-spacewalkers-exit-station-for-communications-solar-array-work.html
+Allow: /news/shah-rukh-khan-greets-fans-on-58th-birthday-midnight-101698887708268.html
 Allow: /news/commercial-lpg-cylinder-prices-hiked-by-over-100-from-today-check-latest-rates-101698813431523.html
 Allow: /news/israel-pm-netanyahu-vows-victory-against-hamas-in-long-gaza-war-despite-painful-losses-101698831231649.html
 Allow: /news/ed-attaches-jet-airways-naresh-goyal-familys-assets-worth-rs-535-crore-101698837252000.html
