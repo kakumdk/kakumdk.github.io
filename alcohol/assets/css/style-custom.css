@@ -246,11 +246,11 @@ footer .footer-vertical-nav.bottom-footer li a:hover {
     padding-right: 15px;
 }
 ol.breadcrumb {
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     background-color: #fff;
     font-size: 14px;
     margin: 15px auto;
+    padding: 15px 0;
 }
 ol.breadcrumb li,
 ol.breadcrumb li a {
