@@ -956,6 +956,84 @@ function showGlobalSearchResults(search) {
             }
         });
     });
+    readJsonFile("/data/dentofacts.json", function(text){
+        var data = JSON.parse(text);
+        data.slice().reverse().forEach(function (_data) {
+            var title = _data.title.toLowerCase();
+            title += " " + _data.content.toLowerCase();
+            if (search !== null) {
+                var searchFor = search.toLowerCase().split(' ');
+                var found = false;
+                for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                    if (title.includes(searchFor[i])) {
+                        found = true;
+                    }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = getDentofactsURL(_data.file, _data.type);
+                    var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-medkit"></i><span>Dentofacts</span>'];
+                    results.push(_tmp);
+                    found = false;
+                }
+            }
+        });
+    });
+    readJsonFile("/data/news.json", function(text){
+        var data = JSON.parse(text);
+        data.slice().reverse().forEach(function (_data) {
+            var title = _data.title.toLowerCase();
+            title += " " + _data.desc.toLowerCase();
+            if (search !== null) {
+                var searchFor = search.toLowerCase().split(' ');
+                var found = false;
+                for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                    if (title.includes(searchFor[i])) {
+                        found = true;
+                    }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = "/news/"+_data.url;
+                    var _tmp = [_data.title, _data.desc, url.toLowerCase(), '<i class="fa fa-newspaper-o"></i><span>News</span>'];
+                    results.push(_tmp);
+                    found = false;
+                }
+            }
+        });
+    });
+    readJsonFile("/data/alcohol.json", function(text){
+        var data = JSON.parse(text);
+        data.slice().reverse().forEach(function (_data) {
+            var title = _data.title.toLowerCase();
+            title += " " + _data.desc.toLowerCase();
+            if (search !== null) {
+                var searchFor = search.toLowerCase().split(' ');
+                var found = false;
+                for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                    if (title.includes(searchFor[i])) {
+                        found = true;
+                    }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = "/alcohol/"+_data.url;
+                    var _tmp = [_data.title, _data.desc, url.toLowerCase(), '<i class="fa fa-beer"></i><span>Alcohol</span>'];
+                    results.push(_tmp);
+                    found = false;
+                }
+            }
+        });
+    });
     setTimeout(function () {
         var uniqueResults = [];
         uniqueResults = multiDimensionalUnique(results);
@@ -963,9 +1041,9 @@ function showGlobalSearchResults(search) {
             resultsCount++;
             var output = '<div class="global-search-result">' +
                 '<div class="global-search-result-type">'+_result[3]+'</div>' +
-                '<h2><a href="'+_result[2]+'">'+_result[0]+'</a></h2>' +
+                '<h2><a href="'+_result[2]+'" target="_blank">'+_result[0]+'</a></h2>' +
                 '<p>'+_result[1]+'</p>' +
-                '<a href="'+_result[2]+'">'+_result[2]+'</a>' +
+                '<a href="'+_result[2]+'" target="_blank">'+_result[2]+'</a>' +
                 '</div>';
             $('.global-search-results').append(output);
         });
@@ -981,7 +1059,7 @@ function showGlobalSearchResults(search) {
                 $('.global-search-results').html(output);
             }
         }
-    }, 100);
+    }, 200);
     setTimeout(function () {
         if (resultsCount > 0) {
             // console.log(resultsCount);
@@ -993,7 +1071,7 @@ function showGlobalSearchResults(search) {
         // document.getElementById('global_search_scroll').scrollIntoView({
         //     behavior: 'smooth'
         // });
-    }, 200);
+    }, 300);
     
 }
 function readJsonFile(file, callback) {
@@ -1042,6 +1120,15 @@ function getAuthorsURL(file) {
         .replaceAll('----', '')
         .replaceAll('---', '');
     return '/authors/' + url;
+}
+function getDentofactsURL(file, type) {
+    var url = '';
+    url = file
+        .replaceAll(".json", ".html")
+        .replace(/\d+/g, '')
+        .replaceAll('----', '')
+        .replaceAll('---', '');
+    return '/dentofacts/'+ type +'s/' + url;
 }
 function multiDimensionalUnique(arr) {
     var uniques = [];
