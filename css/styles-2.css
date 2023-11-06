@@ -2460,6 +2460,9 @@ button#play-truth-dare-next {
     .footer .widget .newsletter-widget-subscribe button:hover {
         cursor: pointer;
     }
+    .footer .widget .post-sharing-footer {
+        margin: 10px auto;
+    }
     .footer .widget .post-sharing-footer a {
         margin: 5px auto;
     }
@@ -2467,9 +2470,12 @@ button#play-truth-dare-next {
         color: #0275d8;
         text-decoration: none;
     }
+    .footer .widget .widget-title.subscribe {
+        margin-top: 20px;
+    }
     .footer .widget .link-widget ul li {
         width: 100%;
-        margin: 2px auto;
+        margin: 3px auto;
     }
     .footer .widget .link-widget ul li a {
         font-size: 12px;
