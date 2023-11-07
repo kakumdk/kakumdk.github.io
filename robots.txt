@@ -1544,6 +1544,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /dentofacts/articles/if-you-lose-or-remove-your-teeth-what-to-do-next.html
 Allow: /dentofacts/shorts/five-things-to-do-daily-for-a-healthy-teeth.html
 Allow: /dentofacts/shorts/have-you-observed-dental-erosion-in-your-teeth.html
 Allow: /dentofacts/shorts/what-to-do-with-dark-cavities-on-teeth.html
