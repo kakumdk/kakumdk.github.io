@@ -1041,9 +1041,9 @@ function showGlobalSearchResults(search) {
             resultsCount++;
             var output = '<div class="global-search-result">' +
                 '<div class="global-search-result-type">'+_result[3]+'</div>' +
-                '<h2><a href="'+_result[2]+'" target="_blank">'+_result[0]+'</a></h2>' +
+                '<h2><a href="'+_result[2]+'">'+_result[0]+'</a></h2>' +
                 '<p>'+_result[1]+'</p>' +
-                '<a href="'+_result[2]+'" target="_blank">'+_result[2]+'</a>' +
+                '<a href="'+_result[2]+'">'+_result[2]+'</a>' +
                 '</div>';
             $('.global-search-results').append(output);
         });
