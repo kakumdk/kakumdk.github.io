@@ -1015,6 +1015,14 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/israelhamas-war-latest-updates-israel-defence-minister-on-countrys-plan-after-war-complete-control-of-gaza-101699374300977.html
+Allow: /news/nato-formal-suspension-cold-war-era-security-treaty-after-russias-pullout-101699356429493.html
+Allow: /news/georgia-woman-serving-as-israeli-cop-who-defended-country-against-october-7-hamas-attack-stabbed-to-death-by-teen-101699406687184.html
+Allow: /news/firecracker-containing-barium-ban-binds-every-state-sc-9017738.html
+Allow: /news/telangana-assembly-election-2023-in-telangana-pm-modi-shares-stage-with-pawan-kalyan-4555799.html
+Allow: /news/india-malaysia-looking-at-expanding-cooperation-in-defence-trade-tourism-101699407376628.html
+Allow: /news/soldiers-kin-among-4-abducted-in-manipur-7-injured-in-firing-101699383390731.html
+Allow: /news/priyanka-chaturvedi-vs-ncw-chief-over-nitish-kumars-remarks-women-in-bihar-assembly-101699409994582.html
 Allow: /news/kejriwal-to-skip-illegal-ed-summons-will-be-in-madhya-pradesh-instead-101698899682325.html
 Allow: /news/two-spacewalkers-exit-station-for-communications-solar-array-work.html
 Allow: /news/shah-rukh-khan-greets-fans-on-58th-birthday-midnight-101698887708268.html
