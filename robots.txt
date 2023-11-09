@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/ten-best-places-to-travel-solo-in-south-india.html
 Allow: /articles/what-are-some-examples-for-emotional-intelligence.html
 Allow: /articles/how-to-choose-solar-panels-which-are-more-efficient.html
 Allow: /articles/bangalore-to-srikalahasti-solo-trip-plan.html
