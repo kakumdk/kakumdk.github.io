@@ -2710,7 +2710,7 @@ button#play-truth-dare-next {
       height: 100%;
       opacity: 0.15;
       z-index: -1;
-      background-image: url('https://t3.ftcdn.net/jpg/01/72/90/92/360_F_172909278_plxmQjlUaw14rJv7qyHrrlc8UJMh0weg.webp');
+      background-image: url('/upload/site/shop-banner.webp');
     }
     body.shop .shop-data .shop-data-search input,
     body.shop .shop-data .shop-category,
