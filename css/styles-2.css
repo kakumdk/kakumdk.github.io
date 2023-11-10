@@ -2697,4 +2697,34 @@ button#play-truth-dare-next {
     .page-not-found p {
         font-size: 18px;
     }
+    body.shop {
+        position: relative;
+        z-index: 1;
+    }
+    body.shop:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      z-index: -1;
+      background-image: url('https://t3.ftcdn.net/jpg/01/72/90/92/360_F_172909278_plxmQjlUaw14rJv7qyHrrlc8UJMh0weg.webp');
+    }
+    body.shop .shop-data .shop-data-search input,
+    body.shop .shop-data .shop-category,
+    body.shop .shop-data .shop-data-results .shop-item,
+    body.shop .page-title.single-wrapper .breadcrumb,
+    body.shop .header .navbar .navbar-nav li.nav-item a.nav-link.search,
+    body.shop .blog-title-area .breadcrumb,
+    body.shop .shop-details {
+        background-color: #fff;
+        border: 1px solid #e7ebed;
+    }
+    body.shop .header,
+    body.shop .header .navbar {
+        background-color: unset !important;
+    }
+
 }
