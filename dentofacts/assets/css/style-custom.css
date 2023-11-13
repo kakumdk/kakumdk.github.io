@@ -315,7 +315,10 @@ input#search-news {
 .shop-data .shop-data-results .shop-item .category.hide {
     display: none;
 }
-
+.google-ad,
+.amazon-ad {
+    margin: 15px auto;
+}
 
 /*  */
 @media (min-width: 600px) {
