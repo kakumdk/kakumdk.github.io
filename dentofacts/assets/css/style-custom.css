@@ -60,7 +60,11 @@ body a {
 .article-meta a.ss-btn:hover {
     color: #fff !important;
 }
-.article-meta a.ss-btn.ss-btn-share {
+.article-meta a.ss-btn.ss-btn-pinterest,
+.article-meta a.ss-btn.ss-btn-viber,
+.article-meta a.ss-btn.ss-btn-tumblr,
+.article-meta a.ss-btn.ss-btn-reddit,
+.article-meta a.ss-btn.ss-btn-pocket {
     display: none;
 }
 .article-image img {
@@ -110,9 +114,13 @@ footer .footer-vertical-nav li {
     display: block;
     text-align: left;
 }
+footer .footer-vertical-nav.bottom-footer {
+    font-size: 12px;
+}
 footer .footer-vertical-nav.bottom-footer li a {
     margin: 15px 0;
     padding: unset;
+    font-size: 13px;
 }
 .back-to-top {
     bottom: 45px;
