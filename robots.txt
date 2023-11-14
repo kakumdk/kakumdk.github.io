@@ -1560,6 +1560,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/articles/how-to-keep-children-teeth-healthy-and-strong.html
+Allow: /dentofacts/shorts/your-oral-health-is-your-total-health.html
 Allow: /dentofacts/articles/tooth-sensitivity-what-to-do-and-what-not-to-do.html
 Allow: /dentofacts/shorts/if-when-do-you-need-to-visit-a-dentist.html
 Allow: /dentofacts/articles/if-you-lose-or-remove-your-teeth-what-to-do-next.html
