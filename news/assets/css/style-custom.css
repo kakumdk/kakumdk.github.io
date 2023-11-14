@@ -327,6 +327,13 @@ footer p.footer-notes a,
 footer p.footer-notes a:hover {
     color: #212529;
 }
+a.ss-btn.ss-btn-pinterest,
+a.ss-btn.ss-btn-viber,
+a.ss-btn.ss-btn-tumblr,
+a.ss-btn.ss-btn-reddit,
+a.ss-btn.ss-btn-pocket {
+    display: none;
+}
 
 
 
@@ -399,11 +406,11 @@ footer p.footer-notes a:hover {
         position: unset;
     }
     .ss-box .ss-btn {
-        padding: 9px;
+        padding: 8px;
         margin: 2px;
         border-radius: 50%;
-        font-size: 15px;
-        width: 34px;
+        font-size: 16px;
+        width: 36px;
     }
     .prev-next-news .prev, .prev-next-news .next {
         position: unset;
@@ -413,6 +420,10 @@ footer p.footer-notes a:hover {
     }
     ol.breadcrumb {
         margin-bottom: 15px;
+    }
+    a.ss-btn.ss-btn-share,
+    a.ss-btn.ss-btn-sms {
+        display: none;
     }
 
 }
