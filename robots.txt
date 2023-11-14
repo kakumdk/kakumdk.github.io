@@ -1021,6 +1021,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/can-bjp-win-back-karnataka-by-turning-to-yediyurappa-deve-gowda.html
+Allow: /news/the-answer-is-modi-jaishankar-credits-pm-for-profound-changes-in-india.html
+Allow: /news/sanjay-raut-urges-ec-action-over-bjps-ram-lalla-darshan-promise-in-madhya-pradesh-does-this-mean.html
+Allow: /news/justin-trudeau-india-bangladesh-minorities-canada.html
 Allow: /news/israelhamas-war-latest-updates-israel-defence-minister-on-countrys-plan-after-war-complete-control-of-gaza-101699374300977.html
 Allow: /news/nato-formal-suspension-cold-war-era-security-treaty-after-russias-pullout-101699356429493.html
 Allow: /news/georgia-woman-serving-as-israeli-cop-who-defended-country-against-october-7-hamas-attack-stabbed-to-death-by-teen-101699406687184.html
