@@ -141,6 +141,11 @@ p {
     -webkit-box-orient: vertical;
     padding-right: 15px;
 }
+._design_one_section_news p,
+.search-news .news p {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
 ._design_two_section_news p.line-4,
 ._design_three_section_news p.line-4 {
     -webkit-line-clamp: 4;
@@ -394,16 +399,16 @@ footer p.footer-notes a:hover {
         position: unset;
     }
     .ss-box .ss-btn {
-        padding: 8px;
+        padding: 9px;
         margin: 2px;
         border-radius: 50%;
-        font-size: 12px;
-        width: 30px;
+        font-size: 15px;
+        width: 34px;
     }
     .prev-next-news .prev, .prev-next-news .next {
         position: unset;
         display: unset;
-        font-size: 24px;
+        font-size: 28px;
         padding: unset;
     }
     ol.breadcrumb {
