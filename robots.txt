@@ -1022,6 +1022,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/heavy-rains-over-west-bengal-and-odisha-this-week.html
+Allow: /news/pm-narendra-modi-to-disburse-15th-pm-kisan-tranche-in-jharkhand.html
+Allow: /news/sonia-gandhi-going-to-make-me-cm-telangana-congress-leader-in-viral-video.html
+Allow: /news/isralehamas-war-latest-updates-israeli-force-storms-gaza-hospital-hamas-holds-biden-wholly-responsible.html
 Allow: /news/joe-biden-xi-jinping-bidens-remark-on-chinas-real-problems-ahead-of-meeting-with-xi.html
 Allow: /news/can-bjp-win-back-karnataka-by-turning-to-yediyurappa-deve-gowda.html
 Allow: /news/the-answer-is-modi-jaishankar-credits-pm-for-profound-changes-in-india.html
