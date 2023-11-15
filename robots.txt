@@ -1022,6 +1022,9 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/4-labourers-from-bihar-die-of-suffocation-inside-sceptic-tank-in-surat.html
+Allow: /news/man-who-raped-killed-while-on-bail-given-death-sentence.html
+Allow: /news/nearly-5-000-including-39-myanmar-army-personnel-cross-border-amid-tensions.html
 Allow: /news/heavy-rains-over-west-bengal-and-odisha-this-week.html
 Allow: /news/pm-narendra-modi-to-disburse-15th-pm-kisan-tranche-in-jharkhand.html
 Allow: /news/sonia-gandhi-going-to-make-me-cm-telangana-congress-leader-in-viral-video.html
