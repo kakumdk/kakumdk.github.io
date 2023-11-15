@@ -1564,6 +1564,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /dentofacts/shorts/what-are-the-reasons-for-yellow-teeth.html
 Allow: /dentofacts/articles/dentist-suggestions-on-tooth-cleaning.html
 Allow: /dentofacts/articles/how-to-keep-children-teeth-healthy-and-strong.html
 Allow: /dentofacts/shorts/your-oral-health-is-your-total-health.html
