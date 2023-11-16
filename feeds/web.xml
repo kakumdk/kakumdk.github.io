@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Imagefield Slideshow module to render Slideshow on Drupal website</title>
+			<link>https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</link>
+			<description>If you want to show images as a slideshow on your drupal website and want to do it quickly. Here&amp;rsquo;s the module which solves your purpose. Imagefield Slideshow is the simple module which will allow images to render as a slideshow on the drupal website at the field level.  This module will provide a Slideshow formatter for Image fields, so that multiple images are uploaded to that particular im</description>
+			<pubDate>Thu, 16 Nov 2023 16:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</guid>
+    </item><item>
 			<title>Unable to install Update Manager, update.settings already exists in active configuration</title>
 			<link>https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</link>
 			<description>Generally you see this error while you try to install the update manager module via UI or via Drush command.  Not really sure how you came up with this issue. But if you are seeing this issue, you have an entry in your site&amp;#39;s configuration saying that the update module is already installed.  1. You can simply delete this configuration with the below command  $ drush cdel update.settings  Which</description>
