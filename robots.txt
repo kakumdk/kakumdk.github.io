@@ -1026,6 +1026,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/can-infertility-be-temporary-check-out-these-tips-to-boost-fertility.html
+Allow: /news/study-reveals-acupuncture-and-massage-as-effective-pain-management-in-advanced-cancer.html
+Allow: /news/smoking-is-the-leading-cause-of-chronic-obstructive-pulmonary-disease.html
+Allow: /news/thai-cave-rescue-experts-consulted-uttarakhand-tunnel-op-may-take-2-3-more-days.html
 Allow: /news/4-labourers-from-bihar-die-of-suffocation-inside-sceptic-tank-in-surat.html
 Allow: /news/man-who-raped-killed-while-on-bail-given-death-sentence.html
 Allow: /news/nearly-5-000-including-39-myanmar-army-personnel-cross-border-amid-tensions.html
