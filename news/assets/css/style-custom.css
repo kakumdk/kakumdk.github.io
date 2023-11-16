@@ -360,7 +360,11 @@ a.ss-btn.ss-btn-pocket {
         text-align: center;
     }
     .navbar .navbar-top .logo {
-        /* font-size: 28px; */
+        font-size: 28px;
+    }
+    .navbar .navbar-top .logo .secondary {
+        font-size: 14px;
+        margin-top: 2px;
     }
     .navbar .navbar-bottom-menu {
         border-top: 1px solid #dbdbdb;
