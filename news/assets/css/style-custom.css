@@ -429,5 +429,8 @@ a.ss-btn.ss-btn-pocket {
     a.ss-btn.ss-btn-sms {
         display: none;
     }
+    .news_main_section .continue-reading {
+        height: 15%;
+    }
 
 }
