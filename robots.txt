@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/create-a-volcanic-eruption-with-baking-soda-and-vinegar.html
 Allow: /articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html
 Allow: /articles/carrot-fried-rice-recipe-andhra-style.html
 Allow: /articles/the-art-of-being-present-in-the-moment.html
