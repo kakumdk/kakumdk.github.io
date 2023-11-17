@@ -357,6 +357,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/union-is-strength.html
 Allow: /quick-read/the-loyal-mongoose.html
 Allow: /quick-read/the-stork-and-the-crab.html
 Allow: /quick-read/the-brahmins-dream.html
