@@ -1596,6 +1596,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /dentofacts/articles/benefits-of-aloe-vera-in-oral-health.html
 Allow: /dentofacts/articles/is-banking-dental-stem-cells-important-today.html
 Allow: /dentofacts/articles/why-dental-implants.html
 Allow: /dentofacts/shorts/what-are-the-reasons-for-yellow-teeth.html
