@@ -570,6 +570,10 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/19329884.html
+Allow: /shop/b07gl1976k.html
+Allow: /shop/b07h7jb1rz.html
+Allow: /shop/b01l6mt7e0.html
 Allow: /shop/b0c3lpxhl3.html
 Allow: /shop/b0b8nhx62w.html
 Allow: /shop/9441308.html
