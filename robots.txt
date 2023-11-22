@@ -1047,6 +1047,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/iceland-braces-for-imminent-volcanic-eruption-warning-with-just-30-minute-warning.html
+Allow: /news/israel-hamas-war-day-47-live-updates-netanyahu-says-war-will-continue.html
 Allow: /news/40-boats-gutted-in-visakhapatnam-fishing-harbour-fire-loss-over-rs-30-crore.html
 Allow: /news/chandrababu-naidu-granted-regular-bail-in-skill-development-case-report.html
 Allow: /news/joe-biden-acknowledged-the-fact-big-message-piyush-goyal-after-meeting-us-president.html
