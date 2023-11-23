@@ -573,6 +573,10 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b0c3mhb63q.html
+Allow: /shop/b01lp0ukje.html
+Allow: /shop/b07p5sx4kk.html
+Allow: /shop/b0bzybkss6.html
 Allow: /shop/19329884.html
 Allow: /shop/b07gl1976k.html
 Allow: /shop/b07h7jb1rz.html
