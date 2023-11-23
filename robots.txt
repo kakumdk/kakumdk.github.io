@@ -1054,6 +1054,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/64-million-illegal-immigrants-living-in-us-725-000-are-indians-study.html
+Allow: /news/mysterious-pneumonia-outbreak-in-china-who-seeks-details-10-points.html
+Allow: /news/government-to-come-up-with-regulations-to-tackle-deepfakes-says-ashwini-vaishnaw.html
+Allow: /news/ai-must-be-safe-for-society-pm-modi-on-deepfakes-at-g20-meet.html
 Allow: /news/uttarakhand-tunnel-collapse-latest-update-tunnelling-expert-arnold-dix-says-its-like-were-knocking-at-front-door.html
 Allow: /news/iceland-braces-for-imminent-volcanic-eruption-warning-with-just-30-minute-warning.html
 Allow: /news/israel-hamas-war-day-47-live-updates-netanyahu-says-war-will-continue.html
