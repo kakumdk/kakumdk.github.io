@@ -1613,6 +1613,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /dentofacts/articles/why-do-dentists-suggest-clear-aligners-invisalign.html
 Allow: /dentofacts/shorts/questions-to-ask-dentist-before-dental-implant.html
 Allow: /dentofacts/articles/dental-fluorosis-types-prevention-and-treatments.html
 Allow: /dentofacts/articles/benefits-of-aloe-vera-in-oral-health.html
