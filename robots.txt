@@ -576,6 +576,7 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/b07481lpmf.html
 Allow: /shop/14412931.html
 Allow: /shop/14745582.html
 Allow: /shop/14745462.html
