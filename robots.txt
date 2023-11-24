@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/cabbage-fried-rice-recipe.html
 Allow: /articles/possible-reasons-you-feel-tired-all-the-time.html
 Allow: /articles/optimal-placement-of-solar-panels-for-better-observation-of-solar-energy.html
 Allow: /articles/bangalore-to-kudremukh-solo-trip-plan.html
