@@ -82,6 +82,13 @@
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
     </item><item>
+			<title>Profiling Drupal Performance with Webgrind and Xdebug</title>
+			<link>https://peoplesblog.co.in/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html</link>
+			<description>Xdebug Profiling is all about measuring the performance of PHP code. In this article you gonna see how your measure the performance of your php code using webgrid and the xdebug.  Requirements:   Xdebug, with profiler enabled Webgrind Xdebug Addon plugin for browser   1. Xdebug with profiler enabled  For setting up the environment, edit the php.ini file and add following lines.  xdebug.profiler_en</description>
+			<pubDate>Sat, 25 Nov 2023 09:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html</guid>
+    </item><item>
 			<title>Configuring &amp; Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</title>
 			<link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
 			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.
