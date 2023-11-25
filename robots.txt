@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-nagarahole-solo-trip-plan.html
 Allow: /articles/cabbage-fried-rice-recipe.html
 Allow: /articles/possible-reasons-you-feel-tired-all-the-time.html
 Allow: /articles/optimal-placement-of-solar-panels-for-better-observation-of-solar-energy.html
@@ -900,6 +901,7 @@ Allow: /articles/missile.html
 Allow: /articles/movie.html
 Allow: /articles/munnar.html
 Allow: /articles/mysore.html
+Allow: /articles/nagarahole.html
 Allow: /articles/navy.html
 Allow: /articles/pantheon.html
 Allow: /articles/php.html
@@ -1006,6 +1008,7 @@ Allow: /feeds/missile.xml
 Allow: /feeds/movie.xml
 Allow: /feeds/munnar.xml
 Allow: /feeds/mysore.xml
+Allow: /feeds/nagarahole.xml
 Allow: /feeds/navy.xml
 Allow: /feeds/pantheon.xml
 Allow: /feeds/php.xml
