@@ -1073,6 +1073,9 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/complaint-against-mamata-banerjee-over-tit-for-tat-arrest-warning.html
+Allow: /news/heavy-rain-hail-in-maharashtra-gujarat-madhya-pradesh-rajasthan.html
+Allow: /news/pune-man-dies-after-being-punched-in-nose-by-wife-over-anniversary-gift-dubai-trip-demands.html
 Allow: /news/europes-ariane-6-launcher-passes-key-engine-firing-test-european-space-agency.html
 Allow: /news/rajasthan-assembly-election-2023-ashok-gehlot-shares-sachin-pilots-video-message-after-pm-modis-infighting-jab.html
 Allow: /news/64-million-illegal-immigrants-living-in-us-725-000-are-indians-study.html
