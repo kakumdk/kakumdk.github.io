@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Balloon Rocket science experiment for children</title>
+			<link>https://peoplesblog.co.in/articles/balloon-rocket-science-experiment-for-children.html</link>
+			<description>The balloon rocket experiment is a simple and exciting way to explore the principles of action and reaction, or Newton&amp;#39;s Third Law of Motion.  Here&amp;#39;s how you can conduct the balloon rocket science experiment for children:  Materials:   Balloon String or thread (about 10-15 feet) Drinking straw Tape Scissors      (adsbygoogle = window.adsbygoogle || []).push({});    Procedure:   Prepare the</description>
+			<pubDate>Sun, 26 Nov 2023 11:20:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/balloon-rocket-science-experiment-for-children.html</guid>
+    </item><item>
 			<title>Optimal placement of solar panels for better observation of solar energy</title>
 			<link>https://peoplesblog.co.in/articles/optimal-placement-of-solar-panels-for-better-observation-of-solar-energy.html</link>
 			<description>Optimal panel placement is crucial for maximizing energy production from your solar panel system. Here are some key considerations:   Orientation: In the Northern Hemisphere, panels should face true south to capture the maximum amount of sunlight throughout the day. In the Southern Hemisphere, panels should face true north. Tilt Angle: The tilt angle of the panels should be approximately equal to </description>
@@ -348,13 +355,6 @@
 			<pubDate>Tue, 16 May 2023 14:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</guid>
-    </item><item>
-			<title>node_get_recent() is deprecated in Drupal 10.1.x</title>
-			<link>https://peoplesblog.co.in/articles/node-get-recent-is-deprecated-in-drupal-ten.html</link>
-			<description>node_get_recent() is unused in core and is now deprecated, developers can use views or EntityQuery to get the nodes which are recently modified or added.  Earlier drupal developers used to use the function&amp;nbsp;node_get_recent() to get the recently changed nodes like seen in below example  $latest_updated_nodes = node_get_recent(10);  Now from Drupal 10.1.x onwards, developers need to use entity q</description>
-			<pubDate>Tue, 09 May 2023 09:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/node-get-recent-is-deprecated-in-drupal-ten.html</guid>
     </item>
 </channel>
 </rss>
