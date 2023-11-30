@@ -367,6 +367,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-crane-and-the-crab.html
 Allow: /quick-read/the-hunter-and-the-magical-bird.html
 Allow: /quick-read/the-crow-and-the-pitcher.html
 Allow: /quick-read/the-weaver-and-the-princess.html
@@ -1662,6 +1663,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /dentofacts/shorts/bleeding-gums-bleeding-mouth-facts.html
 Allow: /dentofacts/articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /dentofacts/articles/why-do-dentists-suggest-clear-aligners-invisalign.html
 Allow: /dentofacts/shorts/questions-to-ask-dentist-before-dental-implant.html
