@@ -141,45 +141,7 @@
                                 <img loading="lazy" alt="Drupal Cache Clear & Cache Rebuild" src="/upload/banners/cache-drupal.jpg" class="img-fluid" title="Drupal Cache Clear & Cache Rebuild" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
-                                <div><p>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.</p>
-                            <p>And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site would slow for a couple of clicks but would be quick once the caches are filled back.</p>
-                            <p>Coming to the article's agenda, Why there is Cache Rebuild on Drupal 8, while we had Cache Clear in Drupal 7.</p>
-                            <p><strong><sup><i class="fa fa-quote-left"></i></sup> Since Drupal is using caching very intensively and by this it creates lots of inter-dependencies. And for this clearing parts of the entire caches would lead to some major risks for a website. Here’s the Cache Rebuild will come and practically will rebuild (re-bootstraps) the whole Drupal site, and will make sure that caches are perfectly cleared without any errors. <sup><i class="fa fa-quote-right"></i></sup></strong></p>
-                            <p>Drupal 8's cache-rebuild is one more step in the conventional cache-clear practice, it adds a new "re-bootstrapping" operation to the "cache clearing" process.</p>
-                            <p>And how do you rebuild your caches in Drupal 8?</p>
-                            <ul class="check">
-                                <li>Via Drush</li>
-                                <li>Via Admin side</li>
-                                <li>Via /core/rebuild.php</li>
-                                <li>Via Truncating all "cache_*" tables</li>
-                            </ul>
-                            <h3>1. Via Drush</h3>
-                            <p>If you have drush installed you will have the following commands for cache rebuild</p>
-                            <pre>drush cache-rebuild
-drush rebuild or drush cr</pre>
-                            <h3>2. Via Admin</h3>
-                            <p>On the Drupal site, Navigate to <code>Administration > Configuration > Development > Performance</code>. Click the button <code>Clear all Caches</code>.</p>
-                            <div class="google-ad">
-                                <ins class="adsbygoogle"
-                                     style="display:block; text-align:center;"
-                                     data-ad-layout="in-article"
-                                     data-ad-format="fluid"
-                                     data-ad-client="ca-pub-2683569506254139"
-                                     data-ad-slot="4812668708"></ins>
-                                <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </div>
-                            <h3>3. Via <code>/core/rebuild.php</code></h3>
-                            <p>Drupal 8 comes with a new <code>/core/rebuild.php</code>, which does the cache rebuild. This actually Rebuilds all Drupal caches even when Drupal itself does not work.</p>
-                            <p>Add <code>$settings['rebuild_access'] = TRUE;</code> in your <code>settings.php</code>, and visit <code>BASE_URL/rebuild.php</code></p>
-                            <p>Run script in your command line <code>/core/scripts/rebuild_token_calculator.sh</code>, then use the results there as query parameters for <code>/core/rebuild.php</code></p>
-                            <p>Here's the source of <a target="_blank" href="https://www.drupal.org/node/2153725"><strong>Rebuild Script in Drupal (https://www.drupal.org/node/2153725)</strong></a></p>
-                            <h3>4. Via Truncating all "cache_*" tables</h3>
-                            <p>Another approach is to empty all the data from the cache table from Drupal.</p>
-                            <pre>TRUNCATE cache_config</pre>
-                            <p>Similarly for all the cache_* tables.</p>
-                            <p>To summarise, <strong>Drupal 8's cache-rebuild</strong> is one more step in the conventional cache-clear practice, it adds a new <strong>re-bootstrapping</strong> operation to the <strong>cache clearing</strong> process.</p></div>
+                                <div><p>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.</p>                            <p>And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site would slow for a couple of clicks but would be quick once the caches are filled back.</p>                            <p>Coming to the article's agenda, Why there is Cache Rebuild on Drupal 8, while we had Cache Clear in Drupal 7.</p>                            <p><strong><sup><i class="fa fa-quote-left"></i></sup> Since Drupal is using caching very intensively and by this it creates lots of inter-dependencies. And for this clearing parts of the entire caches would lead to some major risks for a website. Here’s the Cache Rebuild will come and practically will rebuild (re-bootstraps) the whole Drupal site, and will make sure that caches are perfectly cleared without any errors. <sup><i class="fa fa-quote-right"></i></sup></strong></p>                            <p>Drupal 8's cache-rebuild is one more step in the conventional cache-clear practice, it adds a new "re-bootstrapping" operation to the "cache clearing" process.</p>                            <p>And how do you rebuild your caches in Drupal 8?</p>                            <ul class="check">                                <li>Via Drush</li>                                <li>Via Admin side</li>                                <li>Via /core/rebuild.php</li>                                <li>Via Truncating all "cache_*" tables</li>                            </ul>                            <h3>1. Via Drush</h3>                            <p>If you have drush installed you will have the following commands for cache rebuild</p>                            <pre>drush cache-rebuilddrush rebuild or drush cr</pre>                            <h3>2. Via Admin</h3>                            <p>On the Drupal site, Navigate to <code>Administration > Configuration > Development > Performance</code>. Click the button <code>Clear all Caches</code>.</p>                            <div class="google-ad">                                <ins class="adsbygoogle"                                     style="display:block; text-align:center;"                                     data-ad-layout="in-article"                                     data-ad-format="fluid"                                     data-ad-client="ca-pub-2683569506254139"                                     data-ad-slot="4812668708"></ins>                                <script>                                    (adsbygoogle = window.adsbygoogle || []).push({});                                </script>                            </div>                            <h3>3. Via <code>/core/rebuild.php</code></h3>                            <p>Drupal 8 comes with a new <code>/core/rebuild.php</code>, which does the cache rebuild. This actually Rebuilds all Drupal caches even when Drupal itself does not work.</p>                            <p>Add <code>$settings['rebuild_access'] = TRUE;</code> in your <code>settings.php</code>, and visit <code>BASE_URL/rebuild.php</code></p>                            <p>Run script in your command line <code>/core/scripts/rebuild_token_calculator.sh</code>, then use the results there as query parameters for <code>/core/rebuild.php</code></p>                            <p>Here's the source of <a target="_blank" href="https://www.drupal.org/node/2153725"><strong>Rebuild Script in Drupal (https://www.drupal.org/node/2153725)</strong></a></p>                            <h3>4. Via Truncating all "cache_*" tables</h3>                            <p>Another approach is to empty all the data from the cache table from Drupal.</p>                            <pre>TRUNCATE cache_config</pre>                            <p>Similarly for all the cache_* tables.</p>                            <p>To summarise, <strong>Drupal 8's cache-rebuild</strong> is one more step in the conventional cache-clear practice, it adds a new <strong>re-bootstrapping</strong> operation to the <strong>cache clearing</strong> process.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h3>

@@ -22,8 +22,7 @@
     </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
-			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
-                            Twig is a PHP-based compiled templating </description>
+			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>

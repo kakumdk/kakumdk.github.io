@@ -1856,58 +1856,49 @@
   </item><item>
     <title>Understand why Twig is replacing PHP Template in Drupal</title>
     <link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
-    <description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
-                            Twig is a PHP-based compiled templating </description>
+    <description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
   </item><item>
     <title>Bangalore to Gandikota Trip Plan</title>
     <link>https://peoplesblog.co.in/articles/bangalore-to-gandikota-two-days-one-night-trip-plan.html</link>
-    <description>Two Days Trip from Bangalore to Gandikota to Bangalore, If you are a couple riding on a Bike or You are a Family driving in Car, then this two days plan works very well. Below is the route mentioned where you can plan accordingly.
-                            A couple of the best places you can visit on the way or around are Lakshmi Narasimha Swamy temple in Kadiri &amp; Belum Caves in Kolimigundla.
-  </description>
+    <description>Two Days Trip from Bangalore to Gandikota to Bangalore, If you are a couple riding on a Bike or You are a Family driving in Car, then this two days plan works very well. Below is the route mentioned where you can plan accordingly.                            A couple of the best places you can visit on the way or around are Lakshmi Narasimha Swamy temple in Kadiri &amp; Belum Caves in Kolimigundla.    </description>
     <pubDate>Tue, 21 Nov 2023 09:30:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/bangalore-to-gandikota-two-days-one-night-trip-plan.html</guid>
   </item><item>
     <title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
     <link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
-    <description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
-                            With Dependency Injection, the class is no longer responsible for in</description>
+    <description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.                            With Dependency Injection, the class is no longer responsible for ins</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
   </item><item>
     <title>Drupal Cache Clear &amp; Cache Rebuild</title>
     <link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
-    <description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
-                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
+    <description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wou</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
   </item><item>
     <title>Multisite Local environment setup with Lando &amp; Drupal</title>
     <link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</link>
-    <description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.
-                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collectio</description>
+    <description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collection</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</guid>
   </item><item>
     <title>What to Know for Estimating Projects</title>
     <link>https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</link>
-    <description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.
-                            If one needs to deliver a project successfully then one must estimate the project as better as possible.
-               </description>
+    <description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.                            If one needs to deliver a project successfully then one must estimate the project as better as possible.                 </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</guid>
   </item><item>
     <title>Studies estimate long COVID-19 has over two hundred Symptoms</title>
     <link>https://peoplesblog.co.in/articles/studies-estimate-long-covid-has-over-two-hundred-symptoms.html</link>
-    <description>According to a Lancet's journal EClinicalMedicine, In the Coronavirus (Covid-19) patients who are facing prolonged symptoms have reported more than 200 symptoms across 10 organ systems.
-                            They have analysed the responses of 3,762 peoples from 56 different countries with confirmed or suspected Covid-19. And the data were collected from September 6, 2020, to November 25, 20</description>
+    <description>According to a Lancet's journal EClinicalMedicine, In the Coronavirus (Covid-19) patients who are facing prolonged symptoms have reported more than 200 symptoms across 10 organ systems.                            They have analysed the responses of 3,762 peoples from 56 different countries with confirmed or suspected Covid-19. And the data were collected from September 6, 2020, to November 25, 202</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/studies-estimate-long-covid-has-over-two-hundred-symptoms.html</guid>
@@ -1921,8 +1912,7 @@
   </item><item>
     <title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
     <link>https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</link>
-    <description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.
-                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to syste</description>
+    <description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to system</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</guid>
@@ -1936,49 +1926,42 @@
   </item><item>
     <title>Precautions while travelling during Coronavirus times</title>
     <link>https://peoplesblog.co.in/articles/precautions-while-travelling-during-coronavirus-times.html</link>
-    <description>It is not completely safe to travel during the Coronavirus times. Although the mortality rate of the people affected with COVID appears to be quite low, there is always a chance with the data which we get in our country. I see one should avoid travelling as much as possible so that we reduce the chances of spreading the virus.
-                                Following are some of the things to be </description>
+    <description>It is not completely safe to travel during the Coronavirus times. Although the mortality rate of the people affected with COVID appears to be quite low, there is always a chance with the data which we get in our country. I see one should avoid travelling as much as possible so that we reduce the chances of spreading the virus.                                Following are some of the things to be c</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/precautions-while-travelling-during-coronavirus-times.html</guid>
   </item><item>
     <title>Why to have a Green roof or Eco friendly roof on a building</title>
     <link>https://peoplesblog.co.in/articles/why-to-have-a-green-roof-or-eco-friendly-roof-on-a-building.html</link>
-    <description>A roof of a building that is partially or completely covered with vegetation, that is planted over a waterproofing membrane. It may also include additional layers such as a root barrier and drainage and irrigation systems. Rooftop ponds are another form of green roofs which are used to treat greywater.
-                                Vegetation, soil, drainage layer, roof barrier and irrigation sy</description>
+    <description>A roof of a building that is partially or completely covered with vegetation, that is planted over a waterproofing membrane. It may also include additional layers such as a root barrier and drainage and irrigation systems. Rooftop ponds are another form of green roofs which are used to treat greywater.                                Vegetation, soil, drainage layer, roof barrier and irrigation sys</description>
     <pubDate>Sat, 26 Aug 2023 16:20:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-to-have-a-green-roof-or-eco-friendly-roof-on-a-building.html</guid>
   </item><item>
     <title>Security Hardening - Nginx Response Headers</title>
     <link>https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</link>
-    <description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.
-                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of info</description>
+    <description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of infor</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</guid>
   </item><item>
     <title>Pachi Pulusu Recipe - Andhra Style</title>
     <link>https://peoplesblog.co.in/articles/pachi-pulusu-recipe-andhra-style.html</link>
-    <description>Andhra Style Pachi Pulusu Recipe is a thin rasam made with freshly extracted tamarind water and mixed with sliced onions and freshly cut coriander leaves. Comfort food at its best when served with some steamed rice for a simple meal.
-                                It is a different way of creating a rasam that has been followed by the people from Andhra Pradesh and Telangana. This rasam is not he</description>
+    <description>Andhra Style Pachi Pulusu Recipe is a thin rasam made with freshly extracted tamarind water and mixed with sliced onions and freshly cut coriander leaves. Comfort food at its best when served with some steamed rice for a simple meal.                                It is a different way of creating a rasam that has been followed by the people from Andhra Pradesh and Telangana. This rasam is not hea</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Reddamma D</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/pachi-pulusu-recipe-andhra-style.html</guid>
   </item><item>
     <title>Black Fungus - Detected in Coronavirus Patients</title>
     <link>https://peoplesblog.co.in/articles/black-fungus-detected-in-coronavirus-patients.html</link>
-    <description>Black fungus is an infection caused by a fungus named mucormycosis. This fungal infection is being reported in a few Corona-affected patients during or post-recovery.
-                                People catch mucormycosis when they come in contact with the fungal spores in the environment. It can also be contacted through skin contact through a cut, burn, or any other form of skin trauma.
-     </description>
+    <description>Black fungus is an infection caused by a fungus named mucormycosis. This fungal infection is being reported in a few Corona-affected patients during or post-recovery.                                People catch mucormycosis when they come in contact with the fungal spores in the environment. It can also be contacted through skin contact through a cut, burn, or any other form of skin trauma.       </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/black-fungus-detected-in-coronavirus-patients.html</guid>
   </item><item>
     <title>Coping up with Life in an Effective Way</title>
     <link>https://peoplesblog.co.in/articles/coping-up-with-life-in-an-effective-way.html</link>
-    <description>Life tends to go on as we go on with our daily routine works. Whatever stage of life you are in now, one has things to do, atleast to take care of family by providing what they need by doing what one can do.
-                                You can play a major role in that process of fulfilling your responsibilities or a minor role, but your contribution is what makes a difference, if one apprecia</description>
+    <description>Life tends to go on as we go on with our daily routine works. Whatever stage of life you are in now, one has things to do, atleast to take care of family by providing what they need by doing what one can do.                                You can play a major role in that process of fulfilling your responsibilities or a minor role, but your contribution is what makes a difference, if one appreciat</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/coping-up-with-life-in-an-effective-way.html</guid>
@@ -1992,69 +1975,56 @@
   </item><item>
     <title>Raw Mango Chutney - Andhra Style</title>
     <link>https://peoplesblog.co.in/articles/raw-mango-chutney-andhra-style.html</link>
-    <description>Raw mango chutney is a flavorful condiment made with raw mangos, coriander leaves, onions and some spices. Raw Mango Chutney is a must-try recipe when raw mangoes are in season. Raw mangoes are packed with minerals and vitamins and are good to beat the summer heat.
-                                This raw mango chutney aids digestion and enhances the taste, aroma, and nutrition of any dish. We usu</description>
+    <description>Raw mango chutney is a flavorful condiment made with raw mangos, coriander leaves, onions and some spices. Raw Mango Chutney is a must-try recipe when raw mangoes are in season. Raw mangoes are packed with minerals and vitamins and are good to beat the summer heat.                                This raw mango chutney aids digestion and enhances the taste, aroma, and nutrition of any dish. We usua</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Reddamma D</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/raw-mango-chutney-andhra-style.html</guid>
   </item><item>
     <title>Oranges - Let us know how to peel off &amp; eat; along with its benefits</title>
     <link>https://peoplesblog.co.in/articles/oranges-let-us-know-how-to-peel-off-eat-along-with-its-benefits.html</link>
-    <description>Ever heard of that name, it’s a fruit which helps us to boost our immunity levels and lowers the risk of diseases.
-                                In this lockdown time, one day I felt very tired, couldn’t continue my routine life, and coincidently, all my family members were affected with some or other illness like headache, cough, cold, backache and tiredness to do mundane things.
-          </description>
+    <description>Ever heard of that name, it’s a fruit which helps us to boost our immunity levels and lowers the risk of diseases.                                In this lockdown time, one day I felt very tired, couldn’t continue my routine life, and coincidently, all my family members were affected with some or other illness like headache, cough, cold, backache and tiredness to do mundane things.            </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/oranges-let-us-know-how-to-peel-off-eat-along-with-its-benefits.html</guid>
   </item><item>
     <title>Is Feedback really necessary in Person's Life?</title>
     <link>https://peoplesblog.co.in/articles/is-feedback-really-necessary-in-persons-life.html</link>
-    <description>Is feedback really necessary? Do people really care about the given feedback? Do people really care to give feedback? It all depends on the situation and people, whether to give or take the given feedback. And honestly everyone has their own views to consider or not to consider the feedback.
-                                Every individual might have come across many people giving/taking the feedb</description>
+    <description>Is feedback really necessary? Do people really care about the given feedback? Do people really care to give feedback? It all depends on the situation and people, whether to give or take the given feedback. And honestly everyone has their own views to consider or not to consider the feedback.                                Every individual might have come across many people giving/taking the feedba</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/is-feedback-really-necessary-in-persons-life.html</guid>
   </item><item>
     <title>Drupal 7 to Drupal 8/9 Audits</title>
     <link>https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</link>
-    <description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.
-                       </description>
+    <description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.                        </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</guid>
   </item><item>
     <title>Bangalore to Tirumala Trip Plan</title>
     <link>https://peoplesblog.co.in/articles/bangalore-to-tirumala-two-days-trip.html</link>
-    <description>Two days Trip from Bangalore to Tirumala to Bangalore, If you are a couple riding on bike or you are a family driving in car, then this two days plan works very well. Below is the route mentioned where you can plan accordingly. You can book the Dharshna Tickets &amp; Stay via Online Booking or you can get it once you reach their based on the Crowd on Tirumala.
-                                Tirumala </description>
+    <description>Two days Trip from Bangalore to Tirumala to Bangalore, If you are a couple riding on bike or you are a family driving in car, then this two days plan works very well. Below is the route mentioned where you can plan accordingly. You can book the Dharshna Tickets &amp; Stay via Online Booking or you can get it once you reach their based on the Crowd on Tirumala.                                Tirumala i</description>
     <pubDate>Tue, 21 Nov 2023 09:30:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/bangalore-to-tirumala-two-days-trip.html</guid>
   </item><item>
     <title>Technical Writing Vs Content Writing</title>
     <link>https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</link>
-    <description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.
-                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the re</description>
+    <description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the rea</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</guid>
   </item><item>
     <title>For Indian Youth..! What should you know about Nambi Narayanan?</title>
     <link>https://peoplesblog.co.in/articles/for-indian-youth-what-should-you-know-about-nambi-narayanan.html</link>
-    <description>Lets see the background,
-                                In 1992, India signed an agreement with Russia..
-                                
-                                    Aggrement was for transfer of technology to develop cryogenic fuel-based engines and procurement of two such engines for ₹ 235 crore.
-                                    However, Russia did not materialize after the US pres</description>
+    <description>Lets see the background,                                In 1992, India signed an agreement with Russia..                                                                    Aggrement was for transfer of technology to develop cryogenic fuel-based engines and procurement of two such engines for ₹ 235 crore.                                    However, Russia did not materialize after the US presiden</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/for-indian-youth-what-should-you-know-about-nambi-narayanan.html</guid>
   </item><item>
     <title> The Shawshank Redemption Movie about Life, Hope, and Freedom</title>
     <link>https://peoplesblog.co.in/articles/the-shawshank-redemption-movie-about-life-hope-and-freedom.html</link>
-    <description>Shawshank Redemption is one of the best movies ever made. Even today its stands above The Godfather movie on the IMDb top rated 250 movies. A must watch movie.
-                                Their are many lines in the movie by the characters, which tells about Life, Hope and Freedom. In this article, I'm gona list of few of them.
-                                 Thats The Beauty Of Music. They C</description>
+    <description>Shawshank Redemption is one of the best movies ever made. Even today its stands above The Godfather movie on the IMDb top rated 250 movies. A must watch movie.                                Their are many lines in the movie by the characters, which tells about Life, Hope and Freedom. In this article, I'm gona list of few of them.                                 Thats The Beauty Of Music. They Can</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/the-shawshank-redemption-movie-about-life-hope-and-freedom.html</guid>
@@ -2068,42 +2038,35 @@
   </item><item>
     <title>Heat waves in India and Current Temperature Status and Warning for next five Days</title>
     <link>https://peoplesblog.co.in/articles/heat-waves-in-india-and-current-temperature-status-and-warning-for-next-five-day.html</link>
-    <description>In 21st century due to climate changes, global temperature can increase means heat waves would be compartively more. This might affect human health a lot and in some cases can lead to death. We should know that, these heat waves will affect many people in small amount of time.
-                                In India, these Heat waves generally occur from March - June, &amp; in some cases, they might </description>
+    <description>In 21st century due to climate changes, global temperature can increase means heat waves would be compartively more. This might affect human health a lot and in some cases can lead to death. We should know that, these heat waves will affect many people in small amount of time.                                In India, these Heat waves generally occur from March - June, &amp; in some cases, they might e</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/heat-waves-in-india-and-current-temperature-status-and-warning-for-next-five-day.html</guid>
   </item><item>
     <title>Drupal JSON API, Deep Dive - Part 2</title>
     <link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</link>
-    <description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.
-                                Types
-                            </description>
+    <description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.                                Types                              </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</guid>
   </item><item>
     <title>Locally Setup and Scan your Docker images via Clair</title>
     <link>https://peoplesblog.co.in/articles/locally-setup-and-scan-your-docker-images-via-clair.html</link>
-    <description>Docker Images contain not only application code, but a OS and additional utilities to make application run as expected. Images can also be vulnerable its better not have any CVE's in image. Running scans are one of the way to protect from CVE's. These container scanning tools scan for known vulnerabilities in the image.
-                                In this article, We use Clair to scan a Docker</description>
+    <description>Docker Images contain not only application code, but a OS and additional utilities to make application run as expected. Images can also be vulnerable its better not have any CVE's in image. Running scans are one of the way to protect from CVE's. These container scanning tools scan for known vulnerabilities in the image.                                In this article, We use Clair to scan a Docker </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/locally-setup-and-scan-your-docker-images-via-clair.html</guid>
   </item><item>
     <title>Things to Know before you go for Registration of a Plot or Property in Bangalore</title>
     <link>https://peoplesblog.co.in/articles/things-to-know-before-you-go-for-registration-of-a-plot-in-bangalore.html</link>
-    <description>When you decide to buy a property or land than a normal business deal where you get a plot of land in exchange of money. Before going into details of plot registration, there are a few terms you must know.
-                                Registration fee - It's a small percentage of total cost of plot paid by buyer to state government for registering property on his name.
-                         </description>
+    <description>When you decide to buy a property or land than a normal business deal where you get a plot of land in exchange of money. Before going into details of plot registration, there are a few terms you must know.                                Registration fee - It's a small percentage of total cost of plot paid by buyer to state government for registering property on his name.                           </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/things-to-know-before-you-go-for-registration-of-a-plot-in-bangalore.html</guid>
   </item><item>
     <title>When Police doesnot register your FIR? Contact Judge!</title>
     <link>https://peoplesblog.co.in/articles/when-police-doesnot-register-your-fir-contact-judge.html</link>
-    <description>If you are reporting a cognisable crime and Police refuse to register your FIR, you can make a complaint to a higher ranking officer such as the Superintendent of Police (SP), the Deputy Inspector General (DIG) or the Inspector General of Police (IGP). You can also complain to the nearest Judicial Magistrate, who will order the police to register the FIR if deemed necessary.
-                      </description>
+    <description>If you are reporting a cognisable crime and Police refuse to register your FIR, you can make a complaint to a higher ranking officer such as the Superintendent of Police (SP), the Deputy Inspector General (DIG) or the Inspector General of Police (IGP). You can also complain to the nearest Judicial Magistrate, who will order the police to register the FIR if deemed necessary.                       </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/when-police-doesnot-register-your-fir-contact-judge.html</guid>
@@ -2124,43 +2087,35 @@
   </item><item>
     <title>Privatisation of Public Sector Banks &amp; Banks Strike in March 2021</title>
     <link>https://peoplesblog.co.in/articles/privatisation-of-public-sector-banks-banks-strike-march-.html</link>
-    <description>The Finance Minister has announced in Union Budget of India for 2021-22, that two Public Sector Banks (PSBs) will be Privatised. The policy of government in last three decades of economic reforms was to sell a part of shares in Public Sector Undertakings (PSUs) including PSBs to public while retaining the controlling share in its own hands.
-                                Privatisation of PSBs is </description>
+    <description>The Finance Minister has announced in Union Budget of India for 2021-22, that two Public Sector Banks (PSBs) will be Privatised. The policy of government in last three decades of economic reforms was to sell a part of shares in Public Sector Undertakings (PSUs) including PSBs to public while retaining the controlling share in its own hands.                                Privatisation of PSBs is i</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/privatisation-of-public-sector-banks-banks-strike-march-.html</guid>
   </item><item>
     <title>Lines worth reading, How do we identify ourselves?</title>
     <link>https://peoplesblog.co.in/articles/lines-worth-reading.html</link>
-    <description>Here we go,
-                                How do we identify ourselves?
-                                By our name, origin, work we do, good or wrong deeds, likes, dislikes etc. the list goes on...
-                                Whatever we may choose according to one's mindset about life, anything chosen becomes just a part of us and doesn't stand out alone.
-                                We</description>
+    <description>Here we go,                                How do we identify ourselves?                                By our name, origin, work we do, good or wrong deeds, likes, dislikes etc. the list goes on...                                Whatever we may choose according to one's mindset about life, anything chosen becomes just a part of us and doesn't stand out alone.                                We can</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/lines-worth-reading.html</guid>
   </item><item>
     <title>COVID-19 Vaccination in India, Covishield and Covaxin</title>
     <link>https://peoplesblog.co.in/articles/covid--vaccination-in-india.html</link>
-    <description>In January 2021 India started National Vaccination programme against the SARS-CoV-2 virus which has caused the COVID-19 pandemic. The drive prioritises healthcare and frontline workers, and then those over the age of 60, and then those over the age of 45 and suffering from certain comorbidities.
-                                In January 2021 Secretary-General of the United Nations Antonio Guterre</description>
+    <description>In January 2021 India started National Vaccination programme against the SARS-CoV-2 virus which has caused the COVID-19 pandemic. The drive prioritises healthcare and frontline workers, and then those over the age of 60, and then those over the age of 45 and suffering from certain comorbidities.                                In January 2021 Secretary-General of the United Nations Antonio Guterres</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/covid--vaccination-in-india.html</guid>
   </item><item>
     <title>UNSAID CONFESSIONS - Some insights that one can take</title>
     <link>https://peoplesblog.co.in/articles/unsaid-confessions.html</link>
-    <description>What does confessing something, which concerns you, to one who cares about you, does to your life? Confession means when you admit that you have done something wrong. Here, we have our fellow being Anand, who had an argument with his brother over property issues and ended up not interacting with his brother for years.
-                                After 10 years, when he had gone for a health ch</description>
+    <description>What does confessing something, which concerns you, to one who cares about you, does to your life? Confession means when you admit that you have done something wrong. Here, we have our fellow being Anand, who had an argument with his brother over property issues and ended up not interacting with his brother for years.                                After 10 years, when he had gone for a health che</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/unsaid-confessions.html</guid>
   </item><item>
     <title>Be Aware of Chain Snatchers &amp; Tips to Prevent Chain Snatching</title>
     <link>https://peoplesblog.co.in/articles/be-aware-of-chain-snatchers-tips-to-prevent-chain-snatching.html</link>
-    <description>Chain Snatching is one of the crime happening across India by different individuals or gangs. One should be aware while being in public places and should be cautious always. Chain snatching an easy job unlike burglaries, robberies or dacoities. These chain snatchers mostly will be from different places, They will often go to a new places and do their job and leave within hours.
-                   </description>
+    <description>Chain Snatching is one of the crime happening across India by different individuals or gangs. One should be aware while being in public places and should be cautious always. Chain snatching an easy job unlike burglaries, robberies or dacoities. These chain snatchers mostly will be from different places, They will often go to a new places and do their job and leave within hours.                    </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/be-aware-of-chain-snatchers-tips-to-prevent-chain-snatching.html</guid>
@@ -2174,59 +2129,49 @@
   </item><item>
     <title>Things to know about Proofreading</title>
     <link>https://peoplesblog.co.in/articles/things-to-know-about-proofreading.html</link>
-    <description>Proofreading is the process of looking for and correcting errors in your work i.e. finding and correcting spelling, grammar, punctuation, consistency and errors.
-                            Proofreading is the last step in your writing and editing process.
-                            You should have written and edited your work for general coherence and flow before proofreading.
-                  </description>
+    <description>Proofreading is the process of looking for and correcting errors in your work i.e. finding and correcting spelling, grammar, punctuation, consistency and errors.                            Proofreading is the last step in your writing and editing process.                            You should have written and edited your work for general coherence and flow before proofreading.                     </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/things-to-know-about-proofreading.html</guid>
   </item><item>
     <title>Reduce the Risk of Becoming a Sexual Assault Victim!</title>
     <link>https://peoplesblog.co.in/articles/reduce-the-risk-of-becoming-a-sexual-assault-victim.html</link>
-    <description>To Reduce the risk for you to becoming a sexual victim, you have to take some preventative measures, which will help you to avoid a risky situations from escalating. Anyone can be the target of sexual assault, regardless of age, gender, race, ethnicity, sexual orientation, sexual history, or social class. There is no stereotypical victim or rapist.
-                                What's bad? - Nea</description>
+    <description>To Reduce the risk for you to becoming a sexual victim, you have to take some preventative measures, which will help you to avoid a risky situations from escalating. Anyone can be the target of sexual assault, regardless of age, gender, race, ethnicity, sexual orientation, sexual history, or social class. There is no stereotypical victim or rapist.                                What's bad? - Near</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/reduce-the-risk-of-becoming-a-sexual-assault-victim.html</guid>
   </item><item>
     <title>Lessons Learnt from three years of Relationship</title>
     <link>https://peoplesblog.co.in/articles/lessons-learnt-from-three-years-of-relationship.html</link>
-    <description>Living together for almost three years is a good amount of journey in your life. For me atleast like, part of me feels like time is absolutely flying and the other half feels like we have been married for three years. We have certainly not been perfect, but I'm gonna share fews lessons which I learnt out of these three years which I spent in my relationship.
-                            1. Importan</description>
+    <description>Living together for almost three years is a good amount of journey in your life. For me atleast like, part of me feels like time is absolutely flying and the other half feels like we have been married for three years. We have certainly not been perfect, but I'm gonna share fews lessons which I learnt out of these three years which I spent in my relationship.                            1. Importanc</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/lessons-learnt-from-three-years-of-relationship.html</guid>
   </item><item>
     <title>Researchers solve riddle of plant immune system</title>
     <link>https://peoplesblog.co.in/articles/researchers-solve-riddle-of-plant-immune-system.html</link>
-    <description>How do plants build resilience? An international research team led by the University of Gottingen studied the molecular mechanisms of the plant immune system. They were able to show a connection between a relatively unknown gene and resistance to pathogens. The results of the study were published in the journal The Plant Cell.
-                                Scientists from "PRoTECT" -- Plant Resp</description>
+    <description>How do plants build resilience? An international research team led by the University of Gottingen studied the molecular mechanisms of the plant immune system. They were able to show a connection between a relatively unknown gene and resistance to pathogens. The results of the study were published in the journal The Plant Cell.                                Scientists from "PRoTECT" -- Plant Respo</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/researchers-solve-riddle-of-plant-immune-system.html</guid>
   </item><item>
     <title>Prime accused in gang-rape case nabbed after two decades</title>
     <link>https://peoplesblog.co.in/articles/prime-accused-in-gang-rape-case-nabbed-after-two-decades.html</link>
-    <description>Prime accused Bibekananda Biswal in a sensational gangrape that shook Odisha in its aftermath in 1999 is now caught by Police from Aamby Valley in Lonavala in Maharashtra.
-                                The incident, that occurred in 1999, had created a state-wide outrage. A total of three persons were accused in the case. Two of them - Pradeep Sahi and Dhirendra Mohanty, were arrested and convic</description>
+    <description>Prime accused Bibekananda Biswal in a sensational gangrape that shook Odisha in its aftermath in 1999 is now caught by Police from Aamby Valley in Lonavala in Maharashtra.                                The incident, that occurred in 1999, had created a state-wide outrage. A total of three persons were accused in the case. Two of them - Pradeep Sahi and Dhirendra Mohanty, were arrested and convict</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/prime-accused-in-gang-rape-case-nabbed-after-two-decades.html</guid>
   </item><item>
     <title>Coronavirus, Discovered in the 1960s, Serious Respiratory Tract Infections</title>
     <link>https://peoplesblog.co.in/articles/coronavirus-discovered-in-the-s-serious-respiratory-tract-infections.html</link>
-    <description>Coronaviruses are a group of viruses that cause diseases in mammals and birds that include diarrhea in cows and pigs, and upper respiratory disease in chickens. In humans, the virus causes respiratory infections, which are often mild, but in rare cases are potentially lethal.
-                                There are no vaccines or antiviral drugs that are approved for prevention or treatment.
-   </description>
+    <description>Coronaviruses are a group of viruses that cause diseases in mammals and birds that include diarrhea in cows and pigs, and upper respiratory disease in chickens. In humans, the virus causes respiratory infections, which are often mild, but in rare cases are potentially lethal.                                There are no vaccines or antiviral drugs that are approved for prevention or treatment.     </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/coronavirus-discovered-in-the-s-serious-respiratory-tract-infections.html</guid>
   </item><item>
     <title>International Mother Language Day</title>
     <link>https://peoplesblog.co.in/articles/international-mother-language-day.html</link>
-    <description>International Mother Language Day is a worldwide annual observance held on 21st February to promote awareness of linguistic and cultural diversity and to promote multilingualism. First announced by UNESCO on 17 November 1999, it was formally recognized by the United Nations General Assembly with the adoption of UN resolution 56/262 in 2002.
-                                Mother Language Day is pa</description>
+    <description>International Mother Language Day is a worldwide annual observance held on 21st February to promote awareness of linguistic and cultural diversity and to promote multilingualism. First announced by UNESCO on 17 November 1999, it was formally recognized by the United Nations General Assembly with the adoption of UN resolution 56/262 in 2002.                                Mother Language Day is par</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/international-mother-language-day.html</guid>
@@ -2254,16 +2199,14 @@
   </item><item>
     <title>World Cancer Day, February 4th - Early detection of Cancer can lead to Improved outcomes &amp; Cure.</title>
     <link>https://peoplesblog.co.in/articles/world-cancer-day-february-th.html</link>
-    <description>Cancer is a large group of diseases that can start in almost any organ or tissue of the body when abnormal cells grow uncontrollably, go beyond their usual boundaries to invade adjoining parts of the body and/or spread to other organs. The latter process is called metastasizing which is a major cause of death from cancer. A neoplasm and malignant tumour are other common names for cancer.
-         </description>
+    <description>Cancer is a large group of diseases that can start in almost any organ or tissue of the body when abnormal cells grow uncontrollably, go beyond their usual boundaries to invade adjoining parts of the body and/or spread to other organs. The latter process is called metastasizing which is a major cause of death from cancer. A neoplasm and malignant tumour are other common names for cancer.          </description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/world-cancer-day-february-th.html</guid>
   </item><item>
     <title>Benefits of Reading - Why You Should Read?</title>
     <link>https://peoplesblog.co.in/articles/benefits-of-reading-why-you-should-read.html</link>
-    <description>By the way, when was the last time you read a book, or read an article on internet? Or you generally tend to look across tweets, facebook updates etc. If you are one of them who is not having an habit of reading regularly, you are missing out few things. Actually reading has few benefits, and i'm gona share few of the benefits of reading, so that you start reading!
-                                </description>
+    <description>By the way, when was the last time you read a book, or read an article on internet? Or you generally tend to look across tweets, facebook updates etc. If you are one of them who is not having an habit of reading regularly, you are missing out few things. Actually reading has few benefits, and i'm gona share few of the benefits of reading, so that you start reading!                                M</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/benefits-of-reading-why-you-should-read.html</guid>
@@ -2277,41 +2220,35 @@
   </item><item>
     <title>API Docs Drupal Module simple way to show OAS Docs on Drupal Portal</title>
     <link>https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</link>
-    <description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.
-                                Prereq</description>
+    <description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.                                Prerequ</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</guid>
   </item><item>
     <title>Saving Vegetable seeds for your backyard gardening</title>
     <link>https://peoplesblog.co.in/articles/saving-vegetable-seeds-for-your-backyard-gardening.html</link>
-    <description>To become more food self-sufficient, we should plan to collect, store and use some of the seed for your own garden. With this we can create new &amp; custom varieties of vegetables that grow best in our backyard. This can be done with small amount of effort involved. Also you will have fun in the process too.
-                                You can save vegetable seeds from your garden produce to plan</description>
+    <description>To become more food self-sufficient, we should plan to collect, store and use some of the seed for your own garden. With this we can create new &amp; custom varieties of vegetables that grow best in our backyard. This can be done with small amount of effort involved. Also you will have fun in the process too.                                You can save vegetable seeds from your garden produce to plant</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/saving-vegetable-seeds-for-your-backyard-gardening.html</guid>
   </item><item>
     <title>Reading a book, it's not my thing; is it your instant reply?</title>
     <link>https://peoplesblog.co.in/articles/reading-a-book-its-not-my-thing-is-it-your-instant-reply.html</link>
-    <description>Reading a book expands your thinking dimensions and gives a better perspective about things going on around you. If you agree with what you read just now, Let's have a look at two books which make significant changes to one's life.
-                                Life is what you make it by Preeti Shenoy
-                                This is a wonderful fictional story and it revolves around the</description>
+    <description>Reading a book expands your thinking dimensions and gives a better perspective about things going on around you. If you agree with what you read just now, Let's have a look at two books which make significant changes to one's life.                                Life is what you make it by Preeti Shenoy                                This is a wonderful fictional story and it revolves around the p</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/reading-a-book-its-not-my-thing-is-it-your-instant-reply.html</guid>
   </item><item>
     <title>Indian Farms Reforms of 2020</title>
     <link>https://peoplesblog.co.in/articles/indian-farms-reforms-of-.html</link>
-    <description>The Indian Farms Reforms of 2020 refer to the agricultural bills passed by the Lok Sabha on 17th September 2020 and by the Rajya Sabha on 20th September 2020. The bills collectively seek to provide farmers with multiple marketing channels and provide a legal framework for farmers to enter into pre-arranged contracts among other things.
-                                The President of India gave hi</description>
+    <description>The Indian Farms Reforms of 2020 refer to the agricultural bills passed by the Lok Sabha on 17th September 2020 and by the Rajya Sabha on 20th September 2020. The bills collectively seek to provide farmers with multiple marketing channels and provide a legal framework for farmers to enter into pre-arranged contracts among other things.                                The President of India gave his</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/indian-farms-reforms-of-.html</guid>
   </item><item>
     <title>It is OK.. to not be ok !!! - Hanukkah John</title>
     <link>https://peoplesblog.co.in/articles/it-is-ok-to-not-be-ok-hanukkah-john.html</link>
-    <description>Ever felt that you are worthless or a burden to others? Ever felt so exhausted mentally? Ever felt sad not for a day or two but for weeks continuously? I'm not talking about grieving over a loss but feeling sad for something which you could have let go easily at least after a day or two.
-                                Have you ever found yourself lying in bed all day continuously for days doing n</description>
+    <description>Ever felt that you are worthless or a burden to others? Ever felt so exhausted mentally? Ever felt sad not for a day or two but for weeks continuously? I'm not talking about grieving over a loss but feeling sad for something which you could have let go easily at least after a day or two.                                Have you ever found yourself lying in bed all day continuously for days doing no</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Hanukkah John</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/it-is-ok-to-not-be-ok-hanukkah-john.html</guid>
@@ -2353,17 +2290,14 @@
   </item><item>
     <title>Growing Enough Food to Feed a Family Year-Round by Yourself</title>
     <link>https://peoplesblog.co.in/articles/growing-enough-food-to-feed-a-family.html</link>
-    <description>It's a great thought of growing enough food to feed your family year round by yourself. Certain things are really important for such a though, like how much food is needed for your family, which crops to plant, how to get the most from your plot, and how to preserve your extra harvest.
-                                How much food is needed?
-                                Let's say a 200 square f</description>
+    <description>It's a great thought of growing enough food to feed your family year round by yourself. Certain things are really important for such a though, like how much food is needed for your family, which crops to plant, how to get the most from your plot, and how to preserve your extra harvest.                                How much food is needed?                                Let's say a 200 square fee</description>
     <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/growing-enough-food-to-feed-a-family.html</guid>
   </item><item>
     <title>Bangalore to Murdeshwar, Gokarna, Goa and Dandeli Solo Trip Plan</title>
     <link>https://peoplesblog.co.in/articles/bangalore-murdeshwar-gokarna-goa-dandeli.html</link>
-    <description>Ten days Ride from Bangalore  Murdeshwar  Gokarna  Goa  Dandeli  Bangalore, If you are a Couple riding on Bike or You are riding with a Friend in two different Bikes, then this plan for ten days works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route.
-       </description>
+    <description>Ten days Ride from Bangalore  Murdeshwar  Gokarna  Goa  Dandeli  Bangalore, If you are a Couple riding on Bike or You are riding with a Friend in two different Bikes, then this plan for ten days works very well. Below is the route mentioned where you can plan accordingly, if at all you need to spend some more time in some place in the list, you can skip the next place in the planned route.        </description>
     <pubDate>Tue, 21 Nov 2023 09:30:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/bangalore-murdeshwar-gokarna-goa-dandeli.html</guid>
@@ -2377,8 +2311,7 @@
   </item><item>
     <title>Openness in a Couples Relationships can be Secret/Private</title>
     <link>https://peoplesblog.co.in/articles/openness-in-relationships-secret-or-private.html</link>
-    <description>In a healthy romantic relationship, as time goes on trust is earned, and we eventually open up more &amp; more. Based on each others mutual respect &amp; valuing, couples are sometimes unclear in how much they should or want to share within each other. Each of them have right to privacy and each decide, how much to share or how much to open up.
-                                Few are too open or soon offe</description>
+    <description>In a healthy romantic relationship, as time goes on trust is earned, and we eventually open up more &amp; more. Based on each others mutual respect &amp; valuing, couples are sometimes unclear in how much they should or want to share within each other. Each of them have right to privacy and each decide, how much to share or how much to open up.                                Few are too open or soon offer</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/openness-in-relationships-secret-or-private.html</guid>
@@ -2399,91 +2332,63 @@
   </item><item>
     <title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
     <link>https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
-    <description>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern
-                                HTTP Methods
-                                JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.
-                       </description>
+    <description>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern                                HTTP Methods                                JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.                          </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>
   </item><item>
     <title>Cache Set, Get and Invalidate per User in Drupal 7</title>
     <link>https://peoplesblog.co.in/articles/cache-set-get-and-invalidate-user-drupal-.html</link>
-    <description>How to Set, Get and Invalidate the caches per user in Drupal 7, this blog article will explain a brief of how to do such implementation on Drupal using the default drupal cache functions.
-                                Here, we go with the steps
-                                
-                                    Initially, create the custom functions for Get, Set and Invalidate the caches per us</description>
+    <description>How to Set, Get and Invalidate the caches per user in Drupal 7, this blog article will explain a brief of how to do such implementation on Drupal using the default drupal cache functions.                                Here, we go with the steps                                                                    Initially, create the custom functions for Get, Set and Invalidate the caches per user.</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/cache-set-get-and-invalidate-user-drupal-.html</guid>
   </item><item>
     <title>Store Drupal logs on Amazon S3</title>
     <link>https://peoplesblog.co.in/articles/store-drupal-logs-amazon-s.html</link>
-    <description>Store Drupal logs on Amazon S3 via hook_watchdog, so that you can get rid of heavy logs on your drupal database and can later read from the S3.
-                                For this todo on Drupal
-                                
-                                    You should use the "hook_watchdog" hook, where this hook allows modules to route log events to custom destinations.
-               </description>
+    <description>Store Drupal logs on Amazon S3 via hook_watchdog, so that you can get rid of heavy logs on your drupal database and can later read from the S3.                                For this todo on Drupal                                                                    You should use the "hook_watchdog" hook, where this hook allows modules to route log events to custom destinations.                   </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/store-drupal-logs-amazon-s.html</guid>
   </item><item>
     <title>AES Encrypt &amp; Decrypt</title>
     <link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
-    <description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.
-                                AES Encrypt
-                                
-                                    We would have the 'Secret' stored in a file which is other than the web root.
-                                
-      </description>
+    <description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.                                AES Encrypt                                                                    We would have the 'Secret' stored in a file which is other than the web root.                                           </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
   </item><item>
     <title>Sites Still Vulnerable to Drupalgeddon 2</title>
     <link>https://peoplesblog.co.in/articles/sites-still-vulnerable-drupalgeddon-.html</link>
-    <description>Attackers are exploiting Drupalgeddon 2 critical vulnerability in Drupal to compromise systems &amp; secretly turn them into malicious cryptocurrency mining machines like cryptojacking malware, mine for Monero.
-                                The only side effects a victim might notice is that their system is running slower or doing more work than usual.
-                                Still most of t</description>
+    <description>Attackers are exploiting Drupalgeddon 2 critical vulnerability in Drupal to compromise systems &amp; secretly turn them into malicious cryptocurrency mining machines like cryptojacking malware, mine for Monero.                                The only side effects a victim might notice is that their system is running slower or doing more work than usual.                                Still most of the</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/sites-still-vulnerable-drupalgeddon-.html</guid>
   </item><item>
     <title>Secure Website running on Apache with Let's Encrypt on Linux</title>
     <link>https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</link>
-    <description>Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server.
-                                Let's make it easier with the </description>
+    <description>Website security is generally most complicated and expensive task for every Linux admin. Let's Encrypt is a free, automated, and open certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process. It's very complex process to install and add SSL certificate to a web server.                                Let's make it easier with the h</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-website-running-apache-lets-encrypt-linux.html</guid>
   </item><item>
     <title>Aegir on Docker - Develop, Test, With Easier Deployment</title>
     <link>https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</link>
-    <description>Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments.
-                                Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting.
-                                Here you go???
-                                Better Task Queue..! This process is usua</description>
+    <description>Aegir with Docker would be one of the brilliant option for Better Drupal Development and Faster Deployments.                                Docker, which solves the overhead of virtualization layer. And Aegir, which gives the best possible approach for Drupal Multisite hosting.                                Here you go???                                Better Task Queue..! This process is usually</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aegir-docker-develop-test-easier-deployment.html</guid>
   </item><item>
     <title>Integrating Codeception with Drupal to have added support for TDD</title>
     <link>https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</link>
-    <description>Getting Codeception into Drupal, will have added support for Test Driven Development.. Specifically in having the Acceptance Tests in the project.. Since Test Driven Development would be one the most integral part of the project.. And also internal team and vendor team would be having more confidence in the version releases of their project.. one can prefer TDD.
-                                Tes</description>
+    <description>Getting Codeception into Drupal, will have added support for Test Driven Development.. Specifically in having the Acceptance Tests in the project.. Since Test Driven Development would be one the most integral part of the project.. And also internal team and vendor team would be having more confidence in the version releases of their project.. one can prefer TDD.                                Test</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/integrating-codeception-drupal-have-added-support-tdd.html</guid>
   </item><item>
     <title>Creating a Twitter Share block programmatically in Drupal 8</title>
     <link>https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</link>
-    <description>How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like
-                                
-                                    Accessing the Current Node data in Block.
-                                    How do we create the link programmatically.
-                                    Disable cache for particular block.
-                                
-  </description>
+    <description>How to Create a Twitter Share block programmatically in Drupal 8. Which includes few minor stuff like                                                                    Accessing the Current Node data in Block.                                    How do we create the link programmatically.                                    Disable cache for particular block.                                        </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</guid>
@@ -2497,66 +2402,49 @@
   </item><item>
     <title>Auto Tagging of Taxonomy terms in Drupal7</title>
     <link>https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</link>
-    <description>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave().
-                                In our case lets consider the field_tags is the taxonomy field, and we are autotagging based on the content present in title and body fields.
-                                Al</description>
+    <description>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the hook_node_presave().                                In our case lets consider the field_tags is the taxonomy field, and we are autotagging based on the content present in title and body fields.                                All </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/auto-tagging-taxonomy-terms-drupal.html</guid>
   </item><item>
     <title>Configuring &amp; Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</title>
     <link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
-    <description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.
-                                The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.
-                                Init</description>
+    <description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.                                The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.                                Inital</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
   </item><item>
     <title>Custom Batch processing in Drupal 7 to update Nodes - Batch API</title>
     <link>https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</link>
-    <description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.
-This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.
-Create your custom module, w</description>
+    <description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.Create your custom module, whi</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</guid>
   </item><item>
     <title>Drupal7 Simple Test case in Custom Module</title>
     <link>https://peoplesblog.co.in/articles/drupal-simple-test-case-custom-module.html</link>
-    <description>Why to write test case? Very simple, in one word, Its waste of time and effort of checking something we changed in code and that effects other part, and to make sure every time what change we make that should not effect any other code, so this task can be done by our test cases
-                                In this article, giving a simple test example to create a drupal test case
-              </description>
+    <description>Why to write test case? Very simple, in one word, Its waste of time and effort of checking something we changed in code and that effects other part, and to make sure every time what change we make that should not effect any other code, so this task can be done by our test cases                                In this article, giving a simple test example to create a drupal test case                </description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-simple-test-case-custom-module.html</guid>
   </item><item>
     <title>Filter content between Date ranges in Drupal 7</title>
     <link>https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</link>
-    <description>It is tempting to believe that using the is between on a date fields will work. However, this option is used only in the case of events Starting on a range of date.
-                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an 'end date' for the event, only a date field with the 'Collect an end da</description>
+    <description>It is tempting to believe that using the is between on a date fields will work. However, this option is used only in the case of events Starting on a range of date.                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an 'end date' for the event, only a date field with the 'Collect an end dat</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</guid>
   </item><item>
     <title>Create Related Content of Different Content Types through Taxonomy in Drupal7</title>
     <link>https://peoplesblog.co.in/articles/create-related-content-different-content-types-through-taxonomy-drupal.html</link>
-    <description>Step 1 Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.
-                                
-                                Step 2 And next create/resue the Taxonomy term field for the other content type, In this article lets take example</description>
+    <description>Step 1 Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.                                                                Step 2 And next create/resue the Taxonomy term field for the other content type, In this article lets take example f</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-related-content-different-content-types-through-taxonomy-drupal.html</guid>
   </item><item>
     <title>Drupal Multisite development environment Configuration in Ubuntu14</title>
     <link>https://peoplesblog.co.in/articles/drupal-multisite-development-environment-configuration-ubuntu.html</link>
-    <description>Prerequisite Requires a working drupal installation
-                                Set up your hosts file Add the following lines to /etc/hosts:
-                                127.0.0.1    testsite.localhost
-127.0.0.1    testsite2.localhost
-Set up Virtual Hosts
-                                Add the following code to /etc/apache2/sites-available:
-                                Goto to the fold</description>
+    <description>Prerequisite Requires a working drupal installation                                Set up your hosts file Add the following lines to /etc/hosts:                                127.0.0.1    testsite.localhost127.0.0.1    testsite2.localhostSet up Virtual Hosts                                Add the following code to /etc/apache2/sites-available:                                Goto to the folder /et</description>
     <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-multisite-development-environment-configuration-ubuntu.html</guid>
@@ -2864,95 +2752,77 @@ Set up Virtual Hosts
 </item><item>
   <title>Olympics and Paralympics are two different Olympic Games</title>
   <link>https://peoplesblog.co.in/quick-read/olympics-and-paralympics-are-two-different-olympic-games.html</link>
-  <description>There is a key difference between the Olympics and the Paralympics, where in the Olympics the participants will be able-bodied people and whereas in Paralympics the participants will have some form of physical or intellectual disabilities.
-                            Paralympics was originally started as a way to help soldiers who had been wounded in World War II.
-                            Paral</description>
+  <description>There is a key difference between the Olympics and the Paralympics, where in the Olympics the participants will be able-bodied people and whereas in Paralympics the participants will have some form of physical or intellectual disabilities.                            Paralympics was originally started as a way to help soldiers who had been wounded in World War II.                            Paralym</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/olympics-and-paralympics-are-two-different-olympic-games.html</guid>
 </item><item>
   <title>Indian Astrophysicists spotted rare merger of three massive black holes</title>
   <link>https://peoplesblog.co.in/quick-read/indian-astrophysicists-spotted-rare-merger-of-three-massive-black-holes.html</link>
-  <description>According to the Press Information Bureau, Astrophysicists in India have spotted a rare merging of three supermassive black holes. They were observing the merging of two galaxies named NGC7733 and NGC7734 in our celestial neighbour.
-                            When they detected unusual emissions from the centre of the latter and also a curious movement of a large bright clump having a different v</description>
+  <description>According to the Press Information Bureau, Astrophysicists in India have spotted a rare merging of three supermassive black holes. They were observing the merging of two galaxies named NGC7733 and NGC7734 in our celestial neighbour.                            When they detected unusual emissions from the centre of the latter and also a curious movement of a large bright clump having a different ve</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/indian-astrophysicists-spotted-rare-merger-of-three-massive-black-holes.html</guid>
 </item><item>
   <title>India, Russia to assess Taliban actions, before taking any action on Taliban</title>
   <link>https://peoplesblog.co.in/quick-read/india-russia-to-assess-taliban-actions-before-taking-any-action-on-taliban.html</link>
-  <description>Russian President Vladimir Putin and Indian Prime Minister Narendra Modi agreed on the rise of Islamic radicalization in the region and are concerned over spread of terrorism by Taliban affiliated groups in Pakistan.
-                            The two countries have also decided to set up combined teams of foreign ministry and national security officials of each country to conduct a detailed asse</description>
+  <description>Russian President Vladimir Putin and Indian Prime Minister Narendra Modi agreed on the rise of Islamic radicalization in the region and are concerned over spread of terrorism by Taliban affiliated groups in Pakistan.                            The two countries have also decided to set up combined teams of foreign ministry and national security officials of each country to conduct a detailed asses</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/india-russia-to-assess-taliban-actions-before-taking-any-action-on-taliban.html</guid>
 </item><item>
   <title>Virtual QUAD meet on 12th August, 2021</title>
   <link>https://peoplesblog.co.in/quick-read/virtual-quad-meet-on-twelfth-august-twenty-twenty-one.html</link>
-  <description>On August 12th, 2021 Senior Officials from four democracies - Australia, India, Japan, and the U.S. - met virtually to discuss Quad initiatives on economic recovery, maritime security, and human rights that promote a free and open IndoPacific region.
-                            The four democracies acknowledged that global security and prosperity depends on the region remaining inclusive, resilien</description>
+  <description>On August 12th, 2021 Senior Officials from four democracies - Australia, India, Japan, and the U.S. - met virtually to discuss Quad initiatives on economic recovery, maritime security, and human rights that promote a free and open IndoPacific region.                            The four democracies acknowledged that global security and prosperity depends on the region remaining inclusive, resilient</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/virtual-quad-meet-on-twelfth-august-twenty-twenty-one.html</guid>
 </item><item>
   <title>GSLV-F10 to launch Earth Observation Satellite</title>
   <link>https://peoplesblog.co.in/quick-read/gslv-f-ten-to-launch-earth-observation-satellite.html</link>
-  <description>GSLV-F10 is slated to launch Earth Observation Satellite, EOS-03 on August 12th, 2021 from Satish Dhawan Space Centre SHAR, Sriharikota.
-                            Countdown for the launch of GSLV-F10/EOS-03 mission commenced on August 11th at 03:43 Hrs (IST) from Satish Dhawan Space Centre (SDSC) SHAR, Sriharikota
-                            GSLV-F10 launch took place today (12th Aug) at 05:43 H</description>
+  <description>GSLV-F10 is slated to launch Earth Observation Satellite, EOS-03 on August 12th, 2021 from Satish Dhawan Space Centre SHAR, Sriharikota.                            Countdown for the launch of GSLV-F10/EOS-03 mission commenced on August 11th at 03:43 Hrs (IST) from Satish Dhawan Space Centre (SDSC) SHAR, Sriharikota                            GSLV-F10 launch took place today (12th Aug) at 05:43 Hrs</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/gslv-f-ten-to-launch-earth-observation-satellite.html</guid>
 </item><item>
   <title>July 26th - Kargil Vijay Diwas</title>
   <link>https://peoplesblog.co.in/quick-read/july-twenty-sixth-kargil-vijay-diwas.html</link>
-  <description>In 1999, India successfully took command of high outposts on this date. The Kargil war was fought for more than 60 days &amp; ended on this date.
-                            Pakistani army took advantage of the melting snow &amp; took command of high outposts of India, by betraying the bilateral agreement of both the nations that posts would remain unattended during winter season.
-                        </description>
+  <description>In 1999, India successfully took command of high outposts on this date. The Kargil war was fought for more than 60 days &amp; ended on this date.                            Pakistani army took advantage of the melting snow &amp; took command of high outposts of India, by betraying the bilateral agreement of both the nations that posts would remain unattended during winter season.                          </description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/july-twenty-sixth-kargil-vijay-diwas.html</guid>
 </item><item>
   <title>July 23rd - National Broadcasting Day</title>
   <link>https://peoplesblog.co.in/quick-read/july-twenty-third-national-broadcasting-day.html</link>
-  <description>During the British Raj, Broadcasting began in June 1923 with the programs by the Bombay Presidency Radio Club and other radio clubs.
-                            
-                                The private Indian Broadcasting Company Ltd (IBC) was authorized to operate two radio stations in an agreement on 23 July 1927.
-                                IBC started with two stations, one in Bombay (</description>
+  <description>During the British Raj, Broadcasting began in June 1923 with the programs by the Bombay Presidency Radio Club and other radio clubs.                                                            The private Indian Broadcasting Company Ltd (IBC) was authorized to operate two radio stations in an agreement on 23 July 1927.                                IBC started with two stations, one in Bombay (now</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/july-twenty-third-national-broadcasting-day.html</guid>
 </item><item>
   <title>ISRO successfully conducted the Third Test on Vikas Engine for Gaganyaan</title>
   <link>https://peoplesblog.co.in/quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-for-gaganyaan.html</link>
-  <description>On July 14, 2021, ISRO has successfully conducted the third long-duration hot test of the liquid propellant Vikas Engine for the core L110 liquid stage of the human-rated GSLV MkIII vehicle, as part of the engine qualification requirements for the Gaganyaan Programme.
-                            The engine was fired for a duration of 240 seconds at the engine test facility of ISRO Propulsion Compl</description>
+  <description>On July 14, 2021, ISRO has successfully conducted the third long-duration hot test of the liquid propellant Vikas Engine for the core L110 liquid stage of the human-rated GSLV MkIII vehicle, as part of the engine qualification requirements for the Gaganyaan Programme.                            The engine was fired for a duration of 240 seconds at the engine test facility of ISRO Propulsion Comple</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-for-gaganyaan.html</guid>
 </item><item>
   <title>Heat on Earth’s Atmosphere is Heating much as it did fifteen years ago</title>
   <link>https://peoplesblog.co.in/quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html</link>
-  <description>Earth's energy imbalance doubled between 2005 - 2019, this was identified by a team from NASA &amp; NOAA. Energy Im-balance is the difference between the amount of energy absorbed by Earth and the amount of energy emitted by Earth.
-                            Means, if there is any energy imbalance on earth, Earth will be gaining energy which will lead to heat up more.
-                            So t</description>
+  <description>Earth's energy imbalance doubled between 2005 - 2019, this was identified by a team from NASA &amp; NOAA. Energy Im-balance is the difference between the amount of energy absorbed by Earth and the amount of energy emitted by Earth.                            Means, if there is any energy imbalance on earth, Earth will be gaining energy which will lead to heat up more.                            So to </description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html</guid>
 </item><item>
   <title>Device with Two Atoms thick, World’s thinnest device</title>
   <link>https://peoplesblog.co.in/quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html</link>
-  <description>World’s thinnest piece of technology has been developed by the Scientists, which is a device with only two Atoms thick, very tiny. It can be used to store electronic information.
-                            This device consists of 2 layers one with Boron &amp; other with Nitrogen, which are arranged in a repeating hexagonal structure.
-                            Electrons from Boron &amp; Nitrogen atoms</description>
+  <description>World’s thinnest piece of technology has been developed by the Scientists, which is a device with only two Atoms thick, very tiny. It can be used to store electronic information.                            This device consists of 2 layers one with Boron &amp; other with Nitrogen, which are arranged in a repeating hexagonal structure.                            Electrons from Boron &amp; Nitrogen atoms a</description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html</guid>
 </item><item>
   <title>Powerful Solar Storm approaching Earth</title>
   <link>https://peoplesblog.co.in/quick-read/powerful-solar-storm-approaching-earth.html</link>
-  <description>According to website spaceweather.com, a powerful solar storm is approaching the Earth at a speed of 1.6 million kilometers and this storm will hit the Earth someday on 11th July - 13th July 2021. As per the website spaceweather.com, the storm that originated from the Sun's atmosphere can have a significant impact on a region of space dominated by Earth's magnetic field.
-                          </description>
+  <description>According to website spaceweather.com, a powerful solar storm is approaching the Earth at a speed of 1.6 million kilometers and this storm will hit the Earth someday on 11th July - 13th July 2021. As per the website spaceweather.com, the storm that originated from the Sun's atmosphere can have a significant impact on a region of space dominated by Earth's magnetic field.                           </description>
   <pubDate>Thu, 01 Dec 2022 09:00:00 +0530</pubDate>
   <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/quick-read/powerful-solar-storm-approaching-earth.html</guid>

@@ -141,72 +141,7 @@
                                 <img loading="lazy" alt="Local environment setup with Lando & Drupal" src="/upload/banners/lando-drupal.png" class="img-fluid" title="Local environment setup with Lando & Drupal" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
-                                <div><p>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much more quicker and easier.</p>
-                                <p>Lando is a development tool, it's a free, open source, cross-platform, local development environment and DevOps tool built on Docker (opens new window) container technology and developed by Tandem. Designed to work with most major languages, frameworks and services, This is a brief about Lando.</p>
-                                <p>Now let's see how we set up Drupal 9 locally with Lando.</p>
-                                <p>Initially you have to install Lando on your machine (I’m using Ubuntu).</p>
-                                <p><pre>$ wget https://files.devwithlando.io/lando-stable.deb
-$ sudo dpkg -i lando-stable.deb
-$ lando</pre></p>
-                                <p>After successful installation, when you type lando in terminal and hit enter, you will see commands listed which lando provides by default.</p>
-                                <p>Let's proceed with the Drupal 9 installation.</p>
-                                <p><pre>$ lando init
---source remote
---remote-url https://ftp.drupal.org/files/projects/drupal-9.2.0.tar.gz
---remote-options="--strip-components 1"
---recipe drupal9
---webroot .
---name drupal9-local</pre></p>
-                                <p>This will download the drupal 9.2.0 version and place it in the drupal9-local folder. Further start lando by using the below command.</p>
-                                <p><pre>$ lando start</pre></p>
-                                <p>This will start the Drupal 9 installation and you will get the drupal up & running. And you can see the information in the instance running by using the below command.</p>
-                                <p><pre>$ lando info</pre></p>
-                                <div class="google-ad">
-                                    <!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"
-                                            crossorigin="anonymous"></script -->
-                                    <ins class="adsbygoogle"
-                                         style="display:block; text-align:center;"
-                                         data-ad-layout="in-article"
-                                         data-ad-format="fluid"
-                                         data-ad-client="ca-pub-2683569506254139"
-                                         data-ad-slot="4812668708"></ins>
-                                    <script>
-                                        (adsbygoogle = window.adsbygoogle || []).push({});
-                                    </script>
-                                </div>
-                                <h3>Configuration</h3>
-                                <p>You can modify or maintain the configurations in a file named .lando.yml, which can have the details of the php, mysql, nginx etc details. An example file is shown below.</p>
-                                <p><pre>$ nano .lando.yml
-recipe: drupal9
-config:
-    php: '7.4'
-    composer_version: '1.10.1'
-    via: nginx
-    database: mysql:5.7
-    webroot: .
-    drush: false
-    xdebug: true
-    config:
-        database: config/db.cnf
-        php: config/php.ini
-        server: config/server.conf
-        vhosts: config/default.conf
-services:
-    appserver:
-        build:
-        - composer install
-tooling:
-    drush:
-        service: appserver
-        env:
-            DRUSH_OPTIONS_URI: "https://drupal9-local.site"</pre></p>
-                                <p>Also you can utilize lando utility to run the composer and other services defined in the config file. Few example commands are shown below.</p>
-                                <p><pre>$ lando composer require drush/drush
-$ lando -v db-import -h drupal9 backup.sql.gz
-$ lando composer test
-$ lando mysql
-$ lando php -m</pre></p>
-                                <p>This way by using lando you can set up drupal 9 on your local environment. And on the configuration front you can do many other things like configuring multisite, environment variables etc.</p></div>
+                                <div><p>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much more quicker and easier.</p>                                <p>Lando is a development tool, it's a free, open source, cross-platform, local development environment and DevOps tool built on Docker (opens new window) container technology and developed by Tandem. Designed to work with most major languages, frameworks and services, This is a brief about Lando.</p>                                <p>Now let's see how we set up Drupal 9 locally with Lando.</p>                                <p>Initially you have to install Lando on your machine (I’m using Ubuntu).</p>                                <p><pre>$ wget https://files.devwithlando.io/lando-stable.deb$ sudo dpkg -i lando-stable.deb$ lando</pre></p>                                <p>After successful installation, when you type lando in terminal and hit enter, you will see commands listed which lando provides by default.</p>                                <p>Let's proceed with the Drupal 9 installation.</p>                                <p><pre>$ lando init--source remote--remote-url https://ftp.drupal.org/files/projects/drupal-9.2.0.tar.gz--remote-options="--strip-components 1"--recipe drupal9--webroot .--name drupal9-local</pre></p>                                <p>This will download the drupal 9.2.0 version and place it in the drupal9-local folder. Further start lando by using the below command.</p>                                <p><pre>$ lando start</pre></p>                                <p>This will start the Drupal 9 installation and you will get the drupal up & running. And you can see the information in the instance running by using the below command.</p>                                <p><pre>$ lando info</pre></p>                                <div class="google-ad">                                    <!-- script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2683569506254139"                                            crossorigin="anonymous"></script -->                                    <ins class="adsbygoogle"                                         style="display:block; text-align:center;"                                         data-ad-layout="in-article"                                         data-ad-format="fluid"                                         data-ad-client="ca-pub-2683569506254139"                                         data-ad-slot="4812668708"></ins>                                    <script>                                        (adsbygoogle = window.adsbygoogle || []).push({});                                    </script>                                </div>                                <h3>Configuration</h3>                                <p>You can modify or maintain the configurations in a file named .lando.yml, which can have the details of the php, mysql, nginx etc details. An example file is shown below.</p>                                <p><pre>$ nano .lando.ymlrecipe: drupal9config:    php: '7.4'    composer_version: '1.10.1'    via: nginx    database: mysql:5.7    webroot: .    drush: false    xdebug: true    config:        database: config/db.cnf        php: config/php.ini        server: config/server.conf        vhosts: config/default.confservices:    appserver:        build:        - composer installtooling:    drush:        service: appserver        env:            DRUSH_OPTIONS_URI: "https://drupal9-local.site"</pre></p>                                <p>Also you can utilize lando utility to run the composer and other services defined in the config file. Few example commands are shown below.</p>                                <p><pre>$ lando composer require drush/drush$ lando -v db-import -h drupal9 backup.sql.gz$ lando composer test$ lando mysql$ lando php -m</pre></p>                                <p>This way by using lando you can set up drupal 9 on your local environment. And on the configuration front you can do many other things like configuring multisite, environment variables etc.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h3>

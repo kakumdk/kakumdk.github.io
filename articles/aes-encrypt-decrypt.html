@@ -141,45 +141,7 @@
                                 <img loading="lazy" alt="AES Encrypt & Decrypt" src="/upload/banners/1_4BDmgHbEkjYDUtEK-ntr6Q.png" class="img-fluid" title="AES Encrypt & Decrypt" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
-                                <div><p dir='ltr'>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher.<strong> </strong>Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.</p>
-                                <h3 dir='ltr'>AES Encrypt</h3>
-                                <ul dir='ltr'>
-                                    <li>We would have the 'Secret' stored in a file which is other than the web root.</li>
-                                </ul>
-                                <pre dir='ltr'>$key = hash('sha256', $secret, true);</pre>
-                                <ul dir='ltr'>
-                                    <li>Hash the 'Secret' with sha256, this gives you the 'Key' which will be used to openssl encrypt.</li>
-                                    <li>And Generate the pseudo random bytes as 'IV', so that it would be used during encryption and also be attached to the encrypted data.</li>
-                                </ul>
-                                <pre dir='ltr'>$iv = openssl_random_pseudo_bytes(16);</pre><ul dir='ltr'>
-                                <li>Now encrypt the 'String' with openssl encrypt by passing the 'AES-256-CBC' method, 'Key' and 'IV'</li>
-                            </ul>
-                                <pre dir='ltr'>$ciphertext = openssl_encrypt($plaintext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre><ul>
-                                <li>'openssl_encrypt' will Encrypt given data with given method and key, returns a raw or base64 encoded string.</li>
-                                <li>'Hash' the returned 'Cipher' text with sha256 hmac method</li>
-                            </ul>
-                                <pre dir='ltr'>$hash = hash_hmac('sha256', $ciphertext, $key, true);</pre><ul dir='ltr'>
-                                <li>Now concatenate the 'IV' &amp; 'Hash' &amp; 'Cipher' and store in the DB as the encrypted value.</li>
-                            </ul>
-                                <h3 dir='ltr'>AES Decrypt</h3>
-                                <ul dir='ltr'>
-                                    <li>Hash the 'Secret' with sha256, this gives you the 'Key' which will be used to openssl encrypt.</li>
-                                </ul>
-                                <pre dir='ltr'>$key = hash('sha256', $password, true);</pre><ul dir='ltr'>
-                                <li>Explode the concatenated string to 'IV' &amp; 'Hash' &amp; 'Cipher'</li>
-                            </ul>
-                                <pre dir='ltr'>$iv = substr($ivHashCiphertext, 0, 16);
-
-$hash = substr($ivHashCiphertext, 16, 32);
-
-$ciphertext = substr($ivHashCiphertext, 48);</pre><ul>
-                                <li>'openssl_decrypt' will take a raw or base64 encoded string and decrypts it using a given method and key.</li>
-                                <li>Now decrypt the 'Cipher' with 'AES-256-CBC' method, 'Key' and 'IV'</li>
-                            </ul>
-                                <pre dir='ltr'>openssl_decrypt($ciphertext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre><ul dir='ltr'>
-                                <li>Return the decrypted 'String'. it is ok, or do i need to change it to excel.</li>
-                            </ul>
-                                <p dir='ltr'>Cheers :)</p></div>
+                                <div><p dir='ltr'>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher.<strong> </strong>Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.</p>                                <h3 dir='ltr'>AES Encrypt</h3>                                <ul dir='ltr'>                                    <li>We would have the 'Secret' stored in a file which is other than the web root.</li>                                </ul>                                <pre dir='ltr'>$key = hash('sha256', $secret, true);</pre>                                <ul dir='ltr'>                                    <li>Hash the 'Secret' with sha256, this gives you the 'Key' which will be used to openssl encrypt.</li>                                    <li>And Generate the pseudo random bytes as 'IV', so that it would be used during encryption and also be attached to the encrypted data.</li>                                </ul>                                <pre dir='ltr'>$iv = openssl_random_pseudo_bytes(16);</pre><ul dir='ltr'>                                <li>Now encrypt the 'String' with openssl encrypt by passing the 'AES-256-CBC' method, 'Key' and 'IV'</li>                            </ul>                                <pre dir='ltr'>$ciphertext = openssl_encrypt($plaintext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre><ul>                                <li>'openssl_encrypt' will Encrypt given data with given method and key, returns a raw or base64 encoded string.</li>                                <li>'Hash' the returned 'Cipher' text with sha256 hmac method</li>                            </ul>                                <pre dir='ltr'>$hash = hash_hmac('sha256', $ciphertext, $key, true);</pre><ul dir='ltr'>                                <li>Now concatenate the 'IV' &amp; 'Hash' &amp; 'Cipher' and store in the DB as the encrypted value.</li>                            </ul>                                <h3 dir='ltr'>AES Decrypt</h3>                                <ul dir='ltr'>                                    <li>Hash the 'Secret' with sha256, this gives you the 'Key' which will be used to openssl encrypt.</li>                                </ul>                                <pre dir='ltr'>$key = hash('sha256', $password, true);</pre><ul dir='ltr'>                                <li>Explode the concatenated string to 'IV' &amp; 'Hash' &amp; 'Cipher'</li>                            </ul>                                <pre dir='ltr'>$iv = substr($ivHashCiphertext, 0, 16);$hash = substr($ivHashCiphertext, 16, 32);$ciphertext = substr($ivHashCiphertext, 48);</pre><ul>                                <li>'openssl_decrypt' will take a raw or base64 encoded string and decrypts it using a given method and key.</li>                                <li>Now decrypt the 'Cipher' with 'AES-256-CBC' method, 'Key' and 'IV'</li>                            </ul>                                <pre dir='ltr'>openssl_decrypt($ciphertext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre><ul dir='ltr'>                                <li>Return the decrypted 'String'. it is ok, or do i need to change it to excel.</li>                            </ul>                                <p dir='ltr'>Cheers :)</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h3>

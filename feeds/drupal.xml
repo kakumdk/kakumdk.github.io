@@ -267,32 +267,28 @@
     </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
-			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
-                            Twig is a PHP-based compiled templating </description>
+			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
     </item><item>
 			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
-			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
-                            With Dependency Injection, the class is no longer responsible for in</description>
+			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.                            With Dependency Injection, the class is no longer responsible for ins</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
     </item><item>
 			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
 			<link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
-			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
-                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
+			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wou</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</link>
-			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.
-                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collectio</description>
+			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collection</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</guid>
@@ -306,25 +302,21 @@
     </item><item>
 			<title>Security Hardening - Nginx Response Headers</title>
 			<link>https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</link>
-			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.
-                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of info</description>
+			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of infor</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</guid>
     </item><item>
 			<title>Drupal 7 to Drupal 8/9 Audits</title>
 			<link>https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</link>
-			<description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.
-                       </description>
+			<description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.                        </description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</guid>
     </item><item>
 			<title>Drupal JSON API, Deep Dive - Part 2</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</link>
-			<description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.
-                                Types
-                            </description>
+			<description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.                                Types                              </description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</guid>
@@ -352,18 +344,14 @@
     </item><item>
 			<title>API Docs Drupal Module simple way to show OAS Docs on Drupal Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</link>
-			<description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.
-                                Prereq</description>
+			<description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.                                Prerequ</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</guid>
     </item><item>
 			<title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
-			<description>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern
-                                HTTP Methods
-                                JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.
-                       </description>
+			<description>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern                                HTTP Methods                                JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.                          </description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>

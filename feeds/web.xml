@@ -190,49 +190,42 @@
     </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
-			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.
-                            Twig is a PHP-based compiled templating </description>
+			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
     </item><item>
 			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
-			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.
-                            With Dependency Injection, the class is no longer responsible for in</description>
+			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.                            With Dependency Injection, the class is no longer responsible for ins</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
     </item><item>
 			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
 			<link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
-			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.
-                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wo</description>
+			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wou</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
     </item><item>
 			<title>What to Know for Estimating Projects</title>
 			<link>https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</link>
-			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.
-                            If one needs to deliver a project successfully then one must estimate the project as better as possible.
-               </description>
+			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.                            If one needs to deliver a project successfully then one must estimate the project as better as possible.                 </description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</guid>
     </item><item>
 			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</link>
-			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.
-                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to syste</description>
+			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to system</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</guid>
     </item><item>
 			<title>Technical Writing Vs Content Writing</title>
 			<link>https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</link>
-			<description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.
-                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the re</description>
+			<description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the rea</description>
 			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
 			<dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</guid>
