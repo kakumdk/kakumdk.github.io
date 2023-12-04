@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/importance-of-good-sleep-for-health.html
 Allow: /articles/do-it-yourself-pulley-system-science-experiment-for-children.html
 Allow: /articles/nutrient-foods-which-people-need-to-have-daily.html
 Allow: /articles/signs-that-your-relationship-has-reached-its-end.html
