@@ -600,6 +600,10 @@ Allow: /videos/iQ-BaomjtNA.html
 Allow: /videos/n0pcXs-nq3g.html
 Allow: /videos/bYPdV8j3v1g.html
 Allow: /videos/D3DShZBnIxE.html
+Allow: /shop/amazon.html
+Allow: /shop/firstcry.html
+Allow: /shop/myntra.html
+Allow: /shop/tata-cliq.html
 Allow: /shop/b0b9wyjyk2.html
 Allow: /shop/b0b2cr7n3n.html
 Allow: /shop/b0929p7nt1.html

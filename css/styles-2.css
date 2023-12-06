@@ -685,16 +685,19 @@ section .page-wrapper .articles.label-articles .article .articles-content .artic
     height: 120px;
     overflow: hidden;
 }
-section .page-wrapper .articles.label-articles .message {
+section .page-wrapper .articles.label-articles .message,
+body.shop .shop-data .shop-data-results .message {
     padding: 15px;
     background-color: #f9f9f9;
     text-align: center;
     border-radius: 5px;
 }
-section .page-wrapper .articles.label-articles .message span {
+section .page-wrapper .articles.label-articles .message span,
+body.shop .shop-data .shop-data-results .message span {
     font-weight: bold;
 }
-section .page-wrapper .articles.label-articles .message a {
+section .page-wrapper .articles.label-articles .message a,
+body.shop .shop-data .shop-data-results .message a {
     display: block;
 }
 section .articles.search-articles {
@@ -1871,6 +1874,13 @@ h3.author-articles-heading::after {
 .shop-data .shop-data-results .shop-item .store {
     margin-top: 5px;
     text-align: left;
+}
+.shop-data .shop-data-results .shop-item .store a {
+    color: #292b2c;
+}
+.shop-data .shop-data-results .shop-item .store a:hover {
+    color: #0275d8;
+    text-decoration: unset;
 }
 .shop-data .shop-data-results .col-md-4.shop-item-wrapper.hide,
 .shop-data .shop-data-results .shop-item .summary.hide,
