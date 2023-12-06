@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/best-batteries-to-use-with-the-solar-panels-for-home.html
 Allow: /articles/ten-hill-stations-to-travel-solo-in-south-of-india.html
 Allow: /articles/importance-of-good-sleep-for-health.html
 Allow: /articles/do-it-yourself-pulley-system-science-experiment-for-children.html
@@ -948,6 +949,7 @@ Allow: /articles/self.html
 Allow: /articles/sexual-health.html
 Allow: /articles/social-media.html
 Allow: /articles/software.html
+Allow: /articles/solar.html
 Allow: /articles/solar-energy.html
 Allow: /articles/solo.html
 Allow: /articles/srikalahasti.html
@@ -1055,6 +1057,7 @@ Allow: /feeds/self.xml
 Allow: /feeds/sexual-health.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
+Allow: /feeds/solar.xml
 Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
 Allow: /feeds/srikalahasti.xml
