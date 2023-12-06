@@ -1756,6 +1756,13 @@ h3.author-articles-heading::after {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.shop-data .shop-category ul li a {
+    color: #292b2c;
+}
+.shop-data .shop-category ul li a:hover {
+    color: #0275d8;
+    text-decoration: unset;
+}
 .shop-data .shop-category ul li label {
     margin-bottom: 0;
     padding-left: 5px;
