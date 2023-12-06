@@ -1968,6 +1968,13 @@ h3.author-articles-heading::after {
 .shop-details .price-store .store {
     padding-left: 15px;
 }
+.shop-details .price-store .store a {
+    color: #292b2c;
+}
+.shop-details .price-store .store a:hover {
+    color: #0275d8;
+    text-decoration: unset;
+}
 .shop-details .note {
     margin: 15px auto;
 }
