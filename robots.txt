@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/health-benefits-of-bananas-and-why-people-need-to-consume-them.html
 Allow: /articles/best-batteries-to-use-with-the-solar-panels-for-home.html
 Allow: /articles/ten-hill-stations-to-travel-solo-in-south-of-india.html
 Allow: /articles/importance-of-good-sleep-for-health.html
@@ -900,6 +901,7 @@ Allow: /articles/experiment.html
 Allow: /articles/family.html
 Allow: /articles/food.html
 Allow: /articles/friend.html
+Allow: /articles/fruits.html
 Allow: /articles/gandikota.html
 Allow: /articles/ghatisubramanya.html
 Allow: /articles/github.html
@@ -1008,6 +1010,7 @@ Allow: /feeds/experiment.xml
 Allow: /feeds/family.xml
 Allow: /feeds/food.xml
 Allow: /feeds/friend.xml
+Allow: /feeds/fruits.xml
 Allow: /feeds/gandikota.xml
 Allow: /feeds/ghatisubramanya.xml
 Allow: /feeds/github.xml
