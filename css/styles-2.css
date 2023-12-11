@@ -2485,6 +2485,7 @@ button#play-truth-dare-next {
         height: 40px;
         top: 100px;
         width: 40px;
+        font-size: 25px;
     }
     .footer .widget .newsletter-widget-subscribe button {
         font-size: revert;
