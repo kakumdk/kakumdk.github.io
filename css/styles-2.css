@@ -78,9 +78,9 @@ body .header .navbar {
     padding: 0.5rem 0;
 }
 body .header .navbar .navbar-toggler {
-    right: 4px;
-    margin-top: 20px;
-    font-size: 24px;
+    right: 0;
+    margin-top: 12px;
+    font-size: 40px;
 }
 body .header .navbar a.navbar-brand {
     margin-right: 0;
@@ -111,7 +111,7 @@ body .blog-list-homepage-single.articles .homepage-slideshow h2 {
     font-size: 22px;
     line-height: 1.2;
     font-weight: normal;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
 }
 body .blog-list-homepage-single.articles .homepage-slideshow h2 a {
     color: #292b2c;
@@ -120,7 +120,7 @@ body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slidesh
     margin: 15px;
 }
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .articles-author {
-    font-size: 14px;
+    font-size: 16px;
 }
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .articles-author em:first-child {
     padding: 0 6px 0 0;
@@ -132,6 +132,7 @@ body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slidesh
 }
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .articles-author a {
     color: #292b2c;
+    /* margin: auto 2px; */
 }
 body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .articles-author a:hover {
     text-decoration: unset;
@@ -166,14 +167,14 @@ body .blog-list-homepage-single.articles ol.carousel-indicators {
 }
 body .blog-list-homepage-single.articles .carousel-control-prev,
 body .blog-list-homepage-single.articles .carousel-control-next {
-    font-size: 20px;
+    font-size: 38px;
     color: #282b2c;
     background-color: #f9f9f9;
-    height: 30px;
+    height: 50px;
     border-radius: 50%;
     top: 75px;
-    margin: 5px;
-    width: 30px;
+    margin: 8px;
+    width: 50px;
 }
 body #carouselQuickRead .carousel-control-prev,
 body #carouselQuickRead .carousel-control-next {
@@ -211,7 +212,7 @@ body #carouselQuickRead .carousel-control-next {
     color: #546E7A;
     width: 49%;
     display: inline-block;
-    margin: 4px auto;
+    margin: 6px auto;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -247,11 +248,13 @@ body #carouselQuickRead .carousel-control-next {
 .footer .widget .link-widget ul li {
     width: 49%;
     display: inline-block;
+    margin: 4px auto;
 }
 .footer .widget .link-widget ul li a {
     color: #546E7A;
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .footer .copyright {
     margin: 15px auto;
@@ -439,6 +442,7 @@ body #carouselQuickRead .carousel-control-next {
     line-height: 1.2;
     font-weight: normal;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .homepage-recent.articles .article h4 a {
     color: #292b2c;
@@ -449,6 +453,7 @@ body #carouselQuickRead .carousel-control-next {
 }
 .homepage-recent.articles .article .articles-author {
     font-size: 14px;
+    margin: 2px auto;
 }
 .homepage-recent.articles .article .articles-author em:first-child {
     padding: 0 6px 0 0;
@@ -731,6 +736,7 @@ section .articles.search-articles .article .articles-content h4 {
     font-size: 22px;
     line-height: 1.2;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 section .articles.search-articles .article .articles-content h4 a {
     color: #292b2c;
@@ -1454,8 +1460,11 @@ body .quotes-browse .tag-quotes-section a:hover {
 .author.peoplesblog-author .author-content-wrapper {
     margin-top: 15px;
 }
+.author.peoplesblog-author .author-content-wrapper .topsocial a:first-child {
+    margin-left: 0;
+}
 .author.peoplesblog-author .author-content-wrapper .topsocial a {
-    margin-right: 15px;
+    margin: auto 10px;
 }
 h3.author-articles-heading {
     margin: 15px auto;
@@ -2192,7 +2201,7 @@ h3.author-articles-heading::after {
 }
 .footer .widget .link-widget ul.utilities li {
     width: auto;
-    margin: auto 15px;
+    margin: 5px 15px;
 }
 #site-fixed-ad-container {
     display: none;
@@ -2463,8 +2472,8 @@ button#play-truth-dare-next {
         padding-right: 45px;
     }
     body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .summary {
-        height: 110px;
-        line-height: 1.7;
+        height: 102px;
+        line-height: 1.5;
     }
     body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow .articles-labels span:nth-of-type(1n+4) {
         display: inline-block;
@@ -2538,7 +2547,7 @@ button#play-truth-dare-next {
     }
     section .articles.search-articles .article .articles-content .articles-summary {
         height: 98px;
-        margin: 6px auto;
+        margin: 5px auto;
     }
     section .articles.search-articles .article .articles-content .articles-labels span:nth-of-type(1n+4) {
         display: inline-block;
