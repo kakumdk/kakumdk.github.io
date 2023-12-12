@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/what-is-charge-controller-and-how-to-use-it-with-a-solar-panel-setup-at-home.html
 Allow: /articles/build-self-awareness-about-unconscious-bias-and-why-it-is-needed.html
 Allow: /articles/health-benefits-of-bananas-and-why-people-need-to-consume-them.html
 Allow: /articles/best-batteries-to-use-with-the-solar-panels-for-home.html
