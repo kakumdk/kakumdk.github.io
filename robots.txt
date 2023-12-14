@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-madurai-solo-trip-plan.html
 Allow: /articles/what-is-charge-controller-and-how-to-use-it-with-a-solar-panel-setup-at-home.html
 Allow: /articles/build-self-awareness-about-unconscious-bias-and-why-it-is-needed.html
 Allow: /articles/health-benefits-of-bananas-and-why-people-need-to-consume-them.html
@@ -935,6 +936,7 @@ Allow: /articles/lifestyle.html
 Allow: /articles/lima.html
 Allow: /articles/love.html
 Allow: /articles/madanapalle.html
+Allow: /articles/madurai.html
 Allow: /articles/mahabalipuram.html
 Allow: /articles/makalidurga.html
 Allow: /articles/mangalore.html
@@ -956,6 +958,7 @@ Allow: /articles/quotes.html
 Allow: /articles/recipe.html
 Allow: /articles/relationship.html
 Allow: /articles/russia.html
+Allow: /articles/salem.html
 Allow: /articles/salleri.html
 Allow: /articles/sci-tech.html
 Allow: /articles/security.html
@@ -1044,6 +1047,7 @@ Allow: /feeds/lifestyle.xml
 Allow: /feeds/lima.xml
 Allow: /feeds/love.xml
 Allow: /feeds/madanapalle.xml
+Allow: /feeds/madurai.xml
 Allow: /feeds/mahabalipuram.xml
 Allow: /feeds/makalidurga.xml
 Allow: /feeds/mangalore.xml
@@ -1065,6 +1069,7 @@ Allow: /feeds/quotes.xml
 Allow: /feeds/recipe.xml
 Allow: /feeds/relationship.xml
 Allow: /feeds/russia.xml
+Allow: /feeds/salem.xml
 Allow: /feeds/salleri.xml
 Allow: /feeds/sci-tech.xml
 Allow: /feeds/security.xml
