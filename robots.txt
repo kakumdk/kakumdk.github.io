@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-set-up-a-monitoring-system-for-the-solar-panel-at-your-home.html
 Allow: /articles/which-fruits-are-having-amazing-health-benefits.html
 Allow: /articles/magnetic-slime-science-experiment-for-children.html
 Allow: /articles/bangalore-to-madurai-solo-trip-plan.html
