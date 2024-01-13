@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-chitradurga-solo-trip-plan.html
 Allow: /articles/how-to-set-up-a-monitoring-system-for-the-solar-panel-at-your-home.html
 Allow: /articles/which-fruits-are-having-amazing-health-benefits.html
 Allow: /articles/magnetic-slime-science-experiment-for-children.html
@@ -435,6 +436,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/amala-shankar.html
 Allow: /great-people/vp-singh.html
 Allow: /great-people/madan-mohan.html
 Allow: /great-people/vv-giri.html
@@ -893,6 +895,7 @@ Allow: /articles/book.html
 Allow: /articles/business.html
 Allow: /articles/covid.html
 Allow: /articles/children.html
+Allow: /articles/chitradurga.html
 Allow: /articles/chutney.html
 Allow: /articles/code.html
 Allow: /articles/colima.html
@@ -1004,6 +1007,7 @@ Allow: /feeds/book.xml
 Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
 Allow: /feeds/children.xml
+Allow: /feeds/chitradurga.xml
 Allow: /feeds/chutney.xml
 Allow: /feeds/code.xml
 Allow: /feeds/colima.xml
