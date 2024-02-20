@@ -86,7 +86,7 @@
                     <span class=""></span>
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/"><img loading="lazy" alt="Peoples BLOG" src="/upload/logo.png" title="Peoples BLOG" /></a>
+                <a class="navbar-brand" href="/"><img alt="Peoples BLOG" src="/upload/logo.png" title="Peoples BLOG" /></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                            <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
@@ -139,7 +139,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img loading="lazy" alt="Custom Batch processing in Drupal 7 to update Nodes - Batch API" src="/upload/banners/D7install5_0.png" class="img-fluid" title="Custom Batch processing in Drupal 7 to update Nodes - Batch API" />
+                                <img alt="Custom Batch processing in Drupal 7 to update Nodes - Batch API" src="/upload/banners/D7install5_0.png" class="img-fluid" title="Custom Batch processing in Drupal 7 to update Nodes - Batch API" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.</p><p>This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.</p><p>Create your custom module, which contains <code>custom.info</code> and <code>custom.module</code> files</p><p>The below code put in your <code>custom.module</code> file</p><pre>function custom_menu() {<br/>&nbsp;$items['admin/custom_batch'] = array(<br/>&nbsp; &nbsp;'title' =&gt; 'Custom Batch',<br/>&nbsp; &nbsp;'description' =&gt; 'Custom Batch Process',<br/>&nbsp; &nbsp;'type' =&gt; MENU_NORMAL_ITEM,<br/>&nbsp; &nbsp;'access callback' =&gt; TRUE,<br/>&nbsp; &nbsp;'page callback' =&gt; 'drupal_get_form',<br/>&nbsp; &nbsp;'page arguments' =&gt; array('custom_batch_form'),<br/>&nbsp;);<br/>&nbsp;return $items;<br/>}</pre><pre>function custom_batch_form($form, $form_state) {<br/>&nbsp;$form["text"]['#markup'] = "Custom batch process to update nodes.... ";<br/>&nbsp;$form['submit'] = array(<br/>&nbsp; &nbsp;'#type' =&gt; 'submit',<br/>&nbsp; &nbsp;'#value' =&gt; t('Run Batch'),<br/>&nbsp;);<br/>&nbsp;return $form;<br/>}</pre><pre>function custom_batch_form_submit($form, $form_state) {<br/>&nbsp;batch_set(custom_batch_update_nodes());<br/>}</pre><pre>function custom_batch_update_nodes() {<br/>&nbsp;drupal_set_message('Updating Nodes');<br/>&nbsp;$nodes = node_load_multiple(array(), array('type' =&gt; "story_song"));<br/>&nbsp;$node_count = count($nodes);<br/>&nbsp;foreach($nodes as $nid=&gt;$node) {<br/>&nbsp; &nbsp;$operations[] = array('custom_batch_each_operation', array($node));<br/>&nbsp;}<br/>&nbsp;$batch = array(<br/>&nbsp; &nbsp;'operations' =&gt; $operations,<br/>&nbsp; &nbsp;'finished' =&gt; 'custom_batch_update_nodes_finished',<br/>&nbsp;);<br/>&nbsp;return $batch;<br/>}</pre><pre>function custom_batch_each_operation($node, &amp;$context) {<br/>&nbsp;$context['results'][] = $node-&gt;nid . ' : ' . check_plain($node-&gt;title);<br/>&nbsp;$context['message'] = t('Processing node "@title"', array('@title' =&gt; $node-&gt;title));<br/>&nbsp;$updated = FALSE;<br/>&nbsp;if ($updated) {<br/>&nbsp; &nbsp;node_save($node);<br/>&nbsp; &nbsp;$path = drupal_lookup_path("alias", "node/" . $node-&gt;nid);<br/>&nbsp; &nbsp;drupal_set_message("&lt;a href='/$path'&gt;" . $node-&gt;title . "&lt;/a&gt; updated.");<br/>&nbsp;}<br/>}</pre><pre>function custom_batch_update_nodes_finished($success, $results, $operations) {<br/>&nbsp;if ($success) {<br/>&nbsp; &nbsp;drupal_set_message(t('@count nodes processed.', array('@count' =&gt; count($results))));<br/>&nbsp;}<br/>&nbsp;else {<br/>&nbsp; &nbsp;$error_operation = reset($operations);<br/>&nbsp; &nbsp;drupal_set_message(t('An error occurred while processing @operation with arguments : @args', array('@operation' =&gt; $error_operation[0], '@args' =&gt; print_r($error_operation[0], TRUE))));<br/>&nbsp;}<br/>}</pre><p>Thank you. </p></div>
@@ -155,7 +155,7 @@
         <div class="row"><div class="col-md-4 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>1,600</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b08wl2rdbd.html" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin"><img loading="lazy" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81jZy7pSR7L._SX679_.jpg" class="img-fluid" alt="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin" /></a></div>
+                    <div class="shop-image"><a href="/shop/b08wl2rdbd.html" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin"><img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81jZy7pSR7L._SX679_.jpg" class="img-fluid" alt="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b08wl2rdbd.html" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin" class="shop-title-value">Xtore Beautiful Finish Uniquely Hand Crafted Home Dcor African Tribal Women Art Piece - (Set of 3, Multicolour), Resin</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>899</span></span>
@@ -168,7 +168,7 @@
             </div><div class="col-md-4 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>13,000</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b09vchlsjf.html" title="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)"><img loading="lazy" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/819SRH2DKBL._SX679_.jpg" class="img-fluid" alt="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)" title="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b09vchlsjf.html" title="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)"><img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/819SRH2DKBL._SX679_.jpg" class="img-fluid" alt="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)" title="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b09vchlsjf.html" title="OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)" class="shop-title-value">OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>26,999</span></span>
@@ -181,7 +181,7 @@
             </div><div class="col-md-4 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>7,000</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b08b42lwkn.html" title="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)"><img loading="lazy" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71d5fMDvq9L._SX679_.jpg" class="img-fluid" alt="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)" title="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b08b42lwkn.html" title="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)"><img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71d5fMDvq9L._SX679_.jpg" class="img-fluid" alt="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)" title="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b08b42lwkn.html" title="OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)" class="shop-title-value">OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>12,999</span></span>
@@ -313,7 +313,7 @@
         <div class="row"><div class="col-md-12 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>1,031</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b01mfxcz5a.html" title="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)"><img loading="lazy" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81bSoD59t7L._SX679_.jpg" class="img-fluid" alt="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)" title="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b01mfxcz5a.html" title="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)"><img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81bSoD59t7L._SX679_.jpg" class="img-fluid" alt="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)" title="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b01mfxcz5a.html" title="eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)" class="shop-title-value">eCraftIndia Ganesh Deepak with Bell Brass Wall Hanging (11 cm x 8 cm x 24 cm, Brown)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>968</span></span>
@@ -471,7 +471,7 @@
         <div class="row"><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>32,991</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0b9wyjyk2.html" title="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)"><img loading="lazy" src="https://m.media-amazon.com/images/I/71FGRi7gXzL._SX679_.jpg" class="img-fluid" alt="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)" title="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0b9wyjyk2.html" title="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)"><img src="https://m.media-amazon.com/images/I/71FGRi7gXzL._SX679_.jpg" class="img-fluid" alt="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)" title="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0b9wyjyk2.html" title="Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)" class="shop-title-value">Hisense 139 cm (55 inches) Tornado 2.0 Series 4K Ultra HD Smart LED Google TV 55A7H (Silver)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>36,999</span></span>
@@ -484,7 +484,7 @@
             </div><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>26,991</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0b2cr7n3n.html" title="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)"><img loading="lazy" src="https://m.media-amazon.com/images/I/81QzYGPkNeL._SX679_.jpg" class="img-fluid" alt="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)" title="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0b2cr7n3n.html" title="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)"><img src="https://m.media-amazon.com/images/I/81QzYGPkNeL._SX679_.jpg" class="img-fluid" alt="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)" title="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0b2cr7n3n.html" title="Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)" class="shop-title-value">Hisense 139 cm (55 inches) Bezelless Series 4K Ultra HD Smart LED Google TV 55A6H (Black)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>32,999</span></span>
@@ -497,7 +497,7 @@
             </div><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>350</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0929p7nt1.html" title="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each"><img loading="lazy" src="https://m.media-amazon.com/images/I/81mrMggUQnS._SX679_.jpg" class="img-fluid" alt="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each" title="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0929p7nt1.html" title="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each"><img src="https://m.media-amazon.com/images/I/81mrMggUQnS._SX679_.jpg" class="img-fluid" alt="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each" title="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0929p7nt1.html" title="Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each" class="shop-title-value">Amazon Brand - Solimo Slim Stainless Steel Water Bottle, Set of 3, 1 L Each</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>649</span></span>
@@ -510,7 +510,7 @@
             </div><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>1,272</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0cfdsrqvt.html" title="Bajaj Rex 500W Mixer Grinder, Purple"><img loading="lazy" src="https://m.media-amazon.com/images/I/61E6IJDAfaL._SX679_.jpg" class="img-fluid" alt="Bajaj Rex 500W Mixer Grinder, Purple" title="Bajaj Rex 500W Mixer Grinder, Purple" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0cfdsrqvt.html" title="Bajaj Rex 500W Mixer Grinder, Purple"><img src="https://m.media-amazon.com/images/I/61E6IJDAfaL._SX679_.jpg" class="img-fluid" alt="Bajaj Rex 500W Mixer Grinder, Purple" title="Bajaj Rex 500W Mixer Grinder, Purple" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0cfdsrqvt.html" title="Bajaj Rex 500W Mixer Grinder, Purple" class="shop-title-value">Bajaj Rex 500W Mixer Grinder, Purple</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>2,278</span></span>
