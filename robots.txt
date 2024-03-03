@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-maintain-solar-panel-setup-at-your-home-to-get-the-best-results.html
 Allow: /articles/best-food-to-have-for-better-bowel-movement.html
 Allow: /articles/create-a-custom-drupal-service-and-use-as-a-helper.html
 Allow: /articles/bangalore-to-chitradurga-solo-trip-plan.html
