@@ -620,6 +620,7 @@ Allow: /shop/amazon.html
 Allow: /shop/firstcry.html
 Allow: /shop/myntra.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0c8ntdy55.html
 Allow: /shop/b0c8nwgylq.html
 Allow: /shop/b07whlhxb9.html
 Allow: /shop/b091h9dwl9.html
