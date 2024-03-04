@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-anamudi-solo-trip-plan.html
 Allow: /articles/how-to-maintain-solar-panel-setup-at-your-home-to-get-the-best-results.html
 Allow: /articles/best-food-to-have-for-better-bowel-movement.html
 Allow: /articles/create-a-custom-drupal-service-and-use-as-a-helper.html
@@ -941,6 +942,7 @@ Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kanyakumari.html
 Allow: /articles/kathmandu.html
+Allow: /articles/kerala.html
 Allow: /articles/kochi.html
 Allow: /articles/kodaikanal.html
 Allow: /articles/kudremukh.html
@@ -1053,6 +1055,7 @@ Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kanyakumari.xml
 Allow: /feeds/kathmandu.xml
+Allow: /feeds/kerala.xml
 Allow: /feeds/kochi.xml
 Allow: /feeds/kodaikanal.xml
 Allow: /feeds/kudremukh.xml
