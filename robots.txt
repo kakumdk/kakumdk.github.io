@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-much-fruit-intake-is-too-much-for-a-person.html
 Allow: /articles/what-are-the-types-of-unconscious-bias-that-people-make.html
 Allow: /articles/bangalore-to-anamudi-solo-trip-plan.html
 Allow: /articles/how-to-maintain-solar-panel-setup-at-your-home-to-get-the-best-results.html
