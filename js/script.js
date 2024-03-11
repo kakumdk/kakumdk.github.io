@@ -1128,7 +1128,7 @@ function getDentofactsURL(file, type) {
         .replace(/\d+/g, '')
         .replaceAll('----', '')
         .replaceAll('---', '');
-    return '/dentofacts/'+ type +'s/' + url;
+    return '/articles/' + url;
 }
 function multiDimensionalUnique(arr) {
     var uniques = [];
