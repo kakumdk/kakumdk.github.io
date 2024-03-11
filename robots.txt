@@ -628,6 +628,16 @@ Allow: /shop/amazon.html
 Allow: /shop/firstcry.html
 Allow: /shop/myntra.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0c9qpjy5r.html
+Allow: /shop/b0c9jfm6x6.html
+Allow: /shop/b0cmttrn8m.html
+Allow: /shop/b0c788shhc.html
+Allow: /shop/b07wgpjpr3.html
+Allow: /shop/b07wdkmgwr.html
+Allow: /shop/b0by8jz22k.html
+Allow: /shop/b0cgdqrr9y.html
+Allow: /shop/b07481lpmf.html
+Allow: /shop/b08gry77p9.html
 Allow: /shop/b0br3wlc6c.html
 Allow: /shop/b0c8ntdy55.html
 Allow: /shop/b0c8nwgylq.html
@@ -643,9 +653,7 @@ Allow: /shop/b0929p7nt1.html
 Allow: /shop/b0cfdsrqvt.html
 Allow: /shop/b07vckvjks.html
 Allow: /shop/b00650qj8g.html
-Allow: /shop/b08gry77p9.html
 Allow: /shop/b07rtjv6g4.html
-Allow: /shop/b07481lpmf.html
 Allow: /shop/14412931.html
 Allow: /shop/14745582.html
 Allow: /shop/14745462.html
@@ -691,10 +699,7 @@ Allow: /shop/b09w5vcfkf.html
 Allow: /shop/b07hrrkdvw.html
 Allow: /shop/b079556r74.html
 Allow: /shop/b09w6b1541.html
-Allow: /shop/b0c788shhc.html
 Allow: /shop/b0bqjlvsc2.html
-Allow: /shop/b0by8jz22k.html
-Allow: /shop/b0cgdqrr9y.html
 Allow: /shop/b0c9jdhztb.html
 Allow: /shop/b0c7v7vh6q.html
 Allow: /shop/b09sh8p4h8.html
