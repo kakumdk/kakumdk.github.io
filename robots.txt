@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/what-are-recommended-servings-of-fruits-and-vegetables.html
 Allow: /articles/how-can-people-approach-unconscious-bias-towards-other-people.html
 Allow: /articles/bangalore-to-kollur-solo-trip-plan.html
 Allow: /articles/simple-circuits-science-experiment-for-children.html
