@@ -391,6 +391,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-little-engine-that-could.html
 Allow: /quick-read/the-fox-and-the-hedgehog.html
 Allow: /quick-read/the-princess-and-the-seven-swans.html
 Allow: /quick-read/the-fox-and-the-rabbit.html
