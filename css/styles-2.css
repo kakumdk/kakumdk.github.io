@@ -2398,7 +2398,12 @@ button#play-truth-dare-next {
 .page-not-found p {
     margin: unset;
 }
-
+.shop-describe {
+    margin-bottom: 15px;
+}
+.shop-describe p, .shop-describe ul {
+    margin-bottom: unset;
+}
 
 
 
