@@ -392,6 +392,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-elephants-child.html
 Allow: /quick-read/the-little-engine-that-could.html
 Allow: /quick-read/the-fox-and-the-hedgehog.html
 Allow: /quick-read/the-princess-and-the-seven-swans.html
@@ -453,6 +454,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/ravishankar-shukla.html
 Allow: /great-people/prafulla-chandra-ray.html
 Allow: /great-people/rabindranath-tagore.html
 Allow: /great-people/harkishan-singh-surjeet.html
@@ -1746,6 +1748,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/dentist-inputs-on-quit-smoking-and-breathe-healthy.html
 Allow: /articles/bleeding-gums-bleeding-mouth-facts.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/why-do-dentists-suggest-clear-aligners-invisalign.html
