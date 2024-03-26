@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-jog-falls-solo-trip-plan.html
 Allow: /articles/leaf-chromatography-science-experiment-for-children.html
 Allow: /articles/what-will-happen-to-the-body-if-you-eat-dried-fruits-every-day.html
 Allow: /articles/for-what-reasons-do-relationships-fail.html
@@ -986,6 +987,7 @@ Allow: /articles/health.html
 Allow: /articles/horanadu.html
 Allow: /articles/hyderabad.html
 Allow: /articles/india.html
+Allow: /articles/jog-falls.html
 Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kanyakumari.html
@@ -1103,6 +1105,7 @@ Allow: /feeds/health.xml
 Allow: /feeds/horanadu.xml
 Allow: /feeds/hyderabad.xml
 Allow: /feeds/india.xml
+Allow: /feeds/jog-falls.xml
 Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kanyakumari.xml
