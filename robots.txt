@@ -1755,6 +1755,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/facts-about-salivary-glands.html
 Allow: /articles/dentist-inputs-on-quit-smoking-and-breathe-healthy.html
 Allow: /articles/bleeding-gums-bleeding-mouth-facts.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
