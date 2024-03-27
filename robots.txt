@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/how-to-deal-with-people-who-talk-too-much.html
 Allow: /articles/bangalore-to-jog-falls-solo-trip-plan.html
 Allow: /articles/leaf-chromatography-science-experiment-for-children.html
 Allow: /articles/what-will-happen-to-the-body-if-you-eat-dried-fruits-every-day.html
