@@ -300,7 +300,7 @@ body #carouselQuickRead .carousel-control-next {
     color: #292b2c;
 }
 .blog-list-homepage-blogs.blog-list .blog-meta h4 a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .blog-list-homepage-blogs.blog-list .blog-meta .articles-author {
@@ -448,7 +448,7 @@ body #carouselQuickRead .carousel-control-next {
     color: #292b2c;
 }
 .homepage-recent.articles .article h4 a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .homepage-recent.articles .article .articles-author {
@@ -476,7 +476,7 @@ body #carouselQuickRead .carousel-control-next {
     font-size: 18px;
 }
 .homepage-recent.articles .show-all-articles a {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -599,7 +599,7 @@ body #carouselQuickRead .carousel-control-next {
     color: #292b2c;
 }
 .homepage-recent-videos .video a .video-title:hover {
-    color: #0275d8;
+    color: #0256A1;
 }
 .page-title.single-wrapper {
     margin: 10px auto;
@@ -665,7 +665,7 @@ section .page-wrapper .articles.label-articles .article .articles-content h4 a {
     color: #292b2c;
 }
 section .page-wrapper .articles.label-articles .article .articles-content h4 a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 section .page-wrapper .articles.label-articles .article .articles-content .articles-author {
@@ -745,7 +745,7 @@ section .articles.search-articles .article .articles-content h4 a {
     color: #292b2c;
 }
 section .articles.search-articles .article .articles-content h4 a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 section .articles.search-articles .article .articles-content .articles-author {
@@ -928,7 +928,7 @@ body .quotes-browse .quotes-browse-title:after {
 }
 body .quotes-browse .tag-quotes-section a {
     font-size: 15px;
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: underline;
     margin: 5px auto;
     display: block;
@@ -1048,7 +1048,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     color: #292b2c;
 }
 .search-videos .video a .video-title:hover {
-    color: #0275d8;
+    color: #0256A1;
 }
 .about-wall img {
     border-radius: 5px;
@@ -1078,7 +1078,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     color: #292b2c;
 }
 .peoplesblog-authors .author h4 a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .peoplesblog-authors .author .author-social a {
@@ -1087,7 +1087,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     font-size: 15px;
 }
 .peoplesblog-authors .author .author-social a:hover {
-    color: #0275d8;
+    color: #0256A1;
 }
 .form-wrapper.contact input,
 .form-wrapper.contact textarea {
@@ -1193,7 +1193,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     color: #212529;
 }
 .global-search-results .global-search-result h2 a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .global-search-results .global-search-result p {
@@ -1216,7 +1216,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 .blog-title-area .breadcrumb .breadcrumb-item,
 .blog-title-area .breadcrumb .breadcrumb-item a {
     font-size: 12px;
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
     text-transform: uppercase;
     letter-spacing: 0.02rem;
@@ -1308,7 +1308,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     padding-left: 0;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline li a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .single-post-media {
@@ -1322,6 +1322,12 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-content.read-article-content p::first-letter {
     /* text-transform: capitalize */
+}
+.blog-content.read-article-content a {
+    text-decoration: underline;
+}
+.blog-content.read-article-content a:hover {
+    color: #292b2c;
 }
 .blog-title-area.tag {
     margin: 30px auto;
@@ -1412,7 +1418,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .ads-article.sidebar .popular-articles .article a {
     text-decoration: underline;
-    color: #0275d8;
+    color: #0256A1;
 }
 .ads-article.sidebar .popular-articles .article a:hover {
     color: #292b2c;
@@ -1507,7 +1513,7 @@ h3.author-articles-heading::after {
 }
 .articles.author-articles .article .articles-content h4 a:hover {
     text-decoration: unset;
-    color: #0275d8;
+    color: #0256A1;
 }
 .articles.author-articles .article .articles-content .articles-author {
     font-size: 14px;
@@ -1585,7 +1591,7 @@ h3.author-articles-heading::after {
 }
 .site-links-peoplesblog .site-links-feeds a:hover {
     text-decoration: unset;
-    color: #0275d8;
+    color: #0256A1;
 }
 .site-links-peoplesblog .site-links-feeds a i {
     margin-right: 8px;
@@ -1614,7 +1620,7 @@ h3.author-articles-heading::after {
 .site-links-peoplesblog .site-links-authors span a:hover,
 .site-links-peoplesblog .site-links-misc span a:hover {
     text-decoration: unset;
-    color: #0275d8;
+    color: #0256A1;
 }
 
 .site-links-peoplesblog .site-links-articles span {
@@ -1629,7 +1635,7 @@ h3.author-articles-heading::after {
 }
 .site-links-peoplesblog .site-links-articles span a:hover {
     text-decoration: unset;
-    color: #0275d8;
+    color: #0256A1;
 }
 .feeds .feed-link {
     display: inline-block;
@@ -1646,7 +1652,7 @@ h3.author-articles-heading::after {
 }
 .feeds .feed-link a:hover {
     text-decoration: unset;
-    color: #0275d8;
+    color: #0256A1;
 }
 .feeds .feed-link a i {
     margin-right: 8px;
@@ -1745,7 +1751,7 @@ h3.author-articles-heading::after {
 .shop-data .shop-category .clear {
     float: right;
     font-size: 13px;
-    color: #0275d8;
+    color: #0256A1;
     padding: 6px 4px 0 0;
     cursor: pointer;
 }
@@ -1772,7 +1778,7 @@ h3.author-articles-heading::after {
     color: #292b2c;
 }
 .shop-data .shop-category ul li a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .shop-data .shop-category ul li label {
@@ -1866,7 +1872,7 @@ h3.author-articles-heading::after {
     color: #292b2c;
 }
 .shop-data .shop-data-results .shop-item h4.shop-title a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .shop-data .shop-data-results .shop-item .price {
@@ -1898,7 +1904,7 @@ h3.author-articles-heading::after {
     color: #292b2c;
 }
 .shop-data .shop-data-results .shop-item .store a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .shop-data .shop-data-results .col-md-4.shop-item-wrapper.hide,
@@ -1956,7 +1962,7 @@ h3.author-articles-heading::after {
     color: #292b2c;
 }
 .shop-details h1.title a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .shop-details .price-store {
@@ -1984,7 +1990,7 @@ h3.author-articles-heading::after {
     color: #292b2c;
 }
 .shop-details .price-store .store a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .shop-details .note {
@@ -2017,7 +2023,7 @@ h3.author-articles-heading::after {
 }
 .shop-related-category .shop-item a {
     text-decoration: underline;
-    color: #0275d8;
+    color: #0256A1;
 }
 .shop-related-category .shop-item a:hover {
     color: #292b2c;
@@ -2059,7 +2065,7 @@ h3.author-articles-heading::after {
     text-decoration: none;
 }
 .homepage-view-all a:hover {
-    color: #0275d8;
+    color: #0256A1;
 }
 .homepage-view-all a i {
     font-size: 13px;
@@ -2281,7 +2287,7 @@ h3.author-articles-heading::after {
 }
 .great-people-item-wrapper .great-people-item h4 a:hover,
 .great-people-item-wrapper .great-people-item .read-more a:hover {
-    color: #0275d8;
+    color: #0256A1;
     text-decoration: unset;
 }
 .great-people-item-wrapper .great-people-item .summary {
@@ -2449,7 +2455,7 @@ button#play-truth-dare-next {
         padding-right: 12px;
     }
     body .header .navbar .navbar-nav li.nav-item a.nav-link:hover {
-        color: #0275d8;
+        color: #0256A1;
     }
     body .header .navbar .navbar-nav li.nav-item a.nav-link.search {
         border: 1px solid #E7EBED;
@@ -2472,7 +2478,7 @@ button#play-truth-dare-next {
         text-overflow: ellipsis;
     }
     body .blog-list-homepage-single.articles .homepage-slideshow h2 a:hover {
-        color: #0275d8;
+        color: #0256A1;
         text-decoration: unset;
     }
     body .blog-list-homepage-single.articles .homepage-slideshow .col-mobile-slideshow {
@@ -2509,7 +2515,7 @@ button#play-truth-dare-next {
         margin: 5px auto;
     }
     .footer .widget .post-sharing-footer a:hover {
-        color: #0275d8;
+        color: #0256A1;
         text-decoration: none;
     }
     .footer .widget .widget-title.subscribe {
@@ -2523,7 +2529,7 @@ button#play-truth-dare-next {
         font-size: 12px;
     }
     .footer .widget .link-widget ul li a:hover {
-        color: #0275d8;
+        color: #0256A1;
         text-decoration: none;
     }
     .blog-list-homepage-blogs.blog-list .blog-box .post-media {
