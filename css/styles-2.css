@@ -674,6 +674,7 @@ section .page-wrapper .articles.label-articles .article .articles-content h4 a:h
 section .page-wrapper .articles.label-articles .article .articles-content .articles-author {
     font-size: 14px;
     margin-bottom: 6px;
+    display: none;
 }
 section .page-wrapper .articles.label-articles .article .articles-content .articles-author em:first-child {
     padding: 0 6px 0 0;
@@ -753,6 +754,7 @@ section .articles.search-articles .article .articles-content h4 a:hover {
 }
 section .articles.search-articles .article .articles-content .articles-author {
     font-size: 14px;
+    display: none;
 }
 section .articles.search-articles .article .articles-content .articles-author em:first-child {
     padding: 0 6px 0 0;
@@ -2563,8 +2565,14 @@ button#play-truth-dare-next {
         margin-bottom: 0;
         border-radius: 5px 0 0 5px;
     }
+    section .articles.search-articles .article .articles-content h4 {
+        margin-bottom: 5px;
+    }
     section .articles.search-articles .article .articles-content .articles-summary {
-        height: 98px;
+        height: 74px;
+        margin: 5px auto;
+    }
+    section .articles.search-articles .article .articles-content .articles-labels {
         margin: 5px auto;
     }
     section .articles.search-articles .article .articles-content .articles-labels span:nth-of-type(1n+4) {
