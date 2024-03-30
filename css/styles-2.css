@@ -1243,7 +1243,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 .blog-title-area .blog-meta .articles-author {
     font-size: 14px;
     margin: 6px auto;
-    display: block;
+    display: inline-block;
 }
 .blog-title-area .blog-meta .articles-author em:first-child {
     padding: 0 6px 0 0;
@@ -2442,6 +2442,59 @@ button#play-truth-dare-next {
     color: #0256A1;
     text-decoration: unset;
 }
+.blog-content.read-article-content.best-products-summary {
+    margin: 15px auto;
+}
+.best-products-content {
+    margin: 15px auto;
+    background: #fff;
+}
+.best-products-content table th {
+    text-align: center;
+}
+.best-products-content table tbody th {
+    vertical-align: middle;
+}
+.best-products-content table td {
+    vertical-align: middle;
+    text-align: center;
+}
+.best-products-content table th:nth-child(3),
+.best-products-content table td:nth-child(3) {
+    text-align: left;
+}
+.best-products-content table td img {
+    height: 60px;
+    width: auto;
+}
+.best-products-content table td a {
+    text-decoration: underline;
+}
+.best-products-content table td a:hover {
+    color: #292b2c;
+}
+.best-products-content table td a span {
+    display: block;
+    font-size: 1rem;
+}
+.best-products-content table td a span.title {
+    height: 100px;
+    line-height: 1.6;
+    overflow: hidden;
+}
+.best-products-content-details {
+    margin: 30px auto;
+}
+.best-products-content-details img {
+    height: 250px;
+    width: auto;
+}
+.best-products-content-details .action .btn {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 0.75rem 4rem;
+}
 
 
 
@@ -2811,6 +2864,9 @@ button#play-truth-dare-next {
     body.shop .header,
     body.shop .header .navbar {
         background-color: unset !important;
+    }
+    .best-products-content table td a span {
+        display: initial;
     }
 
 }
