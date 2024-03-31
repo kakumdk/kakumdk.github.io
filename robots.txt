@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /best-products/index.html
 Allow: /articles/bangalore-to-tiruttani-solo-travel-plan.html
 Allow: /articles/egg-in-a-bottle-science-experiment-for-children.html
 Allow: /articles/what-is-the-most-expensive-spice-in-the-world-when-listed-by-weight.html
@@ -954,6 +955,8 @@ Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/best-refrigerator-in-india-top-five-picks-for-keeping-your-food-fresh-and-your-kitchen-stylish.html
+Allow: /articles/best-refrigerator-in-india-top-five-budget-friendly-options-to-consider-for-your-next-purchase.html
 Allow: /articles/api.html
 Allow: /articles/agriculture.html
 Allow: /articles/agumbe.html
