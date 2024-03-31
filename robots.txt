@@ -18,6 +18,7 @@ Allow: /search.html
 Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
+Allow: /articles/bangalore-to-tiruttani-solo-travel-plan.html
 Allow: /articles/egg-in-a-bottle-science-experiment-for-children.html
 Allow: /articles/what-is-the-most-expensive-spice-in-the-world-when-listed-by-weight.html
 Allow: /articles/how-to-deal-with-people-who-talk-too-much.html
@@ -1053,9 +1054,11 @@ Allow: /articles/solo.html
 Allow: /articles/srikalahasti.html
 Allow: /articles/srisailam.html
 Allow: /articles/symfony.html
+Allow: /articles/temple.html
 Allow: /articles/thekkady.html
 Allow: /articles/tirumala.html
 Allow: /articles/tirupathi.html
+Allow: /articles/tiruttani.html
 Allow: /articles/travel.html
 Allow: /articles/trekking.html
 Allow: /articles/trust.html
@@ -1171,9 +1174,11 @@ Allow: /feeds/solo.xml
 Allow: /feeds/srikalahasti.xml
 Allow: /feeds/srisailam.xml
 Allow: /feeds/symfony.xml
+Allow: /feeds/temple.xml
 Allow: /feeds/thekkady.xml
 Allow: /feeds/tirumala.xml
 Allow: /feeds/tirupathi.xml
+Allow: /feeds/tiruttani.xml
 Allow: /feeds/travel.xml
 Allow: /feeds/trekking.xml
 Allow: /feeds/trust.xml
