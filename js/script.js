@@ -728,6 +728,35 @@ function searchGreatPeopleListPage() {
 }
 
 /******************************************************************************************************************/
+/************************************** Search Best Products ******************************************************/
+/******************************************************************************************************************/
+$(function() {
+    searchBestProductsListPage();
+});
+function searchBestProductsListPage() {
+    $('input[type=text]#search-best-products').focus();
+    $("#search-best-products").on("keyup", function(event) {
+        $('.search-best-products .row .col-md-6 .best-products-item').removeClass('hide');
+        $('.search-best-products .row').children('.col-md-6').each(function () {
+            var title = $(this).find('.best-products-item-title a').text().toLowerCase();
+            // title += " " + $(this).find('.quick-read-content').text().toLowerCase();
+            // title += " " + $(this).find('.quick-read-author').text().toLowerCase();
+            // title += " " + $(this).find('.articles-labels').text().toLowerCase();
+            var search = event.currentTarget.value.toLowerCase();
+            var searchFor = search.split(' ');
+            for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                if (title.indexOf(searchFor[i]) !== -1) {
+                    $(this).show();
+                }
+                else {
+                    $(this).hide();
+                }
+            }
+        });
+    });
+}
+
+/******************************************************************************************************************/
 /************************************** Global Search *************************************************************/
 /******************************************************************************************************************/
 $(function() {
