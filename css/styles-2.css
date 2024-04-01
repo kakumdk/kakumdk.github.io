@@ -2467,9 +2467,14 @@ button#play-truth-dare-next {
     height: 60px;
     width: auto;
 }
+.best-products-content table th a,
+.best-products-content table td a {
+    scroll-behavior: smooth;
+}
 .best-products-content table td a {
     text-decoration: underline;
 }
+.best-products-content table th a:hover,
 .best-products-content table td a:hover {
     color: #292b2c;
 }

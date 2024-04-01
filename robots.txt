@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/few-relationship-events-in-life-those-change-peoples-personality.html
 Allow: /articles/bangalore-to-tiruttani-solo-travel-plan.html
 Allow: /articles/egg-in-a-bottle-science-experiment-for-children.html
 Allow: /articles/what-is-the-most-expensive-spice-in-the-world-when-listed-by-weight.html
@@ -1034,6 +1035,8 @@ Allow: /articles/nagarahole.html
 Allow: /articles/navy.html
 Allow: /articles/ooty.html
 Allow: /articles/pantheon.html
+Allow: /articles/people.html
+Allow: /articles/personality.html
 Allow: /articles/php.html
 Allow: /articles/pickle.html
 Allow: /articles/politics.html
@@ -1154,6 +1157,8 @@ Allow: /feeds/nagarahole.xml
 Allow: /feeds/navy.xml
 Allow: /feeds/ooty.xml
 Allow: /feeds/pantheon.xml
+Allow: /feeds/people.xml
+Allow: /feeds/personality.xml
 Allow: /feeds/php.xml
 Allow: /feeds/pickle.xml
 Allow: /feeds/politics.xml
