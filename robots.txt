@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/what-percentage-of-indians-are-vegetarian.html
 Allow: /articles/few-relationship-events-in-life-those-change-peoples-personality.html
 Allow: /articles/bangalore-to-tiruttani-solo-travel-plan.html
 Allow: /articles/egg-in-a-bottle-science-experiment-for-children.html
