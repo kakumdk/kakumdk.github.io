@@ -402,6 +402,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-ant-and-the-grasshopper.html
 Allow: /quick-read/the-fox-and-the-leopard.html
 Allow: /quick-read/the-caged-bird-and-the-free-bird.html
 Allow: /quick-read/the-boy-and-the-apple-tree.html
