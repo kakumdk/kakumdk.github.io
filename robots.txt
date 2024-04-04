@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/best-places-in-karnataka-to-travel-solo-in-hot-summer.html
 Allow: /articles/gummy-bear-osmosis-science-experiment-for-children.html
 Allow: /articles/what-percentage-of-indians-are-vegetarian.html
 Allow: /articles/few-relationship-events-in-life-those-change-peoples-personality.html
@@ -974,6 +975,7 @@ Allow: /articles/bheemeshwari.html
 Allow: /articles/book.html
 Allow: /articles/business.html
 Allow: /articles/covid.html
+Allow: /articles/chikmagalur.html
 Allow: /articles/children.html
 Allow: /articles/chitradurga.html
 Allow: /articles/chutney.html
@@ -983,6 +985,7 @@ Allow: /articles/coorg.html
 Allow: /articles/coronavirus.html
 Allow: /articles/couple.html
 Allow: /articles/crime.html
+Allow: /articles/dandeli.html
 Allow: /articles/devotion.html
 Allow: /articles/dharmasthala.html
 Allow: /articles/docker.html
@@ -1000,6 +1003,7 @@ Allow: /articles/fruits.html
 Allow: /articles/gandikota.html
 Allow: /articles/ghatisubramanya.html
 Allow: /articles/github.html
+Allow: /articles/gokarna.html
 Allow: /articles/government.html
 Allow: /articles/hampi.html
 Allow: /articles/happy.html
@@ -1053,6 +1057,7 @@ Allow: /articles/rameswaram.html
 Allow: /articles/recipe.html
 Allow: /articles/relationship.html
 Allow: /articles/russia.html
+Allow: /articles/sakleshpur.html
 Allow: /articles/salem.html
 Allow: /articles/salleri.html
 Allow: /articles/sci-tech.html
@@ -1096,6 +1101,7 @@ Allow: /feeds/bheemeshwari.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
+Allow: /feeds/chikmagalur.xml
 Allow: /feeds/children.xml
 Allow: /feeds/chitradurga.xml
 Allow: /feeds/chutney.xml
@@ -1105,6 +1111,7 @@ Allow: /feeds/coorg.xml
 Allow: /feeds/coronavirus.xml
 Allow: /feeds/couple.xml
 Allow: /feeds/crime.xml
+Allow: /feeds/dandeli.xml
 Allow: /feeds/devotion.xml
 Allow: /feeds/dharmasthala.xml
 Allow: /feeds/docker.xml
@@ -1122,6 +1129,7 @@ Allow: /feeds/fruits.xml
 Allow: /feeds/gandikota.xml
 Allow: /feeds/ghatisubramanya.xml
 Allow: /feeds/github.xml
+Allow: /feeds/gokarna.xml
 Allow: /feeds/government.xml
 Allow: /feeds/hampi.xml
 Allow: /feeds/happy.xml
@@ -1175,6 +1183,7 @@ Allow: /feeds/rameswaram.xml
 Allow: /feeds/recipe.xml
 Allow: /feeds/relationship.xml
 Allow: /feeds/russia.xml
+Allow: /feeds/sakleshpur.xml
 Allow: /feeds/salem.xml
 Allow: /feeds/salleri.xml
 Allow: /feeds/sci-tech.xml
