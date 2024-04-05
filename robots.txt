@@ -967,6 +967,7 @@ Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/best-mobile-phones-in-india-under-ten-thousand-in-april-twenty-four.html
 Allow: /articles/best-refrigerator-in-india-ultimate-cooling-needs-and-convenience.html
 Allow: /articles/best-refrigerator-in-india-cooling-technology-evolved.html
 Allow: /articles/best-refrigerator-in-india-top-five-picks-for-keeping-your-food-fresh-and-your-kitchen-stylish.html
