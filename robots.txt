@@ -1801,6 +1801,7 @@ Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /articles/facts-about-salivary-glands.html
 Allow: /articles/dentist-inputs-on-quit-smoking-and-breathe-healthy.html
+Allow: /articles/what-is-the-need-of-root-canal-treatment.html
 Allow: /articles/bleeding-gums-bleeding-mouth-facts.html
 Allow: /articles/dentist-inputs-on-diabetes-and-oral-health.html
 Allow: /articles/why-do-dentists-suggest-clear-aligners-invisalign.html
