@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/build-a-worm-farm-science-experiment-for-children.html
 Allow: /articles/samosas-snack-from-the-indian-subcontinent.html
 Allow: /articles/how-to-cure-pcod-pcos-to-have-better-lifestyle.html
 Allow: /articles/best-places-in-karnataka-to-travel-solo-in-hot-summer.html
