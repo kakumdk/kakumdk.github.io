@@ -79,6 +79,7 @@ body a {
 .article-content ul,
 .article-content ol {
     margin: 15px auto;
+    padding: 0;
 }
 .article-content li::before {
     content: "\f375";
@@ -96,6 +97,7 @@ body a {
 }
 .article-content li {
     list-style: none;
+    margin-bottom: 10px;
 }
 .articles-sidebar {
     margin: 30px auto;
