@@ -1268,7 +1268,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 .blog-title-area .blog-meta .read-article-section:hover {
     cursor: pointer;
 }
-.blog-title-area .blog-meta .read-article-section i > div {
+.blog-title-area .blog-meta .read-article-section i > span {
     display: inline-block;
 }
 .blog-title-area .post-sharing-top.post-sharing {
