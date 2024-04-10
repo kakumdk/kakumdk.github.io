@@ -22,6 +22,9 @@ body h4 {
     margin: 15px auto;
     border-radius: 5px;
 }
+.google-ad > p {
+    display: none;
+}
 .amazon-ad {
     margin: 15px auto;
 }
