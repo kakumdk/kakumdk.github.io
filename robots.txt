@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-find-out-that-your-partner-has-a-toxic-personality.html
 Allow: /articles/build-a-worm-farm-science-experiment-for-children.html
 Allow: /articles/samosas-snack-from-the-indian-subcontinent.html
 Allow: /articles/how-to-cure-pcod-pcos-to-have-better-lifestyle.html
