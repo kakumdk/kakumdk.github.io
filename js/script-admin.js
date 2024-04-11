@@ -13,7 +13,7 @@ function showAdsOnPages() {
         createAd("google-ad-2", "ca-pub-2683569506254139", "9621211280", "fluid");
     }
     if (hasElementWithId('google-ad-3')) {
-        createAd("google-ad-2", "ca-pub-2683569506254139", "4812668708", "fluid");
+        createAd("google-ad-3", "ca-pub-2683569506254139", "4812668708", "fluid");
     }
 }
 function createAd(containerId, adClientId, adSlotId, adFormat) {
