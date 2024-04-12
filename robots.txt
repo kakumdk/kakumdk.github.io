@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/ten-best-places-to-travel-solo-in-north-india.html
 Allow: /articles/average-yearly-consumption-of-rice-for-the-typical-indian.html
 Allow: /articles/how-to-find-out-that-your-partner-has-a-toxic-personality.html
 Allow: /articles/build-a-worm-farm-science-experiment-for-children.html
@@ -986,6 +987,7 @@ Allow: /articles/api.html
 Allow: /articles/agriculture.html
 Allow: /articles/agumbe.html
 Allow: /articles/alleppey.html
+Allow: /articles/amritsar.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
 Allow: /articles/bheemeshwari.html
@@ -1004,6 +1006,7 @@ Allow: /articles/couple.html
 Allow: /articles/crime.html
 Allow: /articles/dandeli.html
 Allow: /articles/devotion.html
+Allow: /articles/dharamshala.html
 Allow: /articles/dharmasthala.html
 Allow: /articles/docker.html
 Allow: /articles/drupal.html
@@ -1028,17 +1031,20 @@ Allow: /articles/health.html
 Allow: /articles/horanadu.html
 Allow: /articles/hyderabad.html
 Allow: /articles/india.html
+Allow: /articles/jaipur.html
 Allow: /articles/jog-falls.html
 Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
 Allow: /articles/kanyakumari.html
 Allow: /articles/karnataka.html
+Allow: /articles/kashmir.html
 Allow: /articles/kathmandu.html
 Allow: /articles/kerala.html
 Allow: /articles/kochi.html
 Allow: /articles/kodaikanal.html
 Allow: /articles/kollur.html
 Allow: /articles/kudremukh.html
+Allow: /articles/ladakh.html
 Allow: /articles/lando.html
 Allow: /articles/language.html
 Allow: /articles/law.html
@@ -1051,6 +1057,7 @@ Allow: /articles/madanapalle.html
 Allow: /articles/madurai.html
 Allow: /articles/mahabalipuram.html
 Allow: /articles/makalidurga.html
+Allow: /articles/manali.html
 Allow: /articles/mangalore.html
 Allow: /articles/marriage.html
 Allow: /articles/migrate.html
@@ -1059,6 +1066,7 @@ Allow: /articles/movie.html
 Allow: /articles/munnar.html
 Allow: /articles/mysore.html
 Allow: /articles/nagarahole.html
+Allow: /articles/nainital.html
 Allow: /articles/navy.html
 Allow: /articles/ooty.html
 Allow: /articles/pantheon.html
@@ -1073,6 +1081,7 @@ Allow: /articles/quotes.html
 Allow: /articles/rameswaram.html
 Allow: /articles/recipe.html
 Allow: /articles/relationship.html
+Allow: /articles/rishikesh.html
 Allow: /articles/russia.html
 Allow: /articles/sakleshpur.html
 Allow: /articles/salem.html
@@ -1081,6 +1090,7 @@ Allow: /articles/sci-tech.html
 Allow: /articles/security.html
 Allow: /articles/self.html
 Allow: /articles/sexual-health.html
+Allow: /articles/shimla.html
 Allow: /articles/social-media.html
 Allow: /articles/software.html
 Allow: /articles/solar.html
@@ -1099,7 +1109,9 @@ Allow: /articles/trekking.html
 Allow: /articles/trust.html
 Allow: /articles/twig.html
 Allow: /articles/usa.html
+Allow: /articles/udaipur.html
 Allow: /articles/udupi.html
+Allow: /articles/varanasi.html
 Allow: /articles/varkala.html
 Allow: /articles/vegetable.html
 Allow: /articles/wayanad.html
@@ -1112,6 +1124,7 @@ Allow: /feeds/api.xml
 Allow: /feeds/agriculture.xml
 Allow: /feeds/agumbe.xml
 Allow: /feeds/alleppey.xml
+Allow: /feeds/amritsar.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
 Allow: /feeds/bheemeshwari.xml
@@ -1130,6 +1143,7 @@ Allow: /feeds/couple.xml
 Allow: /feeds/crime.xml
 Allow: /feeds/dandeli.xml
 Allow: /feeds/devotion.xml
+Allow: /feeds/dharamshala.xml
 Allow: /feeds/dharmasthala.xml
 Allow: /feeds/docker.xml
 Allow: /feeds/drupal.xml
@@ -1154,17 +1168,20 @@ Allow: /feeds/health.xml
 Allow: /feeds/horanadu.xml
 Allow: /feeds/hyderabad.xml
 Allow: /feeds/india.xml
+Allow: /feeds/jaipur.xml
 Allow: /feeds/jog-falls.xml
 Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
 Allow: /feeds/kanyakumari.xml
 Allow: /feeds/karnataka.xml
+Allow: /feeds/kashmir.xml
 Allow: /feeds/kathmandu.xml
 Allow: /feeds/kerala.xml
 Allow: /feeds/kochi.xml
 Allow: /feeds/kodaikanal.xml
 Allow: /feeds/kollur.xml
 Allow: /feeds/kudremukh.xml
+Allow: /feeds/ladakh.xml
 Allow: /feeds/lando.xml
 Allow: /feeds/language.xml
 Allow: /feeds/law.xml
@@ -1177,6 +1194,7 @@ Allow: /feeds/madanapalle.xml
 Allow: /feeds/madurai.xml
 Allow: /feeds/mahabalipuram.xml
 Allow: /feeds/makalidurga.xml
+Allow: /feeds/manali.xml
 Allow: /feeds/mangalore.xml
 Allow: /feeds/marriage.xml
 Allow: /feeds/migrate.xml
@@ -1185,6 +1203,7 @@ Allow: /feeds/movie.xml
 Allow: /feeds/munnar.xml
 Allow: /feeds/mysore.xml
 Allow: /feeds/nagarahole.xml
+Allow: /feeds/nainital.xml
 Allow: /feeds/navy.xml
 Allow: /feeds/ooty.xml
 Allow: /feeds/pantheon.xml
@@ -1199,6 +1218,7 @@ Allow: /feeds/quotes.xml
 Allow: /feeds/rameswaram.xml
 Allow: /feeds/recipe.xml
 Allow: /feeds/relationship.xml
+Allow: /feeds/rishikesh.xml
 Allow: /feeds/russia.xml
 Allow: /feeds/sakleshpur.xml
 Allow: /feeds/salem.xml
@@ -1207,6 +1227,7 @@ Allow: /feeds/sci-tech.xml
 Allow: /feeds/security.xml
 Allow: /feeds/self.xml
 Allow: /feeds/sexual-health.xml
+Allow: /feeds/shimla.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
 Allow: /feeds/solar.xml
@@ -1225,7 +1246,9 @@ Allow: /feeds/trekking.xml
 Allow: /feeds/trust.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
+Allow: /feeds/udaipur.xml
 Allow: /feeds/udupi.xml
+Allow: /feeds/varanasi.xml
 Allow: /feeds/varkala.xml
 Allow: /feeds/vegetable.xml
 Allow: /feeds/wayanad.xml
