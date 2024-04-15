@@ -841,12 +841,12 @@ Allow: /shop/b08vb57558.html
 Allow: /shop/b0bmgd9y2x.html
 Allow: /shop/b09n3znhty.html
 Allow: /shop/b089m9hvqp.html
-Allow: /shop/b078s4p3j9.html
 Allow: /shop/b07whs7mz4.html
+Allow: /shop/b078s4p3j9.html
 Allow: /shop/b0byn5555j.html
 Allow: /shop/b09fsmn8qs.html
-Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b0cbrr54kf.html
+Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b0c45n5vpt.html
 Allow: /shop/b0bkg5pq6t.html
 Allow: /shop/b09xkhnqr3.html
@@ -894,7 +894,6 @@ Allow: /shop/b0784zqfhz.html
 Allow: /shop/b0bqj68hhc.html
 Allow: /shop/b0bh8s16yy.html
 Allow: /shop/b084lgqkd7.html
-Allow: /shop/b07nbz43ph.html
 Allow: /shop/b0b3rrwsf6.html
 Allow: /shop/b0bf57rn3k.html
 Allow: /shop/b0b4n6jvmw.html
@@ -980,7 +979,6 @@ Allow: /shop/b0b4j28ntr.html
 Allow: /shop/b09shj1c9w.html
 Allow: /shop/b09gy48285.html
 Allow: /shop/b09sg1chww.html
-Allow: /shop/b07nbz43ph.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
