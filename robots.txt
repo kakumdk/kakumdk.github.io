@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/different-spices-are-used-to-make-a-garam-masala-mix.html
 Allow: /articles/how-to-understand-love-and-hate-after-cheating.html
 Allow: /articles/create-a-water-fountain-using-air-pressure-science-experiment-for-children.html
 Allow: /articles/ten-best-places-to-travel-solo-in-north-india.html
@@ -1101,6 +1102,7 @@ Allow: /articles/software.html
 Allow: /articles/solar.html
 Allow: /articles/solar-energy.html
 Allow: /articles/solo.html
+Allow: /articles/spice.html
 Allow: /articles/srikalahasti.html
 Allow: /articles/srisailam.html
 Allow: /articles/symfony.html
@@ -1238,6 +1240,7 @@ Allow: /feeds/software.xml
 Allow: /feeds/solar.xml
 Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
+Allow: /feeds/spice.xml
 Allow: /feeds/srikalahasti.xml
 Allow: /feeds/srisailam.xml
 Allow: /feeds/symfony.xml
