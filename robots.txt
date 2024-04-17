@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/why-do-i-apologize-for-everything-and-how-to-avoid-doing-it.html
 Allow: /articles/different-spices-are-used-to-make-a-garam-masala-mix.html
 Allow: /articles/how-to-understand-love-and-hate-after-cheating.html
 Allow: /articles/create-a-water-fountain-using-air-pressure-science-experiment-for-children.html
