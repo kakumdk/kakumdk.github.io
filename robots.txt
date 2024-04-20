@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/solo-travel-to-rishikesh-yoga-capital-of-the-world.html
 Allow: /articles/why-do-i-apologize-for-everything-and-how-to-avoid-doing-it.html
 Allow: /articles/different-spices-are-used-to-make-a-garam-masala-mix.html
 Allow: /articles/how-to-understand-love-and-hate-after-cheating.html
@@ -1014,6 +1015,8 @@ Allow: /articles/coronavirus.html
 Allow: /articles/couple.html
 Allow: /articles/crime.html
 Allow: /articles/dandeli.html
+Allow: /articles/dehradun.html
+Allow: /articles/delhi.html
 Allow: /articles/devotion.html
 Allow: /articles/dharamshala.html
 Allow: /articles/dharmasthala.html
@@ -1036,6 +1039,7 @@ Allow: /articles/gokarna.html
 Allow: /articles/government.html
 Allow: /articles/hampi.html
 Allow: /articles/happy.html
+Allow: /articles/haridwar.html
 Allow: /articles/health.html
 Allow: /articles/horanadu.html
 Allow: /articles/hyderabad.html
@@ -1051,6 +1055,7 @@ Allow: /articles/kathmandu.html
 Allow: /articles/kerala.html
 Allow: /articles/kochi.html
 Allow: /articles/kodaikanal.html
+Allow: /articles/kolkata.html
 Allow: /articles/kollur.html
 Allow: /articles/kudremukh.html
 Allow: /articles/ladakh.html
@@ -1072,6 +1077,7 @@ Allow: /articles/marriage.html
 Allow: /articles/migrate.html
 Allow: /articles/missile.html
 Allow: /articles/movie.html
+Allow: /articles/mumbai.html
 Allow: /articles/munnar.html
 Allow: /articles/mysore.html
 Allow: /articles/nagarahole.html
@@ -1152,6 +1158,8 @@ Allow: /feeds/coronavirus.xml
 Allow: /feeds/couple.xml
 Allow: /feeds/crime.xml
 Allow: /feeds/dandeli.xml
+Allow: /feeds/dehradun.xml
+Allow: /feeds/delhi.xml
 Allow: /feeds/devotion.xml
 Allow: /feeds/dharamshala.xml
 Allow: /feeds/dharmasthala.xml
@@ -1174,6 +1182,7 @@ Allow: /feeds/gokarna.xml
 Allow: /feeds/government.xml
 Allow: /feeds/hampi.xml
 Allow: /feeds/happy.xml
+Allow: /feeds/haridwar.xml
 Allow: /feeds/health.xml
 Allow: /feeds/horanadu.xml
 Allow: /feeds/hyderabad.xml
@@ -1189,6 +1198,7 @@ Allow: /feeds/kathmandu.xml
 Allow: /feeds/kerala.xml
 Allow: /feeds/kochi.xml
 Allow: /feeds/kodaikanal.xml
+Allow: /feeds/kolkata.xml
 Allow: /feeds/kollur.xml
 Allow: /feeds/kudremukh.xml
 Allow: /feeds/ladakh.xml
@@ -1210,6 +1220,7 @@ Allow: /feeds/marriage.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
 Allow: /feeds/movie.xml
+Allow: /feeds/mumbai.xml
 Allow: /feeds/munnar.xml
 Allow: /feeds/mysore.xml
 Allow: /feeds/nagarahole.xml
