@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/ping-pong-ball-hovercraft-science-experiment-for-children.html
 Allow: /articles/solo-travel-to-rishikesh-yoga-capital-of-the-world.html
 Allow: /articles/why-do-i-apologize-for-everything-and-how-to-avoid-doing-it.html
 Allow: /articles/different-spices-are-used-to-make-a-garam-masala-mix.html
