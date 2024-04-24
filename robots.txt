@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/bangalore-to-kovalam-solo-trip-plan.html
 Allow: /articles/i-m-sorry-why-is-apologizing-so-difficult.html
 Allow: /articles/ping-pong-ball-hovercraft-science-experiment-for-children.html
 Allow: /articles/solo-travel-to-rishikesh-yoga-capital-of-the-world.html
@@ -1064,6 +1065,7 @@ Allow: /articles/kochi.html
 Allow: /articles/kodaikanal.html
 Allow: /articles/kolkata.html
 Allow: /articles/kollur.html
+Allow: /articles/kovalam.html
 Allow: /articles/kudremukh.html
 Allow: /articles/ladakh.html
 Allow: /articles/lando.html
@@ -1088,6 +1090,7 @@ Allow: /articles/mumbai.html
 Allow: /articles/munnar.html
 Allow: /articles/mysore.html
 Allow: /articles/nagarahole.html
+Allow: /articles/nagercoil.html
 Allow: /articles/nainital.html
 Allow: /articles/navy.html
 Allow: /articles/ooty.html
@@ -1125,6 +1128,7 @@ Allow: /articles/symfony.html
 Allow: /articles/temple.html
 Allow: /articles/thekkady.html
 Allow: /articles/tirumala.html
+Allow: /articles/tirunelveli.html
 Allow: /articles/tirupathi.html
 Allow: /articles/tiruttani.html
 Allow: /articles/travel.html
@@ -1207,6 +1211,7 @@ Allow: /feeds/kochi.xml
 Allow: /feeds/kodaikanal.xml
 Allow: /feeds/kolkata.xml
 Allow: /feeds/kollur.xml
+Allow: /feeds/kovalam.xml
 Allow: /feeds/kudremukh.xml
 Allow: /feeds/ladakh.xml
 Allow: /feeds/lando.xml
@@ -1231,6 +1236,7 @@ Allow: /feeds/mumbai.xml
 Allow: /feeds/munnar.xml
 Allow: /feeds/mysore.xml
 Allow: /feeds/nagarahole.xml
+Allow: /feeds/nagercoil.xml
 Allow: /feeds/nainital.xml
 Allow: /feeds/navy.xml
 Allow: /feeds/ooty.xml
@@ -1268,6 +1274,7 @@ Allow: /feeds/symfony.xml
 Allow: /feeds/temple.xml
 Allow: /feeds/thekkady.xml
 Allow: /feeds/tirumala.xml
+Allow: /feeds/tirunelveli.xml
 Allow: /feeds/tirupathi.xml
 Allow: /feeds/tiruttani.xml
 Allow: /feeds/travel.xml
