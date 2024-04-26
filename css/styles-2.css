@@ -1355,6 +1355,8 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-title-area.tag .tag-cloud-single span {
     margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 .blog-title-area.tag .tag-cloud-single span a {
     background-color: #F5F7F8;
