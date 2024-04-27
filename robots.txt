@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/bangalore-to-chikmagalur-solo-trip-plan.html
 Allow: /articles/how-do-you-know-if-you-are-emotionally-neglecting-your-partner-in-a-relationship.html
 Allow: /articles/cartesian-diver-science-experiment-for-children.html
 Allow: /articles/bangalore-to-kovalam-solo-trip-plan.html
@@ -706,7 +707,11 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0chs59v1p.html
+Allow: /shop/b07pb6bw5q.html
+Allow: /shop/b0chm729gt.html
 Allow: /shop/b0bslll187.html
+Allow: /shop/b07p5txswj.html
 Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b0c7v84bs2.html
 Allow: /shop/b0c467kfnm.html
@@ -770,7 +775,6 @@ Allow: /shop/b00gowjvxa.html
 Allow: /shop/b0c7cpnnyk.html
 Allow: /shop/b00edjj7fs.html
 Allow: /shop/b07gdr7vz3.html
-Allow: /shop/b07pb6bw5q.html
 Allow: /shop/p-mp000000010542991.html
 Allow: /shop/b07m5nyk2h.html
 Allow: /shop/b00t6dhfo6.html
@@ -1010,6 +1014,7 @@ Allow: /articles/alleppey.html
 Allow: /articles/amritsar.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
+Allow: /articles/belur.html
 Allow: /articles/bheemeshwari.html
 Allow: /articles/book.html
 Allow: /articles/business.html
@@ -1047,9 +1052,11 @@ Allow: /articles/ghatisubramanya.html
 Allow: /articles/github.html
 Allow: /articles/gokarna.html
 Allow: /articles/government.html
+Allow: /articles/halebidu.html
 Allow: /articles/hampi.html
 Allow: /articles/happy.html
 Allow: /articles/haridwar.html
+Allow: /articles/hassan.html
 Allow: /articles/health.html
 Allow: /articles/horanadu.html
 Allow: /articles/hyderabad.html
@@ -1156,6 +1163,7 @@ Allow: /feeds/alleppey.xml
 Allow: /feeds/amritsar.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
+Allow: /feeds/belur.xml
 Allow: /feeds/bheemeshwari.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
@@ -1193,9 +1201,11 @@ Allow: /feeds/ghatisubramanya.xml
 Allow: /feeds/github.xml
 Allow: /feeds/gokarna.xml
 Allow: /feeds/government.xml
+Allow: /feeds/halebidu.xml
 Allow: /feeds/hampi.xml
 Allow: /feeds/happy.xml
 Allow: /feeds/haridwar.xml
+Allow: /feeds/hassan.xml
 Allow: /feeds/health.xml
 Allow: /feeds/horanadu.xml
 Allow: /feeds/hyderabad.xml
