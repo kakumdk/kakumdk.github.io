@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/bangalore-to-sakleshpur-solo-trip-plan.html
 Allow: /articles/how-to-be-a-good-listener.html
 Allow: /articles/crushing-can-experiment-science-experiment-for-children.html
 Allow: /articles/bangalore-to-chikmagalur-solo-trip-plan.html
