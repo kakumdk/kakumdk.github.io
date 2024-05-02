@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-coconut-ladoo.html
 Allow: /articles/balloon-and-bottle-experiment-science-experiment-for-children.html
 Allow: /articles/bangalore-to-sakleshpur-solo-trip-plan.html
 Allow: /articles/how-to-be-a-good-listener.html
