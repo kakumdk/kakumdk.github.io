@@ -427,6 +427,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-woodpecker-and-the-lion.html
 Allow: /quick-read/the-oak-tree-and-the-reeds.html
 Allow: /quick-read/the-tiger-the-brahmin-and-the-jackal.html
 Allow: /quick-read/the-happy-prince.html
