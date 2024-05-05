@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/bangalore-to-dandeli-solo-trip-plan.html
 Allow: /articles/finding-joy-in-everyday-moments.html
 Allow: /articles/how-to-prepare-coconut-ladoo.html
 Allow: /articles/balloon-and-bottle-experiment-science-experiment-for-children.html
@@ -1019,6 +1020,7 @@ Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/best-mobile-phones-in-india-underin-may-.html
 Allow: /articles/best-mobile-phones-in-india-under-ten-thousand-in-april-twenty-four.html
 Allow: /articles/best-refrigerator-in-india-ultimate-cooling-needs-and-convenience.html
 Allow: /articles/best-refrigerator-in-india-cooling-technology-evolved.html
@@ -1160,6 +1162,7 @@ Allow: /articles/tiruttani.html
 Allow: /articles/travel.html
 Allow: /articles/trekking.html
 Allow: /articles/trust.html
+Allow: /articles/tumakuru.html
 Allow: /articles/twig.html
 Allow: /articles/usa.html
 Allow: /articles/udaipur.html
@@ -1309,6 +1312,7 @@ Allow: /feeds/tiruttani.xml
 Allow: /feeds/travel.xml
 Allow: /feeds/trekking.xml
 Allow: /feeds/trust.xml
+Allow: /feeds/tumakuru.xml
 Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
 Allow: /feeds/udaipur.xml
