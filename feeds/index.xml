@@ -2857,22 +2857,22 @@
   </item><item>
     <title>Filter content between Date ranges in Drupal 7</title>
     <link>https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</link>
-    <description>It is tempting to believe that using the is between on a date fields will work. However, this option is used only in the case of events Starting on a range of date.                                This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an 'end date' for the event, only a date field with the 'Collect an end dat</description>
-    <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+    <description>It is tempting to believe that using the is between on a date fields will work. However, this option is used only in the case of events Starting on a range of date.  This tutorial requires that you already have a content type with a date field . It is not necessary to have two fields to adjust an &amp;#39;end date&amp;#39; for the event, only a date field with the &amp;#39;Collect an end date&amp;#39;  This part </description>
+    <pubDate>Mon, 06 May 2024 09:00:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/filter-content-between-date-ranges-drupal.html</guid>
   </item><item>
     <title>Create Related Content of Different Content Types through Taxonomy in Drupal7</title>
     <link>https://peoplesblog.co.in/articles/create-related-content-different-content-types-through-taxonomy-drupal.html</link>
-    <description>Step 1 Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.                                                                Step 2 And next create/resue the Taxonomy term field for the other content type, In this article lets take example f</description>
-    <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+    <description>Step 1  Create a Taxonomy term field for the content type, In this article lets take example for Basic Page content type as shown in the below image. with the Autocomplete selected as settings of the term reference field.     Google Ad 1   Step 2  And next create/resue the Taxonomy term field for the other content type, In this article lets take example for Article content type as shown in the bel</description>
+    <pubDate>Mon, 06 May 2024 08:57:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-related-content-different-content-types-through-taxonomy-drupal.html</guid>
   </item><item>
     <title>Drupal Multisite development environment Configuration in Ubuntu14</title>
     <link>https://peoplesblog.co.in/articles/drupal-multisite-development-environment-configuration-ubuntu.html</link>
-    <description>Prerequisite Requires a working drupal installation  Set up your hosts file Add the following lines to /etc/hosts:   127.0.0.1 testsite.localhost 127.0.0.1 testsite2.localhost  Set up Virtual Hosts  Add the following code to /etc/apache2/sites-available:  Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes i</description>
-    <pubDate>Tue, 23 Apr 2024 19:48:00 +0530</pubDate>
+    <description>Prerequisite Requires a working drupal installation  Set up your hosts file Add the following lines to /etc/hosts:    127.0.0.1 testsite.localhost 127.0.0.1 testsite2.localhost  Set up Virtual Hosts  Add the following code to /etc/apache2/sites-available:  Goto to the folder /etc/apache2/sites-available, copy the existing 000-default.conf file to a new file testsite.localhost and make the changes </description>
+    <pubDate>Mon, 06 May 2024 08:54:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-multisite-development-environment-configuration-ubuntu.html</guid>
   </item><item>
