@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-kokum-rasam.html
 Allow: /articles/epsom-salt-crystal-shapes-science-experiment-for-children.html
 Allow: /articles/bangalore-to-dandeli-solo-trip-plan.html
 Allow: /articles/finding-joy-in-everyday-moments.html
