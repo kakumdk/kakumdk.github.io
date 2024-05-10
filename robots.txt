@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/rock-candy-crystal-sticks-science-experiment-for-children.html
 Allow: /articles/bangalore-to-trivandrum-solo-travel-plan.html
 Allow: /articles/creativity-boosting-activities-to-have-a-peaceful-life.html
 Allow: /articles/how-to-prepare-kokum-rasam.html
