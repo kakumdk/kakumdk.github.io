@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-tackle-emotional-resilience.html
 Allow: /articles/how-to-prepare-methi-thepla.html
 Allow: /articles/alum-crystal-geodes-science-experiment-for-children.html
 Allow: /articles/rock-candy-crystal-sticks-science-experiment-for-children.html
