@@ -338,6 +338,9 @@ input#search-news {
 .amazon-ad {
     margin: 15px auto;
 }
+.google-ad > p {
+    display: none;
+}
 .homepage-view-all {
     display: flex;
     margin-top: 15px;
