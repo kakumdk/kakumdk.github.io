@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/ten-best-beaches-to-travel-solo-in-india.html
 Allow: /articles/how-to-tackle-emotional-resilience.html
 Allow: /articles/how-to-prepare-methi-thepla.html
 Allow: /articles/alum-crystal-geodes-science-experiment-for-children.html
@@ -1095,6 +1096,7 @@ Allow: /articles/fruits.html
 Allow: /articles/gandikota.html
 Allow: /articles/ghatisubramanya.html
 Allow: /articles/github.html
+Allow: /articles/goa.html
 Allow: /articles/gokarna.html
 Allow: /articles/government.html
 Allow: /articles/halebidu.html
@@ -1246,6 +1248,7 @@ Allow: /feeds/fruits.xml
 Allow: /feeds/gandikota.xml
 Allow: /feeds/ghatisubramanya.xml
 Allow: /feeds/github.xml
+Allow: /feeds/goa.xml
 Allow: /feeds/gokarna.xml
 Allow: /feeds/government.xml
 Allow: /feeds/halebidu.xml
