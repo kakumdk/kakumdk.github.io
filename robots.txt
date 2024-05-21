@@ -1938,6 +1938,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/what-to-do-when-your-kid-s-teeth-are-broken.html
 Allow: /articles/myths-of-tooth-cleaning.html
 Allow: /articles/is-it-safe-to-visit-the-dentist-during-pregnancy.html
 Allow: /articles/what-is-the-need-of-root-canal-treatment.html
