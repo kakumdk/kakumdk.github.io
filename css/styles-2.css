@@ -2421,11 +2421,12 @@ button#play-truth-dare-next {
     margin-bottom: unset;
 }
 .best-products-item {
-    padding-bottom: 5px;
-    margin-top: 10px;
-    border-bottom: 1px solid #e7ebed;
+    border-top: 1px solid #e7ebed;
+    margin: 10px auto;
+    padding: 10px 12px;
+    background: #f9f9f9;
 }
-.best-products-item .best-products-item-img {
+/* .best-products-item .best-products-item-img {
     width: 80px;
     margin-right: 10px;
     text-align: center;
@@ -2434,10 +2435,9 @@ button#play-truth-dare-next {
 .best-products-item .best-products-item-img img {
     height: 100px;
     width: auto;
-}
+} */
 .best-products-item h4 {
-    font-size: 20px;
-    height: 100px;
+    font-size: 18px;
     overflow: hidden;
 }
 .best-products-item h4 a {
