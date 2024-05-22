@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-mango-coconut-rice.html
 Allow: /articles/borax-crystal-snowflakes-science-experiment-for-children.html
 Allow: /articles/ten-best-beaches-to-travel-solo-in-india.html
 Allow: /articles/how-to-tackle-emotional-resilience.html
