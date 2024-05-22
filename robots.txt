@@ -439,6 +439,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-fish-and-the-ring.html
 Allow: /quick-read/the-mouse-and-the-bull.html
 Allow: /quick-read/the-two-frogs.html
 Allow: /quick-read/the-woodpecker-and-the-lion.html
