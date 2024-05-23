@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/ten-best-hill-stations-to-travel-solo-in-south-india.html
 Allow: /articles/how-to-prepare-mango-coconut-rice.html
 Allow: /articles/borax-crystal-snowflakes-science-experiment-for-children.html
 Allow: /articles/ten-best-beaches-to-travel-solo-in-india.html
@@ -1064,6 +1065,7 @@ Allow: /articles/agriculture.html
 Allow: /articles/agumbe.html
 Allow: /articles/alleppey.html
 Allow: /articles/amritsar.html
+Allow: /articles/araku-valley.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
 Allow: /articles/belur.html
@@ -1077,6 +1079,7 @@ Allow: /articles/chitradurga.html
 Allow: /articles/chutney.html
 Allow: /articles/code.html
 Allow: /articles/colima.html
+Allow: /articles/coonoor.html
 Allow: /articles/coorg.html
 Allow: /articles/coronavirus.html
 Allow: /articles/couple.html
@@ -1145,6 +1148,7 @@ Allow: /articles/makalidurga.html
 Allow: /articles/manali.html
 Allow: /articles/mangalore.html
 Allow: /articles/marriage.html
+Allow: /articles/meghamalai.html
 Allow: /articles/migrate.html
 Allow: /articles/missile.html
 Allow: /articles/movie.html
@@ -1209,6 +1213,7 @@ Allow: /articles/wayanad.html
 Allow: /articles/web.html
 Allow: /articles/webops.html
 Allow: /articles/world.html
+Allow: /articles/yercaud.html
 Allow: /feeds/index.xml
 Allow: /feeds/quick-read.xml
 Allow: /feeds/api.xml
@@ -1216,6 +1221,7 @@ Allow: /feeds/agriculture.xml
 Allow: /feeds/agumbe.xml
 Allow: /feeds/alleppey.xml
 Allow: /feeds/amritsar.xml
+Allow: /feeds/araku-valley.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
 Allow: /feeds/belur.xml
@@ -1229,6 +1235,7 @@ Allow: /feeds/chitradurga.xml
 Allow: /feeds/chutney.xml
 Allow: /feeds/code.xml
 Allow: /feeds/colima.xml
+Allow: /feeds/coonoor.xml
 Allow: /feeds/coorg.xml
 Allow: /feeds/coronavirus.xml
 Allow: /feeds/couple.xml
@@ -1297,6 +1304,7 @@ Allow: /feeds/makalidurga.xml
 Allow: /feeds/manali.xml
 Allow: /feeds/mangalore.xml
 Allow: /feeds/marriage.xml
+Allow: /feeds/meghamalai.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
 Allow: /feeds/movie.xml
@@ -1361,6 +1369,7 @@ Allow: /feeds/wayanad.xml
 Allow: /feeds/web.xml
 Allow: /feeds/webops.xml
 Allow: /feeds/world.xml
+Allow: /feeds/yercaud.xml
 Allow: /quotes/friendship.html
 Allow: /quotes/humor.html
 Allow: /quotes/intelligence.html
