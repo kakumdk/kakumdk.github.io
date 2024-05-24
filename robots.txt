@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/salt-crystal-garden-science-experiment-for-children.html
 Allow: /articles/ten-best-hill-stations-to-travel-solo-in-south-india.html
 Allow: /articles/how-to-prepare-mango-coconut-rice.html
 Allow: /articles/borax-crystal-snowflakes-science-experiment-for-children.html
