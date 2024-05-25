@@ -6076,6 +6076,13 @@ button.close {
   vertical-align: text-top !important;
 }
 
+.bg-white {
+  background-color: #fff !important;
+}
+.bg-peoplesblog-logo {
+  background-color: #292b2c !important;
+}
+
 .bg-faded {
   background-color: #f7f7f7;
 }
