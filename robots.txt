@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/ten-best-hill-stations-to-travel-solo-in-north-india.html
 Allow: /articles/how-to-prepare-tamarind-rice.html
 Allow: /articles/salt-crystal-garden-science-experiment-for-children.html
 Allow: /articles/ten-best-hill-stations-to-travel-solo-in-south-india.html
@@ -1070,6 +1071,7 @@ Allow: /articles/agumbe.html
 Allow: /articles/alleppey.html
 Allow: /articles/amritsar.html
 Allow: /articles/araku-valley.html
+Allow: /articles/auli.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
 Allow: /articles/belur.html
@@ -1128,6 +1130,7 @@ Allow: /articles/kadiri.html
 Allow: /articles/kanyakumari.html
 Allow: /articles/karnataka.html
 Allow: /articles/kashmir.html
+Allow: /articles/kasol.html
 Allow: /articles/kathmandu.html
 Allow: /articles/kerala.html
 Allow: /articles/kochi.html
@@ -1139,6 +1142,7 @@ Allow: /articles/kudremukh.html
 Allow: /articles/ladakh.html
 Allow: /articles/lando.html
 Allow: /articles/language.html
+Allow: /articles/lansdowne.html
 Allow: /articles/law.html
 Allow: /articles/lepakshi.html
 Allow: /articles/life.html
@@ -1152,12 +1156,14 @@ Allow: /articles/makalidurga.html
 Allow: /articles/manali.html
 Allow: /articles/mangalore.html
 Allow: /articles/marriage.html
+Allow: /articles/mcleod-ganj.html
 Allow: /articles/meghamalai.html
 Allow: /articles/migrate.html
 Allow: /articles/missile.html
 Allow: /articles/movie.html
 Allow: /articles/mumbai.html
 Allow: /articles/munnar.html
+Allow: /articles/mussoorie.html
 Allow: /articles/mysore.html
 Allow: /articles/nagarahole.html
 Allow: /articles/nagercoil.html
@@ -1226,6 +1232,7 @@ Allow: /feeds/agumbe.xml
 Allow: /feeds/alleppey.xml
 Allow: /feeds/amritsar.xml
 Allow: /feeds/araku-valley.xml
+Allow: /feeds/auli.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
 Allow: /feeds/belur.xml
@@ -1284,6 +1291,7 @@ Allow: /feeds/kadiri.xml
 Allow: /feeds/kanyakumari.xml
 Allow: /feeds/karnataka.xml
 Allow: /feeds/kashmir.xml
+Allow: /feeds/kasol.xml
 Allow: /feeds/kathmandu.xml
 Allow: /feeds/kerala.xml
 Allow: /feeds/kochi.xml
@@ -1295,6 +1303,7 @@ Allow: /feeds/kudremukh.xml
 Allow: /feeds/ladakh.xml
 Allow: /feeds/lando.xml
 Allow: /feeds/language.xml
+Allow: /feeds/lansdowne.xml
 Allow: /feeds/law.xml
 Allow: /feeds/lepakshi.xml
 Allow: /feeds/life.xml
@@ -1308,12 +1317,14 @@ Allow: /feeds/makalidurga.xml
 Allow: /feeds/manali.xml
 Allow: /feeds/mangalore.xml
 Allow: /feeds/marriage.xml
+Allow: /feeds/mcleod-ganj.xml
 Allow: /feeds/meghamalai.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
 Allow: /feeds/movie.xml
 Allow: /feeds/mumbai.xml
 Allow: /feeds/munnar.xml
+Allow: /feeds/mussoorie.xml
 Allow: /feeds/mysore.xml
 Allow: /feeds/nagarahole.xml
 Allow: /feeds/nagercoil.xml
