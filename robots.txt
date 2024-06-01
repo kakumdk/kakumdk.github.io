@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-sattu-paratha.html
 Allow: /articles/rainbow-slime-science-experiment-for-children.html
 Allow: /articles/ten-best-hill-stations-to-travel-solo-in-north-india.html
 Allow: /articles/how-to-prepare-tamarind-rice.html
