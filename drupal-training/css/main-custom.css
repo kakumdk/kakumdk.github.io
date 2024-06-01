@@ -24,3 +24,6 @@ header .navbar .logo a span.logo-secondary {
     text-transform: capitalize !important;
     font-size: 18px;
 }
+ul.course-points {
+    list-style: inside;
+}

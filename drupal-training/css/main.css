@@ -645,7 +645,7 @@ th {
     .section-title {
       padding-bottom: 40px; } }
   .section-title h2 {
-    font-size: 42px;
+    font-size: 36px;
     color: #222;
     margin-bottom: 20px; }
     @media (max-width: 768px) {
@@ -1433,7 +1433,7 @@ th {
   font-size: 21px;
   border: none;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 8px;
   border-bottom: 1px solid #eeeeee;
   position: relative;
   padding-bottom: 10px;
@@ -2235,7 +2235,7 @@ del {
   color: #7c32ff; }
 
 h1 {
-  font-size: 42px; }
+  font-size: 36px; }
 
 h2 {
   font-size: 30px; }
@@ -3059,7 +3059,7 @@ h6 {
     right: 20px; }
 
 .footer-area {
-  padding: 339px 0px 120px;
+  padding: 332px 0px 120px;
   background: url(../img/footer-bg.png) no-repeat center; }
   @media (max-width: 991px) {
     .footer-area {
