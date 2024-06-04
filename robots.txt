@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/ten-best-hill-stations-to-travel-solo-in-north-east-of-india.html
 Allow: /articles/how-to-prepare-sattu-paratha.html
 Allow: /articles/rainbow-slime-science-experiment-for-children.html
 Allow: /articles/ten-best-hill-stations-to-travel-solo-in-north-india.html
@@ -1074,6 +1075,7 @@ Allow: /articles/agumbe.html
 Allow: /articles/alleppey.html
 Allow: /articles/amritsar.html
 Allow: /articles/araku-valley.html
+Allow: /articles/arunachal-pradesh.html
 Allow: /articles/auli.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
@@ -1160,14 +1162,17 @@ Allow: /articles/manali.html
 Allow: /articles/mangalore.html
 Allow: /articles/marriage.html
 Allow: /articles/mcleod-ganj.html
+Allow: /articles/meghalaya.html
 Allow: /articles/meghamalai.html
 Allow: /articles/migrate.html
 Allow: /articles/missile.html
+Allow: /articles/mizoram.html
 Allow: /articles/movie.html
 Allow: /articles/mumbai.html
 Allow: /articles/munnar.html
 Allow: /articles/mussoorie.html
 Allow: /articles/mysore.html
+Allow: /articles/nagaland.html
 Allow: /articles/nagarahole.html
 Allow: /articles/nagercoil.html
 Allow: /articles/nainital.html
@@ -1195,6 +1200,7 @@ Allow: /articles/security.html
 Allow: /articles/self.html
 Allow: /articles/sexual-health.html
 Allow: /articles/shimla.html
+Allow: /articles/sikkim.html
 Allow: /articles/social-media.html
 Allow: /articles/software.html
 Allow: /articles/solar.html
@@ -1235,6 +1241,7 @@ Allow: /feeds/agumbe.xml
 Allow: /feeds/alleppey.xml
 Allow: /feeds/amritsar.xml
 Allow: /feeds/araku-valley.xml
+Allow: /feeds/arunachal-pradesh.xml
 Allow: /feeds/auli.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
@@ -1321,14 +1328,17 @@ Allow: /feeds/manali.xml
 Allow: /feeds/mangalore.xml
 Allow: /feeds/marriage.xml
 Allow: /feeds/mcleod-ganj.xml
+Allow: /feeds/meghalaya.xml
 Allow: /feeds/meghamalai.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
+Allow: /feeds/mizoram.xml
 Allow: /feeds/movie.xml
 Allow: /feeds/mumbai.xml
 Allow: /feeds/munnar.xml
 Allow: /feeds/mussoorie.xml
 Allow: /feeds/mysore.xml
+Allow: /feeds/nagaland.xml
 Allow: /feeds/nagarahole.xml
 Allow: /feeds/nagercoil.xml
 Allow: /feeds/nainital.xml
@@ -1356,6 +1366,7 @@ Allow: /feeds/security.xml
 Allow: /feeds/self.xml
 Allow: /feeds/sexual-health.xml
 Allow: /feeds/shimla.xml
+Allow: /feeds/sikkim.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
 Allow: /feeds/solar.xml
