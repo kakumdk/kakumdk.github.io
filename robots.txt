@@ -528,6 +528,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/atal-bihari-vajpayee.html
 Allow: /great-people/ramakrishna-paramahamsa.html
 Allow: /great-people/manisha-koirala.html
 Allow: /great-people/barry-hay.html
