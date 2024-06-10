@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-dhokla.html
 Allow: /articles/edible-slime-science-experiment-for-children.html
 Allow: /articles/ten-best-hill-stations-to-travel-solo-in-north-east-of-india.html
 Allow: /articles/how-to-prepare-sattu-paratha.html
@@ -765,9 +766,13 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0c9jfwbh7.html
+Allow: /shop/b0cx59sd6c.html
+Allow: /shop/b0cqpgg8kg.html
+Allow: /shop/b0crq8q3qp.html
+Allow: /shop/b0cnx6wvg5.html
 Allow: /shop/b0bmggwghv.html
 Allow: /shop/b0cqygf1qy.html
-Allow: /shop/b0cnx6wvg5.html
 Allow: /shop/b09g9hd6pd.html
 Allow: /shop/b0b8dc1qqv.html
 Allow: /shop/b0bzy9l1ld.html
