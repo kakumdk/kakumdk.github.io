@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-kala-khatta-gola.html
 Allow: /articles/fluffy-slime-science-experiment-for-children.html
 Allow: /articles/importance-of-holistic-wellness-at-workplace.html
 Allow: /articles/how-to-prepare-dhokla.html
