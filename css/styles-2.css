@@ -2497,7 +2497,7 @@ button#play-truth-dare-next {
 }
 .best-products-content-details .best-product {
     border: 1px solid #e7ebed;
-    padding: 15px 30px;
+    padding: 15px;
     margin: 15px auto;
 }
 .best-products-content-details img {
@@ -2906,6 +2906,9 @@ button#play-truth-dare-next {
     }
     .best-products-content table td a span {
         display: initial;
+    }
+    .best-products-content-details .best-product {
+        padding: 15px 30px;
     }
 
 }
