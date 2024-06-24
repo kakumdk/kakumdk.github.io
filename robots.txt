@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/magnetic-slime-science-experiment-for-childrens.html
 Allow: /articles/why-is-traveling-so-important-in-life.html
 Allow: /articles/my-husband-loves-me-but-clearly-fancies-a-woman-at-work-how-can-i-manage-my-jealousy.html
 Allow: /articles/how-to-prepare-kala-khatta-gola.html
