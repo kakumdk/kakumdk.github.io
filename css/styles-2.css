@@ -1307,10 +1307,11 @@ body .quotes-browse .tag-quotes-section a:hover {
     margin-left: 8px;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline li a {
-    padding: 0 12px;
+    margin-right: 12px;
     font-size: 18px;
     color: #292b2c;
     text-decoration: unset;
+    padding: 0;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline li a:first-child {
     padding-left: 0;
