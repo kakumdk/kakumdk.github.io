@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/lifestyle-changes-to-enhance-your-mood-and-mental-health.html
 Allow: /articles/how-to-prepare-pani-puri.html
 Allow: /articles/magnetic-slime-science-experiment-for-childrens.html
 Allow: /articles/why-is-traveling-so-important-in-life.html
