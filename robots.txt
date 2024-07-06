@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/borax-slime-science-experiment-for-children.html
 Allow: /articles/what-are-the-best-ways-to-earn-money-while-traveling-around-the-world.html
 Allow: /articles/lifestyle-changes-to-enhance-your-mood-and-mental-health.html
 Allow: /articles/how-to-prepare-pani-puri.html
