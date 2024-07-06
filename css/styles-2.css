@@ -2017,6 +2017,21 @@ h3.author-articles-heading::after {
     border-color: #4cae4c;
     padding: 0.75rem 4rem;
 }
+.shop-details .summary > * {
+    margin: 15px auto;
+    width: 100%;
+}
+.shop-details .summary table,
+.shop-details .summary table th,
+.shop-details .summary table td {
+    border: 1px solid;
+    text-align: left;
+    padding: 4px 10px;
+}
+.shop-details .summary table th p,
+.shop-details .summary table td p {
+    margin: unset;
+}
 .shop-related-category h2 {
     display: flex;
 }
@@ -2507,6 +2522,10 @@ button#play-truth-dare-next {
 }
 .best-products-content-details .best-product .summary {
     margin: 15px auto;
+}
+.best-products-content-details .best-product .summary > * {
+    margin: 15px auto;
+    width: 100%;
 }
 .best-products-content-details .best-product .summary table,
 .best-products-content-details .best-product .summary table th,
