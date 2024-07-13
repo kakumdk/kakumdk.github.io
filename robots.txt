@@ -791,6 +791,12 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0bsh87t6x.html
+Allow: /shop/b0c83j8yf8.html
+Allow: /shop/b0cx5f443w.html
+Allow: /shop/b0ch33945t.html
+Allow: /shop/b0cg5stqfq.html
+Allow: /shop/b08dplcm6t.html
 Allow: /shop/b0d53m1zqx.html
 Allow: /shop/b0cwtsf1tk.html
 Allow: /shop/b0d5ycys1g.html
@@ -925,7 +931,6 @@ Allow: /shop/b00w56gloq.html
 Allow: /shop/b08cfjbzrk.html
 Allow: /shop/b0756k5dyz.html
 Allow: /shop/b09wn3src7.html
-Allow: /shop/b0cg5stqfq.html
 Allow: /shop/b07s5fby3j.html
 Allow: /shop/b00vfmfxrc.html
 Allow: /shop/b07yy9n6ty.html
