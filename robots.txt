@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/boost-your-attention-and-ability-to-function-with-meditation-exercise-and-sleep.html
 Allow: /articles/how-to-prepare-dal-palak.html
 Allow: /articles/borax-slime-science-experiment-for-children.html
 Allow: /articles/what-are-the-best-ways-to-earn-money-while-traveling-around-the-world.html
