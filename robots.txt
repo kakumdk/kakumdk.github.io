@@ -2078,6 +2078,7 @@ Allow: /sri-swarajya-sangam/books/mantrapushpam.html
 Allow: /sri-swarajya-sangam/books/brahmasutramulu.html
 Allow: /sri-swarajya-sangam/books/veda-rahashamulu.html
 Allow: /sri-swarajya-sangam/books/divya-jeevana-jyoti.html
+Allow: /sri-swarajya-sangam/spiritual-practices/index.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read.xml

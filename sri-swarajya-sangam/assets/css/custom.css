@@ -86,6 +86,9 @@
 .section-title.c-section-title h2::after {
     margin: unset;
 }
+.section-title.c-section-title h4 {
+    text-align: left;
+}
 .section.c-section .guru-summary,
 .section.c-section .book-summary {
     padding-top: 15px;
@@ -142,6 +145,13 @@
 }
 .h-95 {
     height: 95% !important;
+}
+.spiritual-practices .section-title.c-section-title h2,
+.spiritual-practices .section-title.c-section-title h4 span {
+    text-transform: capitalize;
+}
+.spiritual-practices .section-title.c-section-title h4 span {
+    font-weight: 600;
 }
 
 
