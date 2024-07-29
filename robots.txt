@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/what-is-it-like-to-quit-your-job-and-travel-the-world.html
 Allow: /articles/boost-your-attention-and-ability-to-function-with-meditation-exercise-and-sleep.html
 Allow: /articles/how-to-prepare-dal-palak.html
 Allow: /articles/borax-slime-science-experiment-for-children.html
