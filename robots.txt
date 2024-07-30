@@ -2026,12 +2026,15 @@ Allow: /alcohol/woodburns-contemporary-indian-whisky.html
 Allow: /alcohol/amrut-peated-cask-strength-malt.html
 Allow: /alcohol/paul-john-brilliance.html
 Allow: /alcohol/rampur-double-cask-single-malt-whisky.html
+Allow: /alcohol/spirytus-rektyfikowany.html
 Allow: /alcohol/romanov-premium-vodka.html
 Allow: /alcohol/smirnoff-vodka.html
 Allow: /alcohol/magic-moments-pure-grain.html
 Allow: /alcohol/smoke-vodka-aniseed.html
+Allow: /alcohol/villa-vercelli-gold-tequila.html
 Allow: /alcohol/maya-pistola-tequila-rosa-select.html
 Allow: /alcohol/old-monk-xxx-dark-rum.html
+Allow: /alcohol/soci-the-indian-gin-story.html
 Allow: /alcohol/hapusa-himalayan-dry-gin.html
 Allow: /alcohol/paul-john-xo-brandy.html
 Allow: /alcohol/carlsberg-elephant-strong.html
