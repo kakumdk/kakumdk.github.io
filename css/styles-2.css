@@ -2438,11 +2438,11 @@ button#play-truth-dare-next {
 }
 .best-products-item {
     border-top: 1px solid #e7ebed;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 10px 12px;
-    background: #f9f9f9;
+    height: 100%;
 }
-/* .best-products-item .best-products-item-img {
+.best-products-item .best-products-item-img {
     width: 80px;
     margin-right: 10px;
     text-align: center;
@@ -2451,7 +2451,7 @@ button#play-truth-dare-next {
 .best-products-item .best-products-item-img img {
     height: 100px;
     width: auto;
-} */
+}
 .best-products-item h4 {
     font-size: 18px;
     overflow: hidden;
@@ -2520,6 +2520,7 @@ button#play-truth-dare-next {
 .best-products-content-details img {
     height: 150px;
     width: auto;
+    margin: 15px auto;
 }
 .best-products-content-details .best-product .summary {
     margin: 15px auto;
