@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/how-to-prepare-green-mango-salad.html
 Allow: /articles/rheumatoid-arthritis-symptoms-causes-diagnosis-treatment-recovery.html
 Allow: /articles/what-is-it-like-to-quit-your-job-and-travel-the-world.html
 Allow: /articles/boost-your-attention-and-ability-to-function-with-meditation-exercise-and-sleep.html
@@ -798,6 +799,8 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b082wymtwf.html
+Allow: /shop/b0d53m1zqx.html
 Allow: /shop/b01gnvf8s8.html
 Allow: /shop/b0bsh87t6x.html
 Allow: /shop/b0c83j8yf8.html
@@ -805,7 +808,6 @@ Allow: /shop/b0cx5f443w.html
 Allow: /shop/b0ch33945t.html
 Allow: /shop/b0cg5stqfq.html
 Allow: /shop/b08dplcm6t.html
-Allow: /shop/b0d53m1zqx.html
 Allow: /shop/b0cwtsf1tk.html
 Allow: /shop/b0d5ycys1g.html
 Allow: /shop/b09xfmgskv.html
