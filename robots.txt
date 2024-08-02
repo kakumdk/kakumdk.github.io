@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/what-are-some-of-the-most-messed-up-family-secrets.html
 Allow: /articles/how-to-prepare-green-mango-salad.html
 Allow: /articles/rheumatoid-arthritis-symptoms-causes-diagnosis-treatment-recovery.html
 Allow: /articles/what-is-it-like-to-quit-your-job-and-travel-the-world.html
