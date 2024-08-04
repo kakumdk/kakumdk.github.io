@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/what-are-some-good-tips-and-tricks-to-travel-cheap.html
 Allow: /articles/what-are-some-of-the-most-messed-up-family-secrets.html
 Allow: /articles/how-to-prepare-green-mango-salad.html
 Allow: /articles/rheumatoid-arthritis-symptoms-causes-diagnosis-treatment-recovery.html
@@ -464,6 +465,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-blue-jackal.html
 Allow: /quick-read/the-wise-old-elephant.html
 Allow: /quick-read/the-elephant-and-the-blind-men.html
 Allow: /quick-read/the-king-and-the-spider.html
@@ -555,6 +557,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/ram-sharan-sharma.html
 Allow: /great-people/gostha-pal.html
 Allow: /great-people/bineswar-brahma.html
 Allow: /great-people/peter-kemp.html
