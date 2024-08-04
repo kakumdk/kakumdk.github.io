@@ -803,6 +803,12 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0cc2z4gmn.html
+Allow: /shop/b0bkjrhv2m.html
+Allow: /shop/b0d7m8lg8s.html
+Allow: /shop/b0cdxhyhz6.html
+Allow: /shop/b0d6r9xcxx.html
+Allow: /shop/b0d7vh5rl6.html
 Allow: /shop/b082wymtwf.html
 Allow: /shop/b0d53m1zqx.html
 Allow: /shop/b01gnvf8s8.html
