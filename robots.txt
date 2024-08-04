@@ -2038,6 +2038,7 @@ Allow: /alcohol/privacy-policy.html
 Allow: /alcohol/terms-and-conditions.html
 Allow: /alcohol/about.html
 Allow: /alcohol/j-noon-india-i-red-wine.html
+Allow: /alcohol/glenfarclas-105.html
 Allow: /alcohol/roulette-premium-whisky.html
 Allow: /alcohol/rockford-fine-and-rare-whisky.html
 Allow: /alcohol/fireball-cinnamon-whisky.html
@@ -2053,6 +2054,7 @@ Allow: /alcohol/magic-moments-pure-grain.html
 Allow: /alcohol/smoke-vodka-aniseed.html
 Allow: /alcohol/villa-vercelli-gold-tequila.html
 Allow: /alcohol/maya-pistola-tequila-rosa-select.html
+Allow: /alcohol/stroh-original-spiced-rum-160-proof.html
 Allow: /alcohol/old-monk-xxx-dark-rum.html
 Allow: /alcohol/soci-the-indian-gin-story.html
 Allow: /alcohol/hapusa-himalayan-dry-gin.html
