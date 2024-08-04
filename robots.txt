@@ -1129,6 +1129,7 @@ Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/redmi-pad-pro-g-vs-honor-pad-.html
 Allow: /articles/realme-narzo--pro-g-vs-realme--g.html
 Allow: /articles/iqoo-zx-g-gb-ram-vs-iqoo-zx-g-gb-ram.html
 Allow: /articles/samsung-galaxy-s-ultra-g-ai-vs-samsung-galaxy-s-ultra-g.html

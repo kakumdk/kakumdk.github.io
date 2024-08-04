@@ -2509,10 +2509,10 @@ button#play-truth-dare-next {
     line-height: 1.6;
     overflow: hidden;
 }
-.best-products-content-details {
+.best-products-content {
     margin: 30px auto;
 }
-.best-products-content-details .best-product {
+.best-products-content .best-product {
     border: 1px solid #e7ebed;
     padding: 15px;
     margin: 15px auto;
@@ -2522,26 +2522,26 @@ button#play-truth-dare-next {
     width: auto;
     margin: 15px auto;
 }
-.best-products-content-details .best-product .summary {
+.best-products-content .best-product .summary {
     margin: 15px auto;
 }
-.best-products-content-details .best-product .summary > * {
+.best-products-content .best-product .summary > * {
     margin: 15px auto;
     width: 100%;
 }
-.best-products-content-details .best-product .summary table,
-.best-products-content-details .best-product .summary table th,
-.best-products-content-details .best-product .summary table td {
+.best-products-content .best-product .summary table,
+.best-products-content .best-product .summary table th,
+.best-products-content .best-product .summary table td {
     border: 1px solid;
     text-align: left;
     padding: 4px 10px;
 }
-.best-products-content-details .best-product .summary table th p,
-.best-products-content-details .best-product .summary table td p {
+.best-products-content .best-product .summary table th p,
+.best-products-content .best-product .summary table td p {
     margin: unset;
 }
 
-.best-products-content-details .best-product .action .btn {
+.best-products-content .best-product .action .btn {
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
@@ -2549,6 +2549,17 @@ button#play-truth-dare-next {
 }
 .search-best-products {
     background-color: #fff;
+}
+.best-products-content h2 {
+    display: flex;
+}
+.best-products-content h2::after {
+    content: '';
+    flex: 1;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: #e7ebed;
+    margin-top: 15px;
 }
 
 
