@@ -467,6 +467,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-magic-carpet.html
 Allow: /quick-read/the-drummer-boy.html
 Allow: /quick-read/the-blue-jackal.html
 Allow: /quick-read/the-wise-old-elephant.html
@@ -560,6 +561,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/b-k-s-iyengar.html
 Allow: /great-people/narendra-dabholkar.html
 Allow: /great-people/ram-sharan-sharma.html
 Allow: /great-people/gostha-pal.html
