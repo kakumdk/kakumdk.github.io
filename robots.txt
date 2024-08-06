@@ -19,6 +19,7 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /articles/solar-still-experiment-science-experiment-for-children.html
 Allow: /articles/five-exercises-to-naturally-increase-penis-size.html
 Allow: /articles/what-are-some-good-tips-and-tricks-to-travel-cheap.html
 Allow: /articles/what-are-some-of-the-most-messed-up-family-secrets.html
