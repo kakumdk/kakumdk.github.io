@@ -2561,6 +2561,10 @@ button#play-truth-dare-next {
     background-color: #e7ebed;
     margin-top: 15px;
 }
+.software-list .software-item i {
+    font-size: 50px;
+    color: #292b2c;
+}
 
 
 

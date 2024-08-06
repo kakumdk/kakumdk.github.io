@@ -7,10 +7,6 @@ Allow: /authors/index.html
 Allow: /privacy.html
 Allow: /terms-and-conditions.html
 Allow: /site-links.html
-Allow: /world-clock.html
-Allow: /age-calculator.html
-Allow: /generate-password.html
-Allow: /truth-or-dare.html
 Allow: /sitemaps/index.html
 Allow: /quick-read/index.html
 Allow: /videos/index.html
@@ -19,6 +15,11 @@ Allow: /feeds/index.html
 Allow: /quotes/index.html
 Allow: /shop/index.html
 Allow: /best-products/index.html
+Allow: /software/index.html
+Allow: /software/world-clock.html
+Allow: /software/age-calculator.html
+Allow: /software/generate-password.html
+Allow: /software/truth-or-dare.html
 Allow: /articles/solar-still-experiment-science-experiment-for-children.html
 Allow: /articles/five-exercises-to-naturally-increase-penis-size.html
 Allow: /articles/what-are-some-good-tips-and-tricks-to-travel-cheap.html
