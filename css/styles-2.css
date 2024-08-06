@@ -2563,6 +2563,9 @@ button#play-truth-dare-next {
 }
 .software-list .software-item i {
     font-size: 50px;
+    color: #546E7A;
+}
+.software-list .software-item i:hover {
     color: #292b2c;
 }
 
