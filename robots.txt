@@ -1505,6 +1505,9 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/illegal-mining-constructions-led-to-wayanad-tragedy-environment-minister.html
+Allow: /news/hc-upholds-cbi-arrest-of-kejriwal-bjp-says-verdict-proves-cm-s-role-aap-to-move-apex-court.html
+Allow: /news/bangladesh-crisis-sheikh-hasina-flees-amid-massive-protests-president-releases-khaleda-zia.html
 Allow: /news/drupal-launches-drupal-11-the-latest-version-of-the-open-source-cms.html
 Allow: /news/middle-east-crisis-live-updates-israel-iran-war-hamas-leader-ismail-haniyeh.html
 Allow: /news/kedarnath-landslide-uttarakhand-govt-sends-fodder-for-stranded-horses-and-mules-watch.html
