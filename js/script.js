@@ -954,7 +954,34 @@ function showGlobalSearchResults(search) {
                 }
                 if (found == true) {
                     var url = "/shop/"+_data.asin+".html";
-                    var _tmp = [_data.title, "", url.toLowerCase(), '<i class="fa fa-shopping-cart"></i><span>Shop</span>'];
+                    var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-shopping-cart"></i><span>Shop</span>'];
+                    results.push(_tmp);
+                    found = false;
+                }
+            }
+        });
+    });
+    readJsonFile("/data/best-products-content.json", function(text){
+        var data = JSON.parse(text);
+        data.slice().reverse().forEach(function (_data) {
+            var title = _data.title.toLowerCase();
+            title += " " + _data.summary.toLowerCase();
+            // title += " " + _data.asin.toLowerCase();
+            if (search !== null) {
+                var searchFor = search.toLowerCase().split(' ');
+                var found = false;
+                for (var i = 0, ln = searchFor.length; i < ln; i++) {
+                    if (title.includes(searchFor[i])) {
+                        found = true;
+                    }
+                    else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found == true) {
+                    var url = getArticleURL(_data.file);
+                    var _tmp = [_data.title, _data.summary, url.toLowerCase(), '<i class="fa fa-shopping-cart"></i><span>Best Product</span>'];
                     results.push(_tmp);
                     found = false;
                 }
@@ -1071,10 +1098,11 @@ function showGlobalSearchResults(search) {
         uniqueResults = multiDimensionalUnique(results);
         uniqueResults.forEach(function (_result) {
             resultsCount++;
+            var _summary = (_result[1].replace(/<[^>]*>/g, '')).substring(0, 250);
             var output = '<div class="global-search-result">' +
                 '<div class="global-search-result-type">'+_result[3]+'</div>' +
                 '<h2><a href="'+_result[2]+'">'+_result[0]+'</a></h2>' +
-                '<p>'+_result[1]+'</p>' +
+                '<p>'+_summary.replace(/([^.])$/, '$1.')+'</p>' +
                 '<a href="'+_result[2]+'">'+_result[2]+'</a>' +
                 '</div>';
             $('.global-search-results').append(output);
