@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-prepare-pudina-rice.html
 Allow: /articles/solar-still-experiment-science-experiment-for-children.html
 Allow: /articles/five-exercises-to-naturally-increase-penis-size.html
 Allow: /articles/what-are-some-good-tips-and-tricks-to-travel-cheap.html
@@ -468,6 +469,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-brave-little-tailor.html
 Allow: /quick-read/the-magic-carpet.html
 Allow: /quick-read/the-drummer-boy.html
 Allow: /quick-read/the-blue-jackal.html
@@ -562,6 +564,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/kirpal-singh.html
 Allow: /great-people/b-k-s-iyengar.html
 Allow: /great-people/narendra-dabholkar.html
 Allow: /great-people/ram-sharan-sharma.html
