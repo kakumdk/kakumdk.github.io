@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-is-the-life-of-a-divorced-man-in-india.html
 Allow: /articles/how-to-prepare-pudina-rice.html
 Allow: /articles/solar-still-experiment-science-experiment-for-children.html
 Allow: /articles/five-exercises-to-naturally-increase-penis-size.html

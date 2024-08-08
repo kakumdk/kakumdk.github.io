@@ -618,10 +618,11 @@ main#main section.wow {
 
 #services .box {
   padding: 30px;
-  margin-bottom: 10px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: #fff;
   transition: 0.4s;
+  height: 100%;
+  border-bottom: 1px solid #f2f5f8;
 }
 
 #services .box:hover {
