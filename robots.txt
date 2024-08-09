@@ -2095,6 +2095,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/managing-oral-health-during-pregnancy-tips-for-expecting-mothers.html
 Allow: /articles/the-evolution-of-dental-materials-from-traditional-to-modern.html
 Allow: /articles/how-to-achieve-optimal-oral-health-with-diabetes.html
 Allow: /articles/understanding-the-benefits-of-preventive-dental-care.html

@@ -622,7 +622,7 @@ main#main section.wow {
   background: #fff;
   transition: 0.4s;
   height: 100%;
-  border-bottom: 1px solid #f2f5f8;
+  border-bottom: 2px solid #f2f5f8;
 }
 
 #services .box:hover {
