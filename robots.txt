@@ -820,6 +820,14 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b014akzmnk.html
+Allow: /shop/b083dyv9zw.html
+Allow: /shop/b09xtqffcg.html
+Allow: /shop/b0b4j28ntr.html
+Allow: /shop/b09wqyflrx.html
+Allow: /shop/b09shj1c9w.html
+Allow: /shop/b09gy48285.html
+Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b0cz6qf29y.html
 Allow: /shop/b0d3dz1spm.html
 Allow: /shop/b0d4lj9wvw.html
@@ -862,7 +870,6 @@ Allow: /shop/b07pb6bw5q.html
 Allow: /shop/b0chm729gt.html
 Allow: /shop/b0bslll187.html
 Allow: /shop/b07p5txswj.html
-Allow: /shop/b09xb8gfbq.html
 Allow: /shop/b0c7v84bs2.html
 Allow: /shop/b0c467kfnm.html
 Allow: /shop/b0cgdqrr9y.html
@@ -991,7 +998,6 @@ Allow: /shop/b084j4mzqm.html
 Allow: /shop/b09y64h8vs.html
 Allow: /shop/b07g3f1g7t.html
 Allow: /shop/b095s8ggkb.html
-Allow: /shop/b09wqyflrx.html
 Allow: /shop/b0c7bzx934.html
 Allow: /shop/b0cj4s724m.html
 Allow: /shop/b0b6f7lx4c.html
@@ -1010,8 +1016,8 @@ Allow: /shop/b0bmgd9y2x.html
 Allow: /shop/b09n3znhty.html
 Allow: /shop/b089m9hvqp.html
 Allow: /shop/b07whs7mz4.html
-Allow: /shop/b078s4p3j9.html
 Allow: /shop/b0byn5555j.html
+Allow: /shop/b078s4p3j9.html
 Allow: /shop/b09fsmn8qs.html
 Allow: /shop/b0cbrr54kf.html
 Allow: /shop/b0c45n5vpt.html
@@ -1138,14 +1144,6 @@ Allow: /shop/b0849982t8.html
 Allow: /shop/b06y42c8v7.html
 Allow: /shop/b079t88xlm.html
 Allow: /shop/b0b72bsw7k.html
-Allow: /shop/b014akzmnk.html
-Allow: /shop/b083dyv9zw.html
-Allow: /shop/b09t4t4596.html
-Allow: /shop/b09xtqffcg.html
-Allow: /shop/b0b4j28ntr.html
-Allow: /shop/b09shj1c9w.html
-Allow: /shop/b09gy48285.html
-Allow: /shop/b09sg1chww.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
