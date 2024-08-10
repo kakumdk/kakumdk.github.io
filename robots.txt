@@ -472,6 +472,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-clever-rabbit.html
 Allow: /quick-read/the-talking-cave.html
 Allow: /quick-read/the-sun-and-the-moon.html
 Allow: /quick-read/the-brave-little-tailor.html
@@ -2095,6 +2096,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/the-benefits-of-custom-fitted-dental-appliances.html
 Allow: /articles/managing-oral-health-during-pregnancy-tips-for-expecting-mothers.html
 Allow: /articles/the-evolution-of-dental-materials-from-traditional-to-modern.html
 Allow: /articles/how-to-achieve-optimal-oral-health-with-diabetes.html
