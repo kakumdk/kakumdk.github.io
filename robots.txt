@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/pcos-symptoms-causes-diagnosis-treatment-recovery.html
 Allow: /articles/what-are-the-best-jobs-for-traveling-around-the-world.html
 Allow: /articles/how-is-the-life-of-a-divorced-man-in-india.html
 Allow: /articles/how-to-prepare-pudina-rice.html
