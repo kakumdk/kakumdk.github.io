@@ -473,6 +473,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-little-mermaid.html
 Allow: /quick-read/the-clever-rabbit.html
 Allow: /quick-read/the-talking-cave.html
 Allow: /quick-read/the-sun-and-the-moon.html
