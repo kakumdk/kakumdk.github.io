@@ -2108,6 +2108,8 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/the-importance-of-early-dental-care-for-kids.html
+Allow: /articles/exploring-the-link-between-oral-health-and-kidney-health.html
 Allow: /articles/the-benefits-of-custom-fitted-dental-appliances.html
 Allow: /articles/managing-oral-health-during-pregnancy-tips-for-expecting-mothers.html
 Allow: /articles/the-evolution-of-dental-materials-from-traditional-to-modern.html
