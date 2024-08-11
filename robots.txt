@@ -1161,6 +1161,8 @@ Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/samsung--kg-wwcgdlbtl-vs-boschkg-wnaeuin.html
+Allow: /articles/ifb-l-ifbdc-dbbed-vs-ifb-l-ifbdc-dbse.html
 Allow: /articles/tcl--cm-vs-tcl--cm-k-ultra-hd.html
 Allow: /articles/sony-bravia--cm-vs-sony-bravia--cm.html
 Allow: /articles/motorola-tab-g-vs-redmi-pad-se.html
