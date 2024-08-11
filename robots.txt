@@ -826,6 +826,7 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0d54294k9.html
 Allow: /shop/b014akzmnk.html
 Allow: /shop/b083dyv9zw.html
 Allow: /shop/b09xtqffcg.html
