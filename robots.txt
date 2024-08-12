@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-prepare-jaljeera.html
 Allow: /articles/diy-potato-battery-science-experiment-for-children.html
 Allow: /articles/pcos-symptoms-causes-diagnosis-treatment-recovery.html
 Allow: /articles/what-are-the-best-jobs-for-traveling-around-the-world.html
