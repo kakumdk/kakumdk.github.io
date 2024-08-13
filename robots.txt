@@ -2114,6 +2114,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/understanding-the-benefits-of-dental-implants.html
 Allow: /articles/how-to-handle-dental-emergencies-at-home.html
 Allow: /articles/how-to-address-and-prevent-toothache.html
 Allow: /articles/the-importance-of-early-dental-care-for-kids.html
