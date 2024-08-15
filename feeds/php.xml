@@ -83,10 +83,10 @@
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html</guid>
     </item><item>
-			<title>Configuring &amp; Debugging Drupal 7 on PHPStorm with XDebug on Ubuntu14</title>
+			<title>Configuring &amp; Debugging Drupal on PHPStorm with XDebug on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
-			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.                                The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.                                Inital</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.  The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.   Initally open terminal, and check the php version   $ php -v   yo</description>
+			<pubDate>Thu, 15 Aug 2024 11:40:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
     </item>
