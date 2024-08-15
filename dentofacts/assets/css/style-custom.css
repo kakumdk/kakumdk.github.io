@@ -383,14 +383,18 @@ input#search-news {
     .article-meta > div.ss-box {
         position: unset;
         margin: 15px auto;
+        display: block;
         background-color: unset;
     }
     .article-meta > div.ss-box a {
-        font-size: 14px;
-        padding: 4px 8px;
-        margin: auto 2px;
+        font-size: 15px;
+        padding: 4px;
+        margin: auto 4px;
         border-radius: 50%;
-        width: 30px;
+        width: 32px;
+        display: inline-block;
+        background: #2d7dc6 !important;
+        color: #fff !important;
     }
     footer .footer-vertical-nav li {
         display: inline-block;
