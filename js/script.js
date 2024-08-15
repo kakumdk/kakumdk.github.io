@@ -1059,7 +1059,7 @@ function showGlobalSearchResults(search) {
                     }
                 }
                 if (found == true) {
-                    var url = "/news/"+_data.url;
+                    var url = "/news"+_data.url;
                     var _tmp = [_data.title, _data.desc, url.toLowerCase(), '<i class="fa fa-newspaper-o"></i><span>News</span>'];
                     results.push(_tmp);
                     found = false;
@@ -1085,7 +1085,7 @@ function showGlobalSearchResults(search) {
                     }
                 }
                 if (found == true) {
-                    var url = "/alcohol/"+_data.url;
+                    var url = "/alcohol"+_data.url;
                     var _tmp = [_data.title, _data.desc, url.toLowerCase(), '<i class="fa fa-beer"></i><span>Alcohol</span>'];
                     results.push(_tmp);
                     found = false;
