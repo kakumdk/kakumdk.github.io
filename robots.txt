@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/introduction-to-the-vedas-the-oldest-sacred-texts.html
 Allow: /articles/natural-home-remedies-for-constipation.html
 Allow: /articles/what-is-some-good-advice-and-tips-for-traveling-alone.html
 Allow: /articles/is-it-true-that-the-truth-always-comes-out.html
@@ -1170,6 +1171,7 @@ Allow: /shop/b079t88xlm.html
 Allow: /shop/b0b72bsw7k.html
 Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
+Allow: /authors/krishna-d.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
 Allow: /articles/samsung--kg-wwcgdlbtl-vs-boschkg-wnaeuin.html
@@ -1329,6 +1331,7 @@ Allow: /articles/solar.html
 Allow: /articles/solar-energy.html
 Allow: /articles/solo.html
 Allow: /articles/spice.html
+Allow: /articles/spiritual.html
 Allow: /articles/srikalahasti.html
 Allow: /articles/srisailam.html
 Allow: /articles/symfony.html
@@ -1349,6 +1352,7 @@ Allow: /articles/udaipur.html
 Allow: /articles/udupi.html
 Allow: /articles/varanasi.html
 Allow: /articles/varkala.html
+Allow: /articles/vedas.html
 Allow: /articles/vegetable.html
 Allow: /articles/wayanad.html
 Allow: /articles/web.html
@@ -1496,6 +1500,7 @@ Allow: /feeds/solar.xml
 Allow: /feeds/solar-energy.xml
 Allow: /feeds/solo.xml
 Allow: /feeds/spice.xml
+Allow: /feeds/spiritual.xml
 Allow: /feeds/srikalahasti.xml
 Allow: /feeds/srisailam.xml
 Allow: /feeds/symfony.xml
@@ -1516,6 +1521,7 @@ Allow: /feeds/udaipur.xml
 Allow: /feeds/udupi.xml
 Allow: /feeds/varanasi.xml
 Allow: /feeds/varkala.xml
+Allow: /feeds/vedas.xml
 Allow: /feeds/vegetable.xml
 Allow: /feeds/wayanad.xml
 Allow: /feeds/web.xml
