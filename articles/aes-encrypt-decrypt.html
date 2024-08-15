@@ -5,15 +5,15 @@
     <meta http-equiv="content-language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>AES Encrypt & Decrypt</title>
-    <meta name="description" content="Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' me" />
+    <meta name="description" content="Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is &#39;Cipher Block Chaining" />
     <link rel="canonical" href="https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html" />
     <meta property="og:title" content="AES Encrypt & Decrypt" />
-    <meta property="og:description" content="Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' me" />
+    <meta property="og:description" content="Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is &#39;Cipher Block Chaining" />
     <meta property="og:url" content="https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/1_4BDmgHbEkjYDUtEK-ntr6Q.png" />
     <meta property="og:type" content="article" />
     <meta name="twitter:title" content="AES Encrypt & Decrypt" />
-    <meta name="twitter:description" content="Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' me" />
+    <meta name="twitter:description" content="Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is &#39;Cipher Block Chaining" />
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/1_4BDmgHbEkjYDUtEK-ntr6Q.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
@@ -54,7 +54,7 @@
           "@id": "/articles/aes-encrypt-decrypt.html"
         },
         "headline": "AES Encrypt & Decrypt",
-        "description": "Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' me",
+        "description": "Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp; Decrypt approach taken is &#39;Cipher Block Chaining",
         "image": "https://peoplesblog.co.in/upload/banners/1_4BDmgHbEkjYDUtEK-ntr6Q.png",
         "author": {
           "@type": "Person",
@@ -69,7 +69,7 @@
           }
         },
         "datePublished": "11th Jun 2019",
-        "dateModified": "2022-12-01T08:00:00+05:30"
+        "dateModified": "2024-08-15T12:33:00+05:30"
       }
     </script>
 </head>
@@ -128,9 +128,9 @@
                                 </ol>
                                 <h1 class="read-article-title">AES Encrypt & Decrypt</h1>
                                 <div class="blog-meta big-meta">
-                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 11th Jun 2019, <span class="last-updated">2022-12-01T08:00:00+05:30</span></small -->
+                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 11th Jun 2019, <span class="last-updated">2024-08-15T12:33:00+05:30</span></small -->
                                     <small class="articles-author">
-                                        <!-- em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a --><em class="pl-0">On</em><span>11th Jun 2019</span>, <span class="last-updated">2022-12-01T08:00:00+05:30</span>
+                                        <!-- em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a --><em class="pl-0">On</em><span>11th Jun 2019</span>, <span class="last-updated">2024-08-15T12:33:00+05:30</span>
                                     </small>
                                     <small class="read-article-section">
                                       <i class="fa fa-play read-article"> <span>Read</span></i>
@@ -145,7 +145,7 @@
                                 <img alt="AES Encrypt & Decrypt" src="/upload/banners/1_4BDmgHbEkjYDUtEK-ntr6Q.png" class="img-fluid" title="AES Encrypt & Decrypt" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
-                                <div><p dir='ltr'>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher.<strong> </strong>Encrypt &amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.</p>                                <h3 dir='ltr'>AES Encrypt</h3>                                <ul dir='ltr'>                                    <li>We would have the 'Secret' stored in a file which is other than the web root.</li>                                </ul>                                <pre dir='ltr'>$key = hash('sha256', $secret, true);</pre>                                <ul dir='ltr'>                                    <li>Hash the 'Secret' with sha256, this gives you the 'Key' which will be used to openssl encrypt.</li>                                    <li>And Generate the pseudo random bytes as 'IV', so that it would be used during encryption and also be attached to the encrypted data.</li>                                </ul>                                <pre dir='ltr'>$iv = openssl_random_pseudo_bytes(16);</pre><ul dir='ltr'>                                <li>Now encrypt the 'String' with openssl encrypt by passing the 'AES-256-CBC' method, 'Key' and 'IV'</li>                            </ul>                                <pre dir='ltr'>$ciphertext = openssl_encrypt($plaintext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre><ul>                                <li>'openssl_encrypt' will Encrypt given data with given method and key, returns a raw or base64 encoded string.</li>                                <li>'Hash' the returned 'Cipher' text with sha256 hmac method</li>                            </ul>                                <pre dir='ltr'>$hash = hash_hmac('sha256', $ciphertext, $key, true);</pre><ul dir='ltr'>                                <li>Now concatenate the 'IV' &amp; 'Hash' &amp; 'Cipher' and store in the DB as the encrypted value.</li>                            </ul>                                <h3 dir='ltr'>AES Decrypt</h3>                                <ul dir='ltr'>                                    <li>Hash the 'Secret' with sha256, this gives you the 'Key' which will be used to openssl encrypt.</li>                                </ul>                                <pre dir='ltr'>$key = hash('sha256', $password, true);</pre><ul dir='ltr'>                                <li>Explode the concatenated string to 'IV' &amp; 'Hash' &amp; 'Cipher'</li>                            </ul>                                <pre dir='ltr'>$iv = substr($ivHashCiphertext, 0, 16);$hash = substr($ivHashCiphertext, 16, 32);$ciphertext = substr($ivHashCiphertext, 48);</pre><ul>                                <li>'openssl_decrypt' will take a raw or base64 encoded string and decrypts it using a given method and key.</li>                                <li>Now decrypt the 'Cipher' with 'AES-256-CBC' method, 'Key' and 'IV'</li>                            </ul>                                <pre dir='ltr'>openssl_decrypt($ciphertext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre><ul dir='ltr'>                                <li>Return the decrypted 'String'. it is ok, or do i need to change it to excel.</li>                            </ul>                                <p dir='ltr'>Cheers :)</p></div>
+                                <div><p dir='ltr'>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher.<strong> </strong>Encrypt &amp; Decrypt approach taken is &#39;Cipher Block Chaining&#39; method &#39;AES-256-CBC&#39;.</p>  <h3 dir='ltr'>AES Encrypt</h3>  <ul dir='ltr'> <li>We would have the &#39;Secret&#39; stored in a file which is other than the web root.</li> </ul>  <pre> $key = hash(&#39;sha256&#39;, $secret, true);</pre>  <ul dir='ltr'> <li>Hash the &#39;Secret&#39; with sha256, this gives you the &#39;Key&#39; which will be used to openssl encrypt.</li> <li>And Generate the pseudo random bytes as &#39;IV&#39;, so that it would be used during encryption and also be attached to the encrypted data.</li> </ul>  <pre> $iv = openssl_random_pseudo_bytes(16);</pre>  <ul dir='ltr'> <li>Now encrypt the &#39;String&#39; with openssl encrypt by passing the &#39;AES-256-CBC&#39; method, &#39;Key&#39; and &#39;IV&#39;</li> </ul>  <pre> $ciphertext = openssl_encrypt($plaintext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre>  <ul> <li>&#39;openssl_encrypt&#39; will Encrypt given data with given method and key, returns a raw or base64 encoded string.</li> <li>&#39;Hash&#39; the returned &#39;Cipher&#39; text with sha256 hmac method</li> </ul>  <pre> $hash = hash_hmac(&#39;sha256&#39;, $ciphertext, $key, true);</pre>  <ul dir='ltr'> <li>Now concatenate the &#39;IV&#39; &amp; &#39;Hash&#39; &amp; &#39;Cipher&#39; and store in the DB as the encrypted value.</li> </ul>  <h3 dir='ltr'>AES Decrypt</h3>  <ul dir='ltr'> <li>Hash the &#39;Secret&#39; with sha256, this gives you the &#39;Key&#39; which will be used to openssl encrypt.</li> </ul>  <pre> $key = hash(&#39;sha256&#39;, $password, true);</pre>  <ul dir='ltr'> <li>Explode the concatenated string to &#39;IV&#39; &amp; &#39;Hash&#39; &amp; &#39;Cipher&#39;</li> </ul>  <pre> $iv = substr($ivHashCiphertext, 0, 16);$hash = substr($ivHashCiphertext, 16, 32);$ciphertext = substr($ivHashCiphertext, 48);</pre>  <ul> <li>&#39;openssl_decrypt&#39; will take a raw or base64 encoded string and decrypts it using a given method and key.</li> <li>Now decrypt the &#39;Cipher&#39; with &#39;AES-256-CBC&#39; method, &#39;Key&#39; and &#39;IV&#39;</li> </ul>  <pre> openssl_decrypt($ciphertext, $method, $key, OPENSSL_RAW_DATA, $iv);</pre>  <ul dir='ltr'> <li>Return the decrypted &#39;String&#39;. it is ok, or do i need to change it to excel.</li> </ul>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>

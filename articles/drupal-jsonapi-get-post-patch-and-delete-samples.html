@@ -5,15 +5,15 @@
     <meta http-equiv="content-language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
-    <meta name="description" content="The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, whi" />
+    <meta name="description" content="The API that the JSON:API module makes available is centered on Drupal&#39;s entity types and bundles. Every bundle receives its own, unique URL path," />
     <link rel="canonical" href="https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html" />
     <meta property="og:title" content="Drupal JSON:API GET, POST, PATCH and DELETE Samples" />
-    <meta property="og:description" content="The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, whi" />
+    <meta property="og:description" content="The API that the JSON:API module makes available is centered on Drupal&#39;s entity types and bundles. Every bundle receives its own, unique URL path," />
     <meta property="og:url" content="https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/Decoupled Drupal 8 with JSON API.jpg" />
     <meta property="og:type" content="article" />
     <meta name="twitter:title" content="Drupal JSON:API GET, POST, PATCH and DELETE Samples" />
-    <meta name="twitter:description" content="The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, whi" />
+    <meta name="twitter:description" content="The API that the JSON:API module makes available is centered on Drupal&#39;s entity types and bundles. Every bundle receives its own, unique URL path," />
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/Decoupled Drupal 8 with JSON API.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
@@ -54,7 +54,7 @@
           "@id": "/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html"
         },
         "headline": "Drupal JSON:API GET, POST, PATCH and DELETE Samples",
-        "description": "The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, whi",
+        "description": "The API that the JSON:API module makes available is centered on Drupal&#39;s entity types and bundles. Every bundle receives its own, unique URL path,",
         "image": "https://peoplesblog.co.in/upload/banners/Decoupled Drupal 8 with JSON API.jpg",
         "author": {
           "@type": "Person",
@@ -69,7 +69,7 @@
           }
         },
         "datePublished": "11th Nov 2019",
-        "dateModified": "2022-12-01T08:00:00+05:30"
+        "dateModified": "2024-08-15T12:34:00+05:30"
       }
     </script>
 </head>
@@ -128,9 +128,9 @@
                                 </ol>
                                 <h1 class="read-article-title">Drupal JSON:API GET, POST, PATCH and DELETE Samples</h1>
                                 <div class="blog-meta big-meta">
-                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 11th Nov 2019, <span class="last-updated">2022-12-01T08:00:00+05:30</span></small -->
+                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 11th Nov 2019, <span class="last-updated">2024-08-15T12:34:00+05:30</span></small -->
                                     <small class="articles-author">
-                                        <!-- em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a --><em class="pl-0">On</em><span>11th Nov 2019</span>, <span class="last-updated">2022-12-01T08:00:00+05:30</span>
+                                        <!-- em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a --><em class="pl-0">On</em><span>11th Nov 2019</span>, <span class="last-updated">2024-08-15T12:34:00+05:30</span>
                                     </small>
                                     <small class="read-article-section">
                                       <i class="fa fa-play read-article"> <span>Read</span></i>
@@ -145,7 +145,7 @@
                                 <img alt="Drupal JSON:API GET, POST, PATCH and DELETE Samples" src="/upload/banners/Decoupled Drupal 8 with JSON API.jpg" class="img-fluid" title="Drupal JSON:API GET, POST, PATCH and DELETE Samples" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
-                                <div><p>The <a href="/articles/api.html">API</a> that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern</p>                                <p><strong>HTTP Methods</strong></p>                                <p>JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.</p>                                <ul>                                    <li>GET - Retrieve data, can be a collection of resources or an individual resource</li>                                    <li>POST - Create a new resource</li>                                    <li>PATCH - Update an existing resource</li>                                    <li>DELETE - Remove an existing resource</li>                                </ul>                                <p><strong>Authentication</strong></p>                                <p>Typically some form of authentication is used for POST requests. The examples below all use Basic Authentication. Enable the HTTP Basic Authentication module, set the permission for the API user (and role) and set the encoded username and password to the 'Authorization' request header.</p>                                <p><strong>Headers</strong></p>                                <p>Make sure to use 'Content type' and 'Accept' headers when appropriate</p>                                <pre><code>Accept: application/vnd.api+jsonContent-Type: application/vnd.api+json</code></pre><p><strong>Response codes</strong></p>                                <p>The JSON:API Specification also dictates&nbsp;acceptable responses. The Drupal implementation uses a subset of those. The module can respond with the following codes:</p>                                <ul class="check">                                    <li>200 OK - All successful GET and PATCH requests</li>                                    <li>201 Created - All successful POST requests (response includes the newly created resource)</li>                                    <li>204 No Content - All successful DELETE requests</li>                                </ul>                                <p>And here's the detailed documentation - <a href="https://www.drupal.org/docs/8/modules/jsonapi/get-post-patch-and-delete">https://www.drupal.org/docs/8/modules/jsonapi/get-post-patch-and-delete</a></p>                                <p>And here's the sample postman collection - <a href="https://gitlab.com/heykarthikwithu/drupal-jsonapi---sample-api-calls">https://gitlab.com/heykarthikwithu/drupal-jsonapi---sample-api-calls</a></p>                                <p>Thanks :)</p></div>
+                                <div><p>The <a href='/articles/api.html'>API</a> that the JSON:API module makes available is centered on Drupal&#39;s entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern</p>  <p><strong>HTTP Methods</strong></p>  <p>JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.</p>  <ul> <li>GET - Retrieve data, can be a collection of resources or an individual resource</li> <li>POST - Create a new resource</li> <li>PATCH - Update an existing resource</li> <li>DELETE - Remove an existing resource</li> </ul>  <p><strong>Authentication</strong></p>  <p>Typically some form of authentication is used for POST requests. The examples below all use Basic Authentication. Enable the HTTP Basic Authentication module, set the permission for the API user (and role) and set the encoded username and password to the &#39;Authorization&#39; request header.</p>  <p><strong>Headers</strong></p>  <p>Make sure to use &#39;Content type&#39; and &#39;Accept&#39; headers when appropriate</p>  <pre> <code>Accept: application/vnd.api+jsonContent-Type: application/vnd.api+json</code></pre>  <p><strong>Response codes</strong></p>  <p>The JSON:API Specification also dictates&nbsp;acceptable responses. The Drupal implementation uses a subset of those. The module can respond with the following codes:</p>  <ul> <li>200 OK - All successful GET and PATCH requests</li> <li>201 Created - All successful POST requests (response includes the newly created resource)</li> <li>204 No Content - All successful DELETE requests</li> </ul>  <p>And here&#39;s the detailed documentation - <a href='https://www.drupal.org/docs/8/modules/jsonapi/get-post-patch-and-delete'>https://www.drupal.org/docs/8/modules/jsonapi/get-post-patch-and-delete</a></p>  <p>And here&#39;s the sample postman collection - <a href='https://gitlab.com/heykarthikwithu/drupal-jsonapi---sample-api-calls'>https://gitlab.com/heykarthikwithu/drupal-jsonapi---sample-api-calls</a></p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>

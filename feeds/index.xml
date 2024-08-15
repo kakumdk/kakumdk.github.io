@@ -3046,8 +3046,8 @@
   </item><item>
     <title>Growing Enough Food to Feed a Family Year-Round by Yourself</title>
     <link>https://peoplesblog.co.in/articles/growing-enough-food-to-feed-a-family.html</link>
-    <description>It's a great thought of growing enough food to feed your family year round by yourself. Certain things are really important for such a though, like how much food is needed for your family, which crops to plant, how to get the most from your plot, and how to preserve your extra harvest.                                How much food is needed?                                Let's say a 200 square fee</description>
-    <pubDate>Fri, 16 Dec 2022 12:00:00 +0530</pubDate>
+    <description>It&amp;#39;s a great thought of growing enough food to feed your family year round by yourself. Certain things are really important for such a though, like how much food is needed for your family, which crops to plant, how to get the most from your plot, and how to preserve your extra harvest.  How much food is needed?   Let&amp;#39;s say a 200 square feet plot will harvest the feeds for a single person a</description>
+    <pubDate>Thu, 15 Aug 2024 12:35:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/growing-enough-food-to-feed-a-family.html</guid>
   </item><item>
@@ -3088,8 +3088,8 @@
   </item><item>
     <title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
     <link>https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
-    <description>The API that the JSON:API module makes available is centered on Drupal's entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern                                HTTP Methods                                JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.                          </description>
-    <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+    <description>The API that the JSON:API module makes available is centered on Drupal&amp;#39;s entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern  HTTP Methods  JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.   GET - Retrieve data, can be a collection of resources or an individual resource</description>
+    <pubDate>Thu, 15 Aug 2024 12:34:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>
   </item><item>
@@ -3109,8 +3109,8 @@
   </item><item>
     <title>AES Encrypt &amp; Decrypt</title>
     <link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
-    <description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.                                AES Encrypt                                                                    We would have the 'Secret' stored in a file which is other than the web root.                                           </description>
-    <pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+    <description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is &amp;#39;Cipher Block Chaining&amp;#39; method &amp;#39;AES-256-CBC&amp;#39;.  AES Encrypt   We would have the &amp;#39;Secret&amp;#39; stored in a file which is other than the web root.    $key = hash(&amp;#39;sha256&amp;#39;, $secret, true);   Hash the &amp;#39;Secret&amp;#39; with sha256, this gives you the &amp;#39</description>
+    <pubDate>Thu, 15 Aug 2024 12:33:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
   </item><item>

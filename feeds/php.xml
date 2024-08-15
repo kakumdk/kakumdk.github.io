@@ -71,8 +71,8 @@
     </item><item>
 			<title>AES Encrypt &amp; Decrypt</title>
 			<link>https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</link>
-			<description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is 'Cipher Block Chaining' method 'AES-256-CBC'.                                AES Encrypt                                                                    We would have the 'Secret' stored in a file which is other than the web root.                                           </description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<description>Advanced Encryption Standard, where we use AES-256 to encrypt the data with Cipher. Encrypt &amp;amp; Decrypt approach taken is &amp;#39;Cipher Block Chaining&amp;#39; method &amp;#39;AES-256-CBC&amp;#39;.  AES Encrypt   We would have the &amp;#39;Secret&amp;#39; stored in a file which is other than the web root.    $key = hash(&amp;#39;sha256&amp;#39;, $secret, true);   Hash the &amp;#39;Secret&amp;#39; with sha256, this gives you the &amp;#39</description>
+			<pubDate>Thu, 15 Aug 2024 12:33:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/aes-encrypt-decrypt.html</guid>
     </item><item>
