@@ -37,6 +37,7 @@ body a {
     z-index: 1;
     bottom: 15%;
     right: 15px;
+    width: auto;
 }
 .article-meta > div > span {
     font-style: italic;
