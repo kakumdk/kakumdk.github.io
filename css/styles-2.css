@@ -1334,9 +1334,10 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-content.read-article-content a {
     text-decoration: underline;
+    color: #292b2c;
 }
 .blog-content.read-article-content a:hover {
-    color: #292b2c;
+    color: #0256A1;
 }
 .blog-title-area.tag {
     margin: 30px auto;
