@@ -2523,6 +2523,9 @@ button#play-truth-dare-next {
     width: auto;
     margin: 15px auto;
 }
+.best-products-content-details img:hover {
+    transform: scale(1.1);
+}
 .best-products-content .best-product .summary {
     margin: 15px auto;
 }
