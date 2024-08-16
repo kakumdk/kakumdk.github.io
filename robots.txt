@@ -841,6 +841,8 @@ Allow: /shop/myntra.html
 Allow: /shop/pepperfry.html
 Allow: /shop/snapdeal.html
 Allow: /shop/tata-cliq.html
+Allow: /shop/b0bsrv1ygk.html
+Allow: /shop/b0bs6xqvd1.html
 Allow: /shop/b0cgn8fmj8.html
 Allow: /shop/b08cl8xf75.html
 Allow: /shop/b0d9vllxww.html
@@ -1179,6 +1181,7 @@ Allow: /authors/leela-vasundhara.html
 Allow: /authors/krishna-d.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/godrej-l--star-vs-whirlpool-l--star.html
 Allow: /articles/panasonic-l-solo-microwave-oven-vs-ifb--l-solo-microwave-oven.html
 Allow: /articles/samsung--kg-wwcgdlbtl-vs-boschkg-wnaeuin.html
 Allow: /articles/ifb-l-ifbdc-dbbed-vs-ifb-l-ifbdc-dbse.html
