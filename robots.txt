@@ -1182,6 +1182,7 @@ Allow: /authors/reddamma-d.html
 Allow: /authors/leela-vasundhara.html
 Allow: /authors/krishna-d.html
 Allow: /authors/karthik-kumar-d-k.html
+Allow: /authors/jyothi-karthik-d.html
 Allow: /authors/hanukkah-john.html
 Allow: /articles/godrej-l--star-vs-whirlpool-l--star.html
 Allow: /articles/panasonic-l-solo-microwave-oven-vs-ifb--l-solo-microwave-oven.html
