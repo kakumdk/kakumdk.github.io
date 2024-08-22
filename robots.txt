@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/the-historical-context-of-the-vedas.html
 Allow: /articles/how-to-increase-breast-size-naturally.html
 Allow: /articles/how-to-prepare-chana-chaat.html
 Allow: /articles/what-happened-at-a-wedding-that-made-you-feel-horrible-in-india.html
