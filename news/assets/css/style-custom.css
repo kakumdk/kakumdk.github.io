@@ -343,7 +343,13 @@ a.ss-btn.ss-btn-reddit,
 a.ss-btn.ss-btn-pocket {
     display: none;
 }
-
+.lazy {
+    background: url('/upload/cursor.jpg') no-repeat center center;
+    background-size: cover;
+}
+.lazy[src] {
+    background: none;
+}
 
 
 /****************************************************************************************************************************/

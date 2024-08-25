@@ -86,7 +86,8 @@
                     <span class=""></span>
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/"><img alt="Peoples BLOG" src="/upload/logo.png" title="Peoples BLOG" /></a>
+                <a class="navbar-brand" href="/">
+                <img alt="Peoples BLOG" src="/upload/cursor.jpg" data-src="/upload/logo.png" title="Peoples BLOG" class="lazy" /></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                            <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
@@ -142,7 +143,7 @@
                                 <div class="post-sharing-top post-sharing"></div><!-- end post-sharing -->
                             </div><!-- end title -->
                             <div class="single-post-media">
-                                <img alt="Profiling Drupal Performance with Webgrind and Xdebug" src="/upload/banners/profiling-drupal-performance-with-webgrind-and-xdebug.jpg" class="img-fluid" title="Profiling Drupal Performance with Webgrind and Xdebug" />
+                                <img alt="Profiling Drupal Performance with Webgrind and Xdebug" data-src="/upload/banners/profiling-drupal-performance-with-webgrind-and-xdebug.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Profiling Drupal Performance with Webgrind and Xdebug" />
                             </div><!-- end media -->
                             <div class="blog-content read-article-content">
                                 <div><p>Xdebug Profiling is all about measuring the performance of PHP code. In this article you gonna see how your measure the performance of your php code using webgrid and the xdebug.</p>  <h2>Requirements:</h2>  <ol> <li>Xdebug, with profiler enabled</li> <li>Webgrind</li> <li>Xdebug Addon plugin for browser</li> </ol>  <h3>1. Xdebug with profiler enabled</h3>  <h3>For setting up the environment, edit the php.ini file and add following lines.</h3>  <p><code>xdebug.profiler_enable_trigger = 1</code></p>  <p>If you want the cachegrind in a prefered location, then add the following</p>  <p><code>xdebug.profiler_output_dir=&quot;/var/www/html/xdebug_profiler&quot;</code></p>  <p>If you want a prefered name, add below line of code</p>  <p><code>xdebug.profiler_output_name=&quot;cachegrind.out.%u.%H_%R&quot;</code></p>  <p>Once added, restart the web server in my case</p>  <p><code>service apache2 restart</code></p>  <p>Once you restart the server, visit the index page where you have PHPInfo with profiler enabled, as shown in the image.</p>  <p><img alt='profiler-settings' src='/upload/blogs/profiler-settings.png' /></p>  <div class='google-ad'> <ins class='adsbygoogle'  style='display:block; text-align:center;'  data-ad-layout='in-article'  data-ad-format='fluid'  data-ad-client='ca-pub-2683569506254139'  data-ad-slot='4812668708'></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div>  <h3>2. Webgrind</h3>  <h3>For installing the webgrind, download the latest version from the below url</h3>  <p><a href='https://code.google.com/archive/p/webgrind/downloads'>https://code.google.com/archive/p/webgrind/downloads</a></p>  <p>Extract it and put in the root folder of your web server. When you hit the&nbsp;localhost&nbsp;you will be able to see the running webgrind. In my case I have the existing cache grinds</p>  <div class='google-ad'> <ins class='adsbygoogle'  style='display:block; text-align:center;'  data-ad-layout='in-article'  data-ad-format='fluid'  data-ad-client='ca-pub-2683569506254139'  data-ad-slot='5228875751'></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div>  <p><img alt='webgrind' src='/upload/blogs/webgrind1.png' /></p>  <h3>3. Xdebug Addon plugin</h3>  <p>Next we go to installing the xdebug plugin. First download and enable the plugin,</p>  <p><img alt='xdebug' src='/upload/blogs/xdebug1.png' /></p>  <p>Once done, you will be able to see the icons shown in the below image on your browser.</p>  <p><img alt='xdebug2' src='/upload/blogs/xdebug2.png' /></p>  <p>Enable the Xdebug trace as shown in the image.</p>  <div class='google-ad'> <ins class='adsbygoogle'  style='display:block; text-align:center;'  data-ad-layout='in-article'  data-ad-format='fluid'  data-ad-client='ca-pub-2683569506254139'  data-ad-slot='9621211280'></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script> </div>  <h2>Now let&#39;s check the performance.</h2>  <p>To do this initially we write a test code in a&nbsp;testme.php&nbsp;We have 3 for loops in our case, which runs heavily when compared to the rest.The 3rd one will be slowest one in our case,So this should be shown by our webgrind</p>  <p><img alt=' testme0' src='/upload/blogs/testme0.png' /></p>  <p>Run the&nbsp;<code>testme.php</code>&nbsp;code by hitting the url with the parameter&nbsp;<code>XDEBUG_PROFILE=on</code></p>  <p><img alt='testme1' src='/upload/blogs/testme1.png' /></p>  <p>Now visit the webgrind at you localhost and select the testme.php&lsquo;s cache grind.</p>  <p>You will be able to see the output as shown in image</p>  <p><img alt='testme3' src='/upload/blogs/testme3.png' /></p>  <p>As shown in the above image</p>  <blockquote> <p>In&nbsp;line 24 of testme.php&nbsp;the time consumed is&nbsp;99.84 percent&nbsp;of you entire testme.php time execution.</p> </blockquote>  <p>So in Drupal case also hit the page url as shown below where we are hitting the <code>node/4</code> with <code>XDEBUG_PROFILE=on</code></p>  <p><img alt='drupaltest1' src='/upload/blogs/drupaltest1.png' /></p>  <p>Visit the webgrind on localhost, where one more cache grind will be created for drupal one.</p>  <p><img alt='drupaltest2' src='/upload/blogs/drupaltest2.png' /></p>  <p>Similarly as in the&nbsp;<code>test.php</code>&nbsp;case, we can see at which particular line the code is taking the more time.</p>  <h2>Conclusion</h2>  <p>In this manner we can check for the specific piece of code which is taking more time to execute and optimize that particular piece of code. Additionally, you can see the hierarchy of all function calls and follow the same steps to check for the root function performance.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p></div>
@@ -158,7 +159,7 @@
         <div class="row"><div class="col-md-4 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>517</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/2044892.html" title="Bronze finish Encircled Reader Statue"><img src="https://ii1.pepperfry.com/media/catalog/product/b/r/1100x1210/bronze-finish-encircled-reader-statue--by-tayhaa-bronze-finish-encircled-reader-statue--by-tayhaa-n2grkb.jpg" class="img-fluid" alt="Bronze finish Encircled Reader Statue" title="Bronze finish Encircled Reader Statue" /></a></div>
+                    <div class="shop-image"><a href="/shop/2044892.html" title="Bronze finish Encircled Reader Statue"><img data-src="https://ii1.pepperfry.com/media/catalog/product/b/r/1100x1210/bronze-finish-encircled-reader-statue--by-tayhaa-bronze-finish-encircled-reader-statue--by-tayhaa-n2grkb.jpg" class="img-fluid lazy" alt="Bronze finish Encircled Reader Statue" title="Bronze finish Encircled Reader Statue" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/2044892.html" title="Bronze finish Encircled Reader Statue" class="shop-title-value">Bronze finish Encircled Reader Statue</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>4,649</span></span>
@@ -171,7 +172,7 @@
             </div><div class="col-md-4 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>526</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/1972804.html" title="Lady Faces Gold & Black (Set of 2) Polyresin Figurine"><img src="https://ii1.pepperfry.com/media/catalog/product/l/a/1100x1210/lady-faces-gold---black--set-of-2--polyresin-figurine-by-tied-ribbons-lady-faces-gold---black--set-o-rilyqn.jpg" class="img-fluid" alt="Lady Faces Gold & Black (Set of 2) Polyresin Figurine" title="Lady Faces Gold & Black (Set of 2) Polyresin Figurine" /></a></div>
+                    <div class="shop-image"><a href="/shop/1972804.html" title="Lady Faces Gold & Black (Set of 2) Polyresin Figurine"><img data-src="https://ii1.pepperfry.com/media/catalog/product/l/a/1100x1210/lady-faces-gold---black--set-of-2--polyresin-figurine-by-tied-ribbons-lady-faces-gold---black--set-o-rilyqn.jpg" class="img-fluid lazy" alt="Lady Faces Gold & Black (Set of 2) Polyresin Figurine" title="Lady Faces Gold & Black (Set of 2) Polyresin Figurine" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/1972804.html" title="Lady Faces Gold & Black (Set of 2) Polyresin Figurine" class="shop-title-value">Lady Faces Gold & Black (Set of 2) Polyresin Figurine</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>1,554</span></span>
@@ -184,7 +185,7 @@
             </div><div class="col-md-4 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>3,210</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0bsrv1ygk.html" title="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)"><img src="https://m.media-amazon.com/images/I/61sNCBeFfQL._SY879_.jpg" class="img-fluid" alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)" title="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0bsrv1ygk.html" title="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)"><img data-src="https://m.media-amazon.com/images/I/61sNCBeFfQL._SY879_.jpg" class="img-fluid lazy" alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)" title="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0bsrv1ygk.html" title="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)" class="shop-title-value">Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE PRM 2S SAPPHIRE BLOOM-Z, 2023 Model)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>13,790</span></span>
@@ -202,7 +203,7 @@
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
                           <a href="/authors/karthik-kumar-d-k.html">
-                            <img src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle" title="Karthik Kumar D K" />
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
                           </a>
                         </div><!-- end col -->
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
@@ -246,7 +247,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <a href="/articles/auto-tagging-taxonomy-terms-drupal.html" title="Auto Tagging of Taxonomy terms in Drupal7">
-                              <img class="img-fluid logo" src="/upload/banners/multiTaxonomy.png" alt="Auto Tagging of Taxonomy terms in Drupal7" title="Auto Tagging of Taxonomy terms in Drupal7" />
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/multiTaxonomy.png" alt="Auto Tagging of Taxonomy terms in Drupal7" title="Auto Tagging of Taxonomy terms in Drupal7" src="/upload/cursor.jpg" />
                             </a>
                           </div>
                           <div class="col-md-8">
@@ -270,7 +271,7 @@
                           </div>
                           <div class="col-md-4">
                             <a href="/articles/creating-twitter-share-block-programmatically-drupal-.html" title="Creating a Twitter Share block programmatically in Drupal 8">
-                              <img class="img-fluid logo" src="/upload/banners/drupal-content-related.png" alt="Creating a Twitter Share block programmatically in Drupal 8" title="Creating a Twitter Share block programmatically in Drupal 8" />
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/drupal-content-related.png" alt="Creating a Twitter Share block programmatically in Drupal 8" title="Creating a Twitter Share block programmatically in Drupal 8" src="/upload/cursor.jpg" />
                             </a>
                           </div>
                         </div>
@@ -316,7 +317,7 @@
         <div class="row"><div class="col-md-12 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>300</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/645457322849.html" title="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime"><img src="https://n3.sdlcdn.com/imgs/k/f/z/111111111111111111111111111222222222222222222222222222222-437d0.jpg" class="img-fluid" alt="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime" title="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime" /></a></div>
+                    <div class="shop-image"><a href="/shop/645457322849.html" title="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime"><img data-src="https://n3.sdlcdn.com/imgs/k/f/z/111111111111111111111111111222222222222222222222222222222-437d0.jpg" class="img-fluid lazy" alt="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime" title="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/645457322849.html" title="boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime" class="shop-title-value">boAt BassHeads 220 (LIme) On Ear Wired With Mic Headphones or Earphones Lime</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>699</span></span>
@@ -474,7 +475,7 @@
         <div class="row"><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>5,110</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0bs6xqvd1.html" title="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)"><img src="https://m.media-amazon.com/images/I/51DWwMapWxL._SX679_.jpg" class="img-fluid" alt="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)" title="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0bs6xqvd1.html" title="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)"><img data-src="https://m.media-amazon.com/images/I/51DWwMapWxL._SX679_.jpg" class="img-fluid lazy" alt="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)" title="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0bs6xqvd1.html" title="Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)" class="shop-title-value">Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray Direct Cool Single Door Refrigerator(2023 Model, RD EDGE 205B WRF PP BL, Pep Blue)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>12,390</span></span>
@@ -487,7 +488,7 @@
             </div><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>2,300</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0cgn8fmj8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)"><img src="https://m.media-amazon.com/images/I/61hD-fVYjcL._SX679_.jpg" class="img-fluid" alt="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0cgn8fmj8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)"><img data-src="https://m.media-amazon.com/images/I/61hD-fVYjcL._SX679_.jpg" class="img-fluid lazy" alt="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0cgn8fmj8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)" class="shop-title-value">IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian and Continental Auto Cook Recipes)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>6,490</span></span>
@@ -500,7 +501,7 @@
             </div><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>1,500</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b08cl8xf75.html" title="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)"><img src="https://m.media-amazon.com/images/I/61Md+j4GC3L._SX679_.jpg" class="img-fluid" alt="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)" title="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)" /></a></div>
+                    <div class="shop-image"><a href="/shop/b08cl8xf75.html" title="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)"><img data-src="https://m.media-amazon.com/images/I/61Md+j4GC3L._SX679_.jpg" class="img-fluid lazy" alt="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)" title="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b08cl8xf75.html" title="Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)" class="shop-title-value">Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG, Silver, 51 Auto Menus)</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>5,990</span></span>
@@ -513,7 +514,7 @@
             </div><div class="col-md-3 shop-item-wrapper">
                 <div class="shop-item">
                     <div class="discount"><span class="main"><span class="rupee">₹</span><span>3,000</span><span class="off">OFF</span></span></div>
-                    <div class="shop-image"><a href="/shop/b0d9vllxww.html" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset"><img src="https://m.media-amazon.com/images/I/71LOa4FV3xL._SX679_.jpg" class="img-fluid" alt="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" /></a></div>
+                    <div class="shop-image"><a href="/shop/b0d9vllxww.html" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset"><img data-src="https://m.media-amazon.com/images/I/71LOa4FV3xL._SX679_.jpg" class="img-fluid lazy" alt="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" src="/upload/cursor.jpg" /></a></div>
                     <h4 class="shop-title"><a href="/shop/b0d9vllxww.html" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" class="shop-title-value">Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset</a></h4>
                     <div class="price">
                         <span class="discountprice"><span class="rupee">₹</span><span>24,999</span></span>

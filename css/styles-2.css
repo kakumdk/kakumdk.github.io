@@ -46,6 +46,14 @@ body code {
 .blog-title-area.great-people-title-area .post-sharing-top.post-sharing .list-inline {
     margin: unset;   
 }
+.lazy {
+    background: url('/upload/cursor.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.lazy[src] {
+    background: none;
+}
 
 
 

@@ -369,7 +369,13 @@ input#search-news {
     margin-left: 2px;
     font-weight: bold;
 }
-
+.lazy {
+    background: url('/upload/cursor.jpg') no-repeat center center;
+    background-size: cover;
+}
+.lazy[src] {
+    background: none;
+}
 
 
 /*  */

@@ -331,6 +331,13 @@ button#play-truth-dare-next {
     background-color: #dc3545;
     color: white;
 }
+.lazy {
+    background: url('/upload/cursor.jpg') no-repeat center center;
+    background-size: cover;
+}
+.lazy[src] {
+    background: none;
+}
 
 /****************************************************************************************************************************/
 /****************************************************************************************************************************/
