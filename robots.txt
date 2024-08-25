@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/what-are-the-most-disturbing-truth-about-marriage.html
 Allow: /articles/why-do-people-travel-so-much.html
 Allow: /articles/solar-oven-cooking-science-experiment-for-children.html
 Allow: /articles/the-historical-context-of-the-vedas.html
