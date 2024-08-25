@@ -1282,6 +1282,10 @@ body .quotes-browse .tag-quotes-section a:hover {
 .blog-title-area .blog-meta .read-article-section i > span {
     display: inline-block;
 }
+.blog-title-area .blog-meta .read-article-section #reading-time {
+    margin-right: 6px;
+    font-size: 13px;
+}
 .blog-title-area .post-sharing-top.post-sharing {
     margin-top: 8px;
     display: block;

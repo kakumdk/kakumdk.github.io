@@ -130,11 +130,12 @@
                                 </ol>
                                 <h1 class="read-article-title">node_get_recent() is deprecated in Drupal 10.1.x</h1>
                                 <div class="blog-meta big-meta">
-                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 9th May 2023, <span class="last-updated">2023-05-09T09:00:00+05:30</span></small -->
+                                    <small class="article-author d-none">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 9th May 2023, <span class="last-updated">2023-05-09T09:00:00+05:30</span></small>
                                     <small class="articles-author d-none">
                                         <!-- em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a --><em class="pl-0">On</em><span>9th May 2023</span>, <span class="last-updated">2023-05-09T09:00:00+05:30</span>
                                     </small>
                                     <small class="read-article-section">
+                                      <span id="reading-time"></span>
                                       <i class="fa fa-play read-article"> <span>Read</span></i>
                                       <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
                                       <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
@@ -146,7 +147,7 @@
                             <div class="single-post-media">
                                 <img alt="node_get_recent() is deprecated in Drupal 10.1.x" data-src="/upload/banners/node-get-recent-is-deprecated-in-drupal-ten.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="node_get_recent() is deprecated in Drupal 10.1.x" />
                             </div><!-- end media -->
-                            <div class="blog-content read-article-content">
+                            <div id="read-article-content" class="blog-content read-article-content">
                                 <div><p><code>node_get_recent()</code> is unused in core and is now deprecated, developers can use views or EntityQuery to get the nodes which are recently modified or added.</p>  <p>Earlier drupal developers used to use the function&nbsp;<code>node_get_recent()</code> to get the recently changed nodes like seen in below example</p>  <p><code>$latest_updated_nodes = node_get_recent(10);</code></p>  <p>Now from Drupal 10.1.x onwards, developers need to use entity query to fetch the recently changed nodes like seen in below example</p>  <div class='google-ad'>     <ins class='adsbygoogle'             style='display:block; text-align:center;'             data-ad-layout='in-article'             data-ad-format='fluid'             data-ad-client='ca-pub-2683569506254139'             data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><code>$nids = \Drupal::entityQuery(&#39;node&#39;)<br /> &nbsp; -&gt;accessCheck(TRUE)<br /> &nbsp; -&gt;condition(&#39;status&#39;, NodeInterface::PUBLISHED)<br /> &nbsp; -&gt;sort(&#39;changed&#39;, &#39;DESC&#39;)<br /> &nbsp; -&gt;range(0, 10)<br /> &nbsp; -&gt;addTag(&#39;node_access&#39;)<br /> &nbsp; -&gt;execute();<br /> $latest_updated_nodes = !empty($nids) ? Node::loadMultiple($nids) : [];</code></p>  <p>Or Drupal Developers can use Views, where you create a View and add sort criteria with the latest updated date and fetch expected number of records.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">

@@ -130,11 +130,12 @@
                                 </ol>
                                 <h1 class="read-article-title">Configuration management via Quicksilver on Pantheon</h1>
                                 <div class="blog-meta big-meta">
-                                    <!-- small class="article-author">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 9th Jun 2022, <span class="last-updated">2022-12-01T08:00:00+05:30</span></small -->
+                                    <small class="article-author d-none">By <a href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> on 9th Jun 2022, <span class="last-updated">2022-12-01T08:00:00+05:30</span></small>
                                     <small class="articles-author d-none">
                                         <!-- em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a --><em class="pl-0">On</em><span>9th Jun 2022</span>, <span class="last-updated">2022-12-01T08:00:00+05:30</span>
                                     </small>
                                     <small class="read-article-section">
+                                      <span id="reading-time"></span>
                                       <i class="fa fa-play read-article"> <span>Read</span></i>
                                       <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
                                       <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
@@ -146,7 +147,7 @@
                             <div class="single-post-media">
                                 <img alt="Configuration management via Quicksilver on Pantheon" data-src="/upload/banners/configuration-management-via-quicksilver-on-pantheon.png" src="/upload/cursor.jpg" class="img-fluid lazy" title="Configuration management via Quicksilver on Pantheon" />
                             </div><!-- end media -->
-                            <div class="blog-content read-article-content">
+                            <div id="read-article-content" class="blog-content read-article-content">
                                 <div><p>As we saw in the <a href='/articles/drupal-configuration-management-local-dev-test-and-live.html' title='Drupal Configuration management (Local, Dev, Test and Live)' alt='Drupal Configuration management (Local, Dev, Test and Live)'>earlier article</a>, like how we manage the configuration across the environments.</p>  <p>In this article we are going to see how Drupal configurations can be deployed or imported across the environments with the help of Quicksilver which hooks into platform workflows to automate your Pantheon WebOps workflow across the environments.</p>  <p>In the pantheon environment&rsquo;s drupal code base, you can see a <code>pantheon.yml</code> file, in this file you can add your custom workflows.</p>  <p>As you can see in the below example of <code>pantheon.yml</code>, we are running a script after the code sync on the pantheon environment.</p>  <p><code>​​api_version: 1<br /> workflows:<br /> &nbsp;&nbsp;sync_code:<br /> &nbsp;&nbsp;&nbsp;&nbsp;after:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- type: webphp<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Run drush deploy after code sync<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;script: private/admin/drush_deploy.php</code></p> <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div> <p>And the script has the drush command as shared below <code>private/admin/drush_deploy.php</code>, which runs</p>  <ol> <li>Database updates</li> <li>Cache rebuilds</li> <li>Config import</li> <li>Deploy hook start (if any)</li> </ol>  <p><code>&lt;?php<br /> echo &lsquo;Start drush deploy&rsquo;;<br /> passthru(drush deploy -y);<br /> echo &lsquo;Finish drush deploy&rsquo;;</code></p>  <p>This way Pantheon&rsquo;s Quicksilver tool will help people to manage the configuration across the environments seamlessly.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
