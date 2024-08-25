@@ -2773,7 +2773,7 @@ button#play-truth-dare-next {
     }
     .blog-title-area .blog-meta .read-article-section {
         display: inline-block;
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .blog-title-area.quick-read .blog-meta .read-article-section {
         margin-left: 0;
