@@ -73,6 +73,7 @@ body a {
 }
 .article-content {
     margin: 15px auto;
+    line-height: 1.75;
 }
 .article-content p {
     margin: 15px auto;
@@ -84,7 +85,7 @@ body a {
 }
 .article-content li::before {
     content: "\f375";
-    margin-right: 5px;
+    margin-right: 10px;
     display: inline-block;
     font-family: "Ionicons";
     speak: none;

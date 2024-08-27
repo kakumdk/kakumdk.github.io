@@ -2151,6 +2151,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/how-to-choose-the-best-toothbrush-for-your-oral-health.html
 Allow: /articles/the-impact-of-nutrition-on-gum-health.html
 Allow: /articles/the-impact-of-sugary-drinks-on-dental-health.html
 Allow: /articles/how-to-choose-the-right-mouthguard.html
