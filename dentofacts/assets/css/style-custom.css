@@ -276,6 +276,7 @@ input#search-news {
 }
 .shop-data .shop-data-results .shop-item .shop-image img {
     border-radius: 5px;
+    height: 175px;
 }
 .shop-data .shop-data-results .shop-item:hover .shop-image img {
     transform: scale(1.1);
