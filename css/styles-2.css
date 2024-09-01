@@ -2737,11 +2737,11 @@ button#play-truth-dare-next {
         border-radius: 5px 0 0 5px;
     }
     section .articles.search-articles .article .articles-content h4 {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     section .articles.search-articles .article .articles-content .articles-summary {
-        height: 74px;
-        margin: 5px auto;
+        height: 100px;
+        margin: unset;
     }
     section .articles.search-articles .article .articles-content .articles-labels {
         margin: 5px auto;
