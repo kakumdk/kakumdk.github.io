@@ -2159,6 +2159,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/benefits-of-regular-oral-cancer-screenings.html
 Allow: /articles/how-to-maintain-a-healthy-smile-with-diabetes.html
 Allow: /articles/how-to-choose-the-best-toothbrush-for-your-oral-health.html
 Allow: /articles/the-impact-of-nutrition-on-gum-health.html
