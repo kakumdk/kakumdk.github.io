@@ -156,84 +156,84 @@
 			<title>Local environment setup with Lando &amp; Drupal 10</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
-			<pubDate>Sun, 18 Dec 2022 12:30:00 +0530</pubDate>
+			<pubDate>Mon, 18 Dec 2023 12:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
     </item><item>
 			<title>Drupal 10 is coming in a few days!</title>
 			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
 			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
-			<pubDate>Thu, 08 Dec 2022 11:30:00 +0530</pubDate>
+			<pubDate>Fri, 08 Dec 2023 11:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</guid>
     </item><item>
 			<title>When to use hook_update_N &amp; hook_post_update_NAME?</title>
 			<link>https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</link>
 			<description>In this article, we are going to learn when to use hook_update_N and hook_post_update_NAME. In general, I was using hook_update_N for any database-related changes or with any configuration additions or updates. And I was using hook_post_update_NAME for any content creation or updating or for the creation or updating any taxonomy terms etc, sometimes for clearing site caches as well. But, let’s h</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</guid>
     </item><item>
 			<title>Improvements for Editor Experience in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</link>
 			<description>In this article, we are going to learn what Drupal offers for text editors or content managers as a content management framework within Drupal Core &amp; Contributed modules. Earlier versions of Drupal have several useful features to help content editors to manage their content on a daily basis. And in the newer versions of Drupal (from when Symfony was introduced), there are a few more improvements i</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</guid>
     </item><item>
 			<title>What Drupal offers as Responsive Web Design within Core</title>
 			<link>https://peoplesblog.co.in/articles/what-drupal-offers-as-responsive-web-design-within-core.html</link>
 			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-drupal-offers-as-responsive-web-design-within-core.html</guid>
     </item><item>
 			<title>Know why Symfony framework was picked by Drupal</title>
 			<link>https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</link>
 			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</guid>
     </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
 			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
     </item><item>
 			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
 			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.                            With Dependency Injection, the class is no longer responsible for ins</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
     </item><item>
 			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
 			<link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
 			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wou</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
     </item><item>
 			<title>What to Know for Estimating Projects</title>
 			<link>https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</link>
 			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.                            If one needs to deliver a project successfully then one must estimate the project as better as possible.                 </description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</guid>
     </item><item>
 			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</link>
 			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to system</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</guid>
     </item><item>
 			<title>Technical Writing Vs Content Writing</title>
 			<link>https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</link>
 			<description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the rea</description>
-			<pubDate>Thu, 01 Dec 2022 08:00:00 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</guid>
     </item>
