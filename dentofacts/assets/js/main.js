@@ -227,3 +227,25 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener('load', loadImages);
   }
 });
+
+/******************************************************************************************************************/
+/******************************************************** Read Time  **********************************************/
+/******************************************************************************************************************/
+document.addEventListener("DOMContentLoaded", function() {
+  // Define the average reading speed (words per minute)
+  const wordsPerMinute = 250;
+  // Function to calculate the reading time
+  function calculateReadingTime(text) {
+      const wordCount = text.split(/\s+/).filter(Boolean).length;
+      console.log("words: "+wordCount);
+      const minutes = wordCount / wordsPerMinute;
+      return Math.ceil(minutes); // Round up to the nearest minute
+  }
+  // Get the text content from the div
+  const contentDiv = document.getElementById('read-article-content');
+  const textContent = contentDiv.textContent || contentDiv.innerText;
+  // Calculate and display the reading time
+  const readingTime = calculateReadingTime(textContent);
+  const readingTimeDiv = document.getElementById('reading-time');
+  readingTimeDiv.textContent = `${readingTime} min${readingTime > 1 ? 's read' : 'read'}`;
+});
