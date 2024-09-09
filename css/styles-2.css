@@ -1351,6 +1351,14 @@ body .quotes-browse .tag-quotes-section a:hover {
 .blog-content.read-article-content a:hover {
     color: #292b2c;
 }
+.blog-content.read-article-content ul,
+.blog-content.read-article-content ol,
+.best-products-content .best-product .summary ul,
+.best-products-content .best-product .summary ol,
+.shop-details .summary ul,
+.shop-details .summary ol {
+    padding-inline-start: 20px;
+}
 .blog-title-area.tag {
     margin: 30px auto;
 }
@@ -2965,6 +2973,14 @@ button#play-truth-dare-next {
     }
     .best-products-content-details .best-product {
         padding: 15px 30px;
+    }
+    .blog-content.read-article-content ul,
+    .blog-content.read-article-content ol,
+    .best-products-content .best-product .summary ul,
+    .best-products-content .best-product .summary ol,
+    .shop-details .summary ul,
+    .shop-details .summary ol {
+        padding-inline-start: 30px;
     }
 
 }
