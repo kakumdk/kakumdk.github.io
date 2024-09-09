@@ -1206,6 +1206,7 @@ Allow: /authors/krishna-d.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/jyothi-karthik-d.html
 Allow: /authors/hanukkah-john.html
+Allow: /articles/pixel--pro-xl-g--gb-vs--gb.html
 Allow: /articles/godrej-l--star-vs-whirlpool-l--star.html
 Allow: /articles/panasonic-l-solo-microwave-oven-vs-ifb--l-solo-microwave-oven.html
 Allow: /articles/samsung--kg-wwcgdlbtl-vs-boschkg-wnaeuin.html
