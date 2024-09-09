@@ -1591,6 +1591,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/eye-on-peace-nsa-to-visit-moscow-this-week.html
 Allow: /news/chinese-man-30-dies-after-104-days-of-non-stop-work-with-only-1-day-off.html
 Allow: /news/governor-has-become-a-puppet-siddaramaiah-on-prosecution-sanction-against-him-in-muda-case.html
 Allow: /news/put-me-in-prison-but-i-wont-return-techie-who-went-missing-from-bengaluru-reveals-domestic-struggles.html
