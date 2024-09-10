@@ -2039,6 +2039,9 @@ h3.author-articles-heading::after {
     border-color: #4cae4c;
     padding: 0.75rem 4rem;
 }
+.shop-details .summary {
+    line-height: 1.75;
+}
 .shop-details .summary > * {
     margin: 15px auto;
     width: 100%;
