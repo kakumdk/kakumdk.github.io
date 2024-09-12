@@ -1275,6 +1275,18 @@ body .quotes-browse .tag-quotes-section a:hover {
     padding: 4px 14px 6px 12px;
     border-radius: 5px;
     display: inline-block;
+
+    position: fixed;
+    right: 0;
+    bottom: 48%;
+    z-index: 99;
+    padding: 10px 13px 10px 13px;
+    border: 1px solid #e7ebed;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    display: block;
+    font-size: 16px;
 }
 .blog-title-area .blog-meta .read-article-section:hover {
     cursor: pointer;
@@ -1282,17 +1294,18 @@ body .quotes-browse .tag-quotes-section a:hover {
 .blog-title-area .blog-meta .read-article-section i > span {
     display: inline-block;
     font-size: 13px;
+    display: none;
 }
 .blog-title-area .blog-meta .read-article-section #reading-time {
     margin-right: 6px;
     font-size: 13px;
 }
 .blog-title-area .post-sharing-top.post-sharing {
-    margin-top: 8px;
+    /* margin-top: 8px; */
     display: block;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline {
-
+    margin: unset;
 }
 .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile {
     display: none;
@@ -1458,6 +1471,7 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-title-area.quick-read {
     text-align: center;
+    margin-bottom: 15px;
 }
 .blog-title-area.quick-read .blog-meta.big-meta {
     display: block;
@@ -2776,20 +2790,42 @@ button#play-truth-dare-next {
     /* .global-search-action input {
         width: 92%;
     } */
+    .blog-title-area {
+        margin: unset;
+    }
     .blog-title-area h1 {
-        font-size: 32px;
+        font-size: 36px;
         font-weight: bold;
         letter-spacing: 1px;
     }
     .blog-title-area .blog-meta {
         display: inline-block;
+        margin: 15px auto;
     }
     .blog-title-area .blog-meta .articles-author {
         display: inline-block;
     }
     .blog-title-area .blog-meta .read-article-section {
         display: inline-block;
-        /* margin-left: 15px; */
+        margin-left: 15px;
+
+        position: unset;
+        right: unset;
+        bottom: unset;
+        z-index: unset;
+        padding: 4px 12px 4px 12px;
+        border: 1px solid #e7ebed;
+        border-right: 1px solid #e7ebed;
+        border-radius: 5px;
+        background-color: unset;
+        font-size: 13px;
+    }
+    .blog-title-area .blog-meta .read-article-section i > span {
+        display: inline-block;
+        margin-left: 2px;
+    }
+    .shop .blog-title-area .blog-meta .read-article-section {
+        margin-left: unset;
     }
     .blog-title-area.quick-read .blog-meta .read-article-section {
         margin-left: 0;
@@ -2797,9 +2833,10 @@ button#play-truth-dare-next {
     .blog-title-area .post-sharing-top.post-sharing {
         display: inline-block;
         margin-left: 15px;
+        margin-top: 0;
     }
     .blog-title-area .post-sharing-top.post-sharing .list-inline {
-    
+        margin-bottom: 0;
     }
     .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-mobile {
         display: none;
