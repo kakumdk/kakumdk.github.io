@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/why-don-t-introverts-fall-in-love-easily.html
 Allow: /articles/what-are-the-positives-of-traveling-alone.html
 Allow: /articles/cloud-in-a-bottle-science-experiment-for-children.html
 Allow: /articles/understanding-the-four-vedas-rigveda-samaveda-yajurveda-and-atharvaveda.html
