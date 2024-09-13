@@ -1475,6 +1475,8 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-title-area.quick-read .blog-meta.big-meta {
     display: block;
+    border: unset;
+    text-align: center;
 }
 .quick-read-img {
     margin: 15px auto;
@@ -2799,8 +2801,11 @@ button#play-truth-dare-next {
         letter-spacing: 1px;
     }
     .blog-title-area .blog-meta {
-        display: inline-block;
+        display: block;
         margin: 15px auto;
+        text-align: left;
+        border-top: 1px solid #e6ebed;
+        border-bottom: 1px solid #e6ebed;
     }
     .blog-title-area .blog-meta .articles-author {
         display: inline-block;
@@ -2824,6 +2829,10 @@ button#play-truth-dare-next {
         display: inline-block;
         margin-left: 2px;
     }
+    .shop .blog-title-area .blog-meta {
+        display: inline-block;
+        border: unset;
+    }
     .shop .blog-title-area .blog-meta .read-article-section {
         margin-left: unset;
     }
@@ -2834,6 +2843,7 @@ button#play-truth-dare-next {
         display: inline-block;
         margin-left: 15px;
         margin-top: 0;
+        vertical-align: middle;
     }
     .blog-title-area .post-sharing-top.post-sharing .list-inline {
         margin-bottom: 0;
