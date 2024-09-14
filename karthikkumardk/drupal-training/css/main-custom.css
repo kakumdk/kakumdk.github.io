@@ -4,7 +4,7 @@ header .navbar .logo a span.logo-primary {
 }
 header .navbar .logo a span.logo-secondary {
     display: block;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 2;
 }
 .top-category-widget-area .single-cat-widget .content-details {
@@ -26,4 +26,16 @@ header .navbar .logo a span.logo-secondary {
 }
 ul.course-points {
     list-style: inside;
+}
+._copyright {
+    padding: 14px 0 0 0;
+    display: block;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+.footer-area .footer-bottom a,
+.footer-area .footer-bottom span {
+    color: #019cde;
 }

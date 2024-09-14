@@ -150,6 +150,13 @@ section.services {
 section.drupal-training {
     padding-top: 0;
 }
+._copyright {
+    margin: 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #444444;
+}
 
 @media (min-width: 768px) {
 
