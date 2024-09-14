@@ -2245,6 +2245,19 @@ Allow: /sri-vedanta-swarajya-sangam/books/brahmasutramulu.html
 Allow: /sri-vedanta-swarajya-sangam/books/veda-rahashamulu.html
 Allow: /sri-vedanta-swarajya-sangam/books/divya-jeevana-jyoti.html
 Allow: /sri-vedanta-swarajya-sangam/spiritual-practices/index.html
+Allow: /karthikkumardk/index.html
+Allow: /karthikkumardk/drupal-training/index.html
+Allow: /karthikkumardk/drupal-training/courses/index.html
+Allow: /karthikkumardk/drupal-training/courses/content-types-media-views.html.html
+Allow: /karthikkumardk/drupal-training/courses/git-fundamentals-for-drupal.html
+Allow: /karthikkumardk/drupal-training/courses/introduction-to-drupal.html
+Allow: /karthikkumardk/drupal-training/courses/module-development-beginner.html
+Allow: /karthikkumardk/drupal-training/courses/module-development-intermediate.html
+Allow: /karthikkumardk/drupal-training/courses/php-fundamentals-for-drupal.html
+Allow: /karthikkumardk/drupal-training/courses/theme-development-fundamentals.html
+Allow: /karthikkumardk/drupal-training/courses/theme-development-in-practice.html
+Allow: /karthikkumardk/drupal-training/webinars/index.html
+Allow: /karthikkumardk/drupal-training/webinars/introduction-to-drupal.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/quick-read.xml
@@ -2258,3 +2271,4 @@ Sitemap: https://peoplesblog.co.in/sitemaps/sri-vedanta-swarajya-sangam.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/news.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/alcohol.xml
 Sitemap: https://peoplesblog.co.in/sitemaps/dentofacts.xml
+Sitemap: https://peoplesblog.co.in/sitemaps/karthikkumardk.xml
