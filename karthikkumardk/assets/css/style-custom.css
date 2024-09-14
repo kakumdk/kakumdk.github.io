@@ -1,0 +1,182 @@
+/* Colors */
+/* #292b2c */
+/* #F5F7F8 */
+#header .logo a {
+    display: block;
+}
+#header .logo span {
+    display: block;
+    font-size: 10px;
+    float: right;
+    margin-top: 5px;
+    color: #292b2c;
+}
+#hero .icon-box .icon i,
+.services .icon-box .icon i,
+.services .iconbox-blue i,
+.services .iconbox-orange i,
+.services .iconbox-pink i,
+.about .content ul li i,
+.about .content i,
+.contact .info i {
+    color: #019cde;
+}
+.about .content p {
+    margin-bottom: 1.2rem;
+}
+.about .content a,
+.services .services-details a {
+    text-decoration-line: underline;
+    text-decoration-color: #019cde;
+    text-underline-offset: 4px;
+}
+.section-title {
+    text-align: left;
+}
+.faq .faq-list {
+    padding: unset;
+}
+.faq .faq-list li {
+    background: #F5F7F8;
+}
+.work-data {
+    margin: 15px auto;
+    padding: 30px;
+    border: 1px solid #F5F7F8;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 30%);
+}
+.work-data h5 {
+    line-height: 1.5;
+}
+.work-data h5 i {
+    color: #019cde;
+}
+.work-data p a {
+    display: inline !important;
+    padding: 0 !important;
+    text-decoration-line: underline;
+    text-decoration-color: #019cde;
+    text-underline-offset: 4px;
+    font-weight: normal !important;
+}
+.services .icon-box {
+    padding: 70px 30px 80px 30px;
+    margin-bottom: 15px;
+}
+.services .icon-box .icon {
+    margin: unset;
+}
+.services .icon-box h4 {
+    text-align: left;
+}
+.services-details {
+    text-align: left;
+}
+.services-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact .info {
+    width: unset;
+    background: #fff;
+}
+.contact .info .address,
+.contact .info .email,
+.contact .info .phone {
+    margin: 30px auto;
+}
+#footer {
+    background: white;
+    box-shadow: unset;
+}
+.back-to-top:hover {
+    background-color: #292b2c;
+}
+.lets-talk-block {
+    margin: 30px auto;
+}
+#about p.p,
+#contact p.p {
+    font-size: var(--bs-body-font-size);
+    margin-bottom: 1rem;
+}
+#contact .section-title {
+    padding-bottom: 0;
+}
+
+
+#hero .container {
+    padding-top: 15px;
+}
+#hero .icon-boxes {
+    margin-top: 30px;
+}
+#hero .icon-box {
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#hero .icon-box .icon {
+    margin-bottom: 15px;
+    padding: unset;
+    transition: all 0.3s ease-in-out;
+    font-size: 36px;
+    line-height: 1;
+    color: #292b2c;
+}
+#hero .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.services .icon-box {
+    padding: 15px;
+    width: 100%;
+}
+section.contact {
+    padding-bottom: unset;
+}
+section.services {
+    padding-bottom: 40px;
+}
+section.drupal-training {
+    padding-top: 0;
+}
+
+@media (min-width: 768px) {
+
+    #hero .container {
+        padding-top: 80px;
+    }
+    #hero .icon-boxes {
+        margin-top: 100px;
+    }
+    #hero .icon-box {
+        padding: 50px 30px;
+        margin-bottom: unset;
+    }
+    #hero .icon-box .icon {
+        margin-bottom: 20px;
+        padding: unset;
+        padding-top: 10px;
+    }
+    #hero .icon-box .title {
+        margin-bottom: 15px;
+    }
+    .services .icon-box {
+        padding: 70px 30px 80px 30px;
+    }
+    section.contact {
+        padding: 80px 0;
+    }
+    
+    
+}

@@ -1,0 +1,29 @@
+header .navbar .logo a span.logo-primary {
+    font-size: 34px;
+    line-height: 1;
+}
+header .navbar .logo a span.logo-secondary {
+    display: block;
+    font-size: 10px;
+    line-height: 2;
+}
+.top-category-widget-area .single-cat-widget .content-details {
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    bottom: 0px;
+    position: absolute;
+    margin: auto 25px;
+}
+.top-category-widget-area .single-cat-widget .content-details h4 {
+    color: #fff;
+    line-height: 1.5;
+    text-transform: capitalize !important;
+    font-size: 18px;
+}
+ul.course-points {
+    list-style: inside;
+}
