@@ -1371,7 +1371,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to calculate the reading time
     function calculateReadingTime(text) {
         const wordCount = text.split(/\s+/).filter(Boolean).length;
-        console.log("words: "+wordCount);
         const minutes = wordCount / wordsPerMinute;
         return Math.ceil(minutes); // Round up to the nearest minute
     }
