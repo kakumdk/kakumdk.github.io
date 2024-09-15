@@ -6,10 +6,14 @@
 }
 #header .logo span {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     float: right;
     margin-top: 5px;
     color: #292b2c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: unset;
+    font-weight: 500;
 }
 #hero .icon-box .icon i,
 .services .icon-box .icon i,

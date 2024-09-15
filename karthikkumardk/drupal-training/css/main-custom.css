@@ -4,8 +4,12 @@ header .navbar .logo a span.logo-primary {
 }
 header .navbar .logo a span.logo-secondary {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 2;
+    font-family: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 .top-category-widget-area .single-cat-widget .content-details {
     top: 32%;
@@ -28,7 +32,7 @@ ul.course-points {
     list-style: inside;
 }
 ._copyright {
-    padding: 14px 0 0 0;
+    /* padding: 14px 0 0 0; */
     display: block;
     text-transform: uppercase;
     font-style: normal;
