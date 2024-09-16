@@ -1249,12 +1249,13 @@ body .quotes-browse .tag-quotes-section a:hover {
 }
 .blog-title-area .blog-meta {
     display: inline-block;
-    text-align: center;
+    /* text-align: center; */
 }
 .blog-title-area .blog-meta .articles-author {
     font-size: 14px;
-    margin: 6px auto;
+    margin: 9px auto;
     display: inline-block;
+    vertical-align: middle;
 }
 .blog-title-area .blog-meta .articles-author em:first-child {
     padding: 0 6px 0 0;
@@ -2812,7 +2813,7 @@ button#play-truth-dare-next {
     }
     .blog-title-area .blog-meta .read-article-section {
         display: inline-block;
-        margin-left: 15px;
+        margin: 5px 0 5px 15px;
 
         position: unset;
         right: unset;
