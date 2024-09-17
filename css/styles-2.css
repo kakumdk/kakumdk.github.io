@@ -1478,6 +1478,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     display: block;
     border: unset;
     text-align: center;
+    margin: 5px auto;
 }
 .quick-read-img {
     margin: 15px auto;
@@ -2857,6 +2858,9 @@ button#play-truth-dare-next {
     }
     .blog-title-area .post-sharing-top.post-sharing .list-inline .whatsapp-desktop {
         display: inline-block;
+    }
+    .blog-title-area.quick-read h1 {
+        margin-bottom: 0;
     }
     .single-post-media img {
         width: 100%;
