@@ -2182,6 +2182,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/how-to-treat-and-prevent-oral-sores.html
 Allow: /articles/understanding-dental-treatments-for-sleep-apnea.html
 Allow: /articles/benefits-of-regular-gum-care.html
 Allow: /articles/benefits-of-regular-oral-cancer-screenings.html

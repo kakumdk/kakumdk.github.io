@@ -440,7 +440,7 @@ input#search-news {
     .article-image.shorts-image {
         width: 50%;
         float: right;
-        margin: 0 0 5px 15px;
+        margin: 15px 0 5px 15px;
     }
     .search-news .news ._news .image-hover .thumb-title {
         border-radius: 0 5px 0 5px;
