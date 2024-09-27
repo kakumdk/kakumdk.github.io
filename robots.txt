@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/what-is-the-most-romantic-thing-someone-can-do.html
 Allow: /articles/how-can-i-meet-new-people-when-traveling-alone.html
 Allow: /articles/rainforest-in-a-jar-science-experiment-for-children.html
 Allow: /articles/the-role-of-vedas-in-hindu-philosophy.html
