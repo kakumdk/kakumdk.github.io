@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Github - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/github.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Usage of Local Php Security Checker for Drupal Applications</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</link>
+			<description>In this article, we are going to see how the Local PHP Security Checker library will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the Local PHP Security Checker library, which checks for any known vulnerabilities in the package dependencies.  Th</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</guid>
+    </item><item>
+			<title>Usage of PhpStan on Github via Pull Request for Drupal Applications</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html</link>
+			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development and code review process. We have a similar helpful article related to Phpcs, have a check of this.  To make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here come</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html</guid>
+    </item><item>
+			<title>Usage of PHPCS on Github via Pull Request for Drupal Applications</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</link>
+			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.  If you are maintaini</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</guid>
+    </item>
+</channel>
+</rss>

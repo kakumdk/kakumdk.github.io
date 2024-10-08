@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Project - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/project.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Best way to add additional estimates upon the original estimate for a Story in a Sprint?</title>
+			<link>https://peoplesblog.co.in/articles/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.html</link>
+			<description>When additional work or requirements are identified for a Story during a Sprint, it is important to ensure that the impact on the Sprint&amp;#39;s scope and timeline is understood and communicated to the team and stakeholders. Here are some steps that can be followed to add additional estimates to a Story in a Sprint:   Review the original estimate: First, review the original estimate for the Story an</description>
+			<pubDate>Mon, 08 May 2023 15:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/best-way-to-add-additional-estimates-upon-the-original-estimate-for-a-story-in-a-sprint.html</guid>
+    </item><item>
+			<title>Project vs Product - Plan and Delivery, Agile Characteristics</title>
+			<link>https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</link>
+			<description>In the Service Industry, a Technical Lead or Technical Architect or Delivery Manager, one is always looking at the work, either as a Project or a Product, but I say, one should look at it as both, because work would be a Project for us but work would be a Product for the clients.  While working on Agile basis, being at the leading positions one will be seeing the scope of work, then prepare the ba</description>
+			<pubDate>Tue, 05 Dec 2023 12:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</guid>
+    </item><item>
+			<title>What to Know for Estimating Projects</title>
+			<link>https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</link>
+			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.                            If one needs to deliver a project successfully then one must estimate the project as better as possible.                 </description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</guid>
+    </item>
+</channel>
+</rss>

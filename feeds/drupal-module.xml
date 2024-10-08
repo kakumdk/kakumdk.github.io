@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Drupal Module - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/drupal-module.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Imagefield Slideshow module to render Slideshow on Drupal website</title>
+			<link>https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</link>
+			<description>If you want to show images as a slideshow on your drupal website and want to do it quickly. Here&amp;rsquo;s the module which solves your purpose. Imagefield Slideshow is the simple module which will allow images to render as a slideshow on the drupal website at the field level.  This module will provide a Slideshow formatter for Image fields, so that multiple images are uploaded to that particular im</description>
+			<pubDate>Thu, 16 Nov 2023 16:40:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</guid>
+    </item><item>
+			<title>API Docs, Drupal contributed module for your Developer Portal</title>
+			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
+			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
+			<pubDate>Sat, 29 Jul 2023 17:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</guid>
+    </item><item>
+			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
+			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
+    </item><item>
+			<title>Read Data to Paragraph Template in Drupal Application</title>
+			<link>https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</link>
+			<description>In this article we are going to see how to read the dynamic data of the node or entity or field values to the template file, which are specific to the paragraph template.  Generally while the Paragraph module is used, default template suggestions given by the paragraph module or the template suggestions provided by the hooks are used and further template design is done. Here&amp;rsquo;s the article wh</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</guid>
+    </item><item>
+			<title>How to work with Drupal Paragraphs?</title>
+			<link>https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</link>
+			<description>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.  Paragraphs is one of the&amp;nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide </description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</guid>
+    </item><item>
+			<title>Drupal Configuration management (Local, Dev, Test and Live)</title>
+			<link>https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</link>
+			<description>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.  Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp;amp; views.  Making the configurations direct</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</guid>
+    </item>
+</channel>
+</rss>
