@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Introduction to PHP 8 and Key Differences from PHP 7</title>
+			<link>https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</link>
+			<description>PHP 8, released on November 26, 2020, introduces significant improvements and new features that enhance performance, syntax, and overall developer experience. This version emphasizes performance optimizations, new language features, and better error handling, streamlining the development process and providing developers with more tools to write clean, efficient code.  Key Differences Between PHP 8</description>
+			<pubDate>Wed, 09 Oct 2024 11:58:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</guid>
+    </item><item>
 			<title>Anemometer, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/anemometer-science-experiment-for-children.html</link>
 			<description>Building a simple anemometer is a fun and educational science experiment that allows children to measure the wind speed and understand how wind speed is quantified. By defination, an anemometer is a device that measures wind velocity by counting number of times its blades spin in a given time period.  Here&amp;#39;s a step-by-step process for creating a basic anemometer using everyday materials:  Mate</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 31 Aug 2023 08:55:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/tornado-in-bottle-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>How to run PHPUnit test cases on your local machine for Drupal</title>
-			<link>https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</link>
-			<description>Running PHPUnit tests helps ensure that your Drupal module behaves as expected and provides a reliable way to identify and fix issues during development.  To run PHPUnit test cases on your local machine for Drupal, follow these steps:  Install PHPUnit and its dependency:   Make sure you have PHP and Composer installed on your local machine. If you don&amp;#39;t have PHPUnit installed, you can install </description>
-			<pubDate>Sun, 27 Aug 2023 11:30:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</guid>
     </item>
 </channel>
 </rss>

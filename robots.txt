@@ -20,6 +20,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/introduction-to-php--and-key-differences-from-php-.html
 Allow: /articles/anemometer-science-experiment-for-children.html
 Allow: /articles/vedic-hymns-and-their-significance.html
 Allow: /articles/how-to-prepare-mango-pickle.html
