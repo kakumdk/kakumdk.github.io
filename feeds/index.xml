@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Understanding the SOLID Principles in PHP</title>
+    <link>https://peoplesblog.co.in/articles/understanding-the-solid-principles-in-php.html</link>
+    <description>The SOLID principles are a set of five design principles aimed at making object-oriented software more understandable, flexible, and maintainable. They are particularly relevant in PHP development, where OOP concepts are widely used.  Let&amp;#39;s dive into each principle, exploring its meaning and how it can be applied effectively in PHP.  1. Single Responsibility Principle (SRP)  A class should hav</description>
+    <pubDate>Fri, 11 Oct 2024 11:20:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-the-solid-principles-in-php.html</guid>
+  </item><item>
     <title>Introduction to PHP 8 and Key Differences from PHP 7</title>
     <link>https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</link>
     <description>PHP 8, released on November 26, 2020, introduces significant improvements and new features that enhance performance, syntax, and overall developer experience. This version emphasizes performance optimizations, new language features, and better error handling, streamlining the development process and providing developers with more tools to write clean, efficient code.  Key Differences Between PHP 8</description>
