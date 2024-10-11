@@ -1866,7 +1866,7 @@ h3.author-articles-heading::after {
     border: 1px solid #e7ebed;
     text-align: center;
     border-radius: 5px;
-    min-height: 400px;
+    min-height: 300px;
 }
 .shop-data .shop-data-results .shop-item:hover {
     background-color: #f9f9f9;
@@ -1933,7 +1933,7 @@ h3.author-articles-heading::after {
     margin-top: 15px;
     border-top: 1px solid #e7ebed;
     padding-top: 15px;
-    text-align: left;
+    text-align: center;
 }
 .shop-data .shop-data-results .shop-item .price .discountprice {
     margin-right: 5px;
