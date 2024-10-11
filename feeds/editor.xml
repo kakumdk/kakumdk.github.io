@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Editor - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/editor.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Drupal 10 is coming in a few days!</title>
+			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
+			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
+			<pubDate>Fri, 08 Dec 2023 11:30:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</guid>
+    </item><item>
+			<title>Improvements for Editor Experience in Drupal</title>
+			<link>https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</link>
+			<description>In this article, we are going to learn what Drupal offers for text editors or content managers as a content management framework within Drupal Core &amp; Contributed modules. Earlier versions of Drupal have several useful features to help content editors to manage their content on a daily basis. And in the newer versions of Drupal (from when Symfony was introduced), there are a few more improvements i</description>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</guid>
+    </item>
+</channel>
+</rss>
