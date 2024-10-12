@@ -9,49 +9,49 @@
 			<title>Create a custom Drupal Service and Use as a Helper</title>
 			<link>https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</link>
 			<description>Creating a custom Drupal service allows you to encapsulate functionality and access it wherever needed, promoting modularity and reusability within your codebase as a Helper.  In this article we are sharing an example of how to create a custom Drupal service and use it as a helper.  Step 1: Define the Service  Create a new custom module or use an existing one. Define your service in the module&amp;rsq</description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</guid>
     </item><item>
 			<title>Unable to install Update Manager, update.settings already exists in active configuration</title>
 			<link>https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</link>
 			<description>Generally you see this error while you try to install the update manager module via UI or via Drush command.  Not really sure how you came up with this issue. But if you are seeing this issue, you have an entry in your site&amp;#39;s configuration saying that the update module is already installed.  1. You can simply delete this configuration with the below command  $ drush cdel update.settings  Which</description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</guid>
     </item><item>
 			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
 			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
     </item><item>
 			<title>Quick reference of Code Reviews for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</link>
 			<description>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.  It&amp;rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.  Firstly, for the code reviews to be at their best, the committed code should be more organis</description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</guid>
     </item><item>
 			<title>Drupal JSON API, Deep Dive - Part 2</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</link>
 			<description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.                                Types                              </description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</guid>
     </item><item>
 			<title>Cache Set, Get and Invalidate per User in Drupal 7</title>
 			<link>https://peoplesblog.co.in/articles/cache-set-get-and-invalidate-user-drupal-.html</link>
 			<description>How to Set, Get and Invalidate the caches per user in Drupal 7, this blog article will explain a brief of how to do such implementation on Drupal using the default drupal cache functions.                                Here, we go with the steps                                                                    Initially, create the custom functions for Get, Set and Invalidate the caches per user.</description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/cache-set-get-and-invalidate-user-drupal-.html</guid>
     </item><item>
 			<title>Custom Batch processing in Drupal 7 to update Nodes - Batch API</title>
 			<link>https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</link>
 			<description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.Create your custom module, whi</description>
-			<pubDate>Sat, 12 Oct 2024 12:44:04 +0530</pubDate>
+			<pubDate>Sat, 12 Oct 2024 16:29:36 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</guid>
     </item>
