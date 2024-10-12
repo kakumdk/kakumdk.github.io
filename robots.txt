@@ -1888,7 +1888,7 @@ Allow: /sri-vedanta-swarajya-sangam/spiritual-practices/index.html
 Allow: /karthikkumardk/index.html
 Allow: /karthikkumardk/drupal-training/index.html
 Allow: /karthikkumardk/drupal-training/courses/index.html
-Allow: /karthikkumardk/drupal-training/courses/content-types-media-views.html.html
+Allow: /karthikkumardk/drupal-training/courses/content-types-media-views.html
 Allow: /karthikkumardk/drupal-training/courses/git-fundamentals-for-drupal.html
 Allow: /karthikkumardk/drupal-training/courses/introduction-to-drupal.html
 Allow: /karthikkumardk/drupal-training/courses/module-development-beginner.html
