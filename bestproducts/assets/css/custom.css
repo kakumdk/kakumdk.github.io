@@ -184,6 +184,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 .shop-item .price .discountprice {
     margin-right: 5px;
     font-weight: bolder;
+    display: inline-block;
 }
 .shop-item .price .rupees {
     top: -4px;
