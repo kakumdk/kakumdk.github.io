@@ -9,49 +9,49 @@
 			<title>How to secure the Passwords of Users in Web Applications?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</link>
 			<description>Generally while working with Web applications, one of the important data related to Users is their passwords, and keeping them secured is one of the important jobs of the Web application.  In this article we gonna see a brief how a developer or admin can make sure the passwords are secure on the web application.  Here are some best practices to secure passwords in web applications:   Use Strong Pa</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</guid>
     </item><item>
 			<title>Secure your Web Application's Reset Password flow</title>
 			<link>https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</link>
 			<description>Generally any application framework provides users to have a flow to reset the passwords by default, It is more like, use clicking on the Reset Password link and redirects to a page where he will asked for email, and reset link sent to users email, so that user can reset the password on their own.  This is a default or general flow that any application framework provides, but developers or archite</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</guid>
     </item><item>
 			<title>How does Captcha know that I'm not a Robot?</title>
 			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
 			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</guid>
     </item><item>
 			<title>Usage of Local Php Security Checker for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how the Local PHP Security Checker library will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the Local PHP Security Checker library, which checks for any known vulnerabilities in the package dependencies.  Th</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</guid>
     </item><item>
 			<title>Store Secrets Securely on Pantheon for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</link>
 			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file, and keep the file outside of the proj</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</guid>
     </item><item>
 			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</link>
 			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to system</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</guid>
     </item><item>
 			<title>Security Hardening - Nginx Response Headers</title>
 			<link>https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</link>
 			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of infor</description>
-			<pubDate>Sun, 13 Oct 2024 18:11:54 +0530</pubDate>
+			<pubDate>Sun, 13 Oct 2024 18:25:57 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</guid>
     </item>
