@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-prepare-paneer-tikka.html
 Allow: /articles/why-is-living-a-healthy-lifestyle-important.html
 Allow: /articles/understanding-the-solid-principles-in-php.html
 Allow: /articles/introduction-to-php--and-key-differences-from-php-.html
