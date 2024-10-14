@@ -9,35 +9,35 @@
 			<title>Colima, similar tool like Docker Desktop, for Drupal Development</title>
 			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
 			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>
-			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal 10</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
-			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
     </item><item>
 			<title>Improve Drupal Search with Solr, Locally configured via Lando</title>
 			<link>https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</link>
 			<description>In this article, we are going to learn how Drupal search can be improved with Solr which provides great performance, and is suitable even for use on large commercial websites. And along with this using the search_api &amp; search_api_solr modules, helps to configure the Facets &amp; Multilingual content can be handled in an improved manner. And let's see how we can configure this locally with the help of </description>
-			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</link>
 			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collection</description>
-			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much more qui</description>
-			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</guid>
     </item>
