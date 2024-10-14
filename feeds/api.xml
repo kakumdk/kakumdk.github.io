@@ -9,35 +9,35 @@
 			<title>API Docs, Drupal contributed module for your Developer Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
 			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
-			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:10:23 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</guid>
     </item><item>
 			<title>Why is Drupal Chosen by Large Organizations?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</link>
 			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic, and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applic</description>
-			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:10:23 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</guid>
     </item><item>
 			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
 			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
-			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:10:23 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
     </item><item>
 			<title>API Docs Drupal Module simple way to show OAS Docs on Drupal Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</link>
 			<description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.                                Prerequ</description>
-			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:10:23 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</guid>
     </item><item>
 			<title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
 			<description>The API that the JSON:API module makes available is centered on Drupal&amp;#39;s entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern  HTTP Methods  JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.   GET - Retrieve data, can be a collection of resources or an individual resource</description>
-			<pubDate>Mon, 14 Oct 2024 13:01:33 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 13:10:23 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>
     </item>

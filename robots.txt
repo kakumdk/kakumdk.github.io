@@ -2397,6 +2397,7 @@ Allow: /bestproducts/products/B09X5C9VLK.html
 Allow: /bestproducts/products/B0BSC1T3R2.html
 Allow: /bestproducts/products/B0BQJLVSC2.html
 Allow: /bestproducts/products/B0B8NHX62W.html
+Allow: /bestproducts/products/comparisons/1728891558.html
 Allow: /bestproducts/products/comparisons/1726113300.html
 Allow: /bestproducts/products/comparisons/index.html
 Allow: /bestproducts/products/comparisons/1726113480.html
