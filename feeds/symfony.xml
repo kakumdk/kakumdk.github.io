@@ -9,21 +9,21 @@
 			<title>Drupal 10 is coming in a few days!</title>
 			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
 			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
-			<pubDate>Mon, 14 Oct 2024 11:54:59 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</guid>
     </item><item>
 			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
 			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
-			<pubDate>Mon, 14 Oct 2024 11:54:59 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
     </item><item>
 			<title>Know why Symfony framework was picked by Drupal</title>
 			<link>https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</link>
 			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
-			<pubDate>Mon, 14 Oct 2024 11:54:59 +0530</pubDate>
+			<pubDate>Mon, 14 Oct 2024 12:25:15 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</guid>
     </item>
