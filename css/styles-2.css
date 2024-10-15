@@ -2617,6 +2617,17 @@ button#play-truth-dare-next {
 .software-list .software-item i:hover {
     color: #292b2c;
 }
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.blink {
+    animation: blink 1s infinite;
+}
 
 
 
