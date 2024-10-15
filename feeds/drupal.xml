@@ -9,350 +9,350 @@
 			<title>Create a custom Drupal Service and Use as a Helper</title>
 			<link>https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</link>
 			<description>Creating a custom Drupal service allows you to encapsulate functionality and access it wherever needed, promoting modularity and reusability within your codebase as a Helper.  In this article we are sharing an example of how to create a custom Drupal service and use it as a helper.  Step 1: Define the Service  Create a new custom module or use an existing one. Define your service in the module&amp;rsq</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:42 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</guid>
     </item><item>
 			<title>Imagefield Slideshow module to render Slideshow on Drupal website</title>
 			<link>https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</link>
 			<description>If you want to show images as a slideshow on your drupal website and want to do it quickly. Here&amp;rsquo;s the module which solves your purpose. Imagefield Slideshow is the simple module which will allow images to render as a slideshow on the drupal website at the field level.  This module will provide a Slideshow formatter for Image fields, so that multiple images are uploaded to that particular im</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:42 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</guid>
     </item><item>
 			<title>Unable to install Update Manager, update.settings already exists in active configuration</title>
 			<link>https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</link>
 			<description>Generally you see this error while you try to install the update manager module via UI or via Drush command.  Not really sure how you came up with this issue. But if you are seeing this issue, you have an entry in your site&amp;#39;s configuration saying that the update module is already installed.  1. You can simply delete this configuration with the below command  $ drush cdel update.settings  Which</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:42 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</guid>
     </item><item>
 			<title>How to run PHPUnit test cases on your local machine for Drupal</title>
 			<link>https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</link>
 			<description>Running PHPUnit tests helps ensure that your Drupal module behaves as expected and provides a reliable way to identify and fix issues during development.  To run PHPUnit test cases on your local machine for Drupal, follow these steps:  Install PHPUnit and its dependency:   Make sure you have PHP and Composer installed on your local machine. If you don&amp;#39;t have PHPUnit installed, you can install </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:42 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</guid>
     </item><item>
 			<title>API Docs, Drupal contributed module for your Developer Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
 			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</guid>
     </item><item>
 			<title>How to improve drupal website performance</title>
 			<link>https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</link>
 			<description>Improving the performance of a Drupal website involves optimizing various aspects of its configuration and content. There are several ways to overall complex performance related problems and improve Drupal website performance to load it quicker.  Here are some tips to enhance the performance of your Drupal website:  Enable Caching:   Enable Drupal&amp;#39;s built-in caching mechanisms to store pre-gen</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</guid>
     </item><item>
 			<title>How to build the engaging digital experience via Drupal</title>
 			<link>https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</link>
 			<description>Building an engaging digital experience using Drupal involves combining effective design, user-friendly features, and content that resonates with your audience. Here are some tips to help you create an engaging digital experience using Drupal:   Define Your Target Audience: Understand your target audience and their needs, preferences, and goals. Tailor your digital experience to meet their expecta</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</guid>
     </item><item>
 			<title>Why is Drupal the Best Choice for Non-Profit Websites?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</link>
 			<description>Drupal is often considered a great choice for non-profit websites due to several key factors that align with the unique needs and goals of non-profit organizations. Here are some reasons why Drupal is a popular choice for non-profit websites:   Cost-Effectiveness: Drupal is an open-source platform, which means it is free to use and distribute. This can be particularly advantageous for non-profit o</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</guid>
     </item><item>
 			<title>Security Checklist for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</link>
 			<description>Securing your Drupal website is crucial to protect your data, users, and overall website integrity. Here&amp;#39;s a security checklist for a Drupal website:   Keep Drupal Core and Modules Up to Date: Regularly update Drupal core and contributed modules to ensure you have the latest security patches. Enable update notifications to stay informed about available updates. Use Strong and Unique Passwords:</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</guid>
     </item><item>
 			<title>Why is Drupal Chosen by Large Organizations?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</link>
 			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic, and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applic</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</guid>
     </item><item>
 			<title>Drupal LMS Features for Your Education Business</title>
 			<link>https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</link>
 			<description>If you&amp;#39;re running an education business and considering Drupal as the platform for your Learning Management System (LMS), there are several features and capabilities you should look for to ensure a robust and effective solution.  Here are some key Drupal LMS features to consider:   Course Management: A Drupal LMS should provide comprehensive course management capabilities. This includes the ab</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</guid>
     </item><item>
 			<title>Leveraging Content Grouping for Personalized Digital Experiences</title>
 			<link>https://peoplesblog.co.in/articles/leveraging-content-grouping-for-personalized-digital-experiences.html</link>
 			<description>Content grouping is a powerful technique that can be leveraged to create personalized digital experiences for users. By grouping content based on specific criteria, such as user preferences, demographics, or behavior, you can deliver targeted and relevant content to individual users. Here are some ways to utilize content grouping for personalized digital experiences:   User Segmentation: Segment y</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/leveraging-content-grouping-for-personalized-digital-experiences.html</guid>
     </item><item>
 			<title>What to know before you choose a Drupal Hosting Platform?</title>
 			<link>https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</link>
 			<description>In this article we are gonna see a few important notes which will be helpful for people who are looking out to host their Drupal application. When selecting a hosting platform for your Drupal website, there are several key factors to consider.  Here are some important things to know before making a decision:   Compatibility with Drupal: Ensure that the hosting platform is compatible with Drupal&amp;#3</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</guid>
     </item><item>
 			<title>node_get_recent() is deprecated in Drupal 10.1.x</title>
 			<link>https://peoplesblog.co.in/articles/node-get-recent-is-deprecated-in-drupal-ten.html</link>
 			<description>node_get_recent() is unused in core and is now deprecated, developers can use views or EntityQuery to get the nodes which are recently modified or added.  Earlier drupal developers used to use the function&amp;nbsp;node_get_recent() to get the recently changed nodes like seen in below example  $latest_updated_nodes = node_get_recent(10);  Now from Drupal 10.1.x onwards, developers need to use entity q</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/node-get-recent-is-deprecated-in-drupal-ten.html</guid>
     </item><item>
 			<title>Fix Colima connection refused error: failed to get Info from .lima/colima/ha.sock on Mac</title>
 			<link>https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</link>
 			<description>This article is about fixing only a single error which you see with Colima on Mac machines. This might be a simple &amp;amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.  While you are running Colima on your mac machines, generally you get into such issue, when you power off or shut down your mac, without stopping the colima service (and de</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with DDEV and Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</link>
 			<description>In this article we are going to see how we can set up a multisite environment with ddev on the local machine. Assuming people are aware of configuring the drupal multiple site from the drupal side of configurations.  As we all know ddev is an open source tool for running local PHP development environments in minutes, which makes developer life easier during the local environment setup process, her</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</guid>
     </item><item>
 			<title>Secure your Web Application's Reset Password flow</title>
 			<link>https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</link>
 			<description>Generally any application framework provides users to have a flow to reset the passwords by default, It is more like, use clicking on the Reset Password link and redirects to a page where he will asked for email, and reset link sent to users email, so that user can reset the password on their own.  This is a default or general flow that any application framework provides, but developers or archite</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</guid>
     </item><item>
 			<title>Colima, similar tool like Docker Desktop, for Drupal Development</title>
 			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
 			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal 10</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
     </item><item>
 			<title>Drupal 10 is coming in a few days!</title>
 			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
 			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</guid>
     </item><item>
 			<title>Project vs Product - Plan and Delivery, Agile Characteristics</title>
 			<link>https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</link>
 			<description>In the Service Industry, a Technical Lead or Technical Architect or Delivery Manager, one is always looking at the work, either as a Project or a Product, but I say, one should look at it as both, because work would be a Project for us but work would be a Product for the clients.  While working on Agile basis, being at the leading positions one will be seeing the scope of work, then prepare the ba</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/project-vs-product-plan-and-delivery-agile-characteristics.html</guid>
     </item><item>
 			<title>Usage of Constraints (Validations) on Media Entities in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</link>
 			<description>In this article we are going to see how drupal developers can use the Drupal Constraints to Validate the Media entities.  Basically Drupal provides Constraints to do the Validations on the Entities, where Drupal uses the Symfony&amp;rsquo;s validator and extends with Symfony&amp;rsquo;s Typed Data API for validating specific Entity field definitions.  These constraint validators can be used in different w</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-constraints-validations-on-media-entities-in-drupal-application.html</guid>
     </item><item>
 			<title>Usage of Local Php Security Checker for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how the Local PHP Security Checker library will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the Local PHP Security Checker library, which checks for any known vulnerabilities in the package dependencies.  Th</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-local-php-security-checker-for-drupal-applications.html</guid>
     </item><item>
 			<title>Read Data to Paragraph Template in Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</link>
 			<description>In this article we are going to see how to read the dynamic data of the node or entity or field values to the template file, which are specific to the paragraph template.  Generally while the Paragraph module is used, default template suggestions given by the paragraph module or the template suggestions provided by the hooks are used and further template design is done. Here&amp;rsquo;s the article wh</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/read-data-to-paragraph-template-in-drupal-application.html</guid>
     </item><item>
 			<title>How to work with Drupal Paragraphs?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</link>
 			<description>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.  Paragraphs is one of the&amp;nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-drupal-paragraphs.html</guid>
     </item><item>
 			<title>Usage of PhpStan on Github via Pull Request for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development and code review process. We have a similar helpful article related to Phpcs, have a check of this.  To make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here come</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html</guid>
     </item><item>
 			<title>How to work with Twig Templates in Drupal?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</link>
 			<description>In this article, we are going to see how a developer can work with Twig templates, and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sur</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</guid>
     </item><item>
 			<title>Quick reference of Code Reviews for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</link>
 			<description>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.  It&amp;rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.  Firstly, for the code reviews to be at their best, the committed code should be more organis</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/quick-reference-of-code-reviews-for-drupal-application.html</guid>
     </item><item>
 			<title>Usage of PHPCS on Github via Pull Request for Drupal Applications</title>
 			<link>https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</link>
 			<description>In this article, we are going to see how some tools &amp;amp; libraries will make people&amp;#39;s lives easier during the development &amp;amp; code review process.  And to make developer life easier, developers look for tools or libraries which can automated code review and if needed make any corrections in the code automatically. Here comes the PHP codesniffer and Drupal coder module.  If you are maintaini</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html</guid>
     </item><item>
 			<title>Store Secrets Securely on Pantheon for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</link>
 			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file, and keep the file outside of the proj</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</guid>
     </item><item>
 			<title>Configuration management via Quicksilver on Pantheon</title>
 			<link>https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</link>
 			<description>As we saw in the earlier article, like how we manage the configuration across the environments.  In this article we are going to see how Drupal configurations can be deployed or imported across the environments with the help of Quicksilver which hooks into platform workflows to automate your Pantheon WebOps workflow across the environments.  In the pantheon environment&amp;rsquo;s drupal code base, yo</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</guid>
     </item><item>
 			<title>Drupal Configuration management (Local, Dev, Test and Live)</title>
 			<link>https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</link>
 			<description>In this article we are going to see how Drupal serves configurations across the environments, which can be well maintained with help of some contributed modules and version control.  Drupal 8 onwards configuration has been saved in the yml files in a consistent manner, which includes all the enabled modules, all the content types, vocabularies, fields &amp;amp; views.  Making the configurations direct</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-configuration-management-local-dev-test-and-live.html</guid>
     </item><item>
 			<title>Migrate your site from Drupal 7 To Drupal 9?</title>
 			<link>https://peoplesblog.co.in/articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html</link>
 			<description>In this article, we are going to see what are the important things you need to understand for the migration of your Drupal 7 site to the Drupal 9 site. And if you see from your Business perspective, Drupal 7 was launched nine years ago, and this is the perfect time for some reassessment of the needs of site users &amp; content managers. And if you see from Drupal’s end, Initially, Drupal 7 end of li</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/migrate-your-site-from-drupal-seven-to-drupal-nine.html</guid>
     </item><item>
 			<title>Improve Drupal Search with Solr, Locally configured via Lando</title>
 			<link>https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</link>
 			<description>In this article, we are going to learn how Drupal search can be improved with Solr which provides great performance, and is suitable even for use on large commercial websites. And along with this using the search_api &amp; search_api_solr modules, helps to configure the Facets &amp; Multilingual content can be handled in an improved manner. And let's see how we can configure this locally with the help of </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html</guid>
     </item><item>
 			<title>When to use hook_update_N &amp; hook_post_update_NAME?</title>
 			<link>https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</link>
 			<description>In this article, we are going to learn when to use hook_update_N and hook_post_update_NAME. In general, I was using hook_update_N for any database-related changes or with any configuration additions or updates. And I was using hook_post_update_NAME for any content creation or updating or for the creation or updating any taxonomy terms etc, sometimes for clearing site caches as well. But, let’s h</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</guid>
     </item><item>
 			<title>Improvements for Editor Experience in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</link>
 			<description>In this article, we are going to learn what Drupal offers for text editors or content managers as a content management framework within Drupal Core &amp; Contributed modules. Earlier versions of Drupal have several useful features to help content editors to manage their content on a daily basis. And in the newer versions of Drupal (from when Symfony was introduced), there are a few more improvements i</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</guid>
     </item><item>
 			<title>What Drupal offers as Responsive Web Design within Core</title>
 			<link>https://peoplesblog.co.in/articles/what-drupal-offers-as-responsive-web-design-within-core.html</link>
 			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-drupal-offers-as-responsive-web-design-within-core.html</guid>
     </item><item>
 			<title>Know why Symfony framework was picked by Drupal</title>
 			<link>https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</link>
 			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</guid>
     </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
 			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
     </item><item>
 			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
 			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.                            With Dependency Injection, the class is no longer responsible for ins</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
     </item><item>
 			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
 			<link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
 			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wou</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</link>
 			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collection</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much more qui</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</guid>
     </item><item>
 			<title>Security Hardening - Nginx Response Headers</title>
 			<link>https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</link>
 			<description>Now-a-days, web based attacks are one of the most common types of cybercrime, and in most cases, the attacked protocol is the HTTP, while the component that receives the attacks is the web server. Hardening Nginx HTTP headers becomes necessary for reducing any attacks to the web server.                                And how to harden Nginx response HTTP headers? - HTTP headers are pieces of infor</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/security-hardening-nginx-response-headers.html</guid>
     </item><item>
 			<title>Drupal 7 to Drupal 8/9 Audits</title>
 			<link>https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</link>
 			<description>Migration from Drupal 7 to Drupal 8/9 is more of a re-build than a simple upgrade. We can move the content. users and other configuration with the help of core system, But still their will be a need to re-write custom modules or themes and some times contrib ones as well. By having a list which helps us to Audit any D7 Project to Drupal 8/9 migration would help start quick.                        </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal--to-drupalaudits.html</guid>
     </item><item>
 			<title>Drupal JSON API, Deep Dive - Part 2</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</link>
 			<description>In Part 2, Let's see about the Core concepts like Types, URL structure, HTTP methods, Request headers, Response codes and Document structure i.e Data in the request body. JSON:API module will provide the APIs for Drupal entity types and bundles, where every bundle will have its own unique url path, which will have a shared pattern.                                Types                              </description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-two.html</guid>
     </item><item>
 			<title>Monitoring Web Application with ELK Stack</title>
 			<link>https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</link>
 			<description>For Auditing &amp; Troubleshooting issues in an application, log data is very useful. And to make it easy to read the log data via some kind of tool will make developers &amp; maintainers happy. However, not all the log data for any event is not needed to be stored in the log record. Means, Each log record should have only the information needed for further notice or further debugging. Strictly all sensit</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/monitoring-web-application-with-elk-stack.html</guid>
     </item><item>
 			<title>Drupal JSON API, Deep Dive - Part 1</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-one.html</link>
 			<description>JSON:API module is implemented based on JSON:API Specification. Means, a specification that says how client should request the resources to be fetched or modified, &amp; also how server should respond to such requests. This JSON:API is designed to minimize the number of requests and also minimize the amount of data transmitted between clients &amp; servers. And such efficiency is achieved without compromi</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-deep-dive-part-one.html</guid>
     </item><item>
 			<title>Send Mail with Custom Email Template &amp; with Dynamic values via Drupal Mail Service</title>
 			<link>https://peoplesblog.co.in/articles/send-mail-with-custom-email-template-and-with-dynamic-values-via-drupal-mail-service.html</link>
 			<description>Sending an email works with defining an email template (subject, text and possibly email headers) and the replacement values to use in the appropriate places in the template. Processed email templates are requested from hook_mail() from the module sending the email. Any module can modify the composed email message array using hook_mail_alter(). Finally \Drupal::service('plugin.manager.mail')->mail</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/send-mail-with-custom-email-template-and-with-dynamic-values-via-drupal-mail-service.html</guid>
     </item><item>
 			<title>API Docs Drupal Module simple way to show OAS Docs on Drupal Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</link>
 			<description>If you want to show API Documents on your Drupal Portal and you want to do it do it quickly, Here's the module API Docs which solves your purpose. API Docs is a simple module which will will provide a content type for the API Doc and User will be able to create API Documents by just uploading Open API Spec. Each API Doc is a content with this API Docs module.                                Prerequ</description>
-			<pubDate>Tue, 15 Oct 2024 09:57:42 +0530</pubDate>
+			<pubDate>Tue, 15 Oct 2024 10:15:43 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-module-simple-way-to-show-oas-api-docs-on-drupal-portal.html</guid>
     </item>
