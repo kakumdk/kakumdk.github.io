@@ -9,49 +9,49 @@
 			<title>Fix Colima connection refused error: failed to get Info from .lima/colima/ha.sock on Mac</title>
 			<link>https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</link>
 			<description>This article is about fixing only a single error which you see with Colima on Mac machines. This might be a simple &amp;amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.  While you are running Colima on your mac machines, generally you get into such issue, when you power off or shut down your mac, without stopping the colima service (and de</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Wed, 19 Apr 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with DDEV and Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</link>
 			<description>In this article we are going to see how we can set up a multisite environment with ddev on the local machine. Assuming people are aware of configuring the drupal multiple site from the drupal side of configurations.  As we all know ddev is an open source tool for running local PHP development environments in minutes, which makes developer life easier during the local environment setup process, her</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Thu, 26 Jan 2023 09:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</guid>
     </item><item>
 			<title>Colima, similar tool like Docker Desktop, for Drupal Development</title>
 			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
 			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sun, 31 Dec 2023 14:45:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal 10</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Mon, 18 Dec 2023 12:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</link>
 			<description>As we have seen in the earlier article to setup the Local environment with Lando &amp; Drupal, Now let's see how we set up the multisite with the lando.                            And hope you are already aware of Drupal Multisite. If not, It is a feature of Drupal that allows you to run multiple Drupal installs off of a common codebase. This allows you to share themes and modules between a collection</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-lando-and-drupal.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much more qui</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal.html</guid>
     </item><item>
 			<title>Locally Setup and Scan your Docker images via Clair</title>
 			<link>https://peoplesblog.co.in/articles/locally-setup-and-scan-your-docker-images-via-clair.html</link>
 			<description>Docker Images contain not only application code, but a OS and additional utilities to make application run as expected. Images can also be vulnerable its better not have any CVE's in image. Running scans are one of the way to protect from CVE's. These container scanning tools scan for known vulnerabilities in the image.                                In this article, We use Clair to scan a Docker </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/locally-setup-and-scan-your-docker-images-via-clair.html</guid>
     </item>

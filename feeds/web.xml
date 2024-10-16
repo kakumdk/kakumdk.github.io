@@ -9,231 +9,231 @@
 			<title>Create a custom Drupal Service and Use as a Helper</title>
 			<link>https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</link>
 			<description>Creating a custom Drupal service allows you to encapsulate functionality and access it wherever needed, promoting modularity and reusability within your codebase as a Helper.  In this article we are sharing an example of how to create a custom Drupal service and use it as a helper.  Step 1: Define the Service  Create a new custom module or use an existing one. Define your service in the module&amp;rsq</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 22 Mar 2024 15:20:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</guid>
     </item><item>
 			<title>Imagefield Slideshow module to render Slideshow on Drupal website</title>
 			<link>https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</link>
 			<description>If you want to show images as a slideshow on your drupal website and want to do it quickly. Here&amp;rsquo;s the module which solves your purpose. Imagefield Slideshow is the simple module which will allow images to render as a slideshow on the drupal website at the field level.  This module will provide a Slideshow formatter for Image fields, so that multiple images are uploaded to that particular im</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Thu, 16 Nov 2023 16:40:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</guid>
     </item><item>
 			<title>Unable to install Update Manager, update.settings already exists in active configuration</title>
 			<link>https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</link>
 			<description>Generally you see this error while you try to install the update manager module via UI or via Drush command.  Not really sure how you came up with this issue. But if you are seeing this issue, you have an entry in your site&amp;#39;s configuration saying that the update module is already installed.  1. You can simply delete this configuration with the below command  $ drush cdel update.settings  Which</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 08 Sep 2023 09:15:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</guid>
     </item><item>
 			<title>What is a Customer Data Platform and which one is best for your Business?</title>
 			<link>https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</link>
 			<description>Customer Data Platform (CDP) is a sophisticated software system that aggregates and manages customer data across various touchpoints and channels. Its primary purpose is to create a unified and comprehensive view of individual customers or segments of customers. This centralized data is then made accessible to other systems and tools for marketing, analytics, and customer engagement.  Key features</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Thu, 07 Sep 2023 11:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</guid>
     </item><item>
 			<title>How to run PHPUnit test cases on your local machine for Drupal</title>
 			<link>https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</link>
 			<description>Running PHPUnit tests helps ensure that your Drupal module behaves as expected and provides a reliable way to identify and fix issues during development.  To run PHPUnit test cases on your local machine for Drupal, follow these steps:  Install PHPUnit and its dependency:   Make sure you have PHP and Composer installed on your local machine. If you don&amp;#39;t have PHPUnit installed, you can install </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sun, 27 Aug 2023 11:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html</guid>
     </item><item>
 			<title>API Docs, Drupal contributed module for your Developer Portal</title>
 			<link>https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</link>
 			<description>This module will provide API Docs to your Developer Portal, It is powered by Drupal content type, custom field formatters &amp;amp; views.  Here&amp;#39;s a step-by-step guide to help you to download, enable, configure and use the module for your developer portal.  Download &amp;amp; Enable the Module:   Visit the Drupal.org website and navigate to the API Docs module&amp;#39;s page that you want to download, her</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sat, 29 Jul 2023 17:15:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/api-docs-drupal-contributed-module-for-your-developer-portal.html</guid>
     </item><item>
 			<title>How to improve drupal website performance</title>
 			<link>https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</link>
 			<description>Improving the performance of a Drupal website involves optimizing various aspects of its configuration and content. There are several ways to overall complex performance related problems and improve Drupal website performance to load it quicker.  Here are some tips to enhance the performance of your Drupal website:  Enable Caching:   Enable Drupal&amp;#39;s built-in caching mechanisms to store pre-gen</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Tue, 05 Dec 2023 14:50:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-improve-drupal-website-performance.html</guid>
     </item><item>
 			<title>How to build the engaging digital experience via Drupal</title>
 			<link>https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</link>
 			<description>Building an engaging digital experience using Drupal involves combining effective design, user-friendly features, and content that resonates with your audience. Here are some tips to help you create an engaging digital experience using Drupal:   Define Your Target Audience: Understand your target audience and their needs, preferences, and goals. Tailor your digital experience to meet their expecta</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Mon, 10 Jul 2023 11:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-build-the-engaging-digital-experience-via-drupal.html</guid>
     </item><item>
 			<title>How to make your content more Accessible with plain language</title>
 			<link>https://peoplesblog.co.in/articles/how-to-make-your-content-more-accessible-with-plain-language.html</link>
 			<description>Making your content more accessible with plain language is a valuable practice that ensures your information is easily understood by a wide range of readers. Here are some tips to make your content more accessible and reader-friendly:   Use Clear and Simple Language: Use plain, straightforward language that is easy to understand. Avoid jargon, technical terms, and overly complex vocabulary. Write </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 07 Jul 2023 13:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-make-your-content-more-accessible-with-plain-language.html</guid>
     </item><item>
 			<title>Why is Drupal the Best Choice for Non-Profit Websites?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</link>
 			<description>Drupal is often considered a great choice for non-profit websites due to several key factors that align with the unique needs and goals of non-profit organizations. Here are some reasons why Drupal is a popular choice for non-profit websites:   Cost-Effectiveness: Drupal is an open-source platform, which means it is free to use and distribute. This can be particularly advantageous for non-profit o</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sun, 02 Jul 2023 11:15:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-the-best-choice-for-non-profit-websites.html</guid>
     </item><item>
 			<title>Security Checklist for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</link>
 			<description>Securing your Drupal website is crucial to protect your data, users, and overall website integrity. Here&amp;#39;s a security checklist for a Drupal website:   Keep Drupal Core and Modules Up to Date: Regularly update Drupal core and contributed modules to ensure you have the latest security patches. Enable update notifications to stay informed about available updates. Use Strong and Unique Passwords:</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Tue, 13 Jun 2023 09:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/security-checklist-for-drupal-application.html</guid>
     </item><item>
 			<title>Why is Drupal Chosen by Large Organizations?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</link>
 			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic, and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applic</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Mon, 05 Jun 2023 09:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</guid>
     </item><item>
 			<title>Drupal LMS Features for Your Education Business</title>
 			<link>https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</link>
 			<description>If you&amp;#39;re running an education business and considering Drupal as the platform for your Learning Management System (LMS), there are several features and capabilities you should look for to ensure a robust and effective solution.  Here are some key Drupal LMS features to consider:   Course Management: A Drupal LMS should provide comprehensive course management capabilities. This includes the ab</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Tue, 30 May 2023 09:15:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-lms-features-for-your-education-business.html</guid>
     </item><item>
 			<title>Leveraging Content Grouping for Personalized Digital Experiences</title>
 			<link>https://peoplesblog.co.in/articles/leveraging-content-grouping-for-personalized-digital-experiences.html</link>
 			<description>Content grouping is a powerful technique that can be leveraged to create personalized digital experiences for users. By grouping content based on specific criteria, such as user preferences, demographics, or behavior, you can deliver targeted and relevant content to individual users. Here are some ways to utilize content grouping for personalized digital experiences:   User Segmentation: Segment y</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sun, 21 May 2023 08:45:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/leveraging-content-grouping-for-personalized-digital-experiences.html</guid>
     </item><item>
 			<title>What to know before you choose a Drupal Hosting Platform?</title>
 			<link>https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</link>
 			<description>In this article we are gonna see a few important notes which will be helpful for people who are looking out to host their Drupal application. When selecting a hosting platform for your Drupal website, there are several key factors to consider.  Here are some important things to know before making a decision:   Compatibility with Drupal: Ensure that the hosting platform is compatible with Drupal&amp;#3</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Tue, 16 May 2023 14:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-before-you-choose-drupal-hosting-platform.html</guid>
     </item><item>
 			<title>How to generate good revenue from blogging websites?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-generate-good-revenue-from-blogging-websites.html</link>
 			<description>To maximize revenue from your blog, it&amp;#39;s important to focus on creating high-quality content, engaging with your audience, and promoting your blog through social media and other marketing channels.  There are several ways to generate revenue from a blogging website:   Advertising: Displaying ads on your blog is one of the most common ways to generate revenue. You can use ad networks like Googl</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sun, 07 May 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-generate-good-revenue-from-blogging-websites.html</guid>
     </item><item>
 			<title>How to improve a website's SEO score and make it searchable on Search Engines like Google?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-improve-websites-seo-score-and-make-it-searchable-on-search-engines-like-google.html</link>
 			<description>It is very important for the business to have their web sites to be popular on the search engines and the process of improving the quality and quantity of website traffic to a website or a web page from search engines is search engine optimization.  In this article, we are going to see how one can improve their website&amp;rsquo;s SEO score and make the website popular on search engines.  Improving yo</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sat, 06 May 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-improve-websites-seo-score-and-make-it-searchable-on-search-engines-like-google.html</guid>
     </item><item>
 			<title>How to secure the Passwords of Users in Web Applications?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</link>
 			<description>Generally while working with Web applications, one of the important data related to Users is their passwords, and keeping them secured is one of the important jobs of the Web application.  In this article we gonna see a brief how a developer or admin can make sure the passwords are secure on the web application.  Here are some best practices to secure passwords in web applications:   Use Strong Pa</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Wed, 26 Apr 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-secure-the-passwords-of-users-in-web-applications.html</guid>
     </item><item>
 			<title>Multisite Local environment setup with DDEV and Drupal</title>
 			<link>https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</link>
 			<description>In this article we are going to see how we can set up a multisite environment with ddev on the local machine. Assuming people are aware of configuring the drupal multiple site from the drupal side of configurations.  As we all know ddev is an open source tool for running local PHP development environments in minutes, which makes developer life easier during the local environment setup process, her</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Thu, 26 Jan 2023 09:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/multisite-local-environment-setup-with-ddev-and-drupal.html</guid>
     </item><item>
 			<title>Secure your Web Application's Reset Password flow</title>
 			<link>https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</link>
 			<description>Generally any application framework provides users to have a flow to reset the passwords by default, It is more like, use clicking on the Reset Password link and redirects to a page where he will asked for email, and reset link sent to users email, so that user can reset the password on their own.  This is a default or general flow that any application framework provides, but developers or archite</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Sun, 22 Jan 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/secure-your-applications-reset-password-flow.html</guid>
     </item><item>
 			<title>How does Captcha know that I'm not a Robot?</title>
 			<link>https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</link>
 			<description>Almost all the developers working on web applications would have come across captcha or re-captcha.  And developers might have also used them on the web pages before authentication of users on web applications or before showing specific content to users.  As developers, we might have got a thought like how will this work behind the scenes, but in most of the cases, we developers would have ignored</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Wed, 11 Jan 2023 21:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-does-captcha-know-that-iam-not-robot.html</guid>
     </item><item>
 			<title>Local environment setup with Lando &amp; Drupal 10</title>
 			<link>https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</link>
 			<description>We developers always choose to have some tools or setup, which makes our lives easier during the development process whether it might be a local environment or higher environments. Not only will lives be easier with such a setup, even the productivity of the individual or team will be increased. And today we are gonna see how Lando will help the drupal developer or drupal development much quicker </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Mon, 18 Dec 2023 12:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/local-environment-setup-with-lando-and-drupal-ten.html</guid>
     </item><item>
 			<title>Drupal 10 is coming in a few days!</title>
 			<link>https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</link>
 			<description>Drupal 10 is planned to be released in December 2022. Drupal 10 will be straightforward upgrades like Drupal 8 to 9. Upgrade processes used are more or less similar. Mostly you need to keep your current site up to date with the latest drupal core and contributed projects.  What is new in Drupal 10?  Drupal 10 is a refined version of Drupal 9 with the certain features   Claro administration theme i</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 08 Dec 2023 11:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-ten-is-coming-in-a-few-days.html</guid>
     </item><item>
 			<title>When to use hook_update_N &amp; hook_post_update_NAME?</title>
 			<link>https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</link>
 			<description>In this article, we are going to learn when to use hook_update_N and hook_post_update_NAME. In general, I was using hook_update_N for any database-related changes or with any configuration additions or updates. And I was using hook_post_update_NAME for any content creation or updating or for the creation or updating any taxonomy terms etc, sometimes for clearing site caches as well. But, let’s h</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/when-to-use-hook_update_n-and-hook_post_update_name.html</guid>
     </item><item>
 			<title>Improvements for Editor Experience in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</link>
 			<description>In this article, we are going to learn what Drupal offers for text editors or content managers as a content management framework within Drupal Core &amp; Contributed modules. Earlier versions of Drupal have several useful features to help content editors to manage their content on a daily basis. And in the newer versions of Drupal (from when Symfony was introduced), there are a few more improvements i</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/improvements-for-editor-experience-in-drupal.html</guid>
     </item><item>
 			<title>What Drupal offers as Responsive Web Design within Core</title>
 			<link>https://peoplesblog.co.in/articles/what-drupal-offers-as-responsive-web-design-within-core.html</link>
 			<description>In this article, we gonna see What Drupal offers as Responsive Web Design within Drupal Core for developers. While Drupal 8 was out and it had a buzz of being responsive, mobile friendly. And yes, the Internet is on the verge of being dominated by smartphones &amp; Drupal needs to be prepared.Mobile friendly will also mean the content is first. From a big screen to a little screen, elements would look</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-drupal-offers-as-responsive-web-design-within-core.html</guid>
     </item><item>
 			<title>Know why Symfony framework was picked by Drupal</title>
 			<link>https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</link>
 			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</guid>
     </item><item>
 			<title>Understand why Twig is replacing PHP Template in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</link>
 			<description>A completely new template engine is introduced in Drupal. The templating system in all previous versions of Drupal is using theme_* functions and PHP-based *.tpl.php files. Now, this has been completely replaced in Drupal 8. Instead of using theme functions and theme template files, Drupal is now using the Twig templating system.                            Twig is a PHP-based compiled templating l</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understand-why-twig-is-replacing-php-template-in-drupal.html</guid>
     </item><item>
 			<title>In layman's terms, Services &amp; Dependency Injection in Drupal</title>
 			<link>https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</link>
 			<description>If we look into the basis of Software engineering, Dependency Injection is an approach in which one object get another object that it depends on. And these other objects are called dependencies. And Injection refers to the passing of a dependency (as a service) into the client object that would use it.                            With Dependency Injection, the class is no longer responsible for ins</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/in-laymans-terms-services-and-dependency-injection-in-drupal.html</guid>
     </item><item>
 			<title>Drupal Cache Clear &amp; Cache Rebuild</title>
 			<link>https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</link>
 			<description>In order to render a page via Drupal, Drupal will need to make several database queries and get the data to render. This process of making queries can be reduced by storing the web pages in a cache, which is what Drupal does.                            And developers during developments may use this cache clear or cache rebuild quite often, like after installing a new module or theme. The site wou</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-cache-clear-and-cache-rebuild.html</guid>
     </item><item>
 			<title>What to Know for Estimating Projects</title>
 			<link>https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</link>
 			<description>Estimating projects is part of project management. And we can’t always estimate a project with 100% accuracy. There will be learning from the failed attempts at estimating projects, maybe with running overtime, or with budget, or with resources etc.                            If one needs to deliver a project successfully then one must estimate the project as better as possible.                 </description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-to-know-for-estimating-projects.html</guid>
     </item><item>
 			<title>Fix SSL error 61 in Citrix Web Receiver on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</link>
 			<description>This article is about fixing only a single error which you see with Citrix Web Receiver on the Ubuntu machines. This might be a simple &amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.                                After you install the Citrix web receiver on Ubuntu machine &amp; while you try to connect, in some cases no connection to system</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-ssl-error-in-citrix-web-receiver-on-ubuntu.html</guid>
     </item><item>
 			<title>Technical Writing Vs Content Writing</title>
 			<link>https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</link>
 			<description>While we see at the first time, we might see Technical Writing and Content Writing career paths to be similar. But in reality these two are differnt in concepts.                                Technical writer would have an excellent grip on the technical abilities which would help to work in various domains. While Content writer would a precise attention grabbing writing style which makes the rea</description>
-			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
+			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Leela Vasundhara</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/technical-writing-vs-content-writing.html</guid>
     </item>
