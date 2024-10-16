@@ -1827,6 +1827,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/healing-after-tooth-extraction-key-precautions-to-ensure-a-smooth-recovery.html
 Allow: /articles/the-role-of-vitamin-d-in-dental-health.html
 Allow: /articles/how-to-treat-and-prevent-oral-sores.html
 Allow: /articles/understanding-dental-treatments-for-sleep-apnea.html
