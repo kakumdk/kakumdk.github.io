@@ -9,14 +9,14 @@
 			<title>Store Secrets Securely on Pantheon for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</link>
 			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file, and keep the file outside of the proj</description>
-			<pubDate>Wed, 16 Oct 2024 09:52:52 +0530</pubDate>
+			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</guid>
     </item><item>
 			<title>Configuration management via Quicksilver on Pantheon</title>
 			<link>https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</link>
 			<description>As we saw in the earlier article, like how we manage the configuration across the environments.  In this article we are going to see how Drupal configurations can be deployed or imported across the environments with the help of Quicksilver which hooks into platform workflows to automate your Pantheon WebOps workflow across the environments.  In the pantheon environment&amp;rsquo;s drupal code base, yo</description>
-			<pubDate>Wed, 16 Oct 2024 09:52:52 +0530</pubDate>
+			<pubDate>Wed, 16 Oct 2024 11:45:33 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuration-management-via-quicksilver-on-pantheon.html</guid>
     </item>
