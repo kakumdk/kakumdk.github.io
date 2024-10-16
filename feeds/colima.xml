@@ -9,7 +9,7 @@
 			<title>Fix Colima connection refused error: failed to get Info from .lima/colima/ha.sock on Mac</title>
 			<link>https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</link>
 			<description>This article is about fixing only a single error which you see with Colima on Mac machines. This might be a simple &amp;amp; specific issue, but people who are facing this issue will really feel grateful with the solution provided.  While you are running Colima on your mac machines, generally you get into such issue, when you power off or shut down your mac, without stopping the colima service (and de</description>
-			<pubDate>Wed, 16 Oct 2024 09:11:50 +0530</pubDate>
+			<pubDate>Wed, 16 Oct 2024 09:52:52 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/fix-colima-connection-refused-error-failed-to-get-info-from-lima-colima-ha-sock-on-mac.html</guid>
     </item>
