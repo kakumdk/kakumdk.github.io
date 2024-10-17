@@ -403,6 +403,12 @@ input#search-news {
 .blink {
     animation: blink 1s infinite;
 }
+#header #logo .logo-icon img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
 
 
 /*  */

@@ -143,14 +143,14 @@ h6 {
   font-size: 42px;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  /* line-height: 1; */
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 #header #logo .logo-icon a {
     color: #2d7dc6;
-    line-height: 1;
+    /* line-height: 1; */
     display: inline-block;
     font-size: 30px;
 }
