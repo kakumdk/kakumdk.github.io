@@ -20,18 +20,18 @@ function filterProducts(category, discount, sort, updated) {
     clickLinkAfterDelay('filterCategory', 15);
     const header = document.querySelector(".dynamic-title");
     const header1 = document.querySelector(".dynamic-title-1");
-    if (updated != "null") {
-        clickLinkAfterDelay('filterCategory', 15);
-        const container = document.getElementById('shop-item-container-wrapper');
-        const products = Array.from(container.querySelectorAll('.shop-item-wrapper'));
-        products.sort((a, b) => {
-            const dateA = a.getAttribute('data-updated');
-            const dateB = b.getAttribute('data-updated');
-            return dateB - dateA; // Sort in descending order
-        });
-        container.innerHTML = '';
-        products.forEach(product => container.appendChild(product));
-    }
+    // if (updated != "null") {
+    //     clickLinkAfterDelay('filterCategory', 15);
+    //     const container = document.getElementById('shop-item-container-wrapper');
+    //     const products = Array.from(container.querySelectorAll('.shop-item-wrapper'));
+    //     products.sort((a, b) => {
+    //         const dateA = a.getAttribute('data-updated');
+    //         const dateB = b.getAttribute('data-updated');
+    //         return dateB - dateA; // Sort in descending order
+    //     });
+    //     container.innerHTML = '';
+    //     products.forEach(product => container.appendChild(product));
+    // }
     if (category != "null") {
         const products = document.querySelectorAll(".shop-item-wrapper");
         products.forEach(product => {

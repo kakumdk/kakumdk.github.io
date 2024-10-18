@@ -22,14 +22,14 @@ document.getElementById('searchReviews').addEventListener('submit', function(eve
     });
 });
 
-window.onload = function() {
-    const container = document.getElementById('shop-item-container-wrapper');
-    const products = Array.from(container.querySelectorAll('.shop-item-wrapper'));
-    products.sort((a, b) => {
-        const dateA = a.getAttribute('data-updated');
-        const dateB = b.getAttribute('data-updated');
-        return dateB - dateA; // Sort in descending order
-    });
-    container.innerHTML = '';
-    products.forEach(product => container.appendChild(product));
-};
+// window.onload = function() {
+//     const container = document.getElementById('shop-item-container-wrapper');
+//     const products = Array.from(container.querySelectorAll('.shop-item-wrapper'));
+//     products.sort((a, b) => {
+//         const dateA = a.getAttribute('data-updated');
+//         const dateB = b.getAttribute('data-updated');
+//         return dateB - dateA; // Sort in descending order
+//     });
+//     container.innerHTML = '';
+//     products.forEach(product => container.appendChild(product));
+// };
