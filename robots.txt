@@ -1844,6 +1844,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/understanding-the-different-types-of-braces.html
 Allow: /articles/how-to-care-for-your-oral-health-as-you-age.html
 Allow: /articles/healing-after-tooth-extraction-key-precautions-to-ensure-a-smooth-recovery.html
 Allow: /articles/the-role-of-vitamin-d-in-dental-health.html
