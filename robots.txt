@@ -1256,6 +1256,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/cyclone-dana-expected-to-form-over-bay-of-bengal-by-oct-23-imd.html
+Allow: /news/nasa-warns-of-a-massive-48-foot-house-sized-asteroid-moving-towards-earth-at-high-speed-today.html
+Allow: /news/india-announces-breakthroughs-in-diagnosing-tuberculosis-and-sickle-cell-anaemia-patients.html
+Allow: /news/world-osteoporosis-day-2024-everyday-habits-that-can-weaken-your-bone-health-expert-tips-for-stronger-bones.html
 Allow: /news/gold-at-record-high-as-middle-east-tensions-spark-haven-demand.html
 Allow: /news/bengaluru-man-wife-and-her-lover-dead-in-shocking-double-murder-suicide-case-report.html
 Allow: /news/iran-used-secret-weapon-deadlier-than-nukes-on-arab-nation-irgc-general-amid-fears-of-israel-attack.html
