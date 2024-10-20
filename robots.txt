@@ -513,6 +513,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-selfish-elephant.html
 Allow: /quick-read/the-fox-and-the-stork.html
 Allow: /quick-read/the-town-mouse-and-the-country-mouse.html
 Allow: /quick-read/the-magic-fountain.html
