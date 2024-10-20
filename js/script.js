@@ -1376,9 +1376,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // Get the text content from the div
     const contentDiv = document.getElementById('read-article-content');
-    const textContent = contentDiv.textContent || contentDiv.innerText;
-    // Calculate and display the reading time
-    const readingTime = calculateReadingTime(textContent);
-    const readingTimeDiv = document.getElementById('reading-time');
-    readingTimeDiv.textContent = `${readingTime} min${readingTime > 1 ? 's' : ''}`;
+    if (contentDiv) {
+        const textContent = contentDiv.textContent || contentDiv.innerText;
+        // Calculate and display the reading time
+        const readingTime = calculateReadingTime(textContent);
+        const readingTimeDiv = document.getElementById('reading-time');
+        readingTimeDiv.textContent = `${readingTime} min${readingTime > 1 ? 's' : ''}`;
+    }
 });
