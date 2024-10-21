@@ -12,16 +12,17 @@ p {
     margin-top: 6px;
 }
 .navbar .navbar-top .logo {
-    background-color: black;
-    color: white;
-    padding: 8px 12px;
-    font-size: 24px;
-    border-radius: 4px;
+    /* background-color: black; */
+    /* color: white; */
+    /* padding: 8px 12px; */
+    /* font-size: 24px; */
+    /* border-radius: 4px; */
     font-weight: 600;
 }
 .navbar .navbar-top .logo .primary,
 .navbar .navbar-top .logo .secondary {
-    color: #fff;
+    color: #000;
+    
 }
 .navbar .navbar-top .logo .secondary {
     font-size: 14px;
@@ -30,6 +31,9 @@ p {
 .navbar .navbar-top .logo .primary:hover,
 .navbar .navbar-top .logo .secondary:hover {
     text-decoration: unset;
+}
+.navbar .navbar-top .width-40 {
+    width: 30px;
 }
 .navbar .navbar-bottom-menu {
     border: unset;
@@ -378,10 +382,16 @@ a.ss-btn.ss-btn-pocket {
     .navbar .navbar-top .logo {
         background: unset;
         padding: unset;
+        display: block;
+        font-size: 24px;
+        margin: 15px auto;
     }
     .navbar .navbar-top .logo .primary,
     .navbar .navbar-top .logo .secondary {
         color: rgba(0, 0, 0, 0.9);
+    }
+    .navbar .navbar-top .width-40 {
+        width: 40px;
     }
     .navbar .navbar-bottom-menu {
         border-top: 1px solid #dbdbdb;
