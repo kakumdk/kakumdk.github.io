@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Basics of Database Design: Normalization, Relationships, and ER Diagrams</title>
+			<link>https://peoplesblog.co.in/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html</link>
+			<description>Database design is a critical phase in creating a robust, scalable, and efficient database system. It involves structuring data in a way that ensures it can be stored, retrieved, and managed effectively. Some key concepts fundamental to database design are Normalization, Relationships, and Entity-Relationship (ER) Diagrams.  Let&amp;#39;s explore these concepts in detail.  1. Normalization  Normalizat</description>
+			<pubDate>Mon, 21 Oct 2024 12:26:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html</guid>
+    </item><item>
 			<title>Barometer, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/barometer-science-experiment-for-children.html</link>
 			<description>Creating a homemade barometer is a great science experiment for children to understand how atmospheric pressure is measured and how it changes with weather conditions. A barometer measures air pressure, which can indicate weather changes such as approaching storms or fair weather.  Here&amp;rsquo;s a simple guide to building a basic barometer using easily available materials:  Materials Needed:   Glas</description>
@@ -348,13 +355,6 @@
 			<pubDate>Fri, 08 Sep 2023 09:15:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/unable-to-install-update-manager-update-settings-already-exists-in-active-configuration.html</guid>
-    </item><item>
-			<title>What is a Customer Data Platform and which one is best for your Business?</title>
-			<link>https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</link>
-			<description>Customer Data Platform (CDP) is a sophisticated software system that aggregates and manages customer data across various touchpoints and channels. Its primary purpose is to create a unified and comprehensive view of individual customers or segments of customers. This centralized data is then made accessible to other systems and tools for marketing, analytics, and customer engagement.  Key features</description>
-			<pubDate>Thu, 07 Sep 2023 11:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/what-is-a-customer-data-platform-and-which-one-is-best-for-your-business.html</guid>
     </item>
 </channel>
 </rss>
