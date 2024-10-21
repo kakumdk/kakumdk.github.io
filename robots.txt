@@ -1260,6 +1260,9 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/prabhas-the-raja-saab-new-poster-unveiled-ahead-of-his-birthday-royal-retreat-awaits.html
+Allow: /news/australian-senator-thorpe-faces-flak-for-showing-utter-disrespect-to-king-charles-amid-cancer-treatment-disgusting.html
+Allow: /news/exact-a-price-lieutenant-governor-manoj-sinha-vows-revenge-for-kashmir-terror-attack.html
 Allow: /news/cyclone-dana-expected-to-form-over-bay-of-bengal-by-oct-23-imd.html
 Allow: /news/nasa-warns-of-a-massive-48-foot-house-sized-asteroid-moving-towards-earth-at-high-speed-today.html
 Allow: /news/india-announces-breakthroughs-in-diagnosing-tuberculosis-and-sickle-cell-anaemia-patients.html
