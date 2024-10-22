@@ -1266,6 +1266,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/12-trapped-after-building-collapses-in-bengaluru-rescue-operations-underway.html
 Allow: /news/bengaluru-rain-havoc-14-flights-delayed-1-diverted-yelahanka-among-worst-hit-areas.html
 Allow: /news/chinas-first-reaction-to-standoff-with-india-reached-a-resolution.html
 Allow: /news/prabhas-the-raja-saab-new-poster-unveiled-ahead-of-his-birthday-royal-retreat-awaits.html
