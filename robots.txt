@@ -1862,6 +1862,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/how-to-prevent-tooth-decay-in-children.html
 Allow: /articles/the-importance-of-early-orthodontic-evaluation.html
 Allow: /articles/tips-for-choosing-a-pediatric-dentist.html
 Allow: /articles/understanding-the-different-types-of-braces.html
