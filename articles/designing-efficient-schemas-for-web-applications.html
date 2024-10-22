@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Designing Efficient Schemas for Web Applications</title>
+    <meta name="description" content="The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html" />
+    <meta property="og:title" content="Designing Efficient Schemas for Web Applications" />
+    <meta property="og:description" content="The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/designing-efficient-schemas-for-web-applications.jpeg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Designing Efficient Schemas for Web Applications" />
+    <meta name="twitter:description" content="The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/designing-efficient-schemas-for-web-applications.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/designing-efficient-schemas-for-web-applications.html"
+        },
+        "headline": "Designing Efficient Schemas for Web Applications",
+        "description": "The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc",
+        "image": "https://peoplesblog.co.in/upload/banners/designing-efficient-schemas-for-web-applications.jpeg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "22nd Oct 2024",
+        "dateModified": "2024-10-22T08:09:19+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Designing Efficient Schemas for Web Applications</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Designing Efficient Schemas for Web Applications" data-src="/upload/banners/designing-efficient-schemas-for-web-applications.jpeg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Designing Efficient Schemas for Web Applications" />
+                                </div>
+                                <h1 class="read-article-title">Designing Efficient Schemas for Web Applications</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>22nd Oct 2024</span>, <span class="last-updated">2024-10-22T08:09:19+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>The design of an efficient database schema is crucial for the <a href='/articles/how-to-improve-drupal-website-performance.html'>performance</a>, scalability, and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly, and grow with the increasing needs of your users.</p>  <p>This article explores best practices for designing efficient schemas, focusing on the balance between simplicity, <a href='/articles/read-data-to-paragraph-template-in-drupal-application.html'>performance</a>, and scalability. Here&rsquo;s a structured approach to schema design, focusing on best practices and considerations:</p>  <h2>1. Understand Application Requirements</h2>  <p>Before designing your schema, gather and analyze the requirements of your web application:</p>  <ul> <li><strong>Identify Entities</strong>: Determine the key entities (e.g., users, products, orders).</li> <li><strong>Define Relationships</strong>: Establish how these entities interact with each other.</li> <li><strong>Determine Access Patterns</strong>: Understand how users will interact with the data (e.g., frequent reads, writes, updates).</li> </ul>  <h2>2. Normalize Data</h2>  <p>Use normalization principles to reduce redundancy and dependency. Aim for at least 3NF:</p>  <ul> <li><strong>1NF</strong>: Ensure that each column contains atomic values.</li> <li><strong>2NF</strong>: Eliminate partial dependencies on composite keys.</li> <li><strong>3NF</strong>: Remove transitive dependencies.</li> </ul>  <h2>3. Denormalization When Necessary</h2>  <p>In some cases, especially for read-heavy applications, you may want to denormalize:</p>  <ul> <li><strong>Performance Optimization</strong>: Denormalization can reduce the number of joins needed for queries, improving <a href='/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html'>performance</a>.</li> <li><strong>Use Cases</strong>: Consider denormalization for reporting tables or when aggregating data frequently.</li> </ul>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>4. Choose the Right Data Types</h2>  <p>Select appropriate data types for each attribute:</p>  <ul> <li><strong>Efficiency</strong>: Use the smallest data type that meets your needs (e.g., INT instead of BIGINT).</li> <li><strong>Clarity</strong>: Choose data types that accurately reflect the nature of the data (e.g., DATE for dates).</li> </ul>  <h2>5. Indexing Strategies</h2>  <p>Implement indexing to speed up data retrieval:</p>  <ul> <li><strong>Primary Keys</strong>: Automatically indexed, ensure they are unique.</li> <li><strong>Foreign Keys</strong>: Index foreign keys to improve join <a href='/articles/drupal-cache-clear-and-cache-rebuild.html'>performance</a>.</li> <li><strong>Common Queries</strong>: Analyze common queries and create indexes based on frequently accessed columns.</li> </ul>  <h2>6. Consider Scalability</h2>  <p>Design your schema with scalability in mind:</p>  <ul> <li><strong>Sharding</strong>: Plan for sharding if you anticipate high data volumes.</li> <li><strong>Partitioning</strong>: Use table partitioning for large datasets to improve <a href='/articles/aegir-docker-develop-test-easier-deployment.html'>performance</a> and management.</li> </ul>  <h2>7. Use Appropriate Relationships</h2>  <p>Choose the right type of relationships based on your data model:</p>  <ul> <li><strong>One-to-One (1:1)</strong>: Use for unique relationships (e.g., user profiles).</li> <li><strong>One-to-Many (1)</strong>: Common for relationships like users to orders.</li> <li><strong>Many-to-Many (M)</strong>: Implement with join tables for relationships like students and courses.</li> </ul>  <h2>8. Ensure Data Integrity</h2>  <p>Implement constraints to maintain data integrity:</p>  <ul> <li><strong>Foreign Key Constraints</strong>: Ensure relationships remain valid.</li> <li><strong>Unique Constraints</strong>: Prevent duplicate entries where necessary.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>9. Document Your Schema</h2>  <p>Maintain documentation of your schema design:</p>  <ul> <li><strong>Entity-Relationship Diagrams (ERDs)</strong>: Visualize relationships.</li> <li><strong>Schema Definitions</strong>: Clearly describe each table and its purpose.</li> </ul>  <h2>10. Monitor and Optimize</h2>  <p>Once your schema is in use:</p>  <ul> <li><strong>Performance Monitoring</strong>: Regularly monitor query <a href='/articles/drupal-simple-test-case-custom-module.html'>performance</a> and database load.</li> <li><strong>Refactor</strong>: Be prepared to adjust your schema based on <a href='/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html'>performance</a> data and changing application requirements.</li> </ul>  <h2>Example Schema Design</h2>  <p>Here&rsquo;s the complex e-commerce schema design laid out in a table format for each entity and their relationships.</p>  <table> <thead> <tr> <th><strong>Entity</strong></th> <th><strong>Primary Key</strong></th> <th><strong>Columns</strong></th> <th><strong>Relationships</strong></th> </tr> </thead> <tbody> <tr> <td><strong>Users</strong></td> <td><code>user_id</code></td> <td><code>username</code>, <code>email</code>, <code>password_hash</code>, <code>role (customer/admin)</code>, <code>created_at</code></td> <td>One-to-Many: A user can have multiple orders.</td> </tr> <tr> <td><strong>Products</strong></td> <td><code>product_id</code></td> <td><code>product_name</code>, <code>description</code>, <code>price</code>, <code>category_id</code>, <code>stock_quantity</code>, <code>created_at</code></td> <td>One-to-Many: A product can belong to only one category but can be part of many orders and have many reviews.</td> </tr> <tr> <td><strong>Categories</strong></td> <td><code>category_id</code></td> <td><code>category_name</code>, <code>parent_category_id</code></td> <td>One-to-Many: A category can have multiple products.</td> </tr> <tr> <td><strong>Orders</strong></td> <td><code>order_id</code></td> <td><code>user_id (FK from Users)</code>, <code>order_status</code>, <code>order_date</code>, <code>total_price</code></td> <td>One-to-Many: Each order belongs to a user. Many-to-Many: Orders can contain multiple products (via Order_Items table).</td> </tr> <tr> <td><strong>Order_Items</strong></td> <td><code>order_item_id</code></td> <td><code>order_id (FK from Orders)</code>, <code>product_id (FK from Products)</code>, <code>quantity</code>, <code>unit_price</code></td> <td>Many-to-Many: This is the join table between Orders and Products.</td> </tr> <tr> <td><strong>Reviews</strong></td> <td><code>review_id</code></td> <td><code>user_id (FK from Users)</code>, <code>product_id (FK from Products)</code>, <code>rating</code>, <code>review_text</code>, <code>created_at</code></td> <td>One-to-Many: Each user can review multiple products and each product can have multiple reviews.</td> </tr> <tr> <td><strong>Inventory</strong></td> <td><code>inventory_id</code></td> <td><code>product_id (FK from Products)</code>, <code>warehouse_location</code>, <code>quantity_available</code>, <code>last_updated</code></td> <td>One-to-One: Manages stock for individual products.</td> </tr> </tbody> </table>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>Schema Relationships</strong>:</p>  <ul> <li><strong>One-to-Many</strong>:  <ul> <li><strong>Users &rarr; Orders</strong>: A user can place many orders, but each order is associated with only one user.</li> <li><strong>Products &rarr; Reviews</strong>: A product can have multiple reviews, and a user can write multiple reviews for different products.</li> <li><strong>Categories &rarr; Products</strong>: Each category can have many products, but a product can belong to only one category.</li> </ul> </li> <li><strong>Many-to-Many</strong>: <ul> <li><strong>Orders &harr; Products</strong>: Many products can be part of many orders. This relationship is resolved via the <code>Order_Items</code> join table.</li> </ul> </li> <li><strong>One-to-One</strong>: <ul> <li><strong>Products &rarr; Inventory</strong>: Each product has one corresponding inventory record that tracks its stock level and warehouse details.</li> </ul> </li> </ul>  <p><strong>Key Considerations</strong>:</p>  <ul> <li><strong>Primary Keys (PK)</strong>: Each table has a unique identifier such as <code>user_id</code>, <code>product_id</code>, and <code>order_id</code>.</li> <li><strong>Foreign Keys (FK)</strong>: These are used to connect relationships between tables, such as <code>user_id</code> in the Orders table referencing the Users table.</li> <li><strong>Indexes</strong>: Indexing <code>email</code> for Users or <code>order_id + product_id</code> in the Order_Items table can help speed up queries in a large database.</li> </ul>  <p>This schema design captures the relationships and dependencies within an e-commerce platform while ensuring scalability, normalization, and data integrity.</p>  <h2>Conclusion</h2>  <p>Designing efficient schemas involves understanding your application&#39;s needs, applying normalization principles, and considering <a href='/articles/create-related-content-different-content-types-through-taxonomy-drupal.html'>performance</a> and scalability. Keep monitoring and iterating on your design to adapt to evolving requirements.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sql.html">SQL</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">10% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01CCGW4OE.html" title="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5"><img data-src="https://m.media-amazon.com/images/I/51O+J5jnXcL._SX679_.jpg" class="img-fluid lazy" alt="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5" title="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01CCGW4OE.html" title="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5" class="shop-title-value">Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>359</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>399</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">25% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C8NW342B.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)"><img data-src="https://m.media-amazon.com/images/I/71-oDkPIB8L._SX679_.jpg" class="img-fluid lazy" alt="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C8NW342B.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)" class="shop-title-value">LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>37,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>50,799</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09XTQFFCG.html" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black"><img data-src="https://m.media-amazon.com/images/I/71+BHZtdFaL._SX679_.jpg" class="img-fluid lazy" alt="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09XTQFFCG.html" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" class="shop-title-value">FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,329</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,199</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" title="Basics of Database Design: Normalization, Relationships, and ER Diagrams">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/basics-of-database-design-normalization-relationships-and-er-diagrams.jpg" alt="Basics of Database Design: Normalization, Relationships, and ER Diagrams" title="Basics of Database Design: Normalization, Relationships, and ER Diagrams" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" title="Basics of Database Design: Normalization, Relationships, and ER Diagrams">
+                                <span class="title">Basics of Database Design: Normalization, Relationships, and ER Diagrams</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/understanding-the-solid-principles-in-php.html">
+                  Understanding the SOLID Principles in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-php--and-key-differences-from-php-.html">
+                  Introduction to PHP 8 and Key Differences from PHP 7
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html">
+                  How to run PHPUnit test cases on your local machine for Drupal
+                </a>
+              </div><div class="article">
+                <a href="/articles/usage-of-local-php-security-checker-for-drupal-applications.html">
+                  Usage of Local Php Security Checker for Drupal Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html">
+                  Usage of PhpStan on Github via Pull Request for Drupal Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-work-with-twig-templates-in-drupal.html">
+                  How to work with Twig Templates in Drupal?
+                </a>
+              </div><div class="article">
+                <a href="/articles/quick-reference-of-code-reviews-for-drupal-application.html">
+                  Quick reference of Code Reviews for Drupal Application
+                </a>
+              </div><div class="article">
+                <a href="/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html">
+                  Usage of PHPCS on Github via Pull Request for Drupal Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/what-drupal-offers-as-responsive-web-design-within-core.html">
+                  What Drupal offers as Responsive Web Design within Core
+                </a>
+              </div><div class="article">
+                <a href="/articles/know-why-symfony-framework-was-picked-by-drupal.html">
+                  Know why Symfony framework was picked by Drupal
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">49% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0756K5DYZ.html" title="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)"><img data-src="https://m.media-amazon.com/images/I/81+M1QrVNIL._SX679_.jpg" class="img-fluid lazy" alt="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)" title="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0756K5DYZ.html" title="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)" class="shop-title-value">Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,295</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/introduction-to-php--and-key-differences-from-php-.html">
+            Introduction to PHP 8 and Key Differences from PHP 7
+          </a>
+        </div><div class="article">
+          <a href="/articles/anemometer-science-experiment-for-children.html">
+            Anemometer, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/vedic-hymns-and-their-significance.html">
+            Vedic Hymns and their Significance
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-mango-pickle.html">
+            How to prepare Mango Pickle?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-is-the-most-romantic-thing-someone-can-do.html">
+            What is the most romantic thing someone can do?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-can-i-meet-new-people-when-traveling-alone.html">
+            How can I meet new people when traveling alone?
+          </a>
+        </div><div class="article">
+          <a href="/articles/rainforest-in-a-jar-science-experiment-for-children.html">
+            Rainforest in a Jar, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-role-of-vedas-in-hindu-philosophy.html">
+            The Role of Vedas in Hindu Philosophy
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-moong-dal-khichdi.html">
+            How to prepare Moong Dal Khichdi
+          </a>
+        </div><div class="article">
+          <a href="/articles/why-don-t-introverts-fall-in-love-easily.html">
+            Why don't introverts fall in love easily?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">79% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07P99Q8ZM.html" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023"><img data-src="https://m.media-amazon.com/images/I/71mdO-ohDmL._SX679_.jpg" class="img-fluid lazy" alt="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07P99Q8ZM.html" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" class="shop-title-value">Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,300</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>10,996</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+            Designing Efficient Schemas for Web Applications
+          </a>
+        </div><div class="article">
+          <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
+            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+          </a>
+        </div><div class="article">
+          <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
+            Vedic Rituals and Sacrifices: An Overview
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-long-does-nicotine-stay-in-your-system.html">
+            How long does nicotine stay in your system?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-stuffed-bell-peppers.html">
+            How to prepare Stuffed Bell Peppers?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-is-the-most-minimalistic-way-to-live-one-s-life.html">
+            What is the most minimalistic way to live one's life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/barometer-science-experiment-for-children.html">
+            Barometer, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-concept-of-dharma-in-the-vedas.html">
+            The Concept of Dharma in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-paneer-tikka.html">
+            How to prepare Paneer Tikka?
+          </a>
+        </div><div class="article">
+          <a href="/articles/why-is-living-a-healthy-lifestyle-important.html">
+            Why is living a healthy lifestyle important?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">11% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D7M8LG8S.html" title="Lava Blaze X 5G - Starlight Purple (8GB RAM | 128GB Storage) - Segment First 5G Curved AMOLED Display* | 64MP Sony Sensor Camera | Upto 16GB Expandable RAM | Latest MediaTek 5G Processor"><img data-src="https://m.media-amazon.com/images/I/61lhB3uQT3L._SX679_.jpg" class="img-fluid lazy" alt="Lava Blaze X 5G - Starlight Purple (8GB RAM | 128GB Storage) - Segment First 5G Curved AMOLED Display* | 64MP Sony Sensor Camera | Upto 16GB Expandable RAM | Latest MediaTek 5G Processor" title="Lava Blaze X 5G - Starlight Purple (8GB RAM | 128GB Storage) - Segment First 5G Curved AMOLED Display* | 64MP Sony Sensor Camera | Upto 16GB Expandable RAM | Latest MediaTek 5G Processor" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D7M8LG8S.html" title="Lava Blaze X 5G - Starlight Purple (8GB RAM | 128GB Storage) - Segment First 5G Curved AMOLED Display* | 64MP Sony Sensor Camera | Upto 16GB Expandable RAM | Latest MediaTek 5G Processor" class="shop-title-value">Lava Blaze X 5G - Starlight Purple (8GB RAM | 128GB Storage) - Segment First 5G Curved AMOLED Display* | 64MP Sony Sensor Camera | Upto 16GB Expandable RAM | Latest MediaTek 5G Processor</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>16,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>18,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-frog-and-the-scorpion.html">
+            The Frog and the Scorpion
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-red-shoes.html">
+            The Red Shoes
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-parrot.html">
+            The Wise Parrot
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-boy-and-the-magic-lamp.html">
+            The Boy and the Magic Lamp
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CGVBWMK1.html" title="MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick Coating Grill Plates | Power Indicators | 1 Year Warranty | Black"><img data-src="https://m.media-amazon.com/images/I/81uisCTEWSL._SX679_.jpg" class="img-fluid lazy" alt="MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick Coating Grill Plates | Power Indicators | 1 Year Warranty | Black" title="MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick Coating Grill Plates | Power Indicators | 1 Year Warranty | Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CGVBWMK1.html" title="MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick Coating Grill Plates | Power Indicators | 1 Year Warranty | Black" class="shop-title-value">MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick Coating Grill Plates | Power Indicators | 1 Year Warranty | Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/firaq-gorakhpuri.html">
+            Firaq Gorakhpuri
+          </a>
+        </div><div class="article">
+          <a href="/great-people/hrishikesh-mukherjee.html">
+            Hrishikesh Mukherjee
+          </a>
+        </div><div class="article">
+          <a href="/great-people/the-great-khali.html">
+            The Great Khali
+          </a>
+        </div><div class="article">
+          <a href="/great-people/sri-chinmoy.html">
+            Sri Chinmoy
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jaswant-singh-neki.html">
+            Jaswant Singh Neki
+          </a>
+        </div><div class="article">
+          <a href="/great-people/tanguturi-prakasam.html">
+            Tanguturi Prakasam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/anjali-devi.html">
+            Anjali Devi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/shivaram-rajguru.html">
+            Shivaram Rajguru
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07P5TXSWJ.html" title="Amazon Brand - Solimo Stainless Steel Saucepan with Glass Lid, Induction Base (16 cm, 1500 milliliters)"><img data-src="https://m.media-amazon.com/images/I/71GwqH3q7yL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Stainless Steel Saucepan with Glass Lid, Induction Base (16 cm, 1500 milliliters)" title="Amazon Brand - Solimo Stainless Steel Saucepan with Glass Lid, Induction Base (16 cm, 1500 milliliters)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07P5TXSWJ.html" title="Amazon Brand - Solimo Stainless Steel Saucepan with Glass Lid, Induction Base (16 cm, 1500 milliliters)" class="shop-title-value">Amazon Brand - Solimo Stainless Steel Saucepan with Glass Lid, Induction Base (16 cm, 1500 milliliters)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>459</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,100</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">31% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08LDMZDKN.html" title="TopTorch Portable Can 225Gm Refillable Fuel Butane Gas Canister Suitable For Lighter Gas, Small Stove, Flame Torch, Welding Fuel, Soldering Gun, Food Baking, Burner Gas (Safety Release Device)"><img data-src="https://m.media-amazon.com/images/I/61aiQ2mTTQL._SX385_.jpg" class="img-fluid lazy" alt="TopTorch Portable Can 225Gm Refillable Fuel Butane Gas Canister Suitable For Lighter Gas, Small Stove, Flame Torch, Welding Fuel, Soldering Gun, Food Baking, Burner Gas (Safety Release Device)" title="TopTorch Portable Can 225Gm Refillable Fuel Butane Gas Canister Suitable For Lighter Gas, Small Stove, Flame Torch, Welding Fuel, Soldering Gun, Food Baking, Burner Gas (Safety Release Device)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08LDMZDKN.html" title="TopTorch Portable Can 225Gm Refillable Fuel Butane Gas Canister Suitable For Lighter Gas, Small Stove, Flame Torch, Welding Fuel, Soldering Gun, Food Baking, Burner Gas (Safety Release Device)" class="shop-title-value">TopTorch Portable Can 225Gm Refillable Fuel Butane Gas Canister Suitable For Lighter Gas, Small Stove, Flame Torch, Welding Fuel, Soldering Gun, Food Baking, Burner Gas (Safety Release Device)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>481</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>700</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C3MHB63Q.html" title="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)"><img data-src="https://m.media-amazon.com/images/I/61zByLjZFnL._SY879_.jpg" class="img-fluid lazy" alt="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)" title="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C3MHB63Q.html" title="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)" class="shop-title-value">Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>13,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>17,600</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">57% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00W56GLOQ.html" title="Wonderchef Nutri-blend Mixer, Grinder &amp; Blender | Powerful 400W 22000 RPM motor | Stainless steel Blades | 2 unbreakable jars | 2 Years warranty | Online recipe book by Chef Sanjeev Kapoor | Black"><img data-src="https://m.media-amazon.com/images/I/61626Ya4tJL._SX679_.jpg" class="img-fluid lazy" alt="Wonderchef Nutri-blend Mixer, Grinder &amp; Blender | Powerful 400W 22000 RPM motor | Stainless steel Blades | 2 unbreakable jars | 2 Years warranty | Online recipe book by Chef Sanjeev Kapoor | Black" title="Wonderchef Nutri-blend Mixer, Grinder &amp; Blender | Powerful 400W 22000 RPM motor | Stainless steel Blades | 2 unbreakable jars | 2 Years warranty | Online recipe book by Chef Sanjeev Kapoor | Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00W56GLOQ.html" title="Wonderchef Nutri-blend Mixer, Grinder &amp; Blender | Powerful 400W 22000 RPM motor | Stainless steel Blades | 2 unbreakable jars | 2 Years warranty | Online recipe book by Chef Sanjeev Kapoor | Black" class="shop-title-value">Wonderchef Nutri-blend Mixer, Grinder &amp; Blender | Powerful 400W 22000 RPM motor | Stainless steel Blades | 2 unbreakable jars | 2 Years warranty | Online recipe book by Chef Sanjeev Kapoor | Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,300</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">22% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CHM729GT.html" title="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM"><img data-src="https://m.media-amazon.com/images/I/71uOoXevxwL._SX679_.jpg" class="img-fluid lazy" alt="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM" title="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CHM729GT.html" title="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM" class="shop-title-value">Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>12,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>15,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a title="Quotes" href="/quotes/index.html">Quotes</a></li>
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/sql.html" title="SQL" aria-label="SQL">SQL</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

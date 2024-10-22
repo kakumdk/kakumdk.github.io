@@ -1358,6 +1358,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     line-height: 1.75;
     overflow: hidden;
     border-radius: 5px;
+    overflow-x: auto;
 }
 .blog-content.read-article-content p::first-letter {
     /* text-transform: capitalize */
@@ -1376,6 +1377,21 @@ body .quotes-browse .tag-quotes-section a:hover {
 .shop-details .summary ul,
 .shop-details .summary ol {
     padding-inline-start: 20px;
+}
+.blog-content.read-article-content table {
+    background-color: #ffffff;
+}
+.blog-content.read-article-content table th,
+.blog-content.read-article-content table td {
+    border: 1px solid #e6ebed77;
+    padding: 4px 2px;
+    text-align: center;
+}
+.blog-content.read-article-content table th {
+    background-color: #f9f9f9;
+}
+.blog-content.read-article-content table td {
+    font-size: 16px;
 }
 .blog-title-area.tag {
     margin: 30px auto;
@@ -3051,6 +3067,16 @@ button#play-truth-dare-next {
     .shop-details .summary ul,
     .shop-details .summary ol {
         padding-inline-start: 30px;
+    }
+    .blog-content.read-article-content table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .blog-content.read-article-content table th,
+    .blog-content.read-article-content table td {
+        padding: 8px 12px;
+        border: 1px solid #e7ebed;
+        text-align: left;
     }
 
 }
