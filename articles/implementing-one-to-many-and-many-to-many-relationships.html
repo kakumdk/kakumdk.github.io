@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Implementing One-to-Many and Many-to-Many Relationships</title>
+    <meta name="description" content="Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.  Here&rsquo;s a detai" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/implementing-one-to-many-and-many-to-many-relationships.html" />
+    <meta property="og:title" content="Implementing One-to-Many and Many-to-Many Relationships" />
+    <meta property="og:description" content="Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.  Here&rsquo;s a detai" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/implementing-one-to-many-and-many-to-many-relationships.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/implementing-one-to-many-and-many-to-many-relationships.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Implementing One-to-Many and Many-to-Many Relationships" />
+    <meta name="twitter:description" content="Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.  Here&rsquo;s a detai" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/implementing-one-to-many-and-many-to-many-relationships.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/implementing-one-to-many-and-many-to-many-relationships.html"
+        },
+        "headline": "Implementing One-to-Many and Many-to-Many Relationships",
+        "description": "Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.  Here&rsquo;s a detai",
+        "image": "https://peoplesblog.co.in/upload/banners/implementing-one-to-many-and-many-to-many-relationships.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "22nd Oct 2024",
+        "dateModified": "2024-10-22T18:46:08+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/sql.html">SQL</a></li>
+                                    <li class="breadcrumb-item active">Implementing One-to-Many and Many-to-Many Relationships</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Implementing One-to-Many and Many-to-Many Relationships" data-src="/upload/banners/implementing-one-to-many-and-many-to-many-relationships.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Implementing One-to-Many and Many-to-Many Relationships" />
+                                </div>
+                                <h1 class="read-article-title">Implementing One-to-Many and Many-to-Many Relationships</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>22nd Oct 2024</span>, <span class="last-updated">2024-10-22T18:46:08+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.</p>  <p>Here&rsquo;s a detailed look at how to set up these relationships in a relational database.</p>  <h2>One-to-Many Relationship</h2>  <p>A one-to-many relationship occurs when a single record in one table can relate to multiple records in another table.</p>  <p><strong>Example Scenario</strong>: Consider a Users table and an Orders table:</p>  <ul> <li>Each user can place multiple orders, but each order is associated with only one user.</li> </ul>  <p><strong>Table Design</strong></p>  <ol> <li><em><strong>Users</strong></em> Table  <ul> <li>UserID (Primary Key)</li> <li>Name</li> <li>Email</li> </ul> </li> <li><em><strong>Orders</strong></em> Table <ul> <li>OrderID (Primary Key)</li> <li>UserID (Foreign Key referencing Users.UserID)</li> <li>OrderDate</li> <li>TotalAmount</li> </ul> </li> </ol>  <p><strong>SQL Implementation</strong></p>  <p><code>CREATE TABLE Users (</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;UserID INT PRIMARY KEY,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;Name VARCHAR(100),</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;Email VARCHAR(100)</code></p>  <p><code>);</code></p>  <p><code>CREATE TABLE Orders (</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;OrderID INT PRIMARY KEY,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;UserID INT,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;OrderDate DATETIME,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;TotalAmount DECIMAL(10, 2),</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;FOREIGN KEY (UserID) REFERENCES Users(UserID)</code></p>  <p><code>);</code></p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>Many-to-Many Relationship</h2>  <p>A many-to-many relationship occurs when multiple records in one table can relate to multiple records in another table. This typically requires a junction (or join) table to manage the associations.</p>  <p><strong>Example Scenario</strong>: Consider a Students table and a Courses table:</p>  <ul> <li>Each student can enroll in multiple courses, and each course can have multiple students.</li> </ul>  <p><strong>Table Design</strong></p>  <ol> <li><em><strong>Students</strong></em> Table  <ul> <li>StudentID (Primary Key)</li> <li>Name</li> </ul> </li> <li><em><strong>Courses</strong></em> Table <ul> <li>CourseID (Primary Key)</li> <li>CourseName</li> </ul> </li> <li><em><strong>Enrollments</strong></em> Table (Junction Table) <ul> <li>EnrollmentID (Primary Key)</li> <li>StudentID (Foreign Key referencing Students.StudentID)</li> <li>CourseID (Foreign Key referencing Courses.CourseID)</li> </ul> </li> </ol>  <p><strong>SQL Implementation</strong></p>  <p><code>CREATE TABLE Students (</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;StudentID INT PRIMARY KEY,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;Name VARCHAR(100)</code></p>  <p><code>);</code></p>  <p><code>CREATE TABLE Courses (</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;CourseID INT PRIMARY KEY,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;CourseName VARCHAR(100)</code></p>  <p><code>);</code></p>  <p><code>CREATE TABLE Enrollments (</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;EnrollmentID INT PRIMARY KEY,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;StudentID INT,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;CourseID INT,</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;FOREIGN KEY (StudentID) REFERENCES Students(StudentID),</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)</code></p>  <p><code>);</code></p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>Summary of Relationships</h2>  <ul> <li><strong>One-to-Many</strong>:  <ul> <li>One record in the parent table (e.g., Users) can relate to multiple records in the child table (e.g., Orders).</li> <li>Implemented using a foreign key in the child table.</li> </ul> </li> <li><strong>Many-to-Many</strong>: <ul> <li>Records in one table (e.g., Students) can relate to multiple records in another table (e.g., Courses) and vice versa.</li> <li>Implemented using a junction table (e.g., Enrollments) that contains foreign keys referencing both related tables.</li> </ul> </li> </ul>  <h2>Considerations</h2>  <ul> <li><strong>Referential Integrity</strong>: Always use foreign keys to maintain relationships and enforce data integrity.</li> <li><strong>Indexing</strong>: Consider indexing foreign key columns to optimize query performance, especially for large datasets.</li> <li><strong>Querying</strong>: Be mindful of the join operations you&rsquo;ll need to perform to retrieve related data. Understanding how to write SQL joins (INNER JOIN, LEFT JOIN) is crucial.</li> </ul>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/sql.html">SQL</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00EDJIWFY.html" title="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)"><img data-src="https://m.media-amazon.com/images/I/51c3j0ZcEaL._SX679_.jpg" class="img-fluid lazy" alt="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)" title="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00EDJIWFY.html" title="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)" class="shop-title-value">Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>4,399</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,995</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">60% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07DRNSZSZ.html" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers"><img data-src="https://m.media-amazon.com/images/I/719eUa7bSeL._SX385_.jpg" class="img-fluid lazy" alt="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07DRNSZSZ.html" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" class="shop-title-value">PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>755</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,899</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">16% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08SMWPSF8.html" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml"><img data-src="https://f.media-amazon.com/images/I/61SzOiLaXhL._SX522_.jpg" class="img-fluid lazy" alt="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08SMWPSF8.html" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" class="shop-title-value">L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,491</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,765</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/wind-vane-science-experiment-for-children.html" title="Wind Vane, science experiment for children">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/wind-vane-science-experiment-for-children.jpg" alt="Wind Vane, science experiment for children" title="Wind Vane, science experiment for children" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/wind-vane-science-experiment-for-children.html" title="Wind Vane, science experiment for children">
+                                <span class="title">Wind Vane, science experiment for children</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/wind-vane-science-experiment-for-children.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+                  Designing Efficient Schemas for Web Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
+                  Basics of Database Design: Normalization, Relationships, and ER Diagrams
+                </a>
+              </div><div class="article">
+                <a href="/articles/wind-vane-science-experiment-for-children.html">
+                  Wind Vane, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/barometer-science-experiment-for-children.html">
+                  Barometer, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-the-solid-principles-in-php.html">
+                  Understanding the SOLID Principles in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-php--and-key-differences-from-php-.html">
+                  Introduction to PHP 8 and Key Differences from PHP 7
+                </a>
+              </div><div class="article">
+                <a href="/articles/anemometer-science-experiment-for-children.html">
+                  Anemometer, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/rainforest-in-a-jar-science-experiment-for-children.html">
+                  Rainforest in a Jar, science experiment for children
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">9% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)"><img data-src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" class="shop-title-value">Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,31,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,44,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/why-is-living-a-healthy-lifestyle-important.html">
+            Why is living a healthy lifestyle important?
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-the-solid-principles-in-php.html">
+            Understanding the SOLID Principles in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-php--and-key-differences-from-php-.html">
+            Introduction to PHP 8 and Key Differences from PHP 7
+          </a>
+        </div><div class="article">
+          <a href="/articles/anemometer-science-experiment-for-children.html">
+            Anemometer, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/vedic-hymns-and-their-significance.html">
+            Vedic Hymns and their Significance
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-mango-pickle.html">
+            How to prepare Mango Pickle?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-is-the-most-romantic-thing-someone-can-do.html">
+            What is the most romantic thing someone can do?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-can-i-meet-new-people-when-traveling-alone.html">
+            How can I meet new people when traveling alone?
+          </a>
+        </div><div class="article">
+          <a href="/articles/rainforest-in-a-jar-science-experiment-for-children.html">
+            Rainforest in a Jar, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-role-of-vedas-in-hindu-philosophy.html">
+            The Role of Vedas in Hindu Philosophy
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07H7JB1RZ.html" title="Philips GC097/50 750-Watt Dry Iron (World no. 1 Ironing Brand), Light &amp; Easy to Use, Powerful 750 Watt Heat up with a comforable wide grip, Black Non Stick Soleplate (Peach)"><img data-src="https://m.media-amazon.com/images/I/61HbXGEnwSL._SX679_.jpg" class="img-fluid lazy" alt="Philips GC097/50 750-Watt Dry Iron (World no. 1 Ironing Brand), Light &amp; Easy to Use, Powerful 750 Watt Heat up with a comforable wide grip, Black Non Stick Soleplate (Peach)" title="Philips GC097/50 750-Watt Dry Iron (World no. 1 Ironing Brand), Light &amp; Easy to Use, Powerful 750 Watt Heat up with a comforable wide grip, Black Non Stick Soleplate (Peach)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07H7JB1RZ.html" title="Philips GC097/50 750-Watt Dry Iron (World no. 1 Ironing Brand), Light &amp; Easy to Use, Powerful 750 Watt Heat up with a comforable wide grip, Black Non Stick Soleplate (Peach)" class="shop-title-value">Philips GC097/50 750-Watt Dry Iron (World no. 1 Ironing Brand), Light &amp; Easy to Use, Powerful 750 Watt Heat up with a comforable wide grip, Black Non Stick Soleplate (Peach)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>598</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>895</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/implementing-one-to-many-and-many-to-many-relationships.html">
+            Implementing One-to-Many and Many-to-Many Relationships
+          </a>
+        </div><div class="article">
+          <a href="/articles/wind-vane-science-experiment-for-children.html">
+            Wind Vane, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+            Designing Efficient Schemas for Web Applications
+          </a>
+        </div><div class="article">
+          <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
+            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+          </a>
+        </div><div class="article">
+          <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
+            Vedic Rituals and Sacrifices: An Overview
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-long-does-nicotine-stay-in-your-system.html">
+            How long does nicotine stay in your system?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-stuffed-bell-peppers.html">
+            How to prepare Stuffed Bell Peppers?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-is-the-most-minimalistic-way-to-live-one-s-life.html">
+            What is the most minimalistic way to live one's life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/barometer-science-experiment-for-children.html">
+            Barometer, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-concept-of-dharma-in-the-vedas.html">
+            The Concept of Dharma in the Vedas
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">29% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01AUH8AWW.html" title="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue"><img data-src="https://m.media-amazon.com/images/I/81JcZIx4qJL._SX385_.jpg" class="img-fluid lazy" alt="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue" title="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01AUH8AWW.html" title="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue" class="shop-title-value">Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,638</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,310</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-frog-and-the-scorpion.html">
+            The Frog and the Scorpion
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-red-shoes.html">
+            The Red Shoes
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-parrot.html">
+            The Wise Parrot
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-boy-and-the-magic-lamp.html">
+            The Boy and the Magic Lamp
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">26% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMV4HY8Q.html" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)"><img data-src="https://m.media-amazon.com/images/I/41WaHNR5u+L.jpg" class="img-fluid lazy" alt="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMV4HY8Q.html" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" class="shop-title-value">Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>519</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>705</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/firaq-gorakhpuri.html">
+            Firaq Gorakhpuri
+          </a>
+        </div><div class="article">
+          <a href="/great-people/hrishikesh-mukherjee.html">
+            Hrishikesh Mukherjee
+          </a>
+        </div><div class="article">
+          <a href="/great-people/the-great-khali.html">
+            The Great Khali
+          </a>
+        </div><div class="article">
+          <a href="/great-people/sri-chinmoy.html">
+            Sri Chinmoy
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jaswant-singh-neki.html">
+            Jaswant Singh Neki
+          </a>
+        </div><div class="article">
+          <a href="/great-people/tanguturi-prakasam.html">
+            Tanguturi Prakasam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/anjali-devi.html">
+            Anjali Devi
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">32% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BTHLGYHZ.html" title="Haier 325 L, 3 Star, Convertible 14-in-1 Triple Inverter &amp; Fan Motor Technology, with Display Frost Free Double Door Bottom Mount Refrigerator (HEB-333DS-P, Dazzle Steel, 2024 Model)"><img data-src="https://f.media-amazon.com/images/I/614q1XtcLRL._SX679_.jpg" class="img-fluid lazy" alt="Haier 325 L, 3 Star, Convertible 14-in-1 Triple Inverter &amp; Fan Motor Technology, with Display Frost Free Double Door Bottom Mount Refrigerator (HEB-333DS-P, Dazzle Steel, 2024 Model)" title="Haier 325 L, 3 Star, Convertible 14-in-1 Triple Inverter &amp; Fan Motor Technology, with Display Frost Free Double Door Bottom Mount Refrigerator (HEB-333DS-P, Dazzle Steel, 2024 Model)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BTHLGYHZ.html" title="Haier 325 L, 3 Star, Convertible 14-in-1 Triple Inverter &amp; Fan Motor Technology, with Display Frost Free Double Door Bottom Mount Refrigerator (HEB-333DS-P, Dazzle Steel, 2024 Model)" class="shop-title-value">Haier 325 L, 3 Star, Convertible 14-in-1 Triple Inverter &amp; Fan Motor Technology, with Display Frost Free Double Door Bottom Mount Refrigerator (HEB-333DS-P, Dazzle Steel, 2024 Model)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>34,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>50,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BKW6ZYPL.html" title="Mega Clothing Stand | Stylish Garment Stand | Hanging Rack | Clothes Hanger for Balcony &amp; Bedroom | 2-Tier Folding Clothes Rail Clothes Horses Drying Rack (Royal Blue)"><img data-src="https://m.media-amazon.com/images/I/51iEvATbniL._SX385_.jpg" class="img-fluid lazy" alt="Mega Clothing Stand | Stylish Garment Stand | Hanging Rack | Clothes Hanger for Balcony &amp; Bedroom | 2-Tier Folding Clothes Rail Clothes Horses Drying Rack (Royal Blue)" title="Mega Clothing Stand | Stylish Garment Stand | Hanging Rack | Clothes Hanger for Balcony &amp; Bedroom | 2-Tier Folding Clothes Rail Clothes Horses Drying Rack (Royal Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BKW6ZYPL.html" title="Mega Clothing Stand | Stylish Garment Stand | Hanging Rack | Clothes Hanger for Balcony &amp; Bedroom | 2-Tier Folding Clothes Rail Clothes Horses Drying Rack (Royal Blue)" class="shop-title-value">Mega Clothing Stand | Stylish Garment Stand | Hanging Rack | Clothes Hanger for Balcony &amp; Bedroom | 2-Tier Folding Clothes Rail Clothes Horses Drying Rack (Royal Blue)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,273</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,500</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">10% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01CCGW4OE.html" title="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5"><img data-src="https://m.media-amazon.com/images/I/51O+J5jnXcL._SX679_.jpg" class="img-fluid lazy" alt="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5" title="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01CCGW4OE.html" title="Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5" class="shop-title-value">Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide, Vitamin B5</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>359</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>399</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BZY9L1LD.html" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey"><img data-src="https://m.media-amazon.com/images/I/61CclYg1tSL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BZY9L1LD.html" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" class="shop-title-value">Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>479</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,099</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">16% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0085KK9OY.html" title="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White"><img data-src="https://m.media-amazon.com/images/I/81DtYqUCUKL._SY879_.jpg" class="img-fluid lazy" alt="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White" title="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0085KK9OY.html" title="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White" class="shop-title-value">KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,849</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,400</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a title="Quotes" href="/quotes/index.html">Quotes</a></li>
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/sql.html" title="SQL" aria-label="SQL">SQL</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

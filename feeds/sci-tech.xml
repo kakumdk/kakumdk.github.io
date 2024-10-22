@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Implementing One-to-Many and Many-to-Many Relationships</title>
+			<link>https://peoplesblog.co.in/articles/implementing-one-to-many-and-many-to-many-relationships.html</link>
+			<description>Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.  Here&amp;rsquo;s a detailed look at how to set up these relationships in a relational database.  One-to-Many Relationship  A one-to-many relationship occurs when a single record in one table can relate to multiple records in another table.  Example Scenario: Consider a User</description>
+			<pubDate>Tue, 22 Oct 2024 18:46:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/implementing-one-to-many-and-many-to-many-relationships.html</guid>
+    </item><item>
 			<title>Wind Vane, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/wind-vane-science-experiment-for-children.html</link>
 			<description>Creating a simple wind vane is a fun and educational science experiment for children that helps them understand wind direction and meteorological concepts. A wind vane, or weather vane, indicates the direction from which the wind is blowing.  Here&amp;rsquo;s a step-by-step guide to building a basic wind vane using common materials:  Materials Needed:   Plastic Straw or Wooden Dowel: For the central a</description>
@@ -348,13 +355,6 @@
 			<pubDate>Sat, 04 Nov 2023 13:10:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-choose-solar-panels-which-are-more-efficient.html</guid>
-    </item><item>
-			<title>Technical information to know about the Solar energy setup for your home</title>
-			<link>https://peoplesblog.co.in/articles/technical-information-to-know-about-the-solar-energy-setup-for-your-home.html</link>
-			<description>Setting up a solar power system for your home is a sustainable and environmentally-friendly way to generate electricity  Here are some key technical details to understand when setting up a solar energy system for your home:   Solar Panels (Photovoltaic Modules):   Capacity (Wattage): The power output of each panel, typically ranging from 250 to 400 watts. Efficiency: The percentage of sunlight tha</description>
-			<pubDate>Mon, 23 Oct 2023 14:30:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/technical-information-to-know-about-the-solar-energy-setup-for-your-home.html</guid>
     </item>
 </channel>
 </rss>
