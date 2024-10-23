@@ -447,7 +447,7 @@ input#search-news {
         display: inline-block;
     }
     footer .footer-vertical-nav.bottom-footer li a {
-        margin: auto 5px;
+        margin: auto 15px;
         padding: unset;
         display: inline-block;
     }
