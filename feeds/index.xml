@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Writing Secure SQL Queries Using Prepared Statements</title>
+    <link>https://peoplesblog.co.in/articles/writing-secure-sql-queries-using-prepared-statements.html</link>
+    <description>Writing secure SQL queries is crucial to prevent vulnerabilities such as SQL injection. Using prepared statements is one of the best practices to ensure that your SQL queries are safe.  Here&amp;rsquo;s a guide on how to do this effectively.  What are Prepared Statements?  Prepared statements are a feature of many database management systems (DBMS) that allow you to define a SQL query template and the</description>
+    <pubDate>Wed, 23 Oct 2024 08:17:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/writing-secure-sql-queries-using-prepared-statements.html</guid>
+  </item><item>
     <title>Implementing One-to-Many and Many-to-Many Relationships</title>
     <link>https://peoplesblog.co.in/articles/implementing-one-to-many-and-many-to-many-relationships.html</link>
     <description>Implementing one-to-many and many-to-many relationships in a database is essential for accurately modeling real-world scenarios.  Here&amp;rsquo;s a detailed look at how to set up these relationships in a relational database.  One-to-Many Relationship  A one-to-many relationship occurs when a single record in one table can relate to multiple records in another table.  Example Scenario: Consider a User</description>
