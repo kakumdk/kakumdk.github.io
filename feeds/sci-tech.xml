@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Using Indexes to Speed Up SQL Queries</title>
+			<link>https://peoplesblog.co.in/articles/using-indexes-to-speed-up-sql-queries.html</link>
+			<description>Using indexes to speed up SQL queries is an essential technique in database optimization.  Here&amp;rsquo;s a concise guide on how to effectively use indexes:  What Are Indexes?  An index is a database object that improves the speed of data retrieval.  Think of it like an index in a book, which allows you to find information quickly without scanning every page.  Types of Indexes   Single-Column Index:</description>
+			<pubDate>Thu, 24 Oct 2024 09:05:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/using-indexes-to-speed-up-sql-queries.html</guid>
+    </item><item>
 			<title>SQL Transactions for Atomic Operations: Ensuring Data Integrity and Consistency</title>
 			<link>https://peoplesblog.co.in/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html</link>
 			<description>Implementing transactions for atomic operations is crucial in ensuring data integrity and consistency, especially in databases and concurrent applications.  Here&amp;rsquo;s a high-level overview of how to implement transactions, focusing on the key concepts and techniques involved.  Key Concepts   Atomicity: Ensures that a series of operations either complete entirely or have no effect at all. If any</description>
@@ -348,13 +355,6 @@
 			<pubDate>Fri, 17 Nov 2023 12:50:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-volcanic-eruption-with-baking-soda-and-vinegar.html</guid>
-    </item><item>
-			<title>Imagefield Slideshow module to render Slideshow on Drupal website</title>
-			<link>https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</link>
-			<description>If you want to show images as a slideshow on your drupal website and want to do it quickly. Here&amp;rsquo;s the module which solves your purpose. Imagefield Slideshow is the simple module which will allow images to render as a slideshow on the drupal website at the field level.  This module will provide a Slideshow formatter for Image fields, so that multiple images are uploaded to that particular im</description>
-			<pubDate>Thu, 16 Nov 2023 16:40:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</guid>
     </item>
 </channel>
 </rss>
