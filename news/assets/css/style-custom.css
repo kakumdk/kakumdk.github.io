@@ -32,6 +32,9 @@ p {
 .navbar .navbar-top .logo .secondary:hover {
     text-decoration: unset;
 }
+.navbar .navbar-top .logo a:hover {
+    text-decoration: unset;
+}
 .navbar .navbar-top .width-40 {
     width: 30px;
 }
