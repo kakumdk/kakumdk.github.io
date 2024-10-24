@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding SQL Query Execution Plans and Optimizing Joins</title>
+			<link>https://peoplesblog.co.in/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html</link>
+			<description>In the realm of database management, performance is paramount. One of the most effective ways to enhance SQL query efficiency is through a deep understanding of query execution plans and the optimization of joins.  This article will provide a comprehensive overview of these concepts, helping you to write faster, more efficient SQL queries.  What is an SQL Query Execution Plan?  An SQL query execut</description>
+			<pubDate>Thu, 24 Oct 2024 18:29:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html</guid>
+    </item><item>
 			<title>Using Indexes to Speed Up SQL Queries</title>
 			<link>https://peoplesblog.co.in/articles/using-indexes-to-speed-up-sql-queries.html</link>
 			<description>Using indexes to speed up SQL queries is an essential technique in database optimization.  Here&amp;rsquo;s a concise guide on how to effectively use indexes:  What Are Indexes?  An index is a database object that improves the speed of data retrieval.  Think of it like an index in a book, which allows you to find information quickly without scanning every page.  Types of Indexes   Single-Column Index:</description>
@@ -348,13 +355,6 @@
 			<pubDate>Tue, 21 Nov 2023 17:50:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/optimal-placement-of-solar-panels-for-better-observation-of-solar-energy.html</guid>
-    </item><item>
-			<title>Create a volcanic eruption with baking soda and vinegar</title>
-			<link>https://peoplesblog.co.in/articles/create-a-volcanic-eruption-with-baking-soda-and-vinegar.html</link>
-			<description>Creating a volcanic eruption with baking soda and vinegar is a classic and safe science experiment that demonstrates the reaction between an acid (vinegar) and a base (baking soda) to produce carbon dioxide gas.  Here&amp;#39;s a simple step-by-step guide:  Materials:   Baking soda Vinegar Dish soap (optional) Red food coloring (optional) Container or plastic bottle Modeling clay or playdough Tray or </description>
-			<pubDate>Fri, 17 Nov 2023 12:50:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-volcanic-eruption-with-baking-soda-and-vinegar.html</guid>
     </item>
 </channel>
 </rss>
