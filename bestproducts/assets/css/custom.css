@@ -284,6 +284,73 @@ figure.table th {
 figure.table td {
     font-size: 16px;
 }
+#site-fixed-ad-container {
+    display: none;
+}
+#site-fixed-ad-container {
+    position: fixed;
+    z-index: 2147483645;
+    background-color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+    box-shadow: 0 0 18px rgba(0,0,0,.2);
+    padding: 5px;
+}
+#site-fixed-ad-container .x {
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+#site-fixed-ad-container .x:hover {
+    cursor: pointer;
+}
+
+#policy-container {
+    position: fixed;
+    z-index: 2147483645;
+    background-color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 0;
+    box-shadow: 0 0 18px rgba(0,0,0,.2);
+    padding: 5px;
+}
+#policy-container .policy-container {
+    margin: 15px auto;
+}
+#policy-container .policy-container .title {
+    font-size: 20px;
+    margin: 15px auto;
+}
+#policy-container .policy-container .title .x {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+#policy-container .policy-container .title .x:hover {
+    cursor: pointer;
+}
+#policy-container .policy-container .desc {
+    margin: 15px auto;
+    font-size: 14px !important;
+}
+#policy-container .policy-container .policy-button {
+    font-size: 15px !important;
+    border-radius: 5px;
+    background-color: #2E8B57;
+    color: #fff;
+    border-color: #2E8B57;
+    padding: 6px;
+    text-align: center;
+    /* width: 50%; */
+    margin-top: 20px;
+}
+#policy-container .policy-container .policy-button:hover {
+    cursor: pointer;
+}
 
 
 @media (min-width: 600px) {
@@ -345,5 +412,26 @@ figure.table td {
     figure.table th,
     figure.table td {
         padding: 4px 10px;
+    }
+    #site-fixed-ad-container {
+        display: block;
+    }
+    #site-fixed-ad-container {
+        width: 25%;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    #policy-container {
+        width: 25%;
+        left: 15px;
+        bottom: 15px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    #policy-container .policy-container .policy-button {
+        /* width: 100%; */
+        margin: auto;
     }
 }
