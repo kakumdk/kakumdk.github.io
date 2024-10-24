@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>SQL Transactions for Atomic Operations: Ensuring Data Integrity and Consistency</title>
+			<link>https://peoplesblog.co.in/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html</link>
+			<description>Implementing transactions for atomic operations is crucial in ensuring data integrity and consistency, especially in databases and concurrent applications.  Here&amp;rsquo;s a high-level overview of how to implement transactions, focusing on the key concepts and techniques involved.  Key Concepts   Atomicity: Ensures that a series of operations either complete entirely or have no effect at all. If any</description>
+			<pubDate>Thu, 24 Oct 2024 08:47:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html</guid>
+    </item><item>
 			<title>Writing Secure SQL Queries Using Prepared Statements</title>
 			<link>https://peoplesblog.co.in/articles/writing-secure-sql-queries-using-prepared-statements.html</link>
 			<description>Writing secure SQL queries is crucial to prevent vulnerabilities such as SQL injection. Using prepared statements is one of the best practices to ensure that your SQL queries are safe.  Here&amp;rsquo;s a guide on how to do this effectively.  What are Prepared Statements?  Prepared statements are a feature of many database management systems (DBMS) that allow you to define a SQL query template and the</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 16 Nov 2023 16:40:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/imagefield-slideshow-module-to-render-slideshow-on-drupal-website.html</guid>
-    </item><item>
-			<title>Choose the Inverters which are more efficient to work with Solar panels?</title>
-			<link>https://peoplesblog.co.in/articles/choose-the-inverters-which-are-more-efficient-to-work-with-solar-panels.html</link>
-			<description>Selecting an efficient inverter is crucial for maximizing the energy production of your solar panel system.  Here are key considerations for choosing an efficient solar inverter:   Type of Inverter:   String Inverters: These are connected to multiple solar panels in a series. They are cost-effective but the performance of the whole string can be affected if one panel is shaded or underperforming. </description>
-			<pubDate>Mon, 13 Nov 2023 11:50:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/choose-the-inverters-which-are-more-efficient-to-work-with-solar-panels.html</guid>
     </item>
 </channel>
 </rss>

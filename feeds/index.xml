@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>SQL Transactions for Atomic Operations: Ensuring Data Integrity and Consistency</title>
+    <link>https://peoplesblog.co.in/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html</link>
+    <description>Implementing transactions for atomic operations is crucial in ensuring data integrity and consistency, especially in databases and concurrent applications.  Here&amp;rsquo;s a high-level overview of how to implement transactions, focusing on the key concepts and techniques involved.  Key Concepts   Atomicity: Ensures that a series of operations either complete entirely or have no effect at all. If any</description>
+    <pubDate>Thu, 24 Oct 2024 08:47:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html</guid>
+  </item><item>
     <title>What are the habits you adopted that made you a healthier person?</title>
     <link>https://peoplesblog.co.in/articles/what-are-the-habits-you-adopted-that-made-you-a-healthier-person.html</link>
     <description>Living a healthy lifestyle is a goal that many strive for, but it doesn&amp;rsquo;t happen overnight. It&amp;rsquo;s about making consistent choices that support physical, mental, and emotional well-being. Adopting the right habits can transform your life, boost your energy levels, improve your mental clarity, and foster long-term health.  Let&amp;rsquo;s take a look at some of the most effective habits that </description>
