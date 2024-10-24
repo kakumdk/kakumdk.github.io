@@ -242,8 +242,7 @@ footer .footer-vertical-nav.bottom-footer li a {
 .prev-next-news a:hover {
     text-decoration: none;
 }
-.banner-top-thumb-wrap,
-.home_right_of_carousel > div {
+.hide-on-mobile {
     display: none;
 }
 .google-ad {
@@ -257,12 +256,20 @@ img {
 }
 .ss-box {
     position: fixed;
-    background-color: white;
     z-index: 1;
-    left: 0;
-    bottom: 0;
+    right: 5px;
+    bottom: 90px;
     text-align: center;
-    display: flex;
+    display: block;
+}
+.ss-strait .ss-btn {
+    display: block;
+    padding: 8px 10px;
+    font-size: 18px;
+    color: #3a3a3a !important;
+    background-color: #fff !important;
+    margin: 4px auto;
+    border-radius: 50%;
 }
 .prev-next-news .prev {
     display: block;
@@ -430,8 +437,7 @@ a.ss-btn.ss-btn-pocket {
         padding: unset;
         margin: 15px auto;
     }
-    .home_right_of_carousel > div,
-    .prev-next-news {
+    .hide-on-mobile {
         display: block;
     }
     .ss-box {
@@ -446,6 +452,7 @@ a.ss-btn.ss-btn-pocket {
         border-radius: 50%;
         font-size: 16px;
         width: 36px;
+        display: inline;
     }
     .prev-next-news .prev, .prev-next-news .next {
         position: unset;
