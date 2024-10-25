@@ -60,13 +60,16 @@ a:hover {
 }
 a.navbar-brand.logo {
     margin: 5px 0;
-    padding: 6px 10px 4px 14px;
+    /* padding: 6px 10px 4px 14px; */
     font-size: 20px !important;
     text-transform: uppercase;
-    border: 3px solid;
-    border-radius: 12px 0;
-    letter-spacing: 3px;
+    border-bottom: 3px solid;
+    /* border-radius: 12px 0; */
+    letter-spacing: 1px;
     font-weight: bold !important;
+}
+a.navbar-brand.logo logo-title {
+    vertical-align: middle;
 }
 nav.breadcrumb-wrapper {
     /* background: #fff; */
@@ -399,8 +402,8 @@ figure.table td {
         padding-left: 0.75rem;
     }
     a.navbar-brand.logo {
-        padding: 10px 14px 8px 18px;
-        border-radius: 24px 0;
+        /* padding: 10px 14px 8px 18px; */
+        /* border-radius: 24px 0; */
         margin: 12px 0;
     }
     nav.breadcrumb-wrapper {
