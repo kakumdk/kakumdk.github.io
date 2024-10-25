@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cookiePolicy();
   });
   function cookiePolicy() {
-    var key = 'dentofacts-cookie';
+    var key = 'news-cookie';
     var cookie = getStoredValue(key);
     // console.log(cookie);
     if (cookie === 'true') {

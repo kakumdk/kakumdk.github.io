@@ -1883,6 +1883,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/the-benefits-of-comprehensive-dental-care-plans.html
 Allow: /articles/the-benefits-of-regular-dental-x-rays.html
 Allow: /articles/how-to-maintain-oral-health-during-medical-treatments.html
 Allow: /articles/how-to-prevent-tooth-decay-in-children.html
