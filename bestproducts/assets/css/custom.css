@@ -351,6 +351,32 @@ figure.table td {
 #policy-container .policy-container .policy-button:hover {
     cursor: pointer;
 }
+.home-featured .card-img-top {
+    padding: 30px;
+}
+.home-featured .discount {
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+.home-featured .discount .main {
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 2px 8px 0px 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #2E8B57;
+    color: #ffffff;
+}
 
 
 @media (min-width: 600px) {
@@ -433,5 +459,9 @@ figure.table td {
     #policy-container .policy-container .policy-button {
         /* width: 100%; */
         margin: auto;
+    }
+    .home-featured .discount {
+        left: 15px;
+        top: 15px;
     }
 }
