@@ -63,13 +63,15 @@ a.navbar-brand.logo {
     /* padding: 6px 10px 4px 14px; */
     font-size: 20px !important;
     text-transform: uppercase;
-    border-bottom: 3px solid;
+    border-bottom: 6px double;
     /* border-radius: 12px 0; */
     letter-spacing: 1px;
     font-weight: bold !important;
 }
-a.navbar-brand.logo logo-title {
+a.navbar-brand.logo .logo-title {
     vertical-align: middle;
+    border-top: 6px double;
+    padding-top: 6px;
 }
 nav.breadcrumb-wrapper {
     /* background: #fff; */
