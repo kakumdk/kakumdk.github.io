@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Implementing Design Patterns in Real-World PHP Applications</title>
+			<link>https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html</link>
+			<description>Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In this article, we&amp;#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton, and Dependency Injection, in real-world PHP applications using PHP 8.  1. Factory Pattern  Scenario  Imagine you&amp;rsquo;re developing an </description>
+			<pubDate>Sun, 27 Oct 2024 20:39:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html</guid>
+    </item><item>
 			<title>Introduction to Design Patterns: Factory, Singleton, and Dependency Injection</title>
 			<link>https://peoplesblog.co.in/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html</link>
 			<description>Design patterns are essential tools for developers looking to write clean, maintainable, and scalable code. In PHP 8, leveraging design patterns can significantly enhance your software architecture.  This article introduces three fundamental design patterns: Factory, Singleton, and Dependency Injection, explaining their purpose, use cases, and providing practical examples.  1. Factory Pattern  Wha</description>
