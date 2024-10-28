@@ -2644,6 +2644,34 @@ button#play-truth-dare-next {
 .blink {
     animation: blink 1s infinite;
 }
+.blog-content.read-article-content h1,
+.blog-content.read-article-content h2,
+.blog-content.read-article-content h3,
+.blog-content.read-article-content h4,
+.blog-content.read-article-content h5,
+.blog-content.read-article-content h6,
+.blog-content.read-article-content p,
+.blog-content.read-article-content ul {
+    margin: 15px auto;
+}
+.blog-content.read-article-content p:has(code) {
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    border-left: 4px solid #0056a1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.blog-content.read-article-content p code {
+    background-color: #f9f9f9;
+    color: #272822;
+    padding: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+}
+.blog-content.read-article-content p:has(strong) {
+    margin-top: 15px;
+}
+
 
 
 
