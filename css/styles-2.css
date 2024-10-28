@@ -2654,6 +2654,14 @@ button#play-truth-dare-next {
 .blog-content.read-article-content ul {
     margin: 15px auto;
 }
+.blog-content.read-article-content h1,
+.blog-content.read-article-content h2,
+.blog-content.read-article-content h3,
+.blog-content.read-article-content h4,
+.blog-content.read-article-content h5,
+.blog-content.read-article-content h6 {
+    margin-top: 30px;
+}
 .blog-content.read-article-content p:has(code) {
     background-color: #f9f9f9;
     padding: 0 10px;

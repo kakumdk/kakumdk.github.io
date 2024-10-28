@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</title>
+    <meta name="description" content="Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can l" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html" />
+    <meta property="og:title" content="Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator" />
+    <meta property="og:description" content="Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can l" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/exploring-design-patterns-in-php-8-strategy-observer-and-decorator.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator" />
+    <meta name="twitter:description" content="Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can l" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/exploring-design-patterns-in-php-8-strategy-observer-and-decorator.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html"
+        },
+        "headline": "Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator",
+        "description": "Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can l",
+        "image": "https://peoplesblog.co.in/upload/banners/exploring-design-patterns-in-php-8-strategy-observer-and-decorator.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "28th Oct 2024",
+        "dateModified": "2024-10-28T16:50:27+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator" data-src="/upload/banners/exploring-design-patterns-in-php-8-strategy-observer-and-decorator.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator" />
+                                </div>
+                                <h1 class="read-article-title">Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>28th Oct 2024</span>, <span class="last-updated">2024-10-28T16:50:27+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable, and flexible code.</p>  <p>This article will explore three key design patterns: Strategy, Observer, and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implemented in PHP 8.</p>  <h2>1. Strategy Pattern</h2>  <p>The Strategy Pattern enables the selection of an algorithm at runtime. By defining a family of algorithms, encapsulating each one, and making them interchangeable, you can alter the algorithm used by a context object without modifying its code.</p>  <p><strong>Step 1: Define the Strategy Interface</strong></p>  <p>This interface declares a method that will be implemented by concrete strategies.</p>  <p><code>interface SortingStrategy {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function sort(array $data): array;</code></p>  <p><code>}</code></p>  <p><strong>Step 2: Create Concrete Strategies</strong></p>  <p>Implement different sorting algorithms as concrete strategies.</p>  <p><code>class QuickSort implements SortingStrategy {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function sort(array $data): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sort($data); // Simplified for illustration</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $data;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class BubbleSort implements SortingStrategy {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function sort(array $data): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Implement bubble sort logic here</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $data; // Simplified for illustration</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <p><strong>Step 3: Create the Context</strong></p>  <p>The context class uses a strategy to execute the algorithm.</p>  <p><code>class Sorter {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private SortingStrategy $strategy;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct(SortingStrategy $strategy) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;strategy = $strategy;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function setStrategy(SortingStrategy $strategy): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;strategy = $strategy;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function sortData(array $data): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;strategy-&gt;sort($data);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Usage Example</strong></p>  <p><code>$data = [3, 2, 1];</code></p>  <p><code>$sorter = new Sorter(new QuickSort());</code></p>  <p><code>print_r($sorter-&gt;sortData($data)); // Uses QuickSort</code></p>  <p><code>$sorter-&gt;setStrategy(new BubbleSort());</code></p>  <p><code>print_r($sorter-&gt;sortData($data)); // Now uses BubbleSort</code></p>  <h2>2. Observer Pattern</h2>  <p>The Observer Pattern defines a one-to-many dependency between objects, allowing one object (the subject) to notify others (observers) about state changes. This pattern is particularly useful in event handling and notification systems.</p>  <p><strong>Step 1: Define Subject and Observer Interfaces</strong></p>  <p><code>interface Subject {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function attach(Observer $observer): void;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function detach(Observer $observer): void;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function notify(): void;</code></p>  <p><code>}</code></p>  <p><code>interface Observer {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function update(string $event): void;</code></p>  <p><code>}</code></p>  <p><strong>Step 2: Create a Concrete Subject</strong></p>  <p>The subject maintains a list of observers and notifies them of any changes.</p>  <p><code>class NewsAgency implements Subject {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private array $observers = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function attach(Observer $observer): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;observers[] = $observer;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function detach(Observer $observer): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;observers = array_filter($this-&gt;observers, fn($o) =&gt; $o !== $observer);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function notify(): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;observers as $observer) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$observer-&gt;update(&quot;New news available!&quot;);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>Step 3: Create Concrete Observers</strong></p>  <p>Observers implement the update method to receive notifications.</p>  <p><code>class NewsSubscriber implements Observer {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function update(string $event): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo &quot;Received update: $event\n&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Usage Example</strong></p>  <p><code>$agency = new NewsAgency();</code></p>  <p><code>$subscriber = new NewsSubscriber();</code></p>  <p><code>$agency-&gt;attach($subscriber);</code></p>  <p><code>$agency-&gt;notify(); // Outputs: Received update: New news available!</code></p>  <h2>3. Decorator Pattern</h2>  <p>The Decorator Pattern allows you to dynamically add behavior to objects. This is achieved by wrapping an object with a decorator class, enabling enhanced functionality without altering the original class.</p>  <p><strong>Step 1: Define the Component Interface</strong></p>  <p><code>interface Coffee {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function cost(): float;</code></p>  <p><code>}</code></p>  <p><strong>Step 2: Create a Concrete Component</strong></p>  <p>Implement the core functionality in a concrete class.</p>  <p><code>class SimpleCoffee implements Coffee {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function cost(): float {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 2.00;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 3: Create the Decorator Base Class</strong></p>  <p>The base class for decorators should implement the same interface and hold a reference to a Coffee object.</p>  <p><code>abstract class CoffeeDecorator implements Coffee {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;protected Coffee $coffee;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct(Coffee $coffee) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;coffee = $coffee;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function cost(): float {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;coffee-&gt;cost();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>Step 4: Create Concrete Decorators</strong></p>  <p>Implement decorators that extend the functionality of the original object.</p>  <p><code>class MilkDecorator extends CoffeeDecorator {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function cost(): float {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return parent::cost() + 0.50; // Adds milk cost</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class SugarDecorator extends CoffeeDecorator {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function cost(): float {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return parent::cost() + 0.25; // Adds sugar cost</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Usage Example</strong></p>  <p><code>$coffee = new SimpleCoffee();</code></p>  <p><code>echo &quot;Cost of simple coffee: &quot; . $coffee-&gt;cost() . &quot;\n&quot;;</code></p>  <p><code>$milkCoffee = new MilkDecorator($coffee);</code></p>  <p><code>echo &quot;Cost of coffee with milk: &quot; . $milkCoffee-&gt;cost() . &quot;\n&quot;;</code></p>  <p><code>$sweetMilkCoffee = new SugarDecorator($milkCoffee);</code></p>  <p><code>echo &quot;Cost of coffee with milk and sugar: &quot; . $sweetMilkCoffee-&gt;cost() . &quot;\n&quot;;</code></p>  <h2>Conclusion</h2>  <p>In this article, we explored three essential design patterns: Strategy, Observer, and Decorator, using PHP 8. Each pattern provides unique advantages that can significantly enhance your codebase. By applying these patterns, you can create a more modular and maintainable system, allowing for easier updates and modifications as your application evolves. Embracing design patterns is a step toward becoming a proficient PHP developer, leading to cleaner and more efficient code.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">72% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07VZ68S5Q.html" title="RIVERSOFT SF-15 PRO shower and tap filter for hard water with 15 stage | Water Softener for Bathroom | Hard Water Filter (Chrome, Pack of 1)"><img data-src="https://m.media-amazon.com/images/I/81RmyL+TpdL._SX679_.jpg" class="img-fluid lazy" alt="RIVERSOFT SF-15 PRO shower and tap filter for hard water with 15 stage | Water Softener for Bathroom | Hard Water Filter (Chrome, Pack of 1)" title="RIVERSOFT SF-15 PRO shower and tap filter for hard water with 15 stage | Water Softener for Bathroom | Hard Water Filter (Chrome, Pack of 1)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07VZ68S5Q.html" title="RIVERSOFT SF-15 PRO shower and tap filter for hard water with 15 stage | Water Softener for Bathroom | Hard Water Filter (Chrome, Pack of 1)" class="shop-title-value">RIVERSOFT SF-15 PRO shower and tap filter for hard water with 15 stage | Water Softener for Bathroom | Hard Water Filter (Chrome, Pack of 1)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,399</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">66% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09X5C9VLK.html" title="Lifelong Mixer Grinder for Kitchen - 3 Jars 500 Watt Mixie - Chutney Jar, Dry Grinder Jar &amp; Liquidizing Jar used as Wet Grinder &amp; Blender for Milkshake, Smoothie, Puree -Stainless Steel Blades(LLMG23)"><img data-src="https://m.media-amazon.com/images/I/61zhqJg1bTL._SX679_.jpg" class="img-fluid lazy" alt="Lifelong Mixer Grinder for Kitchen - 3 Jars 500 Watt Mixie - Chutney Jar, Dry Grinder Jar &amp; Liquidizing Jar used as Wet Grinder &amp; Blender for Milkshake, Smoothie, Puree -Stainless Steel Blades(LLMG23)" title="Lifelong Mixer Grinder for Kitchen - 3 Jars 500 Watt Mixie - Chutney Jar, Dry Grinder Jar &amp; Liquidizing Jar used as Wet Grinder &amp; Blender for Milkshake, Smoothie, Puree -Stainless Steel Blades(LLMG23)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09X5C9VLK.html" title="Lifelong Mixer Grinder for Kitchen - 3 Jars 500 Watt Mixie - Chutney Jar, Dry Grinder Jar &amp; Liquidizing Jar used as Wet Grinder &amp; Blender for Milkshake, Smoothie, Puree -Stainless Steel Blades(LLMG23)" class="shop-title-value">Lifelong Mixer Grinder for Kitchen - 3 Jars 500 Watt Mixie - Chutney Jar, Dry Grinder Jar &amp; Liquidizing Jar used as Wet Grinder &amp; Blender for Milkshake, Smoothie, Puree -Stainless Steel Blades(LLMG23)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,500</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">46% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)"><img data-src="https://m.media-amazon.com/images/I/51ByNekZkOL._SX679_.jpg" class="img-fluid lazy" alt="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" class="shop-title-value">Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,880</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html" title="Implementing a Logger System Using the Singleton Pattern in PHP">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/implementing-a-logger-system-using-the-singleton-pattern-in-php.jpg" alt="Implementing a Logger System Using the Singleton Pattern in PHP" title="Implementing a Logger System Using the Singleton Pattern in PHP" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html" title="Implementing a Logger System Using the Singleton Pattern in PHP">
+                                <span class="title">Implementing a Logger System Using the Singleton Pattern in PHP</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+                  Implementing a Logger System Using the Singleton Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+                  Implementing Design Patterns in Real-World PHP Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+                  Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+                </a>
+              </div><div class="article">
+                <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+                  Designing Efficient Schemas for Web Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-the-solid-principles-in-php.html">
+                  Understanding the SOLID Principles in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-php--and-key-differences-from-php-.html">
+                  Introduction to PHP 8 and Key Differences from PHP 7
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-run-phpunit-test-cases-on-your-local-machine-for-drupal.html">
+                  How to run PHPUnit test cases on your local machine for Drupal
+                </a>
+              </div><div class="article">
+                <a href="/articles/usage-of-local-php-security-checker-for-drupal-applications.html">
+                  Usage of Local Php Security Checker for Drupal Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html">
+                  Usage of PhpStan on Github via Pull Request for Drupal Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-work-with-twig-templates-in-drupal.html">
+                  How to work with Twig Templates in Drupal?
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">4% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01IQZPLEA.html" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)"><img data-src="https://m.media-amazon.com/images/I/61J34HxBK5L._UY695_.jpg" class="img-fluid lazy" alt="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01IQZPLEA.html" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" class="shop-title-value">Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>384</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>399</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/implementing-one-to-many-and-many-to-many-relationships.html">
+            Implementing One-to-Many and Many-to-Many Relationships
+          </a>
+        </div><div class="article">
+          <a href="/articles/wind-vane-science-experiment-for-children.html">
+            Wind Vane, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+            Designing Efficient Schemas for Web Applications
+          </a>
+        </div><div class="article">
+          <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
+            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+          </a>
+        </div><div class="article">
+          <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
+            Vedic Rituals and Sacrifices: An Overview
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-long-does-nicotine-stay-in-your-system.html">
+            How long does nicotine stay in your system?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-stuffed-bell-peppers.html">
+            How to prepare Stuffed Bell Peppers?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-is-the-most-minimalistic-way-to-live-one-s-life.html">
+            What is the most minimalistic way to live one's life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/barometer-science-experiment-for-children.html">
+            Barometer, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-concept-of-dharma-in-the-vedas.html">
+            The Concept of Dharma in the Vedas
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">9% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)"><img data-src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" class="shop-title-value">Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,31,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,44,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+            Implementing a Logger System Using the Singleton Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+            Implementing Design Patterns in Real-World PHP Applications
+          </a>
+        </div><div class="article">
+          <a href="/articles/working-out-at-this-time-can-help-manage-blood-sugar.html">
+            Working out at this time can help manage blood sugar
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
+            Understanding SQL Query Execution Plans and Optimizing Joins
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-a-cucumber-mint-cooler.html">
+            How to prepare a Cucumber Mint Cooler?
+          </a>
+        </div><div class="article">
+          <a href="/articles/using-indexes-to-speed-up-sql-queries.html">
+            Using Indexes to Speed Up SQL Queries
+          </a>
+        </div><div class="article">
+          <a href="/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html">
+            SQL Transactions for Atomic Operations: Ensuring Data Integrity and Consistency
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-habits-you-adopted-that-made-you-a-healthier-person.html">
+            What are the habits you adopted that made you a healthier person?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">30% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CDXHYHZ6.html" title="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey"><img data-src="https://m.media-amazon.com/images/I/71oIjjNm+nL._SY879_.jpg" class="img-fluid lazy" alt="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey" title="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CDXHYHZ6.html" title="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey" class="shop-title-value">Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>11,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>16,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-frog-and-the-scorpion.html">
+            The Frog and the Scorpion
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-red-shoes.html">
+            The Red Shoes
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">41% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07R47WXX9.html" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)"><img data-src="https://m.media-amazon.com/images/I/814zusmvtVL._SX385_.jpg" class="img-fluid lazy" alt="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07R47WXX9.html" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" class="shop-title-value">SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,374</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/firaq-gorakhpuri.html">
+            Firaq Gorakhpuri
+          </a>
+        </div><div class="article">
+          <a href="/great-people/hrishikesh-mukherjee.html">
+            Hrishikesh Mukherjee
+          </a>
+        </div><div class="article">
+          <a href="/great-people/the-great-khali.html">
+            The Great Khali
+          </a>
+        </div><div class="article">
+          <a href="/great-people/sri-chinmoy.html">
+            Sri Chinmoy
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver"><img data-src="https://m.media-amazon.com/images/I/51TK3jYBmBL._SX679_.jpg" class="img-fluid lazy" alt="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" class="shop-title-value">Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,498</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">39% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CSSSPZSS.html" title="Hitachi 1 Ton Class 3 Star, ice Clean, Xpandable+, Inverter Split AC (100% Copper, Dust Filter, 2023 Model - 3400FXL RAS.G312PCAIBFE, White)"><img data-src="https://m.media-amazon.com/images/I/51fpGSYjWnL._SX679_.jpg" class="img-fluid lazy" alt="Hitachi 1 Ton Class 3 Star, ice Clean, Xpandable+, Inverter Split AC (100% Copper, Dust Filter, 2023 Model - 3400FXL RAS.G312PCAIBFE, White)" title="Hitachi 1 Ton Class 3 Star, ice Clean, Xpandable+, Inverter Split AC (100% Copper, Dust Filter, 2023 Model - 3400FXL RAS.G312PCAIBFE, White)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CSSSPZSS.html" title="Hitachi 1 Ton Class 3 Star, ice Clean, Xpandable+, Inverter Split AC (100% Copper, Dust Filter, 2023 Model - 3400FXL RAS.G312PCAIBFE, White)" class="shop-title-value">Hitachi 1 Ton Class 3 Star, ice Clean, Xpandable+, Inverter Split AC (100% Copper, Dust Filter, 2023 Model - 3400FXL RAS.G312PCAIBFE, White)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>32,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>54,300</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09FSMN8QS.html" title="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue"><img data-src="https://m.media-amazon.com/images/I/71zj7ULiR+L._SX679_.jpg" class="img-fluid lazy" alt="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue" title="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09FSMN8QS.html" title="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue" class="shop-title-value">SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,950</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CY2QL1JR.html" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray"><img data-src="https://m.media-amazon.com/images/I/711rRUziI5L._SX679_.jpg" class="img-fluid lazy" alt="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CY2QL1JR.html" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" class="shop-title-value">HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>19,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>34,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">60% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WMS7TWB.html" title="Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, making tea and coffee, instant noodles, soup etc. (Silver)"><img data-src="https://m.media-amazon.com/images/I/51DGcy8eBCL._SX385_.jpg" class="img-fluid lazy" alt="Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, making tea and coffee, instant noodles, soup etc. (Silver)" title="Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, making tea and coffee, instant noodles, soup etc. (Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WMS7TWB.html" title="Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, making tea and coffee, instant noodles, soup etc. (Silver)" class="shop-title-value">Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, making tea and coffee, instant noodles, soup etc. (Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>480</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,195</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a title="Quotes" href="/quotes/index.html">Quotes</a></li>
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/sql.html" title="SQL" aria-label="SQL">SQL</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

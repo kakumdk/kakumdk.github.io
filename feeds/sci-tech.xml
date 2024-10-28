@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</title>
+			<link>https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</link>
+			<description>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable, and flexible code.  This article will explore three key design patterns: Strategy, Observer, and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implement</description>
+			<pubDate>Mon, 28 Oct 2024 16:46:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</guid>
+    </item><item>
 			<title>Implementing a Logger System Using the Singleton Pattern in PHP</title>
 			<link>https://peoplesblog.co.in/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html</link>
 			<description>In this article, we&amp;#39;ll create a simple logger system using the Singleton Pattern in PHP.  This logger will allow you to log messages to a file, ensuring that there is only one instance of the logger throughout your application.  Step-by-Step Implementation  Step 1: Create the Logger Class  We&amp;#39;ll start by defining a Logger class that follows the Singleton Pattern. This class will have metho</description>
@@ -348,13 +355,6 @@
 			<pubDate>Tue, 12 Dec 2023 10:10:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/what-is-charge-controller-and-how-to-use-it-with-a-solar-panel-setup-at-home.html</guid>
-    </item><item>
-			<title>Best Batteries to use with the Solar panels for home</title>
-			<link>https://peoplesblog.co.in/articles/best-batteries-to-use-with-the-solar-panels-for-home.html</link>
-			<description>When it comes to choosing batteries for a solar panel system, several options are available. The best battery for your home will depend on factors like budget, energy requirements, available space, and desired lifespan.  Here are some of the most common types:   Lithium-Ion Batteries:  Advantages:  High energy density, which means they can store a lot of energy in a relatively small space. Long li</description>
-			<pubDate>Wed, 06 Dec 2023 10:50:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/best-batteries-to-use-with-the-solar-panels-for-home.html</guid>
     </item>
 </channel>
 </rss>
