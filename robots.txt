@@ -1280,6 +1280,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/ludhiana-1-020-challans-issued-over-dengue-larvae.html
+Allow: /news/high-aqi-alert-air-pollution-s-effect-on-brain-health-can-cause-hemorrhagic-stroke-toxic-air-delhi-aqi-today.html
+Allow: /news/india-china-to-complete-military-disengagement-along-lac-today-heres-what-it-means.html
+Allow: /news/secretive-iranian-military-bases-damaged-in-israels-first-open-attack.html
 Allow: /news/farooq-abdullahs-stern-message-after-gulmarg-terror-attack-kashmir-will-never-become-part-of-pakistan.html
 Allow: /news/germany-increases-visa-quota-for-skilled-indian-professionals-to-90-000-annually-pm-narendra-modi.html
 Allow: /news/indiachina-disengagement-begins-at-depsang-and-demchok.html
