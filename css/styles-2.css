@@ -2681,7 +2681,7 @@ button#play-truth-dare-next {
 }
 .quoteDetailsNew {
     /* background-color: #f9f9f9; */
-    border-left: 5px solid #0056a1;
+    border-left: 5px solid #292b2c;
     padding: 15px;
     margin: 15px 0;
     font-family: 'Georgia', serif;
@@ -2698,7 +2698,7 @@ button#play-truth-dare-next {
 }
 .quoteDetailsNew .quoteText i.fa-quote-left,
 .quoteDetailsNew .quoteText i.fa-quote-right {
-    color: #0056a1;
+    color: #292b2c;
     font-size: 1.2em;
     /* margin: 0 3px; */
 }
@@ -2706,7 +2706,7 @@ button#play-truth-dare-next {
     text-align: right;
 }
 .quoteDetailsNew .quote-title {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-style: italic;
     margin: 0 20px;
 }
@@ -2714,7 +2714,7 @@ button#play-truth-dare-next {
     margin-top: 10px;
     font-size: 0.9em;
     color: #292b2c;
-    font-style: italic;
+    /* font-style: italic; */
     text-align: right;
 }
 .quoteDetailsNew .quoteFooter {
