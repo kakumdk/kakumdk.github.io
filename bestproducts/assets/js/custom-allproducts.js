@@ -95,8 +95,7 @@ function filterProducts(category, discount, sort, updated) {
                 return aSort.localeCompare(bSort);
             });
             header.textContent = "Explore Products Sorted: " + sort;
-            header1.textContent = "Products Sorted " + sort;
-            
+            header1.textContent = "Products Sorted " + sort;    
         }
         else if (sort == "Z-A") {
             products.sort((a, b) => {
@@ -153,6 +152,7 @@ function filterProducts(category, discount, sort, updated) {
     }
 }
 
+// 
 document.addEventListener('DOMContentLoaded', (event) => {
     clickLinkAfterDelay('filterCategory', 10);
 });
@@ -166,3 +166,47 @@ function clickLinkAfterDelay(linkId, delay) {
         console.warn(`Link with ID "${linkId}" not found.`);
     }
 }
+
+// Search products
+document.getElementById('searchProducts').addEventListener('input', function(event) {
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    const noResultsMessage = document.getElementById('noResults');
+    const products = document.querySelectorAll(".shop-item-wrapper");
+    const category = getQueryParam("category");
+    const discount = getQueryParam("discount");
+    const sort = getQueryParam("sort");
+    let found = false;
+    products.forEach(product => {
+        const title = product.getAttribute('data-title').toLowerCase();
+        if (title.indexOf(search) !== -1) {
+            if (category != null) {
+                const productCategory = product.getAttribute("data-category");
+                if (productCategory == category) {
+                    product.classList.remove('d-none');
+                    found = true;
+                }
+            }
+            else if (discount != null) {
+                const [bLower, bUpper] = discount.split("-").map(Number);
+                const productDiscount = product.getAttribute("data-discount");
+                const aNumber = Number(productDiscount);
+                if (aNumber >= bLower && aNumber <= bUpper) {
+                    product.classList.remove('d-none');
+                    found = true;
+                }
+            }
+            else {
+                product.classList.remove('d-none');
+                found = true;
+            }
+        }
+        else {
+            product.classList.add('d-none');
+        }
+        if (found) {
+            noResultsMessage.classList.add('d-none'); // Hide message
+        } else {
+            noResultsMessage.classList.remove('d-none'); // Show message
+        }
+    });
+});

@@ -439,6 +439,9 @@ figure.table td {
     }
     img.card-img-top {
         height: 250px;
+        width: auto;
+        margin: auto;
+        display: block;
     }
     figure.table th,
     figure.table td {
