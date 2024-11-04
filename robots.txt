@@ -1330,6 +1330,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/shakti-scheme-putting-strain-on-government-but-won-t-halt-it-minister.html
+Allow: /news/consider-muslim-sentiments-jamiat-to-tdp-jd-u-on-waqf-amendment-bill.html
+Allow: /news/yogi-adityanath-gets-lawrence-bishnoi-gang-death-threat-resign-or-will-kill-you-like-baba-siddique.html
+Allow: /news/crush-terror-outfits-l-g-manoj-sinha-directs-officials-after-srinagar-grenade-attack.html
 Allow: /news/ludhiana-1-020-challans-issued-over-dengue-larvae.html
 Allow: /news/high-aqi-alert-air-pollution-s-effect-on-brain-health-can-cause-hemorrhagic-stroke-toxic-air-delhi-aqi-today.html
 Allow: /news/india-china-to-complete-military-disengagement-along-lac-today-heres-what-it-means.html
