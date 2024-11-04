@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>When and How to Use Each Design Pattern in PHP</title>
+			<link>https://peoplesblog.co.in/articles/when-and-how-to-use-each-design-pattern-in-php.html</link>
+			<description>Design patterns are proven solutions to common problems in software design. In PHP 8, these patterns can enhance code readability, maintainability and scalability.  In this article, we&amp;rsquo;ll explore some of the most common design patterns, when to use them and how to implement them in PHP 8.  1. Singleton Pattern  When to Use   Use the Singleton pattern when you need to ensure that a class has </description>
+			<pubDate>Mon, 04 Nov 2024 06:51:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/when-and-how-to-use-each-design-pattern-in-php.html</guid>
+    </item><item>
 			<title>Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</title>
 			<link>https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</link>
 			<description>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable, and flexible code.  This article will explore three key design patterns: Strategy, Observer, and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implement</description>
@@ -348,13 +355,6 @@
 			<pubDate>Fri, 15 Dec 2023 14:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/magnetic-slime-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>What is Charge Controller &amp; how to use it with a Solar panel setup at home?</title>
-			<link>https://peoplesblog.co.in/articles/what-is-charge-controller-and-how-to-use-it-with-a-solar-panel-setup-at-home.html</link>
-			<description>A charge controller, also known as a charge regulator, is a crucial component in a solar panel system. Its primary function is to regulate the voltage and current coming from the solar panels and going to the battery bank.  Here&amp;#39;s how to use a charge controller in a home solar panel setup:  Purpose of a Charge Controller:   Prevents Overcharging: Charge controllers prevent overcharging of batt</description>
-			<pubDate>Tue, 12 Dec 2023 10:10:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/what-is-charge-controller-and-how-to-use-it-with-a-solar-panel-setup-at-home.html</guid>
     </item>
 </channel>
 </rss>
