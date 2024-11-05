@@ -3276,7 +3276,7 @@
         name = _ref.name;
     // Offsets are the actual position the popper needs to have to be
     // properly positioned near its reference element
-    // This is the most basic placement, and will be adjusted by
+    // This is the most basic placement and will be adjusted by
     // the modifiers in the next step
     state.modifiersData[name] = computeOffsets({
       reference: state.rects.reference,
@@ -4764,7 +4764,7 @@
     _initializeBackDrop() {
       return new Backdrop({
         isVisible: Boolean(this._config.backdrop),
-        // 'static' option will be translated to true, and booleans will keep their value,
+        // 'static' option will be translated to true and booleans will keep their value,
         isAnimated: this._isAnimated()
       });
     }
@@ -4834,7 +4834,7 @@
         }
       });
       EventHandler.on(this._element, EVENT_MOUSEDOWN_DISMISS, event => {
-        // a bad trick to segregate clicks that may start inside dialog but end outside, and avoid listen to scrollbar clicks
+        // a bad trick to segregate clicks that may start inside dialog but end outside and avoid listen to scrollbar clicks
         EventHandler.one(this._element, EVENT_CLICK_DISMISS, event2 => {
           if (this._element !== event.target || this._element !== event2.target) {
             return;
@@ -5167,7 +5167,7 @@
         }
 
         this.hide();
-      }; // 'static' option will be translated to true, and booleans will keep their value
+      }; // 'static' option will be translated to true and booleans will keep their value
 
 
       const isVisible = Boolean(this._config.backdrop);

@@ -62,7 +62,7 @@ function openCategory(evt, catName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the link that opened the tab
+    // Show the current tab and add an "active" class to the link that opened the tab
     document.getElementById(catName).style.display = "block";
     evt.currentTarget.className += " active";
 }

@@ -8,7 +8,7 @@
     <item>
 			<title>Store Secrets Securely on Pantheon for Drupal Application</title>
 			<link>https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</link>
-			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file, and keep the file outside of the proj</description>
+			<description>In this article, we are going to see how people can store access keys and tokens securely, in the case of your drupal application that is managed on pantheon.  Generally, all the Access keys or Tokens or any Secret third party auth information should not be stored in the database or within the project web root, Its safe to store it encrypted and within a file and keep the file outside of the proje</description>
 			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/store-secrets-securely-on-pantheon-for-drupal-application.html</guid>

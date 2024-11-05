@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "22nd Jun 2022",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>22nd Jun 2022</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>22nd Jun 2022</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.</p>  <p>It&rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.</p>  <p>Firstly, for the code reviews to be at their best, <b>the committed code should be more organised</b> by the people or developers who would commit and push the code to a branch.</p>  <p>Whatever the code pushed to the branch should have an understanding like</p>  <ul> <li>Why was this particular change made?</li> <li>What lines of code were changed? And how the new code works.?</li> <li>How to verify that the change actually worked?</li> </ul>  <p>If a commit or pull request is holding the above details, then code reviews can go pretty smoothly.</p>  <p>Second, <b>all the people in the team should be aware of the workflow of the code changes</b>, from their local machine to the dev or higher environment.</p>  <p>Here&rsquo;s a standard flow</p>  <ul> <li>Create a Story branch or Feature branch out of a Base branch (develop or master).</li> <li>Dev&rsquo;s always make sure to have proper commit messages. Example: <em>Story #1203: Validate form fields</em>.</li> <li>Dev&rsquo;s always make sure to get the latest code from Base branch before pushing Story branch to repository.</li> <li>And create a PR, from Story branch to Base branch, and add the details mentioned in the Firstly section above.</li> </ul> <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div> <p>Their are tools like PHP Codesniffer and drupal coder, which will help to do automated checks, Use them on your local machine and also on Github workflows (<a href='/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html'>here&rsquo;s article like how to configure and used PHP Codesniffer in Github workflows</a>).</p>  <p>So far discussed points are to be checked or used by all the team members. Now we&#39;re gonna discuss what code reviewers should make sure to review before pushing the code to a higher environment.</p>  <p><b>Appropriate or Systematic way to write the code</b> (check if its done) like below</p>  <ol> <li>Alters or Validations to be done in the module file, nothing to be done on the JS or Jquery.</li> <li>Any preprocess of data to be done, then make sure no data load is done twice or multiple times.</li> <li>Once the data is on the Twig file, then don&rsquo;t load any data from DB at this point.</li> </ol>  <p><b>How Secure is the written code</b>.</p>  <ol> <li>Make sure to have <code>check_plain()</code>, and <code>filter_xss()</code>, wherever needed, which will avoid cross origin exploits.</li> <li>Make sure it has a CSRF token, if it&#39;s an API to avoid cross-site request forgery (CSRF) exploits.</li> <li>Content Access controls should be strictly followed, check for Roles and permissions of all the modified ones.</li> </ol>  <p>Last one, <b>Documentation</b> should be maintained within the code, so that the code is readable at its best.</p>  <p>To conclude, if the code reviewer and the people in the team are following these above minimum steps, then you should be good at your code reviews.</p></div>
+                                <div><p>In this article we are going to see how your Drupal team can do code reviews and available tools or libraries which help people in the team to do the code reviews seamlessly.</p>  <p>It&rsquo;s pretty important to follow a few guidelines as well, so that all people or developers in the team are on the same page.</p>  <p>Firstly, for the code reviews to be at their best, <b>the committed code should be more organised</b> by the people or developers who would commit and push the code to a branch.</p>  <p>Whatever the code pushed to the branch should have an understanding like</p>  <ul> <li>Why was this particular change made?</li> <li>What lines of code were changed? And how the new code works.?</li> <li>How to verify that the change actually worked?</li> </ul>  <p>If a commit or pull request is holding the above details, then code reviews can go pretty smoothly.</p>  <p>Second, <b>all the people in the team should be aware of the workflow of the code changes</b>, from their local machine to the dev or higher environment.</p>  <p>Here&rsquo;s a standard flow</p>  <ul> <li>Create a Story branch or Feature branch out of a Base branch (develop or master).</li> <li>Dev&rsquo;s always make sure to have proper commit messages. Example: <em>Story #1203: Validate form fields</em>.</li> <li>Dev&rsquo;s always make sure to get the latest code from Base branch before pushing Story branch to repository.</li> <li>And create a PR, from Story branch to Base branch and add the details mentioned in the Firstly section above.</li> </ul> <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div> <p>Their are tools like PHP Codesniffer and drupal coder, which will help to do automated checks, Use them on your local machine and also on Github workflows (<a href='/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html'>here&rsquo;s article like how to configure and used PHP Codesniffer in Github workflows</a>).</p>  <p>So far discussed points are to be checked or used by all the team members. Now we&#39;re gonna discuss what code reviewers should make sure to review before pushing the code to a higher environment.</p>  <p><b>Appropriate or Systematic way to write the code</b> (check if its done) like below</p>  <ol> <li>Alters or Validations to be done in the module file, nothing to be done on the JS or Jquery.</li> <li>Any preprocess of data to be done, then make sure no data load is done twice or multiple times.</li> <li>Once the data is on the Twig file, then don&rsquo;t load any data from DB at this point.</li> </ol>  <p><b>How Secure is the written code</b>.</p>  <ol> <li>Make sure to have <code>check_plain()</code> and <code>filter_xss()</code>, wherever needed, which will avoid cross origin exploits.</li> <li>Make sure it has a CSRF token, if it&#39;s an API to avoid cross-site request forgery (CSRF) exploits.</li> <li>Content Access controls should be strictly followed, check for Roles and permissions of all the modified ones.</li> </ol>  <p>Last one, <b>Documentation</b> should be maintained within the code, so that the code is readable at its best.</p>  <p>To conclude, if the code reviewer and the people in the team are following these above minimum steps, then you should be good at your code reviews.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">79% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D9W7P8BT.html" title="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women"><img data-src="https://m.media-amazon.com/images/I/61oSkXNrlHL._SY879_.jpg" class="img-fluid lazy" alt="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women" title="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D9W7P8BT.html" title="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women" class="shop-title-value">GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women</a></h4>
+                  <div class="discount"><span class="main blink">86% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09JKLVS1C.html" title="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress"><img data-src="https://m.media-amazon.com/images/I/61akA1Lfz5L._SY879_.jpg" class="img-fluid lazy" alt="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress" title="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09JKLVS1C.html" title="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress" class="shop-title-value">PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>419</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>369</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,699</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">64% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B079556R74.html" title="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor"><img data-src="https://m.media-amazon.com/images/I/71iUq9qVn5L._SX679_.jpg" class="img-fluid lazy" alt="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor" title="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B079556R74.html" title="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor" class="shop-title-value">Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor</a></h4>
+                  <div class="discount"><span class="main blink">69% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CJJT1BFV.html" title="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time"><img data-src="https://m.media-amazon.com/images/I/61CeRMMV7+L._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time" title="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CJJT1BFV.html" title="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time" class="shop-title-value">Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>712</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,000</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">49% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07ZKPZ5M9.html" title="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs"><img data-src="https://m.media-amazon.com/images/I/817tVD0fJLL._SY879_.jpg" class="img-fluid lazy" alt="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs" title="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07ZKPZ5M9.html" title="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs" class="shop-title-value">Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs</a></h4>
+                  <div class="discount"><span class="main blink">54% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00650QJ8G.html" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White"><img data-src="https://m.media-amazon.com/images/I/71Rx6XUEpnL._SX679_.jpg" class="img-fluid lazy" alt="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00650QJ8G.html" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" class="shop-title-value">Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>435</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>845</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,750</span></span>
                   </div>
               </div>
           </div>
@@ -326,11 +326,11 @@
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
                   <div class="discount"><span class="main blink">29% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DGX9VVFV.html" title="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update"><img data-src="https://m.media-amazon.com/images/I/81scQ7qlPuL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update" title="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DGX9VVFV.html" title="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update" class="shop-title-value">Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update</a></h4>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B072J83V9W.html" title="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)"><img data-src="https://m.media-amazon.com/images/I/71zWZo78JqL._SX679_.jpg" class="img-fluid lazy" alt="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)" title="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B072J83V9W.html" title="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)" class="shop-title-value">Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>11,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>16,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,995</span></span>
                   </div>
               </div>
           </div>
@@ -373,7 +373,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -393,12 +393,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">82% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CHS59V1P.html" title="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2"><img data-src="https://m.media-amazon.com/images/I/81PiLv21XTL._SX679_.jpg" class="img-fluid lazy" alt="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2" title="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CHS59V1P.html" title="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2" class="shop-title-value">London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2</a></h4>
+                  <div class="discount"><span class="main blink">49% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0756K5DYZ.html" title="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)"><img data-src="https://m.media-amazon.com/images/I/81+M1QrVNIL._SX679_.jpg" class="img-fluid lazy" alt="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)" title="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0756K5DYZ.html" title="Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)" class="shop-title-value">Prestige Iris 750 Watt Mixer Grinder with 3 Stainless Steel Jar + 1 Juicer Jar (White and Blue)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>473</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,598</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,295</span></span>
                   </div>
               </div>
           </div>
@@ -429,7 +429,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -445,7 +445,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -461,12 +461,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">55% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09Y65HV6N.html" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)"><img data-src="https://m.media-amazon.com/images/I/91b1B9Pjd2L._SX679_.jpg" class="img-fluid lazy" alt="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09Y65HV6N.html" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" class="shop-title-value">Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)</a></h4>
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07GDR7VZ3.html" title="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)"><img data-src="https://m.media-amazon.com/images/I/41tDUmnDITL.jpg" class="img-fluid lazy" alt="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)" title="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07GDR7VZ3.html" title="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)" class="shop-title-value">Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>3,99,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>8,79,900</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,595</span></span>
                   </div>
               </div>
           </div>
@@ -530,12 +530,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">75% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08QT7FH84.html" title="Amazon Brand - Solimo Petra Solid Sheesham Wood King Bed (Teak Finish)"><img data-src="https://m.media-amazon.com/images/I/81oFv22OmQS._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Petra Solid Sheesham Wood King Bed (Teak Finish)" title="Amazon Brand - Solimo Petra Solid Sheesham Wood King Bed (Teak Finish)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08QT7FH84.html" title="Amazon Brand - Solimo Petra Solid Sheesham Wood King Bed (Teak Finish)" class="shop-title-value">Amazon Brand - Solimo Petra Solid Sheesham Wood King Bed (Teak Finish)</a></h4>
+                  <div class="discount"><span class="main blink">66% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)"><img data-src="https://m.media-amazon.com/images/I/614cFlQ5hAL._SX679_.jpg" class="img-fluid lazy" alt="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" class="shop-title-value">WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>12,499</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>50,000</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,489</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
                   </div>
               </div>
           </div>
@@ -554,6 +554,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -589,22 +593,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">71% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CZ23FJJT.html" title="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)"><img data-src="https://m.media-amazon.com/images/I/71aRgGvQcUL._SX679_.jpg" class="img-fluid lazy" alt="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)" title="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CZ23FJJT.html" title="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)" class="shop-title-value">Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)</a></h4>
+                  <div class="discount"><span class="main blink">20% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C7V84BS2.html" title="OnePlus Nord 3 5G (Tempest Gray, 16GB RAM, 256GB Storage)"><img data-src="https://m.media-amazon.com/images/I/71-yDa90UrL._SY879_.jpg" class="img-fluid lazy" alt="OnePlus Nord 3 5G (Tempest Gray, 16GB RAM, 256GB Storage)" title="OnePlus Nord 3 5G (Tempest Gray, 16GB RAM, 256GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C7V84BS2.html" title="OnePlus Nord 3 5G (Tempest Gray, 16GB RAM, 256GB Storage)" class="shop-title-value">OnePlus Nord 3 5G (Tempest Gray, 16GB RAM, 256GB Storage)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>349</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,200</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>30,300</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>37,999</span></span>
                   </div>
               </div>
           </div>
@@ -628,42 +628,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">29% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B079T88XLM.html" title="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack"><img data-src="https://m.media-amazon.com/images/I/71IHKbuambL._SY385_.jpg" class="img-fluid lazy" alt="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack" title="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B079T88XLM.html" title="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack" class="shop-title-value">Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack</a></h4>
+                  <div class="discount"><span class="main blink">20% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08SVW5KTF.html" title="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml"><img data-src="https://m.media-amazon.com/images/I/61kVLrByg+L._SX522_.jpg" class="img-fluid lazy" alt="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml" title="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08SVW5KTF.html" title="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml" class="shop-title-value">WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>298.30</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>419</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>560</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>700</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">16% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08SMWPSF8.html" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml"><img data-src="https://f.media-amazon.com/images/I/61SzOiLaXhL._SX522_.jpg" class="img-fluid lazy" alt="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08SMWPSF8.html" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" class="shop-title-value">L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml</a></h4>
+                  <div class="discount"><span class="main blink">28% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00VFMFXRC.html" title="All Out Ultra Liquid Vaporizer, 6 Refills (45ml each) | Kills Dengue, Malaria &amp; Chikungunya Spreading Mosquitoes| India&#039;s Only Mosquito Killer Brand Recommended by Indian Medical Association"><img data-src="https://m.media-amazon.com/images/I/81e7mz0u81L._SX679_.jpg" class="img-fluid lazy" alt="All Out Ultra Liquid Vaporizer, 6 Refills (45ml each) | Kills Dengue, Malaria &amp; Chikungunya Spreading Mosquitoes| India&#039;s Only Mosquito Killer Brand Recommended by Indian Medical Association" title="All Out Ultra Liquid Vaporizer, 6 Refills (45ml each) | Kills Dengue, Malaria &amp; Chikungunya Spreading Mosquitoes| India&#039;s Only Mosquito Killer Brand Recommended by Indian Medical Association" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00VFMFXRC.html" title="All Out Ultra Liquid Vaporizer, 6 Refills (45ml each) | Kills Dengue, Malaria &amp; Chikungunya Spreading Mosquitoes| India&#039;s Only Mosquito Killer Brand Recommended by Indian Medical Association" class="shop-title-value">All Out Ultra Liquid Vaporizer, 6 Refills (45ml each) | Kills Dengue, Malaria &amp; Chikungunya Spreading Mosquitoes| India&#039;s Only Mosquito Killer Brand Recommended by Indian Medical Association</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,491</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,765</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>335</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>465</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">58% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver"><img data-src="https://m.media-amazon.com/images/I/51TK3jYBmBL._SX679_.jpg" class="img-fluid lazy" alt="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" class="shop-title-value">Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver</a></h4>
+                  <div class="discount"><span class="main blink">74% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B095SWYF6M.html" title="Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with Amazon Alexa and Google Assistant (16M Colours, Warm White/Neutral White/White + Dimmable) Pack of 1"><img data-src="https://m.media-amazon.com/images/I/71LIfhSpAYS._SX385_.jpg" class="img-fluid lazy" alt="Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with Amazon Alexa and Google Assistant (16M Colours, Warm White/Neutral White/White + Dimmable) Pack of 1" title="Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with Amazon Alexa and Google Assistant (16M Colours, Warm White/Neutral White/White + Dimmable) Pack of 1" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B095SWYF6M.html" title="Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with Amazon Alexa and Google Assistant (16M Colours, Warm White/Neutral White/White + Dimmable) Pack of 1" class="shop-title-value">Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with Amazon Alexa and Google Assistant (16M Colours, Warm White/Neutral White/White + Dimmable) Pack of 1</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>2,498</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>549</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,099</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">33% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)"><img data-src="https://m.media-amazon.com/images/I/81BENnbPpuL._SX679_.jpg" class="img-fluid lazy" alt="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" class="shop-title-value">Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)</a></h4>
+                  <div class="discount"><span class="main blink">60% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BLSQVD6N.html" title="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment"><img data-src="https://m.media-amazon.com/images/I/81A-JmBxxiL._UX385_.jpg" class="img-fluid lazy" alt="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment" title="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BLSQVD6N.html" title="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment" class="shop-title-value">TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>39,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>59,900</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,229</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>7,999</span></span>
                   </div>
               </div>
           </div>

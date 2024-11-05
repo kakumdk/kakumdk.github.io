@@ -5,15 +5,15 @@
     <meta http-equiv="content-language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Implementing Design Patterns in Real-World PHP Applications</title>
-    <meta name="description" content="Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In thi" />
+    <meta name="description" content="Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability and scalability.  In this" />
     <link rel="canonical" href="https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html" />
     <meta property="og:title" content="Implementing Design Patterns in Real-World PHP Applications" />
-    <meta property="og:description" content="Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In thi" />
+    <meta property="og:description" content="Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability and scalability.  In this" />
     <meta property="og:url" content="https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/implementing-design-patterns-in-real-world-php-applications.jpg" />
     <meta property="og:type" content="article" />
     <meta name="twitter:title" content="Implementing Design Patterns in Real-World PHP Applications" />
-    <meta name="twitter:description" content="Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In thi" />
+    <meta name="twitter:description" content="Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability and scalability.  In this" />
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/implementing-design-patterns-in-real-world-php-applications.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
@@ -51,7 +51,7 @@
           "@id": "/articles/implementing-design-patterns-in-real-world-php-applications.html"
         },
         "headline": "Implementing Design Patterns in Real-World PHP Applications",
-        "description": "Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In thi",
+        "description": "Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability and scalability.  In this",
         "image": "https://peoplesblog.co.in/upload/banners/implementing-design-patterns-in-real-world-php-applications.jpg",
         "author": {
           "@type": "Person",
@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "27th Oct 2024",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>27th Oct 2024</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>27th Oct 2024</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>Design patterns are proven solutions to common software design problems. They help improve <a href='/articles/designing-efficient-schemas-for-web-applications.html'>code</a> readability, maintainability, and scalability.</p>  <p>In this article, we&#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton, and Dependency Injection, in real-world PHP applications using PHP 8.</p>  <h2>1. Factory Pattern</h2>  <p><strong>Scenario</strong></p>  <p>Imagine you&rsquo;re developing an e-commerce application where different types of payment methods are available: Credit Card, PayPal, and Bitcoin. Instead of creating each payment object directly, you can use the Factory Pattern.</p>  <p><strong>Implementation</strong></p>  <p><strong>Step 1:</strong> Define the Payment Interface</p>  <p><code>interface PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount);</code></p>  <p><code>}</code></p>  <p><strong>Step 2:</strong> Create Concrete Payment Classes</p>  <p><code>class CreditCardPayment implements PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Processing a credit card payment of $$amount.&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class PayPalPayment implements PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Processing a PayPal payment of $$amount.&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class BitcoinPayment implements PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Processing a Bitcoin payment of $$amount.&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 3:</strong> Implement the Factory Class</p>  <p><code>class PaymentFactory {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function create(string $type): PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch ($type) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case &#39;credit_card&#39;:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new CreditCardPayment();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case &#39;paypal&#39;:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new PayPalPayment();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case &#39;bitcoin&#39;:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new BitcoinPayment();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw new InvalidArgumentException(&quot;Unknown payment method&quot;);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 4:</strong> Usage Example</p>  <p><code>$paymentMethod = PaymentFactory::create(&#39;paypal&#39;);</code></p>  <p><code>echo $paymentMethod-&gt;processPayment(100.00); // Outputs: Processing a PayPal payment of $100.</code></p>  <p><strong>Benefits</strong></p>  <ul> <li><strong>Decoupling</strong>: You decouple the client <a href='/articles/understanding-the-solid-principles-in-php.html'>code</a> from the concrete payment classes.</li> <li><strong>Scalability</strong>: Adding new payment methods becomes easier, as you only need to create a new class and update the factory.</li> </ul>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>2. Singleton Pattern</h2>  <p><strong>Scenario</strong></p>  <p>Let&rsquo;s consider a logging mechanism for your application. You want to ensure that only one instance of the logger exists to avoid writing to multiple files or connections.</p>  <p><strong>Implementation</strong></p>  <p><strong>Step 1:</strong> Create the Logger Class</p>  <p><code>class Logger {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private static ?Logger $instance = null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private function __construct() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Private constructor to prevent instantiation</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function getInstance(): Logger {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (self::$instance === null) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self::$instance = new Logger();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self::$instance;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function log(string $message) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// In a real application, you&#39;d write to a file or database</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo &quot;[LOG] &quot; . $message . &quot;\n&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 2:</strong> Usage Example</p>  <p><code>$logger = Logger::getInstance();</code></p>  <p><code>$logger-&gt;log(&quot;This is a log message.&quot;); // Outputs: [LOG] This is a log message.</code></p>  <p><strong>Benefits</strong></p>  <ul> <li><strong>Controlled Access</strong>: Only one instance is created, which saves resources.</li> <li><strong>Global Point of Access</strong>: The logger can be accessed from anywhere in the application.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>3. Dependency Injection</h2>  <p><strong>Scenario</strong></p>  <p>In a web application, you might have a service that retrieves user information from a database. You want to make it easy to test this service by allowing it to receive its database dependency through a constructor.</p>  <p><strong>Implementation</strong></p>  <p><strong>Step 1:</strong> Create the Database Class</p>  <p><code>class Database {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function connect() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Simulate a database connection</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Database connected&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 2:</strong> Create the User Service Class</p>  <p><code>class UserService {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private Database $database;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct(Database $database) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;database = $database;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function getUser(int $id) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Simulate fetching a user</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;database-&gt;connect() . &quot; - User with ID: $id&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 3:</strong> Usage Example</p>  <p><code>$database = new Database();</code></p>  <p><code>$userService = new UserService($database);</code></p>  <p><code>echo $userService-&gt;getUser(1); // Outputs: Database connected - User with ID: 1</code></p>  <p><strong>Benefits</strong></p>  <ul> <li><strong>Loose Coupling</strong>: UserService is not tightly coupled with the Database class.</li> <li><strong>Testability</strong>: You can easily mock the Database dependency in unit tests.</li> </ul>  <h2>Conclusion</h2>  <p>Implementing design patterns in PHP applications can significantly enhance <a href='/articles/introduction-to-php--and-key-differences-from-php-.html'>code</a> structure and maintainability. The Factory Pattern allows for flexible object creation, the Singleton Pattern ensures controlled access to shared resources, and Dependency Injection promotes loose coupling and testability.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                                <div><p>Design patterns are proven solutions to common software design problems. They help improve <a href='/articles/designing-efficient-schemas-for-web-applications.html'>code</a> readability, maintainability and scalability.</p>  <p>In this article, we&#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton and Dependency Injection, in real-world PHP applications using PHP 8.</p>  <h2>1. Factory Pattern</h2>  <p><strong>Scenario</strong></p>  <p>Imagine you&rsquo;re developing an e-commerce application where different types of payment methods are available: Credit Card, PayPal and Bitcoin. Instead of creating each payment object directly, you can use the Factory Pattern.</p>  <p><strong>Implementation</strong></p>  <p><strong>Step 1:</strong> Define the Payment Interface</p>  <p><code>interface PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount);</code></p>  <p><code>}</code></p>  <p><strong>Step 2:</strong> Create Concrete Payment Classes</p>  <p><code>class CreditCardPayment implements PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Processing a credit card payment of $$amount.&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class PayPalPayment implements PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Processing a PayPal payment of $$amount.&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class BitcoinPayment implements PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function processPayment(float $amount) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Processing a Bitcoin payment of $$amount.&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 3:</strong> Implement the Factory Class</p>  <p><code>class PaymentFactory {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function create(string $type): PaymentMethod {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch ($type) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case &#39;credit_card&#39;:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new CreditCardPayment();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case &#39;paypal&#39;:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new PayPalPayment();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case &#39;bitcoin&#39;:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return new BitcoinPayment();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw new InvalidArgumentException(&quot;Unknown payment method&quot;);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 4:</strong> Usage Example</p>  <p><code>$paymentMethod = PaymentFactory::create(&#39;paypal&#39;);</code></p>  <p><code>echo $paymentMethod-&gt;processPayment(100.00); // Outputs: Processing a PayPal payment of $100.</code></p>  <p><strong>Benefits</strong></p>  <ul> <li><strong>Decoupling</strong>: You decouple the client <a href='/articles/understanding-the-solid-principles-in-php.html'>code</a> from the concrete payment classes.</li> <li><strong>Scalability</strong>: Adding new payment methods becomes easier, as you only need to create a new class and update the factory.</li> </ul>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>2. Singleton Pattern</h2>  <p><strong>Scenario</strong></p>  <p>Let&rsquo;s consider a logging mechanism for your application. You want to ensure that only one instance of the logger exists to avoid writing to multiple files or connections.</p>  <p><strong>Implementation</strong></p>  <p><strong>Step 1:</strong> Create the Logger Class</p>  <p><code>class Logger {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private static ?Logger $instance = null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private function __construct() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Private constructor to prevent instantiation</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function getInstance(): Logger {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (self::$instance === null) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self::$instance = new Logger();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self::$instance;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function log(string $message) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// In a real application, you&#39;d write to a file or database</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo &quot;[LOG] &quot; . $message . &quot;\n&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 2:</strong> Usage Example</p>  <p><code>$logger = Logger::getInstance();</code></p>  <p><code>$logger-&gt;log(&quot;This is a log message.&quot;); // Outputs: [LOG] This is a log message.</code></p>  <p><strong>Benefits</strong></p>  <ul> <li><strong>Controlled Access</strong>: Only one instance is created, which saves resources.</li> <li><strong>Global Point of Access</strong>: The logger can be accessed from anywhere in the application.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>3. Dependency Injection</h2>  <p><strong>Scenario</strong></p>  <p>In a web application, you might have a service that retrieves user information from a database. You want to make it easy to test this service by allowing it to receive its database dependency through a constructor.</p>  <p><strong>Implementation</strong></p>  <p><strong>Step 1:</strong> Create the Database Class</p>  <p><code>class Database {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function connect() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Simulate a database connection</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;Database connected&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 2:</strong> Create the User Service Class</p>  <p><code>class UserService {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private Database $database;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct(Database $database) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;database = $database;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function getUser(int $id) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Simulate fetching a user</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;database-&gt;connect() . &quot; - User with ID: $id&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 3:</strong> Usage Example</p>  <p><code>$database = new Database();</code></p>  <p><code>$userService = new UserService($database);</code></p>  <p><code>echo $userService-&gt;getUser(1); // Outputs: Database connected - User with ID: 1</code></p>  <p><strong>Benefits</strong></p>  <ul> <li><strong>Loose Coupling</strong>: UserService is not tightly coupled with the Database class.</li> <li><strong>Testability</strong>: You can easily mock the Database dependency in unit tests.</li> </ul>  <h2>Conclusion</h2>  <p>Implementing design patterns in PHP applications can significantly enhance <a href='/articles/introduction-to-php--and-key-differences-from-php-.html'>code</a> structure and maintainability. The Factory Pattern allows for flexible object creation, the Singleton Pattern ensures controlled access to shared resources and Dependency Injection promotes loose coupling and testability.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">57% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08BGLPK9T.html" title="Amazon Brand - Solimo XXL Bean Bag Cover Without Beans (Black and Brown, Faux Leather)"><img data-src="https://m.media-amazon.com/images/I/61eKBG7xyfL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo XXL Bean Bag Cover Without Beans (Black and Brown, Faux Leather)" title="Amazon Brand - Solimo XXL Bean Bag Cover Without Beans (Black and Brown, Faux Leather)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08BGLPK9T.html" title="Amazon Brand - Solimo XXL Bean Bag Cover Without Beans (Black and Brown, Faux Leather)" class="shop-title-value">Amazon Brand - Solimo XXL Bean Bag Cover Without Beans (Black and Brown, Faux Leather)</a></h4>
+                  <div class="discount"><span class="main blink">46% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D6QRQQ3S.html" title="HONOR Pad X9 with Free Flip-Cover 11.5-inch (29.21 cm) 120Hz 2K Display, Snapdragon 685, 8GB (8GB+5GB RAM Turbo) 128GB ROM, 6 Speakers, Up-to 13 Hours Battery, Android, WiFi, Metal Body, Gray"><img data-src="https://m.media-amazon.com/images/I/519RKhCQZGL._SX679_.jpg" class="img-fluid lazy" alt="HONOR Pad X9 with Free Flip-Cover 11.5-inch (29.21 cm) 120Hz 2K Display, Snapdragon 685, 8GB (8GB+5GB RAM Turbo) 128GB ROM, 6 Speakers, Up-to 13 Hours Battery, Android, WiFi, Metal Body, Gray" title="HONOR Pad X9 with Free Flip-Cover 11.5-inch (29.21 cm) 120Hz 2K Display, Snapdragon 685, 8GB (8GB+5GB RAM Turbo) 128GB ROM, 6 Speakers, Up-to 13 Hours Battery, Android, WiFi, Metal Body, Gray" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D6QRQQ3S.html" title="HONOR Pad X9 with Free Flip-Cover 11.5-inch (29.21 cm) 120Hz 2K Display, Snapdragon 685, 8GB (8GB+5GB RAM Turbo) 128GB ROM, 6 Speakers, Up-to 13 Hours Battery, Android, WiFi, Metal Body, Gray" class="shop-title-value">HONOR Pad X9 with Free Flip-Cover 11.5-inch (29.21 cm) 120Hz 2K Display, Snapdragon 685, 8GB (8GB+5GB RAM Turbo) 128GB ROM, 6 Speakers, Up-to 13 Hours Battery, Android, WiFi, Metal Body, Gray</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>559</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,299</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>14,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>27,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">37% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DB1SDB87.html" title="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG"><img data-src="https://m.media-amazon.com/images/I/61fDHkQ6MqL._SX679_.jpg" class="img-fluid lazy" alt="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG" title="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DB1SDB87.html" title="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG" class="shop-title-value">Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG</a></h4>
+                  <div class="discount"><span class="main blink">26% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0849982T8.html" title="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs"><img data-src="https://m.media-amazon.com/images/I/61kBCL2yVaL._SX385_.jpg" class="img-fluid lazy" alt="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs" title="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0849982T8.html" title="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs" class="shop-title-value">Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>31,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>50,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>555.75</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>750</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">36% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B573QW21.html" title="WishCare Hair Growth Serum Concentrate - 3% Redensyl, 4% Anagain, 2% Baicapil, Caffeine, Biotin, Plant Keratin &amp; Rice Water - Hair Growth Serum for Men &amp; Women"><img data-src="https://m.media-amazon.com/images/I/61PA2P4KDCL._SX679_.jpg" class="img-fluid lazy" alt="WishCare Hair Growth Serum Concentrate - 3% Redensyl, 4% Anagain, 2% Baicapil, Caffeine, Biotin, Plant Keratin &amp; Rice Water - Hair Growth Serum for Men &amp; Women" title="WishCare Hair Growth Serum Concentrate - 3% Redensyl, 4% Anagain, 2% Baicapil, Caffeine, Biotin, Plant Keratin &amp; Rice Water - Hair Growth Serum for Men &amp; Women" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B573QW21.html" title="WishCare Hair Growth Serum Concentrate - 3% Redensyl, 4% Anagain, 2% Baicapil, Caffeine, Biotin, Plant Keratin &amp; Rice Water - Hair Growth Serum for Men &amp; Women" class="shop-title-value">WishCare Hair Growth Serum Concentrate - 3% Redensyl, 4% Anagain, 2% Baicapil, Caffeine, Biotin, Plant Keratin &amp; Rice Water - Hair Growth Serum for Men &amp; Women</a></h4>
+                  <div class="discount"><span class="main blink">54% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D4LJ9WVW.html" title="Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)"><img data-src="https://m.media-amazon.com/images/I/71MwDnn-ZaL._SX679_.jpg" class="img-fluid lazy" alt="Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)" title="Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D4LJ9WVW.html" title="Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)" class="shop-title-value">Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32MA-FVIN (Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>638</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>11,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
                   </div>
               </div>
           </div>
@@ -294,7 +294,7 @@
                 </a>
               </div><div class="article">
                 <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-                  Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
                 </a>
               </div><div class="article">
                 <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -302,7 +302,7 @@
                 </a>
               </div><div class="article">
                 <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-                  Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+                  Introduction to Design Patterns: Factory, Singleton and Dependency Injection
                 </a>
               </div><div class="article">
                 <a href="/articles/designing-efficient-schemas-for-web-applications.html">
@@ -333,12 +333,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">56% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)"><img data-src="https://m.media-amazon.com/images/I/71mnHCt5TkL._SX679_.jpg" class="img-fluid lazy" alt="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" class="shop-title-value">GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)</a></h4>
+                  <div class="discount"><span class="main blink">16% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08SMWPSF8.html" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml"><img data-src="https://f.media-amazon.com/images/I/61SzOiLaXhL._SX522_.jpg" class="img-fluid lazy" alt="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08SMWPSF8.html" title="L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml" class="shop-title-value">L&#039;Oréal Professionnel Absolut Repair Shampoo With Protein And Gold Quinoa For Dry And Damaged Hair, Serie Expert, 300Ml</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,491</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,765</span></span>
                   </div>
               </div>
           </div>
@@ -381,7 +381,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -401,12 +401,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">70% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WHLHXB9.html" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue"><img data-src="https://m.media-amazon.com/images/I/A14H95fAh7L._SY879_.jpg" class="img-fluid lazy" alt="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WHLHXB9.html" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" class="shop-title-value">SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue</a></h4>
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08VB57558.html" title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"><img data-src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._SY879_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)" title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08VB57558.html" title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)" class="shop-title-value">Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,798</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>27,250</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>74,999</span></span>
                   </div>
               </div>
           </div>
@@ -437,7 +437,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -453,7 +453,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -469,12 +469,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">75% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08TV2P1N8.html" title="boAt Rockerz 255 Pro+ Bluetooth in Ear Neckband with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.2(Active Black)"><img data-src="https://m.media-amazon.com/images/I/51aBTOiXRlL._SX679_.jpg" class="img-fluid lazy" alt="boAt Rockerz 255 Pro+ Bluetooth in Ear Neckband with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.2(Active Black)" title="boAt Rockerz 255 Pro+ Bluetooth in Ear Neckband with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.2(Active Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08TV2P1N8.html" title="boAt Rockerz 255 Pro+ Bluetooth in Ear Neckband with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.2(Active Black)" class="shop-title-value">boAt Rockerz 255 Pro+ Bluetooth in Ear Neckband with Upto 60 Hours Playback, ASAP Charge, IPX7, Dual Pairing and Bluetooth v5.2(Active Black)</a></h4>
+                  <div class="discount"><span class="main blink">41% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07R47WXX9.html" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)"><img data-src="https://m.media-amazon.com/images/I/814zusmvtVL._SX385_.jpg" class="img-fluid lazy" alt="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07R47WXX9.html" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" class="shop-title-value">SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>998</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>3,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,374</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,999</span></span>
                   </div>
               </div>
           </div>
@@ -538,12 +538,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">66% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07Z1HN1KG.html" title="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder"><img data-src="https://f.media-amazon.com/images/I/718WESs286L._SX679_.jpg" class="img-fluid lazy" alt="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder" title="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07Z1HN1KG.html" title="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder" class="shop-title-value">SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder</a></h4>
+                  <div class="discount"><span class="main blink">25% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B088ZRBDKN.html" title="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)"><img data-src="https://m.media-amazon.com/images/I/716ItAjzpHL._SX679_.jpg" class="img-fluid lazy" alt="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)" title="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B088ZRBDKN.html" title="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)" class="shop-title-value">Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>9,387</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>27,299</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>730</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>970</span></span>
                   </div>
               </div>
           </div>
@@ -562,6 +562,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -597,22 +601,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">73% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D4ZD52G5.html" title="GOVO GoSurround 990 Dolby Digital | 525W Sound bar, 5.1 Channel Home Theatre, 6.5&quot; Wireless subwoofer and Satellite Speakers, HDMI, Opt, AUX, USB &amp; Bluetooth, 3 Equalizer Modes, LED Display (Black)"><img data-src="https://m.media-amazon.com/images/I/61u-PI9YTOL._SX679_.jpg" class="img-fluid lazy" alt="GOVO GoSurround 990 Dolby Digital | 525W Sound bar, 5.1 Channel Home Theatre, 6.5&quot; Wireless subwoofer and Satellite Speakers, HDMI, Opt, AUX, USB &amp; Bluetooth, 3 Equalizer Modes, LED Display (Black)" title="GOVO GoSurround 990 Dolby Digital | 525W Sound bar, 5.1 Channel Home Theatre, 6.5&quot; Wireless subwoofer and Satellite Speakers, HDMI, Opt, AUX, USB &amp; Bluetooth, 3 Equalizer Modes, LED Display (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D4ZD52G5.html" title="GOVO GoSurround 990 Dolby Digital | 525W Sound bar, 5.1 Channel Home Theatre, 6.5&quot; Wireless subwoofer and Satellite Speakers, HDMI, Opt, AUX, USB &amp; Bluetooth, 3 Equalizer Modes, LED Display (Black)" class="shop-title-value">GOVO GoSurround 990 Dolby Digital | 525W Sound bar, 5.1 Channel Home Theatre, 6.5&quot; Wireless subwoofer and Satellite Speakers, HDMI, Opt, AUX, USB &amp; Bluetooth, 3 Equalizer Modes, LED Display (Black)</a></h4>
+                  <div class="discount"><span class="main blink">10% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B012AU6PWY.html" title="Duracell Ultra Alkaline AA Batteries, Pack of 6"><img data-src="https://m.media-amazon.com/images/I/717tWxWgedL._SX679_.jpg" class="img-fluid lazy" alt="Duracell Ultra Alkaline AA Batteries, Pack of 6" title="Duracell Ultra Alkaline AA Batteries, Pack of 6" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B012AU6PWY.html" title="Duracell Ultra Alkaline AA Batteries, Pack of 6" class="shop-title-value">Duracell Ultra Alkaline AA Batteries, Pack of 6</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>9,998</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>36,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>269</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>300</span></span>
                   </div>
               </div>
           </div>
@@ -636,42 +636,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">62% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DC6RP3WL.html" title="NINGMI Women&#039;s Cotton Nylon Seamless Tummy Control High Waist Shapewear and Thigh Ladies Shaper (Free Size Fit Up to M to 4XL)"><img data-src="https://m.media-amazon.com/images/I/514ar+9d5DL._SY879_.jpg" class="img-fluid lazy" alt="NINGMI Women&#039;s Cotton Nylon Seamless Tummy Control High Waist Shapewear and Thigh Ladies Shaper (Free Size Fit Up to M to 4XL)" title="NINGMI Women&#039;s Cotton Nylon Seamless Tummy Control High Waist Shapewear and Thigh Ladies Shaper (Free Size Fit Up to M to 4XL)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DC6RP3WL.html" title="NINGMI Women&#039;s Cotton Nylon Seamless Tummy Control High Waist Shapewear and Thigh Ladies Shaper (Free Size Fit Up to M to 4XL)" class="shop-title-value">NINGMI Women&#039;s Cotton Nylon Seamless Tummy Control High Waist Shapewear and Thigh Ladies Shaper (Free Size Fit Up to M to 4XL)</a></h4>
+                  <div class="discount"><span class="main blink">37% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DB1SDB87.html" title="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG"><img data-src="https://m.media-amazon.com/images/I/61fDHkQ6MqL._SX679_.jpg" class="img-fluid lazy" alt="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG" title="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DB1SDB87.html" title="Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG" class="shop-title-value">Acer Aspire Lite 13th Gen Intel Core i3-1305U Thin and Light Premium Laptop (Windows 11 Home/8 GB RAM/512GB SSD/36 WHR) AL15-53 with 39.62cm (15.6&quot;) Full HD Display, Metal Body, Steel Gray, 1.59 KG</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>379</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>31,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>50,990</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">57% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08CFJBZRK.html" title="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts"><img data-src="https://m.media-amazon.com/images/I/61JOzccwTCL._SX679_.jpg" class="img-fluid lazy" alt="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts" title="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08CFJBZRK.html" title="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts" class="shop-title-value">Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts</a></h4>
+                  <div class="discount"><span class="main blink">14% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07YY9N6TY.html" title="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6"><img data-src="https://m.media-amazon.com/images/I/616lkBRsL3L._SX679_.jpg" class="img-fluid lazy" alt="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6" title="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07YY9N6TY.html" title="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6" class="shop-title-value">Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>265</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>308</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">0% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BKKPRMM6.html" title="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)"><img data-src="https://m.media-amazon.com/images/I/7135keEf6AL._SX679_.jpg" class="img-fluid lazy" alt="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)" title="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BKKPRMM6.html" title="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)" class="shop-title-value">Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>21,500</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>21,500</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">44% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BTY96KCQ.html" title="Crompton HIGHSPEED AURA 1200 mm Ceiling Fan for Home | Designer | 1 Star Rated | Energy Efficient | 370RPM | Superior Air Delivery | 2 years Manufacturer Warranty | (Ivory Deluxe), Pack of 1"><img data-src="https://m.media-amazon.com/images/I/31g7fxYmBFL._SX679_.jpg" class="img-fluid lazy" alt="Crompton HIGHSPEED AURA 1200 mm Ceiling Fan for Home | Designer | 1 Star Rated | Energy Efficient | 370RPM | Superior Air Delivery | 2 years Manufacturer Warranty | (Ivory Deluxe), Pack of 1" title="Crompton HIGHSPEED AURA 1200 mm Ceiling Fan for Home | Designer | 1 Star Rated | Energy Efficient | 370RPM | Superior Air Delivery | 2 years Manufacturer Warranty | (Ivory Deluxe), Pack of 1" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BTY96KCQ.html" title="Crompton HIGHSPEED AURA 1200 mm Ceiling Fan for Home | Designer | 1 Star Rated | Energy Efficient | 370RPM | Superior Air Delivery | 2 years Manufacturer Warranty | (Ivory Deluxe), Pack of 1" class="shop-title-value">Crompton HIGHSPEED AURA 1200 mm Ceiling Fan for Home | Designer | 1 Star Rated | Energy Efficient | 370RPM | Superior Air Delivery | 2 years Manufacturer Warranty | (Ivory Deluxe), Pack of 1</a></h4>
                   <div class="price">
                       <span class="discountprice"><span class="rupee">₹</span><span>2,699</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>6,295</span></span>
-                  </div>
-              </div>
-          </div><div class="col-md-3 shop-item-wrapper">
-              <div class="shop-item">
-                  <div class="discount"><span class="main blink">79% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D9W7P8BT.html" title="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women"><img data-src="https://m.media-amazon.com/images/I/61oSkXNrlHL._SY879_.jpg" class="img-fluid lazy" alt="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women" title="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D9W7P8BT.html" title="GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women" class="shop-title-value">GRECIILOOKS T Shirt for Women | Women T Shirt |Hoodies for Women | Winter Hoodies Loose Fit | Oversized T Shirt for Women | T-Shirt for Women</a></h4>
-                  <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>419</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
-                  </div>
-              </div>
-          </div><div class="col-md-3 shop-item-wrapper">
-              <div class="shop-item">
-                  <div class="discount"><span class="main blink">56% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00JD8EA1U.html" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue"><img data-src="https://m.media-amazon.com/images/I/71TBQtHYiyL._SX679_.jpg" class="img-fluid lazy" alt="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00JD8EA1U.html" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" class="shop-title-value">Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue</a></h4>
-                  <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>889</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,000</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,859</span></span>
                   </div>
               </div>
           </div>

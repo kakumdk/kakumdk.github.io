@@ -15,7 +15,7 @@
     </item><item>
 			<title>Why is Drupal Chosen by Large Organizations?</title>
 			<link>https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</link>
-			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic, and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applic</description>
+			<description>Drupal is often chosen by large organizations for several reasons. Here are some key factors that make Drupal a popular choice:   Scalability: Drupal is highly scalable, allowing organizations to handle large amounts of content, traffic and user interactions. Its flexible architecture and robust performance capabilities enable it to accommodate the complex needs of large-scale websites and applica</description>
 			<pubDate>Mon, 05 Jun 2023 09:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/why-is-drupal-chosen-by-large-organizations.html</guid>
@@ -36,7 +36,7 @@
     </item><item>
 			<title>Drupal JSON:API GET, POST, PATCH and DELETE Samples</title>
 			<link>https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</link>
-			<description>The API that the JSON:API module makes available is centered on Drupal&amp;#39;s entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern  HTTP Methods  JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH, and DELETE. Notably, PUT is not included.   GET - Retrieve data, can be a collection of resources or an individual resource</description>
+			<description>The API that the JSON:API module makes available is centered on Drupal&amp;#39;s entity types and bundles. Every bundle receives its own, unique URL path, which all follow a shared pattern  HTTP Methods  JSON:API specifies what HTTP Methods to accept. Those are: GET, POST, PATCH and DELETE. Notably, PUT is not included.   GET - Retrieve data, can be a collection of resources or an individual resource </description>
 			<pubDate>Thu, 15 Aug 2024 12:34:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/drupal-jsonapi-get-post-patch-and-delete-samples.html</guid>

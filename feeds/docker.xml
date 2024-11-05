@@ -22,7 +22,7 @@
     </item><item>
 			<title>Colima, similar tool like Docker Desktop, for Drupal Development</title>
 			<link>https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</link>
-			<description>Colima is a project that is easy to use and fully open source, and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux </description>
+			<description>Colima is a project that is easy to use and fully open source and it helps in running docker containers on Linux OS and MacOs machines.  We know Docker Desktop is no more a complete open source, if you are not using it personally. So now Colima is a tool which does work similar to Docker Desktop and In this article we are going to see how it works alone or along with Docker Desktop on your Linux m</description>
 			<pubDate>Sun, 31 Dec 2023 14:45:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/colima-similar-tool-like-docker-desktop-for-drupal-development.html</guid>

@@ -1062,7 +1062,7 @@ $.fieldValue = function(el, successful) {
  *  - input text fields will have their 'value' property set to the empty string
  *  - select elements will have their 'selectedIndex' property set to -1
  *  - checkbox and radio inputs will have their 'checked' property set to false
- *  - inputs of type submit, button, reset, and hidden will *not* be effected
+ *  - inputs of type submit, button, reset and hidden will *not* be effected
  *  - button elements will *not* be effected
  */
 $.fn.clearForm = function(includeHidden) {

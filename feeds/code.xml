@@ -50,7 +50,7 @@
     </item><item>
 			<title>Custom Batch processing in Drupal 7 to update Nodes - Batch API</title>
 			<link>https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</link>
-			<description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches, and by this we will be able to prevent maximum execution time errors.This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.Create your custom module, whi</description>
+			<description>Drupal's batch API processing is very nice and provides few benifits, We can break long tasks into smaller batches and by this we will be able to prevent maximum execution time errors.This article will show how to Build a batch routine in a custom module, its more straight forward approach, you can follow up below code, which is been explained with required comments.Create your custom module, whic</description>
 			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/custom-batch-processing-drupal--update-nodes-batch-api.html</guid>

@@ -15,7 +15,7 @@
     </item><item>
 			<title>How to work with Twig Templates in Drupal?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</link>
-			<description>In this article, we are going to see how a developer can work with Twig templates, and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sur</description>
+			<description>In this article, we are going to see how a developer can work with Twig templates and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sure</description>
 			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</guid>

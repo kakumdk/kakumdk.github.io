@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "12th Jul 2022",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>12th Jul 2022</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>12th Jul 2022</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.</p>  <p>Paragraphs is one of the&nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide a wide range of options for layout and grouping of content as people need.</p>  <p>Ideally having all the content via WYSIWYG editor, people can have paragraphs to manage the content on Drupal, basically Site editors can provide a proper structure for a certain feature via the Paragraph and Theme the paragraph well, it means controlling the appearance for the particular component can be done.</p>  <p>Speaking of Components, building the features in a component based approach via the Paragraph, will help Site editore to attach such reusable components in different content node or entities, for example</p>  <ol> <li>Quote (with couple of different views)</li> <li>Slideshow (with couple of different views)</li> <li>Gallery (with couple of different views)</li> </ol>  <p>List grows like this based on the needs of the users or customers.</p>  <p>Lets see, how one can Setup the paragraphs module and Template it at the very basic level.</p>  <p><strong>Prerequisite</strong>&nbsp;</p>  <p>One needs to have a Drupal core, and we are proceeding with composer based installation of Paragraph, so people to make sure, Drupal is set up with composer, And if you are using Docker or Lando, make sure to install the composer library within them.</p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><strong>1. Install Paragraph module</strong></p>  <ul> <li>You can download the module from this link <a href='https://www.drupal.org/project/paragraphs'>https://www.drupal.org/project/paragraphs</a>, Currently, I&#39;m using Lando for local setup, so I have run composer with lando.</li> </ul>  <p><code>$ lando composer require &#39;drupal/paragraphs:^1.14&#39;<br /> ./composer.json has been updated<br /> Running composer update drupal/paragraphs<br /> Loading composer repositories with package information<br /> Updating dependencies<br /> Lock file operations: 2 installs, 0 updates, 0 removals<br /> &nbsp;&nbsp;- Locking drupal/entity_reference_revisions (1.9.0)<br /> &nbsp;&nbsp;- Locking drupal/paragraphs (1.14.0)<br /> Writing lock file<br /> Installing dependencies from lock file (including require-dev)<br /> Package operations: 2 installs, 0 updates, 0 removals<br /> &nbsp;&nbsp;- Downloading drupal/entity_reference_revisions (1.9.0)<br /> &nbsp;&nbsp;- Downloading drupal/paragraphs (1.14.0)<br /> &nbsp;&nbsp;- Installing drupal/entity_reference_revisions (1.9.0): Extracting archive<br /> &nbsp;&nbsp;- Installing drupal/paragraphs (1.14.0): Extracting archive<br /> 1 package suggestions were added by new dependencies, use `composer suggest` to see details.<br /> Generating autoload files<br /> Hardening vendor directory with .htaccess and web.config files.<br /> 48 packages you are using are looking for funding.<br /> Use the `composer fund` command to find out more!</code></p>  <p><strong>2. Enable the module</strong></p>  <ul> <li>As any other module enable this module via module page, and on higher environments enable this via configuration sync (<a href='/articles/drupal-configuration-management-local-dev-test-and-live.html'>Learn more how to manage configurations in Drupal from this link</a>)</li> </ul>  <p><strong>3. Create Paragraph Type</strong></p>  <ul> <li>Create a paragraph type via this path (<code>/admin/structure/paragraphs_type</code>), this form will ask for Label, Icon and Description, Fill all details and Click on Save and Manage fields.</li> <li>Add the needed fields to the Paragraph type, for example Quote and Author field.</li> </ul>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='5228875751'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><strong>4. Attach Paragraph type to Node or Entity</strong></p>  <ul> <li>Create an <code>Entity Reference Revisions</code> field on the node/entity type, Select <code>Paragraphs</code> at the field Type and select an unlimited for the Allowed number of values option.</li> <li>Under Reference method, Select Default value, And under the Paragraph types select the needed paragraph types. Then Click on Save settings button.</li> <li>Under Manage Form Display, have the default value as <code>Paragraph (Stable)</code>, then Click on Save.</li> <li>Under Manage Display, have the default value as <code>Rendered Entity</code>, then Click on Save.</li> </ul>  <p>Now you can use this paragraph from the Admin side by creating content via the Node or Entity the paragraph is attached to. And now lets see how we can design for the User.</p>  <p>By default, the Paragraph module will provide a default template file paragraph.html.twig within the module. One can use this file within the custom theme and proceed with the design stuff. Or can you make template suggestions and create specific template files for a specific display, <a href='/articles/how-to-work-with-twig-templates-in-drupal.html'>for more on how to work with template suggestions read this article</a>.</p>  <p>To conclude, this way Site builders or Developers can use the paragraph module in drupal application. Thanks for reading the article, I hope this is helpful. <a href='/articles/index.html'>Read more drupal related articles from here</a>.</p></div>
+                                <div><p>Paragraphs can be used as a way for Content Creation in Drupal. It actually allows the site builders to do their stuff a bit cleanly and for the end users this will be pretty easy to manage the content, meaning people get more control on the Editing side.</p>  <p>Paragraphs is one of the&nbsp; popular modules in Drupal, for handling content. It is more or less very similar to the fields and will provide a wide range of options for layout and grouping of content as people need.</p>  <p>Ideally having all the content via WYSIWYG editor, people can have paragraphs to manage the content on Drupal, basically Site editors can provide a proper structure for a certain feature via the Paragraph and Theme the paragraph well, it means controlling the appearance for the particular component can be done.</p>  <p>Speaking of Components, building the features in a component based approach via the Paragraph, will help Site editore to attach such reusable components in different content node or entities, for example</p>  <ol> <li>Quote (with couple of different views)</li> <li>Slideshow (with couple of different views)</li> <li>Gallery (with couple of different views)</li> </ol>  <p>List grows like this based on the needs of the users or customers.</p>  <p>Lets see, how one can Setup the paragraphs module and Template it at the very basic level.</p>  <p><strong>Prerequisite</strong>&nbsp;</p>  <p>One needs to have a Drupal core and we are proceeding with composer based installation of Paragraph, so people to make sure, Drupal is set up with composer, And if you are using Docker or Lando, make sure to install the composer library within them.</p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><strong>1. Install Paragraph module</strong></p>  <ul> <li>You can download the module from this link <a href='https://www.drupal.org/project/paragraphs'>https://www.drupal.org/project/paragraphs</a>, Currently, I&#39;m using Lando for local setup, so I have run composer with lando.</li> </ul>  <p><code>$ lando composer require &#39;drupal/paragraphs:^1.14&#39;<br /> ./composer.json has been updated<br /> Running composer update drupal/paragraphs<br /> Loading composer repositories with package information<br /> Updating dependencies<br /> Lock file operations: 2 installs, 0 updates, 0 removals<br /> &nbsp;&nbsp;- Locking drupal/entity_reference_revisions (1.9.0)<br /> &nbsp;&nbsp;- Locking drupal/paragraphs (1.14.0)<br /> Writing lock file<br /> Installing dependencies from lock file (including require-dev)<br /> Package operations: 2 installs, 0 updates, 0 removals<br /> &nbsp;&nbsp;- Downloading drupal/entity_reference_revisions (1.9.0)<br /> &nbsp;&nbsp;- Downloading drupal/paragraphs (1.14.0)<br /> &nbsp;&nbsp;- Installing drupal/entity_reference_revisions (1.9.0): Extracting archive<br /> &nbsp;&nbsp;- Installing drupal/paragraphs (1.14.0): Extracting archive<br /> 1 package suggestions were added by new dependencies, use `composer suggest` to see details.<br /> Generating autoload files<br /> Hardening vendor directory with .htaccess and web.config files.<br /> 48 packages you are using are looking for funding.<br /> Use the `composer fund` command to find out more!</code></p>  <p><strong>2. Enable the module</strong></p>  <ul> <li>As any other module enable this module via module page and on higher environments enable this via configuration sync (<a href='/articles/drupal-configuration-management-local-dev-test-and-live.html'>Learn more how to manage configurations in Drupal from this link</a>)</li> </ul>  <p><strong>3. Create Paragraph Type</strong></p>  <ul> <li>Create a paragraph type via this path (<code>/admin/structure/paragraphs_type</code>), this form will ask for Label, Icon and Description, Fill all details and Click on Save and Manage fields.</li> <li>Add the needed fields to the Paragraph type, for example Quote and Author field.</li> </ul>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='5228875751'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p><strong>4. Attach Paragraph type to Node or Entity</strong></p>  <ul> <li>Create an <code>Entity Reference Revisions</code> field on the node/entity type, Select <code>Paragraphs</code> at the field Type and select an unlimited for the Allowed number of values option.</li> <li>Under Reference method, Select Default value, And under the Paragraph types select the needed paragraph types. Then Click on Save settings button.</li> <li>Under Manage Form Display, have the default value as <code>Paragraph (Stable)</code>, then Click on Save.</li> <li>Under Manage Display, have the default value as <code>Rendered Entity</code>, then Click on Save.</li> </ul>  <p>Now you can use this paragraph from the Admin side by creating content via the Node or Entity the paragraph is attached to. And now lets see how we can design for the User.</p>  <p>By default, the Paragraph module will provide a default template file paragraph.html.twig within the module. One can use this file within the custom theme and proceed with the design stuff. Or can you make template suggestions and create specific template files for a specific display, <a href='/articles/how-to-work-with-twig-templates-in-drupal.html'>for more on how to work with template suggestions read this article</a>.</p>  <p>To conclude, this way Site builders or Developers can use the paragraph module in drupal application. Thanks for reading the article, I hope this is helpful. <a href='/articles/index.html'>Read more drupal related articles from here</a>.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">25% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C8NWGYLQ.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)"><img data-src="https://m.media-amazon.com/images/I/619sDPV59nL._SX679_.jpg" class="img-fluid lazy" alt="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C8NWGYLQ.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" class="shop-title-value">LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)</a></h4>
+                  <div class="discount"><span class="main blink">54% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00650QJ8G.html" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White"><img data-src="https://m.media-amazon.com/images/I/71Rx6XUEpnL._SX679_.jpg" class="img-fluid lazy" alt="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00650QJ8G.html" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" class="shop-title-value">Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>38,490</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>50,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,750</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">20% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08SVW5KTF.html" title="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml"><img data-src="https://m.media-amazon.com/images/I/61kVLrByg+L._SX522_.jpg" class="img-fluid lazy" alt="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml" title="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08SVW5KTF.html" title="WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml" class="shop-title-value">WD 40 Smart Straw | All Purpose Cleaner for Home Improvement | Household Cleaner to Loosen Stuck &amp; Rust Parts, Removes Sticky Residue, &amp; Auto Maintenance 500ml</a></h4>
+                  <div class="discount"><span class="main blink">53% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00TE7QY7S.html" title="Pigeon by Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 5 Litres, Silver"><img data-src="https://m.media-amazon.com/images/I/51qxl7UZFhL._SX679_.jpg" class="img-fluid lazy" alt="Pigeon by Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 5 Litres, Silver" title="Pigeon by Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 5 Litres, Silver" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00TE7QY7S.html" title="Pigeon by Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 5 Litres, Silver" class="shop-title-value">Pigeon by Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 5 Litres, Silver</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>560</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>700</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>899</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,895</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">49% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09SH8P4H8.html" title="Samsung Galaxy S22 Ultra 5G (Phantom Black, 12GB, 256GB Storage) Without Offer"><img data-src="https://m.media-amazon.com/images/I/41m3+K+NJpL._SY300_SX300_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S22 Ultra 5G (Phantom Black, 12GB, 256GB Storage) Without Offer" title="Samsung Galaxy S22 Ultra 5G (Phantom Black, 12GB, 256GB Storage) Without Offer" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09SH8P4H8.html" title="Samsung Galaxy S22 Ultra 5G (Phantom Black, 12GB, 256GB Storage) Without Offer" class="shop-title-value">Samsung Galaxy S22 Ultra 5G (Phantom Black, 12GB, 256GB Storage) Without Offer</a></h4>
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08BKXSN46.html" title="SYSKA 9 Watt B22 LED Yellow Smart Bulb, Pack of 1"><img data-src="https://m.media-amazon.com/images/I/71Jpra56NsL._SX385_.jpg" class="img-fluid lazy" alt="SYSKA 9 Watt B22 LED Yellow Smart Bulb, Pack of 1" title="SYSKA 9 Watt B22 LED Yellow Smart Bulb, Pack of 1" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08BKXSN46.html" title="SYSKA 9 Watt B22 LED Yellow Smart Bulb, Pack of 1" class="shop-title-value">SYSKA 9 Watt B22 LED Yellow Smart Bulb, Pack of 1</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>66,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,31,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,148</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
                   </div>
               </div>
           </div>
@@ -333,12 +333,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">88% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B3RRWSF6.html" title="Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring &amp; IP67 Rating (Black)"><img data-src="https://m.media-amazon.com/images/I/61y2VVWcGBL._SX679_.jpg" class="img-fluid lazy" alt="Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring &amp; IP67 Rating (Black)" title="Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring &amp; IP67 Rating (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B3RRWSF6.html" title="Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring &amp; IP67 Rating (Black)" class="shop-title-value">Fire-Boltt Phoenix Smart Watch with Bluetooth Calling 1.3,120+ Sports Modes, 240 * 240 PX High Res with SpO2, Heart Rate Monitoring &amp; IP67 Rating (Black)</a></h4>
+                  <div class="discount"><span class="main blink">79% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07P99Q8ZM.html" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023"><img data-src="https://m.media-amazon.com/images/I/71mdO-ohDmL._SX679_.jpg" class="img-fluid lazy" alt="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07P99Q8ZM.html" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" class="shop-title-value">Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,199</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>9,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,300</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>10,996</span></span>
                   </div>
               </div>
           </div>
@@ -381,7 +381,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -401,12 +401,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">49% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07ZKPZ5M9.html" title="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs"><img data-src="https://m.media-amazon.com/images/I/817tVD0fJLL._SY879_.jpg" class="img-fluid lazy" alt="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs" title="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07ZKPZ5M9.html" title="Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs" class="shop-title-value">Amazon Brand - Presto! Disinfectant Surface/Floor Cleaner - 5 L (Floral)|Kills 99.9% Germs</a></h4>
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BN87FHBZ.html" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)"><img data-src="https://m.media-amazon.com/images/I/81EU4Fix6rL._SX679_.jpg" class="img-fluid lazy" alt="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BN87FHBZ.html" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" class="shop-title-value">Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>435</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>845</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
                   </div>
               </div>
           </div>
@@ -437,7 +437,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -453,7 +453,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -469,12 +469,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">56% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BN87FHBZ.html" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)"><img data-src="https://m.media-amazon.com/images/I/81EU4Fix6rL._SX679_.jpg" class="img-fluid lazy" alt="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BN87FHBZ.html" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" class="shop-title-value">Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)</a></h4>
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BRZC7PG3.html" title="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams and Video Calls (27 cm)"><img data-src="https://m.media-amazon.com/images/I/51yiUwDUVbL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams and Video Calls (27 cm)" title="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams and Video Calls (27 cm)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BRZC7PG3.html" title="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams and Video Calls (27 cm)" class="shop-title-value">Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams and Video Calls (27 cm)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>359</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>999</span></span>
                   </div>
               </div>
           </div>
@@ -538,12 +538,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">6% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B06Y42C8V7.html" title="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1"><img data-src="https://m.media-amazon.com/images/I/61hLL7uhELL._SX385_.jpg" class="img-fluid lazy" alt="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1" title="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B06Y42C8V7.html" title="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1" class="shop-title-value">Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1</a></h4>
+                  <div class="discount"><span class="main blink">45% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07P913VF3.html" title="Amazon Brand - Solimo-Non Stick Kadhai With Glass Lid(26 Cm,Hammertone Finish,3 Coat,2.9 Mm Thickness)|Black,4 litres"><img data-src="https://m.media-amazon.com/images/I/81MzgBfzUhL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo-Non Stick Kadhai With Glass Lid(26 Cm,Hammertone Finish,3 Coat,2.9 Mm Thickness)|Black,4 litres" title="Amazon Brand - Solimo-Non Stick Kadhai With Glass Lid(26 Cm,Hammertone Finish,3 Coat,2.9 Mm Thickness)|Black,4 litres" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07P913VF3.html" title="Amazon Brand - Solimo-Non Stick Kadhai With Glass Lid(26 Cm,Hammertone Finish,3 Coat,2.9 Mm Thickness)|Black,4 litres" class="shop-title-value">Amazon Brand - Solimo-Non Stick Kadhai With Glass Lid(26 Cm,Hammertone Finish,3 Coat,2.9 Mm Thickness)|Black,4 litres</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>648</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>690</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>789</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,440</span></span>
                   </div>
               </div>
           </div>
@@ -562,6 +562,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -597,22 +601,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">50% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BLV1GNLN.html" title="WZATCO Pixel | Portable LED Projector | Native 720p Full HD 1080P Support | LTPS Technology | Best in Segment | 250 ANSI | 176&quot; Max Screen | Home &amp; Outdoor Cinema | Compatible with 4K TV Stick, PC"><img data-src="https://m.media-amazon.com/images/I/71OOQKotC5L._SX385_.jpg" class="img-fluid lazy" alt="WZATCO Pixel | Portable LED Projector | Native 720p Full HD 1080P Support | LTPS Technology | Best in Segment | 250 ANSI | 176&quot; Max Screen | Home &amp; Outdoor Cinema | Compatible with 4K TV Stick, PC" title="WZATCO Pixel | Portable LED Projector | Native 720p Full HD 1080P Support | LTPS Technology | Best in Segment | 250 ANSI | 176&quot; Max Screen | Home &amp; Outdoor Cinema | Compatible with 4K TV Stick, PC" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BLV1GNLN.html" title="WZATCO Pixel | Portable LED Projector | Native 720p Full HD 1080P Support | LTPS Technology | Best in Segment | 250 ANSI | 176&quot; Max Screen | Home &amp; Outdoor Cinema | Compatible with 4K TV Stick, PC" class="shop-title-value">WZATCO Pixel | Portable LED Projector | Native 720p Full HD 1080P Support | LTPS Technology | Best in Segment | 250 ANSI | 176&quot; Max Screen | Home &amp; Outdoor Cinema | Compatible with 4K TV Stick, PC</a></h4>
+                  <div class="discount"><span class="main blink">41% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08H1Q9WRZ.html" title="Sleepyhead Flip - Premium Dual Sided High Density Foam Mattress with Firm &amp; Medium Soft Sides | 7- Year Warranty | 6-Inch Bed Mattress | 78x72x6 inches (King Size Mattress)"><img data-src="https://m.media-amazon.com/images/I/61YDnioHy8L._SX679_.jpg" class="img-fluid lazy" alt="Sleepyhead Flip - Premium Dual Sided High Density Foam Mattress with Firm &amp; Medium Soft Sides | 7- Year Warranty | 6-Inch Bed Mattress | 78x72x6 inches (King Size Mattress)" title="Sleepyhead Flip - Premium Dual Sided High Density Foam Mattress with Firm &amp; Medium Soft Sides | 7- Year Warranty | 6-Inch Bed Mattress | 78x72x6 inches (King Size Mattress)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08H1Q9WRZ.html" title="Sleepyhead Flip - Premium Dual Sided High Density Foam Mattress with Firm &amp; Medium Soft Sides | 7- Year Warranty | 6-Inch Bed Mattress | 78x72x6 inches (King Size Mattress)" class="shop-title-value">Sleepyhead Flip - Premium Dual Sided High Density Foam Mattress with Firm &amp; Medium Soft Sides | 7- Year Warranty | 6-Inch Bed Mattress | 78x72x6 inches (King Size Mattress)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>4,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>9,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>15,399</span></span>
                   </div>
               </div>
           </div>
@@ -636,42 +636,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">73% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B091H9DWL9.html" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4"><img data-src="https://m.media-amazon.com/images/I/61l0ocLvZKS._SX679_.jpg" class="img-fluid lazy" alt="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B091H9DWL9.html" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" class="shop-title-value">truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4</a></h4>
+                  <div class="discount"><span class="main blink">41% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09WMTJPG7.html" title="Crompton InstaBliss 3-L Instant Water Heater (Geyser) with Advanced 4 Level Safety (Ivory), AIWH-3LINSTABLISS"><img data-src="https://m.media-amazon.com/images/I/41J4W4lznFL._SX679_.jpg" class="img-fluid lazy" alt="Crompton InstaBliss 3-L Instant Water Heater (Geyser) with Advanced 4 Level Safety (Ivory), AIWH-3LINSTABLISS" title="Crompton InstaBliss 3-L Instant Water Heater (Geyser) with Advanced 4 Level Safety (Ivory), AIWH-3LINSTABLISS" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09WMTJPG7.html" title="Crompton InstaBliss 3-L Instant Water Heater (Geyser) with Advanced 4 Level Safety (Ivory), AIWH-3LINSTABLISS" class="shop-title-value">Crompton InstaBliss 3-L Instant Water Heater (Geyser) with Advanced 4 Level Safety (Ivory), AIWH-3LINSTABLISS</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>3,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,599</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,400</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">6% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B06Y42C8V7.html" title="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1"><img data-src="https://m.media-amazon.com/images/I/61hLL7uhELL._SX385_.jpg" class="img-fluid lazy" alt="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1" title="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B06Y42C8V7.html" title="Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1" class="shop-title-value">Purepet Adult Dry Cat Food, Ocean Fish - 3 kg,Pack of 1</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>648</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>690</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
                   <div class="discount"><span class="main blink">25% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07TFD2THQ.html" title="Godrej Security Solutions Forte Pro 15 Litres Digital Electronic Safe Locker for Home &amp; Office with Motorized Locking Mechanism (Light Grey)"><img data-src="https://m.media-amazon.com/images/I/61TOcMtb93L._SX679_.jpg" class="img-fluid lazy" alt="Godrej Security Solutions Forte Pro 15 Litres Digital Electronic Safe Locker for Home &amp; Office with Motorized Locking Mechanism (Light Grey)" title="Godrej Security Solutions Forte Pro 15 Litres Digital Electronic Safe Locker for Home &amp; Office with Motorized Locking Mechanism (Light Grey)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07TFD2THQ.html" title="Godrej Security Solutions Forte Pro 15 Litres Digital Electronic Safe Locker for Home &amp; Office with Motorized Locking Mechanism (Light Grey)" class="shop-title-value">Godrej Security Solutions Forte Pro 15 Litres Digital Electronic Safe Locker for Home &amp; Office with Motorized Locking Mechanism (Light Grey)</a></h4>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C8NWGYLQ.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)"><img data-src="https://m.media-amazon.com/images/I/619sDPV59nL._SX679_.jpg" class="img-fluid lazy" alt="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C8NWGYLQ.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" class="shop-title-value">LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>10,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>14,699</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>38,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>50,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">56% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BZY9L1LD.html" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey"><img data-src="https://m.media-amazon.com/images/I/61CclYg1tSL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BZY9L1LD.html" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" class="shop-title-value">Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey</a></h4>
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C9QPJY5R.html" title="OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)"><img data-src="https://m.media-amazon.com/images/I/61abLrCfF7L._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)" title="OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C9QPJY5R.html" title="OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)" class="shop-title-value">OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>479</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,099</span></span>
-                  </div>
-              </div>
-          </div><div class="col-md-3 shop-item-wrapper">
-              <div class="shop-item">
-                  <div class="discount"><span class="main blink">43% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BSTTK7HS.html" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)"><img data-src="https://m.media-amazon.com/images/I/51TK-AM4k0L._SX679_.jpg" class="img-fluid lazy" alt="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BSTTK7HS.html" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" class="shop-title-value">Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)</a></h4>
-                  <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>9,299</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>16,349</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>17,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>26,999</span></span>
                   </div>
               </div>
           </div>

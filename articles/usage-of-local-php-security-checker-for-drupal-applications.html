@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "23rd Jul 2022",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>23rd Jul 2022</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>23rd Jul 2022</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>In this article, we are going to see how the Local PHP Security Checker library will make people&#39;s lives easier during the development &amp; code review process.</p>  <p>To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the <a href='https://github.com/fabpot/local-php-security-checker'>Local PHP Security Checker</a> library, which checks for any known vulnerabilities in the package dependencies.</p>  <p>This can also be added to the Github actions so that these checks can be done with the Pull requests. We have a similar helpful article related to <a href='/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html'>Phpcs</a> and <a href='/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html'>Phpstan</a> added to github actions, have a check of this.</p>  <p>We could run this locally which will help developers to make sure none of the issues will go to the higher environment.</p>  <p><code>$ local-php-security-checker --path=&lt;path-to-lock-file&gt;composer.lock</code></p>  <p>There are few more options provided by this library, like&nbsp;</p>  <p>1. To get the output in different formats like <code>ansi</code>, <code>markdown</code>, <code>json</code>, <code>junit</code>, and <code>yaml</code>, you can do this with the argument of <code>--format.</code></p>  <p><code>$ local-php-security-checker --format=json</code></p>  <p>2. You can skip the checks for packages listed in <code>require-dev</code> by passing the <code>no-dev</code> flag</p>  <p><code>$ local-php-security-checker --no-dev</code></p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p>If you are maintaining your code in Github, then Github is providing continuous integration support within their workflows. You can run on github actions like shown below</p>  <p>Create a folder structure like <code>.github/workflows</code> within your project (if not created) and Create a file <code>ci.yml</code> within the folder, once created the file path will look as seen below</p>  <p><code>.github/workflows/ci.yml</code></p>  <p>Add the below code to the <code>ci.yml</code> file.</p>  <p><code>name: pr-review<br /> on: [pull_request]<br /> &nbsp; jobs:<br /> &nbsp; &nbsp; local-php-security-checker:<br /> &nbsp; &nbsp; &nbsp; runs-on: ubuntu-latest<br /> &nbsp; &nbsp; &nbsp; steps:<br /> &nbsp; &nbsp; &nbsp; - name: Clone the code<br /> &nbsp; &nbsp; &nbsp; &nbsp; uses: actions/checkout@v3<br /> &nbsp; &nbsp; &nbsp;&nbsp;- name: Setup PHP 7.4<br /> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;uses: shivamathur/setup-php@v2<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with:<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; php-version: 7.4<br /> &nbsp; &nbsp; &nbsp; - name: Composer install<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; run: composer install<br /> &nbsp; &nbsp; &nbsp;&nbsp;- name: Add cache<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; uses: actions/cache@v3<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; id: cache-db<br /> &nbsp; &nbsp; &nbsp; &nbsp; with:<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;path: ~/.symfony/cache<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;key: db<br /> &nbsp; &nbsp; &nbsp; - name: Scan composer.lock<br /> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;uses: symfonycorp/security-checker-action@v3</code></p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='5228875751'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p>The YML file is configured to trigger a job upon the pull request creation.</p>  <ol> <li>Where this job run&rsquo;s on the Ubuntu machine.</li> <li>This job has 5 steps <ol> <li>To clone the code</li> <li>To setup the php 7.4 version.</li> <li>To run the composer install</li> <li>To add the caches</li> <li>To scan the composer.lock file (like we run locally)</li> </ol> </li> </ol>  <p>Once this <code>ci.yml</code> is pushed to your github repository, then from next time onwards if any PR is created then this automatic checks will be triggered and will show the pass or fail data on the PR itself.</p>  <p>By this, One level of security check is performed before you push the code to master branch or branch which has the stable code on your local and another check is done at the pull request level.</p>  <p>On the github actions note, Github Actions is based on the execution minutes for hosted runners (which basically run workflows). The users with basic membership will have 2000 free minutes/month.</p>  <p>Hope you have a picture, on how people can use and scan for known vulnerabilities in the drupal application with the help of Local PHP Security Checker. Thanks for reading the article, <a href='/articles/drupal.html'>for more drupal related articles, check out here</a>.</p></div>
+                                <div><p>In this article, we are going to see how the Local PHP Security Checker library will make people&#39;s lives easier during the development &amp; code review process.</p>  <p>To make developer life easier, developers look for tools or libraries which can automated security review. Here comes the <a href='https://github.com/fabpot/local-php-security-checker'>Local PHP Security Checker</a> library, which checks for any known vulnerabilities in the package dependencies.</p>  <p>This can also be added to the Github actions so that these checks can be done with the Pull requests. We have a similar helpful article related to <a href='/articles/usage-of-phpcs-on-github-via-pull-request-for-drupal-applications.html'>Phpcs</a> and <a href='/articles/usage-of-phpstan-on-github-via-pull-request-for-drupal-applications.html'>Phpstan</a> added to github actions, have a check of this.</p>  <p>We could run this locally which will help developers to make sure none of the issues will go to the higher environment.</p>  <p><code>$ local-php-security-checker --path=&lt;path-to-lock-file&gt;composer.lock</code></p>  <p>There are few more options provided by this library, like&nbsp;</p>  <p>1. To get the output in different formats like <code>ansi</code>, <code>markdown</code>, <code>json</code>, <code>junit</code> and <code>yaml</code>, you can do this with the argument of <code>--format.</code></p>  <p><code>$ local-php-security-checker --format=json</code></p>  <p>2. You can skip the checks for packages listed in <code>require-dev</code> by passing the <code>no-dev</code> flag</p>  <p><code>$ local-php-security-checker --no-dev</code></p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='4812668708'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p>If you are maintaining your code in Github, then Github is providing continuous integration support within their workflows. You can run on github actions like shown below</p>  <p>Create a folder structure like <code>.github/workflows</code> within your project (if not created) and Create a file <code>ci.yml</code> within the folder, once created the file path will look as seen below</p>  <p><code>.github/workflows/ci.yml</code></p>  <p>Add the below code to the <code>ci.yml</code> file.</p>  <p><code>name: pr-review<br /> on: [pull_request]<br /> &nbsp; jobs:<br /> &nbsp; &nbsp; local-php-security-checker:<br /> &nbsp; &nbsp; &nbsp; runs-on: ubuntu-latest<br /> &nbsp; &nbsp; &nbsp; steps:<br /> &nbsp; &nbsp; &nbsp; - name: Clone the code<br /> &nbsp; &nbsp; &nbsp; &nbsp; uses: actions/checkout@v3<br /> &nbsp; &nbsp; &nbsp;&nbsp;- name: Setup PHP 7.4<br /> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;uses: shivamathur/setup-php@v2<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with:<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; php-version: 7.4<br /> &nbsp; &nbsp; &nbsp; - name: Composer install<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; run: composer install<br /> &nbsp; &nbsp; &nbsp;&nbsp;- name: Add cache<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; uses: actions/cache@v3<br /> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; id: cache-db<br /> &nbsp; &nbsp; &nbsp; &nbsp; with:<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;path: ~/.symfony/cache<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;key: db<br /> &nbsp; &nbsp; &nbsp; - name: Scan composer.lock<br /> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;uses: symfonycorp/security-checker-action@v3</code></p>  <div class='google-ad'>     <ins class='adsbygoogle'          style='display:block; text-align:center;'          data-ad-layout='in-article'          data-ad-format='fluid'          data-ad-client='ca-pub-2683569506254139'          data-ad-slot='5228875751'></ins>     <script>         (adsbygoogle = window.adsbygoogle || []).push({});     </script> </div>  <p>The YML file is configured to trigger a job upon the pull request creation.</p>  <ol> <li>Where this job run&rsquo;s on the Ubuntu machine.</li> <li>This job has 5 steps <ol> <li>To clone the code</li> <li>To setup the php 7.4 version.</li> <li>To run the composer install</li> <li>To add the caches</li> <li>To scan the composer.lock file (like we run locally)</li> </ol> </li> </ol>  <p>Once this <code>ci.yml</code> is pushed to your github repository, then from next time onwards if any PR is created then this automatic checks will be triggered and will show the pass or fail data on the PR itself.</p>  <p>By this, One level of security check is performed before you push the code to master branch or branch which has the stable code on your local and another check is done at the pull request level.</p>  <p>On the github actions note, Github Actions is based on the execution minutes for hosted runners (which basically run workflows). The users with basic membership will have 2000 free minutes/month.</p>  <p>Hope you have a picture, on how people can use and scan for known vulnerabilities in the drupal application with the help of Local PHP Security Checker. Thanks for reading the article, <a href='/articles/drupal.html'>for more drupal related articles, check out here</a>.</p></div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">31% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B097RJ867P.html" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large"><img data-src="https://m.media-amazon.com/images/I/51PwsOOMErL._SX679_.jpg" class="img-fluid lazy" alt="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B097RJ867P.html" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" class="shop-title-value">PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large</a></h4>
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D11V1LW9.html" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer"><img data-src="https://m.media-amazon.com/images/I/61vgKOjMC+L._SX679_.jpg" class="img-fluid lazy" alt="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D11V1LW9.html" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" class="shop-title-value">IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>8,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>12,995</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>17,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>22,600</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">25% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C5RJHD7D.html" title="Nokia All-New 105 Single Sim Keypad Phone with Built-in UPI Payments, Long-Lasting Battery, Wireless FM Radio | Red"><img data-src="https://m.media-amazon.com/images/I/61fcbBJ36GL._SY879_.jpg" class="img-fluid lazy" alt="Nokia All-New 105 Single Sim Keypad Phone with Built-in UPI Payments, Long-Lasting Battery, Wireless FM Radio | Red" title="Nokia All-New 105 Single Sim Keypad Phone with Built-in UPI Payments, Long-Lasting Battery, Wireless FM Radio | Red" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C5RJHD7D.html" title="Nokia All-New 105 Single Sim Keypad Phone with Built-in UPI Payments, Long-Lasting Battery, Wireless FM Radio | Red" class="shop-title-value">Nokia All-New 105 Single Sim Keypad Phone with Built-in UPI Payments, Long-Lasting Battery, Wireless FM Radio | Red</a></h4>
+                  <div class="discount"><span class="main blink">11% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D9VLLXWW.html" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset"><img data-src="https://m.media-amazon.com/images/I/71LOa4FV3xL._SX679_.jpg" class="img-fluid lazy" alt="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D9VLLXWW.html" title="Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset" class="shop-title-value">Redmi Pad Pro 5G | Snapdragon 7s Gen 2 chipset</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,199</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,599</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>24,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>27,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">66% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)"><img data-src="https://m.media-amazon.com/images/I/614cFlQ5hAL._SX679_.jpg" class="img-fluid lazy" alt="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" class="shop-title-value">WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)</a></h4>
+                  <div class="discount"><span class="main blink">42% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D3DWFY54.html" title="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)"><img data-src="https://m.media-amazon.com/images/I/81zPuf-0ETL._SX679_.jpg" class="img-fluid lazy" alt="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)" title="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D3DWFY54.html" title="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)" class="shop-title-value">Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>8,489</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>57,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>99,900</span></span>
                   </div>
               </div>
           </div>
@@ -333,12 +333,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">68% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08LH79V3N.html" title="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable"><img data-src="https://m.media-amazon.com/images/I/41qM3YDDCLL.jpg" class="img-fluid lazy" alt="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable" title="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08LH79V3N.html" title="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable" class="shop-title-value">GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable</a></h4>
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D9BXZJHM.html" title="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)"><img data-src="https://m.media-amazon.com/images/I/71+89DTymuL._SX679_.jpg" class="img-fluid lazy" alt="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)" title="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D9BXZJHM.html" title="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)" class="shop-title-value">Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>289</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>899</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>16,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>37,999</span></span>
                   </div>
               </div>
           </div>
@@ -381,7 +381,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -401,12 +401,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">10% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09WQYFLRX.html" title="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)"><img data-src="https://m.media-amazon.com/images/I/61fDxgcyBDL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)" title="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09WQYFLRX.html" title="OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)" class="shop-title-value">OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)</a></h4>
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CZS56249.html" title="realme NARZO 70 5G (Ice Blue,8GB RAM, 128GB Storage | Dimensity 7050 5G Chipset | 120Hz AMOLED Display | 50MP Primary Camera | 45W Charger in The Box"><img data-src="https://m.media-amazon.com/images/I/712qzWNmjFL._SX679_.jpg" class="img-fluid lazy" alt="realme NARZO 70 5G (Ice Blue,8GB RAM, 128GB Storage | Dimensity 7050 5G Chipset | 120Hz AMOLED Display | 50MP Primary Camera | 45W Charger in The Box" title="realme NARZO 70 5G (Ice Blue,8GB RAM, 128GB Storage | Dimensity 7050 5G Chipset | 120Hz AMOLED Display | 50MP Primary Camera | 45W Charger in The Box" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CZS56249.html" title="realme NARZO 70 5G (Ice Blue,8GB RAM, 128GB Storage | Dimensity 7050 5G Chipset | 120Hz AMOLED Display | 50MP Primary Camera | 45W Charger in The Box" class="shop-title-value">realme NARZO 70 5G (Ice Blue,8GB RAM, 128GB Storage | Dimensity 7050 5G Chipset | 120Hz AMOLED Display | 50MP Primary Camera | 45W Charger in The Box</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>17,982</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>19,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>13,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>20,999</span></span>
                   </div>
               </div>
           </div>
@@ -437,7 +437,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -453,7 +453,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -469,12 +469,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">15% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]"><img data-src="https://m.media-amazon.com/images/I/61tslaYWLjL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" class="shop-title-value">OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]</a></h4>
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch"><img data-src="https://m.media-amazon.com/images/I/71uba-37tOL._SY879_.jpg" class="img-fluid lazy" alt="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" class="shop-title-value">The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>40,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>47,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,990</span></span>
                   </div>
               </div>
           </div>
@@ -538,12 +538,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">18% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00KJRXCTU.html" title="GK Hair Global Keratin Balancing Shampoo And Conditioner 300ml For Oily Hair For Women Hair Restores Scalp pH Level - Sulfate And Paraben Free"><img data-src="https://m.media-amazon.com/images/I/61lIwsrBb7L._SX522_PIbundle-2,TopRight,0,0_AA522SH20_.jpg" class="img-fluid lazy" alt="GK Hair Global Keratin Balancing Shampoo And Conditioner 300ml For Oily Hair For Women Hair Restores Scalp pH Level - Sulfate And Paraben Free" title="GK Hair Global Keratin Balancing Shampoo And Conditioner 300ml For Oily Hair For Women Hair Restores Scalp pH Level - Sulfate And Paraben Free" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00KJRXCTU.html" title="GK Hair Global Keratin Balancing Shampoo And Conditioner 300ml For Oily Hair For Women Hair Restores Scalp pH Level - Sulfate And Paraben Free" class="shop-title-value">GK Hair Global Keratin Balancing Shampoo And Conditioner 300ml For Oily Hair For Women Hair Restores Scalp pH Level - Sulfate And Paraben Free</a></h4>
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D54294K9.html" title="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White"><img data-src="https://m.media-amazon.com/images/I/51fWpRMV-dL._SX679_.jpg" class="img-fluid lazy" alt="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White" title="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D54294K9.html" title="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White" class="shop-title-value">Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>3,198</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>3,900</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>14,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>33,000</span></span>
                   </div>
               </div>
           </div>
@@ -562,6 +562,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -597,22 +601,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">10% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B012AU6PWY.html" title="Duracell Ultra Alkaline AA Batteries, Pack of 6"><img data-src="https://m.media-amazon.com/images/I/717tWxWgedL._SX679_.jpg" class="img-fluid lazy" alt="Duracell Ultra Alkaline AA Batteries, Pack of 6" title="Duracell Ultra Alkaline AA Batteries, Pack of 6" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B012AU6PWY.html" title="Duracell Ultra Alkaline AA Batteries, Pack of 6" class="shop-title-value">Duracell Ultra Alkaline AA Batteries, Pack of 6</a></h4>
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CGN8FMJ8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)"><img data-src="https://m.media-amazon.com/images/I/61hD-fVYjcL._SX679_.jpg" class="img-fluid lazy" alt="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CGN8FMJ8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" class="shop-title-value">IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>269</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>300</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>6,790</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>8,790</span></span>
                   </div>
               </div>
           </div>
@@ -636,42 +636,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">26% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMV4HY8Q.html" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)"><img data-src="https://m.media-amazon.com/images/I/41WaHNR5u+L.jpg" class="img-fluid lazy" alt="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMV4HY8Q.html" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" class="shop-title-value">Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)</a></h4>
+                  <div class="discount"><span class="main blink">14% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07YY9N6TY.html" title="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6"><img data-src="https://m.media-amazon.com/images/I/616lkBRsL3L._SX679_.jpg" class="img-fluid lazy" alt="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6" title="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07YY9N6TY.html" title="Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6" class="shop-title-value">Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent &amp; Killer | 100% Protection from Dengue Mosquitoes, Pack of 6</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>519</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>705</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>265</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>308</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">64% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BRZC7PG3.html" title="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams, and Video Calls (27 cm)"><img data-src="https://m.media-amazon.com/images/I/51yiUwDUVbL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams, and Video Calls (27 cm)" title="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams, and Video Calls (27 cm)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BRZC7PG3.html" title="Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams, and Video Calls (27 cm)" class="shop-title-value">Amazon Basics Portable &amp; Flexible Mini Tripod with Mobile Holder &amp; 360 Degree Ball Head, for Smart Phones, Compact Cameras, GoPro, Ideal for Shoots, Live Streams, and Video Calls (27 cm)</a></h4>
+                  <div class="discount"><span class="main blink">30% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CDXHYHZ6.html" title="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey"><img data-src="https://m.media-amazon.com/images/I/71oIjjNm+nL._SY879_.jpg" class="img-fluid lazy" alt="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey" title="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CDXHYHZ6.html" title="Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey" class="shop-title-value">Nokia G42 5G | Snapdragon® 480+ 5G | 50MP Triple AI Camera | 11GB RAM (6GB RAM + 5GB Virtual RAM) | 128GB Storage | 5000mAh Battery | 2 Years Android Upgrades | 20W Charger Included | So Grey</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>359</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>11,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>16,499</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">63% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07R5PKDLQ.html" title="Skybags Trooper 55 Cms Small Cabin Polycarbonate Hardshell Sided 4 Spinner Wheels Luggage/Suitcase/Inline Trolley Bag- Blue And White, Large"><img data-src="https://m.media-amazon.com/images/I/81-0qCBJ5EL._SY879_.jpg" class="img-fluid lazy" alt="Skybags Trooper 55 Cms Small Cabin Polycarbonate Hardshell Sided 4 Spinner Wheels Luggage/Suitcase/Inline Trolley Bag- Blue And White, Large" title="Skybags Trooper 55 Cms Small Cabin Polycarbonate Hardshell Sided 4 Spinner Wheels Luggage/Suitcase/Inline Trolley Bag- Blue And White, Large" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07R5PKDLQ.html" title="Skybags Trooper 55 Cms Small Cabin Polycarbonate Hardshell Sided 4 Spinner Wheels Luggage/Suitcase/Inline Trolley Bag- Blue And White, Large" class="shop-title-value">Skybags Trooper 55 Cms Small Cabin Polycarbonate Hardshell Sided 4 Spinner Wheels Luggage/Suitcase/Inline Trolley Bag- Blue And White, Large</a></h4>
+                  <div class="discount"><span class="main blink">47% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D6G4CVZ7.html" title="Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey"><img data-src="https://m.media-amazon.com/images/I/61mKKrl80NL._SX679_.jpg" class="img-fluid lazy" alt="Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey" title="Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D6G4CVZ7.html" title="Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey" class="shop-title-value">Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>2,499</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>6,825</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>16,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>32,000</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">35% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CX5F443W.html" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)"><img data-src="https://m.media-amazon.com/images/I/811ssp-s+ZL._SX679_.jpg" class="img-fluid lazy" alt="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CX5F443W.html" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)" class="shop-title-value">Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)</a></h4>
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)"><img data-src="https://m.media-amazon.com/images/I/71mnHCt5TkL._SX679_.jpg" class="img-fluid lazy" alt="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" class="shop-title-value">GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>41,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>64,900</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
                   </div>
               </div>
           </div>

@@ -91,7 +91,7 @@
             var config = this.settings;
             //init marquee
             if($(config.marquee_class).width() == 0){
-	            console.error('FATAL: marquee css or children css not correct. Width is either set to 0 or the element is collapsing. Make sure overflow is set on the marquee, and the children are postitioned relatively');
+	            console.error('FATAL: marquee css or children css not correct. Width is either set to 0 or the element is collapsing. Make sure overflow is set on the marquee and the children are postitioned relatively');
 	            return;
 	        }
 	

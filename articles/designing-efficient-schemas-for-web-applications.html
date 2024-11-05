@@ -5,15 +5,15 @@
     <meta http-equiv="content-language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Designing Efficient Schemas for Web Applications</title>
-    <meta name="description" content="The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc" />
+    <meta name="description" content="The design of an efficient database schema is crucial for the performance, scalability and maintainability of any web application. A well-designed sch" />
     <link rel="canonical" href="https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html" />
     <meta property="og:title" content="Designing Efficient Schemas for Web Applications" />
-    <meta property="og:description" content="The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc" />
+    <meta property="og:description" content="The design of an efficient database schema is crucial for the performance, scalability and maintainability of any web application. A well-designed sch" />
     <meta property="og:url" content="https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html" />
     <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/designing-efficient-schemas-for-web-applications.jpeg" />
     <meta property="og:type" content="article" />
     <meta name="twitter:title" content="Designing Efficient Schemas for Web Applications" />
-    <meta name="twitter:description" content="The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc" />
+    <meta name="twitter:description" content="The design of an efficient database schema is crucial for the performance, scalability and maintainability of any web application. A well-designed sch" />
     <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/designing-efficient-schemas-for-web-applications.jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
@@ -51,7 +51,7 @@
           "@id": "/articles/designing-efficient-schemas-for-web-applications.html"
         },
         "headline": "Designing Efficient Schemas for Web Applications",
-        "description": "The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed sc",
+        "description": "The design of an efficient database schema is crucial for the performance, scalability and maintainability of any web application. A well-designed sch",
         "image": "https://peoplesblog.co.in/upload/banners/designing-efficient-schemas-for-web-applications.jpeg",
         "author": {
           "@type": "Person",
@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "22nd Oct 2024",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>22nd Oct 2024</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>22nd Oct 2024</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>The design of an efficient database schema is crucial for the <a href='/articles/how-to-improve-drupal-website-performance.html'>performance</a>, scalability, and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly, and grow with the increasing needs of your users.</p>  <p>This article explores best practices for designing efficient schemas, focusing on the balance between simplicity, <a href='/articles/read-data-to-paragraph-template-in-drupal-application.html'>performance</a>, and scalability. Here&rsquo;s a structured approach to schema design, focusing on best practices and considerations:</p>  <h2>1. Understand Application Requirements</h2>  <p>Before designing your schema, gather and analyze the requirements of your web application:</p>  <ul> <li><strong>Identify Entities</strong>: Determine the key entities (e.g., users, products, orders).</li> <li><strong>Define Relationships</strong>: Establish how these entities interact with each other.</li> <li><strong>Determine Access Patterns</strong>: Understand how users will interact with the data (e.g., frequent reads, writes, updates).</li> </ul>  <h2>2. Normalize Data</h2>  <p>Use normalization principles to reduce redundancy and dependency. Aim for at least 3NF:</p>  <ul> <li><strong>1NF</strong>: Ensure that each column contains atomic values.</li> <li><strong>2NF</strong>: Eliminate partial dependencies on composite keys.</li> <li><strong>3NF</strong>: Remove transitive dependencies.</li> </ul>  <h2>3. Denormalization When Necessary</h2>  <p>In some cases, especially for read-heavy applications, you may want to denormalize:</p>  <ul> <li><strong>Performance Optimization</strong>: Denormalization can reduce the number of joins needed for queries, improving <a href='/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html'>performance</a>.</li> <li><strong>Use Cases</strong>: Consider denormalization for reporting tables or when aggregating data frequently.</li> </ul>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>4. Choose the Right Data Types</h2>  <p>Select appropriate data types for each attribute:</p>  <ul> <li><strong>Efficiency</strong>: Use the smallest data type that meets your needs (e.g., INT instead of BIGINT).</li> <li><strong>Clarity</strong>: Choose data types that accurately reflect the nature of the data (e.g., DATE for dates).</li> </ul>  <h2>5. Indexing Strategies</h2>  <p>Implement indexing to speed up data retrieval:</p>  <ul> <li><strong>Primary Keys</strong>: Automatically indexed, ensure they are unique.</li> <li><strong>Foreign Keys</strong>: Index foreign keys to improve join <a href='/articles/drupal-cache-clear-and-cache-rebuild.html'>performance</a>.</li> <li><strong>Common Queries</strong>: Analyze common queries and create indexes based on frequently accessed columns.</li> </ul>  <h2>6. Consider Scalability</h2>  <p>Design your schema with scalability in mind:</p>  <ul> <li><strong>Sharding</strong>: Plan for sharding if you anticipate high data volumes.</li> <li><strong>Partitioning</strong>: Use table partitioning for large datasets to improve <a href='/articles/aegir-docker-develop-test-easier-deployment.html'>performance</a> and management.</li> </ul>  <h2>7. Use Appropriate Relationships</h2>  <p>Choose the right type of relationships based on your data model:</p>  <ul> <li><strong>One-to-One (1:1)</strong>: Use for unique relationships (e.g., user profiles).</li> <li><strong>One-to-Many (1)</strong>: Common for relationships like users to orders.</li> <li><strong>Many-to-Many (M)</strong>: Implement with join tables for relationships like students and courses.</li> </ul>  <h2>8. Ensure Data Integrity</h2>  <p>Implement constraints to maintain data integrity:</p>  <ul> <li><strong>Foreign Key Constraints</strong>: Ensure relationships remain valid.</li> <li><strong>Unique Constraints</strong>: Prevent duplicate entries where necessary.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>9. Document Your Schema</h2>  <p>Maintain documentation of your schema design:</p>  <ul> <li><strong>Entity-Relationship Diagrams (ERDs)</strong>: Visualize relationships.</li> <li><strong>Schema Definitions</strong>: Clearly describe each table and its purpose.</li> </ul>  <h2>10. Monitor and Optimize</h2>  <p>Once your schema is in use:</p>  <ul> <li><strong>Performance Monitoring</strong>: Regularly monitor query <a href='/articles/drupal-simple-test-case-custom-module.html'>performance</a> and database load.</li> <li><strong>Refactor</strong>: Be prepared to adjust your schema based on <a href='/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html'>performance</a> data and changing application requirements.</li> </ul>  <h2>Example Schema Design</h2>  <p>Here&rsquo;s the complex e-commerce schema design laid out in a table format for each entity and their relationships.</p>  <table> <thead> <tr> <th><strong>Entity</strong></th> <th><strong>Primary Key</strong></th> <th><strong>Columns</strong></th> <th><strong>Relationships</strong></th> </tr> </thead> <tbody> <tr> <td><strong>Users</strong></td> <td><code>user_id</code></td> <td><code>username</code>, <code>email</code>, <code>password_hash</code>, <code>role (customer/admin)</code>, <code>created_at</code></td> <td>One-to-Many: A user can have multiple orders.</td> </tr> <tr> <td><strong>Products</strong></td> <td><code>product_id</code></td> <td><code>product_name</code>, <code>description</code>, <code>price</code>, <code>category_id</code>, <code>stock_quantity</code>, <code>created_at</code></td> <td>One-to-Many: A product can belong to only one category but can be part of many orders and have many reviews.</td> </tr> <tr> <td><strong>Categories</strong></td> <td><code>category_id</code></td> <td><code>category_name</code>, <code>parent_category_id</code></td> <td>One-to-Many: A category can have multiple products.</td> </tr> <tr> <td><strong>Orders</strong></td> <td><code>order_id</code></td> <td><code>user_id (FK from Users)</code>, <code>order_status</code>, <code>order_date</code>, <code>total_price</code></td> <td>One-to-Many: Each order belongs to a user. Many-to-Many: Orders can contain multiple products (via Order_Items table).</td> </tr> <tr> <td><strong>Order_Items</strong></td> <td><code>order_item_id</code></td> <td><code>order_id (FK from Orders)</code>, <code>product_id (FK from Products)</code>, <code>quantity</code>, <code>unit_price</code></td> <td>Many-to-Many: This is the join table between Orders and Products.</td> </tr> <tr> <td><strong>Reviews</strong></td> <td><code>review_id</code></td> <td><code>user_id (FK from Users)</code>, <code>product_id (FK from Products)</code>, <code>rating</code>, <code>review_text</code>, <code>created_at</code></td> <td>One-to-Many: Each user can review multiple products and each product can have multiple reviews.</td> </tr> <tr> <td><strong>Inventory</strong></td> <td><code>inventory_id</code></td> <td><code>product_id (FK from Products)</code>, <code>warehouse_location</code>, <code>quantity_available</code>, <code>last_updated</code></td> <td>One-to-One: Manages stock for individual products.</td> </tr> </tbody> </table>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>Schema Relationships</strong>:</p>  <ul> <li><strong>One-to-Many</strong>:  <ul> <li><strong>Users &rarr; Orders</strong>: A user can place many orders, but each order is associated with only one user.</li> <li><strong>Products &rarr; Reviews</strong>: A product can have multiple reviews, and a user can write multiple reviews for different products.</li> <li><strong>Categories &rarr; Products</strong>: Each category can have many products, but a product can belong to only one category.</li> </ul> </li> <li><strong>Many-to-Many</strong>: <ul> <li><strong>Orders &harr; Products</strong>: Many products can be part of many orders. This relationship is resolved via the <code>Order_Items</code> join table.</li> </ul> </li> <li><strong>One-to-One</strong>: <ul> <li><strong>Products &rarr; Inventory</strong>: Each product has one corresponding inventory record that tracks its stock level and warehouse details.</li> </ul> </li> </ul>  <p><strong>Key Considerations</strong>:</p>  <ul> <li><strong>Primary Keys (PK)</strong>: Each table has a unique identifier such as <code>user_id</code>, <code>product_id</code>, and <code>order_id</code>.</li> <li><strong>Foreign Keys (FK)</strong>: These are used to connect relationships between tables, such as <code>user_id</code> in the Orders table referencing the Users table.</li> <li><strong>Indexes</strong>: Indexing <code>email</code> for Users or <code>order_id + product_id</code> in the Order_Items table can help speed up queries in a large database.</li> </ul>  <p>This schema design captures the relationships and dependencies within an e-commerce platform while ensuring scalability, normalization, and data integrity.</p>  <h2>Conclusion</h2>  <p>Designing efficient schemas involves understanding your application&#39;s needs, applying normalization principles, and considering <a href='/articles/create-related-content-different-content-types-through-taxonomy-drupal.html'>performance</a> and scalability. Keep monitoring and iterating on your design to adapt to evolving requirements.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                                <div><p>The design of an efficient database schema is crucial for the <a href='/articles/how-to-improve-drupal-website-performance.html'>performance</a>, scalability and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly and grow with the increasing needs of your users.</p>  <p>This article explores best practices for designing efficient schemas, focusing on the balance between simplicity, <a href='/articles/read-data-to-paragraph-template-in-drupal-application.html'>performance</a> and scalability. Here&rsquo;s a structured approach to schema design, focusing on best practices and considerations:</p>  <h2>1. Understand Application Requirements</h2>  <p>Before designing your schema, gather and analyze the requirements of your web application:</p>  <ul> <li><strong>Identify Entities</strong>: Determine the key entities (e.g., users, products, orders).</li> <li><strong>Define Relationships</strong>: Establish how these entities interact with each other.</li> <li><strong>Determine Access Patterns</strong>: Understand how users will interact with the data (e.g., frequent reads, writes, updates).</li> </ul>  <h2>2. Normalize Data</h2>  <p>Use normalization principles to reduce redundancy and dependency. Aim for at least 3NF:</p>  <ul> <li><strong>1NF</strong>: Ensure that each column contains atomic values.</li> <li><strong>2NF</strong>: Eliminate partial dependencies on composite keys.</li> <li><strong>3NF</strong>: Remove transitive dependencies.</li> </ul>  <h2>3. Denormalization When Necessary</h2>  <p>In some cases, especially for read-heavy applications, you may want to denormalize:</p>  <ul> <li><strong>Performance Optimization</strong>: Denormalization can reduce the number of joins needed for queries, improving <a href='/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html'>performance</a>.</li> <li><strong>Use Cases</strong>: Consider denormalization for reporting tables or when aggregating data frequently.</li> </ul>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>4. Choose the Right Data Types</h2>  <p>Select appropriate data types for each attribute:</p>  <ul> <li><strong>Efficiency</strong>: Use the smallest data type that meets your needs (e.g., INT instead of BIGINT).</li> <li><strong>Clarity</strong>: Choose data types that accurately reflect the nature of the data (e.g., DATE for dates).</li> </ul>  <h2>5. Indexing Strategies</h2>  <p>Implement indexing to speed up data retrieval:</p>  <ul> <li><strong>Primary Keys</strong>: Automatically indexed, ensure they are unique.</li> <li><strong>Foreign Keys</strong>: Index foreign keys to improve join <a href='/articles/drupal-cache-clear-and-cache-rebuild.html'>performance</a>.</li> <li><strong>Common Queries</strong>: Analyze common queries and create indexes based on frequently accessed columns.</li> </ul>  <h2>6. Consider Scalability</h2>  <p>Design your schema with scalability in mind:</p>  <ul> <li><strong>Sharding</strong>: Plan for sharding if you anticipate high data volumes.</li> <li><strong>Partitioning</strong>: Use table partitioning for large datasets to improve <a href='/articles/aegir-docker-develop-test-easier-deployment.html'>performance</a> and management.</li> </ul>  <h2>7. Use Appropriate Relationships</h2>  <p>Choose the right type of relationships based on your data model:</p>  <ul> <li><strong>One-to-One (1:1)</strong>: Use for unique relationships (e.g., user profiles).</li> <li><strong>One-to-Many (1)</strong>: Common for relationships like users to orders.</li> <li><strong>Many-to-Many (M)</strong>: Implement with join tables for relationships like students and courses.</li> </ul>  <h2>8. Ensure Data Integrity</h2>  <p>Implement constraints to maintain data integrity:</p>  <ul> <li><strong>Foreign Key Constraints</strong>: Ensure relationships remain valid.</li> <li><strong>Unique Constraints</strong>: Prevent duplicate entries where necessary.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>9. Document Your Schema</h2>  <p>Maintain documentation of your schema design:</p>  <ul> <li><strong>Entity-Relationship Diagrams (ERDs)</strong>: Visualize relationships.</li> <li><strong>Schema Definitions</strong>: Clearly describe each table and its purpose.</li> </ul>  <h2>10. Monitor and Optimize</h2>  <p>Once your schema is in use:</p>  <ul> <li><strong>Performance Monitoring</strong>: Regularly monitor query <a href='/articles/drupal-simple-test-case-custom-module.html'>performance</a> and database load.</li> <li><strong>Refactor</strong>: Be prepared to adjust your schema based on <a href='/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html'>performance</a> data and changing application requirements.</li> </ul>  <h2>Example Schema Design</h2>  <p>Here&rsquo;s the complex e-commerce schema design laid out in a table format for each entity and their relationships.</p>  <table> <thead> <tr> <th><strong>Entity</strong></th> <th><strong>Primary Key</strong></th> <th><strong>Columns</strong></th> <th><strong>Relationships</strong></th> </tr> </thead> <tbody> <tr> <td><strong>Users</strong></td> <td><code>user_id</code></td> <td><code>username</code>, <code>email</code>, <code>password_hash</code>, <code>role (customer/admin)</code>, <code>created_at</code></td> <td>One-to-Many: A user can have multiple orders.</td> </tr> <tr> <td><strong>Products</strong></td> <td><code>product_id</code></td> <td><code>product_name</code>, <code>description</code>, <code>price</code>, <code>category_id</code>, <code>stock_quantity</code>, <code>created_at</code></td> <td>One-to-Many: A product can belong to only one category but can be part of many orders and have many reviews.</td> </tr> <tr> <td><strong>Categories</strong></td> <td><code>category_id</code></td> <td><code>category_name</code>, <code>parent_category_id</code></td> <td>One-to-Many: A category can have multiple products.</td> </tr> <tr> <td><strong>Orders</strong></td> <td><code>order_id</code></td> <td><code>user_id (FK from Users)</code>, <code>order_status</code>, <code>order_date</code>, <code>total_price</code></td> <td>One-to-Many: Each order belongs to a user. Many-to-Many: Orders can contain multiple products (via Order_Items table).</td> </tr> <tr> <td><strong>Order_Items</strong></td> <td><code>order_item_id</code></td> <td><code>order_id (FK from Orders)</code>, <code>product_id (FK from Products)</code>, <code>quantity</code>, <code>unit_price</code></td> <td>Many-to-Many: This is the join table between Orders and Products.</td> </tr> <tr> <td><strong>Reviews</strong></td> <td><code>review_id</code></td> <td><code>user_id (FK from Users)</code>, <code>product_id (FK from Products)</code>, <code>rating</code>, <code>review_text</code>, <code>created_at</code></td> <td>One-to-Many: Each user can review multiple products and each product can have multiple reviews.</td> </tr> <tr> <td><strong>Inventory</strong></td> <td><code>inventory_id</code></td> <td><code>product_id (FK from Products)</code>, <code>warehouse_location</code>, <code>quantity_available</code>, <code>last_updated</code></td> <td>One-to-One: Manages stock for individual products.</td> </tr> </tbody> </table>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>Schema Relationships</strong>:</p>  <ul> <li><strong>One-to-Many</strong>:  <ul> <li><strong>Users &rarr; Orders</strong>: A user can place many orders, but each order is associated with only one user.</li> <li><strong>Products &rarr; Reviews</strong>: A product can have multiple reviews and a user can write multiple reviews for different products.</li> <li><strong>Categories &rarr; Products</strong>: Each category can have many products, but a product can belong to only one category.</li> </ul> </li> <li><strong>Many-to-Many</strong>: <ul> <li><strong>Orders &harr; Products</strong>: Many products can be part of many orders. This relationship is resolved via the <code>Order_Items</code> join table.</li> </ul> </li> <li><strong>One-to-One</strong>: <ul> <li><strong>Products &rarr; Inventory</strong>: Each product has one corresponding inventory record that tracks its stock level and warehouse details.</li> </ul> </li> </ul>  <p><strong>Key Considerations</strong>:</p>  <ul> <li><strong>Primary Keys (PK)</strong>: Each table has a unique identifier such as <code>user_id</code>, <code>product_id</code> and <code>order_id</code>.</li> <li><strong>Foreign Keys (FK)</strong>: These are used to connect relationships between tables, such as <code>user_id</code> in the Orders table referencing the Users table.</li> <li><strong>Indexes</strong>: Indexing <code>email</code> for Users or <code>order_id + product_id</code> in the Order_Items table can help speed up queries in a large database.</li> </ul>  <p>This schema design captures the relationships and dependencies within an e-commerce platform while ensuring scalability, normalization and data integrity.</p>  <h2>Conclusion</h2>  <p>Designing efficient schemas involves understanding your application&#39;s needs, applying normalization principles and considering <a href='/articles/create-related-content-different-content-types-through-taxonomy-drupal.html'>performance</a> and scalability. Keep monitoring and iterating on your design to adapt to evolving requirements.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">55% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D9BXZJHM.html" title="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)"><img data-src="https://m.media-amazon.com/images/I/71+89DTymuL._SX679_.jpg" class="img-fluid lazy" alt="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)" title="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D9BXZJHM.html" title="Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)" class="shop-title-value">Acer 100 cm (40 inches) I Pro Series Full HD Smart LED Google TV AR40FDIGU2841AT (Black)</a></h4>
+                  <div class="discount"><span class="main blink">79% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07P99Q8ZM.html" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023"><img data-src="https://m.media-amazon.com/images/I/71mdO-ohDmL._SX679_.jpg" class="img-fluid lazy" alt="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07P99Q8ZM.html" title="Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023" class="shop-title-value">Vintage Clock Hand-Crafted Metal Large Wall Clock / 24 Inch (60 CM&#039;s) / VC-9023</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>16,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>37,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,300</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>10,996</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">73% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B091H9DWL9.html" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4"><img data-src="https://m.media-amazon.com/images/I/61l0ocLvZKS._SX679_.jpg" class="img-fluid lazy" alt="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B091H9DWL9.html" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" class="shop-title-value">truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
                   <div class="discount"><span class="main blink">33% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)"><img data-src="https://m.media-amazon.com/images/I/81BENnbPpuL._SX679_.jpg" class="img-fluid lazy" alt="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" class="shop-title-value">Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)</a></h4>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CHZ2X647.html" title="Samsung Galaxy Tab S9 FE, S Pen in-Box, 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, Wi-Fi, IP68 Tablet, Silver"><img data-src="https://m.media-amazon.com/images/I/61E7yk7f0vL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy Tab S9 FE, S Pen in-Box, 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, Wi-Fi, IP68 Tablet, Silver" title="Samsung Galaxy Tab S9 FE, S Pen in-Box, 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, Wi-Fi, IP68 Tablet, Silver" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CHZ2X647.html" title="Samsung Galaxy Tab S9 FE, S Pen in-Box, 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, Wi-Fi, IP68 Tablet, Silver" class="shop-title-value">Samsung Galaxy Tab S9 FE, S Pen in-Box, 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, Wi-Fi, IP68 Tablet, Silver</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>39,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>59,900</span></span>
-                  </div>
-              </div>
-          </div><div class="col-md-4 shop-item-wrapper">
-              <div class="shop-item">
-                  <div class="discount"><span class="main blink">67% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08WL2RDBD.html" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Action Dcor African Tribal Women Art Piece-(Set of 3,Multicolour),Resin"><img data-src="https://m.media-amazon.com/images/I/51W5JKEMMqL._SX300_SY300_QL70_FMwebp_.jpg" class="img-fluid lazy" alt="Xtore Beautiful Finish Uniquely Hand Crafted Home Action Dcor African Tribal Women Art Piece-(Set of 3,Multicolour),Resin" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Action Dcor African Tribal Women Art Piece-(Set of 3,Multicolour),Resin" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08WL2RDBD.html" title="Xtore Beautiful Finish Uniquely Hand Crafted Home Action Dcor African Tribal Women Art Piece-(Set of 3,Multicolour),Resin" class="shop-title-value">Xtore Beautiful Finish Uniquely Hand Crafted Home Action Dcor African Tribal Women Art Piece-(Set of 3,Multicolour),Resin</a></h4>
-                  <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>829</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>29,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>44,999</span></span>
                   </div>
               </div>
           </div>
@@ -243,15 +243,15 @@
               <div class="row"><div class="col-md-6">                      
                         <div class="row">
                           <div class="col-md-4">
-                            <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" title="Basics of Database Design: Normalization, Relationships, and ER Diagrams">
-                              <img class="img-fluid logo lazy" data-src="/upload/banners/basics-of-database-design-normalization-relationships-and-er-diagrams.jpg" alt="Basics of Database Design: Normalization, Relationships, and ER Diagrams" title="Basics of Database Design: Normalization, Relationships, and ER Diagrams" src="/upload/cursor.jpg" />
+                            <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" title="Basics of Database Design: Normalization, Relationships and ER Diagrams">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/basics-of-database-design-normalization-relationships-and-er-diagrams.jpg" alt="Basics of Database Design: Normalization, Relationships and ER Diagrams" title="Basics of Database Design: Normalization, Relationships and ER Diagrams" src="/upload/cursor.jpg" />
                             </a>
                           </div>
                           <div class="col-md-8">
                             <div class="prev">
                               <span>Previous Article</span>
-                              <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" title="Basics of Database Design: Normalization, Relationships, and ER Diagrams">
-                                <span class="title">Basics of Database Design: Normalization, Relationships, and ER Diagrams</span>
+                              <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html" title="Basics of Database Design: Normalization, Relationships and ER Diagrams">
+                                <span class="title">Basics of Database Design: Normalization, Relationships and ER Diagrams</span>
                               </a>
                             </div>
                           </div>
@@ -294,7 +294,7 @@
                 </a>
               </div><div class="article">
                 <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-                  Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
                 </a>
               </div><div class="article">
                 <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -306,7 +306,7 @@
                 </a>
               </div><div class="article">
                 <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-                  Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+                  Introduction to Design Patterns: Factory, Singleton and Dependency Injection
                 </a>
               </div><div class="article">
                 <a href="/articles/understanding-the-solid-principles-in-php.html">
@@ -333,12 +333,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">23% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07GDR7VZ3.html" title="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)"><img data-src="https://m.media-amazon.com/images/I/41tDUmnDITL.jpg" class="img-fluid lazy" alt="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)" title="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07GDR7VZ3.html" title="Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)" class="shop-title-value">Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless steel accessories and 2 years warranty(black color)</a></h4>
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C3LPXHL3.html" title="LG 7.5 Kg 5 Star Smart Inverter Fully-Automatic Top Load Washing Machine (T75SKMB1Z, Middle Black, TurboDrum | Smart Motion)"><img data-src="https://m.media-amazon.com/images/I/617ejnjRWrL._SX679_.jpg" class="img-fluid lazy" alt="LG 7.5 Kg 5 Star Smart Inverter Fully-Automatic Top Load Washing Machine (T75SKMB1Z, Middle Black, TurboDrum | Smart Motion)" title="LG 7.5 Kg 5 Star Smart Inverter Fully-Automatic Top Load Washing Machine (T75SKMB1Z, Middle Black, TurboDrum | Smart Motion)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C3LPXHL3.html" title="LG 7.5 Kg 5 Star Smart Inverter Fully-Automatic Top Load Washing Machine (T75SKMB1Z, Middle Black, TurboDrum | Smart Motion)" class="shop-title-value">LG 7.5 Kg 5 Star Smart Inverter Fully-Automatic Top Load Washing Machine (T75SKMB1Z, Middle Black, TurboDrum | Smart Motion)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,595</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>18,489</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>25,490</span></span>
                   </div>
               </div>
           </div>
@@ -381,7 +381,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -401,12 +401,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">9% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)"><img data-src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" class="shop-title-value">Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</a></h4>
+                  <div class="discount"><span class="main blink">62% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01MFXCZ5A.html" title="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts"><img data-src="https://m.media-amazon.com/images/I/81bSoD59t7L._SX679_.jpg" class="img-fluid lazy" alt="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts" title="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01MFXCZ5A.html" title="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts" class="shop-title-value">eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,31,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,44,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>767</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
                   </div>
               </div>
           </div>
@@ -437,7 +437,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -453,7 +453,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -469,12 +469,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">82% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CHS59V1P.html" title="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2"><img data-src="https://m.media-amazon.com/images/I/81PiLv21XTL._SX679_.jpg" class="img-fluid lazy" alt="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2" title="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CHS59V1P.html" title="London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2" class="shop-title-value">London Hills Women&#039;s Casual Printed Round Neck, Oversized Longline Drop Shoulder Boho Style Regular Fit T-Shirt Pack Of 2</a></h4>
+                  <div class="discount"><span class="main blink">29% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DGX9VVFV.html" title="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update"><img data-src="https://m.media-amazon.com/images/I/81scQ7qlPuL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update" title="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DGX9VVFV.html" title="Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update" class="shop-title-value">Samsung Galaxy M15 5G Prime Edition (Blue Topaz,6GB RAM,128GB Storage) | Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+ | 4 Gen. OS Upgrade &amp; 5 Year Security Update</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>473</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,598</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>11,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>16,999</span></span>
                   </div>
               </div>
           </div>
@@ -538,12 +538,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">31% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0784ZQFHZ.html" title="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black"><img data-src="https://m.media-amazon.com/images/I/71gNXJ6ciBL._SX679_.jpg" class="img-fluid lazy" alt="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black" title="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0784ZQFHZ.html" title="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black" class="shop-title-value">Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black</a></h4>
+                  <div class="discount"><span class="main blink">25% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B088ZRBDKN.html" title="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)"><img data-src="https://m.media-amazon.com/images/I/716ItAjzpHL._SX679_.jpg" class="img-fluid lazy" alt="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)" title="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B088ZRBDKN.html" title="Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)" class="shop-title-value">Havells Plastic Hb10 1000 watts Immersion Heater|Isi Mark Heavy Duty 3 Pin Moulded Plug,Touch Protection Cover|Waterproof,Heating Indicator,Nickel Plating,Warranty: 2 Year Comprehensive|(White Blue)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>4,849</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>6,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>730</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>970</span></span>
                   </div>
               </div>
           </div>
@@ -562,6 +562,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -597,22 +601,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">55% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09Y65HV6N.html" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)"><img data-src="https://m.media-amazon.com/images/I/91b1B9Pjd2L._SX679_.jpg" class="img-fluid lazy" alt="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09Y65HV6N.html" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" class="shop-title-value">Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)</a></h4>
+                  <div class="discount"><span class="main blink">45% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08GSQXLJ2.html" title="Crompton Arno Neo 15-L 5 Star Rated Storage Water Heater (Geyser) with Advanced 3 Level Safety, National Energy Conservation Award Winner 2023"><img data-src="https://f.media-amazon.com/images/I/515nNlnjmSL._SX679_.jpg" class="img-fluid lazy" alt="Crompton Arno Neo 15-L 5 Star Rated Storage Water Heater (Geyser) with Advanced 3 Level Safety, National Energy Conservation Award Winner 2023" title="Crompton Arno Neo 15-L 5 Star Rated Storage Water Heater (Geyser) with Advanced 3 Level Safety, National Energy Conservation Award Winner 2023" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08GSQXLJ2.html" title="Crompton Arno Neo 15-L 5 Star Rated Storage Water Heater (Geyser) with Advanced 3 Level Safety, National Energy Conservation Award Winner 2023" class="shop-title-value">Crompton Arno Neo 15-L 5 Star Rated Storage Water Heater (Geyser) with Advanced 3 Level Safety, National Energy Conservation Award Winner 2023</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>3,99,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>8,79,900</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>5,699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>10,400</span></span>
                   </div>
               </div>
           </div>
@@ -636,42 +636,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">46% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09WZ1HCN3.html" title="V-Guard Esfera STS Plus Pedestal Cum Table Fan | Versatile 2-In-1 Operation | 1350 RPM Motor | Customisable Tilt And Oscillation Control | Red Black | 40 cm (400mm)"><img data-src="https://m.media-amazon.com/images/I/61xHtK5uyLL._SX679_.jpg" class="img-fluid lazy" alt="V-Guard Esfera STS Plus Pedestal Cum Table Fan | Versatile 2-In-1 Operation | 1350 RPM Motor | Customisable Tilt And Oscillation Control | Red Black | 40 cm (400mm)" title="V-Guard Esfera STS Plus Pedestal Cum Table Fan | Versatile 2-In-1 Operation | 1350 RPM Motor | Customisable Tilt And Oscillation Control | Red Black | 40 cm (400mm)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09WZ1HCN3.html" title="V-Guard Esfera STS Plus Pedestal Cum Table Fan | Versatile 2-In-1 Operation | 1350 RPM Motor | Customisable Tilt And Oscillation Control | Red Black | 40 cm (400mm)" class="shop-title-value">V-Guard Esfera STS Plus Pedestal Cum Table Fan | Versatile 2-In-1 Operation | 1350 RPM Motor | Customisable Tilt And Oscillation Control | Red Black | 40 cm (400mm)</a></h4>
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07KYPZHJ9.html" title="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)"><img data-src="https://m.media-amazon.com/images/I/510yXR4GoNL._SX679_.jpg" class="img-fluid lazy" alt="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)" title="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07KYPZHJ9.html" title="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)" class="shop-title-value">Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>2,299</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>4,250</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,195</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">26% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WGPBNTC.html" title="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box"><img data-src="https://m.media-amazon.com/images/I/61pt59LW-lL._SX679_.jpg" class="img-fluid lazy" alt="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" title="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WGPBNTC.html" title="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" class="shop-title-value">iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box</a></h4>
+                  <div class="discount"><span class="main blink">63% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BKNF424G.html" title="Bewakoof Women&#039;s Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves"><img data-src="https://m.media-amazon.com/images/I/61QNCx3UjuL._SY879_.jpg" class="img-fluid lazy" alt="Bewakoof Women&#039;s Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves" title="Bewakoof Women&#039;s Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BKNF424G.html" title="Bewakoof Women&#039;s Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves" class="shop-title-value">Bewakoof Women&#039;s Graphic Printed 100% Cotton T-Shirt - Oversized Fit, Round Neck, Half Sleeves</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>18,499</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>480</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,299</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">23% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D11V1LW9.html" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer"><img data-src="https://m.media-amazon.com/images/I/61vgKOjMC+L._SX679_.jpg" class="img-fluid lazy" alt="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D11V1LW9.html" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" class="shop-title-value">IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer</a></h4>
+                  <div class="discount"><span class="main blink">35% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CSCRBZ43.html" title="Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM 0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model, White)"><img data-src="https://m.media-amazon.com/images/I/51bTCAnwZIL._SX679_.jpg" class="img-fluid lazy" alt="Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM 0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model, White)" title="Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM 0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model, White)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CSCRBZ43.html" title="Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM 0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model, White)" class="shop-title-value">Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM 0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model, White)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>17,490</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>22,600</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>35,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>55,400</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">34% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMGD9Y2X.html" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)"><img data-src="https://m.media-amazon.com/images/I/71HjkfkIjEL._SX679_.jpg" class="img-fluid lazy" alt="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMGD9Y2X.html" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" class="shop-title-value">LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)</a></h4>
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CY2QL1JR.html" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray"><img data-src="https://m.media-amazon.com/images/I/711rRUziI5L._SX679_.jpg" class="img-fluid lazy" alt="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CY2QL1JR.html" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" class="shop-title-value">HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>28,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>43,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>19,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>34,999</span></span>
                   </div>
               </div>
           </div>

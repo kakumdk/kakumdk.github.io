@@ -2491,7 +2491,7 @@ class Modal extends BaseComponent {
   _initializeBackDrop() {
     return new Backdrop({
       isVisible: Boolean(this._config.backdrop),
-      // 'static' option will be translated to true, and booleans will keep their value,
+      // 'static' option will be translated to true and booleans will keep their value,
       isAnimated: this._isAnimated()
     });
   }
@@ -2544,7 +2544,7 @@ class Modal extends BaseComponent {
       }
     });
     EventHandler.on(this._element, EVENT_MOUSEDOWN_DISMISS, event => {
-      // a bad trick to segregate clicks that may start inside dialog but end outside, and avoid listen to scrollbar clicks
+      // a bad trick to segregate clicks that may start inside dialog but end outside and avoid listen to scrollbar clicks
       EventHandler.one(this._element, EVENT_CLICK_DISMISS, event2 => {
         if (this._element !== event.target || this._element !== event2.target) {
           return;
@@ -2814,7 +2814,7 @@ class Offcanvas extends BaseComponent {
       this.hide();
     };
 
-    // 'static' option will be translated to true, and booleans will keep their value
+    // 'static' option will be translated to true and booleans will keep their value
     const isVisible = Boolean(this._config.backdrop);
     return new Backdrop({
       className: CLASS_NAME_BACKDROP,

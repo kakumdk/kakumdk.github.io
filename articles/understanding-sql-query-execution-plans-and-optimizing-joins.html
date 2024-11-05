@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "24th Oct 2024",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>24th Oct 2024</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>24th Oct 2024</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>In the realm of database management, <a href='/articles/using-indexes-to-speed-up-sql-queries.html'>performance</a> is paramount. One of the most effective ways to enhance SQL query efficiency is through a deep understanding of query execution plans and the optimization of joins.</p>  <p>This article will provide a comprehensive overview of these concepts, helping you to write faster, more efficient SQL queries.</p>  <h2>What is an SQL Query Execution Plan?</h2>  <p>An SQL query execution plan, also known as an execution plan or query plan, is a detailed roadmap that the database management system (DBMS) uses to execute a SQL query. It outlines how the DBMS will access data, the sequence of operations, and the methods employed to retrieve and manipulate data.</p>  <p><strong>Key Components of Execution Plans</strong></p>  <ol> <li><strong>Node Types:</strong>  <ul> <li>Execution plans consist of nodes that represent different operations, such as scanning tables, using indexes, or performing joins.</li> <li>Understanding these node types is crucial for <a href='/articles/designing-efficient-schemas-for-web-applications.html'>performance</a> analysis.</li> </ul> </li> <li><strong>Join Types:</strong> <ul> <li>The execution plan will indicate how tables are joined (e.g., nested loops, hash joins, or merge joins).</li> <li>The choice of join type can significantly impact <a href='/articles/how-to-improve-drupal-website-performance.html'>performance</a>.</li> </ul> </li> <li><strong>Cost Estimates:</strong> <ul> <li>Execution plans often provide cost estimates based on CPU and I/O resources.</li> <li>These estimates help identify potential <a href='/articles/drupal-cache-clear-and-cache-rebuild.html'>performance</a> bottlenecks.</li> </ul> </li> <li><strong>Data Flow:</strong>&nbsp;The execution plan visually represents the flow of data through various operations, allowing you to understand how data is processed and where optimizations can be made.</li> </ol>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <p><strong>Viewing Execution Plans</strong></p>  <p>To analyze execution plans, you can use specific commands in your SQL environment:</p>  <ul> <li><strong>MySQL:</strong> Use <code>EXPLAIN</code> before your query.</li> <li><strong>PostgreSQL:</strong> Use <code>EXPLAIN</code> or <code>EXPLAIN ANALYZE</code>.</li> <li><strong>SQL Server:</strong> Use <code>SET SHOWPLAN_XML ON</code> or <code>SET STATISTICS PROFILE ON</code>.</li> </ul>  <p>By examining the output, you can gain insights into how your queries are executed and identify areas for improvement.</p>  <h2>Optimizing Joins</h2>  <p>Joins are a fundamental part of SQL queries, allowing you to combine data from multiple tables. However, inefficient joins can lead to <a href='/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html'>performance</a> issues. Here are some strategies to optimize joins effectively:</p>  <p><strong>1. Choose the Right Join Type</strong></p>  <p>Selecting the appropriate join type based on your data retrieval needs is crucial.</p>  <ul> <li><strong>Inner Join:</strong>  <ul> <li>Returns only matching records.</li> <li>Use it when you need data present in both tables.</li> </ul> </li> <li><strong>Outer Join:</strong> <ul> <li>Retrieves all records from one or both tables, even if there&rsquo;s no match.</li> <li>Use it when it&rsquo;s essential to keep all records from one side.</li> </ul> </li> <li><strong>Cross Join:</strong> <ul> <li><strong>​​​​​​​</strong>Produces a Cartesian product, which can lead to a massive number of results.</li> <li>Use with caution and only when necessary.</li> </ul> </li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>2. Use Indexing Wisely</strong></p>  <ul> <li>Indexes are critical for speeding up data retrieval.</li> <li>Ensure that columns used in join conditions are indexed appropriately.</li> <li>For instance, if you frequently join on <code>customer_id</code>, having an index on this column will significantly enhance <a href='/articles/using-indexes-to-speed-up-sql-queries.html'>performance</a>.</li> </ul>  <p><strong>3. Optimize Join Order</strong></p>  <ul> <li>The order in which tables are joined can impact query <a href='/articles/writing-secure-sql-queries-using-prepared-statements.html'>performance</a>.</li> <li>As a rule of thumb, start with smaller tables or those with the most restrictive filters.</li> <li>This approach reduces the amount of data processed in subsequent joins.</li> </ul>  <p><strong>4. Filter Early</strong></p>  <ul> <li>Incorporate filtering conditions in your <code>WHERE</code> clauses to reduce the data set before joining.</li> <li>This practice minimizes the amount of data that the DBMS needs to process during the join operation.</li> </ul>  <p><strong>5. Avoid Unnecessary Joins</strong></p>  <ul> <li>Analyze your queries to ensure you&rsquo;re only joining tables that are essential for the desired results.</li> <li>Unnecessary joins can lead to increased complexity and reduced <a href='/articles/implementing-one-to-many-and-many-to-many-relationships.html'>performance</a>.</li> </ul>  <p><strong>6. Analyze and Test Different Approaches</strong></p>  <ul> <li>Execution plans can vary greatly based on how you structure your queries.</li> <li>Regularly test different join strategies and index configurations to identify the most efficient approach.</li> </ul>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>Best Practices for Execution Plans and Joins</h2>  <ul> <li><strong>Regularly Review Execution Plans:</strong> Monitor query <a href='/articles/what-to-know-before-you-choose-drupal-hosting-platform.html'>performance</a> over time to identify any degradation.</li> <li><strong>Keep Statistics Updated:</strong> Ensure that your database statistics are current, enabling the optimizer to make informed decisions.</li> <li><strong>Limit Returned Rows:</strong> Use LIMIT or equivalent clauses to restrict the number of returned rows, especially for large datasets.</li> </ul>  <h2>Conclusion</h2>  <p>Understanding SQL query execution plans and optimizing joins are critical skills for anyone working with databases. By analyzing execution plans and employing best practices for joins, you can significantly improve the <a href='/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html'>performance</a> of your SQL queries. This knowledge not only enhances efficiency but also leads to a better overall user experience in database-driven applications.</p>  <p>By taking the time to study execution plans and refining your join strategies, you&rsquo;ll be well-equipped to tackle performance challenges in your SQL queries.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                                <div><p>In the realm of database management, <a href='/articles/using-indexes-to-speed-up-sql-queries.html'>performance</a> is paramount. One of the most effective ways to enhance SQL query efficiency is through a deep understanding of query execution plans and the optimization of joins.</p>  <p>This article will provide a comprehensive overview of these concepts, helping you to write faster, more efficient SQL queries.</p>  <h2>What is an SQL Query Execution Plan?</h2>  <p>An SQL query execution plan, also known as an execution plan or query plan, is a detailed roadmap that the database management system (DBMS) uses to execute a SQL query. It outlines how the DBMS will access data, the sequence of operations and the methods employed to retrieve and manipulate data.</p>  <p><strong>Key Components of Execution Plans</strong></p>  <ol> <li><strong>Node Types:</strong>  <ul> <li>Execution plans consist of nodes that represent different operations, such as scanning tables, using indexes, or performing joins.</li> <li>Understanding these node types is crucial for <a href='/articles/designing-efficient-schemas-for-web-applications.html'>performance</a> analysis.</li> </ul> </li> <li><strong>Join Types:</strong> <ul> <li>The execution plan will indicate how tables are joined (e.g., nested loops, hash joins, or merge joins).</li> <li>The choice of join type can significantly impact <a href='/articles/how-to-improve-drupal-website-performance.html'>performance</a>.</li> </ul> </li> <li><strong>Cost Estimates:</strong> <ul> <li>Execution plans often provide cost estimates based on CPU and I/O resources.</li> <li>These estimates help identify potential <a href='/articles/drupal-cache-clear-and-cache-rebuild.html'>performance</a> bottlenecks.</li> </ul> </li> <li><strong>Data Flow:</strong>&nbsp;The execution plan visually represents the flow of data through various operations, allowing you to understand how data is processed and where optimizations can be made.</li> </ol>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <p><strong>Viewing Execution Plans</strong></p>  <p>To analyze execution plans, you can use specific commands in your SQL environment:</p>  <ul> <li><strong>MySQL:</strong> Use <code>EXPLAIN</code> before your query.</li> <li><strong>PostgreSQL:</strong> Use <code>EXPLAIN</code> or <code>EXPLAIN ANALYZE</code>.</li> <li><strong>SQL Server:</strong> Use <code>SET SHOWPLAN_XML ON</code> or <code>SET STATISTICS PROFILE ON</code>.</li> </ul>  <p>By examining the output, you can gain insights into how your queries are executed and identify areas for improvement.</p>  <h2>Optimizing Joins</h2>  <p>Joins are a fundamental part of SQL queries, allowing you to combine data from multiple tables. However, inefficient joins can lead to <a href='/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html'>performance</a> issues. Here are some strategies to optimize joins effectively:</p>  <p><strong>1. Choose the Right Join Type</strong></p>  <p>Selecting the appropriate join type based on your data retrieval needs is crucial.</p>  <ul> <li><strong>Inner Join:</strong>  <ul> <li>Returns only matching records.</li> <li>Use it when you need data present in both tables.</li> </ul> </li> <li><strong>Outer Join:</strong> <ul> <li>Retrieves all records from one or both tables, even if there&rsquo;s no match.</li> <li>Use it when it&rsquo;s essential to keep all records from one side.</li> </ul> </li> <li><strong>Cross Join:</strong> <ul> <li><strong>​​​​​​​</strong>Produces a Cartesian product, which can lead to a massive number of results.</li> <li>Use with caution and only when necessary.</li> </ul> </li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>2. Use Indexing Wisely</strong></p>  <ul> <li>Indexes are critical for speeding up data retrieval.</li> <li>Ensure that columns used in join conditions are indexed appropriately.</li> <li>For instance, if you frequently join on <code>customer_id</code>, having an index on this column will significantly enhance <a href='/articles/using-indexes-to-speed-up-sql-queries.html'>performance</a>.</li> </ul>  <p><strong>3. Optimize Join Order</strong></p>  <ul> <li>The order in which tables are joined can impact query <a href='/articles/writing-secure-sql-queries-using-prepared-statements.html'>performance</a>.</li> <li>As a rule of thumb, start with smaller tables or those with the most restrictive filters.</li> <li>This approach reduces the amount of data processed in subsequent joins.</li> </ul>  <p><strong>4. Filter Early</strong></p>  <ul> <li>Incorporate filtering conditions in your <code>WHERE</code> clauses to reduce the data set before joining.</li> <li>This practice minimizes the amount of data that the DBMS needs to process during the join operation.</li> </ul>  <p><strong>5. Avoid Unnecessary Joins</strong></p>  <ul> <li>Analyze your queries to ensure you&rsquo;re only joining tables that are essential for the desired results.</li> <li>Unnecessary joins can lead to increased complexity and reduced <a href='/articles/implementing-one-to-many-and-many-to-many-relationships.html'>performance</a>.</li> </ul>  <p><strong>6. Analyze and Test Different Approaches</strong></p>  <ul> <li>Execution plans can vary greatly based on how you structure your queries.</li> <li>Regularly test different join strategies and index configurations to identify the most efficient approach.</li> </ul>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>Best Practices for Execution Plans and Joins</h2>  <ul> <li><strong>Regularly Review Execution Plans:</strong> Monitor query <a href='/articles/what-to-know-before-you-choose-drupal-hosting-platform.html'>performance</a> over time to identify any degradation.</li> <li><strong>Keep Statistics Updated:</strong> Ensure that your database statistics are current, enabling the optimizer to make informed decisions.</li> <li><strong>Limit Returned Rows:</strong> Use LIMIT or equivalent clauses to restrict the number of returned rows, especially for large datasets.</li> </ul>  <h2>Conclusion</h2>  <p>Understanding SQL query execution plans and optimizing joins are critical skills for anyone working with databases. By analyzing execution plans and employing best practices for joins, you can significantly improve the <a href='/articles/improve-drupal-search-with-solr-locally-configured-via-lando.html'>performance</a> of your SQL queries. This knowledge not only enhances efficiency but also leads to a better overall user experience in database-driven applications.</p>  <p>By taking the time to study execution plans and refining your join strategies, you&rsquo;ll be well-equipped to tackle performance challenges in your SQL queries.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">15% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]"><img data-src="https://m.media-amazon.com/images/I/61tslaYWLjL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" class="shop-title-value">OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]</a></h4>
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)"><img data-src="https://m.media-amazon.com/images/I/81BENnbPpuL._SX679_.jpg" class="img-fluid lazy" alt="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" class="shop-title-value">Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>40,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>47,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>39,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>59,900</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">15% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D4M66F6R.html" title="HP 15s Core i5 12th Gen (16GB RAM/512GB SSD/FHD/MS Office 21 /Backlit Keyboard /15.6-inch (39.6 cm)/FHD/Windows 11/Silver/1.69 kg) fy5009TU/fd0111tu Laptop"><img data-src="https://m.media-amazon.com/images/I/61TIgpyjxPL._SX679_.jpg" class="img-fluid lazy" alt="HP 15s Core i5 12th Gen (16GB RAM/512GB SSD/FHD/MS Office 21 /Backlit Keyboard /15.6-inch (39.6 cm)/FHD/Windows 11/Silver/1.69 kg) fy5009TU/fd0111tu Laptop" title="HP 15s Core i5 12th Gen (16GB RAM/512GB SSD/FHD/MS Office 21 /Backlit Keyboard /15.6-inch (39.6 cm)/FHD/Windows 11/Silver/1.69 kg) fy5009TU/fd0111tu Laptop" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D4M66F6R.html" title="HP 15s Core i5 12th Gen (16GB RAM/512GB SSD/FHD/MS Office 21 /Backlit Keyboard /15.6-inch (39.6 cm)/FHD/Windows 11/Silver/1.69 kg) fy5009TU/fd0111tu Laptop" class="shop-title-value">HP 15s Core i5 12th Gen (16GB RAM/512GB SSD/FHD/MS Office 21 /Backlit Keyboard /15.6-inch (39.6 cm)/FHD/Windows 11/Silver/1.69 kg) fy5009TU/fd0111tu Laptop</a></h4>
+                  <div class="discount"><span class="main blink">54% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00650QJ8G.html" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White"><img data-src="https://m.media-amazon.com/images/I/71Rx6XUEpnL._SX679_.jpg" class="img-fluid lazy" alt="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00650QJ8G.html" title="Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White" class="shop-title-value">Bajaj RCX 1.8 DLX Rice Cooker, 1.8 Litre , White</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>52,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>62,417</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,750</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">43% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CY2QL1JR.html" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray"><img data-src="https://m.media-amazon.com/images/I/711rRUziI5L._SX679_.jpg" class="img-fluid lazy" alt="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CY2QL1JR.html" title="HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray" class="shop-title-value">HONOR Pad 9 with Free Bluetooth Keyboard, 12.1-Inch 2.5K Display, 8GB, 256GB Storage, Snapdragon 6 Gen 1 (4nm), 8 Speakers, Up-to 17 Hours, Android 13, WiFi Tablet, Metal Body, Gray</a></h4>
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07KYPZHJ9.html" title="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)"><img data-src="https://m.media-amazon.com/images/I/510yXR4GoNL._SX679_.jpg" class="img-fluid lazy" alt="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)" title="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07KYPZHJ9.html" title="Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)" class="shop-title-value">Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>19,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>34,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,195</span></span>
                   </div>
               </div>
           </div>
@@ -261,14 +261,14 @@
                           <div class="col-md-8">
                             <div class="next">
                               <span>Next Article</span>
-                              <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html" title="Introduction to Design Patterns: Factory, Singleton, and Dependency Injection">
-                                <span class="title">Introduction to Design Patterns: Factory, Singleton, and Dependency Injection</span>
+                              <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html" title="Introduction to Design Patterns: Factory, Singleton and Dependency Injection">
+                                <span class="title">Introduction to Design Patterns: Factory, Singleton and Dependency Injection</span>
                               </a>
                             </div>
                           </div>
                           <div class="col-md-4">
-                            <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html" title="Introduction to Design Patterns: Factory, Singleton, and Dependency Injection">
-                              <img class="img-fluid logo lazy" data-src="/upload/banners/introduction-to-design-patterns-factory-singleton-and-dependency-injection.jpg" alt="Introduction to Design Patterns: Factory, Singleton, and Dependency Injection" title="Introduction to Design Patterns: Factory, Singleton, and Dependency Injection" src="/upload/cursor.jpg" />
+                            <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html" title="Introduction to Design Patterns: Factory, Singleton and Dependency Injection">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/introduction-to-design-patterns-factory-singleton-and-dependency-injection.jpg" alt="Introduction to Design Patterns: Factory, Singleton and Dependency Injection" title="Introduction to Design Patterns: Factory, Singleton and Dependency Injection" src="/upload/cursor.jpg" />
                             </a>
                           </div>
                         </div>
@@ -310,7 +310,7 @@
                 </a>
               </div><div class="article">
                 <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-                  Basics of Database Design: Normalization, Relationships, and ER Diagrams
+                  Basics of Database Design: Normalization, Relationships and ER Diagrams
                 </a>
               </div><div class="article">
                 <a href="/articles/origami-geometry-science-experiment-for-children.html">
@@ -322,7 +322,7 @@
                 </a>
               </div><div class="article">
                 <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-                  Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
                 </a>
               </div><div class="article">
                 <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -333,12 +333,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">45% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00EDJJ7FS.html" title="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)"><img data-src="https://m.media-amazon.com/images/I/61x0Qnm08HS._SX679_.jpg" class="img-fluid lazy" alt="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)" title="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00EDJJ7FS.html" title="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)" class="shop-title-value">Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)</a></h4>
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07FJNNZCJ.html" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black"><img data-src="https://m.media-amazon.com/images/I/51IJhnm6slL._SX522_.jpg" class="img-fluid lazy" alt="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07FJNNZCJ.html" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" class="shop-title-value">V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>3,299</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>5,995</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>7,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>14,649</span></span>
                   </div>
               </div>
           </div>
@@ -381,7 +381,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -401,12 +401,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">31% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B097RJ867P.html" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large"><img data-src="https://m.media-amazon.com/images/I/51PwsOOMErL._SX679_.jpg" class="img-fluid lazy" alt="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B097RJ867P.html" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" class="shop-title-value">PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large</a></h4>
+                  <div class="discount"><span class="main blink">60% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07DRNSZSZ.html" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers"><img data-src="https://m.media-amazon.com/images/I/719eUa7bSeL._SX385_.jpg" class="img-fluid lazy" alt="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07DRNSZSZ.html" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" class="shop-title-value">PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>8,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>12,995</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>755</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,899</span></span>
                   </div>
               </div>
           </div>
@@ -437,7 +437,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -453,7 +453,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -469,12 +469,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">29% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B079T88XLM.html" title="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack"><img data-src="https://m.media-amazon.com/images/I/71IHKbuambL._SY385_.jpg" class="img-fluid lazy" alt="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack" title="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B079T88XLM.html" title="Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack" class="shop-title-value">Meat Up Dog Treats Biscuit Real Chicken Flavour, All Life Stages, 1Kg ,Total 2 Kg Pack</a></h4>
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BN87FHBZ.html" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)"><img data-src="https://m.media-amazon.com/images/I/81EU4Fix6rL._SX679_.jpg" class="img-fluid lazy" alt="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BN87FHBZ.html" title="Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)" class="shop-title-value">Maison &amp; Cuisine® Collapsible Wardrobe Portable Foldable Closet for Clothes Almira, 2 Hanging Space, 8 Shelves, (Non-Woven Fabric 90GSM, Metal Rod 112x38x145cm)(88230, Brown)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>298.30</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>419</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
                   </div>
               </div>
           </div>
@@ -538,12 +538,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">36% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CX5FRD9H.html" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)"><img data-src="https://m.media-amazon.com/images/I/81OmhFfS-hL._SX679_.jpg" class="img-fluid lazy" alt="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CX5FRD9H.html" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)" class="shop-title-value">Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)</a></h4>
+                  <div class="discount"><span class="main blink">21% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B096FYLB46.html" title="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)"><img data-src="https://m.media-amazon.com/images/I/61StKt0X+tS._SX679_.jpg" class="img-fluid lazy" alt="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)" title="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B096FYLB46.html" title="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)" class="shop-title-value">Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>43,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>68,900</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>5,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>6,999</span></span>
                   </div>
               </div>
           </div>
@@ -562,6 +562,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -597,22 +601,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">25% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C8NWGYLQ.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)"><img data-src="https://m.media-amazon.com/images/I/619sDPV59nL._SX679_.jpg" class="img-fluid lazy" alt="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C8NWGYLQ.html" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" class="shop-title-value">LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)</a></h4>
+                  <div class="discount"><span class="main blink">84% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CSZ4JKTR.html" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen"><img data-src="https://m.media-amazon.com/images/I/51HHGTqHwZL._SX679_.jpg" class="img-fluid lazy" alt="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CSZ4JKTR.html" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" class="shop-title-value">TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>38,490</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>50,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,213</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>49,999</span></span>
                   </div>
               </div>
           </div>
@@ -636,42 +636,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">46% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CSG4K9QG.html" title="Carrier 1 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,Dual Filtration with HD &amp; PM 2.5 Filter, Auto Cleanser, 2024 Model,ESTER NEO+ Exi, CAI12ER3R34F0,White)"><img data-src="https://m.media-amazon.com/images/I/512J3gqzLuL._SX679_.jpg" class="img-fluid lazy" alt="Carrier 1 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,Dual Filtration with HD &amp; PM 2.5 Filter, Auto Cleanser, 2024 Model,ESTER NEO+ Exi, CAI12ER3R34F0,White)" title="Carrier 1 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,Dual Filtration with HD &amp; PM 2.5 Filter, Auto Cleanser, 2024 Model,ESTER NEO+ Exi, CAI12ER3R34F0,White)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CSG4K9QG.html" title="Carrier 1 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,Dual Filtration with HD &amp; PM 2.5 Filter, Auto Cleanser, 2024 Model,ESTER NEO+ Exi, CAI12ER3R34F0,White)" class="shop-title-value">Carrier 1 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,Dual Filtration with HD &amp; PM 2.5 Filter, Auto Cleanser, 2024 Model,ESTER NEO+ Exi, CAI12ER3R34F0,White)</a></h4>
+                  <div class="discount"><span class="main blink">0% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08M6Z7V6L.html" title="Dettol Original Germ Protection Alcohol based Hand Sanitizer, 52ml, Pack of 10"><img data-src="https://m.media-amazon.com/images/I/71nbdye3naL._SX679_PIbundle-10,TopRight,0,0_AA679SH20_.jpg" class="img-fluid lazy" alt="Dettol Original Germ Protection Alcohol based Hand Sanitizer, 52ml, Pack of 10" title="Dettol Original Germ Protection Alcohol based Hand Sanitizer, 52ml, Pack of 10" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08M6Z7V6L.html" title="Dettol Original Germ Protection Alcohol based Hand Sanitizer, 52ml, Pack of 10" class="shop-title-value">Dettol Original Germ Protection Alcohol based Hand Sanitizer, 52ml, Pack of 10</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>30,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>56,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>250</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>250</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">73% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07XD8G2HR.html" title="Philips Wiz Wi-Fi Enabled B22 9-Watt LED Smart Bulb, Compatible with Amazon Alexa and Google Assistant(16M Colours +Shades of White + Dimmable + Tunable),Pack of 1"><img data-src="https://m.media-amazon.com/images/I/51eAG8F2hqL._SX385_.jpg" class="img-fluid lazy" alt="Philips Wiz Wi-Fi Enabled B22 9-Watt LED Smart Bulb, Compatible with Amazon Alexa and Google Assistant(16M Colours +Shades of White + Dimmable + Tunable),Pack of 1" title="Philips Wiz Wi-Fi Enabled B22 9-Watt LED Smart Bulb, Compatible with Amazon Alexa and Google Assistant(16M Colours +Shades of White + Dimmable + Tunable),Pack of 1" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07XD8G2HR.html" title="Philips Wiz Wi-Fi Enabled B22 9-Watt LED Smart Bulb, Compatible with Amazon Alexa and Google Assistant(16M Colours +Shades of White + Dimmable + Tunable),Pack of 1" class="shop-title-value">Philips Wiz Wi-Fi Enabled B22 9-Watt LED Smart Bulb, Compatible with Amazon Alexa and Google Assistant(16M Colours +Shades of White + Dimmable + Tunable),Pack of 1</a></h4>
+                  <div class="discount"><span class="main blink">40% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D29GV262.html" title="realme Pad 2 6 GB RAM 128 GB ROM 29.21 CM (11.5 inch) Large Display, 8360mAh Mega Battery, 7.2mm Ultra-Slim Design,MediaTek G99 Processor, 33W SUPERVOOC Charge, Wi-Fi Only Tablet (Inspiration Green)"><img data-src="https://m.media-amazon.com/images/I/81FcsTL9UOL._SY879_.jpg" class="img-fluid lazy" alt="realme Pad 2 6 GB RAM 128 GB ROM 29.21 CM (11.5 inch) Large Display, 8360mAh Mega Battery, 7.2mm Ultra-Slim Design,MediaTek G99 Processor, 33W SUPERVOOC Charge, Wi-Fi Only Tablet (Inspiration Green)" title="realme Pad 2 6 GB RAM 128 GB ROM 29.21 CM (11.5 inch) Large Display, 8360mAh Mega Battery, 7.2mm Ultra-Slim Design,MediaTek G99 Processor, 33W SUPERVOOC Charge, Wi-Fi Only Tablet (Inspiration Green)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D29GV262.html" title="realme Pad 2 6 GB RAM 128 GB ROM 29.21 CM (11.5 inch) Large Display, 8360mAh Mega Battery, 7.2mm Ultra-Slim Design,MediaTek G99 Processor, 33W SUPERVOOC Charge, Wi-Fi Only Tablet (Inspiration Green)" class="shop-title-value">realme Pad 2 6 GB RAM 128 GB ROM 29.21 CM (11.5 inch) Large Display, 8360mAh Mega Battery, 7.2mm Ultra-Slim Design,MediaTek G99 Processor, 33W SUPERVOOC Charge, Wi-Fi Only Tablet (Inspiration Green)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>549</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>14,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">50% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch"><img data-src="https://m.media-amazon.com/images/I/71uba-37tOL._SY879_.jpg" class="img-fluid lazy" alt="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" class="shop-title-value">The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch</a></h4>
+                  <div class="discount"><span class="main blink">34% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMGD9Y2X.html" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)"><img data-src="https://m.media-amazon.com/images/I/71HjkfkIjEL._SX679_.jpg" class="img-fluid lazy" alt="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMGD9Y2X.html" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" class="shop-title-value">LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,499</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>2,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>28,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>43,990</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">12% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CX2L28HH.html" title="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)"><img data-src="https://m.media-amazon.com/images/I/71XNeka-BRL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)" title="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CX2L28HH.html" title="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)" class="shop-title-value">OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)</a></h4>
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09T6XD839.html" title="Samsung 9 kg, 5 Star, Eco Bubble Technology, AI Control , Wi-Fi, Digital Inverter Motor, Fully-Automatic Front Load Washing Machine Appliance (WW90T504DAN1TL, Hygiene Steam, Inox)"><img data-src="https://f.media-amazon.com/images/I/7113xg1N46L._SY879_.jpg" class="img-fluid lazy" alt="Samsung 9 kg, 5 Star, Eco Bubble Technology, AI Control , Wi-Fi, Digital Inverter Motor, Fully-Automatic Front Load Washing Machine Appliance (WW90T504DAN1TL, Hygiene Steam, Inox)" title="Samsung 9 kg, 5 Star, Eco Bubble Technology, AI Control , Wi-Fi, Digital Inverter Motor, Fully-Automatic Front Load Washing Machine Appliance (WW90T504DAN1TL, Hygiene Steam, Inox)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09T6XD839.html" title="Samsung 9 kg, 5 Star, Eco Bubble Technology, AI Control , Wi-Fi, Digital Inverter Motor, Fully-Automatic Front Load Washing Machine Appliance (WW90T504DAN1TL, Hygiene Steam, Inox)" class="shop-title-value">Samsung 9 kg, 5 Star, Eco Bubble Technology, AI Control , Wi-Fi, Digital Inverter Motor, Fully-Automatic Front Load Washing Machine Appliance (WW90T504DAN1TL, Hygiene Steam, Inox)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>37,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>42,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>40,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>61,000</span></span>
                   </div>
               </div>
           </div>

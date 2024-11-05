@@ -20,9 +20,9 @@
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/when-and-how-to-use-each-design-pattern-in-php.html</guid>
     </item><item>
-			<title>Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</title>
+			<title>Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator</title>
 			<link>https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</link>
-			<description>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable, and flexible code.  This article will explore three key design patterns: Strategy, Observer, and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implement</description>
+			<description>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable and flexible code.  This article will explore three key design patterns: Strategy, Observer and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implemented</description>
 			<pubDate>Mon, 28 Oct 2024 16:46:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</guid>
@@ -36,14 +36,14 @@
     </item><item>
 			<title>Implementing Design Patterns in Real-World PHP Applications</title>
 			<link>https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html</link>
-			<description>Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In this article, we&amp;#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton, and Dependency Injection, in real-world PHP applications using PHP 8.  1. Factory Pattern  Scenario  Imagine you&amp;rsquo;re developing an </description>
+			<description>Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability and scalability.  In this article, we&amp;#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton and Dependency Injection, in real-world PHP applications using PHP 8.  1. Factory Pattern  Scenario  Imagine you&amp;rsquo;re developing an e-</description>
 			<pubDate>Sun, 27 Oct 2024 20:39:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html</guid>
     </item><item>
-			<title>Introduction to Design Patterns: Factory, Singleton, and Dependency Injection</title>
+			<title>Introduction to Design Patterns: Factory, Singleton and Dependency Injection</title>
 			<link>https://peoplesblog.co.in/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html</link>
-			<description>Design patterns are essential tools for developers looking to write clean, maintainable, and scalable code. In PHP 8, leveraging design patterns can significantly enhance your software architecture.  This article introduces three fundamental design patterns: Factory, Singleton, and Dependency Injection, explaining their purpose, use cases, and providing practical examples.  1. Factory Pattern  Wha</description>
+			<description>Design patterns are essential tools for developers looking to write clean, maintainable and scalable code. In PHP 8, leveraging design patterns can significantly enhance your software architecture.  This article introduces three fundamental design patterns: Factory, Singleton and Dependency Injection, explaining their purpose, use cases and providing practical examples.  1. Factory Pattern  What i</description>
 			<pubDate>Fri, 25 Oct 2024 08:49:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html</guid>
@@ -92,14 +92,14 @@
     </item><item>
 			<title>Designing Efficient Schemas for Web Applications</title>
 			<link>https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html</link>
-			<description>The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly, and grow with the increasing needs of your users.  This article explores best practices for designing efficient schemas, focusing on the balance be</description>
+			<description>The design of an efficient database schema is crucial for the performance, scalability and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly and grow with the increasing needs of your users.  This article explores best practices for designing efficient schemas, focusing on the balance betw</description>
 			<pubDate>Tue, 22 Oct 2024 08:09:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html</guid>
     </item><item>
-			<title>Basics of Database Design: Normalization, Relationships, and ER Diagrams</title>
+			<title>Basics of Database Design: Normalization, Relationships and ER Diagrams</title>
 			<link>https://peoplesblog.co.in/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html</link>
-			<description>Database design is a critical phase in creating a robust, scalable, and efficient database system. It involves structuring data in a way that ensures it can be stored, retrieved, and managed effectively. Some key concepts fundamental to database design are Normalization, Relationships, and Entity-Relationship (ER) Diagrams.  Let&amp;#39;s explore these concepts in detail.  1. Normalization  Normalizat</description>
+			<description>Database design is a critical phase in creating a robust, scalable and efficient database system. It involves structuring data in a way that ensures it can be stored, retrieved and managed effectively. Some key concepts fundamental to database design are Normalization, Relationships and Entity-Relationship (ER) Diagrams.  Let&amp;#39;s explore these concepts in detail.  1. Normalization  Normalization</description>
 			<pubDate>Mon, 21 Oct 2024 12:32:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html</guid>
@@ -113,14 +113,14 @@
     </item><item>
 			<title>Understanding the SOLID Principles in PHP</title>
 			<link>https://peoplesblog.co.in/articles/understanding-the-solid-principles-in-php.html</link>
-			<description>The SOLID principles are a set of five fundamental design principles in object-oriented programming aimed at improving software design, making it more understandable, flexible, and maintainable. These principles are especially relevant for developers working with PHP and similar languages.  Let&amp;#39;s dive into each principle, exploring its meaning and how it can be applied effectively in PHP.  1. </description>
+			<description>The SOLID principles are a set of five fundamental design principles in object-oriented programming aimed at improving software design, making it more understandable, flexible and maintainable. These principles are especially relevant for developers working with PHP and similar languages.  Let&amp;#39;s dive into each principle, exploring its meaning and how it can be applied effectively in PHP.  1. S</description>
 			<pubDate>Mon, 14 Oct 2024 10:02:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-the-solid-principles-in-php.html</guid>
     </item><item>
 			<title>Introduction to PHP 8 and Key Differences from PHP 7</title>
 			<link>https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</link>
-			<description>PHP 8, released on November 26, 2020, introduces significant improvements and new features that enhance performance, syntax, and overall developer experience. This version emphasizes performance optimizations, new language features, and better error handling, streamlining the development process and providing developers with more tools to write clean, efficient code.  Key Differences Between PHP 8</description>
+			<description>PHP 8, released on November 26, 2020, introduces significant improvements and new features that enhance performance, syntax and overall developer experience. This version emphasizes performance optimizations, new language features and better error handling, streamlining the development process and providing developers with more tools to write clean, efficient code.  Key Differences Between PHP 8 a</description>
 			<pubDate>Wed, 09 Oct 2024 11:58:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</guid>
@@ -134,7 +134,7 @@
     </item><item>
 			<title>Rainforest in a Jar, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/rainforest-in-a-jar-science-experiment-for-children.html</link>
-			<description>Creating a &amp;quot;Rainforest in a Jar&amp;quot; is a fun science project that helps kids learn about the water cycle and how rainforests work. This mini ecosystem shows how water evaporates, condenses, and rains, just like in nature.  Here&amp;rsquo;s a simple guide to make your own rainforest in a jar:  Materials Needed:   Clear Glass Jar or Large Bowl: This will hold your mini rainforest. Plastic Wrap: T</description>
+			<description>Creating a &amp;quot;Rainforest in a Jar&amp;quot; is a fun science project that helps kids learn about the water cycle and how rainforests work. This mini ecosystem shows how water evaporates, condenses and rains, just like in nature.  Here&amp;rsquo;s a simple guide to make your own rainforest in a jar:  Materials Needed:   Clear Glass Jar or Large Bowl: This will hold your mini rainforest. Plastic Wrap: To</description>
 			<pubDate>Mon, 23 Sep 2024 19:25:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/rainforest-in-a-jar-science-experiment-for-children.html</guid>
@@ -183,7 +183,7 @@
     </item><item>
 			<title>Rheumatoid Arthritis - Symptoms, Causes, Diagnosis, Treatment, Recovery</title>
 			<link>https://peoplesblog.co.in/articles/rheumatoid-arthritis-symptoms-causes-diagnosis-treatment-recovery.html</link>
-			<description>Rheumatoid arthritis (RA) is a chronic inflammatory disorder that primarily affects the joints. It is an autoimmune condition, meaning the immune system mistakenly attacks the body&amp;#39;s own tissues.  Symptoms:   Joint pain and swelling: Commonly affects small joints in the hands, wrists, and feet. Stiffness: Particularly pronounced in the morning or after periods of inactivity. Fatigue: Persisten</description>
+			<description>Rheumatoid arthritis (RA) is a chronic inflammatory disorder that primarily affects the joints. It is an autoimmune condition, meaning the immune system mistakenly attacks the body&amp;#39;s own tissues.  Symptoms:   Joint pain and swelling: Commonly affects small joints in the hands, wrists and feet. Stiffness: Particularly pronounced in the morning or after periods of inactivity. Fatigue: Persistent</description>
 			<pubDate>Wed, 31 Jul 2024 08:50:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/rheumatoid-arthritis-symptoms-causes-diagnosis-treatment-recovery.html</guid>
@@ -225,21 +225,21 @@
     </item><item>
 			<title>Salt Crystal Garden, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/salt-crystal-garden-science-experiment-for-children.html</link>
-			<description>Creating a salt crystal garden is a fascinating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation, and crystallization.  Here&amp;#39;s a step-by-step guide:  Materials:   Wide-mouthed glass or plastic container (such as a jar or bowl) String, yarn, or pipe cleaners Scissors Salt (Epsom salt or table salt) Water Food coloring (o</description>
+			<description>Creating a salt crystal garden is a fascinating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation and crystallization.  Here&amp;#39;s a step-by-step guide:  Materials:   Wide-mouthed glass or plastic container (such as a jar or bowl) String, yarn, or pipe cleaners Scissors Salt (Epsom salt or table salt) Water Food coloring (op</description>
 			<pubDate>Fri, 24 May 2024 09:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/salt-crystal-garden-science-experiment-for-children.html</guid>
     </item><item>
 			<title>Borax Crystal Snowflakes, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/borax-crystal-snowflakes-science-experiment-for-children.html</link>
-			<description>Creating Borax crystal snowflakes is a captivating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation, and crystallization. Here&amp;#39;s a step-by-step guide:  Materials:   Borax powder (available in the laundry aisle of most supermarkets) Pipe cleaners (white or blue works well for snowflakes) String or yarn Pencil or stick Sc</description>
+			<description>Creating Borax crystal snowflakes is a captivating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation and crystallization. Here&amp;#39;s a step-by-step guide:  Materials:   Borax powder (available in the laundry aisle of most supermarkets) Pipe cleaners (white or blue works well for snowflakes) String or yarn Pencil or stick Sci</description>
 			<pubDate>Tue, 21 May 2024 09:13:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/borax-crystal-snowflakes-science-experiment-for-children.html</guid>
     </item><item>
 			<title>Alum Crystal Geodes, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/alum-crystal-geodes-science-experiment-for-children.html</link>
-			<description>Creating alum crystal geodes is a captivating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation, and crystallization.  Here&amp;#39;s a step-by-step guide:  Materials:   Alum powder (aluminum potassium sulfate) Eggshells or small hollow egg-shaped molds Water Food coloring (optional) String or fishing line Scissors Stirring spoo</description>
+			<description>Creating alum crystal geodes is a captivating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation and crystallization.  Here&amp;#39;s a step-by-step guide:  Materials:   Alum powder (aluminum potassium sulfate) Eggshells or small hollow egg-shaped molds Water Food coloring (optional) String or fishing line Scissors Stirring spoon</description>
 			<pubDate>Wed, 15 May 2024 08:37:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/alum-crystal-geodes-science-experiment-for-children.html</guid>
@@ -295,7 +295,7 @@
     </item><item>
 			<title>Build a Worm Farm, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/build-a-worm-farm-science-experiment-for-children.html</link>
-			<description>Building a worm farm is a fantastic way to teach children about ecology, decomposition, and the importance of worms in soil health.  Here&amp;#39;s a simple guide to creating a worm farm:  Materials:   Large, clear plastic container with a lid Small container for drainage (with holes) Soil Sand Vegetable scraps (fruit and vegetable peels, coffee grounds, etc.) Red wiggler worms (available at garden ce</description>
+			<description>Building a worm farm is a fantastic way to teach children about ecology, decomposition and the importance of worms in soil health.  Here&amp;#39;s a simple guide to creating a worm farm:  Materials:   Large, clear plastic container with a lid Small container for drainage (with holes) Soil Sand Vegetable scraps (fruit and vegetable peels, coffee grounds, etc.) Red wiggler worms (available at garden cen</description>
 			<pubDate>Mon, 08 Apr 2024 08:02:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/build-a-worm-farm-science-experiment-for-children.html</guid>

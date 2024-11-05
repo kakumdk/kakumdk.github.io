@@ -66,7 +66,7 @@
           }
         },
         "datePublished": "27th Sep 2015",
-        "dateModified": "2024-11-04T14:05:57+05:30"
+        "dateModified": "2024-11-05T06:41:47+05:30"
       }
     </script>
 </head>
@@ -135,7 +135,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <small class="articles-author d-none">
-                                                <em class="pl-0">On</em><span>27th Sep 2015</span>, <span class="last-updated">2024-11-04T14:05:57+05:30</span>
+                                                <em class="pl-0">On</em><span>27th Sep 2015</span>, <span class="last-updated">2024-11-05T06:41:47+05:30</span>
                                             </small>
                                             <small class="articles-author">
                                                 <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
@@ -154,7 +154,7 @@
                                 </div><!-- end meta -->
                             </div><!-- end title -->
                             <div id="read-article-content" class="blog-content read-article-content">
-                                <div><p>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the <code>hook_node_presave()</code>.</p>  <p>In our case lets consider the <code>field_tags</code> is the taxonomy field, and we are autotagging based on the content present in <code>title</code> and <code>body</code> fields.</p>  <p>All these actions are implemented inside the <code>hook_node_presave()</code>.</p>  <div> <p><strong>1. First thing is getting the list of terms of the <code>field_tags</code> vocabulary, this is done in the below code.</strong></p>  <p><code>$field = field_info_field(&#39;field_tags&#39;);</code><br /> // read the field information.<br /> <code>$voc_name = $field[&quot;settings&quot;][&quot;allowed_values&quot;][0][&quot;vocabulary&quot;];</code><br /> // get the vocabulary name which is been configured for the tag field.<br /> <code>$voc = taxonomy_vocabulary_machine_name_load($voc_name);</code><br /> // load the vocabulary object.<br /> <code>$terms = taxonomy_term_load_multiple(array(), array(&#39;vid&#39; =&gt; $voc-&gt;vid));</code><br /> // get all the terms in the vocabulary.<br /> <code>$termnames = array();<br /> foreach($terms as $termskey =&gt; $termsvalue) {<br /> &nbsp;&nbsp;&nbsp; $termnames[$termskey] = $termsvalue-&gt;name;<br /> }</code><br /> // iterating the terms objects and getting out the terms names out of it.</p>  <p><strong>2. So now we have the <code>$termnames</code> which needs to be cross checked with the content in the <code>title</code> and <code>body</code> fields, this is done in the below code.</strong></p> </div>  <p>// read the node title and body and stored in the $content.<br /> <code>$content = $node-&gt;title;</code><br /> <code>$content .= $node-&gt;body[&#39;und&#39;][0][&#39;value&#39;];</code><br /> // Iterate all the terms and compare with the content words, if matched then store them in seperate array.<br /> <code>$node_tids = array();<br /> foreach($termnames as $termname) {<br /> &nbsp;&nbsp;&nbsp; if (strpos($content, $termname) !== false) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $term = taxonomy_get_term_by_name($termname);<br /> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; foreach($term as $termkey =&gt; $termvalue) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $node_tids[] = (array) $termvalue;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; }<br /> }</code></p>  <p><strong>3. After this, we will have the term ids <code>$node_tids</code> which needs to be saved as autagged terms, this is just assinging to node object <code>$node</code>.</strong></p>  <p><code>$node-&gt;field_tags[&quot;und&quot;] = $node_tids;</code></p>  <p><strong>Note: </strong>In case of exisisting node in be updated, we should take care of the existing terms which are saved in the node, to do this we need to add some code which does it.</p>  <p><code>$node_tids_all = array();</code><br /> // check if any existing terms are their in the field_tags<br /> <code>if(!empty($node-&gt;field_tags)) {</code><br /> &nbsp; &nbsp; &nbsp;&nbsp; // in case not empty, merge the terms with the existing terms.<br /> <code>&nbsp;&nbsp;&nbsp; $node_tids_all = array_merge_recursive($node-&gt;field_tags[&quot;und&quot;], $node_tids);<br /> }</code><br /> // In case any duplicates exist, get out the unique ones.<br /> <code>$node_tids_all = array_map(&quot;unserialize&quot;, array_unique(array_map(&quot;serialize&quot;, $node_tids_all)));</code><br /> // then assign the selected terms to the node object.<br /> <code>$node-&gt;field_tags[&quot;und&quot;] = $node_tids_all;</code></p>  <p>So, thats it, return the <code>$node</code> object at the end of the <code>hook_node_presave()</code>. this autotags the term field with title and body field.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                                <div><p>This article help you to create the way to implement the autotagging of the taxonomy terms based on the other field of the node page. This can be implemented by using the <code>hook_node_presave()</code>.</p>  <p>In our case lets consider the <code>field_tags</code> is the taxonomy field and we are autotagging based on the content present in <code>title</code> and <code>body</code> fields.</p>  <p>All these actions are implemented inside the <code>hook_node_presave()</code>.</p>  <div> <p><strong>1. First thing is getting the list of terms of the <code>field_tags</code> vocabulary, this is done in the below code.</strong></p>  <p><code>$field = field_info_field(&#39;field_tags&#39;);</code><br /> // read the field information.<br /> <code>$voc_name = $field[&quot;settings&quot;][&quot;allowed_values&quot;][0][&quot;vocabulary&quot;];</code><br /> // get the vocabulary name which is been configured for the tag field.<br /> <code>$voc = taxonomy_vocabulary_machine_name_load($voc_name);</code><br /> // load the vocabulary object.<br /> <code>$terms = taxonomy_term_load_multiple(array(), array(&#39;vid&#39; =&gt; $voc-&gt;vid));</code><br /> // get all the terms in the vocabulary.<br /> <code>$termnames = array();<br /> foreach($terms as $termskey =&gt; $termsvalue) {<br /> &nbsp;&nbsp;&nbsp; $termnames[$termskey] = $termsvalue-&gt;name;<br /> }</code><br /> // iterating the terms objects and getting out the terms names out of it.</p>  <p><strong>2. So now we have the <code>$termnames</code> which needs to be cross checked with the content in the <code>title</code> and <code>body</code> fields, this is done in the below code.</strong></p> </div>  <p>// read the node title and body and stored in the $content.<br /> <code>$content = $node-&gt;title;</code><br /> <code>$content .= $node-&gt;body[&#39;und&#39;][0][&#39;value&#39;];</code><br /> // Iterate all the terms and compare with the content words, if matched then store them in seperate array.<br /> <code>$node_tids = array();<br /> foreach($termnames as $termname) {<br /> &nbsp;&nbsp;&nbsp; if (strpos($content, $termname) !== false) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $term = taxonomy_get_term_by_name($termname);<br /> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; foreach($term as $termkey =&gt; $termvalue) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $node_tids[] = (array) $termvalue;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; }<br /> }</code></p>  <p><strong>3. After this, we will have the term ids <code>$node_tids</code> which needs to be saved as autagged terms, this is just assinging to node object <code>$node</code>.</strong></p>  <p><code>$node-&gt;field_tags[&quot;und&quot;] = $node_tids;</code></p>  <p><strong>Note: </strong>In case of exisisting node in be updated, we should take care of the existing terms which are saved in the node, to do this we need to add some code which does it.</p>  <p><code>$node_tids_all = array();</code><br /> // check if any existing terms are their in the field_tags<br /> <code>if(!empty($node-&gt;field_tags)) {</code><br /> &nbsp; &nbsp; &nbsp;&nbsp; // in case not empty, merge the terms with the existing terms.<br /> <code>&nbsp;&nbsp;&nbsp; $node_tids_all = array_merge_recursive($node-&gt;field_tags[&quot;und&quot;], $node_tids);<br /> }</code><br /> // In case any duplicates exist, get out the unique ones.<br /> <code>$node_tids_all = array_map(&quot;unserialize&quot;, array_unique(array_map(&quot;serialize&quot;, $node_tids_all)));</code><br /> // then assign the selected terms to the node object.<br /> <code>$node-&gt;field_tags[&quot;und&quot;] = $node_tids_all;</code></p>  <p>So, thats it, return the <code>$node</code> object at the end of the <code>hook_node_presave()</code>. this autotags the term field with title and body field.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
                             </div><!-- end content -->
                             <div class="blog-title-area tag">
                                 <h4>Labels</h4>
@@ -166,32 +166,32 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">70% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WHLHXB9.html" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue"><img data-src="https://m.media-amazon.com/images/I/A14H95fAh7L._SY879_.jpg" class="img-fluid lazy" alt="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WHLHXB9.html" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" class="shop-title-value">SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue</a></h4>
+                  <div class="discount"><span class="main blink">62% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BDSHRD8G.html" title="Nifty Women&#039;s Cotton Blend Stretchable Mid Rise Jeans"><img data-src="https://m.media-amazon.com/images/I/61PodjlLrUL._UX385_.jpg" class="img-fluid lazy" alt="Nifty Women&#039;s Cotton Blend Stretchable Mid Rise Jeans" title="Nifty Women&#039;s Cotton Blend Stretchable Mid Rise Jeans" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BDSHRD8G.html" title="Nifty Women&#039;s Cotton Blend Stretchable Mid Rise Jeans" class="shop-title-value">Nifty Women&#039;s Cotton Blend Stretchable Mid Rise Jeans</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,798</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,299</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">40% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C83J8YF8.html" title="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)"><img data-src="https://m.media-amazon.com/images/I/71CmKZXntgL._SX679_.jpg" class="img-fluid lazy" alt="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)" title="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C83J8YF8.html" title="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)" class="shop-title-value">LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)</a></h4>
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BZ12FPM1.html" title="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)"><img data-src="https://m.media-amazon.com/images/I/618cNlDLyZL._SX679_.jpg" class="img-fluid lazy" alt="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)" title="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BZ12FPM1.html" title="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)" class="shop-title-value">Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>42,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>71,990</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>57,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,01,990</span></span>
                   </div>
               </div>
           </div><div class="col-md-4 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">76% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BV314VTN.html" title="Pigeon by Stovekraft Kitchen Tools &amp; Cutting Board Combo (400ml Chopper &amp; Storage, 3 Knives Set, 1 Kitchen Scissor, 1 Chopping Board)"><img data-src="https://m.media-amazon.com/images/I/71o0D2CybaL._SX679_.jpg" class="img-fluid lazy" alt="Pigeon by Stovekraft Kitchen Tools &amp; Cutting Board Combo (400ml Chopper &amp; Storage, 3 Knives Set, 1 Kitchen Scissor, 1 Chopping Board)" title="Pigeon by Stovekraft Kitchen Tools &amp; Cutting Board Combo (400ml Chopper &amp; Storage, 3 Knives Set, 1 Kitchen Scissor, 1 Chopping Board)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BV314VTN.html" title="Pigeon by Stovekraft Kitchen Tools &amp; Cutting Board Combo (400ml Chopper &amp; Storage, 3 Knives Set, 1 Kitchen Scissor, 1 Chopping Board)" class="shop-title-value">Pigeon by Stovekraft Kitchen Tools &amp; Cutting Board Combo (400ml Chopper &amp; Storage, 3 Knives Set, 1 Kitchen Scissor, 1 Chopping Board)</a></h4>
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07LBXVH4L.html" title="Amazon Brand - Solimo Polaris Engineered Wood Queen Bed With Box Storage (Walnut Finish),H-203 Centimeters,L-168 Centimeters"><img data-src="https://m.media-amazon.com/images/I/71hKcWCFoCL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Polaris Engineered Wood Queen Bed With Box Storage (Walnut Finish),H-203 Centimeters,L-168 Centimeters" title="Amazon Brand - Solimo Polaris Engineered Wood Queen Bed With Box Storage (Walnut Finish),H-203 Centimeters,L-168 Centimeters" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07LBXVH4L.html" title="Amazon Brand - Solimo Polaris Engineered Wood Queen Bed With Box Storage (Walnut Finish),H-203 Centimeters,L-168 Centimeters" class="shop-title-value">Amazon Brand - Solimo Polaris Engineered Wood Queen Bed With Box Storage (Walnut Finish),H-203 Centimeters,L-168 Centimeters</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>397</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>1,680</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>12,529</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>21,999</span></span>
                   </div>
               </div>
           </div>
@@ -333,12 +333,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">2% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0967TJKHW.html" title="NYKD Cotton Womens Full-Coverage Bra"><img data-src="https://m.media-amazon.com/images/I/71HqO72OrrS._SY879_.jpg" class="img-fluid lazy" alt="NYKD Cotton Womens Full-Coverage Bra" title="NYKD Cotton Womens Full-Coverage Bra" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0967TJKHW.html" title="NYKD Cotton Womens Full-Coverage Bra" class="shop-title-value">NYKD Cotton Womens Full-Coverage Bra</a></h4>
+                  <div class="discount"><span class="main blink">21% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B096FYLB46.html" title="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)"><img data-src="https://m.media-amazon.com/images/I/61StKt0X+tS._SX679_.jpg" class="img-fluid lazy" alt="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)" title="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B096FYLB46.html" title="Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)" class="shop-title-value">Lifelong 20T Cycle for Kids 5 to 8 Years - Bike for Boys and Girls - 85% Pre-Assembled, Frame Size: 12&quot; - Suitable for Children 3 Feet 10 Inch+ Height - Unisex Cycle (Tribe, Yellow &amp; Black)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>635</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>649</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>5,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>6,999</span></span>
                   </div>
               </div>
           </div>
@@ -381,7 +381,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/basics-of-database-design-normalization-relationships-and-er-diagrams.html">
-            Basics of Database Design: Normalization, Relationships, and ER Diagrams
+            Basics of Database Design: Normalization, Relationships and ER Diagrams
           </a>
         </div><div class="article">
           <a href="/articles/vedic-rituals-and-sacrifices-an-overview.html">
@@ -401,12 +401,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">95% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BF57RN3K.html" title="Fire-Boltt Ninja Call Pro Plus 46.48mm (1.83 inch) Smart Watch with Bluetooth Calling, AI Voice Assistance, 120 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)"><img data-src="https://m.media-amazon.com/images/I/61S9aVnRZDL._SX679_.jpg" class="img-fluid lazy" alt="Fire-Boltt Ninja Call Pro Plus 46.48mm (1.83 inch) Smart Watch with Bluetooth Calling, AI Voice Assistance, 120 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)" title="Fire-Boltt Ninja Call Pro Plus 46.48mm (1.83 inch) Smart Watch with Bluetooth Calling, AI Voice Assistance, 120 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BF57RN3K.html" title="Fire-Boltt Ninja Call Pro Plus 46.48mm (1.83 inch) Smart Watch with Bluetooth Calling, AI Voice Assistance, 120 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)" class="shop-title-value">Fire-Boltt Ninja Call Pro Plus 46.48mm (1.83 inch) Smart Watch with Bluetooth Calling, AI Voice Assistance, 120 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</a></h4>
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09XTQFFCG.html" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black"><img data-src="https://m.media-amazon.com/images/I/71+BHZtdFaL._SX679_.jpg" class="img-fluid lazy" alt="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09XTQFFCG.html" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" class="shop-title-value">FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>19,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,329</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,199</span></span>
                   </div>
               </div>
           </div>
@@ -437,7 +437,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
-            Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
           </a>
         </div><div class="article">
           <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
@@ -453,7 +453,7 @@
           </a>
         </div><div class="article">
           <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
-            Introduction to Design Patterns: Factory, Singleton, and Dependency Injection
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
           </a>
         </div><div class="article">
           <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
@@ -469,12 +469,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">93% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C497MSQN.html" title="Fire-Boltt Ninja Call Pro Max 51.05mm (2.01 inch) Display Smart Watch, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Black)"><img data-src="https://m.media-amazon.com/images/I/61fTfbdaszL._SX679_.jpg" class="img-fluid lazy" alt="Fire-Boltt Ninja Call Pro Max 51.05mm (2.01 inch) Display Smart Watch, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Black)" title="Fire-Boltt Ninja Call Pro Max 51.05mm (2.01 inch) Display Smart Watch, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Black)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C497MSQN.html" title="Fire-Boltt Ninja Call Pro Max 51.05mm (2.01 inch) Display Smart Watch, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Black)" class="shop-title-value">Fire-Boltt Ninja Call Pro Max 51.05mm (2.01 inch) Display Smart Watch, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice Assistance (Black)</a></h4>
+                  <div class="discount"><span class="main blink">66% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)"><img data-src="https://m.media-amazon.com/images/I/614cFlQ5hAL._SX679_.jpg" class="img-fluid lazy" alt="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" class="shop-title-value">WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>14,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,489</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
                   </div>
               </div>
           </div>
@@ -538,12 +538,12 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">58% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver"><img data-src="https://m.media-amazon.com/images/I/51TK3jYBmBL._SX679_.jpg" class="img-fluid lazy" alt="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" class="shop-title-value">Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver</a></h4>
+                  <div class="discount"><span class="main blink">66% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07Z1HN1KG.html" title="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder"><img data-src="https://f.media-amazon.com/images/I/718WESs286L._SX679_.jpg" class="img-fluid lazy" alt="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder" title="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07Z1HN1KG.html" title="SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder" class="shop-title-value">SUNFICON Cover storage box Large Makeup Organizer Makeup Storage Tray Cosmetic Holder</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>2,498</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,387</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>27,299</span></span>
                   </div>
               </div>
           </div>
@@ -562,6 +562,10 @@
 </script></div>
     <h2>Recent Great People</h2>
     <div class="popular-articles"><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
           <a href="/great-people/ravi-shankar-prasad.html">
             Ravi Shankar Prasad
           </a>
@@ -597,22 +601,18 @@
           <a href="/great-people/hrishikesh-mukherjee.html">
             Hrishikesh Mukherjee
           </a>
-        </div><div class="article">
-          <a href="/great-people/the-great-khali.html">
-            The Great Khali
-          </a>
         </div>
     </div>
       <div class="shop-data amazon-ad">
       <div class="shop-data-results">
       <div class="row"><div class="col-md-12 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">76% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09W6B1541.html" title="Furnish Craft Metal Sunflower Iron Decorative Wall Mirror For Living Room, Bathroom, Wall Decor - (18 X 18 Inch / 47 Cm, Round, Rose Gold, Framed)"><img data-src="https://m.media-amazon.com/images/I/51KQVdIVr3L.jpg" class="img-fluid lazy" alt="Furnish Craft Metal Sunflower Iron Decorative Wall Mirror For Living Room, Bathroom, Wall Decor - (18 X 18 Inch / 47 Cm, Round, Rose Gold, Framed)" title="Furnish Craft Metal Sunflower Iron Decorative Wall Mirror For Living Room, Bathroom, Wall Decor - (18 X 18 Inch / 47 Cm, Round, Rose Gold, Framed)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09W6B1541.html" title="Furnish Craft Metal Sunflower Iron Decorative Wall Mirror For Living Room, Bathroom, Wall Decor - (18 X 18 Inch / 47 Cm, Round, Rose Gold, Framed)" class="shop-title-value">Furnish Craft Metal Sunflower Iron Decorative Wall Mirror For Living Room, Bathroom, Wall Decor - (18 X 18 Inch / 47 Cm, Round, Rose Gold, Framed)</a></h4>
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CGN8FMJ8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)"><img data-src="https://m.media-amazon.com/images/I/61hD-fVYjcL._SX679_.jpg" class="img-fluid lazy" alt="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CGN8FMJ8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" class="shop-title-value">IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>1,199</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>4,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>6,790</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>8,790</span></span>
                   </div>
               </div>
           </div>
@@ -636,42 +636,42 @@
       <div class="shop-data-results">
       <div class="row"><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">28% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BWS9YNCX.html" title="HP Victus Gaming Laptop,Windows 11 Home,AMD Ryzen 5 5600H,4Gb RTX 3050 Gpu,15.6-Inch (39.6 Cm),Fhd,IPS,144Hz,16Gb Ddr4,512Gb Ssd,Backlit Kb,B&amp;O,9Ms Response Time,Dual Speakers (Blue,2.37 Kg),Fb0106Ax"><img data-src="https://m.media-amazon.com/images/I/71Q+47iEdbL._SX679_.jpg" class="img-fluid lazy" alt="HP Victus Gaming Laptop,Windows 11 Home,AMD Ryzen 5 5600H,4Gb RTX 3050 Gpu,15.6-Inch (39.6 Cm),Fhd,IPS,144Hz,16Gb Ddr4,512Gb Ssd,Backlit Kb,B&amp;O,9Ms Response Time,Dual Speakers (Blue,2.37 Kg),Fb0106Ax" title="HP Victus Gaming Laptop,Windows 11 Home,AMD Ryzen 5 5600H,4Gb RTX 3050 Gpu,15.6-Inch (39.6 Cm),Fhd,IPS,144Hz,16Gb Ddr4,512Gb Ssd,Backlit Kb,B&amp;O,9Ms Response Time,Dual Speakers (Blue,2.37 Kg),Fb0106Ax" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BWS9YNCX.html" title="HP Victus Gaming Laptop,Windows 11 Home,AMD Ryzen 5 5600H,4Gb RTX 3050 Gpu,15.6-Inch (39.6 Cm),Fhd,IPS,144Hz,16Gb Ddr4,512Gb Ssd,Backlit Kb,B&amp;O,9Ms Response Time,Dual Speakers (Blue,2.37 Kg),Fb0106Ax" class="shop-title-value">HP Victus Gaming Laptop,Windows 11 Home,AMD Ryzen 5 5600H,4Gb RTX 3050 Gpu,15.6-Inch (39.6 Cm),Fhd,IPS,144Hz,16Gb Ddr4,512Gb Ssd,Backlit Kb,B&amp;O,9Ms Response Time,Dual Speakers (Blue,2.37 Kg),Fb0106Ax</a></h4>
+                  <div class="discount"><span class="main blink">47% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B8DC1QQV.html" title="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black"><img data-src="https://m.media-amazon.com/images/I/71mDTOYtDSL._SX679_.jpg" class="img-fluid lazy" alt="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" title="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B8DC1QQV.html" title="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" class="shop-title-value">amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>60,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>84,838</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,469</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,699</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">48% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CSG412HD.html" title="Carrier 1.5 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,High Density Filter, Auto Cleanser, 2024 Model,ESTER NEO Exi+, CAI18ER3R34F0,White)"><img data-src="https://m.media-amazon.com/images/I/512J3gqzLuL._SX679_.jpg" class="img-fluid lazy" alt="Carrier 1.5 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,High Density Filter, Auto Cleanser, 2024 Model,ESTER NEO Exi+, CAI18ER3R34F0,White)" title="Carrier 1.5 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,High Density Filter, Auto Cleanser, 2024 Model,ESTER NEO Exi+, CAI18ER3R34F0,White)" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CSG412HD.html" title="Carrier 1.5 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,High Density Filter, Auto Cleanser, 2024 Model,ESTER NEO Exi+, CAI18ER3R34F0,White)" class="shop-title-value">Carrier 1.5 Ton 3 Star AI Flexicool Inverter Split AC (Copper, Convertible 6-in-1 Cooling,High Density Filter, Auto Cleanser, 2024 Model,ESTER NEO Exi+, CAI18ER3R34F0,White)</a></h4>
+                  <div class="discount"><span class="main blink">7% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQYNM3ZF.html" title="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)"><img data-src="https://m.media-amazon.com/images/I/71XNeka-BRL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)" title="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQYNM3ZF.html" title="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)" class="shop-title-value">OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>34,990</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>67,790</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>42,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>45,999</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">31% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0784ZQFHZ.html" title="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black"><img data-src="https://m.media-amazon.com/images/I/71gNXJ6ciBL._SX679_.jpg" class="img-fluid lazy" alt="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black" title="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0784ZQFHZ.html" title="Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black" class="shop-title-value">Tribit StormBox 24W Bluetooth Wireless Speakers,360°Surround Sound,Enhanced Bass-Independent XBass Button,Wireless Dual Pairing,Built-In Mic,IPX7 Waterproof,20H Playtime,Outdoor Portable Speaker,Black</a></h4>
+                  <div class="discount"><span class="main blink">87% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B9X8LVJ5.html" title="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022"><img data-src="https://m.media-amazon.com/images/I/41JQXNAPy3L._SX300_SY300_QL70_FMwebp_.jpg" class="img-fluid lazy" alt="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022" title="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B9X8LVJ5.html" title="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022" class="shop-title-value">Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>4,849</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>6,999</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>189</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,499</span></span>
                   </div>
               </div>
           </div><div class="col-md-3 shop-item-wrapper">
               <div class="shop-item">
-                  <div class="discount"><span class="main blink">55% OFF</span></div>
-                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D54294K9.html" title="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White"><img data-src="https://m.media-amazon.com/images/I/51fWpRMV-dL._SX679_.jpg" class="img-fluid lazy" alt="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White" title="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White" src="/upload/cursor.jpg" /></a></div>
-                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D54294K9.html" title="Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White" class="shop-title-value">Lenovo Tab M11 with Pen| Wi-Fi Connectivity| 8 Gb Ram, 128 Gb ROM|11 Inch Screen| 90 Hz, 72% Ntsc, Fhd Display| Quad Speakers with Dolby Atmos|Octa-Core Processor |13 Mp Rear Camera,White</a></h4>
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07VCKVJKS.html" title="Butterfly Hippo 2 Litres Table-Top Wet Grinder | 150 Watts | Shockproof ABS Body | 4-way Grinding | Easy Clean &amp; Maintenance | Stainless Steel Drum | 2 Years Manufacturer&#039;s Warranty | Cherry Red"><img data-src="https://m.media-amazon.com/images/I/71TJXCkdRhL._SX679_.jpg" class="img-fluid lazy" alt="Butterfly Hippo 2 Litres Table-Top Wet Grinder | 150 Watts | Shockproof ABS Body | 4-way Grinding | Easy Clean &amp; Maintenance | Stainless Steel Drum | 2 Years Manufacturer&#039;s Warranty | Cherry Red" title="Butterfly Hippo 2 Litres Table-Top Wet Grinder | 150 Watts | Shockproof ABS Body | 4-way Grinding | Easy Clean &amp; Maintenance | Stainless Steel Drum | 2 Years Manufacturer&#039;s Warranty | Cherry Red" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07VCKVJKS.html" title="Butterfly Hippo 2 Litres Table-Top Wet Grinder | 150 Watts | Shockproof ABS Body | 4-way Grinding | Easy Clean &amp; Maintenance | Stainless Steel Drum | 2 Years Manufacturer&#039;s Warranty | Cherry Red" class="shop-title-value">Butterfly Hippo 2 Litres Table-Top Wet Grinder | 150 Watts | Shockproof ABS Body | 4-way Grinding | Easy Clean &amp; Maintenance | Stainless Steel Drum | 2 Years Manufacturer&#039;s Warranty | Cherry Red</a></h4>
                   <div class="price">
-                      <span class="discountprice"><span class="rupee">₹</span><span>14,999</span></span>
-                      <span class="actualprice"><span class="rupee">₹</span><span>33,000</span></span>
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,057</span></span>
                   </div>
               </div>
           </div>

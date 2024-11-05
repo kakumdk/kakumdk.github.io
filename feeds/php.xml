@@ -13,9 +13,9 @@
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/when-and-how-to-use-each-design-pattern-in-php.html</guid>
     </item><item>
-			<title>Exploring Design Patterns in PHP 8: Strategy, Observer, and Decorator</title>
+			<title>Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator</title>
 			<link>https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</link>
-			<description>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable, and flexible code.  This article will explore three key design patterns: Strategy, Observer, and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implement</description>
+			<description>Design patterns are essential tools for software developers, providing proven solutions to common problems. In PHP 8, leveraging design patterns can lead to more maintainable, scalable and flexible code.  This article will explore three key design patterns: Strategy, Observer and Decorator. We will delve into their principles and provide practical examples to illustrate how they can be implemented</description>
 			<pubDate>Mon, 28 Oct 2024 16:46:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html</guid>
@@ -29,35 +29,35 @@
     </item><item>
 			<title>Implementing Design Patterns in Real-World PHP Applications</title>
 			<link>https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html</link>
-			<description>Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability, and scalability.  In this article, we&amp;#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton, and Dependency Injection, in real-world PHP applications using PHP 8.  1. Factory Pattern  Scenario  Imagine you&amp;rsquo;re developing an </description>
+			<description>Design patterns are proven solutions to common software design problems. They help improve code readability, maintainability and scalability.  In this article, we&amp;#39;ll explore how to implement some of the most commonly used design patterns, Factory, Singleton and Dependency Injection, in real-world PHP applications using PHP 8.  1. Factory Pattern  Scenario  Imagine you&amp;rsquo;re developing an e-</description>
 			<pubDate>Sun, 27 Oct 2024 20:39:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/implementing-design-patterns-in-real-world-php-applications.html</guid>
     </item><item>
-			<title>Introduction to Design Patterns: Factory, Singleton, and Dependency Injection</title>
+			<title>Introduction to Design Patterns: Factory, Singleton and Dependency Injection</title>
 			<link>https://peoplesblog.co.in/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html</link>
-			<description>Design patterns are essential tools for developers looking to write clean, maintainable, and scalable code. In PHP 8, leveraging design patterns can significantly enhance your software architecture.  This article introduces three fundamental design patterns: Factory, Singleton, and Dependency Injection, explaining their purpose, use cases, and providing practical examples.  1. Factory Pattern  Wha</description>
+			<description>Design patterns are essential tools for developers looking to write clean, maintainable and scalable code. In PHP 8, leveraging design patterns can significantly enhance your software architecture.  This article introduces three fundamental design patterns: Factory, Singleton and Dependency Injection, explaining their purpose, use cases and providing practical examples.  1. Factory Pattern  What i</description>
 			<pubDate>Fri, 25 Oct 2024 08:49:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html</guid>
     </item><item>
 			<title>Designing Efficient Schemas for Web Applications</title>
 			<link>https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html</link>
-			<description>The design of an efficient database schema is crucial for the performance, scalability, and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly, and grow with the increasing needs of your users.  This article explores best practices for designing efficient schemas, focusing on the balance be</description>
+			<description>The design of an efficient database schema is crucial for the performance, scalability and maintainability of any web application. A well-designed schema ensures that your web application can handle large volumes of data, retrieve information quickly and grow with the increasing needs of your users.  This article explores best practices for designing efficient schemas, focusing on the balance betw</description>
 			<pubDate>Tue, 22 Oct 2024 08:09:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/designing-efficient-schemas-for-web-applications.html</guid>
     </item><item>
 			<title>Understanding the SOLID Principles in PHP</title>
 			<link>https://peoplesblog.co.in/articles/understanding-the-solid-principles-in-php.html</link>
-			<description>The SOLID principles are a set of five fundamental design principles in object-oriented programming aimed at improving software design, making it more understandable, flexible, and maintainable. These principles are especially relevant for developers working with PHP and similar languages.  Let&amp;#39;s dive into each principle, exploring its meaning and how it can be applied effectively in PHP.  1. </description>
+			<description>The SOLID principles are a set of five fundamental design principles in object-oriented programming aimed at improving software design, making it more understandable, flexible and maintainable. These principles are especially relevant for developers working with PHP and similar languages.  Let&amp;#39;s dive into each principle, exploring its meaning and how it can be applied effectively in PHP.  1. S</description>
 			<pubDate>Mon, 14 Oct 2024 10:02:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-the-solid-principles-in-php.html</guid>
     </item><item>
 			<title>Introduction to PHP 8 and Key Differences from PHP 7</title>
 			<link>https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</link>
-			<description>PHP 8, released on November 26, 2020, introduces significant improvements and new features that enhance performance, syntax, and overall developer experience. This version emphasizes performance optimizations, new language features, and better error handling, streamlining the development process and providing developers with more tools to write clean, efficient code.  Key Differences Between PHP 8</description>
+			<description>PHP 8, released on November 26, 2020, introduces significant improvements and new features that enhance performance, syntax and overall developer experience. This version emphasizes performance optimizations, new language features and better error handling, streamlining the development process and providing developers with more tools to write clean, efficient code.  Key Differences Between PHP 8 a</description>
 			<pubDate>Wed, 09 Oct 2024 11:58:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-php--and-key-differences-from-php-.html</guid>
@@ -85,7 +85,7 @@
     </item><item>
 			<title>How to work with Twig Templates in Drupal?</title>
 			<link>https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</link>
-			<description>In this article, we are going to see how a developer can work with Twig templates, and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sur</description>
+			<description>In this article, we are going to see how a developer can work with Twig templates and how to override templates (if needed) and create template suggestions with hooks, so that templates could be easily managed.  Basically drupal allows people to override the existing twig templates, so that people can fully have control on the html generated via the custom theme.  First thing, we need to make sure</description>
 			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-work-with-twig-templates-in-drupal.html</guid>
@@ -113,7 +113,7 @@
     </item><item>
 			<title>Know why Symfony framework was picked by Drupal</title>
 			<link>https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</link>
-			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years, and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with suc</description>
+			<description>In this article, we gonna see why Symfony was picked for Drupal and what it changes for developers. As we all know PHP evolved rapidly in the past years and unfortunately, Drupal adjustment to this development was not satisfying, especially in the case of software engineering patterns adoption. And that is one of the reasons why Drupal Developers had to come up with creative ways to deal with such</description>
 			<pubDate>Fri, 01 Dec 2023 08:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/know-why-symfony-framework-was-picked-by-drupal.html</guid>
@@ -141,7 +141,7 @@
     </item><item>
 			<title>Configuring &amp; Debugging Drupal on PHPStorm with XDebug on Ubuntu</title>
 			<link>https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</link>
-			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.  The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.   Initally open terminal, and check the php version   $ php -v   yo</description>
+			<description>Debugging the code is one of the important process for a developer, So now this article will help you to configure the Phpstorm for debugging the Drupal 7 application with the help of xDebug.  The configuration made in this article refers specifically to the Ubuntu machine, which has Apache2 webserver running and xDebug installed.   Initally open terminal and check the php version   $ php -v   you</description>
 			<pubDate>Thu, 15 Aug 2024 11:40:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html</guid>
