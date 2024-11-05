@@ -2740,6 +2740,13 @@ button#play-truth-dare-next {
 .quoteDetailsNew img {
     display: none; /* Hidden by default on mobile */
 }
+.noResults {
+    background-color: #f9f9f9;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
 
 
 

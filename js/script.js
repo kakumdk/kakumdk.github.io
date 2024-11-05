@@ -46,23 +46,45 @@ $(function() {
 function searchArticlesListPage() {
     $('input[type=text]#search-articles').focus();
     $("#search-articles").on("keyup", function(event) {
-        $('.search-articles .article').removeClass('hide');
+        // $('.search-articles .article').removeClass('hide');
+        const search = event.currentTarget.value.toLowerCase();
+        let anyVisible = false; // Track if any articles are visible
         $('.search-articles').children('.article').each(function () {
             var title = $(this).find('h4').children('a').text().toLowerCase();
             title += " " + $(this).find('.articles-summary').text().toLowerCase();
             title += " " + $(this).find('.articles-author').text().toLowerCase();
             title += " " + $(this).find('.articles-labels').text().toLowerCase();
-            var search = event.currentTarget.value.toLowerCase();
             var searchFor = search.split(' ');
+            let matchFound = true;
             for (var i = 0, ln = searchFor.length; i < ln; i++) {
-                if (title.indexOf(searchFor[i]) !== -1) {
-                    $(this).show();
-                }
-                else {
-                    $(this).hide();
+                if (title.indexOf(searchFor[i]) === -1) {
+                    matchFound = false;
+                    break;
                 }
             }
+            if (matchFound) {
+                $(this).show();
+                anyVisible = true;
+            } else {
+                $(this).hide();
+            }
         });
+        // Show or hide the "no results" message and replace with search term
+        if (!anyVisible) {
+            $('#noResults').removeClass('d-none').find('span').text(event.currentTarget.value);
+            $('.shop-data').addClass('d-none');
+        } else {
+            $('#noResults').addClass('d-none');
+        }
+        var totalArticles = $('.search-articles .article').length;
+        var visibleArticles = $('.search-articles .article').filter(function() {
+            return $(this).css('display') !== 'none';
+        }).length;
+        if (totalArticles === visibleArticles) {
+            console.log('totalArticles'+totalArticles);
+            console.log('visibleArticles'+visibleArticles);
+            $('.shop-data').removeClass('d-none');
+        }
     });
 }
 
