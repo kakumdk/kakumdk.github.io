@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Implementing a Notification System Using the Observer Pattern in PHP</title>
+			<link>https://peoplesblog.co.in/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html</link>
+			<description>The Observer pattern is a powerful design pattern that promotes a one-to-many dependency between objects. This pattern is particularly useful in scenarios where changes in one object need to be reflected across multiple objects. A classic use case for the Observer pattern is in building a notification system, where subscribers (observers) are notified of changes in a publisher (subject).  In this </description>
+			<pubDate>Tue, 05 Nov 2024 15:52:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html</guid>
+    </item><item>
 			<title>Origami Geometry, science experiment for children</title>
 			<link>https://peoplesblog.co.in/articles/origami-geometry-science-experiment-for-children.html</link>
 			<description>Origami is a fantastic way to explore and understand geometric concepts through hands-on activity. By folding paper to create different shapes and structures, children can visualize and learn about various geometric principles.  Here&amp;rsquo;s a detailed article to a &amp;quot;Origami Geometry&amp;quot; science experiment for children, focusing on basic geometric shapes and concepts.  Materials Needed:   Or</description>
@@ -348,13 +355,6 @@
 			<pubDate>Fri, 22 Mar 2024 15:20:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</guid>
-    </item><item>
-			<title>How to set up a Monitoring System for the Solar panel at your home?</title>
-			<link>https://peoplesblog.co.in/articles/how-to-set-up-a-monitoring-system-for-the-solar-panel-at-your-home.html</link>
-			<description>Setting up a monitoring system for your solar panel system allows you to track its performance and ensure it&amp;#39;s operating at its best.  Here&amp;#39;s how you can do it:  1. Choose a Monitoring System:  There are various monitoring options available, ranging from basic to advanced:   Manufacturer&amp;#39;s Monitoring: Many solar panel and inverter manufacturers offer their own monitoring platforms or a</description>
-			<pubDate>Mon, 01 Jan 2024 14:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-set-up-a-monitoring-system-for-the-solar-panel-at-your-home.html</guid>
     </item>
 </channel>
 </rss>

@@ -81,8 +81,6 @@ function searchArticlesListPage() {
             return $(this).css('display') !== 'none';
         }).length;
         if (totalArticles === visibleArticles) {
-            console.log('totalArticles'+totalArticles);
-            console.log('visibleArticles'+visibleArticles);
             $('.shop-data').removeClass('d-none');
         }
     });
