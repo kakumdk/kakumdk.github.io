@@ -1334,6 +1334,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/jai-shri-ram-pak-agenda-slogans-raised-as-j-k-assembly-passes-article-370-resolution.html
 Allow: /news/shakti-scheme-putting-strain-on-government-but-won-t-halt-it-minister.html
 Allow: /news/consider-muslim-sentiments-jamiat-to-tdp-jd-u-on-waqf-amendment-bill.html
 Allow: /news/yogi-adityanath-gets-lawrence-bishnoi-gang-death-threat-resign-or-will-kill-you-like-baba-siddique.html
