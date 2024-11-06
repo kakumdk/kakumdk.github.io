@@ -2650,8 +2650,7 @@ button#play-truth-dare-next {
 .blog-content.read-article-content h4,
 .blog-content.read-article-content h5,
 .blog-content.read-article-content h6,
-.blog-content.read-article-content p,
-.blog-content.read-article-content ul {
+.blog-content.read-article-content p {
     margin: 15px auto;
 }
 .blog-content.read-article-content h1,

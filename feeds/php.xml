@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Introduction to Caching and Setting Up Redis in PHP 8</title>
+			<link>https://peoplesblog.co.in/articles/introduction-to-caching-and-setting-up-redis-in-php-.html</link>
+			<description>Caching is a fundamental technique used in software development to enhance performance and efficiency by storing frequently accessed data in a temporary storage layer. In PHP 8, caching can significantly reduce load times and improve the overall user experience of web applications.  This article will provide an overview of caching, its benefits, and common use cases.  What is Caching?  Caching inv</description>
+			<pubDate>Wed, 06 Nov 2024 16:09:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-caching-and-setting-up-redis-in-php-.html</guid>
+    </item><item>
 			<title>Implementing a Notification System Using the Observer Pattern in PHP</title>
 			<link>https://peoplesblog.co.in/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html</link>
 			<description>The Observer pattern is a powerful design pattern that promotes a one-to-many dependency between objects. This pattern is particularly useful in scenarios where changes in one object need to be reflected across multiple objects. A classic use case for the Observer pattern is in building a notification system, where subscribers (observers) are notified of changes in a publisher (subject).  In this </description>

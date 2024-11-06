@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Introduction to Caching and Setting Up Redis in PHP 8</title>
+			<link>https://peoplesblog.co.in/articles/introduction-to-caching-and-setting-up-redis-in-php-.html</link>
+			<description>Caching is a fundamental technique used in software development to enhance performance and efficiency by storing frequently accessed data in a temporary storage layer. In PHP 8, caching can significantly reduce load times and improve the overall user experience of web applications.  This article will provide an overview of caching, its benefits, and common use cases.  What is Caching?  Caching inv</description>
+			<pubDate>Wed, 06 Nov 2024 16:09:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-caching-and-setting-up-redis-in-php-.html</guid>
+    </item><item>
 			<title>Implementing a Notification System Using the Observer Pattern in PHP</title>
 			<link>https://peoplesblog.co.in/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html</link>
 			<description>The Observer pattern is a powerful design pattern that promotes a one-to-many dependency between objects. This pattern is particularly useful in scenarios where changes in one object need to be reflected across multiple objects. A classic use case for the Observer pattern is in building a notification system, where subscribers (observers) are notified of changes in a publisher (subject).  In this </description>
@@ -348,13 +355,6 @@
 			<pubDate>Sun, 03 Mar 2024 11:42:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-maintain-solar-panel-setup-at-your-home-to-get-the-best-results.html</guid>
-    </item><item>
-			<title>Create a custom Drupal Service and Use as a Helper</title>
-			<link>https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</link>
-			<description>Creating a custom Drupal service allows you to encapsulate functionality and access it wherever needed, promoting modularity and reusability within your codebase as a Helper.  In this article we are sharing an example of how to create a custom Drupal service and use it as a helper.  Step 1: Define the Service  Create a new custom module or use an existing one. Define your service in the module&amp;rsq</description>
-			<pubDate>Fri, 22 Mar 2024 15:20:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</guid>
     </item>
 </channel>
 </rss>
