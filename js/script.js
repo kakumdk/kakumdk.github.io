@@ -83,6 +83,9 @@ function searchArticlesListPage() {
         if (totalArticles === visibleArticles) {
             $('.shop-data').removeClass('d-none');
         }
+        else {
+            $('.shop-data').addClass('d-none');
+        }
     });
 }
 
