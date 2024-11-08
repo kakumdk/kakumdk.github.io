@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Implementing a Redis Cache for Product Catalog Data in PHP</title>
+    <meta name="description" content="Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently access" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html" />
+    <meta property="og:title" content="Implementing a Redis Cache for Product Catalog Data in PHP" />
+    <meta property="og:description" content="Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently access" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/implementing-a-redis-cache-for-product-catalog-data-in-php.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Implementing a Redis Cache for Product Catalog Data in PHP" />
+    <meta name="twitter:description" content="Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently access" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/implementing-a-redis-cache-for-product-catalog-data-in-php.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html"
+        },
+        "headline": "Implementing a Redis Cache for Product Catalog Data in PHP",
+        "description": "Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently access",
+        "image": "https://peoplesblog.co.in/upload/banners/implementing-a-redis-cache-for-product-catalog-data-in-php.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "8th Nov 2024",
+        "dateModified": "2024-11-08T10:02:04+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Implementing a Redis Cache for Product Catalog Data in PHP</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Implementing a Redis Cache for Product Catalog Data in PHP" data-src="/upload/banners/implementing-a-redis-cache-for-product-catalog-data-in-php.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Implementing a Redis Cache for Product Catalog Data in PHP" />
+                                </div>
+                                <h1 class="read-article-title">Implementing a Redis Cache for Product Catalog Data in PHP</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>8th Nov 2024</span>, <span class="last-updated">2024-11-08T10:02:04+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently accessed. By using Redis as a caching layer, you can significantly reduce database load and improve response times for users.</p>  <p>In this article, we&rsquo;ll walk through the steps to implement a Redis cache for product catalog data in a PHP 8 application.</p>  <h2>What is Redis?</h2>  <p>Redis is an open-source, in-memory data structure store known for its speed and flexibility. It can be used as a database, cache, and message broker, making it an excellent choice for applications that require fast access to data.</p>  <h2>Why Use Redis for Caching?</h2>  <p>Redis is an in-memory data structure store known for its speed and efficiency. Its ability to handle various data types makes it an ideal choice for caching scenarios. Here are some key benefits:</p>  <ul> <li><strong>Fast Access</strong>: Retrieving data from Redis is significantly faster than querying a traditional database.</li> <li><strong>Reduced Database Load</strong>: By serving cached data, you minimize the number of read operations on your database.</li> <li><strong>Scalability</strong>: Redis can easily scale to handle increased load as your application grows.</li> </ul>  <h2>Setting Up Your Environment</h2>  <p><strong>Step 1: Create a New DDEV Project</strong></p>  <p>If you don&rsquo;t have an existing DDEV project, you can create a new one. Open your terminal, navigate to your desired directory, and run:</p>  <p><code>mkdir my-product-catalog</code></p>  <p><code>cd my-product-catalog</code></p>  <p><code>ddev config</code></p>  <p>Follow the prompts to set up your project, ensuring that you specify PHP 8 as your environment. After configuration, start your DDEV environment:</p>  <p><code>ddev start</code></p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <p><strong>Step 2: Add Redis to Your DDEV Project</strong></p>  <p>DDEV makes it easy to add services like Redis. To enable Redis, run:</p>  <p><code>ddev add-service redis</code></p>  <p>This command sets up Redis for your DDEV environment, making it accessible to your PHP application. If not added, alternatively you can setup using below steps</p>  <ol> <li>Under the&nbsp;<code>.ddev</code>&nbsp;folder, create a file with the name&nbsp;<code>docker-compose.override.yml</code>.</li> <li>Add the below code into the file&nbsp;<code>docker-compose.override.yml</code>&nbsp;and then&nbsp;run&nbsp;<code>ddev restart</code></li> </ol>  <p><code>version: &#39;3.6&#39;</code></p>  <p><code>services:</code></p>  <p><code>&nbsp;redis:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;image: redis:latest</code></p>  <p><code>&nbsp;&nbsp;&nbsp;container_name: day15-ddev-php-redis</code></p>  <p><code>&nbsp;&nbsp;&nbsp;ports:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- &quot;6379:6379&quot;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;networks:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ddev_default</code></p>  <p><code>&nbsp;&nbsp;&nbsp;volumes:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- redis_data:/data</code></p>  <p><code>volumes:</code></p>  <p><code>&nbsp;redis_data:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;driver: local</code></p>  <p><strong>Step 3: Access Redis</strong></p>  <p>Once Redis is added, you can connect to it using the hostname redis. You can also use the Redis CLI to verify that it&rsquo;s running:</p>  <p><code>ddev ssh</code></p>  <p><code>redis-cli ping</code></p>  <p>You should receive a response of PONG.</p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>Step 4: Install a Redis Client for PHP</strong></p>  <p>To interact with Redis in your PHP application, we will use the predis/predis library. Install it using Composer within your DDEV environment:</p>  <p><code>ddev composer require predis/predis</code></p>  <h2>Implementing the Redis Cache for Product Catalog Data</h2>  <p><strong>Step 1: Connecting to Redis</strong></p>  <p>Create a new PHP file (e.g., cache.php) in your project&rsquo;s web directory. In this file, establish a connection to Redis and implement basic caching functionality:</p>  <p><code>require &#39;vendor/autoload.php&#39;;</code></p>  <p><code>use Predis\Client;</code></p>  <p><code>class RedisCache {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private Client $client;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;client = new Client([&#39;host&#39; =&gt; &#39;redis&#39;, &#39;port&#39; =&gt; 6379]);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set($key, $value, $expiration = 3600) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;client-&gt;set($key, $value);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;client-&gt;expire($key, $expiration);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get($key) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;client-&gt;get($key);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Step 2: Simulating Product Catalog Data Retrieval</strong></p>  <p>Next, let&rsquo;s simulate a function that retrieves product catalog data. In a real application, this would typically involve querying your database. For this example, we&rsquo;ll return a hardcoded array:</p>  <p><code>function fetchProductCatalog() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Simulate database call</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;return [</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&#39;id&#39; =&gt; 1, &#39;name&#39; =&gt; &#39;Product A&#39;, &#39;price&#39; =&gt; 100],</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&#39;id&#39; =&gt; 2, &#39;name&#39; =&gt; &#39;Product B&#39;, &#39;price&#39; =&gt; 200],</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&#39;id&#39; =&gt; 3, &#39;name&#39; =&gt; &#39;Product C&#39;, &#39;price&#39; =&gt; 300],</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;];</code></p>  <p><code>}</code></p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>Step 3: Implementing Caching Logic</strong></p>  <p>Now, let&rsquo;s implement the caching logic for the product catalog data. We&rsquo;ll first check if the data is available in the cache before querying the simulated database.</p>  <p><code>function getProductCatalog(RedisCache $cache) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$cacheKey = &#39;product_catalog&#39;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Try to get data from cache</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$data = $cache-&gt;get($cacheKey);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;if ($data) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo &quot;Cache hit! Retrieving product catalog from cache.\n&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return json_decode($data, true); // Convert back to an array</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// If not in cache, fetch from the &quot;database&quot;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;echo &quot;Cache miss! Fetching product catalog from the database.\n&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$data = fetchProductCatalog();</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Store in cache</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$cache-&gt;set($cacheKey, json_encode($data)); // Cache as JSON string</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;return $data;</code></p>  <p><code>}</code></p>  <p><code>// Usage example</code></p>  <p><code>$cache = new RedisCache();</code></p>  <p><code>$productCatalog = getProductCatalog($cache);</code></p>  <p><code>print_r($productCatalog);</code></p>  <p><strong>Step 4: Running Your Application</strong></p>  <p>To run your PHP script, access it through your web browser at <tt>http://ddev.site/cache.php</tt>, or execute it from the command line within the DDEV environment:</p>  <p><code>ddev exec php cache.php</code></p>  <p>The first call to <tt>getProductCatalog($cache)</tt> will fetch the product catalog from the simulated database, while subsequent calls will retrieve the data from the Redis cache.</p>  <h2>Conclusion</h2>  <p>Implementing a Redis cache for product catalog data in a PHP 8 application using DDEV is a straightforward process that can significantly enhance your application&#39;s performance. By caching frequently accessed data, you reduce database load, improve response times, and provide a better user experience.</p>  <p>Using DDEV simplifies the development environment setup, allowing you to focus on building efficient applications. As you continue to develop your e-commerce platform, consider leveraging Redis for additional caching and data management tasks to further optimize your application.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B5YDZRKZ.html" title="Van Heusen Men&#039;s Formal Slim Fit Shirt"><img data-src="https://m.media-amazon.com/images/I/71HDdaQNMxL._SY879_.jpg" class="img-fluid lazy" alt="Van Heusen Men&#039;s Formal Slim Fit Shirt" title="Van Heusen Men&#039;s Formal Slim Fit Shirt" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B5YDZRKZ.html" title="Van Heusen Men&#039;s Formal Slim Fit Shirt" class="shop-title-value">Van Heusen Men&#039;s Formal Slim Fit Shirt</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00JD8EA1U.html" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue"><img data-src="https://m.media-amazon.com/images/I/71TBQtHYiyL._SX679_.jpg" class="img-fluid lazy" alt="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00JD8EA1U.html" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" class="shop-title-value">Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>889</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,000</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)"><img data-src="https://m.media-amazon.com/images/I/71mnHCt5TkL._SX679_.jpg" class="img-fluid lazy" alt="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" class="shop-title-value">GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html" title="Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.jpg" alt="Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide" title="Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html" title="Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide">
+                                <span class="title">Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+                  Introduction to Caching and Setting Up Redis in PHP 8
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+                  Implementing a Notification System Using the Observer Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+                  When and How to Use Each Design Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+                  Implementing a Logger System Using the Singleton Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+                  Implementing Design Patterns in Real-World PHP Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+                  Introduction to Design Patterns: Factory, Singleton and Dependency Injection
+                </a>
+              </div><div class="article">
+                <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+                  Designing Efficient Schemas for Web Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-the-solid-principles-in-php.html">
+                  Understanding the SOLID Principles in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-php--and-key-differences-from-php-.html">
+                  Introduction to PHP 8 and Key Differences from PHP 7
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">66% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)"><img data-src="https://m.media-amazon.com/images/I/614cFlQ5hAL._SX679_.jpg" class="img-fluid lazy" alt="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQK9JPMT.html" title="WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)" class="shop-title-value">WALTA ELITE BRIO-1450 Soundbar Party Speaker Audio Output with Bluetooth 5.3 &amp; Multiple Connectivity Options Available (280W)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,489</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
+            Understanding SQL Query Execution Plans and Optimizing Joins
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-a-cucumber-mint-cooler.html">
+            How to prepare a Cucumber Mint Cooler?
+          </a>
+        </div><div class="article">
+          <a href="/articles/using-indexes-to-speed-up-sql-queries.html">
+            Using Indexes to Speed Up SQL Queries
+          </a>
+        </div><div class="article">
+          <a href="/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html">
+            SQL Transactions for Atomic Operations: Ensuring Data Integrity and Consistency
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-habits-you-adopted-that-made-you-a-healthier-person.html">
+            What are the habits you adopted that made you a healthier person?
+          </a>
+        </div><div class="article">
+          <a href="/articles/writing-secure-sql-queries-using-prepared-statements.html">
+            Writing Secure SQL Queries Using Prepared Statements
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-one-to-many-and-many-to-many-relationships.html">
+            Implementing One-to-Many and Many-to-Many Relationships
+          </a>
+        </div><div class="article">
+          <a href="/articles/wind-vane-science-experiment-for-children.html">
+            Wind Vane, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+            Designing Efficient Schemas for Web Applications
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">29% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BQJ7WR2R.html" title="Dell 15 Thin &amp; Light Laptop, Intel Core i5-1235U Processor/16GB DDR4+512GB SSD/Intel UHD Graphics/15 Inch (38cm) FHD Display/Windows 11 + MSO&#039;21/15 Month McAfee/Carbon Black/Spill Resistant KB/1.69kg"><img data-src="https://m.media-amazon.com/images/I/61dJdlYALfL._SX679_.jpg" class="img-fluid lazy" alt="Dell 15 Thin &amp; Light Laptop, Intel Core i5-1235U Processor/16GB DDR4+512GB SSD/Intel UHD Graphics/15 Inch (38cm) FHD Display/Windows 11 + MSO&#039;21/15 Month McAfee/Carbon Black/Spill Resistant KB/1.69kg" title="Dell 15 Thin &amp; Light Laptop, Intel Core i5-1235U Processor/16GB DDR4+512GB SSD/Intel UHD Graphics/15 Inch (38cm) FHD Display/Windows 11 + MSO&#039;21/15 Month McAfee/Carbon Black/Spill Resistant KB/1.69kg" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BQJ7WR2R.html" title="Dell 15 Thin &amp; Light Laptop, Intel Core i5-1235U Processor/16GB DDR4+512GB SSD/Intel UHD Graphics/15 Inch (38cm) FHD Display/Windows 11 + MSO&#039;21/15 Month McAfee/Carbon Black/Spill Resistant KB/1.69kg" class="shop-title-value">Dell 15 Thin &amp; Light Laptop, Intel Core i5-1235U Processor/16GB DDR4+512GB SSD/Intel UHD Graphics/15 Inch (38cm) FHD Display/Windows 11 + MSO&#039;21/15 Month McAfee/Carbon Black/Spill Resistant KB/1.69kg</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>47,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>67,457</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+            Implementing a Notification System Using the Observer Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/origami-geometry-science-experiment-for-children.html">
+            Origami Geometry, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+            When and How to Use Each Design Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-vedic-gods-and-their-attributes.html">
+            The Vedic Gods and Their Attributes
+          </a>
+        </div><div class="article">
+          <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+            Implementing a Logger System Using the Singleton Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+            Implementing Design Patterns in Real-World PHP Applications
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">35% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey"><img data-src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" class="img-fluid lazy" alt="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" class="shop-title-value">Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>59,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>92,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-frog-and-the-scorpion.html">
+            The Frog and the Scorpion
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">16% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0085KK9OY.html" title="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White"><img data-src="https://m.media-amazon.com/images/I/81DtYqUCUKL._SY879_.jpg" class="img-fluid lazy" alt="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White" title="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0085KK9OY.html" title="KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White" class="shop-title-value">KENT Gold Gravity Water Purifier (11014) | UF Technology Based | Non-Electric &amp; Chemical Free | Counter Top | 20L Storage | White</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,849</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,400</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/firaq-gorakhpuri.html">
+            Firaq Gorakhpuri
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">34% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01GRRY9AQ.html" title="Nayasa Plastic Strong Patla| Durable Stool For Home | Light Weight Stool | Multipurpose Stool | Stool For Kitchen And Bathroom | No. 516 | Blue"><img data-src="https://m.media-amazon.com/images/I/715np3qpz3L._SX679_.jpg" class="img-fluid lazy" alt="Nayasa Plastic Strong Patla| Durable Stool For Home | Light Weight Stool | Multipurpose Stool | Stool For Kitchen And Bathroom | No. 516 | Blue" title="Nayasa Plastic Strong Patla| Durable Stool For Home | Light Weight Stool | Multipurpose Stool | Stool For Kitchen And Bathroom | No. 516 | Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01GRRY9AQ.html" title="Nayasa Plastic Strong Patla| Durable Stool For Home | Light Weight Stool | Multipurpose Stool | Stool For Kitchen And Bathroom | No. 516 | Blue" class="shop-title-value">Nayasa Plastic Strong Patla| Durable Stool For Home | Light Weight Stool | Multipurpose Stool | Stool For Kitchen And Bathroom | No. 516 | Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>269</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>405</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">18% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B086T4WGRY.html" title="Dettol Original Germ Protection Bathing Soap Bar (625gm) | Kills 99.99% germs, 125gm , Pack of 5"><img data-src="https://m.media-amazon.com/images/I/41T7TdppnIL._SX300_SY300_QL70_FMwebp_.jpg" class="img-fluid lazy" alt="Dettol Original Germ Protection Bathing Soap Bar (625gm) | Kills 99.99% germs, 125gm , Pack of 5" title="Dettol Original Germ Protection Bathing Soap Bar (625gm) | Kills 99.99% germs, 125gm , Pack of 5" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B086T4WGRY.html" title="Dettol Original Germ Protection Bathing Soap Bar (625gm) | Kills 99.99% germs, 125gm , Pack of 5" class="shop-title-value">Dettol Original Germ Protection Bathing Soap Bar (625gm) | Kills 99.99% germs, 125gm , Pack of 5</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>450</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>550</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">83% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07G3F1G7T.html" title="ADISA Laptop Backpack 31 Ltrs"><img data-src="https://m.media-amazon.com/images/I/614+M-Y+LOS._UX679_.jpg" class="img-fluid lazy" alt="ADISA Laptop Backpack 31 Ltrs" title="ADISA Laptop Backpack 31 Ltrs" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07G3F1G7T.html" title="ADISA Laptop Backpack 31 Ltrs" class="shop-title-value">ADISA Laptop Backpack 31 Ltrs</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>309</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,799</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">45% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00EDJJ7FS.html" title="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)"><img data-src="https://m.media-amazon.com/images/I/61x0Qnm08HS._SX679_.jpg" class="img-fluid lazy" alt="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)" title="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00EDJJ7FS.html" title="Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)" class="shop-title-value">Philips Viva Collection HD4928/01 2100-Watt Induction Cooktop, Soft Touch Button with Crystal Glass (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,995</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">48% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CH33945T.html" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)"><img data-src="https://m.media-amazon.com/images/I/61T5drqfafL._SX679_.jpg" class="img-fluid lazy" alt="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CH33945T.html" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" class="shop-title-value">MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>22,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>42,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/bangalore.html" title="Bangalore" aria-label="Bangalore">Bangalore</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/sql.html" title="SQL" aria-label="SQL">SQL</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

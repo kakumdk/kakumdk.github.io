@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Implementing a Redis Cache for Product Catalog Data in PHP</title>
+    <link>https://peoplesblog.co.in/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html</link>
+    <description>Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently accessed. By using Redis as a caching layer, you can significantly reduce database load and improve response times for users.  In this article, we&amp;rsquo;ll walk through the steps to implement a Redis cache for product catalog data in a PHP 8 application.  </description>
+    <pubDate>Fri, 08 Nov 2024 09:32:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html</guid>
+  </item><item>
     <title>Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide</title>
     <link>https://peoplesblog.co.in/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html</link>
     <description>If you&amp;#39;re looking for an adventurous escape from Bangalore, Kanakapura is an ideal destination. Located just 55 kilometers from the city, this serene spot offers exciting kayaking experiences amid lush greenery and scenic landscapes.  In this article, we&amp;rsquo;ll go over everything you need to know about making the most out of a day trip from Bangalore to Kanakapura, including the route, itine</description>
@@ -16,7 +23,7 @@
     <title>Introduction to Caching and Setting Up Redis in PHP 8</title>
     <link>https://peoplesblog.co.in/articles/introduction-to-caching-and-setting-up-redis-in-php-.html</link>
     <description>Caching is a fundamental technique used in software development to enhance performance and efficiency by storing frequently accessed data in a temporary storage layer. In PHP 8, caching can significantly reduce load times and improve the overall user experience of web applications.  This article will provide an overview of caching, its benefits, and common use cases.  What is Caching?  Caching inv</description>
-    <pubDate>Wed, 06 Nov 2024 16:09:00 +0530</pubDate>
+    <pubDate>Fri, 08 Nov 2024 10:01:00 +0530</pubDate>
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/introduction-to-caching-and-setting-up-redis-in-php-.html</guid>
   </item><item>
