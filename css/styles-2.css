@@ -2947,6 +2947,7 @@ button#play-truth-dare-next {
         text-align: left;
         border-top: 1px solid #e6ebed;
         border-bottom: 1px solid #e6ebed;
+        margin-bottom: 5px;
     }
     .blog-title-area .blog-meta .articles-author {
         display: inline-block;
