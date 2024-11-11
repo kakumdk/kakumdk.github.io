@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding</title>
+			<link>https://peoplesblog.co.in/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html</link>
+			<description>Object-Oriented Programming (OOP) is a programming paradigm that uses objects and classes to design and structure code. PHP, especially in its latest iteration, PHP 8, provides several advanced OOP features that enhance its capabilities and allow for more robust and maintainable code.  In this article, we will explore three advanced OOP features in PHP 8: final classes, magic methods, and late sta</description>
+			<pubDate>Mon, 11 Nov 2024 08:15:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html</guid>
+    </item><item>
 			<title>Implementing a Redis Cache for Product Catalog Data in PHP</title>
 			<link>https://peoplesblog.co.in/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html</link>
 			<description>Caching is a vital technique for improving application performance, especially in e-commerce platforms where product catalog data is frequently accessed. By using Redis as a caching layer, you can significantly reduce database load and improve response times for users.  In this article, we&amp;rsquo;ll walk through the steps to implement a Redis cache for product catalog data in a PHP 8 application.  </description>
@@ -348,13 +355,6 @@
 			<pubDate>Mon, 18 Mar 2024 17:50:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/seed-germination-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Simple Circuits, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/simple-circuits-science-experiment-for-children.html</link>
-			<description>Creating a simple circuit is an excellent way to introduce children to the basics of electricity and electronics.  Here&amp;#39;s a straightforward experiment for making a simple circuit:  Materials:   AA batteries (1 or 2, depending on the circuit) Battery holder LED (Light Emitting Diode) Copper tape or aluminum foil Cardboard or paper Insulating tape or masking tape      (adsbygoogle = window.adsby</description>
-			<pubDate>Tue, 12 Mar 2024 10:06:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/simple-circuits-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>
