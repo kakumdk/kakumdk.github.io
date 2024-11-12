@@ -1339,6 +1339,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/army-jco-killed-in-action-in-j-ks-kishtwar-wanted-to-rebuild-house-family.html
+Allow: /news/karnataka-governor-seeks-contempt-of-court-against-minister-for-remarks-on-hc.html
+Allow: /news/phone-call-between-4-friends-led-to-arrest-of-baba-siddiques-shooter.html
+Allow: /news/mike-waltz-india-caucus-head-and-china-hawk-picked-as-donald-trumps-national-security-advisor.html
 Allow: /news/restoration-of-the-special-status-to-jammu-and-kashmir-move-an-attempt-by-new-govt-to-divert-people-s-attention-says-j-k-bjp-chief.html
 Allow: /news/jai-shri-ram-pak-agenda-slogans-raised-as-j-k-assembly-passes-article-370-resolution.html
 Allow: /news/shakti-scheme-putting-strain-on-government-but-won-t-halt-it-minister.html
