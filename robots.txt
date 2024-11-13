@@ -1276,6 +1276,7 @@ Allow: /feeds/yercaud.xml
 Allow: /quotes/acceptance.html
 Allow: /quotes/action.html
 Allow: /quotes/adaptability.html
+Allow: /quotes/belief.html
 Allow: /quotes/change.html
 Allow: /quotes/character.html
 Allow: /quotes/compassion.html
@@ -1305,15 +1306,19 @@ Allow: /quotes/integrity.html
 Allow: /quotes/intelligence.html
 Allow: /quotes/journey.html
 Allow: /quotes/justice.html
+Allow: /quotes/kindness.html
 Allow: /quotes/knowledge.html
 Allow: /quotes/liberty.html
 Allow: /quotes/life.html
 Allow: /quotes/love.html
 Allow: /quotes/loyalty.html
 Allow: /quotes/marriage.html
+Allow: /quotes/morality.html
 Allow: /quotes/motivational.html
+Allow: /quotes/nature.html
 Allow: /quotes/perseverance.html
 Allow: /quotes/philosophy.html
+Allow: /quotes/power.html
 Allow: /quotes/purpose.html
 Allow: /quotes/relationship.html
 Allow: /quotes/resilience.html
