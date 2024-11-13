@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Code Profiling and Performance Optimization of an Existing PHP Project</title>
+    <meta name="description" content="As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html" />
+    <meta property="og:title" content="Code Profiling and Performance Optimization of an Existing PHP Project" />
+    <meta property="og:description" content="As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/code-profiling-and-performance-optimization-of-an-existing-php-project.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Code Profiling and Performance Optimization of an Existing PHP Project" />
+    <meta name="twitter:description" content="As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/code-profiling-and-performance-optimization-of-an-existing-php-project.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html"
+        },
+        "headline": "Code Profiling and Performance Optimization of an Existing PHP Project",
+        "description": "As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices",
+        "image": "https://peoplesblog.co.in/upload/banners/code-profiling-and-performance-optimization-of-an-existing-php-project.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "13th Nov 2024",
+        "dateModified": "2024-11-13T08:37:40+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Code Profiling and Performance Optimization of an Existing PHP Project</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Code Profiling and Performance Optimization of an Existing PHP Project" data-src="/upload/banners/code-profiling-and-performance-optimization-of-an-existing-php-project.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Code Profiling and Performance Optimization of an Existing PHP Project" />
+                                </div>
+                                <h1 class="read-article-title">Code Profiling and Performance Optimization of an Existing PHP Project</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>13th Nov 2024</span>, <span class="last-updated">2024-11-13T08:37:40+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices that help developers identify bottlenecks and improve the efficiency of their PHP applications.</p>  <p>In this article, we will explore the tools and techniques for code profiling and performance optimization in PHP 8.</p>  <h2>What is Code Profiling?</h2>  <p>Code profiling is the process of analyzing an application to identify areas that consume excessive resources, such as CPU time or memory. Profiling helps developers understand how their code behaves in real-world scenarios, allowing for informed optimization decisions.</p>  <p><strong>Benefits of Code Profiling</strong></p>  <ul> <li><strong>Identifies Bottlenecks</strong>: Profiling reveals which parts of the code are slow or resource-intensive.</li> <li><strong>Improves Performance</strong>: By focusing on the most critical areas, developers can achieve significant performance gains.</li> <li><strong>Guides Refactoring</strong>: Profiling provides insights into where code structure can be improved for better efficiency.</li> </ul>  <h2>Tools for Code Profiling in PHP 8</h2>  <p><strong>1. Xdebug</strong></p>  <ul> <li><a href='https://xdebug.org/' target='_blank'><u>Xdebug</u></a> is a powerful debugging and profiling tool for PHP.</li> <li>It provides detailed insights into code execution, including function call traces and memory usage.</li> </ul>  <p><strong>Installing Xdebug</strong></p>  <p>You can install Xdebug using PECL:</p>  <p><code>pecl install xdebug</code></p>  <p>Once installed, you can enable it in your <tt>php.ini</tt> file:</p>  <p><code>zend_extension=xdebug.so</code></p>  <p><strong>Using Xdebug for Profiling</strong></p>  <p>To profile your PHP application, you can enable the profiling feature in your <tt>php.ini</tt>:</p>  <p><code>xdebug.profiler_enable=1</code></p>  <p><code>xdebug.profiler_output_dir=&quot;/path/to/profiler/output&quot;</code></p>  <p>This configuration will generate cachegrind files in the specified directory, which can be analyzed using tools like<a href='https://github.com/jokkedk/webgrind' target='_blank'> <u>Webgrind</u></a> or QCacheGrind.</p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <p><strong>2. Blackfire</strong></p>  <ul> <li><a href='https://blackfire.io/' target='_blank'><u>Blackfire</u></a> is a commercial profiling tool designed for PHP applications.</li> <li>It provides advanced performance monitoring and profiling features, including integration with CI/CD pipelines.</li> </ul>  <p><strong>Setting Up Blackfire</strong></p>  <p>To get started, you need to install the Blackfire agent and PHP extension:</p>  <p><code># Install Blackfire agent</code></p>  <p><code>curl -sS https://get.blackfire.io/blackfire-install.sh | bash</code></p>  <p><code># Install Blackfire PHP extension</code></p>  <p><code>pecl install blackfire</code></p>  <p>Once installed, configure your Blackfire credentials in your <tt>php.ini</tt>:</p>  <p><code>blackfire.client_id=&quot;YOUR_CLIENT_ID&quot;</code></p>  <p><code>blackfire.client_token=&quot;YOUR_CLIENT_TOKEN&quot;</code></p>  <p><code>blackfire.server_id=&quot;YOUR_SERVER_ID&quot;</code></p>  <p><strong>Profiling with Blackfire</strong></p>  <p>You can profile your application using the Blackfire CLI:</p>  <p><code>blackfire run php your-script.php</code></p>  <p>This command will capture performance data, which you can view on the Blackfire web interface.</p>  <p><strong>3. Tideways</strong></p>  <ul> <li><a href='https://tideways.com/' target='_blank'><u>Tideways</u></a> is another performance monitoring tool that focuses on profiling PHP applications.</li> <li>It provides insights into performance bottlenecks and includes transaction monitoring.</li> </ul>  <p><strong>Installing Tideways</strong></p>  <p>You can install the Tideways PHP extension using PECL:</p>  <p><code>pecl install tideways</code></p>  <p>Then, configure it in your <tt>php.ini</tt>:</p>  <p><code>extension=tideways.so</code></p>  <p><code>tideways.api_key=&quot;YOUR_API_KEY&quot;</code></p>  <p><strong>Profiling with Tideways</strong></p>  <p>To profile a script with Tideways, you can use the CLI tool:</p>  <p><code>tideways start</code></p>  <p><code>php your-script.php</code></p>  <p><code>tideways stop</code></p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>Step 1: Performance Optimization Techniques</h2>  <p>Once you have identified performance bottlenecks through profiling, you can apply various optimization techniques:</p>  <p><strong>1. Optimize Database Queries</strong></p>  <ul> <li><strong>Use Indexes</strong>: Ensure that your database tables are properly indexed for faster lookups.</li> <li><strong>Avoid N+1 Queries</strong>: Use techniques like eager loading to minimize the number of queries executed.</li> <li><strong>Cache Results</strong>: Implement caching layers using Redis or Memcached to reduce database load.</li> </ul>  <p><strong>2. Code Optimization</strong></p>  <ul> <li><strong>Avoid Unnecessary Computation</strong>: Refactor your code to eliminate redundant calculations and function calls.</li> <li><strong>Use Efficient Data Structures</strong>: Choose the right data structures that provide optimal performance for your use case (e.g., arrays vs. objects).</li> <li><strong>Profile and Refactor</strong>: Continuously profile and refactor your code based on profiling insights.</li> </ul>  <p><strong>3. Utilize Caching</strong></p>  <p>Implement caching at various levels (application, database, and HTTP) to improve performance:</p>  <ul> <li><strong>Opcode Caching</strong>: Use tools like OPcache to cache compiled PHP scripts.</li> <li><strong>Data Caching</strong>: Cache frequently accessed data in memory using Redis or Memcached.</li> <li><strong>HTTP Caching</strong>: Utilize caching headers and reverse proxies to cache HTTP responses.</li> </ul>  <p><strong>4. Asynchronous Processing</strong></p>  <p>For long-running tasks, consider using asynchronous processing:</p>  <ul> <li><strong>Job Queues</strong>: Offload heavy tasks to a queue using tools like RabbitMQ or Beanstalkd.</li> <li><strong>Cron Jobs</strong>: Schedule periodic tasks using cron jobs for batch processing.</li> </ul>  <h2>Step 2: Analyzing Profiling Results</h2>  <p>Once you have generated profiling data, analyze it to identify performance bottlenecks. Look for:</p>  <ul> <li><strong>Slow Functions</strong>: Identify functions that take the most time to execute.</li> <li><strong>Memory Consumption</strong>: Check which parts of your code use excessive memory.</li> <li><strong>Frequent Database Queries</strong>: Look for N+1 queries or unnecessary calls to the database.</li> </ul>  <p>By focusing on these areas, you can prioritize your optimization efforts effectively.</p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>Step 3: Implementing Advanced OOP Techniques</h2>  <p>Once you have pinpointed the performance issues, consider employing advanced OOP techniques to enhance your codebase.</p>  <p><strong>1. Refactor with Final Classes</strong></p>  <p>Using final classes can prevent further inheritance and maintain the integrity of critical classes. This helps avoid unintended behavior changes and optimizes performance.</p>  <p><code>final class Logger {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function log($message) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo &quot;[LOG]: &quot; . $message . &quot;\n&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>2. Leverage Magic Methods</strong></p>  <p>Magic methods can simplify your code, making it more dynamic and easier to maintain. For instance, using <tt>__get</tt> and <tt>__set</tt> allows for flexible property access.</p>  <p><code>class User {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private $data = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __get($property) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;data[$property] ?? null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __set($property, $value) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;data[$property] = $value;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>3. Utilize Late Static Binding</strong></p>  <p>Late static binding allows you to reference the calling class in a static context, which is particularly useful in complex class hierarchies.</p>  <p><code>class Base {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function whoAmI() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo static::class;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class Child extends Base {}</code></p>  <p><code>Child::whoAmI(); // Outputs: Child</code></p>  <p><strong>4. Implement Design Patterns</strong></p>  <p>Using design patterns such as Singleton, Factory, or Repository can lead to more organized and maintainable code. For example, the Repository pattern can streamline data access and caching:</p>  <p><code>class ProductRepository {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private $cache;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct(RedisCache $cache) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;cache = $cache;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function find($id) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$cacheKey = &quot;product:$id&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$product = $this-&gt;cache-&gt;get($cacheKey);&nbsp; &nbsp;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!$product) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Fetch from the database</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$product = $this-&gt;fetchFromDatabase($id);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;cache-&gt;set($cacheKey, json_encode($product));</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return json_decode($product, true);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private function fetchFromDatabase($id) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Simulate database fetch</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return [&#39;id&#39; =&gt; $id, &#39;name&#39; =&gt; &#39;Sample Product&#39;];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <h2>Step 4: Testing and Monitoring</h2>  <p>After implementing optimizations, it&rsquo;s essential to test your application thoroughly. Check for:</p>  <ul> <li><strong>Performance Improvements</strong>: Use your profiling tools to compare performance before and after optimization.</li> <li><strong>Functionality</strong>: Ensure that the application behaves as expected after changes.</li> <li><strong>Code Quality</strong>: Conduct code reviews to maintain quality and readability.</li> </ul>  <h2>Conclusion</h2>  <p>Optimizing an existing PHP 8 project using profiling tools and advanced OOP techniques is a structured approach to enhancing application performance. By identifying bottlenecks with tools like Xdebug, Blackfire, and Tideways, and implementing OOP techniques such as final classes, magic methods, and design patterns, you can significantly improve both the performance and maintainability of your code.</p>  <p>Regular profiling and optimization should be integral to your development process, ensuring that your applications remain efficient as they evolve.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">71% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C788NJSK.html" title="truke Newly Launched BTG Neo Dual Pairing Earbuds with 6-Mic Advanced ENC, 80H Playtime, 35ms Ultra-Low Latency, 13mm Titanium Drivers, 3 EQ Modes, Fast Charge, Instant Pairing, Bluetooth 5.3, IPX5"><img data-src="https://m.media-amazon.com/images/I/71jwTLlDKcL._SX679_.jpg" class="img-fluid lazy" alt="truke Newly Launched BTG Neo Dual Pairing Earbuds with 6-Mic Advanced ENC, 80H Playtime, 35ms Ultra-Low Latency, 13mm Titanium Drivers, 3 EQ Modes, Fast Charge, Instant Pairing, Bluetooth 5.3, IPX5" title="truke Newly Launched BTG Neo Dual Pairing Earbuds with 6-Mic Advanced ENC, 80H Playtime, 35ms Ultra-Low Latency, 13mm Titanium Drivers, 3 EQ Modes, Fast Charge, Instant Pairing, Bluetooth 5.3, IPX5" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C788NJSK.html" title="truke Newly Launched BTG Neo Dual Pairing Earbuds with 6-Mic Advanced ENC, 80H Playtime, 35ms Ultra-Low Latency, 13mm Titanium Drivers, 3 EQ Modes, Fast Charge, Instant Pairing, Bluetooth 5.3, IPX5" class="shop-title-value">truke Newly Launched BTG Neo Dual Pairing Earbuds with 6-Mic Advanced ENC, 80H Playtime, 35ms Ultra-Low Latency, 13mm Titanium Drivers, 3 EQ Modes, Fast Charge, Instant Pairing, Bluetooth 5.3, IPX5</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,499</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">70% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WHLHXB9.html" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue"><img data-src="https://m.media-amazon.com/images/I/A14H95fAh7L._SY879_.jpg" class="img-fluid lazy" alt="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WHLHXB9.html" title="SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue" class="shop-title-value">SAFARI RAY 55 Cms Cabin Trolley Bag Hard Case Polycarbonate 4 Wheels 360 Degree Wheeling System Luggage, Trolley Bags For Travel, Suitcase For Travel, Midnight Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,798</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B68KM7F5.html" title="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa"><img data-src="https://m.media-amazon.com/images/I/619uqfCV8uL._SX679_.jpg" class="img-fluid lazy" alt="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa" title="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B68KM7F5.html" title="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa" class="shop-title-value">AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>16,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>33,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/how-to-prepare-kairi-ki-sabzi.html" title="How to prepare Kairi Ki Sabzi?">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/how-to-prepare-kairi-ki-sabzi.jpg" alt="How to prepare Kairi Ki Sabzi?" title="How to prepare Kairi Ki Sabzi?" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/how-to-prepare-kairi-ki-sabzi.html" title="How to prepare Kairi Ki Sabzi?">
+                                <span class="title">How to prepare Kairi Ki Sabzi?</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/how-to-prepare-kairi-ki-sabzi.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+                  Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+                  Implementing a Redis Cache for Product Catalog Data in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+                  Introduction to Caching and Setting Up Redis in PHP 8
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+                  Implementing a Notification System Using the Observer Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+                  When and How to Use Each Design Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+                  Implementing a Logger System Using the Singleton Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+                  Implementing Design Patterns in Real-World PHP Applications
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+                  Introduction to Design Patterns: Factory, Singleton and Dependency Injection
+                </a>
+              </div><div class="article">
+                <a href="/articles/designing-efficient-schemas-for-web-applications.html">
+                  Designing Efficient Schemas for Web Applications
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">71% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CZ23FJJT.html" title="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)"><img data-src="https://m.media-amazon.com/images/I/71aRgGvQcUL._SX679_.jpg" class="img-fluid lazy" alt="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)" title="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CZ23FJJT.html" title="Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)" class="shop-title-value">Seznik Portable Mini Sealing Machine, Handheld Packet Sealer for Food, Snacks, Chips, Fresh Storage, Plastic Bags Sealing Machine, 1 YEAR Warranty (White)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>349</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,200</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+            Implementing a Logger System Using the Singleton Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+            Implementing Design Patterns in Real-World PHP Applications
+          </a>
+        </div><div class="article">
+          <a href="/articles/working-out-at-this-time-can-help-manage-blood-sugar.html">
+            Working out at this time can help manage blood sugar
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
+            Understanding SQL Query Execution Plans and Optimizing Joins
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-a-cucumber-mint-cooler.html">
+            How to prepare a Cucumber Mint Cooler?
+          </a>
+        </div><div class="article">
+          <a href="/articles/using-indexes-to-speed-up-sql-queries.html">
+            Using Indexes to Speed Up SQL Queries
+          </a>
+        </div><div class="article">
+          <a href="/articles/sql-transactions-for-atomic-operations-ensuring-data-integrity-and-consistency.html">
+            SQL Transactions for Atomic Operations: Ensuring Data Integrity and Consistency
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-habits-you-adopted-that-made-you-a-healthier-person.html">
+            What are the habits you adopted that made you a healthier person?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver"><img data-src="https://m.media-amazon.com/images/I/51TK3jYBmBL._SX679_.jpg" class="img-fluid lazy" alt="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C28MZSNT.html" title="Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver" class="shop-title-value">Bergner Tripro Triply Stainless Steel 4 Pc Cookware Set, 24 cm Indian Wok/Kadai with Lid, 22 cm Frypan, 16 cm Tea Pan, Even and Fast Heating, Induction Bottom, Gas Ready, Silver</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,498</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+            Implementing a Notification System Using the Observer Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/origami-geometry-science-experiment-for-children.html">
+            Origami Geometry, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+            When and How to Use Each Design Pattern in PHP
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">13% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00B7GHQQW.html" title="Orpat OEH-1220 2000-Watt Fan Heater (White)"><img data-src="https://m.media-amazon.com/images/I/81Pm1MEvURL._SX385_.jpg" class="img-fluid lazy" alt="Orpat OEH-1220 2000-Watt Fan Heater (White)" title="Orpat OEH-1220 2000-Watt Fan Heater (White)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00B7GHQQW.html" title="Orpat OEH-1220 2000-Watt Fan Heater (White)" class="shop-title-value">Orpat OEH-1220 2000-Watt Fan Heater (White)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,121</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,295</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-frog-and-the-scorpion.html">
+            The Frog and the Scorpion
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">57% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00J4JKOX6.html" title="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band"><img data-src="https://m.media-amazon.com/images/I/81OTEKiXIML._UY879_.jpg" class="img-fluid lazy" alt="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band" title="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00J4JKOX6.html" title="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band" class="shop-title-value">Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>14,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>35,000</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/firaq-gorakhpuri.html">
+            Firaq Gorakhpuri
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">22% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DBHYTM2X.html" title="OnePlus Buds Pro 3 Bluetooth TWS in-Ear Buds - Dual Drivers, Dual DACs, Dynaudio EQs, Up to 50dB Adaptive Noise Cancellation, Up to 43Hrs Battery [Lunar Radiance]"><img data-src="https://m.media-amazon.com/images/I/61dVOVxHn3L._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Buds Pro 3 Bluetooth TWS in-Ear Buds - Dual Drivers, Dual DACs, Dynaudio EQs, Up to 50dB Adaptive Noise Cancellation, Up to 43Hrs Battery [Lunar Radiance]" title="OnePlus Buds Pro 3 Bluetooth TWS in-Ear Buds - Dual Drivers, Dual DACs, Dynaudio EQs, Up to 50dB Adaptive Noise Cancellation, Up to 43Hrs Battery [Lunar Radiance]" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DBHYTM2X.html" title="OnePlus Buds Pro 3 Bluetooth TWS in-Ear Buds - Dual Drivers, Dual DACs, Dynaudio EQs, Up to 50dB Adaptive Noise Cancellation, Up to 43Hrs Battery [Lunar Radiance]" class="shop-title-value">OnePlus Buds Pro 3 Bluetooth TWS in-Ear Buds - Dual Drivers, Dual DACs, Dynaudio EQs, Up to 50dB Adaptive Noise Cancellation, Up to 43Hrs Battery [Lunar Radiance]</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>10,989</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>13,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">34% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CHBFT3F4.html" title="FOLELLO Professional Makeup Organizer Box, Vanity Box for Women, Vent Hair Styling Brush, Round Hair Brush, Makeup Brush Set, Paddle Hair Brush, Comb Cleaner, Hair Comb for Women"><img data-src="https://m.media-amazon.com/images/I/71ayp5eYv+L._SX679_.jpg" class="img-fluid lazy" alt="FOLELLO Professional Makeup Organizer Box, Vanity Box for Women, Vent Hair Styling Brush, Round Hair Brush, Makeup Brush Set, Paddle Hair Brush, Comb Cleaner, Hair Comb for Women" title="FOLELLO Professional Makeup Organizer Box, Vanity Box for Women, Vent Hair Styling Brush, Round Hair Brush, Makeup Brush Set, Paddle Hair Brush, Comb Cleaner, Hair Comb for Women" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CHBFT3F4.html" title="FOLELLO Professional Makeup Organizer Box, Vanity Box for Women, Vent Hair Styling Brush, Round Hair Brush, Makeup Brush Set, Paddle Hair Brush, Comb Cleaner, Hair Comb for Women" class="shop-title-value">FOLELLO Professional Makeup Organizer Box, Vanity Box for Women, Vent Hair Styling Brush, Round Hair Brush, Makeup Brush Set, Paddle Hair Brush, Comb Cleaner, Hair Comb for Women</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>6,175</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>9,313</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">15% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]"><img data-src="https://m.media-amazon.com/images/I/61tslaYWLjL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" class="shop-title-value">OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>40,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>47,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">57% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08CFJBZRK.html" title="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts"><img data-src="https://m.media-amazon.com/images/I/61JOzccwTCL._SX679_.jpg" class="img-fluid lazy" alt="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts" title="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08CFJBZRK.html" title="Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts" class="shop-title-value">Prestige Iris Plus 750 W Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar) 4 Super Efficient Stainless Blades 2 Years Warranty Black, 750 watts</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>6,295</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">77% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09DVZST2V.html" title="Urban Terrain UT1000 Steel Cycle/Bicycle 27.5 inch MTB (21 Speed) Gear Bicycle For Men/Boys With Front Suspension &amp; Disc Brake Mountain Bike | Ideal for 15+ Years, Frame Size : 16 inch (Black)"><img data-src="https://m.media-amazon.com/images/I/61UbexhYzKL._SX679_.jpg" class="img-fluid lazy" alt="Urban Terrain UT1000 Steel Cycle/Bicycle 27.5 inch MTB (21 Speed) Gear Bicycle For Men/Boys With Front Suspension &amp; Disc Brake Mountain Bike | Ideal for 15+ Years, Frame Size : 16 inch (Black)" title="Urban Terrain UT1000 Steel Cycle/Bicycle 27.5 inch MTB (21 Speed) Gear Bicycle For Men/Boys With Front Suspension &amp; Disc Brake Mountain Bike | Ideal for 15+ Years, Frame Size : 16 inch (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09DVZST2V.html" title="Urban Terrain UT1000 Steel Cycle/Bicycle 27.5 inch MTB (21 Speed) Gear Bicycle For Men/Boys With Front Suspension &amp; Disc Brake Mountain Bike | Ideal for 15+ Years, Frame Size : 16 inch (Black)" class="shop-title-value">Urban Terrain UT1000 Steel Cycle/Bicycle 27.5 inch MTB (21 Speed) Gear Bicycle For Men/Boys With Front Suspension &amp; Disc Brake Mountain Bike | Ideal for 15+ Years, Frame Size : 16 inch (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>11,599</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>49,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/bangalore.html" title="Bangalore" aria-label="Bangalore">Bangalore</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Code Profiling and Performance Optimization of an Existing PHP Project</title>
+			<link>https://peoplesblog.co.in/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html</link>
+			<description>As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices that help developers identify bottlenecks and improve the efficiency of their PHP applications.  In this article, we will explore the tools and techniques for code profiling and performance optimization in PHP 8.  What is Code Profiling?  Code profi</description>
+			<pubDate>Wed, 13 Nov 2024 08:36:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html</guid>
+    </item><item>
 			<title>Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding</title>
 			<link>https://peoplesblog.co.in/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html</link>
 			<description>Object-Oriented Programming (OOP) is a programming paradigm that uses objects and classes to design and structure code. PHP, especially in its latest iteration, PHP 8, provides several advanced OOP features that enhance its capabilities and allow for more robust and maintainable code.  In this article, we will explore three advanced OOP features in PHP 8: final classes, magic methods, and late sta</description>
@@ -348,13 +355,6 @@
 			<pubDate>Fri, 22 Mar 2024 08:30:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/leaf-chromatography-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Seed Germination science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/seed-germination-science-experiment-for-children.html</link>
-			<description>Germination experiment is a wonderful way to teach children about plant life cycles and the process of seed germination.  Here&amp;#39;s a simple experiment that can be done at home:  Materials:   Seeds (e.g., bean seeds, sunflower seeds, or radish seeds) Small containers or pots Potting soil Water Plastic wrap or a clear plastic bag Labels or markers for labeling      (adsbygoogle = window.adsbygoogl</description>
-			<pubDate>Mon, 18 Mar 2024 17:50:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/seed-germination-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>
