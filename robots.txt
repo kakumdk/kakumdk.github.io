@@ -1348,6 +1348,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/tribal-leaders-ignored-by-congress-change-came-after-modi-became-pm-scindia.html
+Allow: /news/haryana-students-learn-to-make-bomb-from-youtube-detonate-under-teachers-chair.html
+Allow: /news/htls-2024-jaishankar-says-lac-disengagement-must-lead-to-deescalation.html
+Allow: /news/manipur-protesters-storm-home-of-cm-biren-singh-other-ministers-after-body-of-2-women-child-found.html
 Allow: /news/india-backs-early-ceasefire-in-gaza-jaishankar-at-meeting-with-saudi-arabia.html
 Allow: /news/article-370-won-t-be-restored-even-if-indira-gandhi-returns-from-heaven-amit-shah.html
 Allow: /news/chennai-man-calmly-walks-away-after-stabbing-doctor-wipes-knife-caught-on-camera.html
