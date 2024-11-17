@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code</title>
+			<link>https://peoplesblog.co.in/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html</link>
+			<description>In this article, we will enhance the product catalog microservice we built earlier by integrating Xdebug for profiling, specifically tailored for development in Visual Studio Code (VS Code). We will include detailed setup instructions, ensuring a smooth experience while profiling your application.  Overview  Key Components   PHP 8: The programming language for our microservice. MySQL: The database</description>
+			<pubDate>Sun, 17 Nov 2024 08:12:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html</guid>
+    </item><item>
 			<title>Code Profiling and Performance Optimization of an Existing PHP Project</title>
 			<link>https://peoplesblog.co.in/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html</link>
 			<description>As applications grow in complexity, ensuring optimal performance becomes critical. Code profiling and performance optimization are essential practices that help developers identify bottlenecks and improve the efficiency of their PHP applications.  In this article, we will explore the tools and techniques for code profiling and performance optimization in PHP 8.  What is Code Profiling?  Code profi</description>

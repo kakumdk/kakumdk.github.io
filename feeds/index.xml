@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code</title>
+    <link>https://peoplesblog.co.in/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html</link>
+    <description>In this article, we will enhance the product catalog microservice we built earlier by integrating Xdebug for profiling, specifically tailored for development in Visual Studio Code (VS Code). We will include detailed setup instructions, ensuring a smooth experience while profiling your application.  Overview  Key Components   PHP 8: The programming language for our microservice. MySQL: The database</description>
+    <pubDate>Sun, 17 Nov 2024 08:12:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html</guid>
+  </item><item>
     <title>Reasons to Hang Eucalyptus in Your Shower</title>
     <link>https://peoplesblog.co.in/articles/reasons-to-hang-eucalyptus-in-your-shower.html</link>
     <description>Hanging eucalyptus in your shower has become a popular practice, not only because it adds a touch of natural beauty but because it offers a wide range of health and wellness benefits. Eucalyptus, a plant known for its distinctive aroma and healing properties, has been used for centuries in traditional medicine to relieve respiratory issues, promote relaxation, and improve overall well-being.  Here</description>
