@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes</title>
+			<link>https://peoplesblog.co.in/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html</link>
+			<description>Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implement and utilize common data structures like Stacks, Queues, and Linked Lists will make you a more proficient PHP developer. PHP 8 provides a range of options, from manual implementations to built-in SPL (Standard PHP Library) classes that offer high pe</description>
+			<pubDate>Thu, 21 Nov 2024 07:59:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html</guid>
+    </item><item>
 			<title>Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code</title>
 			<link>https://peoplesblog.co.in/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html</link>
 			<description>In this article, we will enhance the product catalog microservice we built earlier by integrating Xdebug for profiling, specifically tailored for development in Visual Studio Code (VS Code). We will include detailed setup instructions, ensuring a smooth experience while profiling your application.  Overview  Key Components   PHP 8: The programming language for our microservice. MySQL: The database</description>

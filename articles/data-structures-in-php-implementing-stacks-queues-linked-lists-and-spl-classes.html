@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and</title>
+    <meta name="description" content="Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implemen" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html" />
+    <meta property="og:title" content="Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and" />
+    <meta property="og:description" content="Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implemen" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and" />
+    <meta name="twitter:description" content="Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implemen" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html"
+        },
+        "headline": "Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes",
+        "description": "Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implemen",
+        "image": "https://peoplesblog.co.in/upload/banners/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "21st Nov 2024",
+        "dateModified": "2024-11-21T08:00:11+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes" data-src="/upload/banners/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes" />
+                                </div>
+                                <h1 class="read-article-title">Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>21st Nov 2024</span>, <span class="last-updated">2024-11-21T08:00:11+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implement and utilize common data structures like <strong>Stacks</strong>, <strong>Queues</strong>, and <strong>Linked Lists</strong> will make you a more proficient PHP developer. PHP 8 provides a range of options, from manual implementations to built-in SPL (Standard PHP Library) classes that offer high performance and easy integration into your projects.</p>  <p>In this article, we&#39;ll explore how to implement basic data structures in PHP 8 and how to leverage PHP&rsquo;s SPL classes for enhanced functionality.</p>  <h2>1. Introduction to Data Structures in PHP</h2>  <ul> <li>Data structures are ways of organizing and storing data so that they can be accessed and modified efficiently.</li> <li>By understanding the strengths and weaknesses of various data structures, developers can optimize their code for performance and readability.</li> </ul>  <p>In PHP 8, developers can choose between building their own data structures or using the built-in SPL classes.</p>  <p>Let&#39;s start with manual implementations for three common data structures: <strong>Stacks</strong>, <strong>Queues</strong>, and <strong>Linked Lists</strong>.</p>  <h2>2. Implementing Stacks in PHP</h2>  <p>A <strong>stack</strong> is a simple data structure that follows the <strong>Last In, First Out (LIFO)</strong> principle. The last element pushed onto the stack is the first to be popped out.</p>  <p><strong>Stack Operations:</strong></p>  <ul> <li><tt>push()</tt>: Add an element to the top of the stack.</li> <li><tt>pop()</tt>: Remove and return the top element.</li> <li><tt>peek()</tt>: View the top element without removing it.</li> <li><tt>isEmpty()</tt>: Check if the stack is empty.</li> </ul>  <p><strong>Manual Implementation:</strong></p>  <p><code>class Stack {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private $stack = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function push($item) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array_push($this-&gt;stack, $item);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function pop() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!$this-&gt;isEmpty()) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return array_pop($this-&gt;stack);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null; // Stack is empty</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function peek() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return end($this-&gt;stack);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function isEmpty() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return empty($this-&gt;stack);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>$stack = new Stack();</code></p>  <p><code>$stack-&gt;push(1);</code></p>  <p><code>$stack-&gt;push(2);</code></p>  <p><code>echo $stack-&gt;pop(); // 2</code></p>  <p><code>echo $stack-&gt;peek(); // 1</code></p>  <p><strong>SPL Stack Implementation:</strong></p>  <p>PHP offers a built-in stack class <tt>SplStack</tt> in the SPL library:</p>  <p><code>$stack = new SplStack();</code></p>  <p><code>$stack-&gt;push(1);</code></p>  <p><code>$stack-&gt;push(2);</code></p>  <p><code>echo $stack-&gt;pop(); // 2</code></p>  <p><code>echo $stack-&gt;top(); // 1</code></p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>3. Implementing Queues in PHP</h2>  <p>A <strong>queue</strong> is a data structure that follows the <strong>First In, First Out (FIFO)</strong> principle. The first element added to the queue will be the first to be removed.</p>  <p><strong>Queue Operations:</strong></p>  <ul> <li><tt>enqueue()</tt>: Add an element to the back of the queue.</li> <li><tt>dequeue()</tt>: Remove and return the front element.</li> <li><tt>peek()</tt>: View the front element without removing it.</li> <li><tt>isEmpty()</tt>: Check if the queue is empty.</li> </ul>  <p><strong>Manual Implementation:</strong></p>  <p><code>class Queue {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private $queue = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function enqueue($item) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array_push($this-&gt;queue, $item);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function dequeue() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!$this-&gt;isEmpty()) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return array_shift($this-&gt;queue);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return null; // Queue is empty</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function peek() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return reset($this-&gt;queue);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function isEmpty() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return empty($this-&gt;queue);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>$queue = new Queue();</code></p>  <p><code>$queue-&gt;enqueue(1);</code></p>  <p><code>$queue-&gt;enqueue(2);</code></p>  <p><code>echo $queue-&gt;dequeue(); // 1</code></p>  <p><code>echo $queue-&gt;peek(); // 2</code></p>  <p><strong>SPL Queue Implementation:</strong></p>  <p>PHP&rsquo;s <tt>SplQueue</tt> class implements a queue with optimized methods:</p>  <p><code>$queue = new SplQueue();</code></p>  <p><code>$queue-&gt;enqueue(1);</code></p>  <p><code>$queue-&gt;enqueue(2);</code></p>  <p><code>echo $queue-&gt;dequeue(); // 1</code></p>  <p><code>echo $queue-&gt;bottom(); // 2</code></p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>4. Implementing Linked Lists in PHP</h2>  <p>A <strong>linked list</strong> is a collection of nodes, where each node contains data and a reference to the next node. Linked lists can be singly or doubly linked, depending on whether nodes have a reference to the next node only or both the next and previous nodes.</p>  <p><strong>Linked List Operations:</strong></p>  <ul> <li><tt>insert()</tt>: Add a new node.</li> <li><tt>delete()</tt>: Remove a node.</li> <li><tt>traverse()</tt>: Iterate over the nodes.</li> </ul>  <p><strong>Manual Implementation (Singly Linked List):</strong></p>  <p><code>class Node {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public $data;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public $next;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct($data) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;data = $data;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;next = null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>class LinkedList {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private $head;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function __construct() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;head = null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function insert($data) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$newNode = new Node($data);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$newNode-&gt;next = $this-&gt;head;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;head = $newNode;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function delete($data) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$current = $this-&gt;head;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$previous = null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ($current !== null &amp;&amp; $current-&gt;data !== $data) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$previous = $current;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$current = $current-&gt;next;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($current !== null) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($previous === null) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;head = $current-&gt;next;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$previous-&gt;next = $current-&gt;next;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function traverse() {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$current = $this-&gt;head;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ($current !== null) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $current-&gt;data . &#39; &#39;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$current = $current-&gt;next;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><code>$list = new LinkedList();</code></p>  <p><code>$list-&gt;insert(1);</code></p>  <p><code>$list-&gt;insert(2);</code></p>  <p><code>$list-&gt;insert(3);</code></p>  <p><code>$list-&gt;traverse(); // 3 2 1</code></p>  <p><code>$list-&gt;delete(2);</code></p>  <p><code>$list-&gt;traverse(); // 3 1</code></p>  <p><strong>SPL Doubly Linked List Implementation:</strong></p>  <p>The <tt>SplDoublyLinkedList</tt> class in PHP provides an easy way to manage linked lists with both forward and backward traversal:</p>  <p><code>$list = new SplDoublyLinkedList();</code></p>  <p><code>$list-&gt;push(1);</code></p>  <p><code>$list-&gt;push(2);</code></p>  <p><code>$list-&gt;push(3);</code></p>  <p><code>$list-&gt;rewind(); // Reset pointer to the first element</code></p>  <p><code>echo $list-&gt;current(); // 1</code></p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>5. Using PHP&#39;s SPL Data Structures</h2>  <p>PHP&rsquo;s SPL extension provides several useful built-in data structures that are highly optimized for performance. Let&rsquo;s take a quick look at the most popular SPL classes for handling data structures.</p>  <ul> <li><tt>SplStack</tt><strong>:</strong>&nbsp;PHP&rsquo;s built-in stack class that provides methods like <tt>push()</tt>, <tt>pop()</tt>, and <tt>top()</tt>.</li> <li><tt>SplQueue</tt><strong>:</strong>&nbsp;An optimized queue implementation with methods such as <tt>enqueue()</tt>, <tt>dequeue()</tt>, and <tt>bottom()</tt>.</li> <li><tt>SplDoublyLinkedList</tt><strong>:</strong>&nbsp;A doubly linked list class that supports both forward and backward traversal using methods like <tt>push()</tt>, <tt>pop()</tt>, <tt>rewind()</tt>, and <tt>current()</tt>.</li> <li><tt>SplHeap</tt><strong>:</strong>&nbsp;A heap class useful for creating priority queues.</li> <li><tt>SplFixedArray</tt><strong>:</strong>&nbsp;A fixed-size array class that can be used for efficient memory management when the size of the array is known in advance.</li> </ul>  <h2>6. Conclusion</h2>  <p>In PHP 8, understanding and utilizing common data structures like <strong>Stacks</strong>, <strong>Queues</strong>, and <strong>Linked Lists</strong> is vital for writing efficient and scalable code. While you can implement these structures manually for more flexibility, PHP&rsquo;s <strong>SPL classes</strong> provide highly optimized and easy-to-use alternatives that save time and effort.</p>  <p>By mastering these data structures and knowing when to use each one, you can significantly improve the performance and maintainability of your PHP applications. Whether you build your own or leverage SPL, the right data structure can make all the difference in solving problems efficiently.</p>  <p>By implementing these data structures and understanding their use cases, you&rsquo;ll become more adept at solving complex problems with PHP. Whether you&#39;re building a small application or a large-scale system, these foundational concepts will serve you well in your development journey.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)"><img data-src="https://m.media-amazon.com/images/I/81BENnbPpuL._SX679_.jpg" class="img-fluid lazy" alt="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D3DZ1SPM.html" title="Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)" class="shop-title-value">Sony BRAVIA 2 Series 108 cm (43 inches) 4K Ultra HD Smart LED Google TV K-43S20B (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>39,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>59,900</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09FSMN8QS.html" title="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue"><img data-src="https://m.media-amazon.com/images/I/71zj7ULiR+L._SX679_.jpg" class="img-fluid lazy" alt="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue" title="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09FSMN8QS.html" title="SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue" class="shop-title-value">SOPL-OLIVEWARE Teso Pro Lunch Box with Steel Cutlery, 3 Microwave Safe Inside Steel Containers with BPA free Lids(290ml, 450ml &amp; 600ml), Plastic Pickle Box(130ml), Steel Water Bottle(750ml) - Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,950</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">48% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CH33945T.html" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)"><img data-src="https://m.media-amazon.com/images/I/61T5drqfafL._SX679_.jpg" class="img-fluid lazy" alt="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CH33945T.html" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" class="shop-title-value">MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>22,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>42,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html" title="Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.jpeg" alt="Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code" title="Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html" title="Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code">
+                                <span class="title">Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div><div class="article">
+                <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+                  Code Profiling and Performance Optimization of an Existing PHP Project
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+                  Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+                  Implementing a Redis Cache for Product Catalog Data in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+                  Introduction to Caching and Setting Up Redis in PHP 8
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+                  Implementing a Notification System Using the Observer Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+                  When and How to Use Each Design Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+                  Implementing a Logger System Using the Singleton Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+                  Implementing Design Patterns in Real-World PHP Applications
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BT9CXXXX.html" title="Samsung Galaxy S23 Ultra 5G AI Smartphone (Green, 12GB, 256GB Storage)"><img data-src="https://m.media-amazon.com/images/I/71lD7eGdW-L._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S23 Ultra 5G AI Smartphone (Green, 12GB, 256GB Storage)" title="Samsung Galaxy S23 Ultra 5G AI Smartphone (Green, 12GB, 256GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BT9CXXXX.html" title="Samsung Galaxy S23 Ultra 5G AI Smartphone (Green, 12GB, 256GB Storage)" class="shop-title-value">Samsung Galaxy S23 Ultra 5G AI Smartphone (Green, 12GB, 256GB Storage)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>74,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,49,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/origami-geometry-science-experiment-for-children.html">
+            Origami Geometry, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+            When and How to Use Each Design Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-vedic-gods-and-their-attributes.html">
+            The Vedic Gods and Their Attributes
+          </a>
+        </div><div class="article">
+          <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+            Implementing a Logger System Using the Singleton Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+            Implementing Design Patterns in Real-World PHP Applications
+          </a>
+        </div><div class="article">
+          <a href="/articles/working-out-at-this-time-can-help-manage-blood-sugar.html">
+            Working out at this time can help manage blood sugar
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-design-patterns-factory-singleton-and-dependency-injection.html">
+            Introduction to Design Patterns: Factory, Singleton and Dependency Injection
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sql-query-execution-plans-and-optimizing-joins.html">
+            Understanding SQL Query Execution Plans and Optimizing Joins
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-a-cucumber-mint-cooler.html">
+            How to prepare a Cucumber Mint Cooler?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">57% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00J4JKOX6.html" title="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band"><img data-src="https://m.media-amazon.com/images/I/81OTEKiXIML._UY879_.jpg" class="img-fluid lazy" alt="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band" title="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00J4JKOX6.html" title="Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band" class="shop-title-value">Invicta Stainless Steel Pro-Diver Analog Black Dial Men Watch-8927Ob, Multi-Color Band</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>14,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>35,000</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07RTJV6G4.html" title="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White"><img data-src="https://m.media-amazon.com/images/I/812cAYtIJkL._SX679_.jpg" class="img-fluid lazy" alt="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White" title="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07RTJV6G4.html" title="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White" class="shop-title-value">amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>539</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,200</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-frog-and-the-scorpion.html">
+            The Frog and the Scorpion
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch"><img data-src="https://m.media-amazon.com/images/I/71uba-37tOL._SY879_.jpg" class="img-fluid lazy" alt="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" class="shop-title-value">The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/firaq-gorakhpuri.html">
+            Firaq Gorakhpuri
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">36% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08151RD5R.html" title="Cinagro Plants Drip Irrigation Kit (150 Plants Kit) Watering Kit for Home Garden, Farming &amp; Agriculture Purposes"><img data-src="https://m.media-amazon.com/images/I/71JTGf96YaL._SX679_.jpg" class="img-fluid lazy" alt="Cinagro Plants Drip Irrigation Kit (150 Plants Kit) Watering Kit for Home Garden, Farming &amp; Agriculture Purposes" title="Cinagro Plants Drip Irrigation Kit (150 Plants Kit) Watering Kit for Home Garden, Farming &amp; Agriculture Purposes" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08151RD5R.html" title="Cinagro Plants Drip Irrigation Kit (150 Plants Kit) Watering Kit for Home Garden, Farming &amp; Agriculture Purposes" class="shop-title-value">Cinagro Plants Drip Irrigation Kit (150 Plants Kit) Watering Kit for Home Garden, Farming &amp; Agriculture Purposes</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,599</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07RTJV6G4.html" title="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White"><img data-src="https://m.media-amazon.com/images/I/812cAYtIJkL._SX679_.jpg" class="img-fluid lazy" alt="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White" title="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07RTJV6G4.html" title="amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White" class="shop-title-value">amazon basics Vacuum Compression Storage Bags With Hand Pump-Medium,5-Pack,Plastic,White</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>539</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,200</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07FJNNZCJ.html" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black"><img data-src="https://m.media-amazon.com/images/I/51IJhnm6slL._SX522_.jpg" class="img-fluid lazy" alt="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07FJNNZCJ.html" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" class="shop-title-value">V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>7,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>14,649</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">38% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BK1KS6ZD.html" title="Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, Triple Display, Dew Clean Technology, Coanda Airflow, 2024 Model, MTKL50U, White)"><img data-src="https://f.media-amazon.com/images/I/81QGKn2LCfL._SX679_.jpg" class="img-fluid lazy" alt="Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, Triple Display, Dew Clean Technology, Coanda Airflow, 2024 Model, MTKL50U, White)" title="Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, Triple Display, Dew Clean Technology, Coanda Airflow, 2024 Model, MTKL50U, White)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BK1KS6ZD.html" title="Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, Triple Display, Dew Clean Technology, Coanda Airflow, 2024 Model, MTKL50U, White)" class="shop-title-value">Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter, Triple Display, Dew Clean Technology, Coanda Airflow, 2024 Model, MTKL50U, White)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>35,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>58,400</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BW8LLKFB.html" title="Amazon Brand - Solimo Synthetic Collage Photo Frame Set of 12 (4x6 Inch-6, 5x7 Inch-1, 6x8 Inch-2, 8x10 Inch-3) - Black Rectangular, Wall Mount"><img data-src="https://m.media-amazon.com/images/I/71F429qUQZL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Synthetic Collage Photo Frame Set of 12 (4x6 Inch-6, 5x7 Inch-1, 6x8 Inch-2, 8x10 Inch-3) - Black Rectangular, Wall Mount" title="Amazon Brand - Solimo Synthetic Collage Photo Frame Set of 12 (4x6 Inch-6, 5x7 Inch-1, 6x8 Inch-2, 8x10 Inch-3) - Black Rectangular, Wall Mount" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BW8LLKFB.html" title="Amazon Brand - Solimo Synthetic Collage Photo Frame Set of 12 (4x6 Inch-6, 5x7 Inch-1, 6x8 Inch-2, 8x10 Inch-3) - Black Rectangular, Wall Mount" class="shop-title-value">Amazon Brand - Solimo Synthetic Collage Photo Frame Set of 12 (4x6 Inch-6, 5x7 Inch-1, 6x8 Inch-2, 8x10 Inch-3) - Black Rectangular, Wall Mount</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,079</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,899</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/bangalore.html" title="Bangalore" aria-label="Bangalore">Bangalore</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
