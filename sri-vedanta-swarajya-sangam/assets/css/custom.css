@@ -1,9 +1,12 @@
+body {
+    font-family: var(--bs-body-font-family);
+}
 .header {
     padding: 0;
     height: 100px;
 }
 .header .logo img {
-    max-height: 75px;
+    max-height: 50px;
 }
 .hero:before {
     background: color-mix(in srgb, var(--background-color), transparent 50%);
@@ -163,8 +166,34 @@
 .spiritual-practices .section-title.c-section-title h4 span {
     font-weight: 600;
 }
-
-
+.header .menu-link {
+    color: var(--nav-hover-color);
+    font-size: 15px;
+    padding: 0 2px;
+    font-family: var(--nav-font);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    position: relative;
+    white-space: nowrap;
+    padding-bottom: 4px;
+}
+.header .menu-link:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease-in-out 0s;
+    visibility: visible;
+    width: 100%;
+}
+.mobile-nav-toggle {
+    display: block;
+}
 
 @media (min-width: 600px) {
     .header .logo img {
