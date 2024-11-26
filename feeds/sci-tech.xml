@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees</title>
+			<link>https://peoplesblog.co.in/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html</link>
+			<description>Sorting and searching are foundational operations in computer science. Understanding the efficient algorithms for these tasks can significantly enhance the performance of your applications.  In this article, we&amp;rsquo;ll explore three advanced sorting algorithms &amp;mdash; Quick Sort, Merge Sort, and Heap Sort &amp;mdash; and dive into implementing Binary Search Trees (BST) in PHP 8.  We&amp;rsquo;ll include </description>
+			<pubDate>Tue, 26 Nov 2024 07:53:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html</guid>
+    </item><item>
 			<title>Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes</title>
 			<link>https://peoplesblog.co.in/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html</link>
 			<description>Data structures are an integral part of programming, offering efficient ways to store and organize data. As PHP evolves, understanding how to implement and utilize common data structures like Stacks, Queues, and Linked Lists will make you a more proficient PHP developer. PHP 8 provides a range of options, from manual implementations to built-in SPL (Standard PHP Library) classes that offer high pe</description>
@@ -348,13 +355,6 @@
 			<pubDate>Mon, 08 Apr 2024 08:02:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/build-a-worm-farm-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Gummy Bear Osmosis, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/gummy-bear-osmosis-science-experiment-for-children.html</link>
-			<description>The Gummy Bear Osmosis experiment is a simple and engaging way to demonstrate the concept of osmosis, which is the movement of water across a selectively permeable membrane.  Here&amp;#39;s a step-by-step guide:  Materials:   Gummy bears (different colors if possible) Water Salt Clear cups or containers Tablespoon Timer or clock Paper and pen for recording observations      (adsbygoogle = window.adsby</description>
-			<pubDate>Wed, 03 Apr 2024 19:31:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/gummy-bear-osmosis-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>
