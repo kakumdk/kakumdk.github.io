@@ -1993,6 +1993,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/how-to-prevent-bad-breath-naturally.html
 Allow: /articles/navigating-the-challenges-of-dental-care-for-individuals-with-disabilities.html
 Allow: /articles/the-connection-between-oral-health-and-digestive-health.html
 Allow: /articles/understanding-the-need-for-dental-sealants.html
