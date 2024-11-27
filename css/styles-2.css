@@ -2753,6 +2753,13 @@ button#play-truth-dare-next {
     border: 1px solid transparent;
     border-radius: 0.25rem;
 }
+.our-work .client {
+    border: 1px solid #e7ebed;
+    border-radius: 5px;
+}
+.our-work .client img {
+    border-radius: 5px;
+}
 
 
 

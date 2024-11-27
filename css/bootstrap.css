@@ -6154,6 +6154,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 .border-left-0 {
   border-left: 0 !important;
 }
+.border{border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important}
 
 .rounded {
   border-radius: 0.25rem;
