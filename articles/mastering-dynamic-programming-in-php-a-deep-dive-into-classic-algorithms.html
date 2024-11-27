@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorit</title>
+    <meta name="description" content="Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly use" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html" />
+    <meta property="og:title" content="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorit" />
+    <meta property="og:description" content="Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly use" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorit" />
+    <meta name="twitter:description" content="Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly use" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html"
+        },
+        "headline": "Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms",
+        "description": "Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly use",
+        "image": "https://peoplesblog.co.in/upload/banners/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "27th Nov 2024",
+        "dateModified": "2024-11-27T07:25:58+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms" data-src="/upload/banners/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms" />
+                                </div>
+                                <h1 class="read-article-title">Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>27th Nov 2024</span>, <span class="last-updated">2024-11-27T07:25:58+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly useful for optimization problems, where the goal is to find the best solution under given constraints. DP is often seen in algorithms that require making decisions at multiple steps, where solutions to subproblems are reused to avoid redundant calculations.</p>  <p>In this article, we will explore the fundamentals of Dynamic Programming in PHP 8, discuss key concepts, and solve some classic problems like the <em>Knapsack Problem</em> and <em>Longest Common Subsequence</em> (LCS). We will also provide working PHP code to demonstrate these concepts.</p>  <h2>What is Dynamic Programming?</h2>  <p>Dynamic Programming is a method for solving problems by dividing them into smaller, manageable subproblems. It is a bottom-up approach where you solve subproblems first and use their solutions to build up the final answer. DP typically involves two main techniques:</p>  <ol> <li><strong>Memoization (Top-Down Approach):</strong> Storing the results of already solved subproblems in a cache (usually an array) to avoid redundant work.</li> <li><strong>Tabulation (Bottom-Up Approach):</strong> Solving the problem iteratively by filling up a table with solutions to subproblems in a systematic manner.</li> </ol>  <p>Dynamic Programming is applied to problems where:</p>  <ul> <li>Overlapping subproblems exist.</li> <li>Optimal substructure is present, meaning the optimal solution to the overall problem can be constructed from optimal solutions to subproblems.</li> </ul>  <p><strong>Key Concepts in Dynamic Programming</strong></p>  <ol> <li><strong>Overlapping Subproblems:</strong> This occurs when the problem can be divided into smaller subproblems that are solved multiple times. By solving each subproblem once and storing the results, we can improve efficiency.</li> <li><strong>Optimal Substructure:</strong> This means that the solution to the overall problem can be constructed from the solutions to its subproblems. If a problem does not have this property, Dynamic Programming is not applicable.</li> <li><strong>State Representation:</strong> This is the way you represent the problem&#39;s state, typically through an array or matrix. The state transitions represent how you can move from one state to another by taking an action.</li> </ol>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>Solving Classic DP Problems</h2>  <p>Now, let&rsquo;s solve some classic DP problems to better understand the technique.</p>  <p><strong>1. The Knapsack Problem</strong></p>  <ul> <li><strong>Problem Description:&nbsp;</strong>Given a set of items, each with a weight and a value, determine the maximum value you can carry in a knapsack with a fixed capacity.  <ul> <li><em>Items:</em> Each item has a value and weight.</li> <li><em>Knapsack capacity:</em> The maximum weight the knapsack can carry.</li> </ul> </li> <li><strong>Goal:</strong> Maximize the total value in the knapsack without exceeding the capacity.</li> <li><strong>Solution Approach:</strong> <ul> <li>We can use DP to solve this problem.</li> <li>The idea is to maintain a table where each entry <tt>dp[i][w]</tt> represents the maximum value that can be attained with the first <tt>i</tt> items and a knapsack capacity of <tt>w</tt>.</li> </ul> </li> </ul>  <p><strong>PHP Code for the Knapsack Problem:</strong></p>  <p><code>function knapsack($weights, $values, $capacity) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$n = count($weights);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$dp = array_fill(0, $n + 1, array_fill(0, $capacity + 1, 0));</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Build the DP table</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;for ($i = 1; $i &lt;= $n; $i++) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for ($w = 1; $w &lt;= $capacity; $w++) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($weights[$i - 1] &lt;= $w) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dp[$i][$w] = max($values[$i - 1] + $dp[$i - 1][$w - $weights[$i - 1]], $dp[$i - 1][$w]);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dp[$i][$w] = $dp[$i - 1][$w];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;return $dp[$n][$capacity];</code></p>  <p><code>}</code></p>  <p><code>// Example usage</code></p>  <p><code>$weights = [2, 3, 4, 5];</code></p>  <p><code>$values = [3, 4, 5, 6];</code></p>  <p><code>$capacity = 5;</code></p>  <p><code>echo &quot;Maximum value: &quot; . knapsack($weights, $values, $capacity);</code></p>  <p><strong>Explanation:</strong></p>  <ul> <li>We first initialize a DP table <tt>dp[i][w]</tt> where <tt>i</tt> represents the number of items considered and w represents the weight of the knapsack.</li> <li>We then iterate through the items and capacities, updating the table by either including or excluding each item.</li> <li>Finally, the answer to the problem is found at <tt>dp[n][capacity]</tt>, which contains the maximum value we can achieve with the given items and knapsack capacity.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>2. Longest Common Subsequence (LCS)</strong></p>  <ul> <li><strong>Problem Description:</strong>&nbsp;  <ul> <li>Given two sequences, find the longest subsequence common to both.</li> <li>A subsequence is a sequence that can be derived by deleting some or no elements without changing the order of the remaining elements.</li> </ul> </li> <li><strong>Solution Approach:</strong> <ul> <li>The LCS problem is a classic example of dynamic programming.</li> <li>We construct a 2D table <tt>dp[i][j]</tt> where <tt>i</tt> and <tt>j</tt> represent the indices of the two sequences.</li> <li>The value at <tt>dp[i][j]</tt> will be the length of the longest common subsequence of the first <tt>i</tt> characters of the first sequence and the first <tt>j</tt> characters of the second sequence.</li> </ul> </li> </ul>  <p><strong>PHP Code for Longest Common Subsequence:</strong></p>  <p><code>function longestCommonSubsequence($s1, $s2) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$m = strlen($s1);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$n = strlen($s2);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$dp = array_fill(0, $m + 1, array_fill(0, $n + 1, 0));</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Build the DP table</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;for ($i = 1; $i &lt;= $m; $i++) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for ($j = 1; $j &lt;= $n; $j++) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($s1[$i - 1] == $s2[$j - 1]) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dp[$i][$j] = $dp[$i - 1][$j - 1] + 1;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dp[$i][$j] = max($dp[$i - 1][$j], $dp[$i][$j - 1]);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;return $dp[$m][$n];</code></p>  <p><code>}</code></p>  <p><code>// Example usage</code></p>  <p><code>$s1 = &quot;ABCBDAB&quot;;</code></p>  <p><code>$s2 = &quot;BDCAB&quot;;</code></p>  <p><code>echo &quot;Length of Longest Common Subsequence: &quot; . longestCommonSubsequence($s1, $s2);</code></p>  <p><strong>Explanation:</strong></p>  <ul> <li>We initialize a DP table dp[i][j] where each cell stores the length of the LCS of the first i characters of s1 and the first j characters of s2.</li> <li>We then iterate through both strings, filling the DP table based on whether the characters at s1[i-1] and s2[j-1] match. If they match, the LCS length increases by 1; otherwise, we take the maximum of excluding either the current character of s1 or s2.</li> <li>The final answer is in dp[m][n], which represents the LCS length for the two strings.</li> </ul>  <h2>Conclusion</h2>  <p>Dynamic Programming is a versatile and powerful technique that optimizes recursive algorithms by storing intermediate results and solving problems in a bottom-up or top-down manner. By mastering concepts like overlapping subproblems and optimal substructure, developers can apply DP to a variety of real-world optimization problems.</p>  <p>In this article, we covered two classic DP problems, the <em>Knapsack Problem</em> and the <em>Longest Common Subsequence</em> (LCS), with complete PHP 8 implementations. These problems demonstrate the utility of Dynamic Programming in solving optimization and string-related challenges efficiently.</p>  <p>By applying these techniques, PHP developers can improve the performance of algorithms that would otherwise be inefficient for larger inputs. Keep experimenting with more DP problems to deepen your understanding and mastery of this powerful technique!</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">35% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey"><img data-src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" class="img-fluid lazy" alt="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" class="shop-title-value">Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>59,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>92,900</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">40% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C83J8YF8.html" title="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)"><img data-src="https://m.media-amazon.com/images/I/71CmKZXntgL._SX679_.jpg" class="img-fluid lazy" alt="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)" title="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C83J8YF8.html" title="LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)" class="shop-title-value">LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>42,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>71,990</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09Y65HV6N.html" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)"><img data-src="https://m.media-amazon.com/images/I/91b1B9Pjd2L._SX679_.jpg" class="img-fluid lazy" alt="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09Y65HV6N.html" title="Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)" class="shop-title-value">Samsung 214 cm (85 inches) 4K Ultra HD Smart Neo QLED TV QA85QN90BAKXXL (Titan Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,99,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>8,79,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/diy-math-board-games-science-experiment-for-children.html" title="DIY Math Board Games, science experiment for children">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/diy-math-board-games-science-experiment-for-children.jpeg" alt="DIY Math Board Games, science experiment for children" title="DIY Math Board Games, science experiment for children" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/diy-math-board-games-science-experiment-for-children.html" title="DIY Math Board Games, science experiment for children">
+                                <span class="title">DIY Math Board Games, science experiment for children</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/diy-math-board-games-science-experiment-for-children.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div><div class="article">
+                <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+                  Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+                </a>
+              </div><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div><div class="article">
+                <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+                  Code Profiling and Performance Optimization of an Existing PHP Project
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+                  Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+                  Implementing a Redis Cache for Product Catalog Data in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+                  Introduction to Caching and Setting Up Redis in PHP 8
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+                  Implementing a Notification System Using the Observer Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+                  When and How to Use Each Design Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+                  Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">20% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C7CPNNYK.html" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W"><img data-src="https://m.media-amazon.com/images/I/61ulgKbOAQL._SX679_.jpg" class="img-fluid lazy" alt="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C7CPNNYK.html" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" class="shop-title-value">Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,599.50</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,995</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+            Implementing a Notification System Using the Observer Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/origami-geometry-science-experiment-for-children.html">
+            Origami Geometry, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+            When and How to Use Each Design Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-vedic-gods-and-their-attributes.html">
+            The Vedic Gods and Their Attributes
+          </a>
+        </div><div class="article">
+          <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-logger-system-using-the-singleton-pattern-in-php.html">
+            Implementing a Logger System Using the Singleton Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-design-patterns-in-real-world-php-applications.html">
+            Implementing Design Patterns in Real-World PHP Applications
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BZY9L1LD.html" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey"><img data-src="https://m.media-amazon.com/images/I/61CclYg1tSL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BZY9L1LD.html" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" class="shop-title-value">Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>479</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,099</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">32% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CV9S9VTD.html" title="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN"><img data-src="https://m.media-amazon.com/images/I/71VG3azYMjL._SX679_.jpg" class="img-fluid lazy" alt="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN" title="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CV9S9VTD.html" title="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN" class="shop-title-value">MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>47,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>70,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-princess-and-the-frog.html">
+            The Princess and the Frog
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">37% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BF5RGZ8V.html" title="LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Display, Middle Free Silver)"><img data-src="https://m.media-amazon.com/images/I/71hNjwzeXUL._SX679_.jpg" class="img-fluid lazy" alt="LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Display, Middle Free Silver)" title="LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Display, Middle Free Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BF5RGZ8V.html" title="LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Display, Middle Free Silver)" class="shop-title-value">LG 8 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T80SKSF1Z, Waterfall Circulation, Digital Display, Middle Free Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>18,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>29,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div><div class="article">
+          <a href="/great-people/vilayat-khan.html">
+            Vilayat Khan
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BKJRHV2M.html" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)"><img data-src="https://m.media-amazon.com/images/I/51EknP3PutL._SX679_.jpg" class="img-fluid lazy" alt="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BKJRHV2M.html" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" class="shop-title-value">Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>16,349</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">69% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CJJT1BFV.html" title="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time"><img data-src="https://m.media-amazon.com/images/I/61CeRMMV7+L._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time" title="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CJJT1BFV.html" title="Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time" class="shop-title-value">Samsung Galaxy Wireless Buds FE (in Ear) (Graphite)|Powerful Active Noise Cancellation | Enriched Bass Sound | Ergonomic Design | 6-21 Hrs Play Time</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">72% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CR8NY42J.html" title="Laifen Swift High Speed Hair Dryer, 200M Negative Ions, 110000 RPM Brushless Motor, Low Noise Thermo-Controlled bundled With Magnetic Nozzle For Home And Travel with 6A Indian Small Plug (Silver Blue)"><img data-src="https://m.media-amazon.com/images/I/61jjBzfrhkL._SX679_.jpg" class="img-fluid lazy" alt="Laifen Swift High Speed Hair Dryer, 200M Negative Ions, 110000 RPM Brushless Motor, Low Noise Thermo-Controlled bundled With Magnetic Nozzle For Home And Travel with 6A Indian Small Plug (Silver Blue)" title="Laifen Swift High Speed Hair Dryer, 200M Negative Ions, 110000 RPM Brushless Motor, Low Noise Thermo-Controlled bundled With Magnetic Nozzle For Home And Travel with 6A Indian Small Plug (Silver Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CR8NY42J.html" title="Laifen Swift High Speed Hair Dryer, 200M Negative Ions, 110000 RPM Brushless Motor, Low Noise Thermo-Controlled bundled With Magnetic Nozzle For Home And Travel with 6A Indian Small Plug (Silver Blue)" class="shop-title-value">Laifen Swift High Speed Hair Dryer, 200M Negative Ions, 110000 RPM Brushless Motor, Low Noise Thermo-Controlled bundled With Magnetic Nozzle For Home And Travel with 6A Indian Small Plug (Silver Blue)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,900</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>35,500</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">70% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D7CT6PCT.html" title="SWAPKART Double Layer Soap Dispenser for Bathroom Accessories Dishwasher Liquid Holder Liquid Dispenser Pump with Sponge Holder Kitchen Sink Accessories Items(Multi Colour)"><img data-src="https://m.media-amazon.com/images/I/51HLQ46skkL._SX679_.jpg" class="img-fluid lazy" alt="SWAPKART Double Layer Soap Dispenser for Bathroom Accessories Dishwasher Liquid Holder Liquid Dispenser Pump with Sponge Holder Kitchen Sink Accessories Items(Multi Colour)" title="SWAPKART Double Layer Soap Dispenser for Bathroom Accessories Dishwasher Liquid Holder Liquid Dispenser Pump with Sponge Holder Kitchen Sink Accessories Items(Multi Colour)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D7CT6PCT.html" title="SWAPKART Double Layer Soap Dispenser for Bathroom Accessories Dishwasher Liquid Holder Liquid Dispenser Pump with Sponge Holder Kitchen Sink Accessories Items(Multi Colour)" class="shop-title-value">SWAPKART Double Layer Soap Dispenser for Bathroom Accessories Dishwasher Liquid Holder Liquid Dispenser Pump with Sponge Holder Kitchen Sink Accessories Items(Multi Colour)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>149</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>499</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">24% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B078S4P3J9.html" title="Tribit XSound Go 16W 5.0 Bluetooth Speaker with Loud Sound & Rich Bass, 24H Playtime, IPX7 Waterproof, Wireless Stereo Pairing, Type-C, Portable Wireless Speaker for Home, Outdoor, Travel (Black)"><img data-src="https://m.media-amazon.com/images/I/71BJbii7jlL._SX679_.jpg" class="img-fluid lazy" alt="Tribit XSound Go 16W 5.0 Bluetooth Speaker with Loud Sound & Rich Bass, 24H Playtime, IPX7 Waterproof, Wireless Stereo Pairing, Type-C, Portable Wireless Speaker for Home, Outdoor, Travel (Black)" title="Tribit XSound Go 16W 5.0 Bluetooth Speaker with Loud Sound & Rich Bass, 24H Playtime, IPX7 Waterproof, Wireless Stereo Pairing, Type-C, Portable Wireless Speaker for Home, Outdoor, Travel (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B078S4P3J9.html" title="Tribit XSound Go 16W 5.0 Bluetooth Speaker with Loud Sound & Rich Bass, 24H Playtime, IPX7 Waterproof, Wireless Stereo Pairing, Type-C, Portable Wireless Speaker for Home, Outdoor, Travel (Black)" class="shop-title-value">Tribit XSound Go 16W 5.0 Bluetooth Speaker with Loud Sound & Rich Bass, 24H Playtime, IPX7 Waterproof, Wireless Stereo Pairing, Type-C, Portable Wireless Speaker for Home, Outdoor, Travel (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,659</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a title="Software" href="/software/index.html">Software</a></li>                                  
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

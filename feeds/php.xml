@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms</title>
+			<link>https://peoplesblog.co.in/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html</link>
+			<description>Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly useful for optimization problems, where the goal is to find the best solution under given constraints. DP is often seen in algorithms that require making decisions at multiple steps, where solutions to subproblems are reused to avoid redundant calculati</description>
+			<pubDate>Wed, 27 Nov 2024 07:25:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html</guid>
+    </item><item>
 			<title>Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees</title>
 			<link>https://peoplesblog.co.in/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html</link>
 			<description>Sorting and searching are foundational operations in computer science. Understanding the efficient algorithms for these tasks can significantly enhance the performance of your applications.  In this article, we&amp;rsquo;ll explore three advanced sorting algorithms &amp;mdash; Quick Sort, Merge Sort, and Heap Sort &amp;mdash; and dive into implementing Binary Search Trees (BST) in PHP 8.  We&amp;rsquo;ll include </description>
