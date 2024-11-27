@@ -2804,6 +2804,7 @@ Allow: /bestproducts/products/comparisons/index.html
 Allow: /bestproducts/products/comparisons/1726113480.html
 Allow: /bestproducts/products/comparisons/1729222976.html
 Allow: /bestproducts/products/comparisons/1723692300.html
+Allow: /bestproducts/products/comparisons/1732721872.html
 Allow: /bestproducts/products/comparisons/1723805700.html
 Allow: /bestproducts/products/comparisons/1728708404.html
 Allow: /bestproducts/products/B07WDKMGWR.html
