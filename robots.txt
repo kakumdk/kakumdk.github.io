@@ -1358,6 +1358,12 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/india-suggests-funding-proposal-for-plastic-phaseout.html
+Allow: /news/indias-stand-against-inadequate-climate-finance-at-cop29.html
+Allow: /news/woman-stabbed-to-death-cops-search-for-her-boyfriend.html
+Allow: /news/mumbai-woman-duped-of-rs-3-8-crore-in-longest-digital-arrest-case-in-india-report.html
+Allow: /news/bloodred-liquid-floods-hyderabad-streets-sparks-panic-among-residents.html
+Allow: /news/sambhal-violence-autopsy-rules-out-police-firing-caused-deaths.html
 Allow: /news/karnataka-government-speeds-up-bengaluru-s-second-airport-plans-narrows-down-two-locations-report.html
 Allow: /news/karnataka-milk-federation-enters-delhi-ncr-offers-competitive-pricing-on-nandini-products.html
 Allow: /news/gautam-adani-indicted-white-house-reacts-confident-in-navigating-crisis.html
