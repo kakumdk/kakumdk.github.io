@@ -1344,6 +1344,7 @@ Allow: /quotes/tolerance.html
 Allow: /quotes/trust.html
 Allow: /quotes/truth.html
 Allow: /quotes/unity.html
+Allow: /quotes/wisdom.html
 Allow: /quotes/work.html
 Allow: /news/index.html
 Allow: /news/privacy-policy.html
