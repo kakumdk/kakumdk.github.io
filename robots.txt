@@ -2097,6 +2097,7 @@ Allow: /bestproducts/products/B0BBMSG1JW.html
 Allow: /bestproducts/products/B07QLMCXQN.html
 Allow: /bestproducts/products/B08WL2RDBD.html
 Allow: /bestproducts/products/B0DB58C6SL.html
+Allow: /bestproducts/products/B08NCGJM4R.html
 Allow: /bestproducts/products/B08FHVQ5RY.html
 Allow: /bestproducts/products/B0CQK9JPMT.html
 Allow: /bestproducts/products/B085S3TJ46.html
@@ -2181,6 +2182,7 @@ Allow: /bestproducts/products/B09XTQFFCG.html
 Allow: /bestproducts/products/B0D4DFVZK9.html
 Allow: /bestproducts/products/B00IP6C1LW.html
 Allow: /bestproducts/products/B083DYV9ZW.html
+Allow: /bestproducts/products/B0CFJZDDR6.html
 Allow: /bestproducts/products/B0B3J7Q14R.html
 Allow: /bestproducts/products/B012AU6PWY.html
 Allow: /bestproducts/products/B07WHR9ZJ9.html
@@ -2197,6 +2199,7 @@ Allow: /bestproducts/products/B0DGJ3SN2F.html
 Allow: /bestproducts/products/B0BLV1GNLN.html
 Allow: /bestproducts/products/B0CQYGF1QY.html
 Allow: /bestproducts/products/B07VCKVJKS.html
+Allow: /bestproducts/products/B0CWQY2JRZ.html
 Allow: /bestproducts/products/B0DCCCLMMV.html
 Allow: /bestproducts/products/B07KWVTY6G.html
 Allow: /bestproducts/products/B01CCGW4OE.html
@@ -2254,6 +2257,7 @@ Allow: /bestproducts/products/B08W3CB5BG.html
 Allow: /bestproducts/products/B0CMXPS1XZ.html
 Allow: /bestproducts/products/B0C497MSQN.html
 Allow: /bestproducts/products/B0D53M1ZQX.html
+Allow: /bestproducts/products/B0CR4BR36V.html
 Allow: /bestproducts/products/B0C8NWGYLQ.html
 Allow: /bestproducts/products/B0CX59SD6C.html
 Allow: /bestproducts/products/B0CHZ2X647.html
@@ -2304,6 +2308,7 @@ Allow: /bestproducts/products/reviews/B0BBMSG1JW.html
 Allow: /bestproducts/products/reviews/B07QLMCXQN.html
 Allow: /bestproducts/products/reviews/B08WL2RDBD.html
 Allow: /bestproducts/products/reviews/B0DB58C6SL.html
+Allow: /bestproducts/products/reviews/B08NCGJM4R.html
 Allow: /bestproducts/products/reviews/B08FHVQ5RY.html
 Allow: /bestproducts/products/reviews/B0CQK9JPMT.html
 Allow: /bestproducts/products/reviews/B085S3TJ46.html
@@ -2388,6 +2393,7 @@ Allow: /bestproducts/products/reviews/B09XTQFFCG.html
 Allow: /bestproducts/products/reviews/B0D4DFVZK9.html
 Allow: /bestproducts/products/reviews/B00IP6C1LW.html
 Allow: /bestproducts/products/reviews/B083DYV9ZW.html
+Allow: /bestproducts/products/reviews/B0CFJZDDR6.html
 Allow: /bestproducts/products/reviews/B0B3J7Q14R.html
 Allow: /bestproducts/products/reviews/B012AU6PWY.html
 Allow: /bestproducts/products/reviews/B07WHR9ZJ9.html
@@ -2404,6 +2410,7 @@ Allow: /bestproducts/products/reviews/B0DGJ3SN2F.html
 Allow: /bestproducts/products/reviews/B0BLV1GNLN.html
 Allow: /bestproducts/products/reviews/B0CQYGF1QY.html
 Allow: /bestproducts/products/reviews/B07VCKVJKS.html
+Allow: /bestproducts/products/reviews/B0CWQY2JRZ.html
 Allow: /bestproducts/products/reviews/B0DCCCLMMV.html
 Allow: /bestproducts/products/reviews/B07KWVTY6G.html
 Allow: /bestproducts/products/reviews/B01CCGW4OE.html
@@ -2460,6 +2467,7 @@ Allow: /bestproducts/products/reviews/B08W3CB5BG.html
 Allow: /bestproducts/products/reviews/B0CMXPS1XZ.html
 Allow: /bestproducts/products/reviews/B0C497MSQN.html
 Allow: /bestproducts/products/reviews/B0D53M1ZQX.html
+Allow: /bestproducts/products/reviews/B0CR4BR36V.html
 Allow: /bestproducts/products/reviews/B0C8NWGYLQ.html
 Allow: /bestproducts/products/reviews/B0CX59SD6C.html
 Allow: /bestproducts/products/reviews/B0CHZ2X647.html
@@ -2560,6 +2568,7 @@ Allow: /bestproducts/products/reviews/B0B573QW21.html
 Allow: /bestproducts/products/reviews/B0C4LVTTN7.html
 Allow: /bestproducts/products/reviews/B06Y6G1899.html
 Allow: /bestproducts/products/reviews/B0BMV4HY8Q.html
+Allow: /bestproducts/products/reviews/B0B46C4F1N.html
 Allow: /bestproducts/products/reviews/B0CJ6SHZFS.html
 Allow: /bestproducts/products/reviews/B07S5FBY3J.html
 Allow: /bestproducts/products/reviews/B0BN87FHBZ.html
@@ -2710,6 +2719,7 @@ Allow: /bestproducts/products/B0B573QW21.html
 Allow: /bestproducts/products/B0C4LVTTN7.html
 Allow: /bestproducts/products/B06Y6G1899.html
 Allow: /bestproducts/products/B0BMV4HY8Q.html
+Allow: /bestproducts/products/B0B46C4F1N.html
 Allow: /bestproducts/products/B0CJ6SHZFS.html
 Allow: /bestproducts/products/B07S5FBY3J.html
 Allow: /bestproducts/products/B0BN87FHBZ.html
