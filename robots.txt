@@ -550,6 +550,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-selfish-giant.html
 Allow: /quick-read/the-giant-turnip.html
 Allow: /quick-read/the-tale-of-mischievous-rabbit.html
 Allow: /quick-read/the-emperor-and-the-nightingale.html
@@ -1320,6 +1321,7 @@ Allow: /quotes/inspiration.html
 Allow: /quotes/integrity.html
 Allow: /quotes/intelligence.html
 Allow: /quotes/journey.html
+Allow: /quotes/joy.html
 Allow: /quotes/justice.html
 Allow: /quotes/kindness.html
 Allow: /quotes/knowledge.html
@@ -1340,6 +1342,7 @@ Allow: /quotes/resilience.html
 Allow: /quotes/results.html
 Allow: /quotes/self.html
 Allow: /quotes/self-reflection.html
+Allow: /quotes/sharing.html
 Allow: /quotes/society.html
 Allow: /quotes/strength.html
 Allow: /quotes/success.html
