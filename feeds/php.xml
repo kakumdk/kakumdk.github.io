@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms</title>
+			<link>https://peoplesblog.co.in/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html</link>
+			<description>Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, network analysis, and much more. In PHP 8, developers can leverage modern language features and optimized approaches to implement and optimize graph-related algorithms.  In this article, we will explore graph data structures, common graph traversals, an</description>
+			<pubDate>Thu, 28 Nov 2024 07:44:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html</guid>
+    </item><item>
 			<title>Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms</title>
 			<link>https://peoplesblog.co.in/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html</link>
 			<description>Dynamic Programming (DP) is a powerful technique used to solve complex problems by breaking them down into simpler subproblems. It is particularly useful for optimization problems, where the goal is to find the best solution under given constraints. DP is often seen in algorithms that require making decisions at multiple steps, where solutions to subproblems are reused to avoid redundant calculati</description>

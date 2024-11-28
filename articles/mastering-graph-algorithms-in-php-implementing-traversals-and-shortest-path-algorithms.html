@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mastering Graph Algorithms in PHP: Implementing Traversals and Shortes</title>
+    <meta name="description" content="Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, net" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html" />
+    <meta property="og:title" content="Mastering Graph Algorithms in PHP: Implementing Traversals and Shortes" />
+    <meta property="og:description" content="Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, net" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Mastering Graph Algorithms in PHP: Implementing Traversals and Shortes" />
+    <meta name="twitter:description" content="Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, net" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            console.log(host);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html"
+        },
+        "headline": "Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms",
+        "description": "Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, net",
+        "image": "https://peoplesblog.co.in/upload/banners/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "28th Nov 2024",
+        "dateModified": "2024-11-28T07:44:34+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/php.html">Php</a></li>
+                                    <li class="breadcrumb-item active">Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms" data-src="/upload/banners/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms" />
+                                </div>
+                                <h1 class="read-article-title">Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>28th Nov 2024</span>, <span class="last-updated">2024-11-28T07:44:34+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, network analysis, and much more. In PHP 8, developers can leverage modern language features and optimized approaches to implement and optimize graph-related algorithms.</p>  <p>In this article, we will explore graph data structures, common graph traversals, and two important shortest path algorithms: Dijkstra&rsquo;s and Bellman-Ford.</p>  <h2>Understanding Graph Data Structures</h2>  <p>A <strong>graph</strong> is a collection of nodes (vertices) connected by edges. There are two main types of graphs:</p>  <ul> <li><strong>Directed Graph</strong>: In a directed graph, the edges have a direction, meaning they go from one vertex to another.</li> <li><strong>Undirected Graph</strong>: In an undirected graph, edges don&rsquo;t have a direction; they simply connect two vertices.</li> </ul>  <p>We can represent graphs using two common methods in programming:</p>  <ol> <li><strong>Adjacency Matrix</strong>: A 2D array where each cell represents an edge between two vertices.</li> <li><strong>Adjacency List</strong>: An array of lists (or hash maps) where each vertex has a list of connected vertices.</li> </ol>  <p>In this article, we will use an <strong>adjacency list</strong> to represent graphs because it&#39;s more efficient in terms of space for sparse graphs.</p>  <p><strong>Example: Graph Representation</strong></p>  <p><code>class Graph {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private array $adjList = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Add a vertex to the graph</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function addVertex(string $vertex): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex] = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Add an edge between two vertices</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function addEdge(string $vertex1, string $vertex2): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex1][] = $vertex2;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex2][] = $vertex1; // For undirected graph</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Get adjacent vertices of a given vertex</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function getAdjacencyList(string $vertex): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;adjList[$vertex] ?? [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>Implementing Graph Traversals</h2>  <p>Graph traversals allow you to visit every vertex in the graph in a systematic manner. There are two main traversal algorithms:</p>  <p><strong>1. Depth-First Search (DFS)</strong></p>  <p>DFS explores as far as possible along a branch before backtracking. It is often implemented using recursion or a stack.</p>  <p><code>class Graph {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// ... (Previous methods)</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// DFS traversal</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function depthFirstSearch(string $start): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$visited = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$result = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;dfsHelper($start, $visited, $result);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $result;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private function dfsHelper(string $vertex, array &amp;$visited, array &amp;$result): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (isset($visited[$vertex])) return;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$visited[$vertex] = true;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$result[] = $vertex;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;getAdjacencyList($vertex) as $neighbor) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;dfsHelper($neighbor, $visited, $result);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>2. Breadth-First Search (BFS)</strong></p>  <p>BFS explores all neighboring nodes at the present depth before moving on to nodes at the next depth level. It is implemented using a queue.</p>  <p><code>class Graph {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// ... (Previous methods)</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// BFS traversal</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function breadthFirstSearch(string $start): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$visited = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$queue = [$start];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$result = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ($queue) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$vertex = array_shift($queue);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (isset($visited[$vertex])) continue;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$visited[$vertex] = true;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$result[] = $vertex;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;getAdjacencyList($vertex) as $neighbor) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!isset($visited[$neighbor])) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$queue[] = $neighbor;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $result;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p>Both DFS and BFS help in exploring the graph&rsquo;s vertices in different ways, which is useful for solving problems like finding connected components, solving puzzles, etc.</p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>Shortest Path Algorithms</h2>  <p>Finding the shortest path between nodes is one of the most important applications of graph algorithms. Two well-known algorithms for this task are <strong>Dijkstra&rsquo;s Algorithm</strong> and <strong>Bellman-Ford Algorithm</strong>.</p>  <p><strong>1. Dijkstra&rsquo;s Algorithm</strong></p>  <p>Dijkstra&#39;s algorithm finds the shortest path from a source vertex to all other vertices in a graph. It works only with graphs that have non-negative weights on edges.</p>  <p><code>class Graph {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private array $adjList = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private array $weights = []; // Store edge weights</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function addVertex(string $vertex): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex] = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function addEdge(string $vertex1, string $vertex2, int $weight): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex1][] = $vertex2;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex2][] = $vertex1;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;weights[&quot;$vertex1,$vertex2&quot;] = $weight;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;weights[&quot;$vertex2,$vertex1&quot;] = $weight; // Undirected graph</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function dijkstra(string $start): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$prev = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$queue = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Set initial distances to infinity</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;adjList as $vertex =&gt; $edges) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist[$vertex] = INF;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$prev[$vertex] = null;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$queue[$vertex] = INF;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist[$start] = 0;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$queue[$start] = 0;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while ($queue) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Get the vertex with the smallest distance</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asort($queue);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$minVertex = key($queue);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unset($queue[$minVertex]);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Visit each neighbor</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;getAdjacencyList($minVertex) as $neighbor) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$edge = &quot;$minVertex,$neighbor&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$alt = $dist[$minVertex] + ($this-&gt;weights[$edge] ?? INF);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($alt &lt; $dist[$neighbor]) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist[$neighbor] = $alt;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$prev[$neighbor] = $minVertex;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$queue[$neighbor] = $alt;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return [&#39;distances&#39; =&gt; $dist, &#39;previous&#39; =&gt; $prev];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>2. Bellman-Ford Algorithm</strong></p>  <p>The Bellman-Ford algorithm is more versatile than Dijkstra&rsquo;s because it can handle graphs with negative weight edges. It runs in <strong>O(VE)</strong> time complexity and can also detect negative weight cycles.</p>  <p><code>class Graph {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private array $adjList = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;private array $weights = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function addVertex(string $vertex): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex] = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function addEdge(string $vertex1, string $vertex2, int $weight): void {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;adjList[$vertex1][] = $vertex2;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;weights[&quot;$vertex1,$vertex2&quot;] = $weight;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;public function bellmanFord(string $start): array {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist = [];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist[$start] = 0;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Initialize distances for all other vertices</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;adjList as $vertex =&gt; $edges) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($vertex !== $start) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist[$vertex] = INF;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Relax edges repeatedly</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$vertices = array_keys($this-&gt;adjList);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for ($i = 0; $i &lt; count($vertices) - 1; $i++) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;adjList as $vertex =&gt; $edges) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($edges as $neighbor) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$edge = &quot;$vertex,$neighbor&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$alt = $dist[$vertex] + ($this-&gt;weights[$edge] ?? INF);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($alt &lt; $dist[$neighbor]) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dist[$neighbor] = $alt;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Check for negative weight cycles</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($this-&gt;adjList as $vertex =&gt; $edges) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach ($edges as $neighbor) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$edge = &quot;$vertex,$neighbor&quot;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($dist[$vertex] + ($this-&gt;weights[$edge] ?? INF) &lt; $dist[$neighbor]) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw new Exception(&quot;Graph contains negative weight cycle&quot;);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $dist;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <h2>Conclusion</h2>  <p>Graphs are an essential part of computer science and are widely used in many fields, such as networking, routing, and data analysis. Understanding the core graph algorithms, such as traversals (DFS and BFS) and shortest path algorithms (Dijkstra&#39;s and Bellman-Ford), is critical for solving a wide range of problems.</p>  <p>With PHP 8&rsquo;s modern features and efficient object-oriented practices, you can easily implement and optimize these algorithms for your own projects. Understanding these techniques can help you build smarter, more efficient software that deals with complex data relationships.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/php.html">Php</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">28% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DF7D1664.html" title="POCO M6 Plus 5G Misty Lavender 6GB RAM 128GB ROM"><img data-src="https://m.media-amazon.com/images/I/71vkB1WIouL._SX679_.jpg" class="img-fluid lazy" alt="POCO M6 Plus 5G Misty Lavender 6GB RAM 128GB ROM" title="POCO M6 Plus 5G Misty Lavender 6GB RAM 128GB ROM" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DF7D1664.html" title="POCO M6 Plus 5G Misty Lavender 6GB RAM 128GB ROM" class="shop-title-value">POCO M6 Plus 5G Misty Lavender 6GB RAM 128GB ROM</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>11,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>15,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">52% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BPS3DCC7.html" title="Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World&#039;s 1st 4nm Dimensity 9000 5G Processor | Dual Curved AMOLED Display | 64MP RGBW Camera"><img data-src="https://m.media-amazon.com/images/I/613kSLrCn7L._SX679_.jpg" class="img-fluid lazy" alt="Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World&#039;s 1st 4nm Dimensity 9000 5G Processor | Dual Curved AMOLED Display | 64MP RGBW Camera" title="Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World&#039;s 1st 4nm Dimensity 9000 5G Processor | Dual Curved AMOLED Display | 64MP RGBW Camera" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BPS3DCC7.html" title="Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World&#039;s 1st 4nm Dimensity 9000 5G Processor | Dual Curved AMOLED Display | 64MP RGBW Camera" class="shop-title-value">Tecno Phantom X2 5G Stardust Grey (8GB RAM,256GB Storage) | World&#039;s 1st 4nm Dimensity 9000 5G Processor | Dual Curved AMOLED Display | 64MP RGBW Camera</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>24,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>51,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">84% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CSZ4JKTR.html" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen"><img data-src="https://m.media-amazon.com/images/I/51HHGTqHwZL._SX679_.jpg" class="img-fluid lazy" alt="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CSZ4JKTR.html" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" class="shop-title-value">TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,213</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>49,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html" title="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.jpg" alt="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms" title="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html" title="Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms">
+                                <span class="title">Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+                  Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div><div class="article">
+                <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+                  Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+                </a>
+              </div><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div><div class="article">
+                <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+                  Code Profiling and Performance Optimization of an Existing PHP Project
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+                  Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+                  Implementing a Redis Cache for Product Catalog Data in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+                  Introduction to Caching and Setting Up Redis in PHP 8
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+                  Implementing a Notification System Using the Observer Pattern in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+                  When and How to Use Each Design Pattern in PHP
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">15% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]"><img data-src="https://m.media-amazon.com/images/I/61tslaYWLjL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D7N23QKD.html" title="OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]" class="shop-title-value">OnePlus Pad 2(12.1 Inch)LCD Display,12GB RAM, 256GB Storage,Snapdragon 8 Gen 3,144Hz Refresh Rate,Dolby Vision &amp; Atmos,Open Canvas,AI features,6 speakers,Wi-Fi with Cellular Data Sharing [Nimbus Gray]</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>40,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>47,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+            Implementing a Notification System Using the Observer Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/origami-geometry-science-experiment-for-children.html">
+            Origami Geometry, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+            When and How to Use Each Design Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-vedic-gods-and-their-attributes.html">
+            The Vedic Gods and Their Attributes
+          </a>
+        </div><div class="article">
+          <a href="/articles/exploring-design-patterns-in-php--strategy-observer-and-decorator.html">
+            Exploring Design Patterns in PHP 8: Strategy, Observer and Decorator
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">26% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMV4HY8Q.html" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)"><img data-src="https://m.media-amazon.com/images/I/41WaHNR5u+L.jpg" class="img-fluid lazy" alt="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMV4HY8Q.html" title="Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)" class="shop-title-value">Aristo Major Laundry Basket/Laundry Bag for Multipurpose use Basket - 54 Litre (41 x 32 x 62 CM)(Plastic)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>519</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>705</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">24% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BGXMZBLY.html" title="Coffeeza Vanilla Flavoured Coffee Capsules, Intensity - 6 |Aluminium Coffee Pods |100% Arabica Coffee | Box of 20 (200 Capsules)"><img data-src="https://m.media-amazon.com/images/I/513esKxjeyL._SX679_.jpg" class="img-fluid lazy" alt="Coffeeza Vanilla Flavoured Coffee Capsules, Intensity - 6 |Aluminium Coffee Pods |100% Arabica Coffee | Box of 20 (200 Capsules)" title="Coffeeza Vanilla Flavoured Coffee Capsules, Intensity - 6 |Aluminium Coffee Pods |100% Arabica Coffee | Box of 20 (200 Capsules)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BGXMZBLY.html" title="Coffeeza Vanilla Flavoured Coffee Capsules, Intensity - 6 |Aluminium Coffee Pods |100% Arabica Coffee | Box of 20 (200 Capsules)" class="shop-title-value">Coffeeza Vanilla Flavoured Coffee Capsules, Intensity - 6 |Aluminium Coffee Pods |100% Arabica Coffee | Box of 20 (200 Capsules)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,104.45</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>10,600</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fountain.html">
+            The Magic Fountain
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0DCCCLMMV.html" title="Honey Touch King Size Bed | No Assembly Required (Without Mattress, King)"><img data-src="https://m.media-amazon.com/images/I/81-ufLM4tVL._SX679_.jpg" class="img-fluid lazy" alt="Honey Touch King Size Bed | No Assembly Required (Without Mattress, King)" title="Honey Touch King Size Bed | No Assembly Required (Without Mattress, King)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0DCCCLMMV.html" title="Honey Touch King Size Bed | No Assembly Required (Without Mattress, King)" class="shop-title-value">Honey Touch King Size Bed | No Assembly Required (Without Mattress, King)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>12,349</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>18,500</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-kanbur.html">
+            Ravi Kanbur
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">14% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WDKMGWR.html" title="iQOO Neo9 Pro 5G (Fiery Red, 8GB RAM, 256GB Storage) | Snapdragon 8 Gen 2 Processor | Supercomputing Chip Q1 | Flagship Level Sony IMX920 Camera"><img data-src="https://m.media-amazon.com/images/I/718jcIFYaAL._SX679_.jpg" class="img-fluid lazy" alt="iQOO Neo9 Pro 5G (Fiery Red, 8GB RAM, 256GB Storage) | Snapdragon 8 Gen 2 Processor | Supercomputing Chip Q1 | Flagship Level Sony IMX920 Camera" title="iQOO Neo9 Pro 5G (Fiery Red, 8GB RAM, 256GB Storage) | Snapdragon 8 Gen 2 Processor | Supercomputing Chip Q1 | Flagship Level Sony IMX920 Camera" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WDKMGWR.html" title="iQOO Neo9 Pro 5G (Fiery Red, 8GB RAM, 256GB Storage) | Snapdragon 8 Gen 2 Processor | Supercomputing Chip Q1 | Flagship Level Sony IMX920 Camera" class="shop-title-value">iQOO Neo9 Pro 5G (Fiery Red, 8GB RAM, 256GB Storage) | Snapdragon 8 Gen 2 Processor | Supercomputing Chip Q1 | Flagship Level Sony IMX920 Camera</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>35,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>41,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">26% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0849982T8.html" title="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs"><img data-src="https://m.media-amazon.com/images/I/61kBCL2yVaL._SX385_.jpg" class="img-fluid lazy" alt="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs" title="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0849982T8.html" title="Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs" class="shop-title-value">Pedigree Adult Wet Dog Food, Chicken &amp; Liver Chunks in Gravy, 70 g (Pack of 15), Made with Real Meat, 100% Complete &amp; Balanced Meal for Adult Dogs</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>555.75</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>750</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">46% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)"><img data-src="https://m.media-amazon.com/images/I/51ByNekZkOL._SX679_.jpg" class="img-fluid lazy" alt="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" class="shop-title-value">Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,880</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C3MHB63Q.html" title="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)"><img data-src="https://m.media-amazon.com/images/I/61zByLjZFnL._SY879_.jpg" class="img-fluid lazy" alt="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)" title="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C3MHB63Q.html" title="Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)" class="shop-title-value">Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 6 GENX, Grey, ZPF Technology)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>13,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>17,600</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">60% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07DRNSZSZ.html" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers"><img data-src="https://m.media-amazon.com/images/I/719eUa7bSeL._SX385_.jpg" class="img-fluid lazy" alt="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07DRNSZSZ.html" title="PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers" class="shop-title-value">PrimeWorld Opera Crystal Whiskey Glasses Set of 6 pcs- 300 ml Bar Glass for Drinking Bourbon, Whisky, Scotch, Cocktails, Cognac- Old Fashioned Cocktail Tumblers</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>755</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,899</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/jaipur.html" title="Jaipur" aria-label="Jaipur">Jaipur</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
