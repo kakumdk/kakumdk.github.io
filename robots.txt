@@ -1365,6 +1365,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/extremely-worrying-priyanka-gandhi-reacts-to-iskcon-bangladesh-priest-chinmoy-krishna-dass-arrest.html
 Allow: /news/india-suggests-funding-proposal-for-plastic-phaseout.html
 Allow: /news/indias-stand-against-inadequate-climate-finance-at-cop29.html
 Allow: /news/woman-stabbed-to-death-cops-search-for-her-boyfriend.html
