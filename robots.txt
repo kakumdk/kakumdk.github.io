@@ -2011,6 +2011,7 @@ Allow: /dentofacts/index.html
 Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
+Allow: /articles/the-role-of-dental-care-in-managing-autoimmune-diseases.html
 Allow: /articles/the-importance-of-hydration-for-oral-health.html
 Allow: /articles/how-to-prevent-bad-breath-naturally.html
 Allow: /articles/navigating-the-challenges-of-dental-care-for-individuals-with-disabilities.html
