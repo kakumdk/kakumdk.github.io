@@ -1369,6 +1369,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/indian-consular-officials-in-canada-told-they-were-under-audio-video-surveillance-mea.html
+Allow: /news/india-successfully-tests-k-4-nuclear-capable-missile-from-ins-arighaat-submarine.html
+Allow: /news/iskcon-issues-clarification-on-hindu-priest-chinmoy-krishna-das-arrest-bangladesh.html
+Allow: /news/sambhal-mosque-dispute-supreme-court-hearing-today-judicial-commission-formed-to-probe-stonepelting.html
 Allow: /news/extremely-worrying-priyanka-gandhi-reacts-to-iskcon-bangladesh-priest-chinmoy-krishna-dass-arrest.html
 Allow: /news/india-suggests-funding-proposal-for-plastic-phaseout.html
 Allow: /news/indias-stand-against-inadequate-climate-finance-at-cop29.html
