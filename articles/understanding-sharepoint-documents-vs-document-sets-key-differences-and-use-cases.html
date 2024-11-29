@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Understanding SharePoint Documents vs. Document Sets: Key Differences </title>
+    <meta name="description" content="When working with SharePoint, a robust collaboration and document management platform, it&#39;s important to understand the different ways you can org" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html" />
+    <meta property="og:title" content="Understanding SharePoint Documents vs. Document Sets: Key Differences " />
+    <meta property="og:description" content="When working with SharePoint, a robust collaboration and document management platform, it&#39;s important to understand the different ways you can org" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Understanding SharePoint Documents vs. Document Sets: Key Differences " />
+    <meta name="twitter:description" content="When working with SharePoint, a robust collaboration and document management platform, it&#39;s important to understand the different ways you can org" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script -->
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html"
+        },
+        "headline": "Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases",
+        "description": "When working with SharePoint, a robust collaboration and document management platform, it&#39;s important to understand the different ways you can org",
+        "image": "https://peoplesblog.co.in/upload/banners/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "29th Nov 2024",
+        "dateModified": "2024-11-29T07:14:01+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/sci-tech.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item active">Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases" data-src="/upload/banners/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases" />
+                                </div>
+                                <h1 class="read-article-title">Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>29th Nov 2024</span>, <span class="last-updated">2024-11-29T07:14:01+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>When working with <strong>SharePoint</strong>, a robust collaboration and document management platform, it&#39;s important to understand the different ways you can organize and manage your files. Two key features for managing files in SharePoint are <strong>Documents</strong> and <strong>Document Sets</strong>. Although they may seem similar at first glance, they serve different purposes and offer distinct features to help you manage your content more effectively.</p>  <p>In this article, we will break down the differences between SharePoint <strong>Documents</strong> and <strong>Document Sets</strong>, explore their unique features, and discuss when to use each one.</p>  <h2>What is a SharePoint Document?</h2>  <p>In SharePoint, a <strong>Document</strong> is a single file stored within a document library. It could be any type of file: a Word document, Excel sheet, PowerPoint presentation, PDF, or any other file format that SharePoint supports. Documents are the fundamental unit of content within SharePoint.</p>  <p><strong>Key Features of a Document:</strong></p>  <ul> <li><strong>Single File</strong>: A document is an individual file stored in a document library, with no grouping involved.</li> <li><strong>Metadata</strong>: Each document can have associated metadata, such as title, author, creation date, and tags, which makes it easier to organize, search, and retrieve files.</li> <li><strong>Versioning</strong>: SharePoint supports versioning for documents, which allows you to track changes over time and revert to previous versions when needed.</li> <li><strong>Check-In/Check-Out</strong>: Documents can be checked in or out, ensuring that only one person edits the document at a time, preventing conflicting changes.</li> <li><strong>Security</strong>: You can set specific permissions for each document, controlling who can view, edit, or delete it.</li> <li><strong>Sharing</strong>: Documents can be shared with others through direct links, with fine-grained control over permissions to determine who has access to the file.</li> </ul>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <p><strong>When to Use Documents:</strong></p>  <ul> <li>When you are working with individual files that do not need to be grouped with other related files.</li> <li>When each file needs its own set of metadata and versioning.</li> <li>If you are dealing with files that require separate management, security, or sharing permissions</li> </ul>  <h2>What is a SharePoint Document Set?</h2>  <p>A <strong>Document Set</strong> is a special type of container in SharePoint that allows you to group multiple related documents together. It provides a way to manage and organize sets of documents that share common metadata, versioning, and security settings. While it may seem similar to a folder, a Document Set is more powerful and flexible because it allows you to manage multiple documents as a unit.</p>  <p><strong>Key Features of a Document Set:</strong></p>  <ul> <li><strong>Grouping of Documents</strong>:  <ul> <li>A Document Set can contain multiple documents that are logically related to each other.</li> <li>For example, a project folder might contain a contract, meeting notes, design documents, and other related files.</li> </ul> </li> <li><strong>Shared Metadata</strong>: <ul> <li>One of the most powerful features of Document Sets is the ability to define metadata that applies to all documents within the set.</li> <li>For example, you can set a &quot;Project Name&quot; or &quot;Client&quot; field that is consistent across all documents in the set.</li> </ul> </li> <li><strong>Versioning for the Set</strong>: <ul> <li>Document Sets can have versioning enabled, allowing you to track changes made to the entire set of documents.</li> <li>In addition, each individual document within the set can have its own version history.</li> </ul> </li> <li><strong>Content Types</strong>: <ul> <li>Document Sets are often associated with content types, which define the structure and metadata for the set.</li> <li>For instance, a &quot;Contract&quot; content type might include specific fields like &quot;Contract Number,&quot; &quot;Start Date,&quot; and &quot;End Date.&quot;</li> </ul> </li> <li><strong>Document Set Home Page</strong>: Document Sets can have a home page that provides an overview of the documents within the set, including their metadata and any relevant links or information.</li> <li><strong>Permissions</strong>: <ul> <li>Document Sets inherit permissions from the parent library but can also be configured with unique permissions.</li> <li>This allows you to control access to the entire set of documents as a unit.</li> </ul> </li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>When to Use Document Sets:</strong></p>  <ul> <li>When you need to organize multiple related documents, such as project files, client folders, or contracts.</li> <li>When you want to apply shared metadata across a group of documents.</li> <li>If you need to manage multiple documents together, including versioning and workflows.</li> <li>When you require a more structured way of managing collections of documents with consistent metadata and permissions</li> </ul>  <h2>Key Differences Between a SharePoint Document and a Document Set</h2>  <div> <table cellspacing='0'> <tbody> <tr> <td> <p><strong>Feature</strong></p> </td> <td> <p><strong>Document</strong></p> </td> <td> <p><strong>Document Set</strong></p> </td> </tr> <tr> <td> <p><strong>Basic Concept</strong></p> </td> <td> <p>A single file stored in a document library.</p> </td> <td> <p>A container that groups related documents together.</p> </td> </tr> <tr> <td> <p><strong>Metadata</strong></p> </td> <td> <p>Each document has its own metadata.</p> </td> <td> <p>Shared metadata for all documents within the set.</p> </td> </tr> <tr> <td> <p><strong>Versioning</strong></p> </td> <td> <p>Versioning is enabled per document.</p> </td> <td> <p>Versioning can be enabled for the entire set of documents.</p> </td> </tr> <tr> <td> <p><strong>Permissions</strong></p> </td> <td> <p>Permissions are set individually for each document.</p> </td> <td> <p>Inherits permissions from the parent library or can have unique permissions for the entire set.</p> </td> </tr> <tr> <td> <p><strong>Content Types</strong></p> </td> <td> <p>Documents can be based on content types (optional).</p> </td> <td> <p>Document Sets are tied to content types and can have custom content types.</p> </td> </tr> <tr> <td> <p><strong>Document Management</strong></p> </td> <td> <p>Documents are managed individually.</p> </td> <td> <p>Documents in the set are managed together.</p> </td> </tr> <tr> <td> <p><strong>Collaboration</strong></p> </td> <td> <p>Collaboration occurs on individual documents.</p> </td> <td> <p>Collaboration occurs across all documents in the set.</p> </td> </tr> <tr> <td> <p><strong>Use Case</strong></p> </td> <td> <p>Ideal for single files.</p> </td> <td> <p>Ideal for grouping related documents, such as project or case folders.</p> </td> </tr> </tbody> </table> </div>  <h2>When to Choose One Over the Other?</h2>  <p>The decision to use a <strong>Document</strong> or a <strong>Document Set</strong> depends largely on your organizational needs and how you plan to manage your content.</p>  <p><strong>Use Documents:</strong></p>  <ul> <li>When you only need to store and manage individual files without any need for grouping.</li> <li>When each document has distinct metadata and versioning requirements.</li> <li>If you&#39;re working with files that don&#39;t need to be organized together or tracked as a unit.</li> </ul>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>Use Document Sets:</strong></p>  <ul> <li>When you need to group multiple documents that are related to a specific project, task, or client.</li> <li>If you want to apply common metadata (e.g., project name, client) across all documents in the set.</li> <li>If you want to manage and track a collection of documents together, including versioning and permissions.</li> </ul>  <h2>Example Use Cases for Document Sets:</h2>  <ol> <li><strong>Project Management</strong>:  <ol> <li>A Document Set could be used to group all files related to a project, such as project plans, contracts, designs, and meeting notes.</li> <li>This allows for easy management of all project-related documents with shared metadata like project name, client, and status.</li> </ol> </li> <li><strong>Legal or Compliance</strong>: <ol> <li>In a legal environment, a Document Set can group all documents related to a specific case, including contracts, legal briefs, and correspondence.</li> <li>The shared metadata might include case number, client, or jurisdiction, ensuring consistent categorization.</li> </ol> </li> <li><strong>Sales and Marketing</strong>: <ol> <li>A Document Set might be used to organize all marketing materials for a campaign, including project plans, creative assets, reports, and presentations.</li> <li>All documents in the set would share metadata like campaign name or client.</li> </ol> </li> </ol>  <h2>Conclusion</h2>  <p>Both <strong>Documents</strong> and <strong>Document Sets</strong> are essential tools within SharePoint for managing files, but they serve different purposes. <strong>Documents</strong> are perfect for managing individual files that don&#39;t need to be grouped with others, while <strong>Document Sets</strong> are designed for grouping related documents that share common metadata and need to be managed together. By understanding the differences between the two and knowing when to use each, you can ensure that your content is well-organized, easily accessible, and efficiently managed within SharePoint.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/sci-tech.html">Sci-Tech</a></span><span><a href="/articles/software.html">Software</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B68KM7F5.html" title="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa"><img data-src="https://m.media-amazon.com/images/I/619uqfCV8uL._SX679_.jpg" class="img-fluid lazy" alt="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa" title="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B68KM7F5.html" title="AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa" class="shop-title-value">AMATA Eagle Sofa Cum Bed with Two Cushions Perfect for Home Living Room and Guests (Dark Grey) (Wood,Suede,Velvet) 3-Person Sofa</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>16,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>33,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">48% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CH33945T.html" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)"><img data-src="https://m.media-amazon.com/images/I/61T5drqfafL._SX679_.jpg" class="img-fluid lazy" alt="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CH33945T.html" title="MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)" class="shop-title-value">MI 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>22,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>42,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">86% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09JKLVS1C.html" title="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress"><img data-src="https://m.media-amazon.com/images/I/61akA1Lfz5L._SY879_.jpg" class="img-fluid lazy" alt="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress" title="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09JKLVS1C.html" title="PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress" class="shop-title-value">PURVAJA Women&#039;s Corduroy Empire Waist Maxi Cocktail Dress</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>369</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,699</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html" title="What are the Biggest Misconceptions People have about Life?">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/what-are-the-biggest-misconceptions-people-have-about-life.jpeg" alt="What are the Biggest Misconceptions People have about Life?" title="What are the Biggest Misconceptions People have about Life?" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html" title="What are the Biggest Misconceptions People have about Life?">
+                                <span class="title">What are the Biggest Misconceptions People have about Life?</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+                  Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+                  Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+                  DIY Math Board Games, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div><div class="article">
+                <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+                  Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+                </a>
+              </div><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div><div class="article">
+                <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+                  Code Profiling and Performance Optimization of an Existing PHP Project
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+                  Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+                  Implementing a Redis Cache for Product Catalog Data in PHP
+                </a>
+              </div><div class="article">
+                <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+                  Introduction to Caching and Setting Up Redis in PHP 8
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">45% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C6QYTN7S.html" title="Xiaomi Pad 6| Qualcomm Snapdragon 870| Powered by HyperOS |144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm) Tablet| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray"><img data-src="https://m.media-amazon.com/images/I/61N1RFGVVCL._SX679_.jpg" class="img-fluid lazy" alt="Xiaomi Pad 6| Qualcomm Snapdragon 870| Powered by HyperOS |144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm) Tablet| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray" title="Xiaomi Pad 6| Qualcomm Snapdragon 870| Powered by HyperOS |144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm) Tablet| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C6QYTN7S.html" title="Xiaomi Pad 6| Qualcomm Snapdragon 870| Powered by HyperOS |144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm) Tablet| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray" class="shop-title-value">Xiaomi Pad 6| Qualcomm Snapdragon 870| Powered by HyperOS |144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm) Tablet| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>22,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>41,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+            Implementing a Notification System Using the Observer Pattern in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/origami-geometry-science-experiment-for-children.html">
+            Origami Geometry, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/when-and-how-to-use-each-design-pattern-in-php.html">
+            When and How to Use Each Design Pattern in PHP
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B076VF43H3.html" title="Amazon Brand - Solimo Collage Photo Frames (Set of 11, Wall Hanging, Black, SOL-HD-PF2, Synthetic Wood)"><img data-src="https://m.media-amazon.com/images/I/71mqJyckdsL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Collage Photo Frames (Set of 11, Wall Hanging, Black, SOL-HD-PF2, Synthetic Wood)" title="Amazon Brand - Solimo Collage Photo Frames (Set of 11, Wall Hanging, Black, SOL-HD-PF2, Synthetic Wood)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B076VF43H3.html" title="Amazon Brand - Solimo Collage Photo Frames (Set of 11, Wall Hanging, Black, SOL-HD-PF2, Synthetic Wood)" class="shop-title-value">Amazon Brand - Solimo Collage Photo Frames (Set of 11, Wall Hanging, Black, SOL-HD-PF2, Synthetic Wood)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,059</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,500</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">32% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CV9S9VTD.html" title="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN"><img data-src="https://m.media-amazon.com/images/I/71VG3azYMjL._SX679_.jpg" class="img-fluid lazy" alt="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN" title="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CV9S9VTD.html" title="MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN" class="shop-title-value">MSI Thin 15, Intel Core i5-12450H, 40CM FHD 144Hz Gaming Laptop(16GB/512GB NVMe SSD/Windows 11 Home/NVIDIA GeForce RTX 2050,GDDR 4GB /Cosmos Gray/1.86Kg), B12UCX-1695IN</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>47,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>70,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-town-mouse-and-the-country-mouse.html">
+            The Town Mouse and the Country Mouse
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">38% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08DF1Y7T7.html" title="LG 7 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T70SKSF1Z, Waterfall Circulation, Smart Motion, Middle Free Silver)"><img data-src="https://m.media-amazon.com/images/I/71xTwKIBX-L._SX679_.jpg" class="img-fluid lazy" alt="LG 7 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T70SKSF1Z, Waterfall Circulation, Smart Motion, Middle Free Silver)" title="LG 7 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T70SKSF1Z, Waterfall Circulation, Smart Motion, Middle Free Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08DF1Y7T7.html" title="LG 7 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T70SKSF1Z, Waterfall Circulation, Smart Motion, Middle Free Silver)" class="shop-title-value">LG 7 Kg 5 Star Inverter TurboDrum Fully Automatic Top Loading Washing Machine (T70SKSF1Z, Waterfall Circulation, Smart Motion, Middle Free Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>17,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>27,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div><div class="article">
+          <a href="/great-people/jivraj-narayan-mehta.html">
+            Jivraj Narayan Mehta
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">9% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)"><img data-src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SX679_.jpg" class="img-fluid lazy" alt="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQYGF1QY.html" title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)" class="shop-title-value">Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,31,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,44,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">47% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B8DC1QQV.html" title="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black"><img data-src="https://m.media-amazon.com/images/I/71mDTOYtDSL._SX679_.jpg" class="img-fluid lazy" alt="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" title="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B8DC1QQV.html" title="amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" class="shop-title-value">amazon basics 8-Piece Non-Stick Cookware Set| 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,469</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>4,699</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D11V1LW9.html" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer"><img data-src="https://m.media-amazon.com/images/I/61vgKOjMC+L._SX679_.jpg" class="img-fluid lazy" alt="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D11V1LW9.html" title="IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer" class="shop-title-value">IFB 197L 5 Star Direct-Cool Single Door Refrigerator with Advanced Inverter Compressor (2024, IFBDC-2235DRBED, Midnight Bloom Red) Extraordinary Storage with Humidity Controller with Base Drawer</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>17,490</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>22,600</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B079556R74.html" title="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor"><img data-src="https://m.media-amazon.com/images/I/71iUq9qVn5L._SX679_.jpg" class="img-fluid lazy" alt="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor" title="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B079556R74.html" title="Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor" class="shop-title-value">Art Street Sun Streek Decorative Rectangular Framed Wall Mirror, Set Of 3 (Size - 9 X 9 Inch), Multicolor</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>712</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,000</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">38% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0854DCXM2.html" title="Liberty Men And Women Luxury Oudgold Silk Intense Limited Edition Liquid Parfum And (100Ml/3.4Oz), Crafted In France, Woody Notes, Long Lasting - Upto 3 Days."><img data-src="https://m.media-amazon.com/images/I/71YP0euGGIL._SX679_.jpg" class="img-fluid lazy" alt="Liberty Men And Women Luxury Oudgold Silk Intense Limited Edition Liquid Parfum And (100Ml/3.4Oz), Crafted In France, Woody Notes, Long Lasting - Upto 3 Days." title="Liberty Men And Women Luxury Oudgold Silk Intense Limited Edition Liquid Parfum And (100Ml/3.4Oz), Crafted In France, Woody Notes, Long Lasting - Upto 3 Days." src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0854DCXM2.html" title="Liberty Men And Women Luxury Oudgold Silk Intense Limited Edition Liquid Parfum And (100Ml/3.4Oz), Crafted In France, Woody Notes, Long Lasting - Upto 3 Days." class="shop-title-value">Liberty Men And Women Luxury Oudgold Silk Intense Limited Edition Liquid Parfum And (100Ml/3.4Oz), Crafted In France, Woody Notes, Long Lasting - Upto 3 Days.</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,074.05</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/karthikkumardk/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/software.html" title="Software" aria-label="Software">Software</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/jaipur.html" title="Jaipur" aria-label="Jaipur">Jaipur</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

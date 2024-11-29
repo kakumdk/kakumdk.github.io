@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html
 Allow: /articles/what-are-the-biggest-misconceptions-people-have-about-life.html
 Allow: /articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html
 Allow: /articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html

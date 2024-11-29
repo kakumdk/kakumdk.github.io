@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases</title>
+			<link>https://peoplesblog.co.in/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html</link>
+			<description>When working with SharePoint, a robust collaboration and document management platform, it&amp;#39;s important to understand the different ways you can organize and manage your files. Two key features for managing files in SharePoint are Documents and Document Sets. Although they may seem similar at first glance, they serve different purposes and offer distinct features to help you manage your content </description>
+			<pubDate>Fri, 29 Nov 2024 07:12:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html</guid>
+    </item><item>
 			<title>Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms</title>
 			<link>https://peoplesblog.co.in/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html</link>
 			<description>Graphs are one of the most powerful and flexible data structures in computer science, widely used for solving problems like shortest path finding, network analysis, and much more. In PHP 8, developers can leverage modern language features and optimized approaches to implement and optimize graph-related algorithms.  In this article, we will explore graph data structures, common graph traversals, an</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 28 Nov 2024 19:07:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/crushing-can-experiment-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Cartesian Diver, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/cartesian-diver-science-experiment-for-children.html</link>
-			<description>Creating a Cartesian diver is a simple and fun science experiment that allows children to explore the concepts of buoyancy and pressure.  Here&amp;#39;s how to make one:  Materials Needed:   Clear plastic bottle with a screw-on cap Small plastic eye dropper or pipette Water Optional: Food coloring    Google Ad 1   Instructions:   Fill the plastic bottle with water almost to the top. Leave a small air </description>
-			<pubDate>Thu, 28 Nov 2024 19:06:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/cartesian-diver-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>

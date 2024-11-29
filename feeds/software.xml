@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases</title>
+			<link>https://peoplesblog.co.in/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html</link>
+			<description>When working with SharePoint, a robust collaboration and document management platform, it&amp;#39;s important to understand the different ways you can organize and manage your files. Two key features for managing files in SharePoint are Documents and Document Sets. Although they may seem similar at first glance, they serve different purposes and offer distinct features to help you manage your content </description>
+			<pubDate>Fri, 29 Nov 2024 07:12:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html</guid>
+    </item><item>
 			<title>Create a custom Drupal Service and Use as a Helper</title>
 			<link>https://peoplesblog.co.in/articles/create-a-custom-drupal-service-and-use-as-a-helper.html</link>
 			<description>Creating a custom Drupal service allows you to encapsulate functionality and access it wherever needed, promoting modularity and reusability within your codebase as a Helper.  In this article we are sharing an example of how to create a custom Drupal service and use it as a helper.  Step 1: Define the Service  Create a new custom module or use an existing one. Define your service in the module&amp;rsq</description>
