@@ -194,6 +194,126 @@ body {
 .mobile-nav-toggle {
     display: block;
 }
+section .articles.search-articles input {
+    margin-bottom: 30px;
+    border: 1px solid #e7ebed;
+    padding: 15px;
+    text-align: center;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right;
+    cursor: pointer;
+    opacity: 0.7;
+    background-origin: content-box;
+    box-shadow: 0 0 6px 0 #fbaf3f;
+}
+section .page-wrapper .articles.label-articles .article {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #e7ebed;
+    border-radius: 5px;
+}
+section .page-wrapper .articles.label-articles .article .articles-content {
+    margin-top: 8px;
+}
+section .page-wrapper .articles.label-articles .article .articles-content h4 {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+section .page-wrapper .articles.label-articles .article .articles-content h4 a {
+    color: #292b2c;
+}
+section .page-wrapper .articles.label-articles .article .articles-content .articles-author {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: none;
+}
+section .page-wrapper .articles.label-articles .article .articles-content .articles-summary {
+    height: 120px;
+    overflow: hidden;
+}
+.shop-data .shop-data-results .shop-item {
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #e7ebed;
+    text-align: center;
+    border-radius: 5px;
+    min-height: 300px;
+}
+.shop-data .shop-data-results .shop-item .discount {
+   text-align: left;
+}
+.shop-data .shop-data-results .shop-item .discount span.main {
+    border-radius: 4px;
+    box-shadow: 0 1px 12px rgba(0,0,0,.8);
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1px 6px 0 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #e6f4ea;
+    color: #137333;
+}
+.shop-data .shop-data-results .shop-item .shop-image img {
+    width: auto;
+    height: 175px;
+    border-radius: 5px;
+}
+.shop-data .shop-data-results .shop-item h4.shop-title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 15px auto;
+    max-height: 80px;
+    min-height: 80px;
+    overflow: hidden;
+    text-align: left;
+}
+.shop-data .shop-data-results .shop-item h4.shop-title a {
+    color: #292b2c;
+}
+.shop-data .shop-data-results .shop-item .price {
+    margin-top: 15px;
+    border-top: 1px solid #e7ebed;
+    padding-top: 15px;
+    text-align: center;
+}
+.shop-data .shop-data-results .shop-item .price .discountprice {
+    margin-right: 5px;
+    font-weight: bold;
+}
+.shop-data .shop-data-results .shop-item .price .rupee {
+    top: -4px;
+    font-size: 10px;
+    position: relative;
+    left: -2px;
+}
+.shop-data .shop-data-results .shop-item .price .discountprice {
+    font-weight: bold;
+}
+.shop-data .shop-data-results .shop-item .price .actualprice {
+    font-size: 14px;
+    color: #70757a;
+    text-decoration: line-through;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.blink {
+    animation: blink 1s infinite;
+}
+
 
 @media (min-width: 600px) {
     .header .logo img {
