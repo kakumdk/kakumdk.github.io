@@ -24,6 +24,7 @@ function getLocalStorageValue(key) {
 $(function() {
 
     searchArticlesListPage();
+    searchArticlesLabelPage();
     topBarGoogleTranslation();
     scrollTopBottom();
     siteFixedAd();
@@ -87,6 +88,56 @@ function searchArticlesListPage() {
             $('.shop-data').addClass('d-none');
         }
     });
+}
+
+function searchArticlesLabelPage() {
+    const searchInput = document.getElementById('search-articles-label');
+    const articles = document.querySelectorAll('.label-articles .row .col-md-4');
+    const ads = document.querySelectorAll('.ads');
+    const noResults = document.getElementById('noResults');
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        let matchFound = false;
+
+        // If the input is empty, show all articles and ads
+        if (query === '') {
+            articles.forEach(article => {
+                article.style.display = ''; // Show all articles
+            });
+            ads.forEach(ad => {
+                ad.style.display = ''; // Show all ads
+            });
+            noResults.classList.add('d-none'); // Hide no results message
+            return; // Exit the function
+        }
+        // Hide all .ads elements initially
+        ads.forEach(ad => {
+            ad.style.display = 'none';
+        });
+    
+        articles.forEach((article) => {
+          // Safely retrieve the title and summary elements
+          const titleElement = article.querySelector('h4 a');
+          const summaryElement = article.querySelector('.articles-summary');
+    
+          // Initialize title and summary variables
+          const title = titleElement ? titleElement.textContent.toLowerCase() : '';
+          const summary = summaryElement ? summaryElement.textContent.toLowerCase() : '';
+    
+          // Check if either the title or summary includes the search query
+          if (title.includes(query) || summary.includes(query)) {
+            article.style.display = ''; // Show the article
+            matchFound = true; // At least one match found
+          } else {
+            article.style.display = 'none'; // Hide the article
+          }
+        });
+    
+        // Show or hide the no results message based on matches
+        noResults.classList.toggle('d-none', matchFound);
+        noResults.querySelector('span').textContent = query; // Update no results message
+      });
 }
 
 function topBarGoogleTranslation() {
