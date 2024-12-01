@@ -98,7 +98,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item {
 }
 nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     font-size: 15px !important;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 #template-mo-zay-hero-carousel .carousel-indicators li {
     margin-top: 0;
@@ -108,13 +108,13 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 }
 .card a {
     color: #212529;
-    font-weight: 300 !important;
+    /* font-weight: 300 !important; */
 }
 .card a:hover {
     color: #2E8B57;
 }
 .card a.btn {
-    font-weight: bold !important;
+    font-weight: 500 !important;
 }
 .offer {
     color: #2E8B57;
@@ -138,7 +138,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     box-sizing: border-box;
     display: inline-block;
     font-size: 12px;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 0.5px;
     line-height: 20px;
     margin-bottom: 4px;
@@ -188,7 +188,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 }
 .shop-item .price .discountprice {
     margin-right: 5px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     display: inline-block;
 }
 .shop-item .price .rupees {
@@ -370,7 +370,7 @@ figure.table td {
     box-sizing: border-box;
     display: inline-block;
     font-size: 12px;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 0.5px;
     line-height: 20px;
     margin-bottom: 4px;
