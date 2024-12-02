@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Understanding SharePoint Document Libraries, Content Types, Terms, Use</title>
+    <meta name="description" content="SharePoint is a powerful collaboration platform that allows organizations to store, manage, and share content efficiently. One of the core features of" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html" />
+    <meta property="og:title" content="Understanding SharePoint Document Libraries, Content Types, Terms, Use" />
+    <meta property="og:description" content="SharePoint is a powerful collaboration platform that allows organizations to store, manage, and share content efficiently. One of the core features of" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Understanding SharePoint Document Libraries, Content Types, Terms, Use" />
+    <meta name="twitter:description" content="SharePoint is a powerful collaboration platform that allows organizations to store, manage, and share content efficiently. One of the core features of" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Ad -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Ad -->
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html"
+        },
+        "headline": "Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions",
+        "description": "SharePoint is a powerful collaboration platform that allows organizations to store, manage, and share content efficiently. One of the core features of",
+        "image": "https://peoplesblog.co.in/upload/banners/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "2nd Dec 2024",
+        "dateModified": "2024-12-02T08:29:57+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/sci-tech.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item active">Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions" data-src="/upload/banners/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions" />
+                                </div>
+                                <h1 class="read-article-title">Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>2nd Dec 2024</span>, <span class="last-updated">2024-12-02T08:29:57+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>SharePoint is a powerful collaboration platform that allows organizations to store, manage, and share content efficiently. One of the core features of SharePoint is the <strong>Document Library</strong>, which provides a centralized location for storing files and documents. To enhance document management, SharePoint allows for a range of customization options, including <strong>Content Types</strong>, <strong>Managed Metadata (Terms)</strong>, <strong>User Groups</strong>, and <strong>Permissions</strong>.</p>  <p>Understanding these concepts is crucial for administrators and power users who want to leverage SharePoint&#39;s full potential.</p>  <p>In this article, we will explain what <strong>Document Libraries</strong>, <strong>Content Types</strong>, <strong>Managed Metadata</strong>, <strong>User Groups</strong>, and <strong>Permissions</strong> are in SharePoint and how they work together to optimize document management.</p>  <h2>SharePoint Document Libraries</h2>  <p><strong>What is a Document Library?</strong></p>  <p>A <strong>Document Library</strong> in SharePoint is a specialized container designed to store and organize files in a SharePoint site. Document libraries are essential for managing documents collaboratively, enabling features like versioning, document check-in/check-out, workflows, and metadata tagging. They are a fundamental part of SharePoint&rsquo;s content management system.</p>  <p>Key features of Document Libraries include:</p>  <ul> <li><strong>File Storage</strong>: Documents, images, and other file types can be stored.</li> <li><strong>Versioning</strong>: You can keep track of multiple versions of a document and revert to earlier versions if needed.</li> <li><strong>Check-in/Check-out</strong>: Allows users to lock a document while editing to prevent conflicts with others working on the same document.</li> <li><strong>Metadata</strong>: You can associate documents with custom metadata to enhance search and filtering.</li> </ul>  <p>Document libraries can be used for different purposes, such as storing project files, HR documents, or records.</p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>Content Types in SharePoint</h2>  <p><strong>What is a Content Type?</strong></p>  <p>A <strong>Content Type</strong> in SharePoint defines a category of content that has a specific set of attributes (metadata), behaviors, and document templates. Content Types allow organizations to standardize the creation and management of content across SharePoint libraries and sites. They ensure consistency in document management and provide a way to apply specific policies, metadata, and templates to documents.</p>  <p>Each Content Type can have:</p>  <ul> <li><strong>Metadata Fields</strong>: Specific columns like &quot;Author&quot;, &quot;Due Date&quot;, &quot;Priority&quot;, etc., that define the properties of the content.</li> <li><strong>Document Templates</strong>: Predefined templates (e.g., Word or Excel templates) associated with the content type.</li> <li><strong>Workflows</strong>: Custom workflows that can be triggered when documents of a certain content type are added or modified.</li> <li><strong>Policies</strong>: Information management policies like retention, auditing, and permissions tied to the content type.</li> </ul>  <p><strong>Why Use Content Types?</strong></p>  <ul> <li><strong>Consistency</strong>: Ensures that every document of a specific type follows the same structure and metadata.</li> <li><strong>Customization</strong>: Allows organizations to define different behaviors for different document types (e.g., contracts, invoices, proposals).</li> <li><strong>Efficiency</strong>: Reduces manual effort by automating metadata tagging and enforcing business rules.</li> </ul>  <h2>Managed Metadata (Terms) in SharePoint</h2>  <p><strong>What is Managed Metadata?</strong></p>  <p><strong>Managed Metadata</strong> is a feature in SharePoint that allows you to apply a hierarchical set of terms (or tags) to documents and other items across the SharePoint site. Managed metadata enables users to classify content using standardized, predefined keywords or terms, making it easier to search, organize, and manage documents.</p>  <p>A <strong>Term Set</strong> is a collection of related terms, and each <strong>Term</strong> can be used as a tag or label to classify content. The term store is where these sets of terms are managed.</p>  <p><strong>Key Concepts:</strong></p>  <ul> <li><strong>Term Store</strong>: A central repository for all metadata terms and term sets in SharePoint. It is managed by the SharePoint administrator.</li> <li><strong>Term Set</strong>: A grouping of related terms. For example, you might have a term set for &quot;Document Types&quot; with terms such as &quot;Invoice&quot;, &quot;Contract&quot;, and &quot;Proposal&quot;.</li> <li><strong>Term</strong>: A single label or keyword that can be applied to items. For example, a term in a &quot;Department&quot; term set might be &quot;Marketing&quot;.</li> <li><strong>Enterprise Keywords</strong>: These are terms that users can create on-the-fly and tag to items without needing to predefine them in the Term Store.</li> </ul>  <p><strong>Benefits of Managed Metadata:</strong></p>  <ul> <li><strong>Consistency</strong>: Using standardized terms across SharePoint ensures that content is consistently tagged, making it easier to classify and retrieve.</li> <li><strong>Improved Search</strong>: By tagging documents with predefined terms, users can perform more precise and consistent searches.</li> <li><strong>Cross-Site Consistency</strong>: Managed metadata can be used across multiple site collections, ensuring consistency across the organization.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>User Groups in SharePoint</h2>  <p><strong>What are User Groups?</strong></p>  <p><strong>User Groups</strong> in SharePoint are collections of users who share the same access rights or permissions within a site, document library, or other SharePoint resources. Groups simplify permission management by allowing you to assign permissions to a group of users rather than individually.</p>  <p>Common default SharePoint groups include:</p>  <ul> <li><strong>Site Owners</strong>: Users who have full control of the site, including managing permissions, settings, and content.</li> <li><strong>Site Members</strong>: Users who have the ability to contribute to the site by adding, editing, and deleting content.</li> <li><strong>Site Visitors</strong>: Users who only have view access to the site and its contents.</li> </ul>  <p>In addition to these default groups, SharePoint allows you to create custom groups that meet specific needs, such as:</p>  <ul> <li><strong>Project Teams</strong>: Groups for specific project teams with permissions tailored to their roles.</li> <li><strong>Departmental Groups</strong>: Groups for specific departments like HR, Marketing, or IT, with different access levels for each department&#39;s document libraries.</li> </ul>  <p><strong>Why Use User Groups?</strong></p>  <ul> <li><strong>Simplified Management</strong>: Instead of setting permissions for each user individually, you can manage access by user groups.</li> <li><strong>Security</strong>: User groups allow administrators to define who can view, edit, and manage content based on roles within the organization.</li> <li><strong>Customization</strong>: SharePoint allows you to define user groups specific to business needs, ensuring the right people have the right access.</li> </ul>  <h2>Permissions in SharePoint</h2>  <p><strong>What are Permissions?</strong></p>  <p>Permissions in SharePoint determine who can access a site, document library, or document, and what actions they are allowed to perform. SharePoint uses a granular permissions model, allowing administrators to assign different permission levels to users or groups at various levels of the SharePoint hierarchy (site, list, folder, item).</p>  <p><strong>Common Permission Levels:</strong></p>  <ul> <li><strong>Full Control</strong>: Grants full access to configure settings and manage all aspects of the site.</li> <li><strong>Design</strong>: Allows users to create and customize lists, document libraries, and pages.</li> <li><strong>Edit</strong>: Allows users to add, edit, and delete items in a list or library.</li> <li><strong>Contribute</strong>: Users can add and edit content but cannot delete items.</li> <li><strong>Read</strong>: Users can view documents but cannot edit or delete them.</li> <li><strong>View Only</strong>: Users can view the content but with more restrictions than Read access.</li> <li><strong>Limited Access</strong>: A special permission level that allows users to access only specific content, such as a document or folder.</li> </ul>  <p><strong>How Permissions Work:</strong></p>  <p>Permissions in SharePoint can be inherited or unique:</p>  <ul> <li><strong>Inherited Permissions</strong>: By default, SharePoint uses inherited permissions, meaning that permissions set at the site level propagate down to all lists, libraries, and items within the site.</li> <li><strong>Unique Permissions</strong>: You can break inheritance to set unique permissions at the list, library, or item level. This is useful for scenarios where only certain users or groups should access specific content.</li> </ul>  <p><strong>Best Practices for Permissions:</strong></p>  <ul> <li><strong>Use Groups</strong>: Always assign permissions to groups rather than individuals to simplify management.</li> <li><strong>Follow the Principle of Least Privilege</strong>: Grant users only the minimum permissions they need to perform their tasks.</li> <li><strong>Use Inherited Permissions Whenever Possible</strong>: Inherited permissions help maintain consistency and reduce the complexity of managing permissions at multiple levels.</li> </ul>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>How These Features Work Together</h2>  <p>SharePoint&#39;s <strong>Document Libraries</strong>, <strong>Content Types</strong>, <strong>Managed Metadata</strong>, <strong>User Groups</strong>, and <strong>Permissions</strong> work together to provide a flexible and robust document management system:</p>  <ol> <li><strong>Content Types</strong> standardize how documents are created and organized. They ensure documents have consistent metadata and can trigger specific workflows or policies.</li> <li><strong>Managed Metadata</strong> helps users classify documents with standardized terms, improving search and categorization across libraries and sites.</li> <li><strong>User Groups</strong> allow administrators to control access based on user roles, making it easier to manage permissions.</li> <li><strong>Permissions</strong> control who can access what within a document library, ensuring that sensitive information is only accessible by authorized users.</li> </ol>  <p>By using these features effectively, SharePoint administrators can build a document management system that is secure, consistent, and aligned with organizational processes.</p>  <h2>Conclusion</h2>  <p>Understanding SharePoint&#39;s Document Libraries, Content Types, Managed Metadata, User Groups, and Permissions is essential for creating an organized, secure, and efficient document management system. By leveraging these features, organizations can ensure consistency in document handling, streamline workflows, and provide the right level of access to the right users, while maintaining security and compliance.</p>  <p>These features together create a powerful, scalable solution for managing documents across a wide range of use cases.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/sci-tech.html">Sci-Tech</a></span><span><a href="/articles/software.html">Software</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">79% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09F9QNWBV.html" title="BULLAR Home Gym Set, Home Gym Equipments for Men, Gym Equipment Set for Home Workout, Home Gym Kit with 30kg Iron Weight Plates 30mm, 3 Feet &amp; 5 Feet Weight Lifting Rod, Dumbbell Rods &amp; Accessories"><img data-src="https://m.media-amazon.com/images/I/91+5r30glVL._SX679_.jpg" class="img-fluid lazy" alt="BULLAR Home Gym Set, Home Gym Equipments for Men, Gym Equipment Set for Home Workout, Home Gym Kit with 30kg Iron Weight Plates 30mm, 3 Feet &amp; 5 Feet Weight Lifting Rod, Dumbbell Rods &amp; Accessories" title="BULLAR Home Gym Set, Home Gym Equipments for Men, Gym Equipment Set for Home Workout, Home Gym Kit with 30kg Iron Weight Plates 30mm, 3 Feet &amp; 5 Feet Weight Lifting Rod, Dumbbell Rods &amp; Accessories" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09F9QNWBV.html" title="BULLAR Home Gym Set, Home Gym Equipments for Men, Gym Equipment Set for Home Workout, Home Gym Kit with 30kg Iron Weight Plates 30mm, 3 Feet &amp; 5 Feet Weight Lifting Rod, Dumbbell Rods &amp; Accessories" class="shop-title-value">BULLAR Home Gym Set, Home Gym Equipments for Men, Gym Equipment Set for Home Workout, Home Gym Kit with 30kg Iron Weight Plates 30mm, 3 Feet &amp; 5 Feet Weight Lifting Rod, Dumbbell Rods &amp; Accessories</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>6,164</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>29,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01M32X87O.html" title="Gorilla 6055001-6 Double-Sided Heavy Duty Mounting Tape (6 Pack), 1&quot; x 60&quot;, Black"><img data-src="https://m.media-amazon.com/images/I/919PT-mtS0L._SX522_.jpg" class="img-fluid lazy" alt="Gorilla 6055001-6 Double-Sided Heavy Duty Mounting Tape (6 Pack), 1&quot; x 60&quot;, Black" title="Gorilla 6055001-6 Double-Sided Heavy Duty Mounting Tape (6 Pack), 1&quot; x 60&quot;, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01M32X87O.html" title="Gorilla 6055001-6 Double-Sided Heavy Duty Mounting Tape (6 Pack), 1&quot; x 60&quot;, Black" class="shop-title-value">Gorilla 6055001-6 Double-Sided Heavy Duty Mounting Tape (6 Pack), 1&quot; x 60&quot;, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>5,414</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,000</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">38% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C7VYN5PV.html" title="Philips Skin Friendly Beard Trimmer| 10 length settings| 15mins quick charge| Self Sharpening Blades | Cordless &amp; Rechargeable| New Model - BT3303/30"><img data-src="https://m.media-amazon.com/images/I/61YNB13-F9L._SX679_.jpg" class="img-fluid lazy" alt="Philips Skin Friendly Beard Trimmer| 10 length settings| 15mins quick charge| Self Sharpening Blades | Cordless &amp; Rechargeable| New Model - BT3303/30" title="Philips Skin Friendly Beard Trimmer| 10 length settings| 15mins quick charge| Self Sharpening Blades | Cordless &amp; Rechargeable| New Model - BT3303/30" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C7VYN5PV.html" title="Philips Skin Friendly Beard Trimmer| 10 length settings| 15mins quick charge| Self Sharpening Blades | Cordless &amp; Rechargeable| New Model - BT3303/30" class="shop-title-value">Philips Skin Friendly Beard Trimmer| 10 length settings| 15mins quick charge| Self Sharpening Blades | Cordless &amp; Rechargeable| New Model - BT3303/30</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,599</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html" title="Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.jpg" alt="Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases" title="Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html" title="Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases">
+                                <span class="title">Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+                  Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+                  Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+                  Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+                  DIY Math Board Games, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div><div class="article">
+                <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+                  Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+                </a>
+              </div><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div><div class="article">
+                <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+                  Code Profiling and Performance Optimization of an Existing PHP Project
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+                  Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+                </a>
+              </div><div class="article">
+                <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+                  Implementing a Redis Cache for Product Catalog Data in PHP
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">34% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMGD9Y2X.html" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)"><img data-src="https://m.media-amazon.com/images/I/71HjkfkIjEL._SX679_.jpg" class="img-fluid lazy" alt="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMGD9Y2X.html" title="LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" class="shop-title-value">LG 7 Kg, 5 Star, Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully-Automatic Front Load Washing Machine (FHM1207SDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>28,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>43,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div><div class="article">
+          <a href="/articles/bangalore-to-kanakapura-kayaking-spot-a-perfect-day-trip-guide.html">
+            Bangalore to Kanakapura, Kayaking Spot: A Perfect Day Trip Guide
+          </a>
+        </div><div class="article">
+          <a href="/articles/introduction-to-caching-and-setting-up-redis-in-php-.html">
+            Introduction to Caching and Setting Up Redis in PHP 8
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-notification-system-using-the-observer-pattern-in-php.html">
+            Implementing a Notification System Using the Observer Pattern in PHP
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">42% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0D3DWFY54.html" title="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)"><img data-src="https://m.media-amazon.com/images/I/81zPuf-0ETL._SX679_.jpg" class="img-fluid lazy" alt="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)" title="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0D3DWFY54.html" title="Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)" class="shop-title-value">Sony 139 cm (55 inches) BRAVIA 2 4K Ultra HD Smart LED Google TV K-55S25B (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>57,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>99,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+            Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-sattu-drink.html">
+            How to prepare Sattu Drink?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B083DYV9ZW.html" title="TRAWOC EXPEDITION 80L Travel Backpack Camping Hiking Rucksack Trekking Bag for Men &amp; Women with Water Proof Rain Cover/Shoe Compartment BHK001 Black"><img data-src="https://m.media-amazon.com/images/I/71rdzjYj3UL._SX679_.jpg" class="img-fluid lazy" alt="TRAWOC EXPEDITION 80L Travel Backpack Camping Hiking Rucksack Trekking Bag for Men &amp; Women with Water Proof Rain Cover/Shoe Compartment BHK001 Black" title="TRAWOC EXPEDITION 80L Travel Backpack Camping Hiking Rucksack Trekking Bag for Men &amp; Women with Water Proof Rain Cover/Shoe Compartment BHK001 Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B083DYV9ZW.html" title="TRAWOC EXPEDITION 80L Travel Backpack Camping Hiking Rucksack Trekking Bag for Men &amp; Women with Water Proof Rain Cover/Shoe Compartment BHK001 Black" class="shop-title-value">TRAWOC EXPEDITION 80L Travel Backpack Camping Hiking Rucksack Trekking Bag for Men &amp; Women with Water Proof Rain Cover/Shoe Compartment BHK001 Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,289</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-magic-fish.html">
+            The Magic Fish
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-fox-and-the-stork.html">
+            The Fox and the Stork
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">35% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CX5F443W.html" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)"><img data-src="https://m.media-amazon.com/images/I/811ssp-s+ZL._SX679_.jpg" class="img-fluid lazy" alt="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CX5F443W.html" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)" class="shop-title-value">Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>41,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>64,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/kashiram-rana.html">
+            Kashiram Rana
+          </a>
+        </div><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div><div class="article">
+          <a href="/great-people/dhyan-chand.html">
+            Dhyan Chand
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">26% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C3LHV43S.html" title="LG 9 Kg, 5 Star, AI Direct Drive Technology, Steam, 6 Motion DD &amp; Wi-Fi Fully-Automatic Front Load Washing Machine (FHP1209Z5M, Intelligent &amp; Convenient Fabric Care, Allergy Care, Middle Black)"><img data-src="https://f.media-amazon.com/images/I/714gtA8+m3L._SX679_.jpg" class="img-fluid lazy" alt="LG 9 Kg, 5 Star, AI Direct Drive Technology, Steam, 6 Motion DD &amp; Wi-Fi Fully-Automatic Front Load Washing Machine (FHP1209Z5M, Intelligent &amp; Convenient Fabric Care, Allergy Care, Middle Black)" title="LG 9 Kg, 5 Star, AI Direct Drive Technology, Steam, 6 Motion DD &amp; Wi-Fi Fully-Automatic Front Load Washing Machine (FHP1209Z5M, Intelligent &amp; Convenient Fabric Care, Allergy Care, Middle Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C3LHV43S.html" title="LG 9 Kg, 5 Star, AI Direct Drive Technology, Steam, 6 Motion DD &amp; Wi-Fi Fully-Automatic Front Load Washing Machine (FHP1209Z5M, Intelligent &amp; Convenient Fabric Care, Allergy Care, Middle Black)" class="shop-title-value">LG 9 Kg, 5 Star, AI Direct Drive Technology, Steam, 6 Motion DD &amp; Wi-Fi Fully-Automatic Front Load Washing Machine (FHP1209Z5M, Intelligent &amp; Convenient Fabric Care, Allergy Care, Middle Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>39,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>53,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">11% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07KWVTY6G.html" title="CELLO Duo Plastic Step-On Pedal Dustbin for Wet and Dry Waste| 2 In 1 Dustbin Trash Can/Plastic Garbage Bins with Lid for Home Kitchen | (20 Liters, Green and Blue)"><img data-src="https://m.media-amazon.com/images/I/61QAGWtjLLL._SX679_.jpg" class="img-fluid lazy" alt="CELLO Duo Plastic Step-On Pedal Dustbin for Wet and Dry Waste| 2 In 1 Dustbin Trash Can/Plastic Garbage Bins with Lid for Home Kitchen | (20 Liters, Green and Blue)" title="CELLO Duo Plastic Step-On Pedal Dustbin for Wet and Dry Waste| 2 In 1 Dustbin Trash Can/Plastic Garbage Bins with Lid for Home Kitchen | (20 Liters, Green and Blue)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07KWVTY6G.html" title="CELLO Duo Plastic Step-On Pedal Dustbin for Wet and Dry Waste| 2 In 1 Dustbin Trash Can/Plastic Garbage Bins with Lid for Home Kitchen | (20 Liters, Green and Blue)" class="shop-title-value">CELLO Duo Plastic Step-On Pedal Dustbin for Wet and Dry Waste| 2 In 1 Dustbin Trash Can/Plastic Garbage Bins with Lid for Home Kitchen | (20 Liters, Green and Blue)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,125</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BKJRHV2M.html" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)"><img data-src="https://m.media-amazon.com/images/I/51EknP3PutL._SX679_.jpg" class="img-fluid lazy" alt="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BKJRHV2M.html" title="Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)" class="shop-title-value">Lava Blaze 5G (Glass Blue, 6GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 11GB Expandable RAM | Charger Included | Clean Android (No Bloatware)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>16,349</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">58% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00T6DHFO6.html" title="Pigeon By Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 3 Litres (Silver)"><img data-src="https://m.media-amazon.com/images/I/51xCU5ylKAL._SX679_.jpg" class="img-fluid lazy" alt="Pigeon By Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 3 Litres (Silver)" title="Pigeon By Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 3 Litres (Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00T6DHFO6.html" title="Pigeon By Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 3 Litres (Silver)" class="shop-title-value">Pigeon By Stovekraft Favourite Induction Base Aluminium Pressure Cooker with Outer Lid, 3 Litres (Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>649</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,549</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">55% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BBMSG1JW.html" title="V-Guard VKP15 Prime 1.5 Litre Electric Kettle for hot water | Double Wall with Cool Touch Body | 2 Year Coverage By V-Guard |1500 Watt"><img data-src="https://m.media-amazon.com/images/I/61BamWnLz8L._SX679_.jpg" class="img-fluid lazy" alt="V-Guard VKP15 Prime 1.5 Litre Electric Kettle for hot water | Double Wall with Cool Touch Body | 2 Year Coverage By V-Guard |1500 Watt" title="V-Guard VKP15 Prime 1.5 Litre Electric Kettle for hot water | Double Wall with Cool Touch Body | 2 Year Coverage By V-Guard |1500 Watt" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BBMSG1JW.html" title="V-Guard VKP15 Prime 1.5 Litre Electric Kettle for hot water | Double Wall with Cool Touch Body | 2 Year Coverage By V-Guard |1500 Watt" class="shop-title-value">V-Guard VKP15 Prime 1.5 Litre Electric Kettle for hot water | Double Wall with Cool Touch Body | 2 Year Coverage By V-Guard |1500 Watt</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>949</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,099</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/seeadlertech/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/software.html" title="Software" aria-label="Software">Software</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li><li><a href="/articles/jaipur.html" title="Jaipur" aria-label="Jaipur">Jaipur</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
