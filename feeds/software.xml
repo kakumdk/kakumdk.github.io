@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions</title>
+			<link>https://peoplesblog.co.in/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html</link>
+			<description>SharePoint is a robust collaboration platform that helps organizations manage and share documents and other content. One of the key features of SharePoint is the ability to create Document Libraries, which serve as centralized repositories for storing, organizing, and managing documents. These libraries can be highly customized with features like Content Types, Managed Metadata (Terms), User Group</description>
+			<pubDate>Tue, 03 Dec 2024 08:49:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html</guid>
+    </item><item>
 			<title>Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions</title>
 			<link>https://peoplesblog.co.in/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html</link>
 			<description>SharePoint is a powerful collaboration platform that allows organizations to store, manage, and share content efficiently. One of the core features of SharePoint is the Document Library, which provides a centralized location for storing files and documents. To enhance document management, SharePoint allows for a range of customization options, including Content Types, Managed Metadata (Terms), Use</description>
