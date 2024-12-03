@@ -46,7 +46,10 @@
     font-weight: normal;
 }
 .breadcrumbs a {
-    color: var(--default-color);
+    color: var(--nav-color);
+}
+.breadcrumbs a:hover {
+    color: var(--accent-color);
 }
 
 

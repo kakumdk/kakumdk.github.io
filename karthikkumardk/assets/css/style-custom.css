@@ -47,7 +47,8 @@
     margin: 15px auto;
     padding: 30px;
     border: 1px solid #F5F7F8;
-    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 30%);
+    /* box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 30%); */
+    box-shadow: 0px 5px 10px 0px rgb(110 123 131 / 10%);
 }
 .work-data h5 {
     line-height: 1.5;
