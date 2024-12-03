@@ -1312,10 +1312,13 @@ Allow: /quotes/determination.html
 Allow: /quotes/diversity.html
 Allow: /quotes/dreams.html
 Allow: /quotes/education.html
+Allow: /quotes/effort.html
 Allow: /quotes/equality.html
 Allow: /quotes/faith.html
+Allow: /quotes/focus.html
 Allow: /quotes/freedom.html
 Allow: /quotes/friendship.html
+Allow: /quotes/goals.html
 Allow: /quotes/growth.html
 Allow: /quotes/happiness.html
 Allow: /quotes/hope.html
@@ -1340,11 +1343,13 @@ Allow: /quotes/love.html
 Allow: /quotes/loyalty.html
 Allow: /quotes/marriage.html
 Allow: /quotes/morality.html
+Allow: /quotes/motivation.html
 Allow: /quotes/motivational.html
 Allow: /quotes/nature.html
 Allow: /quotes/perseverance.html
 Allow: /quotes/philosophy.html
 Allow: /quotes/power.html
+Allow: /quotes/preparation.html
 Allow: /quotes/purpose.html
 Allow: /quotes/relationship.html
 Allow: /quotes/resilience.html
