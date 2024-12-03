@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-prevent-morning-breath.html
 Allow: /articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html
 Allow: /articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html
 Allow: /articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html
