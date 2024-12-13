@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Migrating from JSStream to Vimeo Using Drupal Migration API</title>
+    <link>https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html</link>
+    <description>Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&amp;#39;re looking for a more scalable, feature-rich platform for hosting and managing your videos. While manual migration might work for small datasets, automating the process via Drupal&amp;rsquo;s Migration API can save significant time and reduce errors, especially for larger video libraries</description>
+    <pubDate>Fri, 13 Dec 2024 08:43:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html</guid>
+  </item><item>
     <title>How to prevent morning breath?</title>
     <link>https://peoplesblog.co.in/articles/how-to-prevent-morning-breath.html</link>
     <description>Morning breath, also known as halitosis, is a common issue caused by the natural decrease in saliva production while you sleep. Without adequate saliva to rinse away bacteria, odor-causing microbes can flourish, leading to unpleasant breath upon waking.  While it&amp;rsquo;s a natural occurrence, there are several steps you can take to minimize or prevent morning breath.  Understanding the Causes of M</description>

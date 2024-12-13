@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Vimeo - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/vimeo.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Migrating from JSStream to Vimeo Using Drupal Migration API</title>
+			<link>https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html</link>
+			<description>Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&amp;#39;re looking for a more scalable, feature-rich platform for hosting and managing your videos. While manual migration might work for small datasets, automating the process via Drupal&amp;rsquo;s Migration API can save significant time and reduce errors, especially for larger video libraries</description>
+			<pubDate>Fri, 13 Dec 2024 08:43:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html</guid>
+    </item>
+</channel>
+</rss>

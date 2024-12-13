@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html
 Allow: /articles/how-to-prevent-morning-breath.html
 Allow: /articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html
 Allow: /articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html
@@ -1122,6 +1123,7 @@ Allow: /articles/varanasi.html
 Allow: /articles/varkala.html
 Allow: /articles/vedas.html
 Allow: /articles/vegetable.html
+Allow: /articles/vimeo.html
 Allow: /articles/wayanad.html
 Allow: /articles/web.html
 Allow: /articles/webops.html
@@ -1292,6 +1294,7 @@ Allow: /feeds/varanasi.xml
 Allow: /feeds/varkala.xml
 Allow: /feeds/vedas.xml
 Allow: /feeds/vegetable.xml
+Allow: /feeds/vimeo.xml
 Allow: /feeds/wayanad.xml
 Allow: /feeds/web.xml
 Allow: /feeds/webops.xml

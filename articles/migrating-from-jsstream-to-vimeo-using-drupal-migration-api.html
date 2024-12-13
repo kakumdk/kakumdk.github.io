@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Migrating from JSStream to Vimeo Using Drupal Migration API</title>
+    <meta name="description" content="Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&#39;re looking for a more scalable, fe" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html" />
+    <meta property="og:title" content="Migrating from JSStream to Vimeo Using Drupal Migration API" />
+    <meta property="og:description" content="Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&#39;re looking for a more scalable, fe" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Migrating from JSStream to Vimeo Using Drupal Migration API" />
+    <meta name="twitter:description" content="Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&#39;re looking for a more scalable, fe" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Ad -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Ad -->
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html"
+        },
+        "headline": "Migrating from JSStream to Vimeo Using Drupal Migration API",
+        "description": "Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&#39;re looking for a more scalable, fe",
+        "image": "https://peoplesblog.co.in/upload/banners/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "13th Dec 2024",
+        "dateModified": "2024-12-13T08:45:33+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/sci-tech.html">Sci-Tech</a></li>
+                                    <li class="breadcrumb-item active">Migrating from JSStream to Vimeo Using Drupal Migration API</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Migrating from JSStream to Vimeo Using Drupal Migration API" data-src="/upload/banners/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Migrating from JSStream to Vimeo Using Drupal Migration API" />
+                                </div>
+                                <h1 class="read-article-title">Migrating from JSStream to Vimeo Using Drupal Migration API</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>13th Dec 2024</span>, <span class="last-updated">2024-12-13T08:45:33+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Migrating video content from <strong>JSStream</strong> (a custom video streaming platform) to <strong>Vimeo</strong> can be a crucial task if you&#39;re looking for a more scalable, feature-rich platform for hosting and managing your videos. While manual migration might work for small datasets, automating the process via Drupal&rsquo;s <strong>Migration API</strong> can save significant time and reduce errors, especially for larger video libraries.</p>  <p>In this article, we will walk through how to migrate video content (including video files, titles, descriptions, and tags) from <strong>JSStream</strong> to <strong>Vimeo</strong> using Drupal 10. The migration will leverage Drupal&rsquo;s Migration API, custom migration process plugins, and the <strong>Vimeo API</strong>.</p>  <h2>Key Concepts</h2>  <ol> <li><strong>Drupal Migration API</strong>: This API allows importing content from external sources (like JSStream) and mapping it to Drupal entities (e.g., media entities).</li> <li><strong>Vimeo API</strong>: The Vimeo API allows programmatic interaction with Vimeo to upload videos, set metadata, and manage video privacy and settings.</li> <li><strong>Media Entities</strong>: In Drupal, media entities represent multimedia content (images, videos, etc.). We&rsquo;ll use the <strong>Video media bundle</strong> to store Vimeo videos.</li> </ol>  <h2>Prerequisites</h2>  <p>Before proceeding with the migration, ensure you have the following setup:</p>  <ul> <li><strong>Drupal </strong>latest version&nbsp;installed.</li> <li>The required migration modules enabled: <tt>migrate</tt>, <tt>migrate_plus</tt>, <tt>migrate_tools</tt>.</li> <li>A <strong>Vimeo Developer</strong> account to get <strong>Client ID</strong>, <strong>Client Secret</strong>, and <strong>Access Token</strong>.</li> <li>Video files and metadata exported from <strong>JSStream</strong> in a CSV or JSON format.</li> </ul>  <h2>1. Install Required Modules</h2>  <p>First, install the necessary modules for migration:</p>  <p><code>composer require drupal/migrate drupal/migrate_plus drupal/migrate_tools</code></p>  <p>Then enable the modules:</p>  <p><code>drush en migrate migrate_plus migrate_tools</code></p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>2. Define Migration Configuration</h2>  <p>Create a migration configuration file in YAML to define how Drupal should import the data and map it to Drupal entities. We will assume the data from <strong>JSStream</strong> is exported to a CSV file.</p>  <p><strong>Example CSV (</strong><tt>jsstream_videos.csv</tt><strong>)</strong></p>  <p><code>title,description,tags,file_path</code></p>  <p><code>&quot;Sample Video 1&quot;,&quot;Description for video 1&quot;,&quot;tutorial, drupal&quot;,&quot;/path/to/video1.mp4&quot;</code></p>  <p><code>&quot;Sample Video 2&quot;,&quot;Description for video 2&quot;,&quot;tutorial, drupal&quot;,&quot;/path/to/video2.mp4&quot;</code></p>  <p><strong>Migration YAML Configuration (</strong><tt>jsstream_to_vimeo.yml</tt><strong>)</strong></p>  <p>Place the following YAML file under <tt>modules/custom/my_module/config/install</tt> (create the file structure if it doesn&#39;t exist).</p>  <p><code>id: jsstream_to_vimeo</code></p>  <p><code>label: &#39;Migrate JSStream Videos to Vimeo&#39;</code></p>  <p><code>migration_group: jsstream_migrations</code></p>  <p><code>source:</code></p>  <p><code>&nbsp;&nbsp;plugin: csv</code></p>  <p><code>&nbsp;&nbsp;path: &#39;/path/to/jsstream_videos.csv&#39;</code></p>  <p><code>&nbsp;&nbsp;delimiter: &#39;,&#39;</code></p>  <p><code>&nbsp;&nbsp;header_row_count: 1</code></p>  <p><code>&nbsp;&nbsp;key: id</code></p>  <p><code>&nbsp;&nbsp;columns:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;- title</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;- description</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;- tags</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;- file_path</code></p>  <p><code>destination:</code></p>  <p><code>&nbsp;&nbsp;plugin: &#39;entity:media&#39;</code></p>  <p><code>&nbsp;&nbsp;default_bundle: video</code></p>  <p><code>&nbsp;&nbsp;update_existing: true</code></p>  <p><code>process:</code></p>  <p><code>&nbsp;&nbsp;field_media_video_file:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;plugin: vimeo_upload</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;source: file_path</code></p>  <p><code>&nbsp;&nbsp;name: title</code></p>  <p><code>&nbsp;&nbsp;field_description: description</code></p>  <p><code>&nbsp;&nbsp;field_tags:</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;plugin: explode</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;source: tags</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;delimiter: &#39;,&#39;</code></p>  <p><code>&nbsp;&nbsp;status: 1</code></p>  <p><code>migration_dependencies: []</code></p>  <p><strong>Explanation of the YAML Configuration:</strong></p>  <ul> <li><strong>Source</strong>: We are using a CSV file (<tt>jsstream_videos.csv</tt>) as the source of video metadata. Adjust the path to match the location of your exported file.</li> <li><strong>Destination</strong>: We are creating media entities of type video. This assumes you&#39;ve already set up a <strong>Video media bundle</strong> in Drupal.</li> <li><strong>Process</strong>: The <tt>field_media_video_file</tt> will be populated using the custom plugin (<tt>vimeo_upload</tt>). Other metadata fields (e.g., title, description, tags) are directly mapped from the CSV.</li> <li><strong>field_tags</strong>: Tags are split using the explode plugin to handle multiple tags.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>3. Create the Custom Migration Process Plugin (vimeo_upload<strong>)</strong></h2>  <p>Now we need to create a custom migration process plugin (<tt>vimeo_upload</tt>) to handle uploading videos to <strong>Vimeo</strong> and setting their metadata.</p>  <p><strong>Create the Custom Process Plugin</strong></p>  <p>In your custom module (e.g., <tt>/modules/custom/my_module</tt>), create the following PHP file for the custom process plugin.</p>  <p><strong>Custom Process Plugin (</strong><tt>VimeoUpload.php</tt><strong>)</strong></p>  <p><code>namespace Drupal\my_module\Plugin\migrate\process;</code></p>  <p><code>use Drupal\migrate\Plugin\migrate\process\ProcessPluginBase;</code></p>  <p><code>use Vimeo\Vimeo;</code></p>  <p><code>use Drupal\Core\Field\FieldInterface;</code></p>  <p><code>use Drupal\migrate\MigrateExecutableInterface;</code></p>  <p><code>use Drupal\migrate\Row;</code></p>  <p><code>/**</code></p>  <p><code>&nbsp;* Upload video to Vimeo and return the video URI.</code></p>  <p><code>&nbsp;*</code></p>  <p><code>&nbsp;* @MigrateProcessPlugin(</code></p>  <p><code>&nbsp;* &nbsp; id = &quot;vimeo_upload&quot;</code></p>  <p><code>&nbsp;* )</code></p>  <p><code>&nbsp;*/</code></p>  <p><code>class VimeoUpload extends ProcessPluginBase {</code></p>  <p><code>&nbsp;&nbsp;/**</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* Process the migration data and upload to Vimeo.</code></p>  <p><code>&nbsp;&nbsp;&nbsp;*</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* @param string $file_path</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* &nbsp; The path to the video file to be uploaded.</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* @param \Drupal\migrate\MigrateExecutableInterface $migrate_executable</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* &nbsp; The migrate executable.</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* @param \Drupal\migrate\Row $row</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* &nbsp; The current row of migration data.</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* @param \Drupal\Core\Field\FieldDefinitionInterface $field</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* &nbsp; The field being processed.</code></p>  <p><code>&nbsp;&nbsp;&nbsp;*</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* @return string</code></p>  <p><code>&nbsp;&nbsp;&nbsp;* &nbsp; The Vimeo video URI or another identifier.</code></p>  <p><code>&nbsp;&nbsp;&nbsp;*/</code></p>  <p><code>&nbsp;&nbsp;public function transform($file_path, MigrateExecutableInterface $migrate_executable, Row $row, FieldInterface $field) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Vimeo API credentials</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$client_id = &#39;YOUR_VIMEO_CLIENT_ID&#39;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$client_secret = &#39;YOUR_VIMEO_CLIENT_SECRET&#39;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$access_token = &#39;YOUR_VIMEO_ACCESS_TOKEN&#39;;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Initialize Vimeo client</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$vimeo = new Vimeo($client_id, $client_secret);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;$vimeo-&gt;setToken($access_token);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;// Upload video to Vimeo</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;try {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$response = $vimeo-&gt;<tt>upload</tt>($file_path);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Set video metadata (title, description, tags)</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$video_id = $response[&#39;uri&#39;];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$metadata = [</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;name&#39; =&gt; $row-&gt;getSourceProperty(&#39;title&#39;),</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;description&#39; =&gt; $row-&gt;getSourceProperty(&#39;description&#39;),</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;tags&#39; =&gt; explode(&#39;,&#39;, $row-&gt;getSourceProperty(&#39;tags&#39;)),&nbsp; // Split tags</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$vimeo-&gt;request($video_id, $metadata, &#39;PATCH&#39;);</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Return the video URI (or other video identifier)</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $video_id;</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;catch (\Exception $e) {</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Log the error if the upload fails</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\Drupal::logger(&#39;my_module&#39;)-&gt;error(&#39;Vimeo upload failed: &#39; . $e-&gt;getMessage());</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return NULL;&nbsp; // Return NULL in case of failure</code></p>  <p><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></p>  <p><code>&nbsp;&nbsp;}</code></p>  <p><code>}</code></p>  <p><strong>Explanation of the </strong><strong>vimeo_upload</strong><strong> Plugin:</strong></p>  <ul> <li><strong>Vimeo API credentials</strong>: You need to replace &#39;<tt>YOUR_VIMEO_CLIENT_ID</tt>&#39;, &#39;<tt>YOUR_VIMEO_CLIENT_SECRET</tt>&#39;, and &#39;<tt>YOUR_VIMEO_ACCESS_TOKEN</tt>&#39; with your actual Vimeo API credentials.</li> <li><strong>Uploading video</strong>: The <tt>upload()</tt> method uploads the video to Vimeo.</li> <li><strong>Setting metadata</strong>: After uploading, the video&#39;s title, description, and tags are updated via the Vimeo API using the <tt>PATCH</tt> request.</li> <li><strong>Returning the video URI</strong>: The plugin returns the Vimeo video URI (or another identifier) to Drupal.</li> </ul>  <p>Make sure you have installed the <strong>Vimeo PHP SDK</strong> via Composer:</p>  <p><code>composer require vimeo/vimeo-api</code></p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>4. Run the Migration</h2>  <p>Once the migration configuration and custom plugin are set up, you can execute the migration using Drush.</p>  <p><strong>Import Migration Configuration</strong>: Import the configuration file into Drupal:</p>  <p><code>drush cim</code></p>  <p><strong>Run the Migration</strong>: Execute the migration:</p>  <p><code>drush migrate-import jsstream_to_vimeo</code></p>  <p><strong>Check Migration Status</strong>: To check the migration status:</p>  <p><code>drush migrate-status</code></p>  <h2>5. Verify Data on Vimeo</h2>  <p>After the migration is complete, follow these steps to verify the data:</p>  <ul> <li><strong>Check Vimeo</strong>: Log into your <strong>Vimeo account</strong> and check if the videos have been uploaded.</li> <li><strong>Check metadata</strong>: Ensure that the video titles, descriptions, and tags were properly set on Vimeo.</li> <li><strong>Test playback</strong>: Ensure the videos are playing correctly and accessible as needed.</li> </ul>  <h2>Conclusion</h2>  <p>Migrating video content from <strong>JSStream</strong> to <strong>Vimeo</strong> via <strong>Drupal 10</strong>&rsquo;s <strong>Migration API</strong> provides a flexible and automated way to move large datasets with minimal manual intervention. By utilizing Drupal&rsquo;s migration tools, custom process plugins, and the Vimeo API, you can easily transfer video files, along with their metadata (title, description, tags), to Vimeo.</p>  <p>This approach is highly scalable and efficient, making it an ideal solution for organizations and developers who need to migrate substantial video libraries while maintaining the integrity of metadata and video playback functionality.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/drupal.html'>for more drupal related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/sci-tech.html">Sci-Tech</a></span><span><a href="/articles/vimeo.html">Vimeo</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">62% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01MFXCZ5A.html" title="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts"><img data-src="https://m.media-amazon.com/images/I/81bSoD59t7L._SX679_.jpg" class="img-fluid lazy" alt="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts" title="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01MFXCZ5A.html" title="eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts" class="shop-title-value">eCraftIndia Golden Decorative Brass Ganesha Wall Hanging Diya With Three Wicks and Bells For Home Decor, Pooja Room, Home Temple/Mandir, Brass Diyas For Diwali Gifts</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>767</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">46% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)"><img data-src="https://m.media-amazon.com/images/I/51ByNekZkOL._SX679_.jpg" class="img-fluid lazy" alt="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" class="shop-title-value">Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,880</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">82% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08NCGJM4R.html" title="UTRAI Jstar 4 Jump Starter with Wireless Charger 2500A Peak 16000mAh (up to 8L Gas, 7.5L Diesel Engine) 12V Car Battery Booster Portable Power Pack with LCD Display Jumper Cables, QC 3.0 and LED Light"><img data-src="https://m.media-amazon.com/images/I/61cWPVH6SkL._SX679_.jpg" class="img-fluid lazy" alt="UTRAI Jstar 4 Jump Starter with Wireless Charger 2500A Peak 16000mAh (up to 8L Gas, 7.5L Diesel Engine) 12V Car Battery Booster Portable Power Pack with LCD Display Jumper Cables, QC 3.0 and LED Light" title="UTRAI Jstar 4 Jump Starter with Wireless Charger 2500A Peak 16000mAh (up to 8L Gas, 7.5L Diesel Engine) 12V Car Battery Booster Portable Power Pack with LCD Display Jumper Cables, QC 3.0 and LED Light" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08NCGJM4R.html" title="UTRAI Jstar 4 Jump Starter with Wireless Charger 2500A Peak 16000mAh (up to 8L Gas, 7.5L Diesel Engine) 12V Car Battery Booster Portable Power Pack with LCD Display Jumper Cables, QC 3.0 and LED Light" class="shop-title-value">UTRAI Jstar 4 Jump Starter with Wireless Charger 2500A Peak 16000mAh (up to 8L Gas, 7.5L Diesel Engine) 12V Car Battery Booster Portable Power Pack with LCD Display Jumper Cables, QC 3.0 and LED Light</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>10,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>59,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/how-to-prevent-morning-breath.html" title="How to prevent morning breath?">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/how-to-prevent-morning-breath.jpg" alt="How to prevent morning breath?" title="How to prevent morning breath?" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/how-to-prevent-morning-breath.html" title="How to prevent morning breath?">
+                                <span class="title">How to prevent morning breath?</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/how-to-prevent-morning-breath.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+                  How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+                  Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+                  Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+                  Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+                  Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+                  DIY Math Board Games, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div><div class="article">
+                <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+                  Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+                </a>
+              </div><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div><div class="article">
+                <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+                  Code Profiling and Performance Optimization of an Existing PHP Project
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00JD8EA1U.html" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue"><img data-src="https://m.media-amazon.com/images/I/71TBQtHYiyL._SX679_.jpg" class="img-fluid lazy" alt="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00JD8EA1U.html" title="Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue" class="shop-title-value">Classic Mosquito Net for Double Bed | King Size Foldable Machardani | Polyester 30GSM Strong Net | PVC Coated Corrosion Resistant Steel Wire - Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>889</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,000</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div><div class="article">
+          <a href="/articles/implementing-a-redis-cache-for-product-catalog-data-in-php.html">
+            Implementing a Redis Cache for Product Catalog Data in PHP
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">0% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BKKPRMM6.html" title="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)"><img data-src="https://m.media-amazon.com/images/I/7135keEf6AL._SX679_.jpg" class="img-fluid lazy" alt="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)" title="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BKKPRMM6.html" title="Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)" class="shop-title-value">Samsung 28L Multi Spit , Convection Microwave Oven (MC28A6035QS/TL, Silver, Various Cooking Modes, Eco Mode, Hotblast, Crusty Plate, Wire Rack, Slim Fry, Ceramic Enamel Cavity with 10 year warranty)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>21,500</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>21,500</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+            Migrating from JSStream to Vimeo Using Drupal Migration API
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prevent-morning-breath.html">
+            How to prevent morning breath?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+            How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+            Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-sattu-drink.html">
+            How to prepare Sattu Drink?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">35% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey"><img data-src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" class="img-fluid lazy" alt="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" class="shop-title-value">Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>59,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>92,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-gingerbread-man.html">
+            The Gingerbread Man
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fish.html">
+            The Magic Fish
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CGN8FMJ8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)"><img data-src="https://m.media-amazon.com/images/I/61hD-fVYjcL._SX679_.jpg" class="img-fluid lazy" alt="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CGN8FMJ8.html" title="IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)" class="shop-title-value">IFB 24 L Solo Microwave Oven (24PM2S, Silver, 69 Indian, Anti rust-SS cavity and Continental Auto Cook Recipes)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>6,790</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>8,790</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/bapu.html">
+            Bapu
+          </a>
+        </div><div class="article">
+          <a href="/great-people/kashiram-rana.html">
+            Kashiram Rana
+          </a>
+        </div><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B085G6LTTT.html" title="Pigeon By Stovekraft Special Aluminium Pressure Cooker Combo with Outer Lid Gas Stove Compatible 2, 3, 5 Litre Capacity for Healthy Cooking (Silver)"><img data-src="https://m.media-amazon.com/images/I/51ZLJK6FRzL._SX679_.jpg" class="img-fluid lazy" alt="Pigeon By Stovekraft Special Aluminium Pressure Cooker Combo with Outer Lid Gas Stove Compatible 2, 3, 5 Litre Capacity for Healthy Cooking (Silver)" title="Pigeon By Stovekraft Special Aluminium Pressure Cooker Combo with Outer Lid Gas Stove Compatible 2, 3, 5 Litre Capacity for Healthy Cooking (Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B085G6LTTT.html" title="Pigeon By Stovekraft Special Aluminium Pressure Cooker Combo with Outer Lid Gas Stove Compatible 2, 3, 5 Litre Capacity for Healthy Cooking (Silver)" class="shop-title-value">Pigeon By Stovekraft Special Aluminium Pressure Cooker Combo with Outer Lid Gas Stove Compatible 2, 3, 5 Litre Capacity for Healthy Cooking (Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,635</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">68% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08LH79V3N.html" title="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable"><img data-src="https://m.media-amazon.com/images/I/41qM3YDDCLL.jpg" class="img-fluid lazy" alt="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable" title="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08LH79V3N.html" title="GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable" class="shop-title-value">GLUN Automatic Wireless Portable Mini Rechargeable Water Bottle Can Dispenser Pump Upto 20 Litre Bottle with USB Cable</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>289</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>899</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07FJNNZCJ.html" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black"><img data-src="https://m.media-amazon.com/images/I/51IJhnm6slL._SX522_.jpg" class="img-fluid lazy" alt="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07FJNNZCJ.html" title="V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black" class="shop-title-value">V-Guard Zenora RO UF Water Purifier | TDS up to 2000 ppm | 7 Stage Purification with World-class RO Membrane and Advanced UF Membrane | 7 Litre, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>7,299</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>14,649</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">33% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08GYDZ6SF.html" title="UCRAVO Double Sided Tape Heavy Duty - Multipurpose Removable Traceless Mounting Adhesive Tape for Walls，Washable Reusable Strong Sticky Strips Grip Tape"><img data-src="https://m.media-amazon.com/images/I/71kEz7xCIxL._SX522_.jpg" class="img-fluid lazy" alt="UCRAVO Double Sided Tape Heavy Duty - Multipurpose Removable Traceless Mounting Adhesive Tape for Walls，Washable Reusable Strong Sticky Strips Grip Tape" title="UCRAVO Double Sided Tape Heavy Duty - Multipurpose Removable Traceless Mounting Adhesive Tape for Walls，Washable Reusable Strong Sticky Strips Grip Tape" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08GYDZ6SF.html" title="UCRAVO Double Sided Tape Heavy Duty - Multipurpose Removable Traceless Mounting Adhesive Tape for Walls，Washable Reusable Strong Sticky Strips Grip Tape" class="shop-title-value">UCRAVO Double Sided Tape Heavy Duty - Multipurpose Removable Traceless Mounting Adhesive Tape for Walls，Washable Reusable Strong Sticky Strips Grip Tape</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>299</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">20% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C7CPNNYK.html" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W"><img data-src="https://m.media-amazon.com/images/I/61ulgKbOAQL._SX679_.jpg" class="img-fluid lazy" alt="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C7CPNNYK.html" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" class="shop-title-value">Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,599.50</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,995</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/seeadlertech/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/vimeo.html" title="Vimeo" aria-label="Vimeo">Vimeo</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li><li><a href="/articles/software.html" title="Software" aria-label="Software">Software</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li><li><a href="/articles/php.html" title="Php" aria-label="Php">Php</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
