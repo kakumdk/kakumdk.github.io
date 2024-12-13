@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://peoplesblog.co.in">
+<channel>
+	<title>Azure - Peoples BLOG</title>
+    <link>https://peoplesblog.co.in/articles/azure.html</link>
+    <description/>
+    <language>en</language>
+    <item>
+			<title>Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices</title>
+			<link>https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html</link>
+			<description>As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Kubernetes Service (AKS) is Microsoft&amp;#39;s managed Kubernetes offering in the Azure cloud, designed to simplify the deployment, management, and scaling of containerized applications. AKS helps organizations take advantage of Kubernetes&amp;#39; robust fea</description>
+			<pubDate>Fri, 13 Dec 2024 08:49:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html</guid>
+    </item>
+</channel>
+</rss>

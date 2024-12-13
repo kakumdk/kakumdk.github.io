@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices</title>
+			<link>https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html</link>
+			<description>As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Kubernetes Service (AKS) is Microsoft&amp;#39;s managed Kubernetes offering in the Azure cloud, designed to simplify the deployment, management, and scaling of containerized applications. AKS helps organizations take advantage of Kubernetes&amp;#39; robust fea</description>
+			<pubDate>Fri, 13 Dec 2024 08:49:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html</guid>
+    </item><item>
 			<title>Migrating from JSStream to Vimeo Using Drupal Migration API</title>
 			<link>https://peoplesblog.co.in/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html</link>
 			<description>Migrating video content from JSStream (a custom video streaming platform) to Vimeo can be a crucial task if you&amp;#39;re looking for a more scalable, feature-rich platform for hosting and managing your videos. While manual migration might work for small datasets, automating the process via Drupal&amp;rsquo;s Migration API can save significant time and reduce errors, especially for larger video libraries</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 28 Nov 2024 19:14:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/alum-crystal-geodes-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Rock Candy Crystal Sticks, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/rock-candy-crystal-sticks-science-experiment-for-children.html</link>
-			<description>Creating rock candy crystal sticks is a fun and educational science experiment that allows children to observe crystal formation and learn about solubility and saturation.  Here&amp;#39;s a step-by-step guide:  Materials:   Granulated sugar Water Glass or plastic jars or cups Wooden skewers or bamboo sticks Clothespins Food coloring (optional) Flavor extracts (optional) Saucepan Stirring spoon Scissor</description>
-			<pubDate>Thu, 28 Nov 2024 19:11:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/rock-candy-crystal-sticks-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>

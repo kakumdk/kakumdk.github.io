@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Pr</title>
+    <meta name="description" content="As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Ku" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html" />
+    <meta property="og:title" content="Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Pr" />
+    <meta property="og:description" content="As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Ku" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Pr" />
+    <meta name="twitter:description" content="As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Ku" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Ad -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Ad -->
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html"
+        },
+        "headline": "Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices",
+        "description": "As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Ku",
+        "image": "https://peoplesblog.co.in/upload/banners/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "13th Dec 2024",
+        "dateModified": "2024-12-13T08:55:34+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/azure.html">Azure</a></li>
+                                    <li class="breadcrumb-item active">Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices" data-src="/upload/banners/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices" />
+                                </div>
+                                <h1 class="read-article-title">Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>13th Dec 2024</span>, <span class="last-updated">2024-12-13T08:55:34+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Kubernetes Service (AKS) is Microsoft&#39;s managed Kubernetes offering in the Azure cloud, designed to simplify the deployment, management, and scaling of containerized applications. AKS helps organizations take advantage of Kubernetes&#39; robust features, such as automated scaling, load balancing, and high availability, without having to manage the underlying infrastructure.</p>  <p>In this article, we will explore the key concepts behind <strong>Azure Kubernetes Service (AKS)</strong>, how it works, its benefits, and best practices for deploying and managing Kubernetes clusters on Azure.</p>  <h2>What is Azure Kubernetes Service (AKS)?</h2>  <p><strong>Azure Kubernetes Service (AKS)</strong> is a fully managed Kubernetes service provided by Microsoft Azure. It allows developers to deploy, manage, and scale containerized applications using Kubernetes without the complexity of managing the underlying infrastructure. With AKS, Azure handles tasks like <strong>control plane management</strong>, <strong>patching</strong>, and <strong>upgrades</strong>, while you focus on deploying and managing your containerized workloads.</p>  <p><strong>Key Features of Azure Kubernetes Service</strong></p>  <ol> <li><strong>Managed Kubernetes Control Plane</strong>: With AKS, the Kubernetes control plane (including the API server, scheduler, and controller manager) is fully managed by Azure, ensuring high availability, scalability, and performance.</li> <li><strong>Simplified Cluster Management</strong>: <ol> <li>AKS simplifies cluster management by automating tasks like patching and upgrades, reducing the operational overhead.</li> <li>You can manage your cluster using the <strong>Azure portal</strong>, <strong>Azure CLI</strong>, or <strong>Kubernetes kubectl</strong>.</li> </ol> </li> <li><strong>Integrated with Azure Active Directory (AAD)</strong>: <ol> <li>AKS integrates seamlessly with <strong>Azure Active Directory (AAD)</strong> to manage user access to Kubernetes resources.</li> <li>This enables role-based access control (RBAC) for both Kubernetes and Azure resources, improving security.</li> </ol> </li> <li><strong>Scaling and Load Balancing</strong>: <ol> <li>AKS supports both <strong>horizontal pod scaling</strong> (based on resource utilization) and <strong>cluster scaling</strong> (to add or remove nodes).</li> <li>AKS also integrates with Azure Load Balancer to ensure traffic is efficiently distributed across pods.</li> </ol> </li> <li><strong>DevOps and CI/CD Integration</strong>: <ol> <li>AKS is designed to work well with Azure DevOps, GitHub Actions, and other continuous integration/continuous deployment (CI/CD) tools.</li> <li>It provides native integrations for automated deployment and monitoring.</li> </ol> </li> <li><strong>High Availability</strong>: <ol> <li>AKS supports multi-zone availability in certain regions, ensuring that your applications are resilient to data center failures.</li> <li>The service also supports <strong>availability sets</strong> for the worker nodes to distribute workloads across different fault domains.</li> </ol> </li> <li><strong>Security and Compliance</strong>: <ol> <li>AKS integrates with Azure security services such as <strong>Azure Security Center</strong> for continuous monitoring, <strong>Azure Policy</strong> for compliance, and <strong>Azure Monitor</strong> for logging and diagnostics.</li> <li>It also supports <strong>Network Policies</strong> and <strong>Pod Security Policies</strong> for securing network traffic between pods and restricting container behavior.</li> </ol> </li> <li><strong>Integration with Azure Services</strong>: AKS integrates with other Azure services like <strong>Azure Monitor</strong>, <strong>Azure Application Insights</strong>, <strong>Azure Container Registry (ACR)</strong>, and <strong>Azure Virtual Networks</strong>, making it easier to build and manage cloud-native applications.</li> <li><strong>Windows and Linux Support</strong>: AKS supports both Linux and Windows containers, enabling the deployment of mixed workloads in the same cluster.</li> </ol>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>Key Concepts in Azure Kubernetes Service</h2>  <p>Before diving into best practices, it&#39;s important to understand some fundamental concepts in AKS and Kubernetes that will help you work more effectively with the service.</p>  <p><strong>1. Kubernetes Cluster</strong></p>  <p>A Kubernetes <strong>cluster</strong> consists of at least one <strong>master node</strong> (control plane) and multiple <strong>worker nodes</strong> (where the containers run). The master node is responsible for managing the cluster&rsquo;s state, including scheduling, scaling, and monitoring the health of the application.</p>  <ul> <li><strong>Control Plane</strong>: The control plane consists of the components that control and manage the cluster. In AKS, the control plane is fully managed by Azure.</li> <li><strong>Node Pool</strong>: A set of worker nodes in AKS that share the same configuration (e.g., size, OS). AKS supports multiple node pools, allowing you to run both Linux and Windows containers in the same cluster.</li> </ul>  <p><strong>2. Pods and Containers</strong></p>  <p>A <strong>pod</strong> is the smallest and most basic unit of Kubernetes deployment. A pod can contain one or more <strong>containers</strong> that share the same network namespace and storage. Containers in the same pod can easily communicate with each other, making them ideal for tightly coupled application components.</p>  <ul> <li><strong>Pod Scaling</strong>: Kubernetes can automatically scale the number of replicas (instances) of a pod based on resource utilization, ensuring your application remains highly available and performant.</li> </ul>  <p><strong>3. Services and Networking</strong></p>  <p>Kubernetes provides <strong>services</strong> to expose applications running in pods to the outside world or within the cluster. There are several types of services:</p>  <ul> <li><strong>ClusterIP</strong>: The default service type, which exposes the service on an internal IP address within the cluster.</li> <li><strong>LoadBalancer</strong>: A service type that exposes the application externally using Azure&#39;s load balancing infrastructure.</li> <li><strong>NodePort</strong>: Exposes the service on each node&#39;s IP address at a static port.</li> </ul>  <p>AKS also integrates with <strong>Azure Virtual Networks (VNet)</strong> to provide network isolation, private communication between services, and secure access to Azure resources.</p>  <p><strong>4. Namespaces</strong></p>  <ul> <li>Kubernetes namespaces provide a way to divide cluster resources between multiple users or teams.</li> <li>In large organizations, namespaces can be used to isolate different applications or environments (e.g., dev, test, prod) within the same cluster.</li> </ul>  <p><strong>5. ConfigMaps and Secrets</strong></p>  <ul> <li>Kubernetes uses <strong>ConfigMaps</strong> to store non-sensitive configuration data, such as environment variables or configuration files, and <strong>Secrets</strong> to store sensitive information like passwords or API keys.</li> <li>AKS integrates with Azure Key Vault to provide enhanced security for secrets.</li> </ul>  <p><strong>6. Persistent Storage</strong></p>  <ul> <li>Kubernetes uses <strong>persistent volumes (PV)</strong> and <strong>persistent volume claims (PVC)</strong> to manage storage for containers.</li> <li>AKS can provision persistent storage from Azure Disk or Azure Files, allowing stateful applications to store data outside of containers, making it persistent across pod restarts.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>Key Benefits of Azure Kubernetes Service</h2>  <p><strong>1. Simplified Kubernetes Management</strong></p>  <ul> <li>AKS abstracts away much of the complexity involved in managing Kubernetes clusters.</li> <li>Azure automatically handles cluster upgrades, patching, and security, so you don&rsquo;t need to worry about maintaining the control plane.</li> <li>This reduces operational overhead and allows your team to focus on application development.</li> </ul>  <p><strong>2. Scalability and Flexibility</strong></p>  <ul> <li>AKS supports automatic scaling for both the cluster and the applications running in it.</li> <li>You can scale your cluster by adding or removing nodes, or scale applications by adjusting the number of pod replicas.</li> <li>Kubernetes also supports <strong>Horizontal Pod Autoscaling (HPA)</strong>, which automatically adjusts the number of pods based on CPU or memory usage.</li> </ul>  <p><strong>3. Cost Efficiency</strong></p>  <ul> <li>With AKS, you only pay for the <strong>worker nodes</strong> (VMs) in your cluster.</li> <li>The Kubernetes control plane is free of charge, and Azure handles the underlying infrastructure, making AKS a cost-effective solution for managing containerized applications.</li> </ul>  <p><strong>4. DevOps and CI/CD Integration</strong></p>  <ul> <li>AKS integrates seamlessly with Azure DevOps and other CI/CD tools to enable fast and reliable application delivery.</li> <li>With AKS, you can set up pipelines to automatically deploy containerized applications into your Kubernetes clusters, enabling continuous delivery and reducing deployment time.</li> </ul>  <p><strong>5. Security and Compliance</strong></p>  <ul> <li>AKS integrates with <strong>Azure Active Directory (AAD)</strong> for secure identity and access management.</li> <li>It also supports <strong>role-based access control (RBAC)</strong>, allowing administrators to restrict access to specific Kubernetes resources.</li> <li>Additionally, AKS integrates with <strong>Azure Security Center</strong> and <strong>Azure Monitor</strong> to help track compliance and ensure the security of your environment.</li> </ul>  <p><strong>6. Multi-Region Availability</strong></p>  <ul> <li>AKS supports multi-region deployment, enabling you to run highly available and disaster-resilient applications across Azure regions.</li> <li>This improves the reliability and availability of your application by distributing workloads across multiple data centers.</li> </ul>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>Best Practices for Azure Kubernetes Service</h2>  <p><strong>1. Use Multiple Node Pools for Flexibility</strong></p>  <ul> <li>Leverage <strong>multiple node pools</strong> to run different types of workloads in your AKS cluster.</li> <li>For example, you can use one node pool for general-purpose workloads and another for high-performance workloads (e.g., GPU-based nodes for machine learning).</li> <li>This enables better resource management and cost optimization.</li> </ul>  <p><strong>2. Enable Azure Active Directory (AAD) Integration</strong></p>  <ul> <li>Integrate <strong>Azure Active Directory (AAD)</strong> with AKS to control user access and ensure secure authentication for the Kubernetes API server.</li> <li>You can configure role-based access control (RBAC) to grant specific permissions to users or applications based on their AAD identities.</li> </ul>  <p><strong>3. Use Network Policies for Security</strong></p>  <ul> <li>Implement <strong>network policies</strong> to control communication between pods in your AKS cluster.</li> <li>Network policies can help secure your applications by restricting traffic between pods or limiting communication to specific IP ranges or services.</li> </ul>  <p><strong>4. Use Managed Identity for Secure Resource Access</strong></p>  <ul> <li>Enable <strong>Managed Identity</strong> for your AKS cluster to securely access other Azure resources (e.g., Azure Storage, Key Vault) without needing to manage credentials.</li> <li>Managed identities help improve security by eliminating the need for hardcoded secrets or credentials.</li> </ul>  <p><strong>5. Automate Scaling with Horizontal Pod Autoscaling (HPA)</strong></p>  <ul> <li>Set up <strong>Horizontal Pod Autoscaling (HPA)</strong> to automatically adjust the number of pod replicas based on resource usage (CPU, memory, etc.).</li> <li>This ensures that your application scales dynamically based on demand, improving performance and cost efficiency.</li> </ul>  <p><strong>6. Monitor and Log Cluster Activity</strong></p>  <ul> <li>Use <strong>Azure Monitor</strong> and <strong>Azure Log Analytics</strong> to monitor the health and performance of your AKS cluster.</li> <li>These tools can help you identify potential issues, optimize resource usage, and troubleshoot application problems.</li> <li>Additionally, integrating <strong>Prometheus</strong> and <strong>Grafana</strong> provides advanced monitoring and visualization capabilities for Kubernetes workloads.</li> </ul>  <p><strong>7. Leverage Helm for Package Management</strong></p>  <ul> <li>Use <strong>Helm</strong> to manage Kubernetes applications in AKS. Helm provides a simple way to deploy, upgrade, and manage Kubernetes applications using pre-packaged charts.</li> <li>It simplifies application deployment and management, especially for complex microservices architectures.</li> </ul>  <p><strong>8. Use Azure Container Registry (ACR) for Storing Images</strong></p>  <ul> <li>Store your container images in <strong>Azure Container Registry (ACR)</strong>, which integrates seamlessly with AKS.</li> <li>ACR provides a private registry to securely store and manage Docker images, ensuring faster and more secure deployments to AKS.</li> </ul>  <p><strong>9. Ensure High Availability and Disaster Recovery</strong></p>  <ul> <li>To ensure high availability, use AKS features like <strong>multi-zone availability</strong> and <strong>cluster autoscaling</strong>.</li> <li>Additionally, plan for disaster recovery by backing up important data, leveraging multi-region deployments, and regularly testing failover scenarios.</li> </ul>  <h2>Conclusion</h2>  <p><strong>Azure Kubernetes Service (AKS)</strong> is a powerful tool for organizations looking to deploy, manage, and scale containerized applications with Kubernetes in the cloud. By taking advantage of AKS&#39; managed infrastructure, built-in scalability, security features, and integration with other Azure services, organizations can reduce the complexity of managing Kubernetes clusters and focus on building and deploying cloud-native applications.</p>  <p>By following best practices such as enabling <strong>multi-node pools</strong>, <strong>Azure Active Directory integration</strong>, <strong>network policies</strong>, and <strong>autoscaling</strong>, organizations can ensure that their AKS environments are secure, cost-effective, and highly available. Whether you&rsquo;re migrating legacy applications to the cloud or building cloud-native solutions from scratch, AKS provides the tools you need to succeed in today&rsquo;s fast-moving cloud world.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/azure.html">Azure</a></span><span><a href="/articles/kubernetes.html">Kubernetes</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">28% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B00F159RIK.html" title="Bajaj DX-2 600W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, Black"><img data-src="https://m.media-amazon.com/images/I/416ICdLhYGL._SX300_SY300_QL70_FMwebp_.jpg" class="img-fluid lazy" alt="Bajaj DX-2 600W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, Black" title="Bajaj DX-2 600W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B00F159RIK.html" title="Bajaj DX-2 600W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, Black" class="shop-title-value">Bajaj DX-2 600W Dry Iron with Advance Soleplate and Anti-bacterial German Coating Technology, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>449</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>625</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09MVT1NDJ.html" title="BULLAR Home Gym Set, Steel Dumbbell Set, Steel Dumbbell Plates, (10-50kg), Dumbbells, Steel Weight Plates, Home Gym Equipments for Men (30kg Steel Dumbbell for Home Gym)"><img data-src="https://m.media-amazon.com/images/I/810SJkiwLZL._SX679_.jpg" class="img-fluid lazy" alt="BULLAR Home Gym Set, Steel Dumbbell Set, Steel Dumbbell Plates, (10-50kg), Dumbbells, Steel Weight Plates, Home Gym Equipments for Men (30kg Steel Dumbbell for Home Gym)" title="BULLAR Home Gym Set, Steel Dumbbell Set, Steel Dumbbell Plates, (10-50kg), Dumbbells, Steel Weight Plates, Home Gym Equipments for Men (30kg Steel Dumbbell for Home Gym)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09MVT1NDJ.html" title="BULLAR Home Gym Set, Steel Dumbbell Set, Steel Dumbbell Plates, (10-50kg), Dumbbells, Steel Weight Plates, Home Gym Equipments for Men (30kg Steel Dumbbell for Home Gym)" class="shop-title-value">BULLAR Home Gym Set, Steel Dumbbell Set, Steel Dumbbell Plates, (10-50kg), Dumbbells, Steel Weight Plates, Home Gym Equipments for Men (30kg Steel Dumbbell for Home Gym)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>5,237</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>14,485</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">41% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08DPLCM6T.html" title="LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)"><img data-src="https://m.media-amazon.com/images/I/81Tfy967TKL._SX679_.jpg" class="img-fluid lazy" alt="LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)" title="LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08DPLCM6T.html" title="LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)" class="shop-title-value">LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>12,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>21,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html" title="Migrating from JSStream to Vimeo Using Drupal Migration API">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.jpg" alt="Migrating from JSStream to Vimeo Using Drupal Migration API" title="Migrating from JSStream to Vimeo Using Drupal Migration API" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html" title="Migrating from JSStream to Vimeo Using Drupal Migration API">
+                                <span class="title">Migrating from JSStream to Vimeo Using Drupal Migration API</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+                  Migrating from JSStream to Vimeo Using Drupal Migration API
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+                  How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+                  Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+                  Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+                  Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+                  Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+                  DIY Math Board Games, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div><div class="article">
+                <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+                  Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+                </a>
+              </div><div class="article">
+                <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+                  Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">18% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BMGGWGHV.html" title="LG 8 Kg 5 Star Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully Automatic Front Load Washing Machine (FHM1408BDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)"><img data-src="https://m.media-amazon.com/images/I/71cDdw7Vk7L._SX679_.jpg" class="img-fluid lazy" alt="LG 8 Kg 5 Star Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully Automatic Front Load Washing Machine (FHM1408BDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" title="LG 8 Kg 5 Star Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully Automatic Front Load Washing Machine (FHM1408BDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BMGGWGHV.html" title="LG 8 Kg 5 Star Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully Automatic Front Load Washing Machine (FHM1408BDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)" class="shop-title-value">LG 8 Kg 5 Star Direct Drive Technology, Steam Wash, 6 Motion DD, Smart Diagnosis, Fully Automatic Front Load Washing Machine (FHM1408BDM, Allergy Care, In-Built Heater, Touch Panel, Middle Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>39,500</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>47,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-oop-features-in-php-final-classes-magic-methods-and-late-static-binding.html">
+            Advanced OOP Features in PHP: Final Classes, Magic Methods, and Late Static Binding
+          </a>
+        </div><div class="article">
+          <a href="/articles/hardest-truths-of-life-we-all-have-to-face.html">
+            Hardest Truths of Life We All Have to Face
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">63% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B085S3TJ46.html" title="Wesley Milestone 2.0 Casual Waterproof Laptop Backpack/Office Bag/School Bag/College Bag/Business Bag/Travel Backpack (Dimensions:13x18 inches) (Compatible with 15.6 inch laptop) 30 L"><img data-src="https://m.media-amazon.com/images/I/81w2z8kGABL._SY879_.jpg" class="img-fluid lazy" alt="Wesley Milestone 2.0 Casual Waterproof Laptop Backpack/Office Bag/School Bag/College Bag/Business Bag/Travel Backpack (Dimensions:13x18 inches) (Compatible with 15.6 inch laptop) 30 L" title="Wesley Milestone 2.0 Casual Waterproof Laptop Backpack/Office Bag/School Bag/College Bag/Business Bag/Travel Backpack (Dimensions:13x18 inches) (Compatible with 15.6 inch laptop) 30 L" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B085S3TJ46.html" title="Wesley Milestone 2.0 Casual Waterproof Laptop Backpack/Office Bag/School Bag/College Bag/Business Bag/Travel Backpack (Dimensions:13x18 inches) (Compatible with 15.6 inch laptop) 30 L" class="shop-title-value">Wesley Milestone 2.0 Casual Waterproof Laptop Backpack/Office Bag/School Bag/College Bag/Business Bag/Travel Backpack (Dimensions:13x18 inches) (Compatible with 15.6 inch laptop) 30 L</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>449</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,199</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+            Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+            Migrating from JSStream to Vimeo Using Drupal Migration API
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prevent-morning-breath.html">
+            How to prevent morning breath?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+            How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+            Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-sattu-drink.html">
+            How to prepare Sattu Drink?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">21% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B8NHX62W.html" title="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)"><img data-src="https://m.media-amazon.com/images/I/61Ct6+KF4AL._SY879_.jpg" class="img-fluid lazy" alt="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)" title="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B8NHX62W.html" title="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)" class="shop-title-value">Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>17,690</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>22,500</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-gingerbread-man.html">
+            The Gingerbread Man
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fish.html">
+            The Magic Fish
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">41% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07R47WXX9.html" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)"><img data-src="https://m.media-amazon.com/images/I/814zusmvtVL._SX385_.jpg" class="img-fluid lazy" alt="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07R47WXX9.html" title="SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)" class="shop-title-value">SLIMSHINE 5-Shelf Wall Mount Dish Rack | Stainless Steel Kitchen Organizer for Plates, Bowls &amp; Utensils (30 x 32 Inch)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,374</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/bapu.html">
+            Bapu
+          </a>
+        </div><div class="article">
+          <a href="/great-people/kashiram-rana.html">
+            Kashiram Rana
+          </a>
+        </div><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div><div class="article">
+          <a href="/great-people/nagarjuna-akkineni.html">
+            Nagarjuna Akkineni
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">64% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B082DRZ3PD.html" title="Amazon Brand - Solimo 12-inch Plastic &amp; Glass Wall Clock - Victorian Bliss (Silent Movement), Black"><img data-src="https://m.media-amazon.com/images/I/81RJXN-+kaL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo 12-inch Plastic &amp; Glass Wall Clock - Victorian Bliss (Silent Movement), Black" title="Amazon Brand - Solimo 12-inch Plastic &amp; Glass Wall Clock - Victorian Bliss (Silent Movement), Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B082DRZ3PD.html" title="Amazon Brand - Solimo 12-inch Plastic &amp; Glass Wall Clock - Victorian Bliss (Silent Movement), Black" class="shop-title-value">Amazon Brand - Solimo 12-inch Plastic &amp; Glass Wall Clock - Victorian Bliss (Silent Movement), Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>539</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07S5FBY3J.html" title="HIT Anti Mosquito Racquet | 6 months Warranty | Rechargeable Mosquito Killer Bat with LED Light | Charge Before Use"><img data-src="https://m.media-amazon.com/images/I/61ZvXHcRrrL._SX679_.jpg" class="img-fluid lazy" alt="HIT Anti Mosquito Racquet | 6 months Warranty | Rechargeable Mosquito Killer Bat with LED Light | Charge Before Use" title="HIT Anti Mosquito Racquet | 6 months Warranty | Rechargeable Mosquito Killer Bat with LED Light | Charge Before Use" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07S5FBY3J.html" title="HIT Anti Mosquito Racquet | 6 months Warranty | Rechargeable Mosquito Killer Bat with LED Light | Charge Before Use" class="shop-title-value">HIT Anti Mosquito Racquet | 6 months Warranty | Rechargeable Mosquito Killer Bat with LED Light | Charge Before Use</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>439</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>600</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">80% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08PRXSL5Q.html" title="AKHILAM Women&#039;s Chanderi Pure Georgette Saree with Blouse Piece"><img data-src="https://m.media-amazon.com/images/I/71vaE3avSDL._UY879_.jpg" class="img-fluid lazy" alt="AKHILAM Women&#039;s Chanderi Pure Georgette Saree with Blouse Piece" title="AKHILAM Women&#039;s Chanderi Pure Georgette Saree with Blouse Piece" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08PRXSL5Q.html" title="AKHILAM Women&#039;s Chanderi Pure Georgette Saree with Blouse Piece" class="shop-title-value">AKHILAM Women&#039;s Chanderi Pure Georgette Saree with Blouse Piece</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>619</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,099</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">7% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CQYNM3ZF.html" title="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)"><img data-src="https://m.media-amazon.com/images/I/71XNeka-BRL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)" title="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CQYNM3ZF.html" title="OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)" class="shop-title-value">OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>42,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>45,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">87% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B9X8LVJ5.html" title="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022"><img data-src="https://m.media-amazon.com/images/I/41JQXNAPy3L._SX300_SY300_QL70_FMwebp_.jpg" class="img-fluid lazy" alt="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022" title="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B9X8LVJ5.html" title="Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022" class="shop-title-value">Sehaz Artworks Home Decor Items for Office | Wall hangings for Home Decoration | Door Hanging Wooden Wall Hanging Decor | Wall Decoration Items for Living Room | Decorative Items for Home -1-0022</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>189</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,499</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/seeadlertech/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/azure.html" title="Azure" aria-label="Azure">Azure</a></li><li><a href="/articles/vimeo.html" title="Vimeo" aria-label="Vimeo">Vimeo</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li><li><a href="/articles/software.html" title="Software" aria-label="Software">Software</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>

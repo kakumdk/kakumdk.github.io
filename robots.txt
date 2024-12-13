@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html
 Allow: /articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html
 Allow: /articles/how-to-prevent-morning-breath.html
 Allow: /articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html
@@ -969,6 +970,7 @@ Allow: /articles/amritsar.html
 Allow: /articles/araku-valley.html
 Allow: /articles/arunachal-pradesh.html
 Allow: /articles/auli.html
+Allow: /articles/azure.html
 Allow: /articles/br-hills.html
 Allow: /articles/bangalore.html
 Allow: /articles/belur.html
@@ -1035,6 +1037,7 @@ Allow: /articles/kodaikanal.html
 Allow: /articles/kolkata.html
 Allow: /articles/kollur.html
 Allow: /articles/kovalam.html
+Allow: /articles/kubernetes.html
 Allow: /articles/kudremukh.html
 Allow: /articles/ladakh.html
 Allow: /articles/lando.html
@@ -1140,6 +1143,7 @@ Allow: /feeds/amritsar.xml
 Allow: /feeds/araku-valley.xml
 Allow: /feeds/arunachal-pradesh.xml
 Allow: /feeds/auli.xml
+Allow: /feeds/azure.xml
 Allow: /feeds/br-hills.xml
 Allow: /feeds/bangalore.xml
 Allow: /feeds/belur.xml
@@ -1206,6 +1210,7 @@ Allow: /feeds/kodaikanal.xml
 Allow: /feeds/kolkata.xml
 Allow: /feeds/kollur.xml
 Allow: /feeds/kovalam.xml
+Allow: /feeds/kubernetes.xml
 Allow: /feeds/kudremukh.xml
 Allow: /feeds/ladakh.xml
 Allow: /feeds/lando.xml
