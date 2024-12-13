@@ -93,7 +93,7 @@ function searchArticlesListPage() {
 function searchArticlesLabelPage() {
     const searchInput = document.getElementById('search-articles-label');
     if (!searchInput) {
-        console.error('Search input not found');
+        // console.error('Search input not found');
         return; // Exit if search input does not exist
     }
 
