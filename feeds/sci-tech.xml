@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding Azure Storage Accounts: Key Concepts and Best Practices</title>
+			<link>https://peoplesblog.co.in/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html</link>
+			<description>Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effective manner. One of the core components of Azure Storage is the Azure Storage Account. An Azure Storage Account provides a unique namespace for storing data in Azure and serves as the container for different types of storage services, such as Blob Stor</description>
+			<pubDate>Fri, 20 Dec 2024 08:31:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html</guid>
+    </item><item>
 			<title>Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices</title>
 			<link>https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html</link>
 			<description>As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Kubernetes Service (AKS) is Microsoft&amp;#39;s managed Kubernetes offering in the Azure cloud, designed to simplify the deployment, management, and scaling of containerized applications. AKS helps organizations take advantage of Kubernetes&amp;#39; robust fea</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 28 Nov 2024 19:15:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/borax-crystal-snowflakes-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Alum Crystal Geodes, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/alum-crystal-geodes-science-experiment-for-children.html</link>
-			<description>Creating alum crystal geodes is a captivating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation and crystallization.  Here&amp;#39;s a step-by-step guide:  Materials:   Alum powder (aluminum potassium sulfate) Eggshells or small hollow egg-shaped molds Water Food coloring (optional) String or fishing line Scissors Stirring spoon</description>
-			<pubDate>Thu, 28 Nov 2024 19:14:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/alum-crystal-geodes-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Understanding Azure Storage Accounts: Key Concepts and Best Practices</title>
+    <meta name="description" content="Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effecti" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html" />
+    <meta property="og:title" content="Understanding Azure Storage Accounts: Key Concepts and Best Practices" />
+    <meta property="og:description" content="Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effecti" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-storage-accounts-key-concepts-and-best-practices.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Understanding Azure Storage Accounts: Key Concepts and Best Practices" />
+    <meta name="twitter:description" content="Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effecti" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-storage-accounts-key-concepts-and-best-practices.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Ad -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Ad -->
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html"
+        },
+        "headline": "Understanding Azure Storage Accounts: Key Concepts and Best Practices",
+        "description": "Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effecti",
+        "image": "https://peoplesblog.co.in/upload/banners/understanding-azure-storage-accounts-key-concepts-and-best-practices.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "20th Dec 2024",
+        "dateModified": "2024-12-20T08:35:11+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/azure.html">Azure</a></li>
+                                    <li class="breadcrumb-item active">Understanding Azure Storage Accounts: Key Concepts and Best Practices</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Understanding Azure Storage Accounts: Key Concepts and Best Practices" data-src="/upload/banners/understanding-azure-storage-accounts-key-concepts-and-best-practices.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Understanding Azure Storage Accounts: Key Concepts and Best Practices" />
+                                </div>
+                                <h1 class="read-article-title">Understanding Azure Storage Accounts: Key Concepts and Best Practices</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>20th Dec 2024</span>, <span class="last-updated">2024-12-20T08:35:11+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effective manner. One of the core components of Azure Storage is the <strong>Azure Storage Account</strong>. An <strong>Azure Storage Account</strong> provides a unique namespace for storing data in Azure and serves as the container for different types of storage services, such as Blob Storage, File Storage, Queue Storage, and Table Storage.</p>  <p>For example, a company might use an Azure Storage Account to store images (Blob Storage), share files between applications (File Storage), or manage messages between services (Queue Storage).</p>  <p>Azure Storage Accounts are foundational to any application or service that requires persistent data storage in the Azure cloud. Whether you&rsquo;re building web applications, running big data analytics, or handling backups, understanding how Azure Storage Accounts work is crucial for leveraging the full potential of Azure&rsquo;s storage services.</p>  <p>This article provides an in-depth overview of Azure Storage Accounts, their components, different types of storage, and how to use them effectively.</p>  <h2>Key Concepts of Azure Storage Accounts</h2>  <h2>1. What is an Azure Storage Account?</h2>  <p>An <strong>Azure Storage Account</strong> provides a way to manage your storage resources in the Azure cloud. When you create a storage account, you can access and manage different types of data storage services in one unified platform. The storage account is the top-level resource, and all data within it is associated with that account.</p>  <p>For example, a storage account in Azure might house both Blob Storage for document files and File Storage for shared folders between virtual machines (VMs).</p>  <p>Storage accounts are designed to provide access to various types of data storage solutions, which can be divided into several categories:</p>  <ul> <li><strong>Blob Storage</strong>: For storing unstructured data, such as text, images, videos, and backups.</li> <li><strong>File Storage</strong>: For storing shared file systems, typically accessed via SMB protocol.</li> <li><strong>Queue Storage</strong>: For storing messages that can be processed asynchronously.</li> <li><strong>Table Storage</strong>: For storing structured NoSQL data in a key-value format.</li> </ul>  <p>Each storage account comes with its own globally unique namespace, ensuring that resources within the account are isolated and can be accessed via specific APIs or SDKs.</p>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>2. Storage Account Types</h2>  <p>Azure offers several types of storage accounts, each designed for different use cases based on performance, redundancy, and access requirements.</p>  <p><strong>a) General-purpose v2 Storage Account (GPv2)</strong></p>  <p>This is the most commonly used storage account type. It supports all the Azure Storage services (Blob, File, Queue, Table) and provides access to features like:</p>  <ul> <li><strong>Azure Blob Storage</strong> for data storage.</li> <li><strong>Azure Files</strong> for SMB file shares.</li> <li><strong>Queue and Table Storage</strong> for messaging and NoSQL storage.</li> <li><strong>Access tiers</strong> (Hot, Cool, Archive) for managing data based on access frequency.</li> </ul>  <p><strong>Example</strong>: A media company might use a GPv2 account to store video files (Blob Storage) while using Table Storage to manage metadata about those videos.</p>  <p>GPv2 accounts offer a great balance between cost and functionality and are suitable for most modern cloud applications.</p>  <p><strong>b) General-purpose v1 Storage Account (GPv1)</strong></p>  <p>This older version supports basic blob and file storage services but lacks features like access tiers (Hot, Cool, Archive) and other newer features found in GPv2. It also lacks support for some advanced features like premium performance options. GPv1 is generally considered deprecated for new applications, and Microsoft recommends using GPv2 for most use cases.</p>  <p><strong>Example</strong>: An older application that uses GPv1 storage might store static website assets but would not benefit from newer features like lifecycle management or performance tiers.</p>  <p><strong>c) Blob Storage Account</strong></p>  <p>The Blob Storage account type is designed specifically for storing blobs (unstructured data). It offers enhanced capabilities for managing large amounts of unstructured data, including:</p>  <ul> <li><strong>Access Tiers</strong>: Choose between Hot, Cool, and Archive tiers based on how frequently data is accessed.</li> <li><strong>Azure Data Lake Storage Gen2</strong>: For big data analytics workloads that require hierarchical namespace and file system capabilities.</li> </ul>  <p><strong>Example</strong>: A photo-sharing app may use Blob Storage with the Hot tier for storing recently uploaded images, while moving older images to the Cool tier to reduce costs.</p>  <p>Blob storage accounts are ideal for applications that need to store massive amounts of unstructured data like images, videos, and log files.</p>  <p><strong>d) Premium Storage Account</strong></p>  <p>Premium storage accounts provide higher performance options using <strong>Solid-State Drives (SSDs)</strong> instead of standard HDDs. This is ideal for workloads that require low-latency, high-throughput, and fast access to data. Premium storage accounts are typically used for:</p>  <ul> <li>Virtual machine disks (managed disks).</li> <li>High-performance database workloads.</li> <li>Enterprise applications requiring fast, low-latency data access.</li> </ul>  <p><strong>Example</strong>: A high-traffic e-commerce website might use Premium Storage for its VM disks to ensure fast access to product catalog and transaction data.</p>  <p>Premium storage accounts support only Azure Blob Storage and are optimized for high-performance scenarios.</p>  <p><strong>e) File Storage Account</strong></p>  <p>File storage accounts allow you to create shared file systems in the cloud using the <strong>SMB protocol</strong>, which is compatible with both Windows and Linux. This is ideal for scenarios where multiple VMs or applications need to share access to a file system, similar to on-premises network file shares.</p>  <p><strong>Example</strong>: A development team might use File Storage to share source code and configuration files across several virtual machines for collaborative software development.</p>  <p>Azure File Storage is often used for:</p>  <ul> <li>Lift-and-shift migrations of legacy applications.</li> <li>File sharing across multiple platforms.</li> <li>Storing configuration or application files.</li> </ul>  <p><strong>f) Blob Storage vs. General Purpose v2</strong></p>  <p>While both Blob Storage and GPv2 accounts support Blob Storage services, <strong>GPv2</strong> accounts provide additional features such as access tiers (Hot, Cool, Archive) and premium performance tiers for Blob Storage. <strong>Blob Storage accounts</strong> are specialized for unstructured data but do not offer the same flexibility and features as GPv2. Therefore, most new applications should opt for GPv2 accounts.</p>  <p><strong>Example</strong>: A cloud-native application using microservices and object storage would benefit from the flexibility of a GPv2 account to choose access tiers, while a simple media service might just need Blob Storage accounts for straightforward object storage.</p>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>3. Storage Account Features</h2>  <p>Azure Storage accounts come with various advanced features that help optimize performance, cost, and security. Some of the key features include:</p>  <p><strong>a) Data Redundancy</strong></p>  <p>Azure offers several redundancy options to protect data and ensure high availability across regions:</p>  <ul> <li><strong>Locally redundant storage (LRS)</strong>: Data is replicated within a single data center.</li> <li><strong>Geo-redundant storage (GRS)</strong>: Data is replicated across two geographically separated data centers for higher durability.</li> <li><strong>Zone-redundant storage (ZRS)</strong>: Data is replicated across availability zones within a region.</li> <li><strong>Read-access geo-redundant storage (RA-GRS)</strong>: Provides read-only access to the secondary region in case of failure.</li> </ul>  <p><strong>Example</strong>: A global e-commerce platform might choose <strong>RA-GRS</strong> to ensure that its product catalog and order data are always accessible, even during regional outages.</p>  <p>Choosing the right redundancy model depends on your business continuity and disaster recovery needs.</p>  <p><strong>b) Access Tiers</strong></p>  <p>For Blob Storage, Azure allows you to define <strong>access tiers</strong> to optimize costs based on data usage patterns:</p>  <ul> <li><strong>Hot Tier</strong>: For frequently accessed data.</li> <li><strong>Cool Tier</strong>: For infrequently accessed data, with lower storage costs but higher retrieval costs.</li> <li><strong>Archive Tier</strong>: For rarely accessed data with the lowest storage cost, but high retrieval latency and costs.</li> </ul>  <p><strong>Example</strong>: A healthcare organization may store patient records in the Hot tier for easy access but move completed records to the Archive tier after a certain time to save costs.</p>  <p>The ability to manage storage costs by moving data between different tiers allows businesses to efficiently optimize storage expenses.</p>  <p><strong>c) Security and Compliance</strong></p>  <p>Azure Storage offers robust security features to protect data:</p>  <ul> <li><strong>Encryption at rest</strong>: All data in Azure Storage is encrypted by default using <strong>Azure Storage Service Encryption (SSE)</strong>.</li> <li><strong>Data-in-transit encryption</strong>: All data transferred between clients and Azure Storage is encrypted using <strong>TLS/SSL</strong>.</li> <li><strong>Azure Active Directory (AAD) authentication</strong>: For role-based access control (RBAC) and fine-grained access to resources.</li> <li><strong>Shared Access Signatures (SAS)</strong>: Securely grant limited access to specific storage resources without exposing account keys.</li> </ul>  <p><strong>Example</strong>: A financial institution might use <strong>SAS tokens</strong> to securely allow third-party auditing services to access logs stored in Azure Blob Storage.</p>  <p>Azure Storage is compliant with a wide range of regulatory and industry standards, including <strong>ISO 27001</strong>, <strong>GDPR</strong>, <strong>HIPAA</strong>, and <strong>SOC 2</strong>.</p>  <p><strong>d) Blob Lifecycle Management</strong></p>  <p>Azure provides tools for automating data management, such as:</p>  <ul> <li><strong>Lifecycle management policies</strong>: Automatically move data between different access tiers or delete it based on defined rules (e.g., age of the data, access frequency).</li> <li><strong>Soft delete</strong>: Allows you to recover deleted blobs or containers within a retention period.</li> </ul>  <p><strong>Example</strong>: A media company may set up a lifecycle policy to move video files to the Cool tier after 30 days of inactivity and delete them after 90 days.</p>  <p><strong>e) Performance and Scalability</strong></p>  <p>Azure Storage accounts are designed for scalability. As demand grows, storage accounts can handle increasing volumes of data, with the ability to scale up and down based on application requirements. Premium storage accounts provide low-latency, high-throughput storage to meet the needs of performance-sensitive applications.</p>  <p><strong>Example</strong>: A cloud gaming service may use a Premium Storage account to ensure low-latency access to user data during peak gaming hours.</p>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>4. How to Use Azure Storage Accounts</h2>  <p>Here&rsquo;s an overview of the typical workflow for using Azure Storage Accounts:</p>  <ol> <li><strong>Create a Storage Account</strong>: Begin by creating a storage account in the Azure portal, specifying the account type, region, and other configuration options.</li> <li><strong>Choose a Storage Type</strong>: Depending on your use case, you can opt for Blob, File, Queue, or Table Storage. For example, Blob Storage is ideal for unstructured data like images and videos, while Table Storage is used for NoSQL data.</li> <li><strong>Upload and Manage Data</strong>: Use Azure&rsquo;s tools (Azure Storage Explorer, Azure CLI, PowerShell, or SDKs) to upload data to the storage account and manage files. You can also set up storage containers (for Blob Storage) or file shares (for File Storage).</li> <li><strong>Implement Access Control</strong>: Use <strong>Azure Active Directory (AAD)</strong> or <strong>Shared Access Signatures (SAS)</strong> to manage access to your storage resources. Set up appropriate role-based access control (RBAC) to enforce secure access.</li> <li><strong>Optimize Costs</strong>: Use access tiers and lifecycle policies to move infrequently accessed data to cheaper tiers, and automate data retention policies to manage storage costs.</li> </ol>  <p><strong>Example</strong>: A business might use lifecycle management policies to automatically archive customer documents to the Archive tier after 180 days.</p>  <h2>5. Best Practices for Using Azure Storage Accounts</h2>  <ul> <li><strong>Use the right account type</strong>: For most applications, <strong>GPv2</strong> accounts offer the best balance of features and performance. Choose <strong>Premium Storage</strong> for performance-sensitive workloads.</li> <li><strong>Secure your storage</strong>: Enable encryption, use Azure AD for authentication, and implement <strong>network security rules</strong> (e.g., IP firewalls, private endpoints) to restrict access.</li> <li><strong>Manage costs effectively</strong>: Take advantage of <strong>access tiers</strong> to lower storage costs and use <strong>lifecycle management policies</strong> to delete or archive old data.</li> <li><strong>Monitor performance</strong>: Use <strong>Azure Monitor</strong> and <strong>Azure Storage metrics</strong> to monitor the health and performance of your storage account. Optimize storage resources based on usage patterns.</li> </ul>  <h2>Conclusion</h2>  <p>Azure Storage Accounts are a fundamental part of Azure&#39;s cloud storage offerings, providing scalable, reliable, and secure storage solutions for all types of data. By choosing the appropriate storage account type and configuring features like data redundancy, access tiers, and lifecycle policies, businesses can optimize both cost and performance.</p>  <p>Whether you&rsquo;re building a web application, storing backups, or processing large datasets, understanding how Azure Storage Accounts work is crucial for designing and maintaining efficient cloud storage architectures. By following best practices for security, cost management, and performance monitoring, you can ensure that your storage resources are both cost-effective and aligned with your application&rsquo;s needs.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/azure.html">Azure</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">14% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08DHT1Z6N.html" title="Shalimar Premium Garbage Bags (Lavender Fragrance) Size 19 X 21 Inches (Medium) 120 Bags (4 Rolls) Dustbin Bag/Trash Bag - Green Color"><img data-src="https://m.media-amazon.com/images/I/711biezMJwL._SX679_.jpg" class="img-fluid lazy" alt="Shalimar Premium Garbage Bags (Lavender Fragrance) Size 19 X 21 Inches (Medium) 120 Bags (4 Rolls) Dustbin Bag/Trash Bag - Green Color" title="Shalimar Premium Garbage Bags (Lavender Fragrance) Size 19 X 21 Inches (Medium) 120 Bags (4 Rolls) Dustbin Bag/Trash Bag - Green Color" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08DHT1Z6N.html" title="Shalimar Premium Garbage Bags (Lavender Fragrance) Size 19 X 21 Inches (Medium) 120 Bags (4 Rolls) Dustbin Bag/Trash Bag - Green Color" class="shop-title-value">Shalimar Premium Garbage Bags (Lavender Fragrance) Size 19 X 21 Inches (Medium) 120 Bags (4 Rolls) Dustbin Bag/Trash Bag - Green Color</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>295</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>344</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">26% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07WGPBNTC.html" title="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box"><img data-src="https://m.media-amazon.com/images/I/61pt59LW-lL._SX679_.jpg" class="img-fluid lazy" alt="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" title="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07WGPBNTC.html" title="iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box" class="shop-title-value">iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local Peak Brightness | 44W Charger in The Box</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>18,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>24,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">22% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CHM729GT.html" title="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM"><img data-src="https://m.media-amazon.com/images/I/71uOoXevxwL._SX679_.jpg" class="img-fluid lazy" alt="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM" title="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CHM729GT.html" title="Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM" class="shop-title-value">Lava Storm 5G(Gale Green,8GB RAM,128GB ROM)-Powered by MediaTek Dimensity 6080 Processor|120Hz FHD+ Display|50MP+8MP Ultrawide Camera|16MP FrontCamera|33W Fast Charging|Upto 16GB ExpandableRAM</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>12,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>15,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/how-to-prepare-curd-rice.html" title="How to prepare Curd Rice?">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/how-to-prepare-curd-rice.jpg" alt="How to prepare Curd Rice?" title="How to prepare Curd Rice?" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/how-to-prepare-curd-rice.html" title="How to prepare Curd Rice?">
+                                <span class="title">How to prepare Curd Rice?</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/how-to-prepare-curd-rice.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+                  Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+                  Migrating from JSStream to Vimeo Using Drupal Migration API
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+                  How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+                  Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+                  Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+                  Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+                  Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+                </a>
+              </div><div class="article">
+                <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+                  DIY Math Board Games, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+                  Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B4N6JVMW.html" title="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU"><img data-src="https://m.media-amazon.com/images/I/81lIE9MYV3L._SX679_.jpg" class="img-fluid lazy" alt="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU" title="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B4N6JVMW.html" title="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU" class="shop-title-value">HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>38,300</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>49,557</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div><div class="article">
+          <a href="/articles/optimizing-a-product-catalog-microservice-with-profiling-tools-in-php-using-ddev-and-visual-studio-code.html">
+            Optimizing a Product Catalog Microservice with Profiling Tools in PHP Using DDEV and Visual Studio Code
+          </a>
+        </div><div class="article">
+          <a href="/articles/reasons-to-hang-eucalyptus-in-your-shower.html">
+            Reasons to Hang Eucalyptus in Your Shower
+          </a>
+        </div><div class="article">
+          <a href="/articles/code-profiling-and-performance-optimization-of-an-existing-php-project.html">
+            Code Profiling and Performance Optimization of an Existing PHP Project
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-kairi-ki-sabzi.html">
+            How to prepare Kairi Ki Sabzi?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">46% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)"><img data-src="https://m.media-amazon.com/images/I/51ByNekZkOL._SX679_.jpg" class="img-fluid lazy" alt="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BHJF11TV.html" title="Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)" class="shop-title-value">Havells 1200mm Ambrose BLDC Motor Ceiling Fan | Remote Controlled, High Air Delivery Fan | 5 Star Rated, Upto 60% Energy Saving, 2 Year Warranty | (Pack of 1, Pearl White Wood)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>5,880</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html">
+            Understanding Azure Storage Accounts: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-curd-rice.html">
+            How to prepare Curd Rice?
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+            Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+            Migrating from JSStream to Vimeo Using Drupal Migration API
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prevent-morning-breath.html">
+            How to prevent morning breath?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+            How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+            Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-sattu-drink.html">
+            How to prepare Sattu Drink?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">20% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C7CPNNYK.html" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W"><img data-src="https://m.media-amazon.com/images/I/61ulgKbOAQL._SX679_.jpg" class="img-fluid lazy" alt="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C7CPNNYK.html" title="Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W" class="shop-title-value">Philips HD9363/02 1.2 L Kettle with rust free SS304 25% Thicker Stainless Steel body for longer life |Triple safe auto cut off | 1800W</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,599.50</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,995</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-gingerbread-man.html">
+            The Gingerbread Man
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fish.html">
+            The Magic Fish
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">39% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B07N2MGB3G.html" title="AGARO Marvel 9L Oven Toaster Griller, Cake Baking, Grilling, Toasting, OTG, 800 Watts, (Black)."><img data-src="https://m.media-amazon.com/images/I/71vJLCZBeoL._SX679_.jpg" class="img-fluid lazy" alt="AGARO Marvel 9L Oven Toaster Griller, Cake Baking, Grilling, Toasting, OTG, 800 Watts, (Black)." title="AGARO Marvel 9L Oven Toaster Griller, Cake Baking, Grilling, Toasting, OTG, 800 Watts, (Black)." src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B07N2MGB3G.html" title="AGARO Marvel 9L Oven Toaster Griller, Cake Baking, Grilling, Toasting, OTG, 800 Watts, (Black)." class="shop-title-value">AGARO Marvel 9L Oven Toaster Griller, Cake Baking, Grilling, Toasting, OTG, 800 Watts, (Black).</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,699</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,799</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/a-c-bhaktivedanta-swami-prabhupada.html">
+            A. C. Bhaktivedanta Swami Prabhupada
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bapu.html">
+            Bapu
+          </a>
+        </div><div class="article">
+          <a href="/great-people/kashiram-rana.html">
+            Kashiram Rana
+          </a>
+        </div><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bhagwati-charan-verma.html">
+            Bhagwati Charan Verma
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">39% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0CWQY2JRZ.html" title="Potauto Mattu Led Headlight H27/880-300 High Power Illumination, Csp Chip Technology, 2X Brightness - Illuminate Your Path With Unmatched Brightness - Ch27Lematg548 (Silver)"><img data-src="https://m.media-amazon.com/images/I/61or3k9RiSL._SX679_.jpg" class="img-fluid lazy" alt="Potauto Mattu Led Headlight H27/880-300 High Power Illumination, Csp Chip Technology, 2X Brightness - Illuminate Your Path With Unmatched Brightness - Ch27Lematg548 (Silver)" title="Potauto Mattu Led Headlight H27/880-300 High Power Illumination, Csp Chip Technology, 2X Brightness - Illuminate Your Path With Unmatched Brightness - Ch27Lematg548 (Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0CWQY2JRZ.html" title="Potauto Mattu Led Headlight H27/880-300 High Power Illumination, Csp Chip Technology, 2X Brightness - Illuminate Your Path With Unmatched Brightness - Ch27Lematg548 (Silver)" class="shop-title-value">Potauto Mattu Led Headlight H27/880-300 High Power Illumination, Csp Chip Technology, 2X Brightness - Illuminate Your Path With Unmatched Brightness - Ch27Lematg548 (Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,999</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>16,500</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01LP0UKJE.html" title="Amazon Basics 13mm Extra Thick NBR Yoga and Exercise Mat with Carrying Strap, Red"><img data-src="https://m.media-amazon.com/images/I/81M+ZqeWYPL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Basics 13mm Extra Thick NBR Yoga and Exercise Mat with Carrying Strap, Red" title="Amazon Basics 13mm Extra Thick NBR Yoga and Exercise Mat with Carrying Strap, Red" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01LP0UKJE.html" title="Amazon Basics 13mm Extra Thick NBR Yoga and Exercise Mat with Carrying Strap, Red" class="shop-title-value">Amazon Basics 13mm Extra Thick NBR Yoga and Exercise Mat with Carrying Strap, Red</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>799</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,600</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">29% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B072J83V9W.html" title="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)"><img data-src="https://m.media-amazon.com/images/I/71zWZo78JqL._SX679_.jpg" class="img-fluid lazy" alt="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)" title="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B072J83V9W.html" title="Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)" class="shop-title-value">Philips Viva Collection HR1863/20 2-Litre Juicer (Black/Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>9,199</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,995</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">60% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BLSQVD6N.html" title="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment"><img data-src="https://m.media-amazon.com/images/I/81A-JmBxxiL._UX385_.jpg" class="img-fluid lazy" alt="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment" title="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BLSQVD6N.html" title="TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment" class="shop-title-value">TRAWOC GLOBETROTTER 80 Liter (70+10) Internal Metal &amp; Fiber Frame Rucksack Bag for Men &amp; Women Trekking, Hiking Travel Backpack with Detachable Daypack, Rain Cover and Shoe Compartment</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>3,229</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>7,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">21% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B8NHX62W.html" title="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)"><img data-src="https://m.media-amazon.com/images/I/61Ct6+KF4AL._SY879_.jpg" class="img-fluid lazy" alt="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)" title="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B8NHX62W.html" title="Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)" class="shop-title-value">Samsung 7 kg, 5 star, Eco Bubble Technology, Digital Inverter, Motor, Soft Closing Door, Fully-Automatic Top Load Washing Machine (WA70BG4441YYTL, Lavender Gray)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>17,690</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>22,500</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/seeadlertech/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/azure.html" title="Azure" aria-label="Azure">Azure</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/vimeo.html" title="Vimeo" aria-label="Vimeo">Vimeo</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li><li><a href="/articles/software.html" title="Software" aria-label="Software">Software</a></li><li><a href="/articles/life.html" title="Life" aria-label="Life">Life</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2024, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
