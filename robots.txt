@@ -19,6 +19,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
 Allow: /articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html
+Allow: /articles/how-community-health-campaigns-save-lives.html
 Allow: /articles/how-to-prepare-curd-rice.html
 Allow: /articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html
 Allow: /articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html
@@ -1083,7 +1084,9 @@ Allow: /articles/php.html
 Allow: /articles/pickle.html
 Allow: /articles/politics.html
 Allow: /articles/pondicherry.html
+Allow: /articles/preventive-medicine.html
 Allow: /articles/project.html
+Allow: /articles/public-health.html
 Allow: /articles/quotes.html
 Allow: /articles/rameswaram.html
 Allow: /articles/recipe.html
@@ -1256,7 +1259,9 @@ Allow: /feeds/php.xml
 Allow: /feeds/pickle.xml
 Allow: /feeds/politics.xml
 Allow: /feeds/pondicherry.xml
+Allow: /feeds/preventive-medicine.xml
 Allow: /feeds/project.xml
+Allow: /feeds/public-health.xml
 Allow: /feeds/quotes.xml
 Allow: /feeds/rameswaram.xml
 Allow: /feeds/recipe.xml
