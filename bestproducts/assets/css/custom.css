@@ -1,6 +1,12 @@
 /*
 Custom Css
 */
+:root {
+    --bestproduct-green: #2E8B57; /* Define the variable */
+}
+.bestproduct-green {
+    color: var(--bestproduct-green) !important;
+}
 body, ul, li, p, a, label, input, div {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
@@ -24,6 +30,9 @@ a:hover {
 }
 .blink {
     animation: blink 1s infinite; /* 1 second duration, infinite loop */
+}
+.blink:hover {
+    animation: unset;
 }
 .home-banner-image-render,
 .page-banner-image-render {

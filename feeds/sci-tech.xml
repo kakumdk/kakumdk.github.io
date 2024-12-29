@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding Azure Front Door and CDN Profiles: Key Concepts and Best Practices</title>
+			<link>https://peoplesblog.co.in/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html</link>
+			<description>In today&amp;rsquo;s cloud-first world, providing fast, reliable, and secure access to web applications is critical for a positive user experience. With users across different geographic regions, ensuring low-latency content delivery and application optimization is key to improving performance. Azure Front Door and Azure Content Delivery Network (CDN) are two essential services in Azure that help orga</description>
+			<pubDate>Sun, 29 Dec 2024 09:16:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html</guid>
+    </item><item>
 			<title>Understanding Azure Storage Accounts: Key Concepts and Best Practices</title>
 			<link>https://peoplesblog.co.in/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html</link>
 			<description>Azure Storage is a cloud service provided by Microsoft Azure that allows users to store and manage data in a highly scalable, secure, and cost-effective manner. One of the core components of Azure Storage is the Azure Storage Account. An Azure Storage Account provides a unique namespace for storing data in Azure and serves as the container for different types of storage services, such as Blob Stor</description>
@@ -348,13 +355,6 @@
 			<pubDate>Fri, 24 May 2024 09:00:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/salt-crystal-garden-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Borax Crystal Snowflakes, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/borax-crystal-snowflakes-science-experiment-for-children.html</link>
-			<description>Creating Borax crystal snowflakes is a captivating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation and crystallization. Here&amp;#39;s a step-by-step guide:  Materials:   Borax powder (available in the laundry aisle of most supermarkets) Pipe cleaners (white or blue works well for snowflakes) String or yarn Pencil or stick Sci</description>
-			<pubDate>Thu, 28 Nov 2024 19:15:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/borax-crystal-snowflakes-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>
