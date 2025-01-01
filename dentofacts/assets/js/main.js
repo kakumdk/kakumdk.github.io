@@ -309,3 +309,62 @@ function getStoredValue(key) {
       return $.cookies.get(key);
   }
 }
+
+
+/******************************************************************************************************************/
+/************************************************** Appointment ***************************************************/
+/******************************************************************************************************************/
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.querySelector(".consultation-form-container");
+  var btn = document.querySelector("#scheduleAppointmentButton");
+  var span = document.querySelector(".consultation-form-container .close");
+  // Open the modal
+  btn.onclick = function() {
+      modal.style.display = "flex"; // Show the modal with flexbox centering
+  }
+  // Close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  // Close modal when clicking outside
+  window.onclick = function(event) {
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+  }
+});
+document.getElementById('consultationForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  // Gather form data
+  var formData = {
+      fullName: document.getElementById('fullName').value,
+      age: document.getElementById('age').value,
+      gender: document.getElementById('gender').value,
+      address: document.getElementById('address').value,
+      phone: document.getElementById('phone').value,
+      dentalPainDescription: document.getElementById('dentalPainDescription').value
+  };
+  // Send data to Google Apps Script Web App
+  fetch('https://script.google.com/macros/s/AKfycbwV3y0LNTOoXA81jikLonlNMNvMRbhl1knoNdk1O0ceV7G4vB2aKpOXzBMvwweNfm6y/exec', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.result === 'Success') {
+          // Show confirmation message
+          document.getElementById('confirmationMessage').style.display = 'block';
+          // Hide the form
+          document.getElementById('consultationForm').reset();
+      } else {
+          alert('There was an issue submitting your form. Please try again.');
+      }
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      alert('There was an error with the submission.');
+  });
+});

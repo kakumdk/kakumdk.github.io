@@ -6,15 +6,15 @@
         <meta http-equiv="content-language" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>About - Dentofacts</title>
+        <title>About Dr. Jyothi Karthik D - Dentofacts</title>
         <meta name="description" content="Learn more about Dentofacts, your go-to platform for reliable dental facts, tips and resources. Our mission is to empower individuals with dental care" />
         <link rel="canonical" href="https://peoplesblog.co.in/dentofacts/about.html">
-        <meta property="og:title" content="About - Dentofacts">
+        <meta property="og:title" content="About Dr. Jyothi Karthik D - Dentofacts">
         <meta property="og:description" content="Learn more about Dentofacts, your go-to platform for reliable dental facts, tips and resources. Our mission is to empower individuals with dental care">
         <meta property="og:url" content="https://peoplesblog.co.in/dentofacts/about.html">
         <meta property="og:image" content="https://peoplesblog.co.in/dentofacts/assets/files/teeth-favicon.jpg">
         <meta property="og:type" content="website">
-        <meta name="twitter:title" content="About - Dentofacts">
+        <meta name="twitter:title" content="About Dr. Jyothi Karthik D - Dentofacts">
         <meta name="twitter:description" content="Learn more about Dentofacts, your go-to platform for reliable dental facts, tips and resources. Our mission is to empower individuals with dental care">
         <meta name="twitter:image" content="https://peoplesblog.co.in/dentofacts/assets/files/teeth-favicon.jpg">
         <meta name="twitter:card" content="summary_large_image">
@@ -74,9 +74,10 @@
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
+                    <li><a href="/dentofacts/about.html">About</a></li>    
+                    <!-- li><a href="/dentofacts/online-dental-consultation.html">Online Dental Consultation</a></li -->
                     <li><a href="/dentofacts/articles/index.html">Articles</a></li>
                     <li><a href="/dentofacts/shorts/index.html">Shorts</a></li>
-                    <li><a href="/dentofacts/about.html">About</a></li>
                     <li><a href="/dentofacts/search.html"><i class="fa fa-search"></i></a></li>
                 </ul>
             </nav>
@@ -96,28 +97,96 @@
                             </nav>
                           
   <div class="preview">
-    <h1 class="mt-4 mb-3">About</h1>
-    <h2 class="d-none">About</h2>
+    <h1 class="mt-4 mb-3">I’m Dr. Jyothi, Dental Surgeon</h1>
+    <h2 class="d-none">I’m Dr. Jyothi, Dental Surgeon</h2>
     <div class="row">
         <div class="col-md-8">
             <div class="content article-content">
-                <p>I'm Dr. Jyothi Karthik D, a Dental Surgeon having 6 years of experience in treating patients with Dental problems.</p>
-                <p>Committed to provide our patients with the Good quality Dental care</p>
-                <p>Help patients to realize how good oral health can improve their quality of life</p>
+                <p>With over seven years of experience, I specialize in diagnosing and treating a wide range of dental conditions, providing expert care and guidance to every patient. My mission is to ensure that every individual achieves the best oral health possible, enhancing their overall quality of life.</p>
+                <h2>What I Offer:</h2>
                 <ul>
-                    <li>An accurate and honest assessment for dental diseases and conditions</li>
-                    <li>To guide our patients regarding growth and development issues (teething, habits and orthodontics)</li>
-                    <li>A plan for emergency treatment, including pain or dental trauma</li>
-                    <li>Referrals to other dental specialists when care could and should not be provided within the dental home</li>
+                    <li><strong>Comprehensive Dental Care:</strong> Providing high-quality treatments tailored to individual needs.</li>
+                    <li><strong>Oral Health Awareness:</strong> Helping patients understand the impact of good oral hygiene on their well-being.</li>
+                    <li><strong>Accurate Diagnoses:</strong> Delivering honest and precise assessments of dental conditions.</li>
+                    <li><strong>Growth & Development Guidance:</strong> Assisting with issues related to teething, habits, and orthodontics for children and adults.</li>
+                    <li><strong>Emergency Care:</strong> Offering immediate relief and plans for managing dental trauma or pain.</li>
+                    <li><strong>Specialist Referrals:</strong> Guiding patients to trusted dental specialists when advanced care is required.</li>
                 </ul>
+                <p>My approach combines compassion with expertise, ensuring a comfortable experience for all patients.</p>
+                <p>Let’s work together to achieve and maintain a healthy, confident smile!</p>
             </div>
         </div>
         <div class="col-md-4">
-        <img src="/upload/cursor.jpg" data-src="/dentofacts/assets/files/jyothi-karthik-d.jpeg" alt="Dentofacts" class="img-fluid lazy" />
+            <img src="/upload/cursor.jpg" data-src="/dentofacts/assets/files/jyothi-karthik-d.jpeg" alt="Dentofacts" class="img-fluid lazy rounded-circle" />
         </div>
+        <!-- div class="col-md-7">
+            <div class="border rounded p-4 mt-3 bg-light">
+                <h2 class="mt-0">Schedule Appointment</h2>
+                <div class="schedule-your-dental-appointment mt-4 mb-3">
+                    <p class="help-text">Ready to invest in your smile? Book your appointment now and start your journey to optimal oral health!</p>
+                    <button id="scheduleAppointmentButton" class="btn btn-primary mt-3">Schedule Your Dental Appointment</button>
+                </div>
+            </div>
+        </div -->
     </div>
   </div>
-  <div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+  
+    <div id="consultationModal" class="consultation-form-container">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Dental Consultation Form</h2>
+            <form id="consultationForm">
+                <fieldset>
+                    <legend>Patient Information</legend>
+                    <div class="form-section">
+                        <label for="fullName">Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required min="1" max="125">
+                    </div>
+                    <div class="form-section">
+                        <label>Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>    
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-section">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="phone">Contact Number (Whatsapp):</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Describe your dental pain or discomfort:</label>
+                        <textarea id="dentalPainDescription" name="dentalPainDescription" class="form-control" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Consent</legend>
+                    <div class="form-section">
+                        <label>
+                            <input type="checkbox" id="consentCheckbox" name="consent" required>
+                            I consent to the dental consultation and necessary treatment as recommended by the dentist.
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-section">
+                    <button type="submit">Make Appointment</button>
+                </div>
+            </form>
+            <div id="confirmationMessage" style="display:none; color: green;">
+                Thank you for submitting your consultation form. We will contact you shortly.
+            </div>
+        </div>
+    </div>
+    <div class="google-ad"><!-- Sample Display ad (Horizontal) -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-2683569506254139"
