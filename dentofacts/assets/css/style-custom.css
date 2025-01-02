@@ -571,7 +571,18 @@ input#search-news {
     font-size: 12px;
     margin-top: 5px;
 }
-
+.consultation-form-container .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Adjust space between rows */
+}
+.consultation-form-container .form-section {
+    flex: 1; /* Take equal space */
+    margin-right: 10px; /* Add space between sections */
+}
+.consultation-form-container .form-section:last-child {
+    margin-right: 0; /* Remove right margin for last item */
+}
 
 
 /*  */

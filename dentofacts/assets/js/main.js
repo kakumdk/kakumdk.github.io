@@ -310,6 +310,23 @@ function getStoredValue(key) {
   }
 }
 
+/******************************************************************************************************************/
+/********************************************** overall experience ************************************************/
+/******************************************************************************************************************/
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+  // Define the start year of your career
+  const careerStartYear = 2017;
+  // Calculate the total years of experience
+  const experienceYears = currentYear - careerStartYear;
+  // Populate the overall-experience element
+  const experienceElement = document.querySelector(".overall-experience");
+  if (experienceElement) {
+      experienceElement.textContent = `${experienceYears} Years Experience Overall`;
+  }
+});
+
 
 /******************************************************************************************************************/
 /************************************************** Appointment ***************************************************/
@@ -333,38 +350,110 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }
 });
-document.getElementById('consultationForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  // Gather form data
-  var formData = {
-      fullName: document.getElementById('fullName').value,
-      age: document.getElementById('age').value,
-      gender: document.getElementById('gender').value,
-      address: document.getElementById('address').value,
-      phone: document.getElementById('phone').value,
-      dentalPainDescription: document.getElementById('dentalPainDescription').value
-  };
-  // Send data to Google Apps Script Web App
-  fetch('https://script.google.com/macros/s/AKfycbwV3y0LNTOoXA81jikLonlNMNvMRbhl1knoNdk1O0ceV7G4vB2aKpOXzBMvwweNfm6y/exec', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-  })
-  .then(response => response.json())
-  .then(data => {
-      if (data.result === 'Success') {
-          // Show confirmation message
-          document.getElementById('confirmationMessage').style.display = 'block';
-          // Hide the form
-          document.getElementById('consultationForm').reset();
-      } else {
-          alert('There was an issue submitting your form. Please try again.');
+document.addEventListener("DOMContentLoaded", function () {
+  const timeSlotSelect = document.getElementById("timeSlot");
+  // Helper function to format dates
+  function formatDate(date) {
+      const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      const dayOfWeek = days[date.getDay()];
+      const day = date.getDate();
+      const month = months[date.getMonth()];
+      const year = date.getFullYear();
+      const suffix =
+          day === 1 || day === 21 || day === 31 ? "st" :
+          day === 2 || day === 22 ? "nd" :
+          day === 3 || day === 23 ? "rd" : "th";
+      return `${dayOfWeek}, ${day}${suffix} ${month} ${year}`;
+  }
+  // Function to generate time slots
+  function generateTimeSlots(availableSlots) {
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const tomorrow = new Date(today);
+      tomorrow.setDate(today.getDate() + 1);
+      const slotTimes = [
+          { start: "03:00 PM", end: "03:45 PM" },
+          { start: "04:00 PM", end: "04:45 PM" },
+          { start: "05:00 PM", end: "05:45 PM" },
+          { start: "06:00 PM", end: "06:45 PM" }
+      ];
+      const slots = [];
+      [today, tomorrow].forEach((day, index) => {
+          const dayLabel = index === 0 ? "Today" : "Tomorrow";
+          const formattedDate = formatDate(day);
+          slotTimes.forEach(({ start, end }) => {
+              const [startHour, startMinute] = start.split(/[: ]/).slice(0, 2).map(Number);
+              const isPM = start.includes("PM");
+              const adjustedHour = isPM && startHour !== 12 ? startHour + 12 : startHour;
+              const slotTime = new Date(day.getFullYear(), day.getMonth(), day.getDate(), adjustedHour, startMinute);
+              // Ensure the slot is not booked and is in the future only for today's slots
+              const isSlotBooked = availableSlots.some(slot => slot.day === dayLabel && slot.start === start);
+              if (
+                  !isSlotBooked &&
+                  (index === 1 || slotTime > now)
+              ) {
+                  const formattedSlot = `${dayLabel} (${formattedDate} - ${start} to ${end})`;
+                  slots.push({ label: formattedSlot, value: `${dayLabel} ${formattedSlot}` });
+              }
+          });
+      });
+      return slots;
+  }
+  // Populate time slots
+  async function populateTimeSlots() {
+      try {
+          // Fetch the booked slots JSON
+          const response = await fetch("/data/online-dental-consultation-bookedSlots.json");
+          const data = await response.json();
+          const availableSlots = data.bookedSlots || [];
+          const slots = generateTimeSlots(availableSlots);
+          timeSlotSelect.innerHTML = "<option value=''>Select</option>";
+          slots.forEach(slot => {
+              const option = document.createElement("option");
+              option.value = slot.value;
+              option.textContent = slot.label;
+              timeSlotSelect.appendChild(option);
+          });
+      } catch (error) {
+          console.error("Error fetching or processing the slots JSON:", error);
+          alert("Unable to load time slots. Please try again later.");
       }
-  })
-  .catch(error => {
-      console.error('Error:', error);
-      alert('There was an error with the submission.');
-  });
+  }
+  populateTimeSlots();
+});
+document.getElementById("consultationForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+  // Collect form data
+  const fullName = document.getElementById("fullName").value;
+  const age = document.getElementById("age").value;
+  const gender = document.getElementById("gender").value;
+  const address = document.getElementById("address").value;
+  const phone = document.getElementById("phone").value;
+  const dentalPainDescription = document.getElementById("dentalPainDescription").value;
+  const timeSlot = document.getElementById("timeSlot").value;
+  // Additional text for WhatsApp
+  const additionalText = "I appreciate your attention to my appointment and look forward to discussing my dental concerns with you.";
+  // Format message
+  const message = `Online Dental Consultation - Dental Consultation Form\n\nI have submitted my consultation form with the following details:\n` +
+      `Name: ${fullName}\n` +
+      `Age: ${age}\n` +
+      `Gender: ${gender}\n` +
+      `Address: ${address}\n` +
+      `Contact Number: ${phone}\n` +
+      `Dental Concern: ${dentalPainDescription}\n` +
+      `Preferred Time Slot: ${timeSlot}\n\n` +
+      `${additionalText}`;
+  // Encode message for URL
+  const encodedMessage = encodeURIComponent(message);
+  // WhatsApp URL (replace with your WhatsApp number)
+  const whatsappNumber = "9538464616"; // Replace with your actual number (no + or 00)
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+  // Redirect to WhatsApp
+  window.open(whatsappUrl, "_blank");
+
+  // Show confirmation message
+  document.getElementById("confirmationMessage").style.display = "block";
+  // Hide consultation form
+  document.getElementById("consultationForm").style.display = "none";
 });
