@@ -420,7 +420,13 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Unable to load time slots. Please try again later.");
       }
   }
-  populateTimeSlots();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page URL matches the desired URL
+  if (window.location.pathname === "/dentofacts/online-dental-consultation.html") {
+      // Call the function only on the specified page
+      populateTimeSlots();
+  }
 });
 document.getElementById("consultationForm").addEventListener("submit", function (event) {
   event.preventDefault();
