@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/the-importance-of-the-vedas-in-modern-hinduism.html
 Allow: /articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html
 Allow: /articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html
 Allow: /articles/how-community-health-campaigns-save-lives.html
