@@ -460,3 +460,16 @@ document.getElementById("consultationForm").addEventListener("submit", function 
   // Hide consultation form
   document.getElementById("consultationForm").style.display = "none";
 });
+
+/******************************************************************************************************************/
+/************************************************** active menu ***************************************************/
+/******************************************************************************************************************/
+document.addEventListener("DOMContentLoaded", function () {
+  const navMenuItems = document.querySelectorAll("#nav-menu-container .nav-menu li a");
+  const currentPage = window.location.pathname;
+  navMenuItems.forEach(item => {
+      if (item.getAttribute("href") === currentPage) {
+          item.parentElement.classList.add("active");
+      }
+  });
+});

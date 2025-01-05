@@ -5,19 +5,20 @@ h2 {
     font-size: 1.75rem;
 }
 body a {
-    color: #2d7dc6;
+    color: #10597d;
 }
 #header {
     padding: 4px 0;
 }
 #intro .intro-content span a {
-    text-shadow: 0 0 12px #444;
+    text-shadow: 0 0 12px #fff;
 }
 #intro .intro-content a:hover {
     color: #7cbc48 !important;
+    text-shadow: unset;
 }
 #intro .intro-content .btn-get-started:hover {
-    color: #2d7dc6 !important;
+    color: #10597d !important;
 }
 .breadcrumb {
     background-color: #fff;
@@ -60,7 +61,7 @@ body a {
     margin: 5px;
     width: 34px;
     border-radius: 50%;
-    color: #2d7dc6 !important;
+    color: #10597d !important;
     background: #fff !important;
     display: block;
 }
@@ -372,7 +373,7 @@ input#search-news {
     margin-top: 15px;
 }
 .homepage-view-all a {
-    color: #2d7dc6;
+    color: #10597d;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -443,9 +444,9 @@ input#search-news {
 #policy-container .policy-container .policy-button {
     font-size: 15px;
     border-radius: 5px;
-    background-color: #2d7dc6;
+    background-color: #10597d;
     color: #fff;
-    border-color: #2d7dc6;
+    border-color: #10597d;
     padding: 6px;
     text-align: center;
     /* width: 50%; */
@@ -455,13 +456,13 @@ input#search-news {
     cursor: pointer;
 }
 .schedule-your-dental-appointment .btn {
-    background-color: #2d7dc6;
+    background-color: #10597d;
     color: #fff;
-    border-color: #2d7dc6;
+    border-color: #10597d;
 }
 .schedule-your-dental-appointment .btn:hover {
     background-color: #fff;
-    color: #2d7dc6;
+    color: #10597d;
 }
 .consultation-form-container {
     position: fixed;
@@ -576,12 +577,12 @@ input#search-news {
     justify-content: space-between;
     margin-bottom: 15px; /* Adjust space between rows */
 }
-.consultation-form-container .form-section {
-    flex: 1; /* Take equal space */
-    margin-right: 10px; /* Add space between sections */
-}
-.consultation-form-container .form-section:last-child {
-    margin-right: 0; /* Remove right margin for last item */
+/* .consultation-form-container .form-section {
+    flex: 1;
+    margin-right: 10px;
+} */
+.nav-menu li.active a {
+    color: #10597d;
 }
 
 
@@ -614,7 +615,7 @@ input#search-news {
         border-radius: 50%;
         width: 32px;
         display: inline-block;
-        background: #2d7dc6 !important;
+        background: #10597d !important;
         color: #fff !important;
     }
     footer .footer-vertical-nav li {
