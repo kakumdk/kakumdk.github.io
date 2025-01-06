@@ -1399,6 +1399,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/3-month-old-and-8-month-old-babies-diagnosed-with-hmpv-in-bengaluru.html
 Allow: /news/indian-consular-officials-in-canada-told-they-were-under-audio-video-surveillance-mea.html
 Allow: /news/india-successfully-tests-k-4-nuclear-capable-missile-from-ins-arighaat-submarine.html
 Allow: /news/iskcon-issues-clarification-on-hindu-priest-chinmoy-krishna-das-arrest-bangladesh.html
