@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Understanding Azure Active Directory &amp; Azure App Registrations: Key Concepts and Best Practices</title>
+			<link>https://peoplesblog.co.in/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html</link>
+			<description>In the modern world of cloud computing, managing identity and access is crucial to securing enterprise applications and data. Microsoft Azure provides a comprehensive identity and access management solution through Azure Active Directory (Azure AD). Whether you are managing an enterprise IT environment or building cloud-based applications, understanding Azure AD and Azure App Registrations is foun</description>
+			<pubDate>Mon, 06 Jan 2025 09:39:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html</guid>
+    </item><item>
 			<title>Understanding Azure Front Door and CDN Profiles: Key Concepts and Best Practices</title>
 			<link>https://peoplesblog.co.in/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html</link>
 			<description>In today&amp;rsquo;s cloud-first world, providing fast, reliable, and secure access to web applications is critical for a positive user experience. With users across different geographic regions, ensuring low-latency content delivery and application optimization is key to improving performance. Azure Front Door and Azure Content Delivery Network (CDN) are two essential services in Azure that help orga</description>
@@ -348,13 +355,6 @@
 			<pubDate>Thu, 30 May 2024 11:50:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/rainbow-slime-science-experiment-for-children.html</guid>
-    </item><item>
-			<title>Salt Crystal Garden, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/salt-crystal-garden-science-experiment-for-children.html</link>
-			<description>Creating a salt crystal garden is a fascinating and educational science experiment that allows children to observe crystal formation and learn about solubility, saturation and crystallization.  Here&amp;#39;s a step-by-step guide:  Materials:   Wide-mouthed glass or plastic container (such as a jar or bowl) String, yarn, or pipe cleaners Scissors Salt (Epsom salt or table salt) Water Food coloring (op</description>
-			<pubDate>Fri, 24 May 2024 09:00:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/salt-crystal-garden-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>

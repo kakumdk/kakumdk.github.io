@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Understanding Azure Active Directory & Azure App Registrations: Key Co</title>
+    <meta name="description" content="In the modern world of cloud computing, managing identity and access is crucial to securing enterprise applications and data. Microsoft Azure provides" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html" />
+    <meta property="og:title" content="Understanding Azure Active Directory & Azure App Registrations: Key Co" />
+    <meta property="og:description" content="In the modern world of cloud computing, managing identity and access is crucial to securing enterprise applications and data. Microsoft Azure provides" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Understanding Azure Active Directory & Azure App Registrations: Key Co" />
+    <meta name="twitter:description" content="In the modern world of cloud computing, managing identity and access is crucial to securing enterprise applications and data. Microsoft Azure provides" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Ad -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Ad -->
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html"
+        },
+        "headline": "Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices",
+        "description": "In the modern world of cloud computing, managing identity and access is crucial to securing enterprise applications and data. Microsoft Azure provides",
+        "image": "https://peoplesblog.co.in/upload/banners/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "6th Jan 2025",
+        "dateModified": "2025-01-06T09:41:26+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/azure.html">Azure</a></li>
+                                    <li class="breadcrumb-item active">Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices" data-src="/upload/banners/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices" />
+                                </div>
+                                <h1 class="read-article-title">Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>6th Jan 2025</span>, <span class="last-updated">2025-01-06T09:41:26+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>In the modern world of cloud computing, managing identity and access is crucial to securing enterprise applications and data. Microsoft Azure provides a comprehensive identity and access management solution through <strong>Azure Active Directory (Azure AD)</strong>. Whether you are managing an enterprise IT environment or building cloud-based applications, understanding Azure AD and Azure App Registrations is foundational to ensuring secure and seamless user and application experiences.</p>  <p>In this article, we will explore the key concepts behind <strong>Azure Active Directory</strong> and <strong>Azure App Registrations</strong>, and provide best practices for configuring and managing them. Additionally, we will dive into <strong>OpenID SSO for Admin Login</strong> as a critical use case of Azure AD that simplifies administrative access and improves security.</p>  <h2>What is Azure Active Directory?</h2>  <p>Azure Active Directory (Azure AD) is Microsoft&rsquo;s cloud-based identity and access management service. It serves as the backbone for authentication and authorization in Azure, Office 365, and other Microsoft services. Azure AD helps businesses control access to resources, manage identities, and provide security for cloud and on-premises applications.</p>  <p>Azure AD is distinct from traditional Active Directory (AD), which is primarily used for on-premises identity management. While traditional AD is based on Windows Server, Azure AD operates in the cloud and supports a broader set of modern authentication protocols like OAuth, OpenID Connect, and SAML.</p>  <p><strong>Key Features of Azure AD:</strong></p>  <ol> <li><strong>Identity Management</strong>: Provides centralized identity management for users, groups, and devices. It allows administrators to create and manage user accounts, assign roles, and configure access policies.</li> <li><strong>Authentication and Authorization</strong>: Azure AD supports Single Sign-On (SSO) for cloud apps, multi-factor authentication (MFA), conditional access policies, and more.</li> <li><strong>Integration with SaaS Applications</strong>: Azure AD can integrate with thousands of SaaS (Software as a Service) applications, such as Salesforce, Slack, and Zoom, using pre-built connectors for authentication.</li> <li><strong>Role-Based Access Control (RBAC)</strong>: Azure AD supports RBAC for controlling user access to Azure resources based on roles assigned to users or groups.</li> <li><strong>Self-Service Password Reset (SSPR)</strong>: Users can reset their passwords without admin intervention, improving security and reducing helpdesk workloads.</li> <li><strong>Conditional Access</strong>: This allows administrators to define policies based on user risk profiles, device health, and other factors to enforce security requirements before granting access to applications.</li> </ol>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>What is Azure App Registration?</h2>  <p>An <strong>Azure App Registration</strong> is a crucial concept for developers and administrators when building and integrating applications with Azure AD. It enables Azure AD to recognize an application and establish trust between the app and the Azure AD tenant, allowing secure authentication and authorization for the app&rsquo;s users.</p>  <p>When an app is registered in Azure AD, it is assigned a unique <strong>Application (client) ID</strong>, <strong>Directory (tenant) ID</strong>, and <strong>Client Secret</strong> (or certificate) which are required to authenticate the app and request access to resources.</p>  <p><strong>Why Use Azure App Registration?</strong></p>  <ol> <li><strong>Secure Authentication for Applications</strong>: App registrations are essential for securing cloud-based applications. By registering an app in Azure AD, you can configure how users authenticate to the app, use OAuth2 tokens for secure access, and integrate with various Microsoft APIs such as Microsoft Graph.</li> <li><strong>API Permissions</strong>: When registering an app, you can define which Azure resources or APIs the app needs access to, such as Microsoft Graph, SharePoint, or custom APIs, and assign necessary permissions.</li> <li><strong>Multi-Tenant Applications</strong>: Azure App Registration allows developers to build applications that can be used by multiple tenants, which is essential for building SaaS applications.</li> <li><strong>Integration with Azure AD B2C</strong>: Azure AD App Registrations are also used to integrate apps with <strong>Azure AD B2C</strong>, enabling external users (e.g., customers) to authenticate to your app via social accounts (like Google, Facebook, etc.) or local accounts.</li> </ol>  <h2>Key Components of Azure App Registration</h2>  <ol> <li><strong>Application (Client) ID</strong>: A globally unique identifier for the application within the Azure AD tenant. This ID is used by applications to authenticate against Azure AD.</li> <li><strong>Directory (Tenant) ID</strong>: The identifier for the Azure AD tenant, unique to each organization. It specifies the Azure AD directory where the application is registered.</li> <li><strong>Client Secret/Certificate</strong>: A credential used by the application to authenticate itself to Azure AD. The client secret is typically used for confidential client applications, while certificates can be used as an alternative for more secure scenarios.</li> <li><strong>Redirect URI</strong>: A URI that Azure AD will redirect the user to after they authenticate. This is commonly used in web applications to send the user back to the application after a successful login.</li> <li><strong>API Permissions</strong>: The permissions required by the app to interact with APIs or other Azure services. Permissions can be <strong>Delegated</strong> (when a user is involved in the app&rsquo;s flow) or <strong>Application</strong> (when the app operates autonomously).</li> <li><strong>Authentication Protocols</strong>: Azure AD supports multiple authentication protocols, including OAuth 2.0, OpenID Connect, and SAML, which can be configured during the app registration process.</li> <li><strong>Token Lifetime</strong>: The duration for which access tokens are valid. Access tokens are used to authenticate requests to APIs, and their lifetime can be configured based on your needs.</li> </ol>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <h2>OpenID SSO for Admin Login</h2>  <p>An important use case for Azure AD App Registrations is <strong>OpenID SSO (Single Sign-On)</strong> for administrative login. Single Sign-On (SSO) allows users to authenticate once and gain access to multiple applications without needing to re-enter credentials for each one. <strong>OpenID Connect</strong> (OIDC), an authentication protocol built on OAuth 2.0, is commonly used for SSO in Azure AD environments.</p>  <p><strong>What is OpenID Connect (OIDC)?</strong></p>  <p>OpenID Connect is an identity layer on top of the OAuth 2.0 protocol. It allows clients (such as applications) to verify the identity of end-users based on the authentication performed by an authorization server (in this case, Azure AD). Through OIDC, Azure AD can issue <strong>ID Tokens</strong> that contain user identity information and <strong>Access Tokens</strong> for secure resource access.</p>  <p>When using <strong>OpenID SSO</strong> for Admin Login, administrators authenticate once through Azure AD and gain access to various Azure and custom applications without needing to log in separately to each service.</p>  <p><strong>Why Use OpenID SSO for Admin Login?</strong></p>  <ol> <li><strong>Simplified Access Management</strong>: By enabling SSO for admin users, you reduce the administrative burden of managing multiple logins across different platforms. Admins can use their Azure AD credentials to sign into the Azure portal, applications, and third-party services.</li> <li><strong>Improved Security</strong>: OpenID Connect enhances security by using modern encryption techniques, including token-based authentication. In addition, OpenID SSO can be combined with <strong>Multi-Factor Authentication (MFA)</strong> to provide an additional layer of security for admin users.</li> <li><strong>Consistent Authentication Experience</strong>: OpenID SSO ensures that admins experience a consistent and seamless authentication flow, regardless of the application they are logging into, as long as it supports OpenID Connect.</li> <li><strong>Scalability</strong>: For organizations with many administrators or multiple applications, OpenID SSO allows for centralized control over user authentication, making it easier to scale as the organization grows.</li> </ol>  <p><strong>How to Set Up OpenID SSO for Admin Login</strong></p>  <p>To enable OpenID SSO for admin login in your Azure environment, you need to perform the following steps:</p>  <ol> <li><strong>Register the Admin App in Azure AD</strong>:  <ul> <li>Go to the <strong>Azure portal</strong>, navigate to <strong>Azure Active Directory</strong> &gt; <strong>App registrations</strong>, and click on <strong>New registration</strong>.</li> <li>Provide the required details (name, supported account types, and redirect URI for the admin portal).</li> <li>Note down the <strong>Application (client) ID</strong> and <strong>Directory (tenant) ID</strong> for later use.</li> </ul> </li> <li><strong>Configure API Permissions</strong>: <ul> <li>In the Azure portal, under the registered app, configure the appropriate <strong>API permissions</strong> required for admin tasks.</li> <li>For example, you might need permissions to access the <strong>Azure Management API</strong> or <strong>Microsoft Graph</strong> to read user and group data.</li> </ul> </li> <li><strong>Set Up OpenID Connect Authentication</strong>: <ul> <li>Under <strong>Authentication</strong>, configure OpenID Connect settings.</li> <li>Add the appropriate <strong>redirect URI</strong> that your admin application will handle after a successful login.</li> </ul> </li> <li><strong>Implement Token Validation</strong>: <ul> <li>Implement token validation in your admin app by using libraries such as <strong>MSAL (Microsoft Authentication Library)</strong> or <strong>OpenID Connect libraries</strong> to validate the <strong>ID Tokens</strong> and extract user information (e.g., user role, tenant info).</li> </ul> </li> <li><strong>Enable Multi-Factor Authentication (MFA)</strong>: <ul> <li>To secure admin access further, enforce <strong>MFA</strong> for administrative users.</li> <li>This can be configured under <strong>Azure AD Conditional Access</strong> policies.</li> </ul> </li> <li><strong>Test and Deploy</strong>: <ul> <li>Thoroughly test the OpenID SSO flow to ensure that admin users can seamlessly log in using their Azure AD credentials and access the necessary resources.</li> </ul> </li> </ol>  <div class='google-ad-3'> <p>Google Ad 3</p> </div>  <h2>Best Practices for Azure Active Directory &amp; App Registrations</h2>  <p><strong>1. Use Least Privilege Principle for Permissions</strong></p>  <p>When registering an app in Azure AD, always adhere to the <strong>least privilege</strong> principle. This means only granting the app the permissions it absolutely needs to function. Excessive permissions expose the app and your system to unnecessary risk. Review app permissions regularly and revoke any unnecessary access.</p>  <p><strong>2. Secure Client Secrets and Certificates</strong></p>  <p>Client secrets should be stored securely, and certificates should be used for higher levels of security, especially in production environments. Avoid hardcoding client secrets in the application code. Instead, use <strong>Azure Key Vault</strong> to securely store and manage credentials.</p>  <p><strong>3. Use Multi-Factor Authentication (MFA)</strong></p>  <p>For any app that handles sensitive data, implement <strong>MFA</strong> for an additional layer of protection. Azure AD supports MFA, which helps prevent unauthorized access even if credentials are compromised.</p>  <p><strong>4. Implement Conditional Access Policies</strong></p>  <p>Conditional Access policies help you enforce security requirements based on user, device, and location factors. For example, you might require that only devices that meet specific security standards (e.g., managed devices) can access the app.</p>  <p><strong>5. Monitor App Registrations and Usage</strong></p>  <p>Regularly monitor app registration activity through <strong>Azure AD logs</strong> to detect any unusual behavior or potential security breaches. Use Azure AD&rsquo;s reporting and auditing features to track application sign-ins and permission changes.</p>  <p><strong>6. Use Managed Identity for Azure Resources</strong></p>  <p>When developing applications that interact with Azure resources (such as Azure Storage or Azure SQL Database), use <strong>Managed Identity</strong> instead of app registrations with client secrets. Managed identities are more secure as they avoid storing credentials and allow Azure AD to manage identity automatically.</p>  <p><strong>7. Review Token Expiry and Revocation Policies</strong></p>  <p>Set appropriate expiration times for tokens to limit the window of opportunity for any compromised tokens. Implement token revocation where needed to invalidate access for compromised or stale tokens.</p>  <p><strong>8. Support Multi-Tenant Applications</strong></p>  <p>When building multi-tenant SaaS applications, ensure the app registration is configured to support users from any Azure AD tenant. You can enable multi-tenancy during the app registration process, allowing users from different organizations to authenticate and use your app.</p>  <p><strong>9. Test App Registration in a Non-Production Environment</strong></p>  <p>Before registering an app for production use, thoroughly test the app registration in a non-production environment to ensure everything works as expected, including authentication flows and permissions.</p>  <h2>Conclusion</h2>  <p>Azure Active Directory (Azure AD) and Azure App Registrations are integral parts of the Microsoft Azure ecosystem, offering robust identity and access management capabilities for both enterprise users and developers. By understanding these concepts and implementing best practices, organizations can ensure secure and efficient management of identities, applications, and resources in the cloud.</p>  <p>Additionally, enabling <strong>OpenID SSO for Admin Login</strong> streamlines the administrative experience, enhancing both security and convenience. Whether you&#39;re managing internal resources, building cloud-native apps, or integrating third-party solutions, Azure AD and App Registrations provide the tools necessary to safeguard your environment while maintaining flexibility and scalability.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/azure.html">Azure</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B09XTQFFCG.html" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black"><img data-src="https://m.media-amazon.com/images/I/71+BHZtdFaL._SX679_.jpg" class="img-fluid lazy" alt="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B09XTQFFCG.html" title="FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black" class="shop-title-value">FYA Handheld Vacuum Cleaner Cordless, Wireless Hand Vacuum&amp;Air Blower 2-in-1, Mini Portable Car Vacuum Cleaner with Powerful Suction, USB Rechargeable Vacuum for Home and Car, HEPA Filter, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>2,329</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,199</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BZ12FPM1.html" title="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)"><img data-src="https://m.media-amazon.com/images/I/618cNlDLyZL._SX679_.jpg" class="img-fluid lazy" alt="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)" title="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BZ12FPM1.html" title="Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)" class="shop-title-value">Haier 596 L, 3 Star, 100% Convertible Fridge Space, Expert Inverter, Frost Free Side by Side Refrigerator, (HES-690SS-P, Shiny Silver)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>57,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>1,01,990</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">23% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0B4N6JVMW.html" title="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU"><img data-src="https://m.media-amazon.com/images/I/81lIE9MYV3L._SX679_.jpg" class="img-fluid lazy" alt="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU" title="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0B4N6JVMW.html" title="HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU" class="shop-title-value">HP Laptop 15s, 11th Gen Intel Core i3-1115G4, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Thin &amp; Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq2673TU</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>38,300</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>49,557</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/the-importance-of-the-vedas-in-modern-hinduism.html" title="The Importance of the Vedas in Modern Hinduism">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/the-importance-of-the-vedas-in-modern-hinduism.jpg" alt="The Importance of the Vedas in Modern Hinduism" title="The Importance of the Vedas in Modern Hinduism" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/the-importance-of-the-vedas-in-modern-hinduism.html" title="The Importance of the Vedas in Modern Hinduism">
+                                <span class="title">The Importance of the Vedas in Modern Hinduism</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/the-importance-of-the-vedas-in-modern-hinduism.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html">
+                  Understanding Azure Front Door and CDN Profiles: Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html">
+                  Understanding Azure Storage Accounts: Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+                  Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+                  Migrating from JSStream to Vimeo Using Drupal Migration API
+                </a>
+              </div><div class="article">
+                <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+                  How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+                  Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+                  Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">30% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0BQJ68HHC.html" title="Dell [Smartchoice] Core i3-1215U, 12th Gen (8GB RAM/512GB SSD/FHD/Window 11/MS Office&#039; 21/15&quot;(38 cm)/15 Month McAfee/Black/1.48kg Laptop"><img data-src="https://m.media-amazon.com/images/I/61QXAqq9OhL._SX679_.jpg" class="img-fluid lazy" alt="Dell [Smartchoice] Core i3-1215U, 12th Gen (8GB RAM/512GB SSD/FHD/Window 11/MS Office&#039; 21/15&quot;(38 cm)/15 Month McAfee/Black/1.48kg Laptop" title="Dell [Smartchoice] Core i3-1215U, 12th Gen (8GB RAM/512GB SSD/FHD/Window 11/MS Office&#039; 21/15&quot;(38 cm)/15 Month McAfee/Black/1.48kg Laptop" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0BQJ68HHC.html" title="Dell [Smartchoice] Core i3-1215U, 12th Gen (8GB RAM/512GB SSD/FHD/Window 11/MS Office&#039; 21/15&quot;(38 cm)/15 Month McAfee/Black/1.48kg Laptop" class="shop-title-value">Dell [Smartchoice] Core i3-1215U, 12th Gen (8GB RAM/512GB SSD/FHD/Window 11/MS Office&#039; 21/15&quot;(38 cm)/15 Month McAfee/Black/1.48kg Laptop</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>33,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>48,692</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-sattu-drink.html">
+            How to prepare Sattu Drink?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/advanced-sorting-and-searching-algorithms-in-php-quick-sort-merge-sort-heap-sort-and-binary-search-trees.html">
+            Advanced Sorting and Searching Algorithms in PHP: Quick Sort, Merge Sort, Heap Sort, and Binary Search Trees
+          </a>
+        </div><div class="article">
+          <a href="/articles/cosmology-and-creation-in-the-vedas.html">
+            Cosmology and Creation in the Vedas
+          </a>
+        </div><div class="article">
+          <a href="/articles/data-structures-in-php-implementing-stacks-queues-linked-lists-and-spl-classes.html">
+            Data Structures in PHP: Implementing Stacks, Queues, Linked Lists, and SPL Classes
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">50% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch"><img data-src="https://m.media-amazon.com/images/I/71uba-37tOL._SY879_.jpg" class="img-fluid lazy" alt="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0C4LVTTN7.html" title="The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch" class="shop-title-value">The Pant Project Luxury PV Stretchable Casual Pants for Men | Stylish Slim Fit Men&#039;s Wear Trousers for Office or Party | Mens Fashion Dress Trouser with Expandable Waist &amp; 4 Way Stretch</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,499</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,990</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html">
+            Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-importance-of-the-vedas-in-modern-hinduism.html">
+            The Importance of the Vedas in Modern Hinduism
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html">
+            Understanding Azure Front Door and CDN Profiles: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html">
+            Understanding Azure Storage Accounts: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-community-health-campaigns-save-lives.html">
+            How Community Health Campaigns Save Lives
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-curd-rice.html">
+            How to prepare Curd Rice?
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+            Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+            Migrating from JSStream to Vimeo Using Drupal Migration API
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prevent-morning-breath.html">
+            How to prevent morning breath?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+            How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">4% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01IQZPLEA.html" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)"><img data-src="https://m.media-amazon.com/images/I/61J34HxBK5L._UY695_.jpg" class="img-fluid lazy" alt="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01IQZPLEA.html" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" class="shop-title-value">Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>384</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>399</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-gingerbread-man.html">
+            The Gingerbread Man
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fish.html">
+            The Magic Fish
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-wise-judge.html">
+            The Wise Judge
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-elephant.html">
+            The Selfish Elephant
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">73% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B091H9DWL9.html" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4"><img data-src="https://m.media-amazon.com/images/I/61l0ocLvZKS._SX679_.jpg" class="img-fluid lazy" alt="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B091H9DWL9.html" title="truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4" class="shop-title-value">truke Buds S1 Bluetooth Truly Wireless In Ear Earbuds with Mic with Environmental Noise Cancellation(ENC) &amp; Quad MEMS for Clear Calls Up to 72hrs of Playtime Premium Sliding Case Low Latency 5.1 IPX4</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>3,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/sadhana-shivdasani.html">
+            Sadhana Shivdasani
+          </a>
+        </div><div class="article">
+          <a href="/great-people/a-c-bhaktivedanta-swami-prabhupada.html">
+            A. C. Bhaktivedanta Swami Prabhupada
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bapu.html">
+            Bapu
+          </a>
+        </div><div class="article">
+          <a href="/great-people/kashiram-rana.html">
+            Kashiram Rana
+          </a>
+        </div><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bipan-chandra.html">
+            Bipan Chandra
+          </a>
+        </div><div class="article">
+          <a href="/great-people/ravi-shankar-prasad.html">
+            Ravi Shankar Prasad
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">31% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B097RJ867P.html" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large"><img data-src="https://m.media-amazon.com/images/I/51PwsOOMErL._SX679_.jpg" class="img-fluid lazy" alt="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B097RJ867P.html" title="PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large" class="shop-title-value">PHILIPS Digital Air Fryer HD9252/90 with Touch Panel, uses up to 90% less fat, 7 Pre-set Menu, 1400W, 4.1 Liter, with Rapid Air Technology (Black), Large</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>8,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>12,995</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">4% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B01IQZPLEA.html" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)"><img data-src="https://m.media-amazon.com/images/I/61J34HxBK5L._UY695_.jpg" class="img-fluid lazy" alt="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B01IQZPLEA.html" title="Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)" class="shop-title-value">Mahi Brown &amp; White Gold Plated Rakshabandhan OM Rakhi with Rudraksh for Brother/Bhaiya (BR1100546G)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>384</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>399</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">18% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B078J2FL6D.html" title="Canine Creek Ultra Premium Adult Dry Dog Food ,12.5+1Kg Total 13.5Kg Pack"><img data-src="https://m.media-amazon.com/images/I/71ytvbVUHqL._SY879_.jpg" class="img-fluid lazy" alt="Canine Creek Ultra Premium Adult Dry Dog Food ,12.5+1Kg Total 13.5Kg Pack" title="Canine Creek Ultra Premium Adult Dry Dog Food ,12.5+1Kg Total 13.5Kg Pack" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B078J2FL6D.html" title="Canine Creek Ultra Premium Adult Dry Dog Food ,12.5+1Kg Total 13.5Kg Pack" class="shop-title-value">Canine Creek Ultra Premium Adult Dry Dog Food ,12.5+1Kg Total 13.5Kg Pack</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>5,386.50</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>6,600</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)"><img data-src="https://m.media-amazon.com/images/I/71mnHCt5TkL._SX679_.jpg" class="img-fluid lazy" alt="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B0972WB6VJ.html" title="GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)" class="shop-title-value">GoMechanic Digital Tyre Inflator for Car - 150 psi, 12V DC Portable Air Pump/Compressor with Digital Tyre Pressure Gauge, Suitable for Bikes, Bicycles or Any Inflatable with LED Light (Gusto T10)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>1,099</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>2,499</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">35% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey"><img data-src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" class="img-fluid lazy" alt="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="/bestproducts/products/B08N5W4NNB.html" title="Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey" class="shop-title-value">Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class="rupee">₹</span><span>59,990</span></span>
+                      <span class="actualprice"><span class="rupee">₹</span><span>92,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/seeadlertech/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/azure.html" title="Azure" aria-label="Azure">Azure</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/public-health.html" title="Public Health" aria-label="Public Health">Public Health</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li><li><a href="/articles/vimeo.html" title="Vimeo" aria-label="Vimeo">Vimeo</a></li><li><a href="/articles/self.html" title="Self" aria-label="Self">Self</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2025, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
