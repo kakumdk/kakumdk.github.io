@@ -18,7 +18,7 @@ a {
     text-decoration: unset;
 }
 a:hover {
-    color: #212529;
+    color: #292b2c;
 }
 @keyframes blink {
     0%, 100% {
@@ -117,13 +117,21 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 }
 .card a {
     color: #212529;
-    /* font-weight: 300 !important; */
 }
 .card a:hover {
     color: #2E8B57;
 }
 .card a.btn {
     font-weight: 500 !important;
+}
+.card.you-might-also-like a {
+    color: #2E8B57;
+    font-size: 16px !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.card.you-might-also-like a:hover {
+    color: #292b2c;
 }
 .offer {
     color: #2E8B57;
@@ -180,11 +188,11 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     min-height: 100px;
     overflow: hidden;
     text-align: left;
-    color: #212529;
+    color: #292b2c;
 }
 .templatemo-accordion a,
 .shop-item h4.shop-title a {
-    color: #212529;
+    color: #292b2c;
 }
 .shop-item h4.shop-title a:hover {
     color: #2E8B57;
@@ -217,7 +225,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     text-align: center;
 }
 .shop-item .store a {
-    color: #212529;
+    color: #292b2c;
 }
 .shop-item .store a:hover {
     color: #2E8B57;
@@ -238,7 +246,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     border-radius: 0 0 5px 5px;
 }
 .product-compare-wrapper a {
-    color: #212529;
+    color: #292b2c;
 }
 .product-compare-wrapper a:hover {
     color: #2E8B57;
@@ -261,7 +269,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.05)!important;
 }
 .featured-categories a {
-    color: #212529;
+    color: #292b2c;
     text-decoration: unset;
 }
 .featured-categories a:hover {
