@@ -117,6 +117,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 }
 .card a {
     color: #212529;
+    letter-spacing: normal;
 }
 .card a:hover {
     color: #2E8B57;
@@ -398,6 +399,9 @@ figure.table td {
     white-space: nowrap;
     background-color: #2E8B57;
     color: #ffffff;
+}
+.hover-backgroud:hover {
+    background-color: #f8f9faa1;
 }
 
 
