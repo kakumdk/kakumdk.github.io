@@ -162,6 +162,9 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     border-radius: 5px;
     min-height: 400px;
 }
+.shop-item:hover {
+    background-color: #f8f9faa1;
+}
 .shop-item .discount {
     /* left: 25px; */
     position: absolute;
@@ -467,12 +470,7 @@ figure.table td {
 }
 .full-background {
     background-image: url('/bestproducts/assets/img/shop-bg.avif');
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%; */
-  }
+}
   
 
 
