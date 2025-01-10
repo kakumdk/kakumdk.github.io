@@ -531,7 +531,7 @@ figure.table td {
     }
     img.card-img-top {
         height: 250px;
-        width: auto;
+        width: 250px;
         margin: auto;
         display: block;
     }
