@@ -1414,6 +1414,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/water-level-in-flooded-assam-coal-mine-rises-again-despite-dewatering-efforts.html
+Allow: /news/on-india-china-border-situation-army-chief-rules-out-buffer-zones-along-lac.html
+Allow: /news/strength-of-youth-power-will-make-india-a-developed-nation-pm-modi.html
+Allow: /news/bharat-got-true-independence-on-ram-temple-consecration-day-rss-chief-mohan-bhagwat.html
 Allow: /news/chiranjeevi-attends-sankranthi-celebrations-with-pm-narendra-modi-pv-sindhu-in-delhi-watch.html
 Allow: /news/iitian-baba-at-mahakumbh-meet-the-man-who-left-science-for-spirituality.html
 Allow: /news/nag-mark-2-aces-field-trials-5-things-to-know-about-indias-homegrown-anti-tank-missile.html
