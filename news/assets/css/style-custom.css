@@ -440,6 +440,14 @@ a.ss-btn.ss-btn-pocket {
     border-radius: 5px;
     min-height: 300px;
 }
+.news-article-content p,
+.news-article-content ul li,
+.news-article-content ol li {
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin: 15px auto;
+    font-weight: 500;
+}
 
 
 /****************************************************************************************************************************/
