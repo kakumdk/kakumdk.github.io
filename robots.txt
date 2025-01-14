@@ -1414,6 +1414,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/chiranjeevi-attends-sankranthi-celebrations-with-pm-narendra-modi-pv-sindhu-in-delhi-watch.html
+Allow: /news/iitian-baba-at-mahakumbh-meet-the-man-who-left-science-for-spirituality.html
 Allow: /news/nag-mark-2-aces-field-trials-5-things-to-know-about-indias-homegrown-anti-tank-missile.html
 Allow: /news/changing-landscape-of-tomato-trade-in-madanapalle-of-ap.html
 Allow: /news/canadas-trudeau-likely-to-resign-as-liberal-party-leader.html
