@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Understanding Azure Key Vault: Key Concepts and Best Practices</title>
+    <meta name="description" content="In the modern cloud-driven world, security is more critical than ever. Organizations are increasingly migrating their data, applications, and infrastr" />
+    <link rel="canonical" href="https://peoplesblog.co.in/articles/understanding-azure-key-vault-key-concepts-and-best-practices.html" />
+    <meta property="og:title" content="Understanding Azure Key Vault: Key Concepts and Best Practices" />
+    <meta property="og:description" content="In the modern cloud-driven world, security is more critical than ever. Organizations are increasingly migrating their data, applications, and infrastr" />
+    <meta property="og:url" content="https://peoplesblog.co.in/articles/understanding-azure-key-vault-key-concepts-and-best-practices.html" />
+    <meta property="og:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-key-vault-key-concepts-and-best-practices.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:title" content="Understanding Azure Key Vault: Key Concepts and Best Practices" />
+    <meta name="twitter:description" content="In the modern cloud-driven world, security is more critical than ever. Organizations are increasingly migrating their data, applications, and infrastr" />
+    <meta name="twitter:image" content="https://peoplesblog.co.in/upload/banners/understanding-azure-key-vault-key-concepts-and-best-practices.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="Generator" content="Peoples BLOG (https://peoplesblog.co.in)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="google-site-verification" content="oIpwGHdguWnER2N8lKSljpYFSSUvg8A-sFzQkn-xLnU" />
+    <meta name="msvalidate.01" content="9DAE9598E7C9A8CA5C08940C17D62C9B" />
+    <meta name="yandex-verification" content="9407d632c1eaecc4" />
+    <meta name="ahrefs-site-verification" content="db517e36f10b2fd4cd50caabba01509f1a6deced5f75483daee17f3190b6c2cc">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSZRK91SH"></script>
+    <script>
+        var host = window.location.host;
+        if (host == "peoplesblog.co.in") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3RSZRK91SH");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Ad -->
+    <script data-ad-client="ca-pub-2683569506254139" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Ad -->
+    <link rel="shortcut icon" href="/upload/favicon.webp" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/upload/favicon.webp">
+    <link href="/css/public.min.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/articles/understanding-azure-key-vault-key-concepts-and-best-practices.html"
+        },
+        "headline": "Understanding Azure Key Vault: Key Concepts and Best Practices",
+        "description": "In the modern cloud-driven world, security is more critical than ever. Organizations are increasingly migrating their data, applications, and infrastr",
+        "image": "https://peoplesblog.co.in/upload/banners/understanding-azure-key-vault-key-concepts-and-best-practices.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Karthik Kumar D K"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Peoples BLOG",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://peoplesblog.co.in/upload/favicon.webp"
+          }
+        },
+        "datePublished": "14th Jan 2025",
+        "dateModified": "2025-01-14T08:02:30+05:30"
+      }
+    </script>
+</head>
+<body>
+    <div class="global-progress-bar-on-scroll-wrapper">
+        <div class="global-progress-bar-on-scroll" id="globalProgressBarOnScroll"></div>
+    </div>
+    <div id="wrapper">
+        <header class="tech-header header">
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- span class="navbar-toggler-icon"></span -->
+                    <span class=""></span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  <img src="/upload/logo.png" title="Peoples BLOG" alt="Peoples BLOG" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/articles/sci-tech.html" title="Science & Technology">Science & Tech</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/travel.html" title="Travel">Travel</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/lifestyle.html" title="Lifestyle">Lifestyle</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/food.html" title="Food">Food</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/articles/health.html" title="Health">Health</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/drupal.html" title="Drupal">Drupal</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/social-media.html" title="Social Media">Social Media</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/articles/coronavirus.html" title="Coronavirus">Coronavirus</a></li -->
+                        </ul>
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="nav-link" href="/articles/index.html" title="Articles">Articles</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/great-people/index.html" title="Great People">Great People</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/quick-read/index.html" title="Quick Read">Quick Read</a></li>
+                           <!-- li class="nav-item"><a target="_blank" class="nav-link" href="/bestproducts/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/best-products/index.html" title="Best Products">Best Products</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/shop/index.html" title="Shop">Shop</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/dentofacts/index.html" title="Dentofacts">Dentofacts</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/news/index.html" title="News">News</a></li -->
+                           <li class="nav-item"><a class="nav-link" href="/quotes/index.html" title="Quotes">Quotes</a></li>
+                           <!-- li class="nav-item"><a class="nav-link" href="/videos/index.html" title="Videos">Videos</a></li -->
+                           <!-- li class="nav-item"><a class="nav-link" href="/about.html" title="About">About</a></li -->
+                           <li class="nav-item"><a class="nav-link search" href="/search.html" title="Search"><i class="fa fa-search"></i><span>Search</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+        </header>
+        <section class="section single-wrapper single-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-title-area">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/index.html">Articles</a></li>
+                                    <li class="breadcrumb-item"><a href="/articles/azure.html">Azure</a></li>
+                                    <li class="breadcrumb-item active">Understanding Azure Key Vault: Key Concepts and Best Practices</li>
+                                </ol>
+                                <div class="single-post-media">
+                                    <img alt="Understanding Azure Key Vault: Key Concepts and Best Practices" data-src="/upload/banners/understanding-azure-key-vault-key-concepts-and-best-practices.jpg" src="/upload/cursor.jpg" class="img-fluid lazy" title="Understanding Azure Key Vault: Key Concepts and Best Practices" />
+                                </div>
+                                <h1 class="read-article-title">Understanding Azure Key Vault: Key Concepts and Best Practices</h1>
+                                <div class="blog-meta big-meta">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <small class="articles-author d-none">
+                                                <em class="pl-0">On</em><span>14th Jan 2025</span>, <span class="last-updated">2025-01-14T08:02:30+05:30</span>
+                                            </small>
+                                            <small class="articles-author">
+                                                <em>By</em><a class="author_item" href="/authors/karthik-kumar-d-k.html">Karthik Kumar D K</a> | <span id="reading-time"></span> read
+                                            </small>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <small class="read-article-section">
+                                                <i class="fa fa-play read-article"> <span>Listen</span></i>
+                                                <i class="fa fa-pause read-article-pause"> <span>Pause</span></i>
+                                                <i class="fa fa-play read-article-resume"> <span>Resume</span></i>
+                                                <i class="fa fa-stop read-article-stop"> <span>Stop</span></i>
+                                            </small>
+                                            <small class="post-sharing-top post-sharing"></small>
+                                        </div>
+                                    </div>
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
+                            <div id="read-article-content" class="blog-content read-article-content">
+                                <div><p>In the modern cloud-driven world, security is more critical than ever. Organizations are increasingly migrating their data, applications, and infrastructure to the cloud, but with this transition comes the need to protect sensitive information such as secrets, keys, certificates, and passwords. <strong>Azure Key Vault</strong> is a cloud service provided by Microsoft Azure designed specifically to safeguard and manage these sensitive assets in a secure and highly available manner.</p>  <p>In this article, we will explore the key concepts behind <strong>Azure Key Vault</strong>, how it works, its use cases, and best practices for securing your secrets, keys, and certificates. Azure Key Vault offers critical functionalities that help you protect your applications, meet compliance requirements, and ensure that your organization&rsquo;s data is secure.</p>  <h2>What is Azure Key Vault?</h2>  <p><strong>Azure Key Vault</strong> is a cloud service for securely storing and managing sensitive information such as:</p>  <ul> <li><strong>Secrets</strong>: Application secrets, database connection strings, API keys, and any other confidential data.</li> <li><strong>Keys</strong>: Cryptographic keys used for encryption, decryption, signing, and authentication.</li> <li><strong>Certificates</strong>: Public key certificates used for securing communication and identity validation.</li> </ul>  <p>Azure Key Vault allows users to securely store these assets, control access, and log access activity. It ensures that secrets and other sensitive data are available when needed but remain protected from unauthorized access.</p>  <p><strong>Key Features of Azure Key Vault</strong></p>  <ol> <li><strong>Secure Storage of Secrets</strong>:  <ol> <li>Key Vault allows users to securely store and manage secrets like database connection strings, credentials, and API keys.</li> <li>These secrets can be accessed only by authorized applications or users.</li> </ol> </li> <li><strong>Key Management and Encryption</strong>: Key Vault provides a centralized location for managing cryptographic keys used in encryption operations (e.g., symmetric and asymmetric keys), as well as keys for signing and verifying digital signatures.</li> <li><strong>Certificate Management</strong>: <ol> <li>Azure Key Vault helps organizations manage SSL/TLS certificates and other certificates used for application security and identity validation.</li> <li>It can automatically renew certificates, reducing the administrative overhead.</li> </ol> </li> <li><strong>Access Control</strong>: <ol> <li>Key Vault integrates with Azure Active Directory (Azure AD) to enforce fine-grained access control policies using role-based access control (RBAC) or access policies.</li> <li>Only authorized users or applications can access the keys, secrets, and certificates stored in the vault.</li> </ol> </li> <li><strong>Audit and Monitoring</strong>: <ol> <li>Key Vault integrates with Azure monitoring tools like Azure Monitor and Azure Security Center.</li> <li>It logs access events and changes to the vault, helping organizations track who accessed sensitive data and when, providing visibility into the security of the stored assets.</li> </ol> </li> <li><strong>High Availability and Redundancy</strong>: <ol> <li>Azure Key Vault is designed to be highly available and fault-tolerant.</li> <li>It provides geo-redundancy options and ensures that sensitive data is available globally with minimal downtime.</li> </ol> </li> <li><strong>Managed HSM (Hardware Security Module)</strong>: <ol> <li>For organizations that require even more stringent security requirements,</li> <li>Azure Key Vault offers <strong>Managed HSM</strong> to provide a cloud-based hardware security module for key management and encryption operations.</li> </ol> </li> </ol>  <div class='google-ad' id='google-ad-1'> <p>Google Ad 1</p> </div>  <h2>Key Components of Azure Key Vault</h2>  <ol> <li><strong>Vault</strong>:  <ol> <li>A <strong>Key Vault</strong> is the container that holds all the secrets, keys, and certificates.</li> <li>Each vault is associated with a specific Azure subscription and tenant.</li> </ol> </li> <li><strong>Secrets</strong>: These are the sensitive data such as passwords, connection strings, and API keys that you need to store securely.</li> <li><strong>Keys</strong>: <ol> <li>Cryptographic keys used for performing encryption, decryption, signing, and verification operations.</li> <li>Keys can be managed within Key Vault or created externally and imported into the vault.</li> </ol> </li> <li><strong>Certificates</strong>: <ol> <li>These are the public key certificates used to secure communications (SSL/TLS) and establish trust between systems.</li> <li>Key Vault can automatically renew certificates and manage their lifecycle.</li> </ol> </li> <li><strong>Access Policies</strong>: These policies define who (users or applications) can access the secrets, keys, and certificates within a vault, and the level of access they have (read, write, delete).</li> <li><strong>Managed HSM</strong>: <ol> <li>An <strong>HSM</strong> (Hardware Security Module) is a physical device used for key management.</li> <li>Managed HSM is a fully managed service in Azure that allows customers to store keys in dedicated hardware appliances for enhanced security.</li> </ol> </li> <li><strong>Soft Delete and Recovery</strong>: <ol> <li>Azure Key Vault provides a <strong>soft-delete</strong> feature that protects vault data from accidental or malicious deletion.</li> <li>Deleted keys, secrets, and certificates can be recovered within a specified retention period.</li> </ol> </li> </ol>  <h2>Use Cases for Azure Key Vault</h2>  <p><strong>1. Securing Application Secrets</strong></p>  <p>Modern applications often require sensitive information such as database connection strings, API keys, and credentials. Storing these secrets securely in Azure Key Vault ensures they are protected and only accessible by authorized users or services. For example:</p>  <ul> <li>A web application might store its database credentials or service API keys as secrets in Key Vault.</li> <li>A microservice architecture can centralize secrets management by accessing secrets from Key Vault instead of hardcoding them in the application code.</li> </ul>  <p><strong>2. Key Management for Data Encryption</strong></p>  <p>Azure Key Vault simplifies the management of cryptographic keys used in data encryption. For example, an organization might use keys in Key Vault to encrypt sensitive data stored in Azure Blob Storage or Azure SQL Database. Key Vault supports both <strong>symmetric</strong> and <strong>asymmetric</strong> keys, allowing for a variety of encryption scenarios.</p>  <ul> <li><strong>Azure Storage Encryption</strong>: Key Vault can be used to manage the keys used for <strong>Azure Storage Encryption</strong>, ensuring that data stored in Azure is always encrypted.</li> <li><strong>Bring Your Own Key (BYOK)</strong>: Azure allows organizations to manage their own encryption keys (BYOK) in Azure Key Vault, ensuring that only authorized personnel or applications can decrypt the data.</li> </ul>  <div class='google-ad' id='google-ad-2'> <p>Google Ad 2</p> </div>  <p><strong>3. SSL/TLS Certificate Management</strong></p>  <p>Managing SSL/TLS certificates for secure communication (HTTPS) across websites and applications can be challenging. Azure Key Vault provides a centralized solution for managing, storing, and rotating certificates.</p>  <ul> <li><strong>Automatic Certificate Renewal</strong>: Azure Key Vault can automate the renewal process for certificates, reducing administrative overhead and ensuring that certificates are always up-to-date.</li> <li><strong>Securing Applications</strong>: You can store and retrieve SSL certificates for securing applications hosted in Azure or for use with Azure services like Azure Application Gateway or Azure App Service.</li> </ul>  <p><strong>4. Compliance and Security Auditing</strong></p>  <p>Azure Key Vault provides extensive auditing and logging capabilities, making it easier for organizations to comply with regulatory requirements and maintain a strong security posture. Access to sensitive data in Key Vault is logged, and administrators can monitor and review activity to ensure only authorized access occurs.</p>  <ul> <li><strong>Azure Monitor Integration</strong>: Use <strong>Azure Monitor</strong> to track access logs, security incidents, and system activity related to the vault. Integration with <strong>Azure Security Center</strong> also provides proactive monitoring and alerting for any potential security risks.</li> </ul>  <p><strong>5. Secure Access to Secrets in DevOps Pipelines</strong></p>  <p>Azure Key Vault is often used in <strong>DevOps</strong> environments to store secrets, keys, and certificates used in CI/CD pipelines. This helps prevent storing sensitive data in version control systems and keeps the pipeline secure.</p>  <ul> <li><strong>Azure DevOps Integration</strong>: Key Vault can be integrated with <strong>Azure DevOps</strong> to securely retrieve secrets and keys required for building, testing, and deploying applications.</li> <li><strong>Managed Identity</strong>: Azure Key Vault supports <strong>Managed Identity</strong>, allowing applications and services to securely access secrets in the vault without needing to manage credentials manually.</li> </ul>  <h2>Best Practices for Using Azure Key Vault</h2>  <p><strong>1. Use Access Policies and Role-Based Access Control (RBAC)</strong></p>  <p>Ensure that you define <strong>fine-grained access policies</strong> to limit who can access your secrets, keys, and certificates in the Key Vault. Use <strong>RBAC</strong> to control access to vaults at the Azure resource level.</p>  <ul> <li><strong>Principle of Least Privilege</strong>: Only give users and applications the minimal access necessary to perform their jobs. For example, developers may need read-only access to secrets, while an application service may require full access to the secrets it needs.</li> </ul>  <p><strong>2. Leverage Managed Identities for Secure Access</strong></p>  <ul> <li>When integrating Azure services with Key Vault, use <strong>Managed Identities</strong> for authentication instead of storing credentials in code.</li> <li>Managed identities allow Azure services to authenticate to Key Vault without storing keys or secrets in the application.</li> </ul>  <p><strong>3. Enable Soft Delete and Purge Protection</strong></p>  <ul> <li>Enable <strong>soft delete</strong> and <strong>purge protection</strong> for your Key Vault to prevent accidental or malicious deletion of secrets and keys.</li> <li>This allows you to recover deleted items within a specified retention period.</li> </ul>  <p><strong>4. Automate Secret and Certificate Rotation</strong></p>  <ul> <li>Use Key Vault&rsquo;s <strong>automatic rotation</strong> feature for certificates and keys.</li> <li>Implement automated policies for key rotation to reduce the risk of compromise from long-lived keys.</li> <li>You can configure certificates to renew automatically or alert administrators when a certificate is about to expire.</li> </ul>  <div class='google-ad' id='google-ad-3'> <p>Google Ad 3</p> </div>  <p><strong>5. Monitor Access to Key Vault</strong></p>  <ul> <li>Enable <strong>logging</strong> and <strong>monitoring</strong> for your Key Vault using Azure Monitor and integrate with <strong>Azure Security Center</strong> for proactive threat detection.</li> <li>Review the logs to detect any unusual or unauthorized access attempts.</li> </ul>  <p><strong>6. Store Encryption Keys in Managed HSM for Additional Security</strong></p>  <ul> <li>For workloads requiring high levels of security, consider using <strong>Azure Key Vault Managed HSM</strong> for hardware-backed key management.</li> <li>This service ensures that cryptographic operations are performed in hardware, enhancing the security of sensitive encryption keys.</li> </ul>  <p><strong>7. Use Azure Policies for Compliance</strong></p>  <ul> <li>Implement <strong>Azure Policies</strong> to enforce organizational standards and ensure compliance with regulatory requirements.</li> <li>For instance, you can enforce that all storage accounts must use encryption keys from Key Vault or that keys must be rotated every 90 days.</li> </ul>  <p><strong>8. Use Key Vault for Secrets in DevOps Pipelines</strong></p>  <ul> <li>Integrate <strong>Azure Key Vault</strong> into your <strong>CI/CD pipeline</strong> to securely store and retrieve secrets required during the build and release process.</li> <li>This avoids hardcoding secrets in scripts or code repositories, reducing the risk of data breaches.</li> </ul>  <h2>Conclusion</h2>  <p>Azure Key Vault is a critical service in Microsoft Azure that helps organizations securely store and manage sensitive information like secrets, keys, and certificates. By understanding its key features and following best practices, you can safeguard your applications and data, improve your security posture, and meet compliance requirements.</p>  <p>Whether you are securing application secrets, managing encryption keys for data protection, or automating certificate lifecycle management, Azure Key Vault provides a robust, scalable solution that enhances both security and operational efficiency. Integrating Azure Key Vault with your cloud applications, infrastructure, and DevOps processes ensures that your sensitive data is always protected and accessible only to authorized users and services.</p>  <p>Thanks for reading the article,&nbsp;<a href='/articles/sci-tech.html'>for more Science &amp; Technology related articles</a>&nbsp;<a href='/articles/index.html'>read and subscribe to peoples blog articles</a>.</p> </div>
+                            </div><!-- end content -->
+                            <div class="blog-title-area tag">
+                                <h4>Labels</h4>
+                                <div class="tag-cloud-single">
+                                    <span><a href="/articles/azure.html">Azure</a></span><span><a href="/articles/sci-tech.html">Sci-Tech</a></span>                    </div><!-- end meta -->
+                                <br/>
+                            </div><!-- end title -->
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">25% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/3wvae4j" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)"><img data-src="https://m.media-amazon.com/images/I/619sDPV59nL._SX679_.jpg" class="img-fluid lazy" alt="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/3wvae4j" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)" class="shop-title-value">LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SPZX, Shiny Steel, Convertible with Express Freeze)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>38,490</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>50,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">17% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4ekE3oq" title="iQOO Z9s Pro 5G (Luxe Marble, 8Gb Ram, 128Gb Storage) | Snapdragon 7 Gen 3 Processor |120 Hz Curved Amoled Display with 4500 Nits Local Peak Brightness | 5500 Mah Battery | Ai Erase, White"><img data-src="https://m.media-amazon.com/images/I/61SnaL4+EFL._SX679_.jpg" class="img-fluid lazy" alt="iQOO Z9s Pro 5G (Luxe Marble, 8Gb Ram, 128Gb Storage) | Snapdragon 7 Gen 3 Processor |120 Hz Curved Amoled Display with 4500 Nits Local Peak Brightness | 5500 Mah Battery | Ai Erase, White" title="iQOO Z9s Pro 5G (Luxe Marble, 8Gb Ram, 128Gb Storage) | Snapdragon 7 Gen 3 Processor |120 Hz Curved Amoled Display with 4500 Nits Local Peak Brightness | 5500 Mah Battery | Ai Erase, White" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4ekE3oq" title="iQOO Z9s Pro 5G (Luxe Marble, 8Gb Ram, 128Gb Storage) | Snapdragon 7 Gen 3 Processor |120 Hz Curved Amoled Display with 4500 Nits Local Peak Brightness | 5500 Mah Battery | Ai Erase, White" class="shop-title-value">iQOO Z9s Pro 5G (Luxe Marble, 8Gb Ram, 128Gb Storage) | Snapdragon 7 Gen 3 Processor |120 Hz Curved Amoled Display with 4500 Nits Local Peak Brightness | 5500 Mah Battery | Ai Erase, White</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>24,999</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>29,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-4 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">29% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/3Wl3DRc" title="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue"><img data-src="https://m.media-amazon.com/images/I/81JcZIx4qJL._SX385_.jpg" class="img-fluid lazy" alt="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue" title="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/3Wl3DRc" title="Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue" class="shop-title-value">Omron HEM 7124 Fully Automatic Digital Blood Pressure Monitor with Intellisense Technology For Most Accurate Measurement, White and Blue</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>1,638</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>2,310</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="article-author-wrapper"><h4>About Author</h4><div class="author peoplesblog-author">                      
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center author-image-wrapper">
+                            <img data-src="/upload/authors/karthikkumardk.jpeg" alt="Karthik Kumar D K" class="img-fluid rounded-circle lazy" title="Karthik Kumar D K" src="/upload/cursor.jpg" />
+                        </div><!-- end col -->
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 author-content-wrapper">
+                          <h4>Karthik Kumar D K</h4>
+                          <p>A Techie at heart, Karthik has a penchant for programming and open source. Also a Foodie, Writer, Traveler and sometimes a Social Activist.</p>
+                                <p>Software professional / Drupal Developer having experience in web applications development, implementation and having strong knowledge of technical specifications, workflow development and deploying.</p>
+                        <div class="topsocial"><a target="_blank" href="https://www.linkedin.com/in/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://twitter.com/heykarthikwithu" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.instagram.com/kakumdk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a><a target="_blank" href="https://www.youtube.com/c/karthikkumardk" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Youtube"><i class="fa fa-youtube"></i></a><a target="_blank" href="/karthikkumardk/index.html" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Website"><i class="fa fa-link"></i></a></div><!-- end social -->
+                        </div><!-- end col -->
+                    </div>
+                  </div></div><div class="google-ad"><!-- Sample Display ad (Horizontal) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3399514688"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            <!-- div class="custombox clearfix">
+                                <h4 class="">Comments</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="comments-list">
+                                            <div id="disqus_thread"></div>
+                                            <script>
+                                                (function() { // DONT EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement("script");
+                                                    s.src = "https://peoplesblog.disqus.com/embed.js";
+                                                    s.setAttribute("data-timestamp", +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                            <script id="dsq-count-scr" src="//peoplesblog.disqus.com/count.js" async></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div --><div class="prevnext-articles">
+              <div class="row"><div class="col-md-6">                      
+                        <div class="row">
+                          <div class="col-md-4">
+                            <a href="/articles/ahmedabad-to-shamlaji-temple-pilgrimage.html" title="Ahmedabad to Shamlaji: Temple Pilgrimage">
+                              <img class="img-fluid logo lazy" data-src="/upload/banners/ahmedabad-to-shamlaji-temple-pilgrimage.jpg" alt="Ahmedabad to Shamlaji: Temple Pilgrimage" title="Ahmedabad to Shamlaji: Temple Pilgrimage" src="/upload/cursor.jpg" />
+                            </a>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="prev">
+                              <span>Previous Article</span>
+                              <a href="/articles/ahmedabad-to-shamlaji-temple-pilgrimage.html" title="Ahmedabad to Shamlaji: Temple Pilgrimage">
+                                <span class="title">Ahmedabad to Shamlaji: Temple Pilgrimage</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div></div>
+            </div><div class="prevnext-articles-fixed"><a href="/articles/ahmedabad-to-shamlaji-temple-pilgrimage.html" class="prev"><i class="fa fa-angle-left"></i><span>PREV</span></a></div>
+                             
+                        </div><!-- end page-wrapper -->
+                    </div><!-- end col -->
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="ads-article sidebar"><div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6687011248"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        <h2>Related Articles</h2>
+        <div class="popular-articles"><div class="article">
+                <a href="/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html">
+                  Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html">
+                  Understanding Azure Front Door and CDN Profiles: Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html">
+                  Understanding Azure Storage Accounts: Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+                  Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+                </a>
+              </div><div class="article">
+                <a href="/articles/tesselation-art-science-experiment-for-children.html">
+                  Tesselation Art, science experiment for children
+                </a>
+              </div><div class="article">
+                <a href="/articles/migrating-from-jsstream-to-vimeo-using-drupal-migration-api.html">
+                  Migrating from JSStream to Vimeo Using Drupal Migration API
+                </a>
+              </div></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">25% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/3YkM9sJ" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)"><img data-src="https://m.media-amazon.com/images/I/71-oDkPIB8L._SX679_.jpg" class="img-fluid lazy" alt="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/3YkM9sJ" title="LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)" class="shop-title-value">LG 343 L 3 Star Frost-Free Smart Inverter Double Door Refrigerator (2023 Model, GL-S382SDSX, Dazzle Steel, Convertible with Express Freeze)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>37,990</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>50,799</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="1110077470"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2 class="popular-title">Popular Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/how-to-prevent-morning-breath.html">
+            How to prevent morning breath?
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-create-a-document-library-in-sharepoint-and-configure-content-types-terms-user-groups-and-permissions.html">
+            How to Create a Document Library in SharePoint and Configure Content Types, Terms, User Groups, and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-document-libraries-content-types-terms-user-groups-and-permissions.html">
+            Understanding SharePoint Document Libraries, Content Types, Terms, User Groups and Permissions
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-sharepoint-documents-vs-document-sets-key-differences-and-use-cases.html">
+            Understanding SharePoint Documents vs. Document Sets: Key Differences and Use Cases
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-sattu-drink.html">
+            How to prepare Sattu Drink?
+          </a>
+        </div><div class="article">
+          <a href="/articles/what-are-the-biggest-misconceptions-people-have-about-life.html">
+            What are the Biggest Misconceptions People have about Life?
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-graph-algorithms-in-php-implementing-traversals-and-shortest-path-algorithms.html">
+            Mastering Graph Algorithms in PHP: Implementing Traversals and Shortest Path Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/mastering-dynamic-programming-in-php-a-deep-dive-into-classic-algorithms.html">
+            Mastering Dynamic Programming in PHP: A Deep Dive into Classic Algorithms
+          </a>
+        </div><div class="article">
+          <a href="/articles/jaipur-to-tonk-exploring-the-city-of-havelis.html">
+            Jaipur to Tonk: Exploring the City of Havelis
+          </a>
+        </div><div class="article">
+          <a href="/articles/diy-math-board-games-science-experiment-for-children.html">
+            DIY Math Board Games, science experiment for children
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">43% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/47ZSNYi" title="amazon basics Aluminum Non-Stick 15 Piece Cookware Set | 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black"><img data-src="https://m.media-amazon.com/images/I/71oZ1-QYomL._SX679_.jpg" class="img-fluid lazy" alt="amazon basics Aluminum Non-Stick 15 Piece Cookware Set | 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" title="amazon basics Aluminum Non-Stick 15 Piece Cookware Set | 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/47ZSNYi" title="amazon basics Aluminum Non-Stick 15 Piece Cookware Set | 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black" class="shop-title-value">amazon basics Aluminum Non-Stick 15 Piece Cookware Set | 2-Way 3 Layer Non-Stick Coating | PFOA Free | High Temperature Resistant Exterior Coating, Black</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>3,579</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>6,299</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ht"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="3562170360"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Articles</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/articles/understanding-azure-key-vault-key-concepts-and-best-practices.html">
+            Understanding Azure Key Vault: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/ahmedabad-to-shamlaji-temple-pilgrimage.html">
+            Ahmedabad to Shamlaji: Temple Pilgrimage
+          </a>
+        </div><div class="article">
+          <a href="/articles/tesselation-art-science-experiment-for-children.html">
+            Tesselation Art, science experiment for children
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-active-directory-azure-app-registrations-key-concepts-and-best-practices.html">
+            Understanding Azure Active Directory & Azure App Registrations: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/the-importance-of-the-vedas-in-modern-hinduism.html">
+            The Importance of the Vedas in Modern Hinduism
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-front-door-and-cdn-profiles-key-concepts-and-best-practices.html">
+            Understanding Azure Front Door and CDN Profiles: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-storage-accounts-key-concepts-and-best-practices.html">
+            Understanding Azure Storage Accounts: Key Concepts and Best Practices
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-community-health-campaigns-save-lives.html">
+            How Community Health Campaigns Save Lives
+          </a>
+        </div><div class="article">
+          <a href="/articles/how-to-prepare-curd-rice.html">
+            How to prepare Curd Rice?
+          </a>
+        </div><div class="article">
+          <a href="/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html">
+            Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">12% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4dYa7yu" title="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)"><img data-src="https://m.media-amazon.com/images/I/71XNeka-BRL._SX679_.jpg" class="img-fluid lazy" alt="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)" title="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4dYa7yu" title="OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)" class="shop-title-value">OnePlus 12R (Iron Gray, 8 GB RAM, 256 GB Storage)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>37,999</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>42,999</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Square) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="6447160484"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Quick Read</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/quick-read/the-little-match-girl.html">
+            The Little Match Girl
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-s-new-clothes.html">
+            The Emperor's New Clothes
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-gingerbread-man.html">
+            The Gingerbread Man
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-magic-fish.html">
+            The Magic Fish
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-selfish-giant.html">
+            The Selfish Giant
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-giant-turnip.html">
+            The Giant Turnip
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-tale-of-mischievous-rabbit.html">
+            The Tale of Mischievous Rabbit
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-emperor-and-the-nightingale.html">
+            The Emperor and the Nightingale
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-cat-in-boots.html">
+            The Cat in Boots
+          </a>
+        </div><div class="article">
+          <a href="/quick-read/the-greedy-wolf.html">
+            The Greedy Wolf
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">27% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/3pjdY5m" title="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)"><img data-src="https://m.media-amazon.com/images/I/51c3j0ZcEaL._SX679_.jpg" class="img-fluid lazy" alt="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)" title="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/3pjdY5m" title="Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)" class="shop-title-value">Philips Viva Collection Hd4938/01 2100-Watt Glass Induction Cooktop With Sensor Touch &amp; Full Crystal Glass (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>4,399</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>5,995</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Home Square 2 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2683569506254139"
+    data-ad-slot="8030219360"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+    <h2>Recent Great People</h2>
+    <div class="popular-articles"><div class="article">
+          <a href="/great-people/t-v-sankaranarayanan.html">
+            T. V. Sankaranarayanan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/pawan-kalyan.html">
+            Pawan Kalyan
+          </a>
+        </div><div class="article">
+          <a href="/great-people/sadhana-shivdasani.html">
+            Sadhana Shivdasani
+          </a>
+        </div><div class="article">
+          <a href="/great-people/a-c-bhaktivedanta-swami-prabhupada.html">
+            A. C. Bhaktivedanta Swami Prabhupada
+          </a>
+        </div><div class="article">
+          <a href="/great-people/bapu.html">
+            Bapu
+          </a>
+        </div><div class="article">
+          <a href="/great-people/kashiram-rana.html">
+            Kashiram Rana
+          </a>
+        </div><div class="article">
+          <a href="/great-people/javagal-srinath.html">
+            Javagal Srinath
+          </a>
+        </div><div class="article">
+          <a href="/great-people/rituparno-ghosh.html">
+            Rituparno Ghosh
+          </a>
+        </div><div class="article">
+          <a href="/great-people/amrita-pritam.html">
+            Amrita Pritam
+          </a>
+        </div><div class="article">
+          <a href="/great-people/m-m-kalburgi.html">
+            M M Kalburgi
+          </a>
+        </div>
+    </div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-12 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">36% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4090A4n" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)"><img data-src="https://m.media-amazon.com/images/I/81OmhFfS-hL._SX679_.jpg" class="img-fluid lazy" alt="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4090A4n" title="Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)" class="shop-title-value">Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA55DUE77AKLXL (Black)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>43,990</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>68,900</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row --><div class="google-ad"><!-- Sample Display ad (Horizontal 2) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="5200052646"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+      <div class="shop-data amazon-ad">
+      <div class="shop-data-results">
+      <div class="row"><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">49% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4eXgkf4" title="Atomberg Azhero Smart Door Lock | 6 Ways Unlocking | Fingerprint | PIN | Remote OTP | NFC Card | Atomberg App (Data Stored in India) | Key | 2 Stainless Steel Bolt | 2 Year Warranty (Rose Gold)"><img data-src="https://m.media-amazon.com/images/I/51hKYZu4o+L._SX679_.jpg" class="img-fluid lazy" alt="Atomberg Azhero Smart Door Lock | 6 Ways Unlocking | Fingerprint | PIN | Remote OTP | NFC Card | Atomberg App (Data Stored in India) | Key | 2 Stainless Steel Bolt | 2 Year Warranty (Rose Gold)" title="Atomberg Azhero Smart Door Lock | 6 Ways Unlocking | Fingerprint | PIN | Remote OTP | NFC Card | Atomberg App (Data Stored in India) | Key | 2 Stainless Steel Bolt | 2 Year Warranty (Rose Gold)" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4eXgkf4" title="Atomberg Azhero Smart Door Lock | 6 Ways Unlocking | Fingerprint | PIN | Remote OTP | NFC Card | Atomberg App (Data Stored in India) | Key | 2 Stainless Steel Bolt | 2 Year Warranty (Rose Gold)" class="shop-title-value">Atomberg Azhero Smart Door Lock | 6 Ways Unlocking | Fingerprint | PIN | Remote OTP | NFC Card | Atomberg App (Data Stored in India) | Key | 2 Stainless Steel Bolt | 2 Year Warranty (Rose Gold)</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>9,499</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>18,500</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">68% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4eM1BCR" title="K&amp;H Manufacturing Lectro-Kennel Heated Pad with FREE Cover Small 12.5&quot; x 18.5&quot;"><img data-src="https://m.media-amazon.com/images/I/71iXd2zmTHL._SX679_.jpg" class="img-fluid lazy" alt="K&amp;H Manufacturing Lectro-Kennel Heated Pad with FREE Cover Small 12.5&quot; x 18.5&quot;" title="K&amp;H Manufacturing Lectro-Kennel Heated Pad with FREE Cover Small 12.5&quot; x 18.5&quot;" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4eM1BCR" title="K&amp;H Manufacturing Lectro-Kennel Heated Pad with FREE Cover Small 12.5&quot; x 18.5&quot;" class="shop-title-value">K&amp;H Manufacturing Lectro-Kennel Heated Pad with FREE Cover Small 12.5&quot; x 18.5&quot;</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>12,692</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>40,000</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">84% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4c5g24z" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen"><img data-src="https://m.media-amazon.com/images/I/51HHGTqHwZL._SX679_.jpg" class="img-fluid lazy" alt="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4c5g24z" title="TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen" class="shop-title-value">TOPTRO Free Style Projector for Home 4K Support 720p Native HD Portable Projector Android 11 YouTube Builtin Apps 5G WiFi Auto Keystone 3500 lumens (350 ANSI) 3 Watt Speaker 176&quot; MAX Screen</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>8,213</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>49,999</span></span>
+                  </div>
+              </div>
+          </div><div class="col-md-3 shop-item-wrapper">
+              <div class="shop-item">
+                  <div class="discount"><span class="main blink">56% OFF</span></div>
+                  <div class="shop-image"><a target="_blank" href="https://amzn.to/4aV71dH" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey"><img data-src="https://m.media-amazon.com/images/I/61CclYg1tSL._SX679_.jpg" class="img-fluid lazy" alt="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" src="/upload/cursor.jpg" /></a></div>
+                  <h4 class="shop-title"><a target="_blank" href="https://amzn.to/4aV71dH" title="Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey" class="shop-title-value">Amazon Brand - Solimo Non-Stick Kadai with Glass Lid | Granite Finish | Induction Base | PFOA Free | High Temperature Resistant Exterior Coating | 22 cm | Grey</a></h4>
+                  <div class="price">
+                      <span class="discountprice"><span class='unknown-country rupees rupee'>₹</span><span>479</span></span>
+                      <span class="actualprice"><span class='unknown-country rupees rupee'>₹</span><span>1,099</span></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <div class="google-ad"><!-- Sample Display ad (Horizontal Home 3) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2683569506254139"
+     data-ad-slot="4899516730"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+            </div><!-- end container -->
+        </section><footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-2 col-half-offset" id="p6">
+                      <div class="widget">
+                          <h2 class="widget-title">Diverse</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <!-- li><a title="Quotes" href="/quotes/index.html">Quotes</a></li -->
+                                <li><a target="_blank" title="News" href="/news/index.html">News</a></li>
+                                <li><a title="Videos" href="/videos/index.html">Videos</a></li>
+                                <li><a target="_blank" title="Alcohol" href="/alcohol/index.html">Alcohol</a></li>
+                                <li><a target="_blank" title="Dentofacts" href="/dentofacts/index.html">Dentofacts</a></li>
+                                <li><a target="_blank" title="Seeadler Tech" href="/seeadlertech/index.html">Seeadler Tech</a></li>
+                                <li><a target="_blank" title="Best Products" href="/bestproducts/index.html">Best Products</a></li>
+                                <li><a target="_blank" title="Sri Vedanta Swarajya Sangam" href="/sri-vedanta-swarajya-sangam/index.html">Sri Vedanta Swarajya Sangam</a></li>  
+                                <li><a title="Website Development Services" href="/software/index.html">Website Development Services</a></li>                                  
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p5">
+                      <div class="widget">
+                          <h2 class="widget-title">Misc</h2>
+                          <div class="link-widget">
+                              <ul class="mobile">
+                                <li><a title="About" href="/about.html">About</a></li>
+                                <li><a title="Contact" href="/contact.html">Contact</a></li>
+                                <li><a title="Privacy" href="/privacy.html">Privacy</a></li>
+                                <li><a title="T & C" href="/terms-and-conditions.html">T & C</a></li>
+                                <li><a title="Authors" href="/authors/index.html">Authors</a></li>
+                                <li><a title="Site Links" href="/site-links.html">Site Links</a></li>
+                                <li><a title="SoftTools" href="/software/softtools.html">SoftTools</a></li>
+                              </ul>
+                          </div><!-- end link-widget -->
+                      </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-2 col-xs-2 col-half-offset" id="p3">
+                        <div class="widget">
+                            <h2 class="widget-title">Recent</h2>
+                            <div class="link-widget">
+                                <ul class="blog-list-homepage-footer mobile">
+<li><a href="/articles/azure.html" title="Azure" aria-label="Azure">Azure</a></li><li><a href="/articles/ahmedabad.html" title="Ahmedabad" aria-label="Ahmedabad">Ahmedabad</a></li><li><a href="/articles/experiment.html" title="Experiment" aria-label="Experiment">Experiment</a></li><li><a href="/articles/vedas.html" title="Vedas" aria-label="Vedas">Vedas</a></li><li><a href="/articles/public-health.html" title="Public Health" aria-label="Public Health">Public Health</a></li><li><a href="/articles/recipe.html" title="Recipe" aria-label="Recipe">Recipe</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div>
+                    <div class="col-md-5 col-xs-2" id="p1">
+                        <div class="widget first">
+                            <div class="footer-text text-left">
+                                <h2 class="widget-title">Stay Connected</h2>
+                                <div class="post-sharing-footer social">
+                                  <a rel="noreferrer" href="https://twitter.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter"><i class="fa fa-twitter"></i> <span>Twitter</span></a>  
+                                  <a rel="noreferrer" href="https://www.linkedin.com/company/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Linkedin"><i class="fa fa-linkedin"></i> <span>Linkedin</span></a>    
+                                  <a rel="noreferrer" href="https://peoplesblog.quora.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Quora"><i class="fa fa-quora"></i> <span>Quora</span></a>
+                                  <a rel="noreferrer" href="https://www.facebook.com/peoplesblog1989" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Facebook"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                                  <a rel="noreferrer" href="https://t.me/PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on Telegram"><i class="fa fa-telegram"></i> <span>Telegram</span></a>
+                                  <a rel="noreferrer" href="https://www.whatsapp.com/channel/0029Va53IROAO7RH6S0fPv1x" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Join us on WhatsApp"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+                                  <!-- a rel="noreferrer" href="https://www.instagram.com/_PeoplesBLOG" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i> <span>Instagram</span></a -->
+                                  <!-- a rel="noreferrer" href="https://in.pinterest.com/heykarthikwithu/peoples-blog" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a -->
+	                              </div>
+                                <h2 class="widget-title subscribe">Subscribe to latest Articles</h2>
+                                <div class="newsletter-widget-subscribe newsletter-widget text-left">
+                                    <form name="subscribe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSewRpoqyq6TYnR_VU12LRPD1ahr2xP19akLcFhBjcylfPlWjw/formResponse" class="form-inline" target="_blank"><input type="text" class="form-control" placeholder="Enter your email address" name="entry.1045781291" required=""><button type="submit" class="newsletter-widget-subscribe-button btn btn-primary">Subscribe</button></form>
+                                </div>
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="widget utilities-wrapper">
+                      <div class="link-widget">
+                        <ul class="mobile utilities">
+                          <li><a title="Feeds" href="/feeds/index.html">Feeds</a></li>
+                          <li><a title="Sitemaps" href="/sitemaps/index.html">Sitemaps</a></li>
+                          <li><a title="RSS" href="/feeds/index.xml">RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <span class="_copyright">Copyright <i class="fa fa-copyright"></i> 2014 - 2025, peoplesblog.co.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer>
+  <div id="site-fixed-ad-container">
+      <div class="container-fluid">
+        <span class="x d-none"><i class="fa fa-close"></i></span>
+        <div class="google-ad"><!-- Fixed 1 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2683569506254139"
+        data-ad-slot="6876537913"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script></div>
+      </div>
+  </div>
+  <!-- div class="dmtop">Scroll to Top</div -->
+    </div><!-- end wrapper -->
+    <!-- JS -->
+    <script src="/js/public.min.js"></script>
+    <!-- Policy -->
+    <div id="policy-container">
+       <div class="container-fluid policy-container">
+          <div class="title">
+              <span>We Need Your Consent</span>
+              <span class="x"><i class="fa fa-close"></i></span>
+          </div>
+          <div class="desc">
+             <span>By clicking “Accept Cookies”, you agree to the storing of cookies on your device to enhance your site navigation experience.</span>
+          </div>
+          <div class="policy-button">I Accept Cookies</div>
+       </div>
+    </div>
+    <!-- Google Translate -->
+    <!-- script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: "es"}, "google_translate_element");
+        }
+    </script -->
+    <!-- script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+    <script type="text/javascript">
+      var cId =  "200482";
+      (function(d, t) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://cdn0.cuelinks.com/js/" : "http://cdn0.cuelinks.com/js/")  + "cuelinksv2.js";
+        document.getElementsByTagName("body")[0].appendChild(s);
+      }());
+    </script>
+</body>
+</html>
