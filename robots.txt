@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-prepare-kokum-sherbet.html
 Allow: /articles/how-does-one-succeed-in-life.html
 Allow: /articles/understanding-azure-key-vault-key-concepts-and-best-practices.html
 Allow: /articles/ahmedabad-to-shamlaji-temple-pilgrimage.html
