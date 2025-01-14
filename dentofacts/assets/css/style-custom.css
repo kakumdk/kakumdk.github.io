@@ -129,6 +129,7 @@ body a {
 }
 .articles-sidebar .article a {
     text-decoration: underline;
+    text-underline-offset: 2px;
 }
 footer .footer-vertical-nav li {
     display: block;
@@ -583,6 +584,10 @@ input#search-news {
 } */
 .nav-menu li.active a {
     color: #10597d;
+}
+.article-content.read-article-content.dental-article-content a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 

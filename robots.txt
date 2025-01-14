@@ -1356,6 +1356,7 @@ Allow: /quotes/happiness.html
 Allow: /quotes/hope.html
 Allow: /quotes/human-rights.html
 Allow: /quotes/humanity.html
+Allow: /quotes/humility.html
 Allow: /quotes/humor.html
 Allow: /quotes/ideas.html
 Allow: /quotes/imagination.html
@@ -1380,6 +1381,7 @@ Allow: /quotes/motivational.html
 Allow: /quotes/nature.html
 Allow: /quotes/perseverance.html
 Allow: /quotes/philosophy.html
+Allow: /quotes/positivity.html
 Allow: /quotes/power.html
 Allow: /quotes/preparation.html
 Allow: /quotes/purpose.html
@@ -1387,6 +1389,7 @@ Allow: /quotes/relationship.html
 Allow: /quotes/resilience.html
 Allow: /quotes/results.html
 Allow: /quotes/self.html
+Allow: /quotes/self-discovery.html
 Allow: /quotes/self-reflection.html
 Allow: /quotes/sharing.html
 Allow: /quotes/society.html
@@ -2061,6 +2064,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/exploring-the-impact-of-oral-health-on-speech-development.html
 Allow: /articles/the-role-of-dental-care-in-managing-autoimmune-diseases.html
 Allow: /articles/the-importance-of-hydration-for-oral-health.html
 Allow: /articles/how-to-prevent-bad-breath-naturally.html

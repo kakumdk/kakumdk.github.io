@@ -151,6 +151,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 }
 .card.you-might-also-like a span {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 .offer {
     color: #2E8B57;
