@@ -688,6 +688,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/y-s-rajasekhara-reddy.html
 Allow: /great-people/t-v-sankaranarayanan.html
 Allow: /great-people/pawan-kalyan.html
 Allow: /great-people/sadhana-shivdasani.html
@@ -2380,7 +2381,6 @@ Allow: /bestproducts/products/B09DD9SX9Z.html
 Allow: /bestproducts/products/B01AUH8AWW.html
 Allow: /bestproducts/products/B07FY6KXVW.html
 Allow: /bestproducts/products/B08WL2RDBD.html
-Allow: /bestproducts/products/B0BJMGXLYZ.html
 Allow: /bestproducts/products/B09X5C9VLK.html
 Allow: /bestproducts/products/B0CBRR54KF.html
 Allow: /bestproducts/products/B0D7VGZS69.html
@@ -2684,7 +2684,6 @@ Allow: /bestproducts/products/reviews/B09DD9SX9Z.html
 Allow: /bestproducts/products/reviews/B01AUH8AWW.html
 Allow: /bestproducts/products/reviews/B07FY6KXVW.html
 Allow: /bestproducts/products/reviews/B08WL2RDBD.html
-Allow: /bestproducts/products/reviews/B0BJMGXLYZ.html
 Allow: /bestproducts/products/reviews/B09X5C9VLK.html
 Allow: /bestproducts/products/reviews/B0CBRR54KF.html
 Allow: /bestproducts/products/reviews/B0D7VGZS69.html
