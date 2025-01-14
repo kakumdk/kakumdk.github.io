@@ -567,6 +567,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-pied-piper-of-hamelin.html
 Allow: /quick-read/the-little-match-girl.html
 Allow: /quick-read/the-emperor-s-new-clothes.html
 Allow: /quick-read/the-gingerbread-man.html
