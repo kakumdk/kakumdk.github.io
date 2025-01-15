@@ -2077,6 +2077,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/how-to-handle-dental-fillings-and-cavities.html
 Allow: /articles/exploring-the-impact-of-oral-health-on-speech-development.html
 Allow: /articles/the-role-of-dental-care-in-managing-autoimmune-diseases.html
 Allow: /articles/the-importance-of-hydration-for-oral-health.html
