@@ -1420,6 +1420,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/man-goes-to-doctor-for-toothache-leaves-with-a-shocking-prostate-cancer-diagnosis.html
+Allow: /news/breakthrough-in-superconductivity-and-ferroelectricity.html
+Allow: /news/author-neil-gaiman-denies-sexual-assault-allegations-made-by-8-women-admits-he-is-far-from-perfect-person.html
+Allow: /news/greenland-bill-us-buying-greenland-takes-official-turn-donald-trump-to-get-powers-to-negotiate.html
+Allow: /news/indian-investors-must-act-now-to-secure-their-eb5-visa-before-trump-2-0-kicks-in.html
 Allow: /news/water-level-in-flooded-assam-coal-mine-rises-again-despite-dewatering-efforts.html
 Allow: /news/on-india-china-border-situation-army-chief-rules-out-buffer-zones-along-lac.html
 Allow: /news/strength-of-youth-power-will-make-india-a-developed-nation-pm-modi.html
