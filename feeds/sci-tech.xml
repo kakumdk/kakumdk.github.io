@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Deploying Drupal on Azure Kubernetes Service (AKS)</title>
+			<link>https://peoplesblog.co.in/articles/deploying-drupal-on-azure-kubernetes-service-aks.html</link>
+			<description>Azure Kubernetes Service (AKS), offered by Microsoft Azure, is a fully managed container orchestration service that leverages Kubernetes to manage, deploy, and scale applications in containers. Kubernetes is the go-to platform for automating the deployment, scaling, and management of containerized applications, making it an ideal choice for running complex web applications like Drupal.  Drupal, an</description>
+			<pubDate>Thu, 16 Jan 2025 19:24:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/deploying-drupal-on-azure-kubernetes-service-aks.html</guid>
+    </item><item>
 			<title>Understanding Azure Key Vault: Key Concepts and Best Practices</title>
 			<link>https://peoplesblog.co.in/articles/understanding-azure-key-vault-key-concepts-and-best-practices.html</link>
 			<description>In the modern cloud-driven world, security is more critical than ever. Organizations are increasingly migrating their data, applications, and infrastructure to the cloud, but with this transition comes the need to protect sensitive information such as secrets, keys, certificates, and passwords. Azure Key Vault is a cloud service provided by Microsoft Azure designed specifically to safeguard and ma</description>
@@ -348,13 +355,6 @@
 			<pubDate>Mon, 24 Jun 2024 12:08:00 +0530</pubDate>
 			<dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/magnetic-slime-science-experiment-for-childrens.html</guid>
-    </item><item>
-			<title>Fluffy Slime, science experiment for children</title>
-			<link>https://peoplesblog.co.in/articles/fluffy-slime-science-experiment-for-children.html</link>
-			<description>Creating fluffy slime is a fun and educational science experiment that engages children with hands-on learning about chemistry and the properties of materials.  Here&amp;#39;s how to make fluffy slime step-by-step:  Materials:   White school glue (PVA glue) Shaving cream (foam, not gel) Baking soda Contact lens solution (containing boric acid and sodium borate) Food coloring (optional) Mixing bowl Mix</description>
-			<pubDate>Mon, 17 Jun 2024 11:50:00 +0530</pubDate>
-			<dc:creator>Karthik Kumar D K</dc:creator>
-<guid isPermaLink="true">https://peoplesblog.co.in/articles/fluffy-slime-science-experiment-for-children.html</guid>
     </item>
 </channel>
 </rss>

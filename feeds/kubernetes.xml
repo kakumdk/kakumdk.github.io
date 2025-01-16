@@ -6,6 +6,13 @@
     <description/>
     <language>en</language>
     <item>
+			<title>Deploying Drupal on Azure Kubernetes Service (AKS)</title>
+			<link>https://peoplesblog.co.in/articles/deploying-drupal-on-azure-kubernetes-service-aks.html</link>
+			<description>Azure Kubernetes Service (AKS), offered by Microsoft Azure, is a fully managed container orchestration service that leverages Kubernetes to manage, deploy, and scale applications in containers. Kubernetes is the go-to platform for automating the deployment, scaling, and management of containerized applications, making it an ideal choice for running complex web applications like Drupal.  Drupal, an</description>
+			<pubDate>Thu, 16 Jan 2025 19:24:00 +0530</pubDate>
+			<dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/deploying-drupal-on-azure-kubernetes-service-aks.html</guid>
+    </item><item>
 			<title>Understanding Azure Kubernetes Service (AKS): Key Concepts and Best Practices</title>
 			<link>https://peoplesblog.co.in/articles/understanding-azure-kubernetes-service-aks-key-concepts-and-best-practices.html</link>
 			<description>As the adoption of cloud-native technologies grows, Kubernetes has become the de facto standard for orchestrating containerized applications. Azure Kubernetes Service (AKS) is Microsoft&amp;#39;s managed Kubernetes offering in the Azure cloud, designed to simplify the deployment, management, and scaling of containerized applications. AKS helps organizations take advantage of Kubernetes&amp;#39; robust fea</description>

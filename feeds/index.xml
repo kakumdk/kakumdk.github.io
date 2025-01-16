@@ -6,6 +6,13 @@
   <description/>
   <language>en</language>
   <item>
+    <title>Deploying Drupal on Azure Kubernetes Service (AKS)</title>
+    <link>https://peoplesblog.co.in/articles/deploying-drupal-on-azure-kubernetes-service-aks.html</link>
+    <description>Azure Kubernetes Service (AKS), offered by Microsoft Azure, is a fully managed container orchestration service that leverages Kubernetes to manage, deploy, and scale applications in containers. Kubernetes is the go-to platform for automating the deployment, scaling, and management of containerized applications, making it an ideal choice for running complex web applications like Drupal.  Drupal, an</description>
+    <pubDate>Thu, 16 Jan 2025 19:24:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/deploying-drupal-on-azure-kubernetes-service-aks.html</guid>
+  </item><item>
     <title>The Vedas and the Development of Yoga</title>
     <link>https://peoplesblog.co.in/articles/the-vedas-and-the-development-of-yoga.html</link>
     <description>Yoga, a spiritual and physical discipline, has deep roots in the ancient Vedic texts of Hinduism. Originating in the early Vedic period, yoga has evolved significantly over millennia, intertwining with various philosophical and religious traditions.  This article explores the connection between the Vedas and the development of yoga, tracing its origins, evolution and enduring significance.  Origin</description>
