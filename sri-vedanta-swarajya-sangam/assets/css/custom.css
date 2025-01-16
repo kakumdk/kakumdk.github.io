@@ -320,6 +320,21 @@ section .page-wrapper .articles.label-articles .article .articles-content .artic
 .google-ad > p {
     display: none;
 }
+.spiritual-article h2,
+.spiritual-article h3,
+.spiritual-article h4,
+.spiritual-article h5,
+.spiritual-article h6 {
+    margin: 15px auto;
+}
+
+.spiritual-article p,
+.spiritual-article ul li,
+.spiritual-article ol li {
+    margin: 10px auto;
+    font-size: 16px;
+    letter-spacing: 0;
+}
 
 
 @media (min-width: 600px) {
@@ -369,5 +384,18 @@ section .page-wrapper .articles.label-articles .article .articles-content .artic
     .books-brief {
         padding: 30px;
         margin-bottom: 30px;
+    }
+    .spiritual-article h2,
+    .spiritual-article h3,
+    .spiritual-article h4,
+    .spiritual-article h5,
+    .spiritual-article h6 {
+        margin: 30px auto;
+    }
+    .spiritual-article p,
+    .spiritual-article ul li,
+    .spiritual-article ol li {
+        margin: 15px auto;
+        font-size: 18px;
     }
 }
