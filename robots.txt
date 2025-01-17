@@ -2092,6 +2092,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/understanding-tooth-sensitivity-treatments.html
 Allow: /articles/how-to-achieve-a-balanced-oral-care-routine.html
 Allow: /articles/how-to-handle-dental-fillings-and-cavities.html
 Allow: /articles/exploring-the-impact-of-oral-health-on-speech-development.html
