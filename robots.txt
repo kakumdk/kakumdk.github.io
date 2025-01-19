@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/chennai-to-vedanthangal-bird-sanctuary-solo-trip-plan.html
 Allow: /articles/how-to-prepare-moong-dal-salad.html
 Allow: /articles/pi-day-celebration-science-experiment-for-children.html
 Allow: /articles/deploying-drupal-on-azure-kubernetes-service-aks.html
@@ -1007,6 +1008,7 @@ Allow: /articles/bheemeshwari.html
 Allow: /articles/book.html
 Allow: /articles/business.html
 Allow: /articles/covid.html
+Allow: /articles/chennai.html
 Allow: /articles/chikmagalur.html
 Allow: /articles/children.html
 Allow: /articles/chitradurga.html
@@ -1184,6 +1186,7 @@ Allow: /feeds/bheemeshwari.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
+Allow: /feeds/chennai.xml
 Allow: /feeds/chikmagalur.xml
 Allow: /feeds/children.xml
 Allow: /feeds/chitradurga.xml
