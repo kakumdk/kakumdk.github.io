@@ -1431,6 +1431,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/s-jaishankar-on-pakistan-cancer-of-terrorism-now-consuming-its-body-politic.html
+Allow: /news/american-podcaster-lex-fridman-to-host-podcast-with-pm-modi-in-february.html
+Allow: /news/yogi-lauds-svamitva-45l-gharauni-papers-distributed.html
+Allow: /news/sanjay-roy-was-not-alone-rg-kar-victim-s-mother-reacts-to-courts-verdict.html
 Allow: /news/12-naxalites-killed-in-encounter-in-chhattisgarhs-bijapur-taking-monthly-toll-to-26.html
 Allow: /news/pm-modi-inaugurates-iskcon-temple-in-kharghar.html
 Allow: /news/who-will-present-union-budget-2025.html
