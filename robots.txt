@@ -2103,6 +2103,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/the-benefits-of-interdisciplinary-care-in-dentistry.html
 Allow: /articles/understanding-tooth-sensitivity-treatments.html
 Allow: /articles/how-to-achieve-a-balanced-oral-care-routine.html
 Allow: /articles/how-to-handle-dental-fillings-and-cavities.html
