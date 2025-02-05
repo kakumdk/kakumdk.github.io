@@ -2428,6 +2428,7 @@ Allow: /bestproducts/products/B0C788NJSK.html
 Allow: /bestproducts/products/B07KWVTY6G.html
 Allow: /bestproducts/products/B00650QJ8G.html
 Allow: /bestproducts/products/B0C27VNNWH.html
+Allow: /bestproducts/products/B0DQ8S38R8.html
 Allow: /bestproducts/products/B0CRQ8Q3QP.html
 Allow: /bestproducts/products/B07MRF11YW.html
 Allow: /bestproducts/products/B08FB2H6Y4.html
@@ -2549,6 +2550,7 @@ Allow: /bestproducts/products/B08GSQXLJ2.html
 Allow: /bestproducts/products/B0D29GV262.html
 Allow: /bestproducts/products/B0D9P28RCV.html
 Allow: /bestproducts/products/B0D87P37TY.html
+Allow: /bestproducts/products/B0CRQB4HBP.html
 Allow: /bestproducts/products/B07DPVHJWH.html
 Allow: /bestproducts/products/B0D14WBVQX.html
 Allow: /bestproducts/products/B0D6G4CVZ7.html
@@ -2770,6 +2772,7 @@ Allow: /bestproducts/products/reviews/B0C788NJSK.html
 Allow: /bestproducts/products/reviews/B07KWVTY6G.html
 Allow: /bestproducts/products/reviews/B00650QJ8G.html
 Allow: /bestproducts/products/reviews/B0C27VNNWH.html
+Allow: /bestproducts/products/reviews/B0DQ8S38R8.html
 Allow: /bestproducts/products/reviews/B0CRQ8Q3QP.html
 Allow: /bestproducts/products/reviews/B07MRF11YW.html
 Allow: /bestproducts/products/reviews/B08FB2H6Y4.html
@@ -2891,6 +2894,7 @@ Allow: /bestproducts/products/reviews/B08GSQXLJ2.html
 Allow: /bestproducts/products/reviews/B0D29GV262.html
 Allow: /bestproducts/products/reviews/B0D9P28RCV.html
 Allow: /bestproducts/products/reviews/B0D87P37TY.html
+Allow: /bestproducts/products/reviews/B0CRQB4HBP.html
 Allow: /bestproducts/products/reviews/B07DPVHJWH.html
 Allow: /bestproducts/products/reviews/B0D14WBVQX.html
 Allow: /bestproducts/products/reviews/B0D6G4CVZ7.html
