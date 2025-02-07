@@ -145,6 +145,7 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
     color: #2E8B57;
     font-size: 16px !important;
     text-underline-offset: 2px;
+    display: block;
 }
 .card.you-might-also-like a:hover {
     color: #292b2c;
@@ -221,6 +222,9 @@ nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
 }
 .shop-item h4.shop-title a:hover {
     color: #2E8B57;
+}
+.shop-item h4.shop-title a {
+    display: block;
 }
 .shop-item .price {
     margin-top: 15px;
