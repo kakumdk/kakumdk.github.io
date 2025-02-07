@@ -1367,6 +1367,9 @@ Allow: /quotes/compassion.html
 Allow: /quotes/confidence.html
 Allow: /quotes/courage.html
 Allow: /quotes/deeds.html
+Allow: /quotes/desire.html
+Allow: /quotes/destiny.html
+Allow: /quotes/detachment.html
 Allow: /quotes/determination.html
 Allow: /quotes/diversity.html
 Allow: /quotes/dreams.html
@@ -1377,6 +1380,7 @@ Allow: /quotes/faith.html
 Allow: /quotes/focus.html
 Allow: /quotes/freedom.html
 Allow: /quotes/friendship.html
+Allow: /quotes/giving.html
 Allow: /quotes/goals.html
 Allow: /quotes/growth.html
 Allow: /quotes/happiness.html
@@ -1386,8 +1390,10 @@ Allow: /quotes/humanity.html
 Allow: /quotes/humility.html
 Allow: /quotes/humor.html
 Allow: /quotes/ideas.html
+Allow: /quotes/ignorance.html
 Allow: /quotes/imagination.html
 Allow: /quotes/improvement.html
+Allow: /quotes/independence.html
 Allow: /quotes/individuality.html
 Allow: /quotes/inspiration.html
 Allow: /quotes/integrity.html
@@ -1395,6 +1401,7 @@ Allow: /quotes/intelligence.html
 Allow: /quotes/journey.html
 Allow: /quotes/joy.html
 Allow: /quotes/justice.html
+Allow: /quotes/karma.html
 Allow: /quotes/kindness.html
 Allow: /quotes/knowledge.html
 Allow: /quotes/liberty.html
@@ -1402,6 +1409,7 @@ Allow: /quotes/life.html
 Allow: /quotes/love.html
 Allow: /quotes/loyalty.html
 Allow: /quotes/marriage.html
+Allow: /quotes/mindset.html
 Allow: /quotes/morality.html
 Allow: /quotes/motivation.html
 Allow: /quotes/motivational.html
@@ -1417,9 +1425,11 @@ Allow: /quotes/resilience.html
 Allow: /quotes/results.html
 Allow: /quotes/self.html
 Allow: /quotes/self-discovery.html
+Allow: /quotes/self-realization.html
 Allow: /quotes/self-reflection.html
 Allow: /quotes/sharing.html
 Allow: /quotes/society.html
+Allow: /quotes/spirituality.html
 Allow: /quotes/strength.html
 Allow: /quotes/success.html
 Allow: /quotes/tolerance.html

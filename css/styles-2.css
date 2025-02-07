@@ -1488,6 +1488,7 @@ body .quotes-browse .tag-quotes-section a:hover {
     text-decoration: underline;
     color: #0256A1;
     text-underline-offset: 3px;
+    display: block;
 }
 .ads-article.sidebar .popular-articles .article a:hover {
     color: #292b2c;
