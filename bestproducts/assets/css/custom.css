@@ -85,7 +85,7 @@ a.navbar-brand.logo .logo-title {
 }
 nav.breadcrumb-wrapper {
     /* background: #fff; */
-    margin: 15px auto;
+    margin: 10px auto;
     /* padding: 5px 15px; */
     overflow-x: auto;
     white-space: nowrap;
@@ -104,10 +104,10 @@ nav.breadcrumb-wrapper .breadcrumb {
 }
 nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item {
     flex: 0 0 auto; /* Keeps each breadcrumb item from shrinking */
-    font-size: 14px !important;
+    font-size: 13px !important;
 }
 nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
-    font-size: 14px !important;
+    font-size: 13px !important;
 }
 #template-mo-zay-hero-carousel .carousel-indicators li {
     margin-top: 0;
@@ -509,10 +509,10 @@ figure.table td {
         padding: 15px; */
     }
     nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item {
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
     nav.breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
     .shop-item {
         background-color: #fff;
