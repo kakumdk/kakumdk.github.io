@@ -2764,6 +2764,9 @@ button#play-truth-dare-next {
 .our-work .client img {
     border-radius: 5px;
 }
+.sticky-announcement-container {
+    display: none;
+}
 
 
 
@@ -3219,5 +3222,63 @@ button#play-truth-dare-next {
     .quoteDetailsNew .quoteText {
         font-size: 1.25rem;
     }
-
+    .sticky-announcement-container {
+        display: block;
+    }
+    .sticky-announcement-container:hover {
+        cursor: pointer;
+    }
+    .sticky-announcement-container .left,
+    .sticky-announcement-container .right {
+        position: fixed;
+        margin: 30px 15px;
+        background-color: #f3f9f5;
+        padding: 20px;
+        height: auto;
+        width: calc(50% - 620px) !important;
+        top: 0;
+        z-index: 1;
+        border: 1px solid #4e905d;
+        border-radius: 5px;
+    }
+    .sticky-announcement-container .left {
+        left: 0;
+    }
+    .sticky-announcement-container .right {        
+        right: 0;
+    }
+    .sticky-announcement-container .close {
+        z-index: 99;
+        top: 5px;
+        right: 15px;
+        position: fixed;
+        height: auto;
+        background-size: 100%;
+        cursor: pointer;
+        font-size: 10px;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .sticky-announcement-container .left .cta,
+    .sticky-announcement-container .right .cta {
+        background-color: green;
+        color: #fff;
+        padding: 10px;
+        display: inline-block;
+        line-height: 1.2;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .sticky-announcement-container a:hover,
+    .sticky-announcement-container .left .cta:hover,
+    .sticky-announcement-container .right .cta:hover {
+        text-decoration: unset;
+    }
+    .sticky-announcement-container .left h3,
+    .sticky-announcement-container .right h3,
+    .sticky-announcement-container .left p,
+    .sticky-announcement-container .right p {
+        color: #292b2c;
+    }
 }

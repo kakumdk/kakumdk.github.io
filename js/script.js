@@ -1463,3 +1463,16 @@ document.addEventListener("DOMContentLoaded", function() {
         readingTimeDiv.textContent = `${readingTime} min${readingTime > 1 ? 's' : ''}`;
     }
 });
+
+
+/******************************************************************************************************************/
+/*************************************************** Sticky Announcement  *****************************************/
+/******************************************************************************************************************/
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        $('#sticky-announcement-container').removeClass('d-none');
+    }, 5000);    
+    $("#sticky-announcement-container .close").click(function() {
+        $("#sticky-announcement-container").addClass('d-none');
+    });
+});
