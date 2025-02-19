@@ -3231,11 +3231,11 @@ button#play-truth-dare-next {
     .sticky-announcement-container .left,
     .sticky-announcement-container .right {
         position: fixed;
-        margin: 30px 15px;
+        margin: 30px 0 0 10px;
         background-color: #f3f9f5;
-        padding: 20px;
+        padding: 10px;
         height: auto;
-        width: calc(50% - 620px) !important;
+        width: calc(50% - 580px) !important;
         top: 0;
         z-index: 1;
         border: 1px solid #4e905d;
@@ -3245,7 +3245,7 @@ button#play-truth-dare-next {
         left: 0;
     }
     .sticky-announcement-container .right {        
-        right: 0;
+        right: 10px;
     }
     .sticky-announcement-container .close {
         z-index: 99;
@@ -3269,6 +3269,7 @@ button#play-truth-dare-next {
         line-height: 1.2;
         text-align: center;
         border-radius: 5px;
+        font-size: 14px;
     }
     .sticky-announcement-container a:hover,
     .sticky-announcement-container .left .cta:hover,
@@ -3280,5 +3281,13 @@ button#play-truth-dare-next {
     .sticky-announcement-container .left p,
     .sticky-announcement-container .right p {
         color: #292b2c;
+    }
+    .sticky-announcement-container .left h3,
+    .sticky-announcement-container .right h3 {
+        font-size: 18px;
+    }
+    .sticky-announcement-container .left p,
+    .sticky-announcement-container .right p {
+        font-size: 14px;
     }
 }
