@@ -1456,6 +1456,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/sc-strikes-down-mp-rule-denying-blind-candidates-in-judicial-service.html
+Allow: /news/which-3rd-language-is-taught-in-north-mk-stalin-questions-centre-over-nep.html
+Allow: /news/akash-anand-mayawati-nephew-reacts-bjp-mocks-bsp-supremo.html
+Allow: /news/no-takedowns-of-social-media-posts-without-creator-s-response-sc.html
 Allow: /news/rg-kar-case-live-updates-kolkata-court-accused-sanjay-roy-punishment-sentencing-cbi-kolkata-doctor-rape-murder.html
 Allow: /news/s-jaishankar-on-pakistan-cancer-of-terrorism-now-consuming-its-body-politic.html
 Allow: /news/american-podcaster-lex-fridman-to-host-podcast-with-pm-modi-in-february.html
