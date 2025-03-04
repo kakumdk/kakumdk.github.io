@@ -1468,11 +1468,11 @@ document.addEventListener("DOMContentLoaded", function() {
 /******************************************************************************************************************/
 /*************************************************** Sticky Announcement  *****************************************/
 /******************************************************************************************************************/
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        $('#sticky-announcement-container').removeClass('d-none');
-    }, 5000);    
-    $("#sticky-announcement-container .close").click(function() {
-        $("#sticky-announcement-container").addClass('d-none');
-    });
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     setTimeout(function() {
+//         $('#sticky-announcement-container').removeClass('d-none');
+//     }, 20000);    
+//     $("#sticky-announcement-container .close").click(function() {
+//         $("#sticky-announcement-container").addClass('d-none');
+//     });
+// });
