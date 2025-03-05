@@ -1456,6 +1456,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/if-canada-puts-on-retaliatory-tariff-trumps-fiery-response-to-trudeaus-retaliation.html
+Allow: /news/bengaluru-family-mysteriously-disappears-from-resort-near-bandipur-police-launch-search-report.html
+Allow: /news/steve-smith-announces-shock-retirement-from-odi-cricket-after-australias-champions-trophy-exit.html
+Allow: /news/how-kannada-actor-ips-officers-stepdaughter-was-arrested-at-bengaluru-airport-for-smuggling-gold.html
 Allow: /news/sc-strikes-down-mp-rule-denying-blind-candidates-in-judicial-service.html
 Allow: /news/which-3rd-language-is-taught-in-north-mk-stalin-questions-centre-over-nep.html
 Allow: /news/akash-anand-mayawati-nephew-reacts-bjp-mocks-bsp-supremo.html
