@@ -1456,6 +1456,9 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/manipurs-hill-areas-shut-as-plan-to-reopen-roads-falters.html
+Allow: /news/jai-bhavani-jai-shivaji-uddhav-thackeray-s-response-to-bjp-s-jai-shri-ram.html
+Allow: /news/mark-carney-will-be-next-canada-pm-liberal-party-leader-set-to-succeed-justin-trudeau.html
 Allow: /news/woman-cant-claim-rape-if-she-was-in-long-term-live-in-supreme-court.html
 Allow: /news/jaishankar-kashmir-conflict-pakistan-stolen-land.html
 Allow: /news/andhra-assembly-jagan-reddy-cites-an-aap-example-after-being-refused-opposition-leader-tag.html
