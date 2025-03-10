@@ -1456,6 +1456,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/sitapur-journalist-s-murder-four-lekhpals-among-eight-held-amid-protests-allegations-politics.html
+Allow: /news/pune-bmw-driver-sent-to-police-custody-till-march-10-after-viral-urination-video.html
+Allow: /news/bodies-of-15-year-old-girl-42-year-old-man-found-cops-suspect-suicide.html
+Allow: /news/third-accused-in-hampi-rape-case-arrested-from-tamil-nadu.html
+Allow: /news/4-labourers-die-in-water-tank-as-rescue-attempt-turns-fatal.html
 Allow: /news/manipurs-hill-areas-shut-as-plan-to-reopen-roads-falters.html
 Allow: /news/jai-bhavani-jai-shivaji-uddhav-thackeray-s-response-to-bjp-s-jai-shri-ram.html
 Allow: /news/mark-carney-will-be-next-canada-pm-liberal-party-leader-set-to-succeed-justin-trudeau.html
