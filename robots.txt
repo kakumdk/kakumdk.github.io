@@ -1456,6 +1456,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/bengaluru-property-taxes-set-to-rise-as-karnataka-government-approves-waste-collection-fee-report.html
+Allow: /news/isro-successfully-conducted-de-docking-of-spadex-satellites.html
+Allow: /news/bjp-vs-congress-over-actor-ranya-raos-arrest-in-gold-smuggling-case.html
+Allow: /news/mk-stalin-govt-drops-rupee-symbol-from-budget-replaces-it-with-symbol-in-tamil-amid-language-row.html
 Allow: /news/hampi-rape-case-karnataka-police-tighten-security-conduct-raids-at-tourist-stays.html
 Allow: /news/sitapur-journalist-s-murder-four-lekhpals-among-eight-held-amid-protests-allegations-politics.html
 Allow: /news/pune-bmw-driver-sent-to-police-custody-till-march-10-after-viral-urination-video.html
