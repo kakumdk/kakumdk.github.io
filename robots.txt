@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/vimanas-in-ancient-india-were-they-real-flying-machines.html
 Allow: /articles/comparing-the-vedas-with-other-ancient-scriptures.html
 Allow: /articles/how-nanotechnology-is-revolutionizing-medicine.html
 Allow: /articles/surviving-the-corporate-ladder-how-software-engineers-can-manage-workplace-politics.html
@@ -1174,6 +1175,7 @@ Allow: /articles/twig.html
 Allow: /articles/usa.html
 Allow: /articles/udaipur.html
 Allow: /articles/udupi.html
+Allow: /articles/unsolved-mysteries.html
 Allow: /articles/varanasi.html
 Allow: /articles/varkala.html
 Allow: /articles/vedas.html
@@ -1354,6 +1356,7 @@ Allow: /feeds/twig.xml
 Allow: /feeds/usa.xml
 Allow: /feeds/udaipur.xml
 Allow: /feeds/udupi.xml
+Allow: /feeds/unsolved-mysteries.xml
 Allow: /feeds/varanasi.xml
 Allow: /feeds/varkala.xml
 Allow: /feeds/vedas.xml
