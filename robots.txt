@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/malaysia-airlines-flight-mh-still-no-answers.html
 Allow: /articles/vimanas-in-ancient-india-were-they-real-flying-machines.html
 Allow: /articles/comparing-the-vedas-with-other-ancient-scriptures.html
 Allow: /articles/how-nanotechnology-is-revolutionizing-medicine.html
@@ -1028,6 +1029,7 @@ Allow: /articles/covid.html
 Allow: /articles/chennai.html
 Allow: /articles/chikmagalur.html
 Allow: /articles/children.html
+Allow: /articles/china.html
 Allow: /articles/chitradurga.html
 Allow: /articles/chutney.html
 Allow: /articles/code.html
@@ -1102,6 +1104,7 @@ Allow: /articles/madanapalle.html
 Allow: /articles/madurai.html
 Allow: /articles/mahabalipuram.html
 Allow: /articles/makalidurga.html
+Allow: /articles/malaysia.html
 Allow: /articles/manali.html
 Allow: /articles/mangalore.html
 Allow: /articles/marriage.html
@@ -1209,6 +1212,7 @@ Allow: /feeds/covid.xml
 Allow: /feeds/chennai.xml
 Allow: /feeds/chikmagalur.xml
 Allow: /feeds/children.xml
+Allow: /feeds/china.xml
 Allow: /feeds/chitradurga.xml
 Allow: /feeds/chutney.xml
 Allow: /feeds/code.xml
@@ -1283,6 +1287,7 @@ Allow: /feeds/madanapalle.xml
 Allow: /feeds/madurai.xml
 Allow: /feeds/mahabalipuram.xml
 Allow: /feeds/makalidurga.xml
+Allow: /feeds/malaysia.xml
 Allow: /feeds/manali.xml
 Allow: /feeds/mangalore.xml
 Allow: /feeds/marriage.xml
