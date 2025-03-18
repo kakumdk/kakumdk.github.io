@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/time-travel-possibilities-in-quantum-physics.html
 Allow: /articles/malaysia-airlines-flight-mh-still-no-answers.html
 Allow: /articles/vimanas-in-ancient-india-were-they-real-flying-machines.html
 Allow: /articles/comparing-the-vedas-with-other-ancient-scriptures.html
