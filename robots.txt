@@ -583,6 +583,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-honest-woodcutter.html
 Allow: /quick-read/the-dog-and-the-bone.html
 Allow: /quick-read/the-greedy-dog.html
 Allow: /quick-read/the-bear-and-the-two-friends.html
@@ -2169,6 +2170,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/the-role-of-nutrition-in-oral-health.html
 Allow: /articles/common-dental-problems-in-day-to-day-life.html
 Allow: /articles/the-benefits-of-interdisciplinary-care-in-dentistry.html
 Allow: /articles/understanding-tooth-sensitivity-treatments.html
