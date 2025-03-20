@@ -1470,6 +1470,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/centre-approves-expressway-connecting-jnpa-with-navi-mumbai-airport.html
+Allow: /news/parminder-singh-v-honey-goyal-2025-insc-361-motor-accident-compensation.html
+Allow: /news/fresh-clashes-in-manipurs-churachandpur-several-injured-in-pelting-of-stones.html
+Allow: /news/masturbation-watching-porn-not-grounds-for-divorce-madras-hc.html
+Allow: /news/nagpur-police-fir-says-on-duty-woman-officer-was-molested-during-violence-over-aurangzeb-tomb-row.html
 Allow: /news/bengaluru-doctors-salary-reveal-shuts-down-taunting-relative-my-taxes-higher-than-their-income.html
 Allow: /news/putin-humiliates-trump-keeps-us-president-waiting-for-over-an-hour-internet-says-brutal.html
 Allow: /news/what-donald-trump-said-about-his-call-with-putin-tomorrow-if-we-can-bring-war-to-end.html
