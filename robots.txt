@@ -1474,6 +1474,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/nag-ashwin-gives-major-update-on-prabhas-deepika-amitabh-bachchans-kalki-2898-ad-sequel-it-will-have-more.html
 Allow: /news/centre-approves-expressway-connecting-jnpa-with-navi-mumbai-airport.html
 Allow: /news/parminder-singh-v-honey-goyal-2025-insc-361-motor-accident-compensation.html
 Allow: /news/fresh-clashes-in-manipurs-churachandpur-several-injured-in-pelting-of-stones.html
