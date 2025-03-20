@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/diy-geodesic-dome-science-experiment-for-children.html
 Allow: /articles/time-travel-possibilities-in-quantum-physics.html
 Allow: /articles/malaysia-airlines-flight-mh-still-no-answers.html
 Allow: /articles/vimanas-in-ancient-india-were-they-real-flying-machines.html
@@ -583,6 +584,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-golden-goose.html
 Allow: /quick-read/the-honest-woodcutter.html
 Allow: /quick-read/the-dog-and-the-bone.html
 Allow: /quick-read/the-greedy-dog.html
@@ -713,6 +715,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/phiroze-palia.html
 Allow: /great-people/sarvepalli-radhakrishnan.html
 Allow: /great-people/v-o-chidambaram-pillai.html
 Allow: /great-people/hakam-sufi.html
