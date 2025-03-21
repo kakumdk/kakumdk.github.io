@@ -18,6 +18,7 @@ Allow: /software/world-clock.html
 Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/the-mysterious-death-of-actress-divya-bharti.html
 Allow: /articles/vedic-philosophy-the-foundation-of-indian-thought.html
 Allow: /articles/why-choose-drupal-for-your-blogging-website-in-.html
 Allow: /articles/diy-geodesic-dome-science-experiment-for-children.html
