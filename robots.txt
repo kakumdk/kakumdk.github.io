@@ -1477,6 +1477,12 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/you-rose-to-power-promising-secular-rule-muslim-body-declines-bihar-cm-nitish-kumar-s-iftaar-invite.html
+Allow: /news/why-are-ola-uber-rapido-cab-drivers-in-hyderabad-starting-a-no-ac-campaign-from-march-24.html
+Allow: /news/bjps-annamalai-slams-dmk-claims-hindi-was-a-compulsory-third-language-under-upa.html
+Allow: /news/bengaluru-roads-covered-in-mysterious-white-foam-after-rains-video-goes-viral.html
+Allow: /news/rss-leader-weighs-in-on-aurangzeb-row-why-dara-shikoh-not-considered-a-hero.html
+Allow: /news/justice-varma-probe-disclosure-triggers-internal-judicial-debate.html
 Allow: /news/challenges-in-manipur-can-be-overcome-if-people-abide-by-constitution-justice-kotiswar-singh.html
 Allow: /news/family-upset-with-me-meerut-murder-accused-muskan-rastogi-requests-for-govt-defense-counsel.html
 Allow: /news/ukraine-hits-russias-nuke-bomber-airfield-triggers-mushroom-cloud-explosion.html
