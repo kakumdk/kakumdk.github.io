@@ -1479,6 +1479,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/crocodile-spotted-casually-roaming-inside-iit-bombay-campus-internet-stunned-video.html
+Allow: /news/supreme-court-stays-allahabad-high-courts-grabbing-breasts-not-rape-ruling-insensitivity.html
+Allow: /news/aaps-raghav-chadha-claims-public-trust-in-banks-declining-slams-banking-laws-amendment-bill.html
+Allow: /news/ge-delivers-first-of-the-99-f-404-engines-for-lca-mk-1a-aircraft.html
 Allow: /news/you-rose-to-power-promising-secular-rule-muslim-body-declines-bihar-cm-nitish-kumar-s-iftaar-invite.html
 Allow: /news/why-are-ola-uber-rapido-cab-drivers-in-hyderabad-starting-a-no-ac-campaign-from-march-24.html
 Allow: /news/bjps-annamalai-slams-dmk-claims-hindi-was-a-compulsory-third-language-under-upa.html
