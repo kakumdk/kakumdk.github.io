@@ -1483,6 +1483,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/irans-ready-to-launch-missiles-after-donald-trumps-bombing-threat-report.html
+Allow: /news/karnataka-government-unveils-rs-400-crore-plan-to-upgrade-bengaluru-s-outer-ring-road-infrastructure.html
+Allow: /news/pm-modi-to-flag-off-first-vande-bharat-train-to-kashmir-april-19-jammu-katra-srinagar.html
+Allow: /news/himachal-pradesh-6-killed-5-injured-in-landslide-in-kullu.html
+Allow: /news/rss-banyan-tree-of-india-s-culture-and-modernisation-modi-in-nagpur.html
 Allow: /news/pune-techie-turns-balcony-into-mini-jungle-with-500-plants.html
 Allow: /news/yogi-adityanath-govt-bans-sale-of-meat-within-500-meters-of-religious-places-ahead-of-navratri.html
 Allow: /news/bengaluru-horror-maharashtra-womans-body-found-stuffed-in-suitcase-husband-detained.html
