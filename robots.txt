@@ -1483,6 +1483,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/imd-warns-of-extreme-heat-in-april-june-potential-economic-impact-looms.html
 Allow: /news/irans-ready-to-launch-missiles-after-donald-trumps-bombing-threat-report.html
 Allow: /news/karnataka-government-unveils-rs-400-crore-plan-to-upgrade-bengaluru-s-outer-ring-road-infrastructure.html
 Allow: /news/pm-modi-to-flag-off-first-vande-bharat-train-to-kashmir-april-19-jammu-katra-srinagar.html
