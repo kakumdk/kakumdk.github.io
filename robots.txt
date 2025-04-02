@@ -1483,6 +1483,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/now-women-in-j-k-can-travel-for-free-in-govt-buses.html
+Allow: /news/mns-urges-sambhajinagar-collector-to-end-govt-funding-for-aurangzeb-s-tomb.html
+Allow: /news/german-woman-alleges-rape-by-car-driver-in-hyderabad-one-arrested.html
+Allow: /news/india-weighs-options-ahead-of-trump-s-tariff-action-today.html
+Allow: /news/key-bjp-allies-set-to-vote-in-favour-of-waqf-bill.html
 Allow: /news/imd-warns-of-extreme-heat-in-april-june-potential-economic-impact-looms.html
 Allow: /news/irans-ready-to-launch-missiles-after-donald-trumps-bombing-threat-report.html
 Allow: /news/karnataka-government-unveils-rs-400-crore-plan-to-upgrade-bengaluru-s-outer-ring-road-infrastructure.html
