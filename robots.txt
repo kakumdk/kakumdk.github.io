@@ -1486,6 +1486,12 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/on-yunus-claim-on-india-s-northeast-jaishankar-s-sharp-comeback-at-bimstec.html
+Allow: /news/just-30-minutes-and-rain-turns-bengaluru-streets-into-streams-residents-lash-out-at-civic-apathy.html
+Allow: /news/andhra-cabinet-approves-arcelormittal-steel-plant-to-be-set-up-in-anakapalli.html
+Allow: /news/trump-tariffs-india-worst-hit-sector-trade-expert.html
+Allow: /news/rajya-sabha-passes-statutory-resolution-confirming-president-s-rule-in-manipur.html
+Allow: /news/parliament-passes-waqf-amendment-bill-2025-as-rajya-sabha-grants-approval.html
 Allow: /news/now-women-in-j-k-can-travel-for-free-in-govt-buses.html
 Allow: /news/mns-urges-sambhajinagar-collector-to-end-govt-funding-for-aurangzeb-s-tomb.html
 Allow: /news/german-woman-alleges-rape-by-car-driver-in-hyderabad-one-arrested.html
