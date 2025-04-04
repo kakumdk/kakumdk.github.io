@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-prepare-kesar-pista-milkshake.html
 Allow: /articles/building-a-healthy-work-culture-overcoming-office-politics-in-the-tech-sector.html
 Allow: /articles/bangalore-to-mekedatu-gorge-adventure-solo-trip-plan.html
 Allow: /articles/the-mysterious-death-of-actress-divya-bharti.html
@@ -591,6 +592,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-wind-and-the-sun.html
 Allow: /quick-read/the-fisherman-and-his-wife.html
 Allow: /quick-read/the-farmer-and-the-snake.html
 Allow: /quick-read/the-golden-goose.html
