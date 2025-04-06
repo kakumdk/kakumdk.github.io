@@ -589,6 +589,12 @@ input#search-news {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
+.dental-article-content table tr th,
+.dental-article-content table tr td {
+    border: 1px solid #10597d;
+    padding: 2px 6px;
+    vertical-align: top;
+}
 
 
 /*  */
