@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/the-importance-of-post-surgical-rehabilitation-programs.html
 Allow: /articles/how-to-prepare-kesar-pista-milkshake.html
 Allow: /articles/building-a-healthy-work-culture-overcoming-office-politics-in-the-tech-sector.html
 Allow: /articles/bangalore-to-mekedatu-gorge-adventure-solo-trip-plan.html
@@ -592,6 +593,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-lion-and-the-mouse.html
 Allow: /quick-read/the-wind-and-the-sun.html
 Allow: /quick-read/the-fisherman-and-his-wife.html
 Allow: /quick-read/the-farmer-and-the-snake.html
@@ -726,6 +728,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/radha-charan-gupta.html
 Allow: /great-people/bhagwatikumar-sharma.html
 Allow: /great-people/salil-chowdhury.html
 Allow: /great-people/sharad-joshi.html
@@ -1488,6 +1491,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/will-india-retaliate-against-donald-trump-tariffs-government-official-breaks-silence-on-strategy-report.html
+Allow: /news/bjp-accuses-mk-stalin-of-insulting-pm-modi-by-skipping-tamil-nadu-event.html
 Allow: /news/on-yunus-claim-on-india-s-northeast-jaishankar-s-sharp-comeback-at-bimstec.html
 Allow: /news/just-30-minutes-and-rain-turns-bengaluru-streets-into-streams-residents-lash-out-at-civic-apathy.html
 Allow: /news/andhra-cabinet-approves-arcelormittal-steel-plant-to-be-set-up-in-anakapalli.html
@@ -2234,6 +2239,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/how-to-avoid-dental-plaque-buildup.html
 Allow: /articles/understanding-dental-phobia-and-effective-treatment-strategies.html
 Allow: /articles/the-role-of-nutrition-in-oral-health.html
 Allow: /articles/common-dental-problems-in-day-to-day-life.html
@@ -2522,6 +2528,7 @@ Allow: /bestproducts/products/B08N5W4NNB.html
 Allow: /bestproducts/products/B0CFJZDDR6.html
 Allow: /bestproducts/products/B08H1Q9WRZ.html
 Allow: /bestproducts/products/B0D6R9XCXX.html
+Allow: /bestproducts/products/B0CG5XTL1R.html
 Allow: /bestproducts/products/B0CHX1W1XY.html
 Allow: /bestproducts/products/B07WFPMJBH.html
 Allow: /bestproducts/products/B0CX5F443W.html
@@ -2929,6 +2936,7 @@ Allow: /bestproducts/products/reviews/B08N5W4NNB.html
 Allow: /bestproducts/products/reviews/B0CFJZDDR6.html
 Allow: /bestproducts/products/reviews/B08H1Q9WRZ.html
 Allow: /bestproducts/products/reviews/B0D6R9XCXX.html
+Allow: /bestproducts/products/reviews/B0CG5XTL1R.html
 Allow: /bestproducts/products/reviews/B0CHX1W1XY.html
 Allow: /bestproducts/products/reviews/B07WFPMJBH.html
 Allow: /bestproducts/products/reviews/B0CX5F443W.html
@@ -3235,6 +3243,7 @@ Allow: /bestproducts/products/reviews/B0DGGMWNLC.html
 Allow: /bestproducts/products/reviews/B0CCP3545Y.html
 Allow: /bestproducts/products/reviews/B0DF7D1664.html
 Allow: /bestproducts/products/reviews/B0DBQ2L8XY.html
+Allow: /bestproducts/products/reviews/B0CQ814YP4.html
 Allow: /bestproducts/products/reviews/B0967TJKHW.html
 Allow: /bestproducts/products/reviews/B085S3TJ46.html
 Allow: /bestproducts/products/reviews/B01728NLRG.html
@@ -3334,6 +3343,7 @@ Allow: /bestproducts/products/B0DGGMWNLC.html
 Allow: /bestproducts/products/B0CCP3545Y.html
 Allow: /bestproducts/products/B0DF7D1664.html
 Allow: /bestproducts/products/B0DBQ2L8XY.html
+Allow: /bestproducts/products/B0CQ814YP4.html
 Allow: /bestproducts/products/B0967TJKHW.html
 Allow: /bestproducts/products/B085S3TJ46.html
 Allow: /bestproducts/products/B01728NLRG.html
