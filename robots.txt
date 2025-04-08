@@ -1491,6 +1491,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/jaishankar-rubio-pitch-for-early-conclusion-of-the-bilateral-trade-agreement.html
+Allow: /news/govt-to-probe-fee-irregularities-in-1-600-pvt-schools-minister.html
 Allow: /news/chinese-airfield-plan-in-bangladesh-district-close-to-chickens-neck-area-raises-indian-concerns.html
 Allow: /news/will-india-retaliate-against-donald-trump-tariffs-government-official-breaks-silence-on-strategy-report.html
 Allow: /news/bjp-accuses-mk-stalin-of-insulting-pm-modi-by-skipping-tamil-nadu-event.html
