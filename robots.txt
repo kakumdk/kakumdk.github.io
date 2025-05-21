@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/the-piri-reis-map-a-th-century-map-showing-antarctica-without-ice.html
 Allow: /articles/water-for-pakistan-lifeline-dependency-and-the-shifting-control.html
 Allow: /articles/the-importance-of-post-surgical-rehabilitation-programs.html
 Allow: /articles/how-to-prepare-kesar-pista-milkshake.html
@@ -1036,7 +1037,6 @@ Allow: /authors/krishna-d.html
 Allow: /authors/karthik-kumar-d-k.html
 Allow: /authors/jyothi-karthik-d.html
 Allow: /authors/hanukkah-john.html
-Allow: /articles/-world.html
 Allow: /articles/api.html
 Allow: /articles/agriculture.html
 Allow: /articles/agumbe.html
@@ -1220,7 +1220,6 @@ Allow: /articles/world.html
 Allow: /articles/yercaud.html
 Allow: /feeds/index.xml
 Allow: /feeds/quick-read.xml
-Allow: /feeds/-world.xml
 Allow: /feeds/api.xml
 Allow: /feeds/agriculture.xml
 Allow: /feeds/agumbe.xml
