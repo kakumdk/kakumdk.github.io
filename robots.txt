@@ -999,7 +999,7 @@ Allow: /great-people/chandrasekhara-venkata-raman.html
 Allow: /great-people/apj-abdul-kalam.html
 Allow: /great-people/subhash-chandra-bose.html
 Allow: /great-people/bhagat-singh.html
-Allow: /videos/aRJzjYJ1stM.html
+Allow: /videos/W3IIpdY2DRo.html
 Allow: /videos/6DjY_KxUMlI.html
 Allow: /videos/NYrBlHvf4G4.html
 Allow: /videos/pdv1uxO6hGc.html
