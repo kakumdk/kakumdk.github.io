@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/tips-for-maintaining-motivation-during-tough-times.html
 Allow: /articles/bangalore-to-savandurga-rock-trek-solo-trip-plan.html
 Allow: /articles/shadow-tracing-science-experiment-for-children.html
 Allow: /articles/the-piri-reis-map-a-th-century-map-showing-antarctica-without-ice.html
@@ -1147,6 +1148,7 @@ Allow: /articles/meghamalai.html
 Allow: /articles/migrate.html
 Allow: /articles/missile.html
 Allow: /articles/mizoram.html
+Allow: /articles/motivation.html
 Allow: /articles/movie.html
 Allow: /articles/mumbai.html
 Allow: /articles/munnar.html
@@ -1330,6 +1332,7 @@ Allow: /feeds/meghamalai.xml
 Allow: /feeds/migrate.xml
 Allow: /feeds/missile.xml
 Allow: /feeds/mizoram.xml
+Allow: /feeds/motivation.xml
 Allow: /feeds/movie.xml
 Allow: /feeds/mumbai.xml
 Allow: /feeds/munnar.xml
