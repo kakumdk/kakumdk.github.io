@@ -17,7 +17,7 @@ function getQueryParam(param) {
 }
 // Function to filter products
 function filterProducts(category, discount, sort, updated) {
-    clickLinkAfterDelay('filterCategory', 15);
+    clickLinkAfterDelay('filterDiscount', 15);
     const header = document.querySelector(".dynamic-title");
     const header1 = document.querySelector(".dynamic-title-1");
     // if (updated != "null") {
@@ -33,6 +33,7 @@ function filterProducts(category, discount, sort, updated) {
     //     products.forEach(product => container.appendChild(product));
     // }
     if (category != "null") {
+        clickLinkAfterDelay('filterCategory', 15);
         const products = document.querySelectorAll(".shop-item-wrapper");
         products.forEach(product => {
             const productCategory = product.getAttribute("data-category");
@@ -55,7 +56,7 @@ function filterProducts(category, discount, sort, updated) {
         });
     }
     if (discount != "null") {
-        clickLinkAfterDelay('filterDiscount', 15);
+        // clickLinkAfterDelay('filterDiscount', 15);
         const [bLower, bUpper] = discount.split("-").map(Number);
         const products = document.querySelectorAll(".shop-item-wrapper");
         products.forEach(product => {
@@ -154,7 +155,7 @@ function filterProducts(category, discount, sort, updated) {
 
 // 
 document.addEventListener('DOMContentLoaded', (event) => {
-    clickLinkAfterDelay('filterCategory', 10);
+    clickLinkAfterDelay('filterDiscount', 10);
 });
 function clickLinkAfterDelay(linkId, delay) {
     const link = document.getElementById(linkId);
