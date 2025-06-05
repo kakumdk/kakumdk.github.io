@@ -82,6 +82,7 @@ a.navbar-brand.logo .logo-title {
     vertical-align: middle;
     border-top: 6px double;
     padding-top: 6px;
+    font-family: fantasy;
 }
 nav.breadcrumb-wrapper {
     /* background: #fff; */
@@ -535,8 +536,8 @@ figure.table td {
     }
     img.card-img-top {
         height: 250px;
-        /* width: 250px; */
-        width: auto;
+        width: 250px;
+        /* width: auto; */
         margin: auto;
         display: block;
     }
