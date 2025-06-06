@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/rcb-alcohol-ownership-and-the-public-spectacle-a-modern-colosseum-distraction.html
 Allow: /articles/tips-for-maintaining-motivation-during-tough-times.html
 Allow: /articles/bangalore-to-savandurga-rock-trek-solo-trip-plan.html
 Allow: /articles/shadow-tracing-science-experiment-for-children.html
