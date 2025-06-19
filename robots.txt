@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/best-cameras-for-vlogging-and-content-creation-in-.html
 Allow: /articles/rcb-alcohol-ownership-and-the-public-spectacle-a-modern-colosseum-distraction.html
 Allow: /articles/tips-for-maintaining-motivation-during-tough-times.html
 Allow: /articles/bangalore-to-savandurga-rock-trek-solo-trip-plan.html
@@ -1060,6 +1061,7 @@ Allow: /articles/bheemeshwari.html
 Allow: /articles/book.html
 Allow: /articles/business.html
 Allow: /articles/covid.html
+Allow: /articles/cameras.html
 Allow: /articles/chennai.html
 Allow: /articles/chikmagalur.html
 Allow: /articles/children.html
@@ -1186,6 +1188,7 @@ Allow: /articles/security.html
 Allow: /articles/self.html
 Allow: /articles/sexual-health.html
 Allow: /articles/shimla.html
+Allow: /articles/shop.html
 Allow: /articles/sikkim.html
 Allow: /articles/social-media.html
 Allow: /articles/software.html
@@ -1244,6 +1247,7 @@ Allow: /feeds/bheemeshwari.xml
 Allow: /feeds/book.xml
 Allow: /feeds/business.xml
 Allow: /feeds/covid.xml
+Allow: /feeds/cameras.xml
 Allow: /feeds/chennai.xml
 Allow: /feeds/chikmagalur.xml
 Allow: /feeds/children.xml
@@ -1370,6 +1374,7 @@ Allow: /feeds/security.xml
 Allow: /feeds/self.xml
 Allow: /feeds/sexual-health.xml
 Allow: /feeds/shimla.xml
+Allow: /feeds/shop.xml
 Allow: /feeds/sikkim.xml
 Allow: /feeds/social-media.xml
 Allow: /feeds/software.xml
