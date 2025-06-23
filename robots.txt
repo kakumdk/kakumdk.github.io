@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/donald-trump-and-the-elusive-nobel-peace-prize-past-attempts-present-claims-and-persistent-barriers.html
 Allow: /articles/best-cameras-for-vlogging-and-content-creation-in-.html
 Allow: /articles/rcb-alcohol-ownership-and-the-public-spectacle-a-modern-colosseum-distraction.html
 Allow: /articles/tips-for-maintaining-motivation-during-tough-times.html
