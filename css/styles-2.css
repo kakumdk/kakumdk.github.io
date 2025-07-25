@@ -2763,6 +2763,7 @@ button#play-truth-dare-next {
 }
 .our-work .client img {
     border-radius: 5px;
+    height: 150px;
 }
 .sticky-announcement-container {
     display: none;

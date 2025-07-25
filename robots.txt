@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/the-mig--india-s-first-supersonic-jet-retires-after--years-of-glorious-service.html
 Allow: /articles/bangalore-to-tiruvannamalai-solo-trip-plan.html
 Allow: /articles/maulana-masood-azhar-the-terror-mastermind-and-most-wanted-by-india.html
 Allow: /articles/donald-trump-and-the-elusive-nobel-peace-prize-past-attempts-present-claims-and-persistent-barriers.html
