@@ -178,7 +178,7 @@ function siteFixedAd() {
         $("#site-fixed-ad-container .x").click(function() {
             $("#site-fixed-ad-container").hide(1000);
         });
-    }, 1000 * 5);
+    }, 1000);
 }
 
 function cookiePolicy() {

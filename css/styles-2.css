@@ -1899,7 +1899,7 @@ h3.author-articles-heading::after {
 }
 .shop-data .shop-data-results .shop-item .discount span.main {
     border-radius: 4px;
-    box-shadow: 0 1px 12px rgba(0,0,0,.8);
+    /* box-shadow: 0 1px 12px rgba(0,0,0,.8); */
     box-sizing: border-box;
     display: inline-block;
     font-size: 12px;
@@ -2763,7 +2763,7 @@ button#play-truth-dare-next {
 }
 .our-work .client img {
     border-radius: 5px;
-    height: 150px;
+    height: 200px;
 }
 .sticky-announcement-container {
     display: none;
@@ -3290,5 +3290,8 @@ button#play-truth-dare-next {
     .sticky-announcement-container .left p,
     .sticky-announcement-container .right p {
         font-size: 14px;
+    }
+    .our-work .client img {
+        height: 300px;
     }
 }

@@ -266,7 +266,7 @@ input#search-news {
 }
 .shop-data .shop-data-results .shop-item .discount span.main {
     border-radius: 4px;
-    box-shadow: 0 1px 12px rgba(0,0,0,.8);
+    /* box-shadow: 0 1px 12px rgba(0,0,0,.8); */
     box-sizing: border-box;
     display: inline-block;
     font-size: 12px;
