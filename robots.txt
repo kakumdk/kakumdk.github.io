@@ -1111,8 +1111,8 @@ Allow: /articles/happy.html
 Allow: /articles/haridwar.html
 Allow: /articles/hassan.html
 Allow: /articles/health.html
-Allow: /articles/home.html
 Allow: /articles/horanadu.html
+Allow: /articles/house.html
 Allow: /articles/hyderabad.html
 Allow: /articles/india.html
 Allow: /articles/jaipur.html
@@ -1298,8 +1298,8 @@ Allow: /feeds/happy.xml
 Allow: /feeds/haridwar.xml
 Allow: /feeds/hassan.xml
 Allow: /feeds/health.xml
-Allow: /feeds/home.xml
 Allow: /feeds/horanadu.xml
+Allow: /feeds/house.xml
 Allow: /feeds/hyderabad.xml
 Allow: /feeds/india.xml
 Allow: /feeds/jaipur.xml
