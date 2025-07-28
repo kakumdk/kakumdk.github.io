@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-keep-your-home-organized-all-year-long.html
 Allow: /articles/india-stands-tall-navigating-geopolitical-tensions-without-bowing-to-pressure.html
 Allow: /articles/the-mig--india-s-first-supersonic-jet-retires-after--years-of-glorious-service.html
 Allow: /articles/bangalore-to-tiruvannamalai-solo-trip-plan.html
@@ -1110,6 +1111,7 @@ Allow: /articles/happy.html
 Allow: /articles/haridwar.html
 Allow: /articles/hassan.html
 Allow: /articles/health.html
+Allow: /articles/home.html
 Allow: /articles/horanadu.html
 Allow: /articles/hyderabad.html
 Allow: /articles/india.html
@@ -1296,6 +1298,7 @@ Allow: /feeds/happy.xml
 Allow: /feeds/haridwar.xml
 Allow: /feeds/hassan.xml
 Allow: /feeds/health.xml
+Allow: /feeds/home.xml
 Allow: /feeds/horanadu.xml
 Allow: /feeds/hyderabad.xml
 Allow: /feeds/india.xml
