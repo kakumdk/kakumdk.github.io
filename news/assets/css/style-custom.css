@@ -69,6 +69,7 @@ p {
 
 .navbar .navbar-bottom-menu .navbar-toggler {
     top: 13px;
+    padding: 12px 10px;
 }
 .banner-top-thumb {
     max-width: 82px;
@@ -448,6 +449,83 @@ a.ss-btn.ss-btn-pocket {
     margin: 15px auto;
     font-weight: 500;
 }
+.news-logo {
+    text-align: left;
+}
+.google-ad, .amazon-ad {
+    margin: 15px auto;
+}
+.shop-data .shop-data-results .shop-item {
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #e7ebed;
+    text-align: center;
+    border-radius: 5px;
+    min-height: 300px;
+}
+.shop-data .shop-data-results .shop-item .discount {
+    left: 25px;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+}
+.shop-data .shop-data-results .shop-item .discount span.main {
+    border-radius: 4px;
+    /* box-shadow: 0 1px 12px rgba(0,0,0,.8); */
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1px 6px 0 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #e6f4ea;
+    color: #137333;
+}
+.shop-data .shop-data-results .shop-item .shop-image img {
+    border-radius: 5px;
+    height: 175px;
+}
+.shop-data .shop-data-results .shop-item h4.shop-title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 15px auto;
+    max-height: 80px;
+    min-height: 80px;
+    overflow: hidden;
+    text-align: left;
+}
+.shop-data .shop-data-results .shop-item h4.shop-title a {
+    color: #292b2c;
+}
+.shop-data .shop-data-results .shop-item .price {
+    margin-top: 15px;
+    border-top: 1px solid #e7ebed;
+    padding-top: 15px;
+    text-align: center;
+}
+.shop-data .shop-data-results .shop-item .price .discountprice {
+    margin-right: 5px;
+    font-weight: bold;
+}
+.shop-data .shop-data-results .shop-item .price .rupee {
+    top: -4px;
+    font-size: 10px;
+    position: relative;
+    left: -2px;
+}
+.shop-data .shop-data-results .shop-item .price .actualprice {
+    font-size: 14px;
+    color: #70757a;
+    text-decoration: line-through;
+}
+
 
 
 /****************************************************************************************************************************/
@@ -578,6 +656,9 @@ a.ss-btn.ss-btn-pocket {
         bottom: 15px;
         border-radius: 5px;
         padding: 8px;
+    }
+    .news-logo {
+        text-align: center;
     }
 
 }
