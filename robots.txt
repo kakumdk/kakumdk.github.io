@@ -2273,6 +2273,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/the-benefits-of-regular-dental-checkups.html
 Allow: /articles/the-role-of-community-outreach-in-dental-health-promotion.html
 Allow: /articles/how-to-avoid-dental-plaque-buildup.html
 Allow: /articles/understanding-dental-phobia-and-effective-treatment-strategies.html
