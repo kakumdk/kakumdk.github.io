@@ -2673,6 +2673,9 @@ button#play-truth-dare-next {
     font-family: Georgia, Times, "Times New Roman", serif;
     border-style: solid;
     border-color: #ccc;
+    border-top: unset;
+    border-bottom: unset;
+    border-right: unset;
 }
 .blog-content.read-article-content p:has(code) {
     background-color: #f9f9f9;
