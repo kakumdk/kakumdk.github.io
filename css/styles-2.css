@@ -2665,6 +2665,15 @@ button#play-truth-dare-next {
 .blog-content.read-article-content h6 {
     margin-top: 30px;
 }
+.blog-content.read-article-content blockquote {
+    padding-left: 20px;
+    padding-right: 8px;
+    border-left-width: 5px;
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    border-style: solid;
+    border-color: #ccc;
+}
 .blog-content.read-article-content p:has(code) {
     background-color: #f9f9f9;
     padding: 0 10px;
