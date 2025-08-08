@@ -3456,11 +3456,13 @@ Allow: /shopping/reviews/B0B68JR6S8.html
 Allow: /shopping/reviews/B0D3F5HK9R.html
 Allow: /shopping/reviews/B0F5HQW3GZ.html
 Allow: /shopping/reviews/B0D5MH4DM9.html
+Allow: /shopping/reviews/B0DFY8ZPCL.html
 Allow: /shopping/reviews/B0CWYWGF3C.html
 Allow: /shopping/reviews/B0BXSRCPJ1.html
 Allow: /shopping/reviews/B0BGH18LNC.html
 Allow: /shopping/reviews/B0DSKMV3ZC.html
 Allow: /shopping/reviews/B0BHHXCVTM.html
+Allow: /shopping/reviews/B0BZWDJ5X4.html
 Allow: /shopping/reviews/B0D298F584.html
 Allow: /shopping/reviews/B07CLZZQFG.html
 Allow: /shopping/reviews/B0CYQ6VX4N.html
