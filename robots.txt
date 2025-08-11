@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/baliga-murder-accused-funded-sdpi-leaders-to-spin-hindu-muslim-narrative-in-dharmasthala-mass-burial-case.html
 Allow: /articles/rain-gauge-science-experiment-for-children.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-granted-police-station-status-investigation-gains-legal-edge.html
 Allow: /articles/dharmasthala-mass-murder-case-escalates-to-delhi-grievance-seeks-nia-probe-alleges-state-government-obstruction.html
