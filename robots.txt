@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/kadri-manjunatha-temple-vs-dharmasthala-manjunatha-temple-history-spiritual-importance-and-travel-guide.html
 Allow: /articles/baliga-murder-accused-funded-sdpi-leaders-to-spin-hindu-muslim-narrative-in-dharmasthala-mass-burial-case.html
 Allow: /articles/rain-gauge-science-experiment-for-children.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-granted-police-station-status-investigation-gains-legal-edge.html
@@ -1129,6 +1130,7 @@ Allow: /articles/jaipur.html
 Allow: /articles/jog-falls.html
 Allow: /articles/kgudi.html
 Allow: /articles/kadiri.html
+Allow: /articles/kadri.html
 Allow: /articles/kanyakumari.html
 Allow: /articles/karnataka.html
 Allow: /articles/kashmir.html
@@ -1316,6 +1318,7 @@ Allow: /feeds/jaipur.xml
 Allow: /feeds/jog-falls.xml
 Allow: /feeds/kgudi.xml
 Allow: /feeds/kadiri.xml
+Allow: /feeds/kadri.xml
 Allow: /feeds/kanyakumari.xml
 Allow: /feeds/karnataka.xml
 Allow: /feeds/kashmir.xml
