@@ -3452,6 +3452,7 @@ Allow: /shopping/articles/top-products.html
 Allow: /shopping/articles/gifts.html
 Allow: /shopping/articles/1753271629.html
 Allow: /shopping/articles/1753272466.html
+Allow: /shopping/articles/1755264086.html
 Allow: /shopping/articles/1753247394.html
 Allow: /shopping/articles/festival-picks.html
 Allow: /shopping/articles/index.html

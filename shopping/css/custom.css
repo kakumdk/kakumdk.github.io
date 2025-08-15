@@ -724,7 +724,8 @@ span.woocommerce-Price-currencySymbol {
         border: 1px solid #e5eaeb;
     } */
     .peoplesblog-shopping.articles-index .entries article.entry-card img {
-        width: 250px;
+        width: auto;
+        height: 250px;
     }
     .peoplesblog-shopping.articles-index .entries article.entry-card .entry-excerpt {
         -webkit-line-clamp: 3;
