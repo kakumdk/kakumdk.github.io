@@ -34,12 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (searchQuery && el.hasAttribute('data-search')) {
             const keywords = el.getAttribute('data-search').toLowerCase().split(/\s+/);
-            const searchWords = searchQuery.toLowerCase().split(/\s+/);
 
-            // Partial match: show if any keyword includes any search word
-            show = searchWords.some(searchWord =>
+            // Remove empty words caused by spaces
+            const searchWords = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+
+            // All words must match (partial match allowed within each keyword)
+            show = searchWords.every(searchWord =>
                 keywords.some(keyword => keyword.includes(searchWord))
             );
+
         } else if (categoryQuery && el.hasAttribute('data-category')) {
             const elCategory = normalize(el.getAttribute('data-category'));
             const queryCategory = normalize(categoryQuery);
