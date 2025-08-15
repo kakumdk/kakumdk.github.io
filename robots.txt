@@ -3441,6 +3441,7 @@ Allow: /bestproducts/contact.html
 Allow: /bestproducts/terms-and-conditions.html
 Allow: /bestproducts/index.html
 Allow: /shopping/faq.html
+Allow: /shopping/comparisons/1755262825.html
 Allow: /shopping/comparisons/1753243062.html
 Allow: /shopping/comparisons/1754546767.html
 Allow: /shopping/comparisons/1752828229.html
