@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/dharmasthala-mass-burial-case-d-k-shivakumar-s-statement-will-have-no-impact-on-sit-probe.html
 Allow: /articles/how-to-simplify-your-life-with-mindful-consumption.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-to-continue-exhumation-with-enhanced-preparations.html
 Allow: /articles/kadri-manjunatha-temple-vs-dharmasthala-manjunatha-temple-history-spiritual-importance-and-travel-guide.html
