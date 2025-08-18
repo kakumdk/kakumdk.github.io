@@ -335,6 +335,9 @@ section .page-wrapper .articles.label-articles .article .articles-content .artic
     font-size: 16px;
     letter-spacing: 0;
 }
+.spiritual-article .spritual-img img {
+    border-radius: 10px;
+}
 
 
 @media (min-width: 600px) {
@@ -397,5 +400,10 @@ section .page-wrapper .articles.label-articles .article .articles-content .artic
     .spiritual-article ol li {
         margin: 15px auto;
         font-size: 18px;
+    }
+    .spiritual-article .spritual-img {
+        float: right;
+        margin-left: 30px;
+        width: 50%;
     }
 }

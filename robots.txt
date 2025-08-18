@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/karma-and-dharma-balancing-duty-and-destiny.html
 Allow: /articles/how-hereditary-conditions-are-diagnosed-and-managed.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-to-submit-full-report-no-interim-findings.html
 Allow: /articles/dharmasthala-mass-burial-case-d-k-shivakumar-s-statement-will-have-no-impact-on-sit-probe.html
