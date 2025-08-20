@@ -4157,6 +4157,13 @@
     <dc:creator>Karthik Kumar D K</dc:creator>
 <guid isPermaLink="true">https://peoplesblog.co.in/articles/creating-twitter-share-block-programmatically-drupal-.html</guid>
   </item><item>
+    <title>Karnataka Editors’ Jail Sentence Sparks Allegations of Intimidation</title>
+    <link>https://peoplesblog.co.in/articles/karnataka-editors-jail-sentence-sparks-allegations-of-intimidation.html</link>
+    <description>Bengaluru  The controversy surrounding the Karnataka Assembly&amp;rsquo;s decision to sentence two editors to one year in prison for alleged defamation has deepened. Reports reveal one editor claims ongoing intimidation from a sitting legislator.  Assembly Verdict and Legal Roadmap  On June 21, 2017, the Assembly&amp;rsquo;s Privileges Committee found Anil Raj, editor of the Yelahanka tabloid Yelahanka Vo</description>
+    <pubDate>Wed, 20 Aug 2025 08:33:00 +0530</pubDate>
+    <dc:creator>Karthik Kumar D K</dc:creator>
+<guid isPermaLink="true">https://peoplesblog.co.in/articles/karnataka-editors-jail-sentence-sparks-allegations-of-intimidation.html</guid>
+  </item><item>
     <title>Profiling Drupal Performance with Webgrind and Xdebug</title>
     <link>https://peoplesblog.co.in/articles/profiling-drupal-performance-with-webgrind-and-xdebug.html</link>
     <description>Xdebug Profiling is all about measuring the performance of PHP code. In this article you gonna see how your measure the performance of your php code using webgrid and the xdebug.  Requirements:   Xdebug, with profiler enabled Webgrind Xdebug Addon plugin for browser   1. Xdebug with profiler enabled  For setting up the environment, edit the php.ini file and add following lines.  xdebug.profiler_en</description>

@@ -613,6 +613,7 @@ Allow: /articles/secure-website-running-apache-lets-encrypt-linux.html
 Allow: /articles/aegir-docker-develop-test-easier-deployment.html
 Allow: /articles/integrating-codeception-drupal-have-added-support-tdd.html
 Allow: /articles/creating-twitter-share-block-programmatically-drupal-.html
+Allow: /articles/karnataka-editors-jail-sentence-sparks-allegations-of-intimidation.html
 Allow: /articles/profiling-drupal-performance-with-webgrind-and-xdebug.html
 Allow: /articles/auto-tagging-taxonomy-terms-drupal.html
 Allow: /articles/configuring-debugging-drupal--phpstorm-xdebug-ubuntu.html
