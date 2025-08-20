@@ -3455,6 +3455,7 @@ Allow: /shopping/comparisons/1755262825.html
 Allow: /shopping/comparisons/1753243062.html
 Allow: /shopping/comparisons/1754546767.html
 Allow: /shopping/comparisons/1752828229.html
+Allow: /shopping/comparisons/1755661262.html
 Allow: /shopping/comparisons/index.html
 Allow: /shopping/privacy-policy.html
 Allow: /shopping/about.html
