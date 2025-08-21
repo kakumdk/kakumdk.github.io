@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/dharmasthala-crimes-sowjanya-justice-activist-mahesh-shetty-thimarodi-detained.html
 Allow: /articles/what-the-constitution-one-hundred-and-thirtieth-amendment-bill--proposes.html
 Allow: /articles/the-enigma-of-the-unfinished-kailasa-temple-ellora.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-has-full-liberty-to-probe-and-conduct-exhumations.html
