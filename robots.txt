@@ -3548,6 +3548,7 @@ Allow: /shopping/reviews/B0CQ4KTCH1.html
 Allow: /shopping/reviews/B0B54P3N5F.html
 Allow: /shopping/reviews/B0DC6KX2C5.html
 Allow: /shopping/reviews/B0CHRJ5QQY.html
+Allow: /shopping/reviews/B0BGXZV1P3.html
 Allow: /shopping/reviews/B0CW9LXVK9.html
 Allow: /shopping/reviews/index.html
 Allow: /shopping/reviews/B0FCM6J32P.html
