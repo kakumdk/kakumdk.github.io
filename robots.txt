@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-introduce-more-joy-into-your-everyday-life.html
 Allow: /articles/bangalore-to-kanipakam-solo-trip-plan.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-arrests-whistleblower-bheema-on-perjury-charges.html
 Allow: /articles/dharmasthala-crimes-arrest-of-bheema-reignites-questions-in-soujanya-case.html
