@@ -1555,6 +1555,8 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/isro-seeks-proposals-to-study-chandrayaan-3-data.html
+Allow: /news/belgium-announces-sanctions-on-israel-to-recognise-palestine-at-un-general-assembly.html
 Allow: /news/india-suspends-postal-services-to-us-after-trump-tariff-moves.html
 Allow: /news/moscow-draws-hard-line-over-security-guarantees-for-ukraine.html
 Allow: /news/isro-conducts-first-air-drop-test-ahead-of-december-gaganyaan-mission.html
