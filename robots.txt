@@ -3529,6 +3529,7 @@ Allow: /shopping/reviews/B08F3F197K.html
 Allow: /shopping/reviews/B076VDJFPZ.html
 Allow: /shopping/reviews/B0DTYVM9YZ.html
 Allow: /shopping/reviews/B0FC6X7GBR.html
+Allow: /shopping/reviews/B07VGRT3DQ.html
 Allow: /shopping/reviews/B0DP9JPG3L.html
 Allow: /shopping/reviews/B085B1RFL9.html
 Allow: /shopping/reviews/B0DSBRDRDV.html
@@ -3575,6 +3576,7 @@ Allow: /shopping/reviews/B0BRQBVYVB.html
 Allow: /shopping/reviews/B078K2YPRW.html
 Allow: /shopping/reviews/B0DPHT2HZL.html
 Allow: /shopping/reviews/B0CCJ8MBLD.html
+Allow: /shopping/reviews/B0DMTJ51HZ.html
 Allow: /shopping/reviews/B0D78KYB2P.html
 Allow: /shopping/reviews/B07TKHMF2N.html
 Allow: /shopping/reviews/B0BBLFNQHJ.html
