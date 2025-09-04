@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/bangalore-to-talakadu-historical-site-a-couple-motorcycle-ride-travel-plan.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-seeks-custody-extension-villagers-step-forward-ed-begins-probe.html
 Allow: /articles/ant-farm-observation-discovering-the-secret-life-of-ants.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-investigation-s-latest-developments-augustseptember--.html
@@ -1242,6 +1243,7 @@ Allow: /articles/srikalahasti.html
 Allow: /articles/srisailam.html
 Allow: /articles/surgery.html
 Allow: /articles/symfony.html
+Allow: /articles/talakadu.html
 Allow: /articles/temple.html
 Allow: /articles/terrorism.html
 Allow: /articles/thekkady.html
@@ -1431,6 +1433,7 @@ Allow: /feeds/srikalahasti.xml
 Allow: /feeds/srisailam.xml
 Allow: /feeds/surgery.xml
 Allow: /feeds/symfony.xml
+Allow: /feeds/talakadu.xml
 Allow: /feeds/temple.xml
 Allow: /feeds/terrorism.xml
 Allow: /feeds/thekkady.xml
