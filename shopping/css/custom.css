@@ -589,6 +589,16 @@ span.woocommerce-Price-currencySymbol {
 .woocommerce-tabs .product-information a {
     color: #212529;
 }
+.woocommerce-tabs .product-information-buy {
+    margin: 15px auto;
+}
+.woocommerce-tabs .product-information-buy span {
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 1.5;
+}
 
 
 
@@ -919,5 +929,8 @@ span.woocommerce-Price-currencySymbol {
     }
     .woocommerce-tabs .product-information ul, .woocommerce-tabs .product-information ol {
         padding-left: 45px;
+    }
+    .woocommerce-tabs .product-information-buy {
+        width: 50%;
     }
 }
