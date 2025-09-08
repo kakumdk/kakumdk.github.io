@@ -567,6 +567,28 @@ span.woocommerce-Price-currencySymbol {
     /* font-weight: bold;
     letter-spacing: 0.5px; */
 }
+.woocommerce-tabs .product-title {
+    color: #576471;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px auto;
+    border-bottom: 1px solid #e6eaec;
+}
+.woocommerce-tabs .product-information {
+    color: #212529;
+    font-weight: normal !important;
+}
+.woocommerce-tabs .product-information strong {
+    text-transform: capitalize;
+}
+.woocommerce-tabs .product-information ul,
+.woocommerce-tabs .product-information ol {
+    padding-left: 15px;
+}
+.woocommerce-tabs .product-information a {
+    color: #212529;
+}
 
 
 
@@ -895,5 +917,7 @@ span.woocommerce-Price-currencySymbol {
         letter-spacing: 1px;
         border-radius: 5px;
     }
-    .ct-media-container img
+    .woocommerce-tabs .product-information ul, .woocommerce-tabs .product-information ol {
+        padding-left: 45px;
+    }
 }

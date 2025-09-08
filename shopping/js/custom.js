@@ -105,3 +105,19 @@ document.addEventListener("DOMContentLoaded", function () {
     offcanvas.setAttribute('inert', '');
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".product-information a[href]");
+  links.forEach(link => {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+    // link.setAttribute("style", "text-decoration: underline; font-weight: normal; text-underline-position: under;");
+    // const strong = link.querySelector("strong");
+    // if (strong) {
+    //   strong.setAttribute(
+    //     "style",
+    //     "text-decoration: underline; font-weight: normal; text-underline-position: under;"
+    //   );
+    // }
+  });
+});
