@@ -3603,6 +3603,7 @@ Allow: /shopping/reviews/B0FBWV9LR8.html
 Allow: /shopping/reviews/B0DCZMPRXC.html
 Allow: /shopping/reviews/B0DY215JCB.html
 Allow: /shopping/reviews/B0BRQBVYVB.html
+Allow: /shopping/reviews/B0F9YGHHXG.html
 Allow: /shopping/reviews/B078K2YPRW.html
 Allow: /shopping/reviews/B0DPHT2HZL.html
 Allow: /shopping/reviews/B0CKSXZB2V.html
@@ -3617,6 +3618,7 @@ Allow: /shopping/reviews/B0D2NBDMJM.html
 Allow: /shopping/reviews/B0CW5YZ6VV.html
 Allow: /shopping/reviews/B077BFH786.html
 Allow: /shopping/reviews/B0CLZXVR5C.html
+Allow: /shopping/reviews/B0CKR1G5ZQ.html
 Allow: /shopping/index.html
 
 Sitemap: https://peoplesblog.co.in/sitemaps/articles.xml
