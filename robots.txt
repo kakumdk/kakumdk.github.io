@@ -3499,6 +3499,7 @@ Allow: /shopping/articles/festival-picks.html
 Allow: /shopping/articles/index.html
 Allow: /shopping/terms-and-conditions.html
 Allow: /shopping/search.html
+Allow: /shopping/reviews/B0BL8KDPG3.html
 Allow: /shopping/reviews/B0CS3KHKM8.html
 Allow: /shopping/reviews/B0BTLTKBVT.html
 Allow: /shopping/reviews/B0DK9DTJTG.html
@@ -3522,6 +3523,7 @@ Allow: /shopping/reviews/B0DFY8ZPCL.html
 Allow: /shopping/reviews/B0FKN7Z65N.html
 Allow: /shopping/reviews/B0BJVQX9B2.html
 Allow: /shopping/reviews/B0CWYWGF3C.html
+Allow: /shopping/reviews/B0B5X499C6.html
 Allow: /shopping/reviews/B0DXQ575B9.html
 Allow: /shopping/reviews/B0BXSRCPJ1.html
 Allow: /shopping/reviews/B0C9V7RYWD.html
