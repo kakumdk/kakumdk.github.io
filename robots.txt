@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/how-to-design-your-dream-morning-with-intention.html
 Allow: /articles/bangalore-to-talakadu-historical-site-a-couple-motorcycle-ride-travel-plan.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-seeks-custody-extension-villagers-step-forward-ed-begins-probe.html
 Allow: /articles/ant-farm-observation-discovering-the-secret-life-of-ants.html
@@ -633,6 +634,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-goose-that-laid-the-golden-eggs.html
 Allow: /quick-read/the-three-little-pigs.html
 Allow: /quick-read/cinderella.html
 Allow: /quick-read/snow-white.html
