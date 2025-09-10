@@ -1559,6 +1559,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/upi-may-soon-allow-transactions-from-192-countries-new-project-to.html
+Allow: /news/soliciting-in-a-brothel-can-lead-to-prosecution-says-kerala-hc.html
+Allow: /news/indiaus-to-exchange-trade-delegations-donald-trump-pm-modi-tariffs-russian-oil.html
+Allow: /news/nepal-ex-pm-jhalanath-khanals-wife-dies-as-house-set-on-fire-by-protesters-in-kathmandu.html
 Allow: /news/cricketer-shikhar-dhawan-summoned-by-ed-over-illegal-betting-app-case-questioning.html
 Allow: /news/south-india-highest-grossing-female-led-film-lokah-chapter-1-100-crore-kalyani-beat-nayanthara-samantha-anushka-shetty.html
 Allow: /news/manipurs-kuki-zo-council-decides-to-open-nh-2-after-meetings-with-centre-mha.html
