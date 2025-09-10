@@ -3594,6 +3594,7 @@ Allow: /shopping/reviews/B0FHWWDRRM.html
 Allow: /shopping/reviews/B0BJV59X3P.html
 Allow: /shopping/reviews/B0DP7P4KVT.html
 Allow: /shopping/reviews/B0DCZ6HM7G.html
+Allow: /shopping/reviews/B0B6FHTHQC.html
 Allow: /shopping/reviews/B0B9YGBCJG.html
 Allow: /shopping/reviews/B0CHFK5WKF.html
 Allow: /shopping/reviews/B0CQ4KTCH1.html
