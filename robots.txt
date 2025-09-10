@@ -775,6 +775,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/vikram-batra.html
 Allow: /great-people/nisargadatta-maharaj.html
 Allow: /great-people/asha-bhosle.html
 Allow: /great-people/paul-chater.html
@@ -2335,6 +2336,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/how-to-spot-early-signs-of-gum-disease.html
 Allow: /articles/exploring-new-technologies-in-dental-diagnostics.html
 Allow: /articles/the-benefits-of-regular-dental-checkups.html
 Allow: /articles/the-role-of-community-outreach-in-dental-health-promotion.html
