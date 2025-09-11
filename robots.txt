@@ -20,6 +20,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/dharmasthala-mass-burial-case-sit-recovers-five-more-skeletons-suspected-black-magic-items-at-bangle-gudde.html
 Allow: /articles/how-to-design-your-dream-morning-with-intention.html
 Allow: /articles/bangalore-to-talakadu-historical-site-a-couple-motorcycle-ride-travel-plan.html
 Allow: /articles/dharmasthala-mass-burial-case-sit-seeks-custody-extension-villagers-step-forward-ed-begins-probe.html
