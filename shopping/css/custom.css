@@ -103,6 +103,9 @@ div#gspb_container-id-gsbp-dd0d07b {
     text-align: center;
     padding: 30px;
 }
+.peoplesblog-shopping.index-page #gspb_heading-id-gsbp-e4451e9 {
+    font-size: 68px;
+}
 .gspb_iconBox-id-gsbp-ba23557-id svg, .gspb_iconBox-id-gsbp-ba23557-id svg path,
 #gspb_iconBox-id-gsbp-037ef41 svg, #gspb_iconBox-id-gsbp-037ef41 svg path,
 #gspb_iconBox-id-gsbp-16d54ac svg, #gspb_iconBox-id-gsbp-16d54ac svg path,
@@ -110,6 +113,8 @@ div#gspb_container-id-gsbp-dd0d07b {
 #gspb_iconBox-id-gsbp-c161dc4 svg, #gspb_iconBox-id-gsbp-c161dc4 svg path {
         fill: #fff !important;
 }
+.peoplesblog-shopping.reviews-index #main .ct-container,
+.peoplesblog-shopping.compare-index #main .ct-container,
 .peoplesblog-shopping.articles-index #main .ct-container {
     padding: 30px 0;
 }

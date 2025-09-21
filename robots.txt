@@ -4001,7 +4001,6 @@ Allow: /shopping/reviews/B0F9SL87T7.html
 Allow: /shopping/reviews/B09F9QNWBV.html
 Allow: /shopping/reviews/B0CHRJ5QQY.html
 Allow: /shopping/reviews/B0D7N23QKD.html
-Allow: /shopping/reviews/B0D9PYG9NY.html
 Allow: /shopping/reviews/B0BS6XQVD1.html
 Allow: /shopping/reviews/B0BGXZV1P3.html
 Allow: /shopping/reviews/B07MNL598L.html
