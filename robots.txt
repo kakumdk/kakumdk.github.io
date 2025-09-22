@@ -2405,6 +2405,7 @@ Allow: /shopping/reviews/B08W3CB5BG.html
 Allow: /shopping/reviews/B0BGH18LNC.html
 Allow: /shopping/reviews/B0DQ81K96H.html
 Allow: /shopping/reviews/B0DSKMV3ZC.html
+Allow: /shopping/reviews/B01N1TZ4J5.html
 Allow: /shopping/reviews/B0BHHXCVTM.html
 Allow: /shopping/reviews/B084J4MZQM.html
 Allow: /shopping/reviews/B095SWYF6M.html
