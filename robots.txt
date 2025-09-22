@@ -2231,6 +2231,7 @@ Allow: /seeadlertech/drupal-training/webinars/index.html
 Allow: /seeadlertech/drupal-training/webinars/introduction-to-drupal.html
 Allow: /shopping/faq.html
 Allow: /shopping/comparisons/1755262825.html
+Allow: /shopping/comparisons/1758515437.html
 Allow: /shopping/comparisons/1753243062.html
 Allow: /shopping/comparisons/1754546767.html
 Allow: /shopping/comparisons/1752828229.html

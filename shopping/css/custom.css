@@ -621,10 +621,20 @@ span.woocommerce-Price-currencySymbol {
     font-weight: 100;
     line-height: 1.5;
 }
+.woocommerce-product-gallery .ct-media-container {
+    justify-content: center;
+}
+.peoplesblog-shopping.compare .ct-media-container img {
+    height: 200px;
+    object-fit: contain;
+}
 
 
 
 @media (min-width: 600px) {
+    .peoplesblog-shopping.compare .ct-media-container img {
+        height: 400px;
+    }
     .peoplesblog-shopping.search .ct-container[data-sidebar=right] {
         --grid-template-columns: minmax(100px, 1fr) var(--sidebar-width, 27%);
     }
