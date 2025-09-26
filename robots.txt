@@ -637,6 +637,7 @@ Allow: /articles/drupal-simple-test-case-custom-module.html
 Allow: /articles/filter-content-between-date-ranges-drupal.html
 Allow: /articles/create-related-content-different-content-types-through-taxonomy-drupal.html
 Allow: /articles/drupal-multisite-development-environment-configuration-ubuntu.html
+Allow: /quick-read/the-pig-and-the-sheep.html
 Allow: /quick-read/the-goose-that-laid-the-golden-eggs.html
 Allow: /quick-read/the-three-little-pigs.html
 Allow: /quick-read/cinderella.html
@@ -778,6 +779,7 @@ Allow: /quick-read/isro-successfully-conducted-the-third-test-on-vikas-engine-fo
 Allow: /quick-read/heat-on-earths-atmosphere-is-heating-much-as-it-did-fifteen-years-ago.html
 Allow: /quick-read/device-with-two-atoms-thick-worlds-thinnest-device.html
 Allow: /quick-read/powerful-solar-storm-approaching-earth.html
+Allow: /great-people/verghese-kurien.html
 Allow: /great-people/vikram-batra.html
 Allow: /great-people/nisargadatta-maharaj.html
 Allow: /great-people/asha-bhosle.html
@@ -2113,6 +2115,7 @@ Allow: /dentofacts/privacy-policy.html
 Allow: /dentofacts/terms-and-conditions.html
 Allow: /dentofacts/about.html
 Allow: /dentofacts/online-dental-consultation.html
+Allow: /articles/the-effects-of-acidic-foods-on-teeth.html
 Allow: /articles/how-to-spot-early-signs-of-gum-disease.html
 Allow: /articles/exploring-new-technologies-in-dental-diagnostics.html
 Allow: /articles/the-benefits-of-regular-dental-checkups.html
