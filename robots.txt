@@ -2248,6 +2248,7 @@ Allow: /shopping/articles/1758166885.html
 Allow: /shopping/articles/1753247394.html
 Allow: /shopping/articles/festival-picks.html
 Allow: /shopping/articles/index.html
+Allow: /shopping/articles/1758854974.html
 Allow: /shopping/terms-and-conditions.html
 Allow: /shopping/search.html
 Allow: /shopping/reviews/B07WDKMGWR.html
