@@ -121,3 +121,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.querySelector('input[name="search"]');
+  if (searchInput) {
+    searchInput.focus();
+    searchInput.click();
+  }
+});
