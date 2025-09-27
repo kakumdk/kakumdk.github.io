@@ -2238,11 +2238,13 @@ Allow: /seeadlertech/drupal-training/webinars/introduction-to-drupal.html
 Allow: /shopping/faq.html
 Allow: /shopping/comparisons/1755262825.html
 Allow: /shopping/comparisons/1758515437.html
+Allow: /shopping/comparisons/1758943452.html
 Allow: /shopping/comparisons/1753243062.html
 Allow: /shopping/comparisons/1754546767.html
 Allow: /shopping/comparisons/1752828229.html
 Allow: /shopping/comparisons/1755661262.html
 Allow: /shopping/comparisons/index.html
+Allow: /shopping/comparisons/1758942922.html
 Allow: /shopping/privacy-policy.html
 Allow: /shopping/about.html
 Allow: /shopping/articles/top-products.html
@@ -2680,6 +2682,7 @@ Allow: /shopping/reviews/B08CL8XF75.html
 Allow: /shopping/reviews/B0DP7P4KVT.html
 Allow: /shopping/reviews/B09XNB3DZX.html
 Allow: /shopping/reviews/B0DCZ6HM7G.html
+Allow: /shopping/reviews/B0CB8KG44H.html
 Allow: /shopping/reviews/B0D5BN76MK.html
 Allow: /shopping/reviews/B0B6FHTHQC.html
 Allow: /shopping/reviews/B09T6XD839.html
