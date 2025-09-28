@@ -35,51 +35,91 @@ function broadcastReply(e, t) {
 }
 
 var payload, logdata, app_image_url, icon_url, image_url, badge_url, notificationClicked, log_data, notificationAutoHide = !1;
-var CACHE = 'offline-v6';
-var CACHE_URLS = [
-    '/offline.html'
-];
-var CACHE_OFFLINE = '/offline.html';
+const CACHE = "offline-v7";
+const CACHE_URLS = ["/offline.html"];
+const CACHE_OFFLINE = "/offline.html";
 
+// self.addEventListener("install", event => {
+//     // console.log('[ServiceWorker] Install');
+//     event.waitUntil((async () => {
+//         const cache = await caches.open(CACHE);
+//         cache.addAll(CACHE_URLS);
+//         await cache.add(new Request(CACHE_OFFLINE, { cache: 'reload' }));
+//     })());
+//     self.skipWaiting();
+// });
 self.addEventListener("install", event => {
-    // console.log('[ServiceWorker] Install');
-    event.waitUntil((async () => {
-        const cache = await caches.open(CACHE);
-        cache.addAll(CACHE_URLS);
-        await cache.add(new Request(CACHE_OFFLINE, { cache: 'reload' }));
-    })());
+    event.waitUntil(
+        (async () => {
+            const cache = await caches.open(CACHE);
+            await cache.addAll(CACHE_URLS.map(url => new Request(url, { cache: "reload" })));
+        })()
+    );
     self.skipWaiting();
 });
 
+// self.addEventListener("activate", event => {
+//     // console.log('[ServiceWorker] Activate');
+//     // console.log("Webpushr Service Worker is Activated!");
+//     event.waitUntil((async () => {
+//         if ('navigationPreload' in self.registration) {
+//             await self.registration.navigationPreload.enable();
+//         }
+//     })());
+//     self.clients.claim();
+// });
 self.addEventListener("activate", event => {
-    // console.log('[ServiceWorker] Activate');
-    // console.log("Webpushr Service Worker is Activated!");
-    event.waitUntil((async () => {
-        if ('navigationPreload' in self.registration) {
-            await self.registration.navigationPreload.enable();
+  event.waitUntil(
+    (async () => {
+      const keys = await caches.keys();
+      for (const key of keys) {
+        if (key !== CACHE) {
+          await caches.delete(key);
         }
-    })());
-    self.clients.claim();
+      }
+    })()
+  );
+  self.clients.claim();
 });
 
+// self.addEventListener("fetch", event => {
+//     if (event.request.mode === 'navigate') {
+//         event.respondWith((async () => {
+//             try {
+//                 const preloadResponse = await event.preloadResponse;
+//                 if (preloadResponse) {
+//                     return preloadResponse;
+//                 }
+//                 const networkResponse = await fetch(event.request);
+//                 return networkResponse;
+//             } catch (error) {
+//                 // console.log('[Service Worker] Fetch failed; returning offline page instead.', error);
+//                 const cache = await caches.open(CACHE);
+//                 const cachedResponse = await cache.match(CACHE_OFFLINE);
+//                 return cachedResponse;
+//             }
+//         })());
+//     }
+// });
 self.addEventListener("fetch", event => {
-    if (event.request.mode === 'navigate') {
-        event.respondWith((async () => {
-            try {
-                const preloadResponse = await event.preloadResponse;
-                if (preloadResponse) {
-                    return preloadResponse;
-                }
-                const networkResponse = await fetch(event.request);
-                return networkResponse;
-            } catch (error) {
-                // console.log('[Service Worker] Fetch failed; returning offline page instead.', error);
-                const cache = await caches.open(CACHE);
-                const cachedResponse = await cache.match(CACHE_OFFLINE);
-                return cachedResponse;
-            }
-        })());
-    }
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      (async () => {
+        try {
+          const response = await fetch(event.request, { cache: "no-store" });
+          if (!response || !response.ok) {
+            throw new Error("Bad network response");
+          }
+          return response;
+        } catch (error) {
+          console.warn("[SW] Serving offline.html:", error);
+          const cache = await caches.open(CACHE);
+          const cachedResponse = await cache.match(CACHE_OFFLINE);
+          return cachedResponse || Response.error();
+        }
+      })()
+    );
+  }
 });
 
 self.addEventListener("push", event => {
