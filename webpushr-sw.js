@@ -35,9 +35,9 @@ function broadcastReply(e, t) {
 }
 
 var payload, logdata, app_image_url, icon_url, image_url, badge_url, notificationClicked, log_data, notificationAutoHide = !1;
-const CACHE = "offline-v7";
-const CACHE_URLS = ["/offline.html"];
-const CACHE_OFFLINE = "/offline.html";
+// const CACHE = "offline-v7";
+// const CACHE_URLS = ["/offline.html"];
+// const CACHE_OFFLINE = "/offline.html";
 
 // self.addEventListener("install", event => {
 //     // console.log('[ServiceWorker] Install');
@@ -48,15 +48,15 @@ const CACHE_OFFLINE = "/offline.html";
 //     })());
 //     self.skipWaiting();
 // });
-self.addEventListener("install", event => {
-    event.waitUntil(
-        (async () => {
-            const cache = await caches.open(CACHE);
-            await cache.addAll(CACHE_URLS.map(url => new Request(url, { cache: "reload" })));
-        })()
-    );
-    self.skipWaiting();
-});
+// self.addEventListener("install", event => {
+//     event.waitUntil(
+//         (async () => {
+//             const cache = await caches.open(CACHE);
+//             await cache.addAll(CACHE_URLS.map(url => new Request(url, { cache: "reload" })));
+//         })()
+//     );
+//     self.skipWaiting();
+// });
 
 // self.addEventListener("activate", event => {
 //     // console.log('[ServiceWorker] Activate');
@@ -68,19 +68,19 @@ self.addEventListener("install", event => {
 //     })());
 //     self.clients.claim();
 // });
-self.addEventListener("activate", event => {
-  event.waitUntil(
-    (async () => {
-      const keys = await caches.keys();
-      for (const key of keys) {
-        if (key !== CACHE) {
-          await caches.delete(key);
-        }
-      }
-    })()
-  );
-  self.clients.claim();
-});
+// self.addEventListener("activate", event => {
+//   event.waitUntil(
+//     (async () => {
+//       const keys = await caches.keys();
+//       for (const key of keys) {
+//         if (key !== CACHE) {
+//           await caches.delete(key);
+//         }
+//       }
+//     })()
+//   );
+//   self.clients.claim();
+// });
 
 // self.addEventListener("fetch", event => {
 //     if (event.request.mode === 'navigate') {
@@ -101,26 +101,26 @@ self.addEventListener("activate", event => {
 //         })());
 //     }
 // });
-self.addEventListener("fetch", event => {
-  if (event.request.mode === "navigate") {
-    event.respondWith(
-      (async () => {
-        try {
-          const response = await fetch(event.request, { cache: "no-store" });
-          if (!response || !response.ok) {
-            throw new Error("Bad network response");
-          }
-          return response;
-        } catch (error) {
-          console.warn("[SW] Serving offline.html:", error);
-          const cache = await caches.open(CACHE);
-          const cachedResponse = await cache.match(CACHE_OFFLINE);
-          return cachedResponse || Response.error();
-        }
-      })()
-    );
-  }
-});
+// self.addEventListener("fetch", event => {
+//   if (event.request.mode === "navigate") {
+//     event.respondWith(
+//       (async () => {
+//         try {
+//           const response = await fetch(event.request, { cache: "no-store" });
+//           if (!response || !response.ok) {
+//             throw new Error("Bad network response");
+//           }
+//           return response;
+//         } catch (error) {
+//           console.warn("[SW] Serving offline.html:", error);
+//           const cache = await caches.open(CACHE);
+//           const cachedResponse = await cache.match(CACHE_OFFLINE);
+//           return cachedResponse || Response.error();
+//         }
+//       })()
+//     );
+//   }
+// });
 
 self.addEventListener("push", event => {
     payload = event.data.json();
