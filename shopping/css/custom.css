@@ -166,6 +166,9 @@ div#gspb_container-id-gsbp-dd0d07b {
     font-size: 20px;
     margin-bottom: 20px !important;
 }
+.peoplesblog-shopping.review h1.product_title.entry-title::first-letter {
+    text-transform: uppercase;
+}
 .peoplesblog-shopping.review .price,
 .peoplesblog-shopping.review .product_meta,
 .peoplesblog-shopping.review button.single_add_to_cart_button.button.alt {
