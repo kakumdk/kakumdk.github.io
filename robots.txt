@@ -2327,6 +2327,7 @@ Allow: /shopping/reviews/B0BTDVHW6Q.html
 Allow: /shopping/reviews/B0D7QKB94L.html
 Allow: /shopping/reviews/B0DK4VVTLW.html
 Allow: /shopping/reviews/B0DGX9VVFV.html
+Allow: /shopping/reviews/B09J2SCVQT.html
 Allow: /shopping/reviews/B0CHJ3JPJW.html
 Allow: /shopping/reviews/B0B68JR6S8.html
 Allow: /shopping/reviews/B0BF57RN3K.html
@@ -2352,6 +2353,7 @@ Allow: /shopping/reviews/B0CWQY2JRZ.html
 Allow: /shopping/reviews/B0CR4BR36V.html
 Allow: /shopping/reviews/B0D7M8LG8S.html
 Allow: /shopping/reviews/B0BJMFBV6X.html
+Allow: /shopping/reviews/B08C5H8M9Y.html
 Allow: /shopping/reviews/B07P57MJ44.html
 Allow: /shopping/reviews/B01GFTEV5Y.html
 Allow: /shopping/reviews/B0D3F5HK9R.html
@@ -2393,6 +2395,7 @@ Allow: /shopping/reviews/B0D3THTZRZ.html
 Allow: /shopping/reviews/B08M4QF7V9.html
 Allow: /shopping/reviews/B0DXQ575B9.html
 Allow: /shopping/reviews/B0BXSRCPJ1.html
+Allow: /shopping/reviews/B07YDB1VNK.html
 Allow: /shopping/reviews/B0DRYW91S6.html
 Allow: /shopping/reviews/B09Z6P1ZYP.html
 Allow: /shopping/reviews/B0CMXPS1XZ.html
@@ -2401,6 +2404,7 @@ Allow: /shopping/reviews/B0D3DWFY54.html
 Allow: /shopping/reviews/B08DHT1Z6N.html
 Allow: /shopping/reviews/B00IP6C1LW.html
 Allow: /shopping/reviews/B0C9V7RYWD.html
+Allow: /shopping/reviews/B09F2FW4ZK.html
 Allow: /shopping/reviews/B09Z1VLR19.html
 Allow: /shopping/reviews/B0CGN8FMJ8.html
 Allow: /shopping/reviews/B08HV83HL3.html
@@ -2492,6 +2496,7 @@ Allow: /shopping/reviews/B07WGPJPR3.html
 Allow: /shopping/reviews/B0BDRSCGGD.html
 Allow: /shopping/reviews/B07Z1HN1KG.html
 Allow: /shopping/reviews/B08F3F197K.html
+Allow: /shopping/reviews/B0DKNL8CHP.html
 Allow: /shopping/reviews/B0CX59SD6C.html
 Allow: /shopping/reviews/B00W56GLOQ.html
 Allow: /shopping/reviews/B0DMFDNDD5.html
@@ -2666,6 +2671,7 @@ Allow: /shopping/reviews/B07NT6FG36.html
 Allow: /shopping/reviews/B097RJ867P.html
 Allow: /shopping/reviews/B0BX9WTPLR.html
 Allow: /shopping/reviews/B0CZ6QF29Y.html
+Allow: /shopping/reviews/B0BJ72WZQ7.html
 Allow: /shopping/reviews/B0756K5DYZ.html
 Allow: /shopping/reviews/B01M32X87O.html
 Allow: /shopping/reviews/B08VB57558.html
@@ -2705,6 +2711,7 @@ Allow: /shopping/reviews/B07LBHRDYR.html
 Allow: /shopping/reviews/B0DCCCLMMV.html
 Allow: /shopping/reviews/B0CHS59V1P.html
 Allow: /shopping/reviews/B079T88XLM.html
+Allow: /shopping/reviews/B0CCV8DBFH.html
 Allow: /shopping/reviews/B091H9DWL9.html
 Allow: /shopping/reviews/B09L89HGCH.html
 Allow: /shopping/reviews/B08YZ26636.html
@@ -2753,6 +2760,7 @@ Allow: /shopping/reviews/B0D7VJ72XK.html
 Allow: /shopping/reviews/B0DC6KX2C5.html
 Allow: /shopping/reviews/B0B4N77Y34.html
 Allow: /shopping/reviews/B06VX7PDXC.html
+Allow: /shopping/reviews/B0D14861L9.html
 Allow: /shopping/reviews/B0DD78S3M2.html
 Allow: /shopping/reviews/B09XKHNQR3.html
 Allow: /shopping/reviews/B0C8NTDY55.html
@@ -2831,6 +2839,7 @@ Allow: /shopping/reviews/B0CCJ8MBLD.html
 Allow: /shopping/reviews/B07QXVB738.html
 Allow: /shopping/reviews/B09CGQ6FCK.html
 Allow: /shopping/reviews/B07WHRXTJV.html
+Allow: /shopping/reviews/B09G75BMW4.html
 Allow: /shopping/reviews/B0D1KLMTPN.html
 Allow: /shopping/reviews/B08GYDZ6SF.html
 Allow: /shopping/reviews/B0CRF2CRJ1.html
@@ -2839,6 +2848,7 @@ Allow: /shopping/reviews/B0B5YDZRKZ.html
 Allow: /shopping/reviews/B07P913VF3.html
 Allow: /shopping/reviews/B07QLMCXQN.html
 Allow: /shopping/reviews/B0D54294K9.html
+Allow: /shopping/reviews/B09TB2YC13.html
 Allow: /shopping/reviews/B0CX5FRD9H.html
 Allow: /shopping/reviews/B0BLVCFK8D.html
 Allow: /shopping/reviews/B0DMTJ51HZ.html
@@ -2891,6 +2901,7 @@ Allow: /shopping/reviews/B0CQYNM3ZF.html
 Allow: /shopping/reviews/B0CX5DW4WT.html
 Allow: /shopping/reviews/B08QT7FH84.html
 Allow: /shopping/reviews/B0CLZXVR5C.html
+Allow: /shopping/reviews/B09X1P3J6G.html
 Allow: /shopping/reviews/B0B8NHX62W.html
 Allow: /shopping/reviews/B0BNDM2RNG.html
 Allow: /shopping/reviews/B0CKR1G5ZQ.html
