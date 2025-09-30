@@ -19,6 +19,7 @@ Allow: /software/age-calculator.html
 Allow: /software/generate-password.html
 Allow: /software/render-html.html
 Allow: /software/truth-or-dare.html
+Allow: /articles/ugrappa-committee-report-on-unnatural-deaths-in-and-around-dharmasthala-belthangady-taluk-dakshina-kannada.html
 Allow: /articles/the-journey-from-self-to-soul.html
 Allow: /articles/hormonal-imbalances-common-symptoms-and-treatments.html
 Allow: /articles/how-to-prepare-mango-lassi-a-creamy-yogurt-drink-with-the-goodness-of-ripe-mangoes.html
