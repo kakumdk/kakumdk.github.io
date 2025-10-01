@@ -1340,6 +1340,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/donald-trumps-fresh-claim-on-nobel-peace-prize-says-not-winning-nobel-would-be-insult-to-us.html
+Allow: /news/us-lawmakers-introduce-bill-to-change-h-1b-l-1-system.html
+Allow: /news/75yearold-man-marries-woman-half-his-age-in-up-dies-next-morning.html
+Allow: /news/pm-modi-to-attend-rss-centenary-event-in-delhi-on-wednesday.html
 Allow: /news/bengaluru-congestion-tax-explained-what-it-means-for-solo-drivers.html
 Allow: /news/karnataka-minister-parameshwara-urges-sit-to-complete-dharmasthala-probe-at-earliest.html
 Allow: /news/swami-chaintanyanada-held-multiple-identities-over-decades-police.html
