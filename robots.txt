@@ -1340,6 +1340,10 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/from-indias-darjeeling-to-mt-everest-dozens-dead-hundreds-stuck-in-himalayan-rain-snow-landslides.html
+Allow: /news/woman-accuses-blinkit-delivery-driver-of-touching-her-chest-in-viral-video-i-m-afraid-to-lodge-fir.html
+Allow: /news/pm-modi-to-launch-rs-1-000-monthly-allowance-for-5-lakh-graduates-open-skill-university-in-bihar.html
+Allow: /news/sonam-wangchuk-demands-judicial-probe-into-killing-of-four-in-leh-protests.html
 Allow: /news/gaza-peace-plan-donald-trump-warns-hamas-against-any-delays-israel-continues-to-bomb-gaza-top-updates.html
 Allow: /news/air-india-flight-lands-safely-in-birmingham-after-emergency-engine-ram-air-turbine-activated-all-passengers-safe.html
 Allow: /news/heavy-rain-landslides-hit-west-bengals-darjeeling-several-dead-iron-dudhia-bridge-collapses.html
@@ -2305,13 +2309,16 @@ Allow: /shopping/reviews/B0CSCRBZ43.html
 Allow: /shopping/reviews/B0D4LWYWF9.html
 Allow: /shopping/reviews/B0D3DZ1SPM.html
 Allow: /shopping/reviews/B0C7H6SSC8.html
+Allow: /shopping/reviews/B0F8HC14YF.html
 Allow: /shopping/reviews/B09FGN9CD9.html
 Allow: /shopping/reviews/B078J2FL6D.html
 Allow: /shopping/reviews/B0DK9DTJTG.html
 Allow: /shopping/reviews/B0188KPKB2.html
+Allow: /shopping/reviews/B0B6SXGSD5.html
 Allow: /shopping/reviews/B089M9HVQP.html
 Allow: /shopping/reviews/B0BNMM9246.html
 Allow: /shopping/reviews/B00J4JKOX6.html
+Allow: /shopping/reviews/B0DK5QZ816.html
 Allow: /shopping/reviews/B0C6FC1GSN.html
 Allow: /shopping/reviews/B09232XNTX.html
 Allow: /shopping/reviews/B0DQKT8R1H.html
@@ -2394,6 +2401,7 @@ Allow: /shopping/reviews/B07VZ68S5Q.html
 Allow: /shopping/reviews/B0D5YCYS1G.html
 Allow: /shopping/reviews/B01N407849.html
 Allow: /shopping/reviews/B08X9TZTHZ.html
+Allow: /shopping/reviews/B0BX6XR539.html
 Allow: /shopping/reviews/B0BLSQVD6N.html
 Allow: /shopping/reviews/B07VBFLSGQ.html
 Allow: /shopping/reviews/B0CJJT1BFV.html
@@ -2440,6 +2448,7 @@ Allow: /shopping/reviews/B0CXF1V178.html
 Allow: /shopping/reviews/B08W3CB5BG.html
 Allow: /shopping/reviews/B0BGH18LNC.html
 Allow: /shopping/reviews/B0DQ81K96H.html
+Allow: /shopping/reviews/B0D7VY7BRN.html
 Allow: /shopping/reviews/B0DSKMV3ZC.html
 Allow: /shopping/reviews/B01N1TZ4J5.html
 Allow: /shopping/reviews/B0F835K3HL.html
@@ -2550,6 +2559,7 @@ Allow: /shopping/reviews/B0DQXRXRPZ.html
 Allow: /shopping/reviews/B08317WCMB.html
 Allow: /shopping/reviews/B0FD3VHFL6.html
 Allow: /shopping/reviews/B0B3J7Q14R.html
+Allow: /shopping/reviews/B0FNX6LHLJ.html
 Allow: /shopping/reviews/B0BFRKC6JL.html
 Allow: /shopping/reviews/B096FFX4HX.html
 Allow: /shopping/reviews/B085B1RFL9.html
