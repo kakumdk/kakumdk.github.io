@@ -1340,6 +1340,9 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/defence-ministry-opens-missile-development-and-munition-manufacturing-to-private-sector.html
+Allow: /news/blackmailed-with-assault-video-mbbs-student-raped-for-a-month-in-delhi.html
+Allow: /news/bengaluru-erupts-over-siddaramaiahs-basava-metro-proposal-rename-yourself-basavaramaiah.html
 Allow: /news/mass-layoffs-will-start-if-shutdown-talks-going-nowhere-white-house-article.html
 Allow: /news/tourists-trapped-on-tibetan-side-of-mount-everest-by-blizzard.html
 Allow: /news/bareilly-police-to-announce-rewards-on-12-accused.html

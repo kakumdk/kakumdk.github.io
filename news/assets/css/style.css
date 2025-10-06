@@ -173,13 +173,13 @@
   }
   
   a {
-    color: #007bff;
+    color: #0088c8;
     text-decoration: none;
     background-color: transparent;
   }
   
   a:hover {
-    color: #0056b3;
+    color: #0088c8;
     text-decoration: underline;
   }
   
@@ -2898,12 +2898,12 @@
   
   .btn-link {
     font-weight: 400;
-    color: #007bff;
+    color: #0088c8;
     text-decoration: none;
   }
   
   .btn-link:hover {
-    color: #0056b3;
+    color: #0088c8;
     text-decoration: underline;
   }
   
@@ -3196,7 +3196,7 @@
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #0088c8;
   }
   
   .dropdown-item.disabled, .dropdown-item:disabled {
@@ -3560,8 +3560,8 @@
   
   .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #007bff;
-    background-color: #007bff;
+    border-color: #0088c8;
+    background-color: #0088c8;
   }
   
   .custom-control-input:focus ~ .custom-control-label::before {
@@ -3625,8 +3625,8 @@
   }
   
   .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-    border-color: #007bff;
-    background-color: #007bff;
+    border-color: #0088c8;
+    background-color: #0088c8;
   }
   
   .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -3854,7 +3854,7 @@
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: #007bff;
+    background-color: #0088c8;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3884,7 +3884,7 @@
   .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #007bff;
+    background-color: #0088c8;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3917,7 +3917,7 @@
     margin-top: 0;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
-    background-color: #007bff;
+    background-color: #0088c8;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4053,7 +4053,7 @@
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #007bff;
+    background-color: #0088c8;
   }
   
   .nav-fill > .nav-link,
@@ -4736,14 +4736,14 @@
     padding: 0.5rem 0.75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #007bff;
+    color: #0088c8;
     background-color: #fff;
     border: 1px solid #dee2e6;
   }
   
   .page-link:hover {
     z-index: 2;
-    color: #0056b3;
+    color: #0088c8;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6;
@@ -4769,8 +4769,8 @@
   .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #0088c8;
+    border-color: #0088c8;
   }
   
   .page-item.disabled .page-link {
@@ -5158,7 +5158,7 @@
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #007bff;
+    background-color: #0088c8;
     transition: width 0.6s ease;
   }
   
@@ -5245,8 +5245,8 @@
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #0088c8;
+    border-color: #0088c8;
   }
   
   .list-group-item + .list-group-item {
@@ -9902,11 +9902,11 @@
   }
   
   .pagination .page-item .active {
-    color: #007bff;
+    color: #0088c8;
   }
   
   .pagination .page-item.active .page-link, .pagination .page-item:hover .page-link, .pagination .page-item:focus .page-link, .pagination .page-item:active .page-link {
-    color: #007bff;
+    color: #0088c8;
   }
   
   /* Buttons */
@@ -9937,7 +9937,7 @@
   }
   
   .btn.btn-secondary {
-    color: #007bff;
+    color: #0088c8;
   }
   
   .btn.btn-up {
@@ -9946,7 +9946,7 @@
   
   .btn.btn-up:hover {
     transform: translate3d(0, -3px, 0);
-    background: #007bff;
+    background: #0088c8;
     color: #ffffff;
   }
   
