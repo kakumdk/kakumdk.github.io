@@ -226,7 +226,7 @@ body #carouselQuickRead .carousel-control-next {
 }
 .footer .widget .post-sharing-footer a {
     color: #546E7A;
-    width: 49%;
+    width: 32%;
     display: inline-block;
     margin: 6px auto;
     text-transform: uppercase;
@@ -2891,7 +2891,7 @@ button#play-truth-dare-next {
         text-decoration: none;
     }
     .footer .widget .widget-title.subscribe {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .footer .widget .link-widget ul li {
         width: 100%;
