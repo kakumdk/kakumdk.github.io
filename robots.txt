@@ -2323,6 +2323,7 @@ Allow: /shopping/reviews/B0BGXMZBLY.html
 Allow: /shopping/reviews/B06Y42C8V7.html
 Allow: /shopping/reviews/B0BTLTKBVT.html
 Allow: /shopping/reviews/B07TFD2THQ.html
+Allow: /shopping/reviews/B09KH81K1W.html
 Allow: /shopping/reviews/B084DG9K87.html
 Allow: /shopping/reviews/B0CSCRBZ43.html
 Allow: /shopping/reviews/B0D4LWYWF9.html
@@ -2338,6 +2339,7 @@ Allow: /shopping/reviews/B0B6SXGSD5.html
 Allow: /shopping/reviews/B089M9HVQP.html
 Allow: /shopping/reviews/B0BNMM9246.html
 Allow: /shopping/reviews/B00J4JKOX6.html
+Allow: /shopping/reviews/B09MKLNBB1.html
 Allow: /shopping/reviews/B0DK5QZ816.html
 Allow: /shopping/reviews/B0C6FC1GSN.html
 Allow: /shopping/reviews/B09232XNTX.html
@@ -2528,6 +2530,7 @@ Allow: /shopping/reviews/B09WWT8HFH.html
 Allow: /shopping/reviews/B0DFCM24S3.html
 Allow: /shopping/reviews/B0D3DW7C39.html
 Allow: /shopping/reviews/B0FDKPZHB7.html
+Allow: /shopping/reviews/B0CTK2YRWP.html
 Allow: /shopping/reviews/B0D9BYN6RJ.html
 Allow: /shopping/reviews/B0CJ6SHZFS.html
 Allow: /shopping/reviews/B0CQ4JT6NT.html
@@ -2703,6 +2706,7 @@ Allow: /shopping/reviews/B0DGTZDSPS.html
 Allow: /shopping/reviews/B0B9X8LVJ5.html
 Allow: /shopping/reviews/B0FBRGKXHG.html
 Allow: /shopping/reviews/B0CKTF59Y5.html
+Allow: /shopping/reviews/B0DC6QHTQH.html
 Allow: /shopping/reviews/B0DQ8MPQFF.html
 Allow: /shopping/reviews/B07YT1DXDS.html
 Allow: /shopping/reviews/B0CY5CB5D7.html
@@ -2730,6 +2734,7 @@ Allow: /shopping/reviews/B0CZ6QF29Y.html
 Allow: /shopping/reviews/B0BJ72WZQ7.html
 Allow: /shopping/reviews/B0756K5DYZ.html
 Allow: /shopping/reviews/B01M32X87O.html
+Allow: /shopping/reviews/B099WZ9JNM.html
 Allow: /shopping/reviews/B08VB57558.html
 Allow: /shopping/reviews/B0CGF9CSK9.html
 Allow: /shopping/reviews/B0CRL9CZK5.html
@@ -2770,6 +2775,7 @@ Allow: /shopping/reviews/B0DCCCLMMV.html
 Allow: /shopping/reviews/B0CHS59V1P.html
 Allow: /shopping/reviews/B079T88XLM.html
 Allow: /shopping/reviews/B0CCV8DBFH.html
+Allow: /shopping/reviews/B0CXM93RY2.html
 Allow: /shopping/reviews/B091H9DWL9.html
 Allow: /shopping/reviews/B0FMDNZ61S.html
 Allow: /shopping/reviews/B09L89HGCH.html
