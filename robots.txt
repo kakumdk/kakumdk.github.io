@@ -1341,6 +1341,12 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/pirates-are-here-again-gaza-aid-flotilla-intercepted-by-israeli-military-thousand-madleens-conscience-boat.html
+Allow: /news/japanese-politics-enters-its-heavy-metal-phase.html
+Allow: /news/indianorigin-man-gets-22-years-in-uk-for-child-rape-his-brother-recorded-videos.html
+Allow: /news/merger-with-the-us-trump-repeats-51st-us-state-quip-in-meeting-with-canada-pm-mark-carney-watch.html
+Allow: /news/trouble-for-rakesh-kishore-contempt-action-grows-after-his-attempt-to-throw-shoe-at-chief-justice-br-gavai.html
+Allow: /news/wont-relax-visa-rules-for-indians-uk-pm-keir-starmer-ahead-of-his-mumbai-visit.html
 Allow: /news/are-you-alright-rakesh-ehagaban-indian-origin-man-asked-gunman-in-pittsburgh-us-shot-dead-later.html
 Allow: /news/french-prankster-amine-mojito-faces-6-months-in-prison-for-stabbing-strangers-with-empty-needles.html
 Allow: /news/blast-multiple-bogies-jaffar-express-derailed-pakistan-dead-injured-baloch-rebels.html
