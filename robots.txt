@@ -2498,6 +2498,7 @@ Allow: /shopping/reviews/B0DLW427YG.html
 Allow: /shopping/reviews/B07CLZZQFG.html
 Allow: /shopping/reviews/B01GNVF8S8.html
 Allow: /shopping/reviews/B08BJ4849B.html
+Allow: /shopping/reviews/B0DZ6CSCBW.html
 Allow: /shopping/reviews/B00T6DHFO6.html
 Allow: /shopping/reviews/B07R47WXX9.html
 Allow: /shopping/reviews/B07HTGQ2K7.html
@@ -2622,9 +2623,11 @@ Allow: /shopping/reviews/B0DRFN3SBV.html
 Allow: /shopping/reviews/B0D4DFVZK9.html
 Allow: /shopping/reviews/B07ZFMYR66.html
 Allow: /shopping/reviews/B07N2MGB3G.html
+Allow: /shopping/reviews/B0DPQP2N2T.html
 Allow: /shopping/reviews/B0CZ6KW5HQ.html
 Allow: /shopping/reviews/B0C4LVTTN7.html
 Allow: /shopping/reviews/B00TE7QY7S.html
+Allow: /shopping/reviews/B0D8THLYPW.html
 Allow: /shopping/reviews/B0DWSG29C8.html
 Allow: /shopping/reviews/B09XTQFFCG.html
 Allow: /shopping/reviews/B0CNX6WVG5.html
@@ -2702,6 +2705,7 @@ Allow: /shopping/reviews/B0CSSPDT7C.html
 Allow: /shopping/reviews/B0C788SHHC.html
 Allow: /shopping/reviews/B0CCPGNBBN.html
 Allow: /shopping/reviews/B07WHLHXB9.html
+Allow: /shopping/reviews/B08K3N663N.html
 Allow: /shopping/reviews/B07SRTPV2M.html
 Allow: /shopping/reviews/B0CNYSGNN3.html
 Allow: /shopping/reviews/B0CDXHYHZ6.html
@@ -2730,6 +2734,7 @@ Allow: /shopping/reviews/B0BD8PL1K7.html
 Allow: /shopping/reviews/B07C1ZMK8B.html
 Allow: /shopping/reviews/B0CHZ2X647.html
 Allow: /shopping/reviews/B0CP41NTJG.html
+Allow: /shopping/reviews/B0DV9JLF48.html
 Allow: /shopping/reviews/B0CFYMZF81.html
 Allow: /shopping/reviews/B0DTHHPYRS.html
 Allow: /shopping/reviews/B0C467KFNM.html
@@ -2791,6 +2796,7 @@ Allow: /shopping/reviews/B0CCV8DBFH.html
 Allow: /shopping/reviews/B0CXM93RY2.html
 Allow: /shopping/reviews/B091H9DWL9.html
 Allow: /shopping/reviews/B0FMDNZ61S.html
+Allow: /shopping/reviews/B09TXQBWNX.html
 Allow: /shopping/reviews/B09L89HGCH.html
 Allow: /shopping/reviews/B08YZ26636.html
 Allow: /shopping/reviews/B0CHFK5WKF.html
@@ -2846,6 +2852,7 @@ Allow: /shopping/reviews/B09HMKK4J9.html
 Allow: /shopping/reviews/B01GZSQJPA.html
 Allow: /shopping/reviews/B0BBMSG1JW.html
 Allow: /shopping/reviews/B07WHRZRD7.html
+Allow: /shopping/reviews/B00F38B3NW.html
 Allow: /shopping/reviews/B0BWS9YNCX.html
 Allow: /shopping/reviews/B0F9SL87T7.html
 Allow: /shopping/reviews/B09F9QNWBV.html
