@@ -2281,9 +2281,11 @@ Allow: /shopping/comparisons/1758943452.html
 Allow: /shopping/comparisons/1753243062.html
 Allow: /shopping/comparisons/1754546767.html
 Allow: /shopping/comparisons/1752828229.html
+Allow: /shopping/comparisons/1759901683.html
 Allow: /shopping/comparisons/1755661262.html
 Allow: /shopping/comparisons/1759031538.html
 Allow: /shopping/comparisons/index.html
+Allow: /shopping/comparisons/1759902122.html
 Allow: /shopping/comparisons/1758942922.html
 Allow: /shopping/privacy-policy.html
 Allow: /shopping/about.html
@@ -2359,6 +2361,7 @@ Allow: /shopping/reviews/B0CMQCPVK5.html
 Allow: /shopping/reviews/B08243CLRL.html
 Allow: /shopping/reviews/B000HHSB8O.html
 Allow: /shopping/reviews/B0DSKNLFBG.html
+Allow: /shopping/reviews/B08GTYFC37.html
 Allow: /shopping/reviews/B07LDKFM2Y.html
 Allow: /shopping/reviews/B07R5PKDLQ.html
 Allow: /shopping/reviews/B06Y26ZG94.html
@@ -2665,6 +2668,7 @@ Allow: /shopping/reviews/B0DM8R7MYZ.html
 Allow: /shopping/reviews/B07FY6KXVW.html
 Allow: /shopping/reviews/B08H628PJD.html
 Allow: /shopping/reviews/B0D7HZ3KK9.html
+Allow: /shopping/reviews/B0CJ96945H.html
 Allow: /shopping/reviews/B09X5C9VLK.html
 Allow: /shopping/reviews/B097XJQZ8H.html
 Allow: /shopping/reviews/B0D48SRFBZ.html
