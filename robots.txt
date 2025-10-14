@@ -1341,6 +1341,14 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/over-40-policemen-several-employees-of-dharmasthala-institution-questioned-by-sit.html
+Allow: /news/1-year-on-kerala-mans-family-still-awaits-autopsy-report-after-body-handed-over-from-dharmasthala-cemetery.html
+Allow: /news/god-knows-who-advised-siddaramaiah-karnataka-congress-mlas-remark-on-welfare-schemes-sparks-row-within-party.html
+Allow: /news/end-of-clean-air-streak-delhi-set-for-poor-aqi.html
+Allow: /news/army-kills-2-terrorists-in-j-ks-kupwara-after-suspicious-movement-search-ops-on.html
+Allow: /news/who-warns-against-3-cough-syrups-in-india-after-childrens-deaths-in-madhya-pradesh-coldrif-respifresh-tr-relife.html
+Allow: /news/fifth-suspect-arrested-in-bengal-rape-case-cops-say-not-an-easy-probe.html
+Allow: /news/rahul-gandhi-meets-haryana-ips-family-y-puran-kumar-death-seeks-actions-dalits-can-be-crushed.html
 Allow: /news/highly-likely-it-s-espionage-nobel-institute-suspects-spy-leak-before-peace-prize-reveal.html
 Allow: /news/new-york-city-under-state-of-emergency-nor-easter-brings-flight-delays-columbus-day-parade-cancelled.html
 Allow: /news/after-stopping-eight-wars-donald-trump-now-eyes-pakistan-afghanistan-conflict-have-to-wait-till.html
