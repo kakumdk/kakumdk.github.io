@@ -1342,6 +1342,11 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/pak-and-iran-trump-slips-up-as-he-repeats-india-ceasefire-claim-for-the-nth-time.html
+Allow: /news/how-sister-s-suspicion-helped-cops-crack-bengaluru-doctor-s-anesthesia-murder-mystery.html
+Allow: /news/petition-seeking-contempt-action-against-mamata-banerjee-withdrawn-after-ag-denies-consent.html
+Allow: /news/singapore-police-allow-assam-sit-to-visit-for-probe-into-zubeen-garg-s-death.html
+Allow: /news/russia-unveils-major-defense-push-for-india-following-trump-s-oil-trade-claims.html
 Allow: /news/chinnayyas-first-183-still-active-read-with-second-for-investigation.html
 Allow: /news/toxic-smoke-from-dhaka-warehouse-fire-sickens-workers-in-adjacent-garment-factory-a-day-after-deadly-blaze.html
 Allow: /news/gazans-brutally-executed-amid-donald-trump-disarm-warning-to-hamas-israel-peace-deal-snag.html
