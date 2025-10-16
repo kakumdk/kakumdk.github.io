@@ -2321,6 +2321,7 @@ Allow: /shopping/comparisons/1758515437.html
 Allow: /shopping/comparisons/1758943452.html
 Allow: /shopping/comparisons/1753243062.html
 Allow: /shopping/comparisons/1754546767.html
+Allow: /shopping/comparisons/1760615113.html
 Allow: /shopping/comparisons/1752828229.html
 Allow: /shopping/comparisons/1759901683.html
 Allow: /shopping/comparisons/1755661262.html
