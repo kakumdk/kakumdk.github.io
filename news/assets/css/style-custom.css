@@ -111,8 +111,8 @@ p {
 .home_right_of_carousel ._title {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     padding-right: 15px;
 }
@@ -121,6 +121,10 @@ p {
 }
 .home_right_of_carousel span {
     margin-bottom: 5px;
+}
+.index-page .home_right_of_carousel ._title {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
 ._design_one_section_news,
 ._design_two_section_news,
