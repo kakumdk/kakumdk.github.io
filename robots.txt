@@ -1343,6 +1343,7 @@ Allow: /news/category/india.html
 Allow: /news/category/health.html
 Allow: /news/category/movies.html
 Allow: /news/category/entertainment.html
+Allow: /news/donald-trump-russian-oil-claim-destroy-career-remark-for-modi-indias-denial-what-happened-in-24-hours-explained.html
 Allow: /news/pak-and-iran-trump-slips-up-as-he-repeats-india-ceasefire-claim-for-the-nth-time.html
 Allow: /news/how-sister-s-suspicion-helped-cops-crack-bengaluru-doctor-s-anesthesia-murder-mystery.html
 Allow: /news/petition-seeking-contempt-action-against-mamata-banerjee-withdrawn-after-ag-denies-consent.html
