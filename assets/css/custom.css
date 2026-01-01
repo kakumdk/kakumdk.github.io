@@ -1,0 +1,58 @@
+.header .logo .sitename {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+.hero .welcome h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main .hero img {
+    opacity: 0.25 !important;
+}
+
+.footer .copyright ._copyright {
+    margin: 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.footer .copyright ._copyright a {
+    color: var(--default-color);
+}
+
+.more-btn {
+    border: 1px solid;
+}
+.more-btn:hover {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+}
+
+.drupal-services .section-title h2:before,
+.drupal-services .section-title h2:after {
+    margin: unset;
+}
+
+.page-title .heading {
+    padding: 60px 0;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+    font-weight: normal;
+}
+.breadcrumbs a {
+    color: var(--nav-color);
+}
+.breadcrumbs a:hover {
+    color: var(--accent-color);
+}
+
+
+@media (min-width: 768px) {
+
+}
