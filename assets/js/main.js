@@ -178,9 +178,11 @@
 
 window.addEventListener('load', () => {
   const d = new Date();
-  let year = d.getFullYear();
-  var experience = Math.abs(year - 2013);
-  setTimeout(function (){
-    document.getElementById('years-of-experience').innerHTML = experience;
-  }, 100); 
+  const year = d.getFullYear();
+  const experience = Math.abs(year - 2013);
+  setTimeout(() => {
+    document.querySelectorAll('.years-of-experience').forEach(el => {
+      el.innerHTML = experience;
+    });
+  }, 100);
 });
