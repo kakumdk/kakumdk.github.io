@@ -56,3 +56,7 @@
 @media (min-width: 768px) {
 
 }
+
+.departments .tab-content .tab-pane img {
+    border: 1px solid #ececec;
+}

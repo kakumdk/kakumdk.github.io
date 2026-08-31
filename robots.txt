@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karthikkumardk.peoplesblog.co.in/sitemap.xml
